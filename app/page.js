@@ -2,35 +2,60 @@ import { supabase } from '../lib/supabase';
 
 export const dynamic = 'force-dynamic';
 
+const page = { backgroundColor: '#f6f8fb', minHeight: '100vh', fontFamily: 'system-ui, sans-serif' };
+const container = { padding: '24px', maxWidth: '600px', margin: '0 auto' };
+const header = { color: '#1A4486', fontSize: '24px', marginBottom: '4px' };
+const subheader = { color: '#888', fontSize: '14px', marginBottom: '24px' };
+const button = { backgroundColor: '#2C5AA0', color: 'white', border: 'none', borderRadius: '12px', padding: '16px 24px', fontSize: '16px', fontWeight: '600', cursor: 'pointer', width: '100%', display: 'block', textAlign: 'center', textDecoration: 'none', boxSizing: 'border-box', boxShadow: '0 4px 14px rgba(44,90,160,0.25)' };
+const emptyState = { color: '#999', textAlign: 'center', marginTop: '48px', fontSize: '15px' };
+const card = { backgroundColor: 'white', borderRadius: '14px', padding: '18px 20px', marginTop: '16px', boxShadow: '0 2px 10px rgba(26,68,134,0.06)' };
+const cardTitle = { margin: '0 0 10px 0', color: '#222', fontSize: '17px', fontWeight: '600' };
+const row = { display: 'flex', justifyContent: 'space-between', margin: '4px 0', fontSize: '13px', color: '#777' };
+
+function colorEstado(estado) {
+      const colores = { nueva: '#2C5AA0', en_analisis: '#B8860B', aprobada: '#2E8B57', en_diseno: '#7B4EA3', pendiente_revision: '#C77D00', finalizada: '#4C7A4C', rechazada: '#C0392B' };
+      return colores[estado] || '#777';
+}
+
+function textoEstado(estado) {
+      const textos = { nueva: 'Nueva', en_analisis: 'En analisis', aprobada: 'Aprobada', en_diseno: 'En diseno', pendiente_revision: 'Pendiente de revision', finalizada: 'Finalizada', rechazada: 'Rechazada' };
+      return textos[estado] || estado;
+}
+
+function badgeStyle(estado) {
+      const color = colorEstado(estado);
+      return { display: 'inline-block', padding: '3px 10px', borderRadius: '20px', fontSize: '12px', fontWeight: '600', backgroundColor: color + '22', color: color, marginTop: '10px' };
+}
+
 export default async function Home() {
-    const { data: solicitudes, error } = await supabase
-      .from('solicitudes')
-      .select('*')
-      .order('created_at', { ascending: false });
+      const result = await supabase.from('solicitudes').select('*').order('created_at', { ascending: false });
+      const solicitudes = result.data;
+      const error = result.error;
 
   return (
-        <main style={{ padding: '24px', fontFamily: 'sans-serif', maxWidth: '600px', margin: '0 auto' }}>
-      <h1 style={{ color: '#1A4486' }}>Logbelts – Mejoras de Catálogo</h1>
+          <main style={page}>
+            <div style={container}>
+              <h1 style={header}>Logbelts</h1>
+            <p style={subheader}>Mejoras de Catalogo</p>
 
-      <a href="/nueva" style={{ backgroundColor: '#1A4486', color: 'white', border: 'none', borderRadius: '8px', padding: '14px 24px', fontSize: '16px', fontWeight: 'bold', cursor: 'pointer', width: '100%', marginTop: '16px', marginBottom: '24px', display: 'block', textAlign: 'center', textDecoration: 'none', boxSizing: 'border-box' }}>
-        + Nueva mejora
-          </a>
+        <a href="/nueva" style={button}>+ Nueva mejora</a>
 
-{error && <p style={{ color: 'red' }}>Error: {error.message}</p>}
+    {error && <p style={{ color: '#c0392b', marginTop: '16px' }}>Error: {error.message}</p>}
 
-{solicitudes && solicitudes.length === 0 && (
-          <p style={{ color: '#666' }}>Todavía no hay solicitudes cargadas.</p>
-      )}
+    {solicitudes && solicitudes.length === 0 && (
+                  <p style={emptyState}>Todavia no hay solicitudes cargadas.</p>
+             )}
 
-{solicitudes && solicitudes.map((s) => (
-          <div key={s.id} style={{ border: '1px solid #ddd', borderRadius: '8px', padding: '16px', marginBottom: '12px' }}>
-          <h3 style={{ margin: '0 0 8px 0' }}>{s.titulo}</h3>
-          <p style={{ margin: '4px 0', color: '#555' }}>Producto: {s.producto || '-'}</p>
-          <p style={{ margin: '4px 0', color: '#555' }}>Página: {s.pagina_catalogo || '-'}</p>
-          <p style={{ margin: '4px 0', color: '#555' }}>Estado: {s.estado}</p>
-          <p style={{ margin: '4px 0', color: '#555' }}>Prioridad: {s.prioridad}</p>
-  </div>
-      ))}
-</main>
+    {solicitudes && solicitudes.map((s) => (
+                  <div key={s.id} style={card}>
+                    <h3 style={cardTitle}>{s.titulo}</h3>
+                <div style={row}><span>Producto</span><span>{s.producto || '-'}</span></div>
+                <div style={row}><span>Pagina</span><span>{s.pagina_catalogo || '-'}</span></div>
+                <div style={row}><span>Prioridad</span><span>{s.prioridad}</span></div>
+                <span style={badgeStyle(s.estado)}>{textoEstado(s.estado)}</span>
+        </div>
+            ))}
+</div>
+    </main>
   );
 }
