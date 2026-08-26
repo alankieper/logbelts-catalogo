@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic';
 
 const page = { backgroundColor: '#f6f8fb', minHeight: '100vh', fontFamily: 'system-ui, sans-serif' };
 const container = { padding: '24px', maxWidth: '600px', margin: '0 auto' };
-const header = { color: '#1A4486', fontSize: '24px', marginBottom: '4px' };
+const logoImg = { height: '52px', width: 'auto', display: 'block', marginBottom: '4px' };
 const subheader = { color: '#888', fontSize: '14px', marginBottom: '24px' };
 const button = { backgroundColor: '#2C5AA0', color: 'white', border: 'none', borderRadius: '12px', padding: '16px 24px', fontSize: '16px', fontWeight: '600', cursor: 'pointer', width: '100%', display: 'block', textAlign: 'center', textDecoration: 'none', boxSizing: 'border-box', boxShadow: '0 4px 14px rgba(44,90,160,0.25)' };
 const emptyState = { color: '#999', textAlign: 'center', marginTop: '48px', fontSize: '15px' };
@@ -35,7 +35,7 @@ export default async function Home() {
   return (
           <main style={page}>
             <div style={container}>
-              <h1 style={header}>Logbelts</h1>
+              <img src="/logo-logbelts.png" alt="Logbelts" style={logoImg} />
             <p style={subheader}>Mejoras de Catalogo</p>
 
         <a href="/nueva" style={button}>+ Nueva mejora</a>

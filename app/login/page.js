@@ -6,6 +6,7 @@ import { createClient } from '../../lib/supabase/client';
 const card = { maxWidth: '380px', margin: '90px auto', padding: '36px 32px', backgroundColor: 'white', borderRadius: '16px', boxShadow: '0 4px 24px rgba(26,68,134,0.08)', fontFamily: 'system-ui, sans-serif' };
 const page = { backgroundColor: '#f6f8fb', minHeight: '100vh' };
 const title = { color: '#1A4486', fontSize: '22px', textAlign: 'center', marginBottom: '4px' };
+const logoImg = { height: '46px', width: 'auto', display: 'block', margin: '0 auto 4px auto' };
 const subtitle = { color: '#888', textAlign: 'center', marginBottom: '28px', fontSize: '14px' };
 const label = { display: 'block', marginBottom: '6px', color: '#444', fontSize: '14px', fontWeight: '600' };
 const inputStyle = { width: '100%', padding: '12px 14px', borderRadius: '10px', border: '1px solid #dde3ec', fontSize: '15px', boxSizing: 'border-box', outline: 'none' };
@@ -43,20 +44,19 @@ export default function Login() {
                                                                                                                       </main>
                                                                                                                           );
                                                                                                                             }
-                                                                                                                            
-                                                                                                                              return (
-                                                                                                                                  <main style={page}>
-                                                                                                                                        <div style={card}>
-                                                                                                                                                <h1 style={title}>Logbelts</h1>
-                                                                                                                                                        <p style={subtitle}>Mejoras de Catalogo</p>
-                                                                                                                                                                <form onSubmit={handleSubmit}>
-                                                                                                                                                                          <label style={label}>Tu email</label>
-                                                                                                                                                                                    <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="tu@email.com" style={inputStyle} />
-                                                                                                                                                                                              {error && <p style={errorText}>{error}</p>}
-                                                                                                                                                                                                        <button type="submit" disabled={cargando} style={button}>{cargando ? 'Enviando...' : 'Ingresar'}</button>
-                                                                                                                                                                                                                </form>
-                                                                                                                                                                                                                      </div>
-                                                                                                                                                                                                                          </main>
-                                                                                                                                                                                                                            );
-                                                                                                                                                                                                                            }
-                                                                                                                                                                                                                            
+
+                                                                              return (
+                                                                                  <main style={page}>
+                                                                                        <div style={card}>
+                                                                                                <img src="/logo-logbelts.png" alt="Logbelts" style={logoImg} />
+                                                                                                        <p style={subtitle}>Mejoras de Catalogo</p>
+                                                                                                                <form onSubmit={handleSubmit}>
+                                                                                                                          <label style={label}>Tu email</label>
+                                                                                                                                    <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="tu@email.com" style={inputStyle} />
+                                                                                                                                              {error && <p style={errorText}>{error}</p>}
+                                                                                                                                                        <button type="submit" disabled={cargando} style={button}>{cargando ? 'Enviando...' : 'Ingresar'}</button>
+                                                                                                                                                                </form>
+                                                                                                                                                                      </div>
+                                                                                                                                                                          </main>
+                                                                                                                                                                            );
+                                                                                                                                                                            }

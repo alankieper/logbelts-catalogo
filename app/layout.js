@@ -1,3 +1,5 @@
+import Nav from './components/Nav';
+
 export const metadata = {
   title: 'Logbelts - Mejoras de Catálogo',
   description: 'Aplicación interna de mejoras de catálogo',
@@ -6,7 +8,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body>
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
