@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Aktiv Grotesk';
+  src: url('/fonts/AktivGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aktiv Grotesk';
+  src: url('/fonts/AktivGrotesk-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aktiv Grotesk';
+  src: url('/fonts/AktivGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dunk95';
+  src: url('/fonts/Dunk95TRIALVERSION-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Aktiv Grotesk', system-ui, sans-serif;
+  background: radial-gradient(130% 130% at 18% -10%, #123b78 0%, #0a2149 48%, #071531 100%);
+  background-attachment: fixed;
+}

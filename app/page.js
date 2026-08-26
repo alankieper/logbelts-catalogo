@@ -1,61 +1,63 @@
 import { supabase } from '../lib/supabase';
+import { pageStyle, containerStyle, heroTitleStyle, heroSubtitleStyle, cardStyle, COLOR_PRIMARY, COLOR_TEXTO, COLOR_CEMENTO, COLOR_ERROR, SHADOW_SOFT, FONT_TEXTO } from './theme';
+import { IconMejora } from './components/Icons';
 
 export const dynamic = 'force-dynamic';
 
-const page = { backgroundColor: '#f6f8fb', minHeight: '100vh', fontFamily: 'system-ui, sans-serif' };
-const container = { padding: '24px', maxWidth: '600px', margin: '0 auto' };
-const logoImg = { height: '52px', width: 'auto', display: 'block', marginBottom: '4px' };
-const subheader = { color: '#888', fontSize: '14px', marginBottom: '24px' };
-const button = { backgroundColor: '#2C5AA0', color: 'white', border: 'none', borderRadius: '12px', padding: '16px 24px', fontSize: '16px', fontWeight: '600', cursor: 'pointer', width: '100%', display: 'block', textAlign: 'center', textDecoration: 'none', boxSizing: 'border-box', boxShadow: '0 4px 14px rgba(44,90,160,0.25)' };
-const emptyState = { color: '#999', textAlign: 'center', marginTop: '48px', fontSize: '15px' };
-const card = { backgroundColor: 'white', borderRadius: '14px', padding: '18px 20px', marginTop: '16px', boxShadow: '0 2px 10px rgba(26,68,134,0.06)' };
-const cardTitle = { margin: '0 0 10px 0', color: '#222', fontSize: '17px', fontWeight: '600' };
-const row = { display: 'flex', justifyContent: 'space-between', margin: '4px 0', fontSize: '13px', color: '#777' };
+const page = pageStyle;
+const container = containerStyle('600px');
+const button = { display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', backgroundColor: '#ffffff', color: COLOR_PRIMARY, border: 'none', borderRadius: '16px', padding: '18px 24px', fontSize: '16px', fontWeight: '800', cursor: 'pointer', width: '100%', textAlign: 'center', textDecoration: 'none', boxSizing: 'border-box', boxShadow: SHADOW_SOFT, marginBottom: '28px' };
+const emptyState = { color: 'rgba(255,255,255,0.6)', textAlign: 'center', marginTop: '48px', fontSize: '15px' };
+const card = { ...cardStyle, padding: '20px 22px', marginBottom: '16px' };
+const cardTitle = { margin: '0 0 12px 0', color: COLOR_TEXTO, fontSize: '17px', fontWeight: '800' };
+const row = { display: 'flex', justifyContent: 'space-between', margin: '5px 0', fontSize: '13px', color: COLOR_CEMENTO };
+const resumen = { color: '#4a5568', fontSize: '13.5px', marginTop: '12px', lineHeight: '1.5', backgroundColor: '#f4f7fc', borderRadius: '12px', padding: '12px 14px' };
 
 function colorEstado(estado) {
-      const colores = { nueva: '#2C5AA0', en_analisis: '#B8860B', aprobada: '#2E8B57', en_diseno: '#7B4EA3', pendiente_revision: '#C77D00', finalizada: '#4C7A4C', rechazada: '#C0392B' };
-      return colores[estado] || '#777';
+  const colores = { pendiente: '#B8860B', aprobada: '#2E8B57', rechazada: '#C0392B' };
+  return colores[estado] || '#777';
 }
 
 function textoEstado(estado) {
-      const textos = { nueva: 'Nueva', en_analisis: 'En analisis', aprobada: 'Aprobada', en_diseno: 'En diseno', pendiente_revision: 'Pendiente de revision', finalizada: 'Finalizada', rechazada: 'Rechazada' };
-      return textos[estado] || estado;
+  const textos = { pendiente: 'Pendiente de revisión', aprobada: 'Aprobada', rechazada: 'Rechazada' };
+  return textos[estado] || estado;
 }
 
 function badgeStyle(estado) {
-      const color = colorEstado(estado);
-      return { display: 'inline-block', padding: '3px 10px', borderRadius: '20px', fontSize: '12px', fontWeight: '600', backgroundColor: color + '22', color: color, marginTop: '10px' };
+  const color = colorEstado(estado);
+  return { display: 'inline-block', padding: '4px 12px', borderRadius: '20px', fontSize: '12px', fontWeight: '700', backgroundColor: color + '1c', color, marginTop: '12px' };
 }
 
 export default async function Home() {
-      const result = await supabase.from('solicitudes').select('*').order('created_at', { ascending: false });
-      const solicitudes = result.data;
-      const error = result.error;
+  const result = await supabase.from('mejoras').select('*').order('created_at', { ascending: false }).limit(30);
+  const mejoras = result.data;
+  const error = result.error;
 
   return (
-          <main style={page}>
-            <div style={container}>
-              <img src="/logo-logbelts.png" alt="Logbelts" style={logoImg} />
-            <p style={subheader}>Mejoras de Catalogo</p>
+    <main style={page}>
+      <div style={container}>
+        <h1 style={heroTitleStyle}>Cataloplus</h1>
+        <p style={heroSubtitleStyle}>Mejoras del catálogo, propuestas por el equipo</p>
 
-        <a href="/nueva" style={button}>+ Nueva mejora</a>
+        <a href="/nueva" style={button}><IconMejora width={19} height={19} />Nueva mejora</a>
 
-    {error && <p style={{ color: '#c0392b', marginTop: '16px' }}>Error: {error.message}</p>}
+        {error && <p style={{ color: COLOR_ERROR, textAlign: 'center', fontFamily: FONT_TEXTO }}>Error: {error.message}</p>}
 
-    {solicitudes && solicitudes.length === 0 && (
-                  <p style={emptyState}>Todavia no hay solicitudes cargadas.</p>
-             )}
+        {mejoras && mejoras.length === 0 && (
+          <p style={emptyState}>Todavía no hay mejoras propuestas.</p>
+        )}
 
-    {solicitudes && solicitudes.map((s) => (
-                  <div key={s.id} style={card}>
-                    <h3 style={cardTitle}>{s.titulo}</h3>
-                <div style={row}><span>Producto</span><span>{s.producto || '-'}</span></div>
-                <div style={row}><span>Pagina</span><span>{s.pagina_catalogo || '-'}</span></div>
-                <div style={row}><span>Prioridad</span><span>{s.prioridad}</span></div>
-                <span style={badgeStyle(s.estado)}>{textoEstado(s.estado)}</span>
-        </div>
-            ))}
-</div>
+        {mejoras && mejoras.map((m) => (
+          <div key={m.id} style={card}>
+            <h3 style={cardTitle}>{m.referencia || m.producto_codigo || 'Mejora'}</h3>
+            <div style={row}><span>Vendedor</span><span>{m.vendedor}</span></div>
+            <div style={row}><span>Producto</span><span>{m.producto_codigo || '-'}</span></div>
+            <div style={row}><span>Página</span><span>{m.pagina_catalogo || '-'}</span></div>
+            <span style={badgeStyle(m.estado)}>{textoEstado(m.estado)}</span>
+            {m.ia_resumen && <p style={resumen}>{m.ia_resumen}</p>}
+          </div>
+        ))}
+      </div>
     </main>
   );
 }

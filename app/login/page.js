@@ -1,29 +1,34 @@
-'use client';
+import { supabase } from '../../lib/supabase';
+import { pageStyle, containerStyle, heroTitleStyle, heroSubtitleStyle, cardStyle, COLOR_TEXT_LIGHT_MUTED, FONT_TEXTO } from '../theme';
+import EntrarComoBoton from './EntrarComoBoton';
 
-const USUARIOS = ['Flor Lastra', 'Gaston', 'Flor Faubel', 'Alan Kieper'];
+export const dynamic = 'force-dynamic';
 
-const page = { backgroundColor: '#f6f8fb', minHeight: '100vh' };
-const card = { maxWidth: '380px', margin: '90px auto', padding: '36px 32px', backgroundColor: 'white', borderRadius: '16px', boxShadow: '0 4px 24px rgba(26,68,134,0.08)', fontFamily: 'system-ui, sans-serif' };
-const logoImg = { height: '46px', width: 'auto', display: 'block', margin: '0 auto 4px auto' };
-const subtitle = { color: '#888', textAlign: 'center', marginBottom: '28px', fontSize: '14px' };
-const userButton = { display: 'block', width: '100%', boxSizing: 'border-box', backgroundColor: '#f0f4fa', color: '#1A4486', border: 'none', borderRadius: '12px', padding: '16px', fontSize: '16px', fontWeight: '700', cursor: 'pointer', marginBottom: '12px', textAlign: 'center' };
+const page = { ...pageStyle, display: 'flex', alignItems: 'center', justifyContent: 'center' };
+const container = { ...containerStyle('420px'), padding: '20px' };
+const logoImg = { height: '38px', width: 'auto', display: 'block', margin: '0 auto 22px' };
+const card = { ...cardStyle };
+const grid = { display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '18px' };
+const emptyState = { color: '#999', textAlign: 'center', fontSize: '14px', fontFamily: FONT_TEXTO };
 
-function entrarComo(nombre) {
-  document.cookie = `logbelts_user=${encodeURIComponent(nombre)}; path=/; max-age=${60 * 60 * 24 * 400}`;
-  window.location.href = '/';
-}
+export default async function Login() {
+  const result = await supabase.from('vendedores').select('nombre').eq('activo', true).order('nombre');
+  const vendedores = result.data || [];
 
-export default function Login() {
   return (
     <main style={page}>
-      <div style={card}>
-        <img src="/logo-logbelts.png" alt="Logbelts" style={logoImg} />
-        <p style={subtitle}>¿Quién sos?</p>
-        {USUARIOS.map((nombre) => (
-          <button key={nombre} type="button" style={userButton} onClick={() => entrarComo(nombre)}>
-            {nombre}
-          </button>
-        ))}
+      <div style={container}>
+        <img src="/logo-blanco.png" alt="Logbelts" style={logoImg} />
+        <h1 style={heroTitleStyle}>Cataloplus</h1>
+        <p style={heroSubtitleStyle}>¿Quién sos?</p>
+        <div style={card}>
+          {vendedores.length === 0 && <p style={emptyState}>No hay vendedores cargados todavía. Pedile a un administrador que agregue uno en /admin/vendedores.</p>}
+          <div style={grid}>
+            {vendedores.map((v) => (
+              <EntrarComoBoton key={v.nombre} nombre={v.nombre} />
+            ))}
+          </div>
+        </div>
       </div>
     </main>
   );
