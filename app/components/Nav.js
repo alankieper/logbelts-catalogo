@@ -44,6 +44,18 @@ const catalogoLink = {
   whiteSpace: 'nowrap',
 };
 
+const adminLink = {
+  backgroundColor: '#f0f4fa',
+  color: '#1A4486',
+  border: '1px solid #dbe4f2',
+  borderRadius: '10px',
+  padding: '10px 16px',
+  fontSize: '13px',
+  fontWeight: '700',
+  textDecoration: 'none',
+  whiteSpace: 'nowrap',
+};
+
 const userRow = {
   display: 'flex',
   alignItems: 'center',
@@ -85,6 +97,9 @@ export default function Nav() {
         <img src="/logo-logbelts.png" alt="Logbelts" style={logoImg} />
       </a>
       <a href="/catalogo" style={catalogoLink}>CATÁLOGO DIGITAL</a>
+      {usuario === 'Alan Kieper' && (
+        <a href="/admin" style={adminLink}>PANEL ADMIN</a>
+      )}
       {usuario && (
         <span style={userRow}>
           Hola, {usuario} · <a href="/logout" style={logoutLink}>Salir</a>
