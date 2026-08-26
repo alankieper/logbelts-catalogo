@@ -1,13 +1,21 @@
 import { NextResponse } from 'next/server';
+import { esAdmin } from './lib/admins';
 
 export function middleware(request) {
-  const usuario = request.cookies.get('logbelts_user');
+  const usuarioCookie = request.cookies.get('logbelts_user');
+  const usuario = usuarioCookie ? decodeURIComponent(usuarioCookie.value) : null;
   const path = request.nextUrl.pathname;
   const esPublica = path.startsWith('/login') || path.startsWith('/auth');
 
   if (!usuario && !esPublica) {
     const url = request.nextUrl.clone();
     url.pathname = '/login';
+    return NextResponse.redirect(url);
+  }
+
+  if (path.startsWith('/admin') && !esAdmin(usuario)) {
+    const url = request.nextUrl.clone();
+    url.pathname = '/';
     return NextResponse.redirect(url);
   }
 

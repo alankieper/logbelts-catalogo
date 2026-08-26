@@ -1,7 +1,9 @@
 import { PDFDocument, rgb } from 'pdf-lib';
 import fontkit from '@pdf-lib/fontkit';
 import { NextResponse } from 'next/server';
+import { cookies } from 'next/headers';
 import { supabase } from '../../../../../lib/supabase';
+import { esAdmin } from '../../../../../lib/admins';
 import { readFile } from 'fs/promises';
 import path from 'path';
 
@@ -29,6 +31,12 @@ function envolverTexto(font, texto, tamanio, anchoMax) {
 
 export async function POST(request, { params }) {
   try {
+    const usuarioCookie = cookies().get('logbelts_user');
+    const usuario = usuarioCookie ? decodeURIComponent(usuarioCookie.value) : null;
+    if (!esAdmin(usuario)) {
+      return NextResponse.json({ ok: false, error: 'No tenés permiso para aplicar cambios al catálogo.' }, { status: 403 });
+    }
+
     const { id } = params;
     const body = await request.json();
     const { pagina, x, y, w, h, tipo, texto } = body;

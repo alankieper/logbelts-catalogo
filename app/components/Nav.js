@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { COLOR_TEXT_LIGHT_MUTED, FONT_TEXTO } from '../theme';
 import { IconCatalogo, IconAdmin, IconSalir } from './Icons';
+import { esAdmin } from '../../lib/admins';
 
 const navBar = {
   backgroundColor: 'rgba(7,21,49,0.72)',
@@ -106,10 +107,12 @@ export default function Nav() {
           <IconCatalogo width={15} height={15} />
           Catálogo
         </a>
-        <a href="/admin" style={pathname?.startsWith('/admin') ? pillLinkActive : pillLink}>
-          <IconAdmin width={15} height={15} />
-          Admin
-        </a>
+        {esAdmin(usuario) && (
+          <a href="/admin" style={pathname?.startsWith('/admin') ? pillLinkActive : pillLink}>
+            <IconAdmin width={15} height={15} />
+            Admin
+          </a>
+        )}
       </div>
       {usuario && (
         <span style={userRow}>
