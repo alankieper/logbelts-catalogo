@@ -1,5 +1,7 @@
+import { cookies } from 'next/headers';
 import { supabase } from '../lib/supabase';
-import { pageStyle, containerStyle, heroTitleStyle, heroSubtitleStyle, cardStyle, COLOR_PRIMARY, COLOR_TEXTO, COLOR_CEMENTO, COLOR_ERROR, SHADOW_SOFT, FONT_TEXTO } from './theme';
+import { esAdmin } from '../lib/admins';
+import { pageStyle, containerStyle, heroTitleStyle, heroSubtitleStyle, cardStyle, COLOR_PRIMARY, COLOR_TEXTO, COLOR_CEMENTO, SHADOW_SOFT } from './theme';
 import { IconMejora } from './components/Icons';
 
 export const dynamic = 'force-dynamic';
@@ -29,9 +31,13 @@ function badgeStyle(estado) {
 }
 
 export default async function Home() {
-  const result = await supabase.from('mejoras').select('*').order('created_at', { ascending: false }).limit(30);
-  const mejoras = result.data;
-  const error = result.error;
+  const usuarioCookie = cookies().get('logbelts_user');
+  const usuario = usuarioCookie ? decodeURIComponent(usuarioCookie.value) : null;
+  const admin = esAdmin(usuario);
+
+  const mejoras = admin
+    ? (await supabase.from('mejoras').select('*').order('created_at', { ascending: false }).limit(30)).data
+    : null;
 
   return (
     <main style={page}>
@@ -41,13 +47,15 @@ export default async function Home() {
 
         <a href="/nueva" style={button}><IconMejora width={19} height={19} />Nueva mejora</a>
 
-        {error && <p style={{ color: COLOR_ERROR, textAlign: 'center', fontFamily: FONT_TEXTO }}>Error: {error.message}</p>}
+        {!admin && (
+          <p style={emptyState}>Cargá tu propuesta y el equipo de Logbelts la va a revisar.</p>
+        )}
 
-        {mejoras && mejoras.length === 0 && (
+        {admin && mejoras && mejoras.length === 0 && (
           <p style={emptyState}>Todavía no hay mejoras propuestas.</p>
         )}
 
-        {mejoras && mejoras.map((m) => (
+        {admin && mejoras && mejoras.map((m) => (
           <div key={m.id} style={card}>
             <h3 style={cardTitle}>{m.referencia || m.producto_codigo || 'Mejora'}</h3>
             <div style={row}><span>Vendedor</span><span>{m.vendedor}</span></div>

@@ -5,7 +5,7 @@ export function middleware(request) {
   const usuarioCookie = request.cookies.get('logbelts_user');
   const usuario = usuarioCookie ? decodeURIComponent(usuarioCookie.value) : null;
   const path = request.nextUrl.pathname;
-  const esPublica = path.startsWith('/login') || path.startsWith('/auth');
+  const esPublica = path.startsWith('/login') || path.startsWith('/auth') || path.startsWith('/api/admin-login');
 
   if (!usuario && !esPublica) {
     const url = request.nextUrl.clone();

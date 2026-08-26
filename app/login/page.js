@@ -1,6 +1,7 @@
 import { supabase } from '../../lib/supabase';
 import { pageStyle, containerStyle, heroTitleStyle, heroSubtitleStyle, cardStyle, COLOR_TEXT_LIGHT_MUTED, FONT_TEXTO } from '../theme';
 import EntrarComoBoton from './EntrarComoBoton';
+import AdminLogin from './AdminLogin';
 
 export const dynamic = 'force-dynamic';
 
@@ -28,6 +29,7 @@ export default async function Login() {
               <EntrarComoBoton key={v.nombre} nombre={v.nombre} />
             ))}
           </div>
+          <AdminLogin />
         </div>
       </div>
     </main>
