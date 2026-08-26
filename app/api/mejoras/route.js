@@ -67,6 +67,9 @@ export async function POST(request) {
     if (!vendedor) {
       return NextResponse.json({ ok: false, error: 'Falta identificar al vendedor.' }, { status: 400 });
     }
+    if (!productoCodigo || !pagina) {
+      return NextResponse.json({ ok: false, error: 'Falta el código de producto o la página del catálogo.' }, { status: 400 });
+    }
     if (!instruccion) {
       return NextResponse.json({ ok: false, error: 'Falta la instrucción del cambio.' }, { status: 400 });
     }

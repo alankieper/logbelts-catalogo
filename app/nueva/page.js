@@ -33,6 +33,10 @@ export default function NuevaMejora() {
 
   async function enviar(e) {
     e.preventDefault();
+    if (!productoCodigo.trim() || !pagina.trim()) {
+      setError('Completá el código de producto y la página del catálogo.');
+      return;
+    }
     if (!instruccion.trim()) {
       setError('Contanos qué querés cambiar.');
       return;
@@ -85,11 +89,11 @@ export default function NuevaMejora() {
 
         <div style={card}>
           <form onSubmit={enviar}>
-            <label style={label}>Código de producto</label>
-            <input value={productoCodigo} onChange={(e) => setProductoCodigo(e.target.value)} style={inputStyle} placeholder="Ej: 383748" />
+            <label style={label}>Código de producto *</label>
+            <input value={productoCodigo} onChange={(e) => setProductoCodigo(e.target.value)} required style={inputStyle} placeholder="Ej: 383748" />
 
-            <label style={label}>Página del catálogo</label>
-            <input value={pagina} onChange={(e) => setPagina(e.target.value)} style={inputStyle} placeholder="Ej: 42" />
+            <label style={label}>Página del catálogo *</label>
+            <input value={pagina} onChange={(e) => setPagina(e.target.value)} required style={inputStyle} placeholder="Ej: 42" />
 
             <label style={label}>Referencia</label>
             <input value={referencia} onChange={(e) => setReferencia(e.target.value)} style={inputStyle} placeholder="Ej: Cadena 3/8" />
