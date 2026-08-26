@@ -1,6 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 const navBar = {
   backgroundColor: 'white',
@@ -9,6 +10,8 @@ const navBar = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
+  flexWrap: 'wrap',
+  rowGap: '8px',
   fontFamily: 'system-ui, sans-serif',
   boxShadow: '0 2px 10px rgba(26,68,134,0.05)',
   position: 'sticky',
@@ -41,8 +44,35 @@ const catalogoLink = {
   whiteSpace: 'nowrap',
 };
 
+const userRow = {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '8px',
+  fontSize: '13px',
+  color: '#8a93a3',
+  width: '100%',
+  justifyContent: 'flex-end',
+};
+
+const logoutLink = {
+  color: '#c0392b',
+  textDecoration: 'none',
+  fontWeight: '600',
+};
+
+function obtenerUsuarioCookie() {
+  if (typeof document === 'undefined') return null;
+  const match = document.cookie.match(/(?:^|; )logbelts_user=([^;]*)/);
+  return match ? decodeURIComponent(match[1]) : null;
+}
+
 export default function Nav() {
   const pathname = usePathname();
+  const [usuario, setUsuario] = useState(null);
+
+  useEffect(() => {
+    setUsuario(obtenerUsuarioCookie());
+  }, [pathname]);
 
   // No mostrar el nav en /login ni en /auth (mismas rutas publicas que middleware.js)
   if (pathname && (pathname.startsWith('/login') || pathname.startsWith('/auth'))) {
@@ -55,6 +85,11 @@ export default function Nav() {
         <img src="/logo-logbelts.png" alt="Logbelts" style={logoImg} />
       </a>
       <a href="/catalogo" style={catalogoLink}>CATÁLOGO DIGITAL</a>
+      {usuario && (
+        <span style={userRow}>
+          Hola, {usuario} · <a href="/logout" style={logoutLink}>Salir</a>
+        </span>
+      )}
     </nav>
   );
 }

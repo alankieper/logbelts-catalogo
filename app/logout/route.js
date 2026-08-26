@@ -1,8 +1,8 @@
-import { createClient } from '../../lib/supabase/server';
-import { redirect } from 'next/navigation';
+import { NextResponse } from 'next/server';
 
-export async function GET() {
-    const supabase = await createClient();
-    await supabase.auth.signOut();
-    redirect('/login');
-  }
+export async function GET(request) {
+  const url = new URL('/login', request.url);
+  const response = NextResponse.redirect(url);
+  response.cookies.set('logbelts_user', '', { path: '/', maxAge: 0 });
+  return response;
+}
