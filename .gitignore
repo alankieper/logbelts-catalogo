@@ -23,3 +23,6 @@ npm-debug.log*
 
 .vercel
 .env*
+
+# supabase CLI local cache
+/supabase/.temp
