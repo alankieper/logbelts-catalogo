@@ -4,8 +4,8 @@ import { getFamilias } from '../../../../lib/catalogo';
 
 export const dynamic = 'force-dynamic';
 
-export default function NuevoProducto({ searchParams }) {
-  const familias = getFamilias().map((f) => f.nombre);
+export default async function NuevoProducto({ searchParams }) {
+  const familias = (await getFamilias()).map((f) => f.nombre);
   const err = searchParams?.err;
 
   return (

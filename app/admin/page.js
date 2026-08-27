@@ -3,8 +3,8 @@ import { estadisticas } from '../../lib/catalogoStore';
 
 export const dynamic = 'force-dynamic';
 
-export default function AdminHome() {
-  const s = estadisticas();
+export default async function AdminHome() {
+  const s = await estadisticas();
   const fams = Object.entries(s.porFamilia)
     .filter(([k]) => k !== '(sin)')
     .sort((a, b) => b[1] - a[1]);

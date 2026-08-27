@@ -8,6 +8,12 @@ import { cookies } from 'next/headers';
 import { dirImport, registrarRun, actualizarRun, procesarPdf } from '../../../lib/importador';
 
 export async function subirCatalogo(formData) {
+  if (process.env.VERCEL) {
+    redirect(
+      '/admin/importar?err=' +
+        encodeURIComponent('El análisis de PDF corre por ahora sólo en local (npm run dev). Online se agrega más adelante.')
+    );
+  }
   const file = formData.get('pdf');
   if (!file || typeof file === 'string' || !file.size) {
     redirect('/admin/importar?err=' + encodeURIComponent('Elegí un archivo PDF.'));

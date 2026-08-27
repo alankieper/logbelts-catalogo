@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic';
 
 const PAGE = 40;
 
-export default function ListaProductos({ searchParams }) {
+export default async function ListaProductos({ searchParams }) {
   const q = (searchParams?.q || '').toString().trim().toLowerCase();
   const familia = (searchParams?.familia || '').toString();
   const soloDeriv = searchParams?.deriv === '1';
@@ -14,7 +14,7 @@ export default function ListaProductos({ searchParams }) {
   const soloOcultos = searchParams?.ocultos === '1';
   const pagina = Math.max(1, parseInt(searchParams?.p || '1', 10) || 1);
 
-  let lista = leerTodos();
+  let lista = await leerTodos();
   if (familia) lista = lista.filter((p) => p.familia === familia);
   if (soloDeriv) lista = lista.filter((p) => p.fuente_desc && p.fuente_desc.startsWith('derivada'));
   if (soloSinFoto) lista = lista.filter((p) => !p.foto);

@@ -33,6 +33,9 @@ const productos = JSON.parse(fs.readFileSync(path.join('data', 'productos.json')
 
 const filas = productos.map((p) => ({
   codigo: p.codigo,
+  clave_valida: p.clave_valida ?? null,
+  fuente_nombre: p.fuente_nombre ?? null,
+  descontinuado: !!p.descontinuado,
   nombre: p.nombre,
   descripcion: p.descripcion,
   fuente_desc: p.fuente_desc || null,
@@ -80,6 +83,19 @@ async function run() {
     if (error) throw error;
     process.stdout.write(`  ${Math.min(i + 300, filas.length)}/${filas.length}\r`);
   }
+
+  // despieces curados
+  try {
+    const desp = JSON.parse(fs.readFileSync(path.join('data', 'despieces.json'), 'utf8'));
+    if (desp.length) {
+      const { error } = await sb.from('cat_despieces').upsert(desp, { onConflict: 'id' });
+      if (error) throw error;
+      console.log('\nDespieces:', desp.length);
+    }
+  } catch (e) {
+    console.log('\n(despieces: ' + (e.message || e) + ')');
+  }
+
   console.log('\nListo.');
 }
 

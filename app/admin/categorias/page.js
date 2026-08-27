@@ -4,8 +4,8 @@ import { leerTodos } from '../../../lib/catalogoStore';
 
 export const dynamic = 'force-dynamic';
 
-export default function Categorias() {
-  const lista = leerTodos();
+export default async function Categorias() {
+  const lista = await leerTodos();
   const fams = new Map();
   for (const p of lista) {
     const f = p.familia || '(sin familia)';

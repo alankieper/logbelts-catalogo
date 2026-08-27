@@ -1,18 +1,20 @@
 import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../components/CatalogoHeader';
 import ProductoCard from '../../components/ProductoCard';
-import { getPorMarca, getFamilia } from '../../../lib/catalogo';
+import { getPorMarca, getFamilias } from '../../../lib/catalogo';
 
 export const dynamic = 'force-dynamic';
 
-export function generateMetadata({ params }) {
-  const { nombre } = getPorMarca(params.marca);
+export async function generateMetadata({ params }) {
+  const { nombre } = await getPorMarca(params.marca);
   return { title: `Todo para ${nombre} — Catálogo Logbelts` };
 }
 
-export default function MarcaPage({ params }) {
-  const { nombre, productos } = getPorMarca(params.marca);
+export default async function MarcaPage({ params }) {
+  const { nombre, productos } = await getPorMarca(params.marca);
   if (!productos.length) notFound();
+  const familias = await getFamilias();
+  const nombreFam = (slug) => familias.find((f) => f.slug === slug)?.nombre || slug;
 
   const porFam = {};
   for (const p of productos) (porFam[p.familiaSlug] = porFam[p.familiaSlug] || []).push(p);
@@ -33,11 +35,10 @@ export default function MarcaPage({ params }) {
           </p>
 
           {Object.entries(porFam).map(([fslug, arr]) => {
-            const fam = getFamilia(fslug);
             return (
               <div key={fslug} style={{ marginBottom: 34 }}>
                 <h2 className="page" style={{ fontSize: '1.15rem', margin: '10px 0 12px' }}>
-                  {fam ? fam.nombre : fslug}
+                  {nombreFam(fslug)}
                 </h2>
                 <div className="pgrid">
                   {arr

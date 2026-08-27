@@ -6,8 +6,8 @@ import { despiecesDeProducto } from '../../../lib/despieces';
 
 export const dynamic = 'force-dynamic';
 
-export function generateMetadata({ params }) {
-  const p = getProducto(decodeURIComponent(params.codigo));
+export async function generateMetadata({ params }) {
+  const p = await getProducto(decodeURIComponent(params.codigo));
   if (!p) return { title: 'Producto no encontrado — Catálogo Logbelts' };
   return {
     title: `${p.codigo} · ${p.nombre || p.clave_producto || 'Producto'} — Catálogo Logbelts`,
@@ -15,16 +15,16 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function ProductoPage({ params }) {
+export default async function ProductoPage({ params }) {
   const codigo = decodeURIComponent(params.codigo);
-  const p = getProducto(codigo);
+  const p = await getProducto(codigo);
   if (!p) notFound();
 
-  const fam = getFamilia(p.familiaSlug);
+  const fam = await getFamilia(p.familiaSlug);
   const sub = fam?.subcats.find((s) => s.slug === p.subSlug);
-  const rel = getRelacionados(codigo, 4);
-  const { prev, next } = getVecinos(codigo);
-  const desp = despiecesDeProducto(codigo, p.compatibilidad);
+  const rel = await getRelacionados(codigo, 4);
+  const { prev, next } = await getVecinos(codigo);
+  const desp = await despiecesDeProducto(codigo, p.compatibilidad);
 
   const derivada = p.fuente_desc && p.fuente_desc.startsWith('derivada');
   const marcas = new Set([...(p.marcas || [])]);

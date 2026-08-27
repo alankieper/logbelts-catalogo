@@ -17,22 +17,22 @@ export async function guardarProducto(formData) {
     ubicacion: (formData.get('ubicacion') || '').trim() || null,
     medidas: formData.get('medidas') || '',
   };
-  const r = store.actualizar(codigo, cambios);
+  const r = await store.actualizar(codigo, cambios);
   revalidatePath('/', 'layout');
   redirect(`/admin/productos/${encodeURIComponent(codigo)}?ok=1`);
 }
 
 export async function alternarOculto(formData) {
   const codigo = formData.get('codigo');
-  const p = store.obtener(codigo);
-  store.setOculto(codigo, !p?.oculto);
+  const p = await store.obtener(codigo);
+  await store.setOculto(codigo, !p?.oculto);
   revalidatePath('/', 'layout');
   revalidatePath('/admin/productos');
 }
 
 export async function crearProducto(formData) {
   const datos = Object.fromEntries(formData.entries());
-  const r = store.crear(datos);
+  const r = await store.crear(datos);
   if (!r.ok) {
     redirect('/admin/productos/nuevo?err=' + encodeURIComponent(r.error));
   }
@@ -46,7 +46,7 @@ export async function renombrarSub(formData) {
   const nuevo = (formData.get('nuevo') || '').trim();
   const familiaNueva = (formData.get('familiaNueva') || '').trim() || familia;
   if (nuevo || familiaNueva !== familia) {
-    store.moverSubcategoria(familia, viejo, familiaNueva, nuevo || viejo);
+    await store.moverSubcategoria(familia, viejo, familiaNueva, nuevo || viejo);
   }
   revalidatePath('/', 'layout');
   revalidatePath('/admin/categorias');
@@ -55,7 +55,7 @@ export async function renombrarSub(formData) {
 export async function renombrarFam(formData) {
   const viejo = formData.get('viejo');
   const nuevo = (formData.get('nuevo') || '').trim();
-  if (nuevo && nuevo !== viejo) store.renombrarFamilia(viejo, nuevo);
+  if (nuevo && nuevo !== viejo) await store.renombrarFamilia(viejo, nuevo);
   revalidatePath('/', 'layout');
   revalidatePath('/admin/categorias');
 }

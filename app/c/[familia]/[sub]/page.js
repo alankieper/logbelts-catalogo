@@ -5,13 +5,13 @@ import { getFamilia, getProductosDeSubcategoria, slugify } from '../../../../lib
 
 export const dynamic = 'force-dynamic';
 
-export default function SubcategoriaPage({ params, searchParams }) {
-  const fam = getFamilia(params.familia);
+export default async function SubcategoriaPage({ params, searchParams }) {
+  const fam = await getFamilia(params.familia);
   if (!fam) notFound();
   const sub = fam.subcats.find((s) => s.slug === params.sub);
   if (!sub) notFound();
 
-  const todos = getProductosDeSubcategoria(fam.slug, sub.slug);
+  const todos = await getProductosDeSubcategoria(fam.slug, sub.slug);
 
   // marcas disponibles en esta subcategoría (con conteo)
   const marcaCount = {};

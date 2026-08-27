@@ -13,9 +13,9 @@ const OFICIAL = {
   Stihl: 'https://www.stihlusa.com/products/',
 };
 
-export default function ManualesPage({ searchParams }) {
+export default async function ManualesPage({ searchParams }) {
   const grupos = catalogoModelos();
-  const curados = leerCurados().filter((c) => c.publico);
+  const curados = (await leerCurados()).filter((c) => c.publico);
   const marcaF = searchParams?.marca || '';
   const q = (searchParams?.q || '').toLowerCase().trim();
 

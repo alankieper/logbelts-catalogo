@@ -9,9 +9,9 @@ export function generateMetadata({ searchParams }) {
   return { title: q ? `“${q}” — Catálogo Logbelts` : 'Búsqueda — Catálogo Logbelts' };
 }
 
-export default function BuscarPage({ searchParams }) {
+export default async function BuscarPage({ searchParams }) {
   const q = (searchParams?.q || '').toString().trim();
-  const res = q ? buscar(q, 300) : [];
+  const res = q ? await buscar(q, 300) : [];
 
   return (
     <>

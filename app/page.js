@@ -2,11 +2,11 @@ import CatalogoHeader from './components/CatalogoHeader';
 import Icono from './components/Icono';
 import { getFamilias, getCatalogoResumen } from '../lib/catalogo';
 
-export const dynamic = 'force-static';
+export const dynamic = 'force-dynamic';
 
-export default function Home() {
-  const familias = getFamilias();
-  const resumen = getCatalogoResumen();
+export default async function Home() {
+  const familias = await getFamilias();
+  const resumen = await getCatalogoResumen();
 
   return (
     <>

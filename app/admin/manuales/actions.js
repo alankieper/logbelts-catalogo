@@ -4,12 +4,11 @@ import fs from 'fs';
 import path from 'path';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
-import { leerCurados, guardarCurados } from '../../../lib/despieces';
+import { guardarCurado, borrarCurado } from '../../../lib/despieces';
 
 const DEST = path.join(process.cwd(), 'public', 'despieces');
 
 export async function guardarDespiece(formData) {
-  const lista = leerCurados();
   const id = formData.get('id') || 'd-' + Date.now();
   const marca = (formData.get('marca') || '').trim();
   const modelo = (formData.get('modelo') || '').trim();
@@ -26,6 +25,9 @@ export async function guardarDespiece(formData) {
   let archivo = formData.get('archivo_actual') || null;
   const file = formData.get('archivo');
   if (file && typeof file !== 'string' && file.size) {
+    if (process.env.VERCEL) {
+      redirect('/admin/manuales?err=' + encodeURIComponent('Subir PDF propio corre sólo en local por ahora. Online: usá un enlace.'));
+    }
     fs.mkdirSync(DEST, { recursive: true });
     const safe = `${marca}-${modelo}-${Date.now()}.pdf`.replace(/[^a-zA-Z0-9.\-]/g, '_');
     fs.writeFileSync(path.join(DEST, safe), Buffer.from(await file.arrayBuffer()));
@@ -34,10 +36,7 @@ export async function guardarDespiece(formData) {
   }
 
   const entry = { id, marca, modelo, tipo, titulo, url: url || null, archivo, fuente: fuente || 'Logbelts', publico };
-  const i = lista.findIndex((x) => x.id === id);
-  if (i >= 0) lista[i] = entry;
-  else lista.push(entry);
-  guardarCurados(lista);
+  await guardarCurado(entry);
 
   revalidatePath('/', 'layout');
   redirect('/admin/manuales?ok=1');
@@ -45,8 +44,7 @@ export async function guardarDespiece(formData) {
 
 export async function borrarDespiece(formData) {
   const id = formData.get('id');
-  const lista = leerCurados().filter((x) => x.id !== id);
-  guardarCurados(lista);
+  await borrarCurado(id);
   revalidatePath('/', 'layout');
   redirect('/admin/manuales');
 }

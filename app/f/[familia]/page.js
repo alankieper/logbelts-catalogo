@@ -1,14 +1,12 @@
 import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../components/CatalogoHeader';
 import Icono from '../../components/Icono';
-import { getFamilias, getFamilia } from '../../../lib/catalogo';
+import { getFamilia } from '../../../lib/catalogo';
 
-export function generateStaticParams() {
-  return getFamilias().map((f) => ({ familia: f.slug }));
-}
+export const dynamic = 'force-dynamic';
 
-export default function FamiliaPage({ params }) {
-  const fam = getFamilia(params.familia);
+export default async function FamiliaPage({ params }) {
+  const fam = await getFamilia(params.familia);
   if (!fam) notFound();
 
   return (

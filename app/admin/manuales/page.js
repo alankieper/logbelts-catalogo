@@ -5,8 +5,8 @@ import { leerCurados, catalogoModelos } from '../../../lib/despieces';
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
 
-export default function AdminManuales({ searchParams }) {
-  const lista = leerCurados();
+export default async function AdminManuales({ searchParams }) {
+  const lista = await leerCurados();
   const marcas = catalogoModelos().map((g) => g.marca);
   const ok = searchParams?.ok === '1';
   const err = searchParams?.err;

@@ -6,11 +6,11 @@ import { getFamilias } from '../../../../lib/catalogo';
 
 export const dynamic = 'force-dynamic';
 
-export default function EditarProducto({ params, searchParams }) {
+export default async function EditarProducto({ params, searchParams }) {
   const codigo = decodeURIComponent(params.codigo);
-  const p = obtener(codigo);
+  const p = await obtener(codigo);
   if (!p) notFound();
-  const familias = getFamilias().map((f) => f.nombre);
+  const familias = (await getFamilias()).map((f) => f.nombre);
   const ok = searchParams?.ok === '1';
 
   return (
