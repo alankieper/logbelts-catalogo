@@ -29,3 +29,4 @@ npm-debug.log*
 
 # fotos servidas localmente (fuente: data/fotos)
 /public/fotos/
+/data/import/
