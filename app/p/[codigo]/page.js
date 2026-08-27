@@ -68,7 +68,8 @@ export default function ProductoPage({ params }) {
                 <div className="code">Código Logbelts · {p.codigo}</div>
                 <h1>{p.nombre || p.clave_producto || 'Producto'}</h1>
                 <div className="badges">
-                  {p.estado === 'completo' ? <span className="b-ok">Datos del PDF</span> : null}
+                  {p.fuente_desc === 'editado' || p.fuente_desc === 'manual' ? <span className="b-ok">Revisado</span> : null}
+                  {p.fuente_desc === 'texto del PDF' ? <span className="b-ok">Datos del PDF</span> : null}
                   {derivada ? <span className="b-warn">Descripción a confirmar</span> : null}
                   {p.flags && p.flags.includes('NUEVO') ? <span className="b-wash">Nuevo</span> : null}
                   {p.estado === 'sin_codigo' ? <span className="b-wash">Código a asignar</span> : null}

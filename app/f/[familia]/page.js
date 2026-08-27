@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../components/CatalogoHeader';
+import Icono from '../../components/Icono';
 import { getFamilias, getFamilia } from '../../../lib/catalogo';
 
 export function generateStaticParams() {
@@ -26,8 +27,11 @@ export default function FamiliaPage({ params }) {
           <div className="tiles">
             {fam.subcats.map((s) => (
               <a className="tile" key={s.slug} href={`/c/${fam.slug}/${s.slug}`}>
-                <h3>{s.nombre}</h3>
-                <span className="count">{s.count.toLocaleString('es-AR')} productos</span>
+                <span className="ic"><Icono nombre={s.nombre} size={22} /></span>
+                <span className="txt">
+                  <h3>{s.nombre}</h3>
+                  <span className="count">{s.count.toLocaleString('es-AR')} productos</span>
+                </span>
               </a>
             ))}
           </div>

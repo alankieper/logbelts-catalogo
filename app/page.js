@@ -1,5 +1,5 @@
 import CatalogoHeader from './components/CatalogoHeader';
-import ProductoCard from './components/ProductoCard';
+import Icono from './components/Icono';
 import { getFamilias, getCatalogoResumen } from '../lib/catalogo';
 
 export const dynamic = 'force-static';
@@ -23,8 +23,11 @@ export default function Home() {
           <div className="tiles">
             {familias.map((f) => (
               <a className="tile" key={f.slug} href={`/f/${f.slug}`}>
-                <h3>{f.nombre}</h3>
-                <span className="count">{f.count.toLocaleString('es-AR')} productos</span>
+                <span className="ic"><Icono nombre={f.nombre} size={24} /></span>
+                <span className="txt">
+                  <h3>{f.nombre}</h3>
+                  <span className="count">{f.count.toLocaleString('es-AR')} productos</span>
+                </span>
               </a>
             ))}
           </div>
