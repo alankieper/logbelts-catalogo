@@ -1,71 +1,44 @@
-import { cookies } from 'next/headers';
-import { supabase } from '../lib/supabase';
-import { esAdmin } from '../lib/admins';
-import { pageStyle, containerStyle, heroTitleStyle, heroSubtitleStyle, cardStyle, COLOR_PRIMARY, COLOR_TEXTO, COLOR_CEMENTO, SHADOW_SOFT } from './theme';
-import { IconMejora } from './components/Icons';
+import CatalogoHeader from './components/CatalogoHeader';
+import ProductoCard from './components/ProductoCard';
+import { getFamilias, getCatalogoResumen } from '../lib/catalogo';
 
-export const dynamic = 'force-dynamic';
+export const dynamic = 'force-static';
 
-const page = pageStyle;
-const container = containerStyle('600px');
-const button = { display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', backgroundColor: '#ffffff', color: COLOR_PRIMARY, border: 'none', borderRadius: '16px', padding: '18px 24px', fontSize: '16px', fontWeight: '800', cursor: 'pointer', width: '100%', textAlign: 'center', textDecoration: 'none', boxSizing: 'border-box', boxShadow: SHADOW_SOFT, marginBottom: '28px' };
-const emptyState = { color: 'rgba(255,255,255,0.6)', textAlign: 'center', marginTop: '48px', fontSize: '15px' };
-const card = { ...cardStyle, padding: '20px 22px', marginBottom: '16px' };
-const cardTitle = { margin: '0 0 12px 0', color: COLOR_TEXTO, fontSize: '17px', fontWeight: '800' };
-const row = { display: 'flex', justifyContent: 'space-between', margin: '5px 0', fontSize: '13px', color: COLOR_CEMENTO };
-const resumen = { color: '#4a5568', fontSize: '13.5px', marginTop: '12px', lineHeight: '1.5', backgroundColor: '#f4f7fc', borderRadius: '12px', padding: '12px 14px' };
-
-function colorEstado(estado) {
-  const colores = { pendiente: '#B8860B', aprobada: '#2E8B57', rechazada: '#C0392B' };
-  return colores[estado] || '#777';
-}
-
-function textoEstado(estado) {
-  const textos = { pendiente: 'Pendiente de revisión', aprobada: 'Aprobada', rechazada: 'Rechazada' };
-  return textos[estado] || estado;
-}
-
-function badgeStyle(estado) {
-  const color = colorEstado(estado);
-  return { display: 'inline-block', padding: '4px 12px', borderRadius: '20px', fontSize: '12px', fontWeight: '700', backgroundColor: color + '1c', color, marginTop: '12px' };
-}
-
-export default async function Home() {
-  const usuarioCookie = cookies().get('logbelts_user');
-  const usuario = usuarioCookie ? decodeURIComponent(usuarioCookie.value) : null;
-  const admin = esAdmin(usuario);
-
-  const mejoras = admin
-    ? (await supabase.from('mejoras').select('*').order('created_at', { ascending: false }).limit(30)).data
-    : null;
+export default function Home() {
+  const familias = getFamilias();
+  const resumen = getCatalogoResumen();
 
   return (
-    <main style={page}>
-      <div style={container}>
-        <h1 style={heroTitleStyle}>Cataloplus</h1>
-        <p style={heroSubtitleStyle}>Mejoras del catálogo, propuestas por el equipo</p>
+    <>
+      <CatalogoHeader />
+      <main className="cat">
+        <div className="wrap">
+          <p className="eyebrow">Catálogo de repuestos</p>
+          <h1 className="page">Repuestos para bosque, jardín e industria</h1>
+          <p className="lead">
+            {resumen.total.toLocaleString('es-AR')} productos. Buscá por código Logbelts, por el
+            código original del fabricante, o por marca y modelo de máquina.
+          </p>
 
-        <a href="/nueva" style={button}><IconMejora width={19} height={19} />Nueva mejora</a>
-
-        {!admin && (
-          <p style={emptyState}>Cargá tu propuesta y el equipo de Logbelts la va a revisar.</p>
-        )}
-
-        {admin && mejoras && mejoras.length === 0 && (
-          <p style={emptyState}>Todavía no hay mejoras propuestas.</p>
-        )}
-
-        {admin && mejoras && mejoras.map((m) => (
-          <div key={m.id} style={card}>
-            <h3 style={cardTitle}>{m.referencia || m.producto_codigo || 'Mejora'}</h3>
-            <div style={row}><span>Vendedor</span><span>{m.vendedor}</span></div>
-            <div style={row}><span>Producto</span><span>{m.producto_codigo || '-'}</span></div>
-            <div style={row}><span>Página</span><span>{m.pagina_catalogo || '-'}</span></div>
-            <span style={badgeStyle(m.estado)}>{textoEstado(m.estado)}</span>
-            {m.ia_resumen && <p style={resumen}>{m.ia_resumen}</p>}
+          <div className="tiles">
+            {familias.map((f) => (
+              <a className="tile" key={f.slug} href={`/f/${f.slug}`}>
+                <h3>{f.nombre}</h3>
+                <span className="count">{f.count.toLocaleString('es-AR')} productos</span>
+              </a>
+            ))}
           </div>
-        ))}
-      </div>
-    </main>
+
+          <p className="note">
+            <b>Versión de trabajo.</b> Los datos salen de la primera extracción del catálogo
+            2025/26. Algunas descripciones son genéricas (dicen “a confirmar”) y varias fotos
+            están por revisar. Se corrigen desde administración.
+          </p>
+        </div>
+      </main>
+      <footer className="cat">
+        <div className="wrap">Logbelts · Catálogo · versión de trabajo</div>
+      </footer>
+    </>
   );
 }

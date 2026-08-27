@@ -1,0 +1,33 @@
+FUENTES DE MARCA — Dunk + Aktiv Grotesk
+========================================
+
+Este build NO incluye los archivos de estas fuentes porque son COMERCIALES
+(en el sitio actual de LOGBELTS están cargadas como versión "trial").
+
+Fallbacks libres usados mientras tanto (desde Google Fonts):
+  - Dunk           -> Anton     (título condensado pesado, mayúsculas)
+  - Aktiv Grotesk  -> Archivo   (grotesca neutra para texto e interfaz)
+
+------------------------------------------------------------
+PARA USAR LAS FUENTES REALES
+------------------------------------------------------------
+
+OPCIÓN A — Archivos con licencia propia (.woff2)
+  1. Conseguí las licencias web de:
+       · Dunk           (HVD Fonts / distribuidores)
+       · Aktiv Grotesk  (Dalton Maag)
+  2. Copiá acá los .woff2, por ejemplo:
+       dunk-bold-italic.woff2
+       aktiv-grotesk-regular.woff2
+       aktiv-grotesk-bold.woff2
+  3. Descomentá el bloque @font-face que está al comienzo de
+     assets/css/styles.css (ya trae los nombres y rutas correctos).
+  El CSS ya pide "Dunk" y "Aktiv Grotesk" primero: al aparecer, se usan solas.
+
+OPCIÓN B — Adobe Fonts (Typekit)
+  1. Creá un kit web en Adobe Fonts con Aktiv Grotesk (y Dunk si está disponible).
+  2. Agregá en el <head> de cada .html:
+       <link rel="stylesheet" href="https://use.typekit.net/TU_KIT.css">
+  3. Verificá que los family names del kit coincidan con
+     "aktiv-grotesk" / "dunk"; si difieren, ajustá --font-head / --font-body
+     en assets/css/styles.css.

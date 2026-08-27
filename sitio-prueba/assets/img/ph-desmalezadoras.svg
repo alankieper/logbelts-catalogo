@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="DESMALEZADORAS">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b3f7a"/><stop offset="1" stop-color="#0a66c7"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity="0.12">
+    <circle cx="400" cy="300" r="120"/><circle cx="400" cy="300" r="170"/>
+    <path d="M400 130v-40M400 510v-40M570 300h40M190 300h40M520 180l28-28M252 448l-28 28M520 420l28 28M252 152l-28-28"/>
+  </g>
+  <path d="M340 250 L470 250 L470 300 L410 300 L410 360 L340 360 Z" fill="#ffffff" opacity="0.14"/>
+  <rect x="0" y="470" width="800" height="130" fill="#062e5c" opacity="0.55"/>
+  <text x="42" y="527" font-family="Anton, Arial Narrow, sans-serif" font-size="34" fill="#ffffff" letter-spacing="0.5">DESMALEZADORAS</text>
+  <text x="42" y="560" font-family="Arial, sans-serif" font-size="15" fill="#b9d4f2">Imagen de referencia · reemplazar por foto real</text>
+</svg>

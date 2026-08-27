@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="56" viewBox="0 0 260 56" role="img" aria-label="Logbelts">
+  <!-- Marca (flecha estilizada) — recreación web del isotipo LOGBELTS -->
+  <path d="M2 5 L48 20 L17 41 L25 21 Z" fill="#0a66c7"/>
+  <!-- Wordmark -->
+  <text x="55" y="39" font-family="'Aktiv Grotesk','Archivo','Inter',Arial,sans-serif" font-size="35" font-weight="700" letter-spacing="-0.5" fill="#0a66c7">Logbelts</text>
+  <!-- Tagline -->
+  <text x="57" y="51" font-family="'Archivo','Inter',Arial,sans-serif" font-size="7.5" font-weight="600" letter-spacing="3" fill="#3f7fd0">PREMIUM QUALITY · PROFESSIONAL</text>
+</svg>

@@ -26,3 +26,6 @@ npm-debug.log*
 
 # supabase CLI local cache
 /supabase/.temp
+
+# fotos servidas localmente (fuente: data/fotos)
+/public/fotos/
