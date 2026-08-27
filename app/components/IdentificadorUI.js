@@ -129,14 +129,20 @@ export default function IdentificadorUI() {
                   </a>
                   <div className="idinfo">
                     <div className="idconf">
-                      <span
-                        className="bar"
-                        style={{
-                          width: Math.max(6, Math.min(100, r.confianza)) + '%',
-                          background: r.confianza >= 60 ? 'var(--ok)' : r.confianza >= 30 ? 'var(--warn)' : 'var(--rule-strong)',
-                        }}
-                      />
-                      <b>{r.confianza}%</b>
+                      {r.confianza == null ? (
+                        <b style={{ color: 'var(--ink-faint)' }}>posible coincidencia</b>
+                      ) : (
+                        <>
+                          <span
+                            className="bar"
+                            style={{
+                              width: Math.max(6, Math.min(100, r.confianza)) + '%',
+                              background: r.confianza >= 60 ? 'var(--ok)' : r.confianza >= 30 ? 'var(--warn)' : 'var(--rule-strong)',
+                            }}
+                          />
+                          <b>{r.confianza}%</b>
+                        </>
+                      )}
                     </div>
                     <a className="idcode" href={`/p/${encodeURIComponent(r.codigo)}`}>{r.codigo}</a>
                     <div className="idname">{r.producto.nombre || r.producto.clave_producto}</div>

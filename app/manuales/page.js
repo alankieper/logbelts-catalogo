@@ -68,7 +68,7 @@ export default async function ManualesPage({ searchParams }) {
               <div style={{ display: 'grid', gap: 8, gridTemplateColumns: 'repeat(auto-fill,minmax(220px,1fr))' }}>
                 {g.modelos.map((m) => {
                   const cur = curados.find((c) => c.marca === g.marca && c.modelo.toUpperCase().replace(/[^A-Z0-9]/g, '') === m.modelo.toUpperCase().replace(/[^A-Z0-9]/g, ''));
-                  const url = cur && cur.archivo ? `/despieces/${cur.archivo}` : cur ? cur.url : 'https://www.partstree.com/models/?q=' + encodeURIComponent(g.marca + ' ' + m.modelo);
+                  const url = cur && cur.archivo ? `/despieces/${cur.archivo}` : cur ? cur.url : 'https://www.google.com/search?q=' + encodeURIComponent(g.marca + ' ' + m.modelo + ' despiece IPL parts diagram');
                   return (
                     <a key={m.modelo} href={url} target="_blank" rel="noreferrer" className="tile" style={{ minHeight: 0 }}>
                       <span className="txt">

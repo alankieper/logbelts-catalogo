@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Catálogo Logbelts',
-  description: 'Catálogo de repuestos Logbelts para bosque, jardín e industria.',
+  title: 'Catálogo Logbelts — encontrá todos nuestros repuestos',
+  description: 'Catálogo de repuestos Logbelts para máquinas de bosque, jardín e industria. Buscá por código, código original o marca y modelo.',
 };
 
 export default function RootLayout({ children }) {
