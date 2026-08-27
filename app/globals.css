@@ -191,6 +191,41 @@ h1.page {
 .note { background: var(--brand-wash); border-radius: 10px; padding: 12px 15px; font-size: 12.5px; color: var(--ink-soft); margin: 22px 0 0; max-width: 72ch; }
 .note b { color: var(--ink); }
 
+/* ===== Identificar por foto ===== */
+.home-cta {
+  display: flex; align-items: center; gap: 16px; background: var(--brand); color: #fff;
+  border-radius: 14px; padding: 18px 20px; margin: 0 0 22px; text-decoration: none;
+}
+.home-cta:hover { text-decoration: none; filter: brightness(1.06); }
+.home-cta svg { flex: none; }
+.home-cta .t { font-family: var(--f-display); font-style: italic; text-transform: uppercase; font-size: 1.15rem; letter-spacing: .4px; }
+.home-cta .d { font-size: 12.5px; opacity: .85; }
+.home-cta .go { margin-left: auto; font-weight: 800; font-size: 13px; white-space: nowrap; }
+
+.idbox { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 18px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 12px; align-items: center; }
+.idph { color: var(--ink-faint); text-align: center; padding: 26px 10px; }
+.idph p { margin: 8px 0 0; font-size: 13px; }
+.idprev { max-width: 100%; max-height: 320px; border-radius: 10px; border: 1px solid var(--rule); }
+.idbtn { background: var(--brand); color: #fff; border: 0; border-radius: 10px; padding: 12px 22px; font-size: 14px; font-weight: 700; cursor: pointer; }
+.idbtn:disabled { opacity: .6; cursor: default; }
+.idmsg { font-size: 12.5px; color: var(--ink-faint); margin: 14px 0; }
+.idmsg a { font-weight: 700; }
+.iddet { font-size: 13px; color: var(--ink-soft); background: var(--surface-2); border-radius: 9px; padding: 10px 14px; margin: 16px 0 10px; }
+.idres { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+.idcard { display: flex; gap: 14px; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 12px; box-shadow: var(--shadow); }
+.idth { flex: none; width: 96px; height: 96px; border: 1px solid var(--rule); border-radius: 9px; background: #fff; display: grid; place-items: center; overflow: hidden; }
+.idth img { width: 100%; height: 100%; object-fit: contain; padding: 6px; }
+.idth .no { font-size: 10px; color: var(--ink-faint); text-transform: uppercase; }
+.idinfo { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.idconf { display: flex; align-items: center; gap: 8px; height: 8px; margin-bottom: 4px; }
+.idconf .bar { height: 8px; border-radius: 4px; display: block; }
+.idconf b { font-size: 11px; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+.idcode { font-size: 12.5px; font-weight: 800; color: var(--brand-ink); font-variant-numeric: tabular-nums; }
+.idname { font-size: 13.5px; font-weight: 600; }
+.idwhy { font-size: 12px; color: var(--ink-faint); }
+.idacts { display: flex; gap: 12px; margin-top: 6px; }
+.idacts a, .idacts button { font-size: 12.5px; font-weight: 700; color: var(--brand-ink); background: none; border: 0; cursor: pointer; padding: 0; }
+
 footer.cat { border-top: 1px solid var(--rule); padding: 22px 0; font-size: 11.5px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .06em; }
 
 /* ===== Administración ===== */
