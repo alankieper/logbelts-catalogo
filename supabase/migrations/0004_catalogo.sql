@@ -51,11 +51,10 @@ create table if not exists cat_productos (
 create index if not exists cat_productos_familia_idx on cat_productos (familia, subcategoria);
 create index if not exists cat_productos_oculto_idx on cat_productos (oculto);
 
--- Búsqueda de texto + difusa
+-- Búsqueda difusa (trigram) sobre las columnas de texto simples.
 create extension if not exists pg_trgm;
-create index if not exists cat_productos_trgm_idx on cat_productos
-  using gin ((coalesce(codigo,'') || ' ' || coalesce(nombre,'') || ' ' || coalesce(descripcion,'') || ' ' ||
-              array_to_string(codigo_original,' ') || ' ' || array_to_string(marcas,' ')) gin_trgm_ops);
+create index if not exists cat_productos_codigo_trgm on cat_productos using gin (codigo gin_trgm_ops);
+create index if not exists cat_productos_nombre_trgm on cat_productos using gin (nombre gin_trgm_ops);
 
 -- Historial de cambios (para poder volver atrás)
 create table if not exists cat_revisiones (
