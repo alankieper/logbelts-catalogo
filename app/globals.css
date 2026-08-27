@@ -88,6 +88,12 @@ header.cat .hcart {
   cursor: pointer; display: inline-flex; align-items: center; gap: 7px; text-decoration: none;
 }
 header.cat .hcart svg { width: 15px; height: 15px; }
+header.cat .hlink { margin-left: auto; color: #fff; font-size: 12.5px; font-weight: 700; text-decoration: none; opacity: .9; white-space: nowrap; }
+header.cat .hlink:hover { opacity: 1; text-decoration: underline; }
+header.cat .hlink + .hcart { margin-left: 0; }
+
+.chip-lnk { font-size: 12px; font-weight: 700; color: var(--brand-ink); background: var(--brand-wash); border-radius: 20px; padding: 5px 12px; text-decoration: none; }
+.chip-lnk[data-on="true"] { background: var(--brand); color: #fff; }
 
 /* ===== Migas / títulos ===== */
 main.cat { padding: 26px 0 90px; }

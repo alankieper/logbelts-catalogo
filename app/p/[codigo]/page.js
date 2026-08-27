@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../components/CatalogoHeader';
 import ProductoCard from '../../components/ProductoCard';
 import { getProducto, getRelacionados, getVecinos, getFamilia, slugify } from '../../../lib/catalogo';
+import { despiecesDeProducto } from '../../../lib/despieces';
 
 export const dynamic = 'force-dynamic';
 
@@ -23,6 +24,7 @@ export default function ProductoPage({ params }) {
   const sub = fam?.subcats.find((s) => s.slug === p.subSlug);
   const rel = getRelacionados(codigo, 4);
   const { prev, next } = getVecinos(codigo);
+  const desp = despiecesDeProducto(codigo, p.compatibilidad);
 
   const derivada = p.fuente_desc && p.fuente_desc.startsWith('derivada');
   const marcas = new Set([...(p.marcas || [])]);
@@ -119,6 +121,40 @@ export default function ProductoPage({ params }) {
                   <div className="srow"><dt>—</dt><dd className="mut">A completar</dd></div>
                 )}
               </div>
+
+              {desp.oficiales.length ? (
+                <div className="specsheet">
+                  <h3>Manuales y despieces de la máquina</h3>
+                  {desp.curados.map((c) => (
+                    <div className="srow" key={c.id}>
+                      <dt>{c.marca} {c.modelo}</dt>
+                      <dd>
+                        <a href={c.archivo ? `/despieces/${c.archivo}` : c.url} target="_blank" rel="noreferrer">
+                          {c.titulo}
+                        </a>
+                        <span className="mut"> · {c.fuente}</span>
+                      </dd>
+                    </div>
+                  ))}
+                  {desp.oficiales.map((o, i) => (
+                    <div className="srow" key={i}>
+                      <dt>{o.marca} {o.modelo}</dt>
+                      <dd style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
+                        {o.oficial ? (
+                          <a href={o.oficial.url} target="_blank" rel="noreferrer">{o.oficial.label} ↗</a>
+                        ) : null}
+                        <a href={o.diagramas.url} target="_blank" rel="noreferrer">Diagramas de partes ↗</a>
+                      </dd>
+                    </div>
+                  ))}
+                  <div className="srow">
+                    <dt>—</dt>
+                    <dd className="mut" style={{ fontSize: 11.5 }}>
+                      Enlaces a sitios oficiales de cada marca. Los PDF propios de Logbelts se cargan desde Administración.
+                    </dd>
+                  </div>
+                </div>
+              ) : null}
 
               <a
                 className="cta"

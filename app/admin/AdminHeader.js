@@ -14,6 +14,7 @@ export default function AdminHeader({ activo }) {
           {link('/admin', 'Tablero', 'home')}
           {link('/admin/productos', 'Productos', 'productos')}
           {link('/admin/categorias', 'Categorías', 'categorias')}
+          {link('/admin/manuales', 'Manuales', 'manuales')}
           {link('/admin/importar', 'Importar PDF', 'importar')}
         </nav>
         <span className="right">

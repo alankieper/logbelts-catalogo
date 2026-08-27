@@ -1,0 +1,24 @@
+[
+ {
+  "id": "ej-1",
+  "marca": "Honda",
+  "modelo": "GX160",
+  "tipo": "despiece",
+  "titulo": "Catálogo de partes Honda GX160 (oficial)",
+  "url": "https://peparts.honda.com/engines",
+  "archivo": null,
+  "fuente": "Honda PE Parts (oficial)",
+  "publico": true
+ },
+ {
+  "id": "ej-2",
+  "marca": "Husqvarna",
+  "modelo": "143R",
+  "tipo": "manual",
+  "titulo": "Manual y repuestos Husqvarna 143R-II (buscar por modelo)",
+  "url": "https://www.husqvarna.com/us/support/",
+  "archivo": null,
+  "fuente": "Husqvarna (oficial)",
+  "publico": true
+ }
+]
