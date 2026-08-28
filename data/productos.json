@@ -663,7 +663,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Carburador",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Kit Junta Y Diafragma Carburador Repl St- FS160/220/280",
   "ubicacion": null,
@@ -681,7 +683,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2102825.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2102827",
@@ -776,7 +779,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Carburador",
   "marcas": [
-   "Zama"
+   "Zama",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Carburador Repl St- FS450 (C1Q-S34) Zama",
@@ -793,7 +797,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2102839.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2102844",
@@ -803,7 +808,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Carburador",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Carburador Repl St- FS38/55",
   "ubicacion": null,
@@ -819,7 +826,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2102844.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2102855",
@@ -830,7 +838,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Carburador",
   "marcas": [
-   "Zama"
+   "Zama",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Carburador Repl St- FS450 Zama (Limitador)",
@@ -847,7 +856,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2102855.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2102871",
@@ -1162,7 +1172,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de cilindros",
   "marcas": [
-   "Husqvarna"
+   "Husqvarna",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Kit Cilindro Y Pistón Repl St- FS38/55",
@@ -1179,7 +1190,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO HUSQVARNA 143R",
   "foto": "2103010.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2103011",
@@ -1189,7 +1201,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de cilindros",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Kit Cilindro Y Pistón Repl St- FS220 38mm",
   "ubicacion": null,
@@ -1207,7 +1221,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2103011.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2103012",
@@ -1217,7 +1232,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de cilindros",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Kit Cilindro Y Pistón Repl St- FS450",
   "ubicacion": null,
@@ -1233,7 +1250,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2103012.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2103013",
@@ -1889,7 +1907,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de cilindros",
   "marcas": [
-   "Husqvarna"
+   "Husqvarna",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Escape Repl St- FS38/55",
@@ -1906,7 +1925,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO HUSQVARNA 143R",
   "foto": "2103203.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2103205",
@@ -1946,7 +1966,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de cilindros",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Escape Repl St- FS450",
   "ubicacion": null,
@@ -1962,7 +1984,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2103206.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2103207",
@@ -1972,7 +1995,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de cilindros",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tubo De Escape Repl St- FS450",
   "ubicacion": null,
@@ -1988,7 +2013,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2103207.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2103208",
@@ -1998,7 +2024,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de cilindros",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Escape Repl St- FS160/220/280",
   "ubicacion": null,
@@ -2014,7 +2042,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2103208.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2103209",
@@ -2024,7 +2053,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de cilindros",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tornillo De Escape Repl St- FS160/220/280",
   "ubicacion": null,
@@ -2040,7 +2071,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2103209.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2103210",
@@ -2050,7 +2082,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de cilindros",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Brida De Admisión Repl St- FS160/220/280",
   "ubicacion": null,
@@ -2066,7 +2100,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2103210.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2104010",
@@ -2208,7 +2243,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de pistón",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Kit Pistón Y Aros Repl St- FS280 40mm",
   "ubicacion": null,
@@ -2226,7 +2263,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2104031.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2104032",
@@ -2236,7 +2274,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de pistón",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Kit Pistón Y Aro Repl St- FS450",
   "ubicacion": null,
@@ -2252,7 +2292,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2104032.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2104033",
@@ -2314,7 +2355,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de pistón",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Kit Pistón Y Aros Repl St- FS160 35mm",
   "ubicacion": null,
@@ -2332,7 +2375,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2104035.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2104036",
@@ -2342,7 +2386,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de pistón",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Kit Cilindro Y Pistón Repl St- FS220 38mm",
   "ubicacion": null,
@@ -2360,7 +2406,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2104036.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2104050",
@@ -2640,7 +2687,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Aros",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Aros De Pistón Repl St- FS160 35mm",
   "ubicacion": null,
@@ -2658,7 +2707,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2105026.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2105027",
@@ -2668,7 +2718,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Aros",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Aros De Pistón Repl St- FS220 38mm",
   "ubicacion": null,
@@ -2686,7 +2738,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2105027.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2105028",
@@ -2696,7 +2749,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Aros",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Aros De Pistón Repl St- FS280 40mm",
   "ubicacion": null,
@@ -2714,7 +2769,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2105028.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2105029",
@@ -2724,7 +2780,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Aros",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Aros De Pistón Repl St- FS450 42mm",
   "ubicacion": null,
@@ -2742,7 +2800,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2105029.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2105030",
@@ -2996,7 +3055,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Filtro de aire",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -3012,7 +3073,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2107123.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2107128",
@@ -3022,7 +3084,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Filtro de aire",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cobertor De Filtro De Aire Repl St- FS450",
   "ubicacion": null,
@@ -3038,7 +3102,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2107128.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2107132",
@@ -3048,7 +3113,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Filtro de aire",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Filtro De Aire Repl St- FS120/250/450",
   "ubicacion": null,
@@ -3064,7 +3131,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2107132.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2107133",
@@ -3074,7 +3142,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Filtro de aire",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cubre Filtro De Aire Filtro De Aire Repl St- FS160/220/280 Repl St- FS160/220/280",
   "ubicacion": null,
@@ -3090,7 +3160,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2107133.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2107134",
@@ -3100,7 +3171,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Filtro de aire",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Filtro De Aire Repl St- FS160/220/280",
   "ubicacion": null,
@@ -3116,7 +3189,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2107134.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2107135",
@@ -3214,7 +3288,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Filtro de aire",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Filtrera Completa Repl St",
   "ubicacion": null,
@@ -3230,7 +3306,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2107138.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2107139",
@@ -3240,7 +3317,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Filtro de aire",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Filtrera De Aire Esponja Repl St",
   "ubicacion": null,
@@ -3256,7 +3335,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2107139.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2107140",
@@ -3266,7 +3346,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Filtro de aire",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Caja Filtrera Completa Repl St- FS120/250/450",
   "ubicacion": null,
@@ -3282,7 +3364,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2107140.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2107197",
@@ -4418,7 +4501,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Juntas de motor",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Junta De Admisión Repl St- FS38/55",
   "ubicacion": null,
@@ -4434,7 +4519,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2110016.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2110017",
@@ -4668,7 +4754,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Juntas de motor",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Junta Base De Cilindro Repl St- FS38/55",
   "ubicacion": null,
@@ -4684,7 +4772,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2110025.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2110026",
@@ -4694,7 +4783,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Juntas de motor",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Junta Base De Carburador Repl St- FS38/55",
   "ubicacion": null,
@@ -4710,7 +4801,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2110026.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2110027",
@@ -4720,7 +4812,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Juntas de motor",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Junta De Escape Repl St- FS38/55",
   "ubicacion": null,
@@ -4736,7 +4830,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2110027.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2110029",
@@ -4982,7 +5077,8 @@
   "familia_indice": "Juntas de motor",
   "subcategoria": "Juntas de motor",
   "marcas": [
-   "Echo"
+   "Echo",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Kit De Juntas REPL ST FS160/280",
@@ -4999,7 +5095,8 @@
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - DESMALEZADORA ECHO",
   "foto": "2110058.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2110059",
@@ -5010,7 +5107,8 @@
   "familia_indice": "Juntas de motor",
   "subcategoria": "Juntas de motor",
   "marcas": [
-   "Echo"
+   "Echo",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Kit De Juntas REPL ST FS 120/250",
@@ -5027,7 +5125,8 @@
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - DESMALEZADORA ECHO",
   "foto": "2110059.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2110060",
@@ -5066,7 +5165,8 @@
   "familia_indice": "Juntas de motor",
   "subcategoria": "Juntas de motor",
   "marcas": [
-   "Echo"
+   "Echo",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Kit De Juntas REPL ST FS55",
@@ -5083,7 +5183,8 @@
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - DESMALEZADORA ECHO",
   "foto": "2110061.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2110062",
@@ -5094,7 +5195,8 @@
   "familia_indice": "Juntas de motor",
   "subcategoria": "Juntas de motor",
   "marcas": [
-   "Echo"
+   "Echo",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Kit De Juntas REPL ST FS85",
@@ -5111,7 +5213,8 @@
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - DESMALEZADORA ECHO",
   "foto": "2110062.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2110069",
@@ -5411,7 +5514,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "EMBRAGUES",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Resorte De Embrague ST-FS160/220/280",
   "ubicacion": null,
@@ -5427,7 +5532,8 @@
   "encabezado_pdf": "EMBRAGUES",
   "foto": "2112076.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112077",
@@ -5437,7 +5543,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "CAMPANA DE EMBRAGUE",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Campana Embrague ST-FS160/220/280",
   "ubicacion": null,
@@ -5453,7 +5561,8 @@
   "encabezado_pdf": "CAMPANA DE EMBRAGUE",
   "foto": "2112077.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112078",
@@ -5463,7 +5572,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Embragues / campanas / resortes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Campana De Embrague Repl St- FS450",
   "ubicacion": null,
@@ -5479,7 +5590,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2112078.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112080",
@@ -5489,7 +5601,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "CAMPANA DE EMBRAGUE",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Campana Embrague ST FS38/55",
   "ubicacion": null,
@@ -5505,7 +5619,8 @@
   "encabezado_pdf": "CAMPANA DE EMBRAGUE",
   "foto": "2112080.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112081",
@@ -5541,7 +5656,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Embragues / campanas / resortes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Embrague Repl St- FS38/55",
   "ubicacion": null,
@@ -5557,7 +5674,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2112084.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112085",
@@ -5567,7 +5685,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Embragues / campanas / resortes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Embrague Repl St- FS450",
   "ubicacion": null,
@@ -5583,7 +5703,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2112085.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112086",
@@ -5593,7 +5714,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Embragues / campanas / resortes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Embrague Resorte De Embrague Caja De Embrague Repl St- FS160/220/280 Repl St- FS160/220/280 Repl St- FS160/220/280",
   "ubicacion": null,
@@ -5609,7 +5732,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2112086.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112098",
@@ -5619,7 +5743,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Embragues / campanas / resortes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tornillo De Escape Repl St- FS38/55",
   "ubicacion": null,
@@ -5635,7 +5761,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2112098.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112100",
@@ -5645,7 +5772,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Embragues / campanas / resortes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Resorte De Embrague Repl St- FS120/250/450",
   "ubicacion": null,
@@ -5661,7 +5790,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2112100.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112101",
@@ -5787,7 +5917,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Embragues / campanas / resortes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Campana De Embrague Resorte De Embrague Repl St- FS38/55 Repl St- FS38/55",
   "ubicacion": null,
@@ -5803,7 +5935,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2112105.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112106",
@@ -5842,7 +5975,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Embragues / campanas / resortes",
   "marcas": [
-   "Husqvarna"
+   "Husqvarna",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Resorte de embrague Husqvarna 61/268/365/372",
@@ -5859,7 +5993,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2112107.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112108",
@@ -5870,7 +6005,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Embragues / campanas / resortes",
   "marcas": [
-   "Echo"
+   "Echo",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Campana de embrague Echo ECHO-SRM4605",
@@ -5887,7 +6023,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2112108.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112109",
@@ -5897,7 +6034,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Embragues / campanas / resortes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -5913,7 +6052,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2112109.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2112110",
@@ -5923,7 +6063,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Embragues / campanas / resortes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Caja De Embrague Repl St- FS450",
   "ubicacion": null,
@@ -5939,7 +6081,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2112110.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113020",
@@ -6167,7 +6310,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Caja De Engranajes Repl St- FS160/220/280",
   "ubicacion": null,
@@ -6183,7 +6328,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113030.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113031",
@@ -6219,7 +6365,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -6235,7 +6383,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2113032.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113033",
@@ -6245,7 +6394,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Caja De Engranajes Repl St",
   "ubicacion": null,
@@ -6261,7 +6412,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2113033.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113034",
@@ -6271,7 +6423,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "CAJAS DE ENGRANAJES",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Caja de Engranaje ST-FS 450/480",
   "ubicacion": null,
@@ -6287,7 +6441,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2113034.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113035",
@@ -6357,7 +6512,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tuerca Para Cuchilla Repl St- FS160/220/450",
   "ubicacion": null,
@@ -6373,7 +6530,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113045.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113046",
@@ -6445,7 +6603,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tuerca Repl St- FS160/220/450",
   "ubicacion": null,
@@ -6461,7 +6621,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113048.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113049",
@@ -6471,7 +6632,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Taza Copa Repl St- FS160/220/280",
   "ubicacion": null,
@@ -6487,7 +6650,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113049.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113050",
@@ -6497,7 +6661,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Rulemán 6001 Repl St- FS160/220/450",
   "ubicacion": null,
@@ -6513,7 +6679,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113050.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113051",
@@ -6523,7 +6690,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Rulemán 6001-Z Repl St- FS160/220/450",
   "ubicacion": null,
@@ -6539,7 +6708,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113051.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113052",
@@ -6549,7 +6719,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Kit Piñ{on Caja Eng Repl St- FS160/220/280",
   "ubicacion": null,
@@ -6565,7 +6737,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113052.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113053",
@@ -6575,7 +6748,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Ruleman 6000 OEM Repl St- FS160/220/450",
   "ubicacion": null,
@@ -6591,7 +6766,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113053.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113054",
@@ -6601,7 +6777,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Ruleman 6202-2RS Repl St- FS160/220/450 PARTES DE ST FS450",
   "ubicacion": null,
@@ -6617,7 +6795,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113054.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113055",
@@ -6627,7 +6806,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -6643,7 +6824,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2113055.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113056",
@@ -6653,7 +6835,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Kit Arandelas Caja De Engranaje Repl St- /250 (4pcs)",
   "ubicacion": null,
@@ -6669,7 +6853,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2113056.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113057",
@@ -6679,7 +6864,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tuerca De Caja De Engranaje M10X1.0 Repl St- /250",
   "ubicacion": null,
@@ -6695,7 +6882,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2113057.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113060",
@@ -6735,7 +6923,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Kit de reparación, caja de… EC-SRM4605(4pcs)",
   "ubicacion": null,
@@ -6753,7 +6943,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113061.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113062",
@@ -6794,7 +6985,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
   "marcas": [
-   "Oleo Mac"
+   "Oleo Mac",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Caja de engranajes Oleo Mac 746/750/753/755 PARTES DE ST FS38 / FS55",
@@ -6813,7 +7005,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113063.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113064",
@@ -6853,7 +7046,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Arandela (1) Caja De Engranaje Repl St- FS160/220/450",
   "ubicacion": null,
@@ -6869,7 +7064,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113146.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2113147",
@@ -6879,7 +7075,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Caja de engranaje",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Arandela (2) Caja De Engranaje Repl St- FS160/220/450",
   "ubicacion": null,
@@ -6895,7 +7093,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2113147.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2114050",
@@ -7183,7 +7382,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tanque de combustible / tapa",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tanque De Combustible Tapa Tanque Comb Manguera Comb Doble Repl St- Repl St- Repl St",
   "ubicacion": null,
@@ -7199,7 +7400,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2114073.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2114080",
@@ -7325,7 +7527,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tanque de combustible / tapa",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -7341,7 +7545,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2114085.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2114086",
@@ -7351,7 +7556,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tanque de combustible / tapa",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tanque De Combustible Repl St- FS160/220/280",
   "ubicacion": null,
@@ -7367,7 +7574,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2114086.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2114087",
@@ -7377,7 +7585,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tanque de combustible / tapa",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tapa Tanque De Combustible Repl St- FS450",
   "ubicacion": null,
@@ -7393,7 +7603,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2114087.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2114088",
@@ -7403,7 +7614,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tanque de combustible / tapa",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tapa Tanque Comb Repl St- FS160/220/280",
   "ubicacion": null,
@@ -7419,7 +7632,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2114088.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2114089",
@@ -7429,7 +7643,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tanque de combustible / tapa",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tanque De Combustible Repl St- FS450",
   "ubicacion": null,
@@ -7445,7 +7661,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2114089.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2114090",
@@ -7955,7 +8172,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tapas de arranque",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Sistema De Arranque Repl St- FS450",
   "ubicacion": null,
@@ -7971,7 +8190,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2115067.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2115068",
@@ -8455,7 +8675,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tapas de arranque",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Resorte De Arranque Repl St- FS450",
   "ubicacion": null,
@@ -8471,7 +8693,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2115113.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2115121",
@@ -8507,7 +8730,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tapas de arranque",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Polea De Arranque Repl St- FS450",
   "ubicacion": null,
@@ -8523,7 +8748,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2115122.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2115123",
@@ -8585,7 +8811,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tapas de arranque",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -8601,7 +8829,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2115135.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2115136",
@@ -8667,7 +8896,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tapas de arranque",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cobertor Motor Sistema De Arranque Polea Arranque Resorte De Arranque Kit Trinquetes Repl St- FS160/220/280 Repl St- FS160/220/280 Repl St- FS160/220/280 Repl St- FS160/220/280 Repl St- FS160/220/280",
   "ubicacion": null,
@@ -8683,7 +8914,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2115138.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2115139",
@@ -8694,7 +8926,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tapas de arranque",
   "marcas": [
-   "Oleo Mac"
+   "Oleo Mac",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Conjunto de arranque (SS) Oleo Mac SPARTA 42/44",
@@ -8711,7 +8944,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2115139.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2115140",
@@ -8750,7 +8984,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tapas de arranque",
   "marcas": [
-   "Husqvarna"
+   "Husqvarna",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Sistema De Arranque Polea De Arranque Resorte De Arranque Cazoleta De Arranque Repl St- FS38/55 Repl St- FS38/55 Repl St- FS38/55 Repl St- FS38/55",
@@ -8767,7 +9002,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO HUSQVARNA 143R",
   "foto": "2115201.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2116560",
@@ -9451,7 +9687,8 @@
   "familia_indice": null,
   "subcategoria": "CABEZALES DE TANZA",
   "marcas": [
-   "Echo"
+   "Echo",
+   "Husqvarna"
   ],
   "codigo_original": [],
   "compatibilidad": "Husqv. 132/142R/236R 265R/345R Echo 5810 Paso 10x1.75 FLH",
@@ -9470,7 +9707,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117556.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2117558",
@@ -9506,7 +9744,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cabezales porta tanza",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cuchillas Desmalezadora Repl St 11,8”",
   "ubicacion": null,
@@ -9522,7 +9762,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2117563.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2117568",
@@ -9558,7 +9799,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "CABEZALES DE TANZA",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [
    "4006"
   ],
@@ -9576,7 +9819,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117570.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2117571",
@@ -9586,7 +9830,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "CABEZALES DE TANZA",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [
    "40067104003"
   ],
@@ -9604,7 +9850,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117571.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2117572",
@@ -9614,7 +9861,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "CABEZALES DE TANZA",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Ojal Repl ST FS38 C6-2 OEM",
   "ubicacion": null,
@@ -9630,7 +9879,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117572.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2117573",
@@ -9640,7 +9890,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "CABEZALES DE TANZA",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Resorte Repl ST FS38 C6-2 OEM",
   "ubicacion": null,
@@ -9656,7 +9908,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117573.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2117574",
@@ -9778,7 +10031,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "CABEZALES DE TANZA",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [
    "46-2"
   ],
@@ -9796,7 +10051,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2117585.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2117586",
@@ -9806,7 +10062,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "CABEZALES DE TANZA",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Part. Aut. Repl ST FS FS450 46-2",
   "ubicacion": null,
@@ -9822,7 +10080,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2117586.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2117587",
@@ -9832,7 +10091,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "CABEZALES DE TANZA",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Ojal Repl ST FS450 46-2",
   "ubicacion": null,
@@ -9848,7 +10109,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2117587.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2117588",
@@ -9914,7 +10176,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "CABEZALES DE TANZA",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Part. Aut. Repl ST FS FS55 C26-2",
   "ubicacion": null,
@@ -9930,7 +10194,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117591.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2117592",
@@ -9940,7 +10205,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "CABEZALES DE TANZA",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Ojal Repl ST FS55 C26-2",
   "ubicacion": null,
@@ -9956,7 +10223,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117592.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2117593",
@@ -10238,7 +10506,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cañonera Completa Repl St- FS450",
   "ubicacion": null,
@@ -10254,7 +10524,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2120024.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120025",
@@ -10295,7 +10566,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Brida Admisión Repl St- FS38/55",
   "ubicacion": null,
@@ -10311,7 +10584,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120027.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120028",
@@ -10321,7 +10595,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tensor Repl St- FS38/55",
   "ubicacion": null,
@@ -10337,7 +10613,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120028.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120029",
@@ -10347,7 +10624,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cardan Repl St- FS450",
   "ubicacion": null,
@@ -10363,7 +10642,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2120029.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120030",
@@ -10373,7 +10653,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Carcasa De Motor Carcasa De Motor Soporte De Manillar Repl St- 002 Repl St- 003 Repl St",
   "ubicacion": null,
@@ -10389,7 +10671,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120030.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120033",
@@ -10399,7 +10682,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Soporte De Manillar Repl St- FS160/220/280",
   "ubicacion": null,
@@ -10415,7 +10700,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2120033.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120037",
@@ -10425,7 +10711,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Descompresor Repl St- FS450",
   "ubicacion": null,
@@ -10441,7 +10729,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2120037.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120038",
@@ -10451,7 +10740,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Volante Magnético Repl St- FS450",
   "ubicacion": null,
@@ -10467,7 +10758,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2120038.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120039",
@@ -10477,7 +10769,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cardan Repl St- FS160/220/280",
   "ubicacion": null,
@@ -10493,7 +10787,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2120039.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120040",
@@ -10503,7 +10798,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Kit Cañonera Repl St- FS160/220/280",
   "ubicacion": null,
@@ -10519,7 +10816,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2120040.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120043",
@@ -10529,7 +10827,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Brida Admisión Repl St- FS450",
   "ubicacion": null,
@@ -10545,7 +10845,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2120043.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120044",
@@ -10555,7 +10856,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cobertor Motor Repl St- FS450",
   "ubicacion": null,
@@ -10571,7 +10874,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2120044.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120046",
@@ -10581,7 +10885,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Colector De Admisión Repl St- FS450",
   "ubicacion": null,
@@ -10597,7 +10903,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2120046.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120047",
@@ -10607,7 +10914,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Buje Cañonera Repl St- FS450",
   "ubicacion": null,
@@ -10623,7 +10932,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2120047.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120048",
@@ -10633,7 +10943,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Manija Izquierda Repl St- FS450",
   "ubicacion": null,
@@ -10649,7 +10961,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2120048.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120051",
@@ -10685,7 +10998,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -10701,7 +11016,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120058.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120059",
@@ -10711,7 +11027,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -10727,7 +11045,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120059.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120060",
@@ -10737,7 +11056,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cobertor De Cabezal Repl St",
   "ubicacion": null,
@@ -10753,7 +11074,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120060.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120061",
@@ -10763,7 +11085,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cobertor De Cabezal Repl St- FS160/220/280 OLD",
   "ubicacion": null,
@@ -10779,7 +11103,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2120061.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120062",
@@ -10789,7 +11114,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cortador Protector Cobertor De Cabezal Protector De Cobertor Puntera De Cabezal Caja De Engranajes De Cabezal Repl St- Repl St- Repl St- FS38 Repl St- Repl St",
   "ubicacion": null,
@@ -10805,7 +11132,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120062.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120063",
@@ -10895,7 +11223,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Volante Magnético Repl St- FS160/220/280",
   "ubicacion": null,
@@ -10911,7 +11241,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2120073.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120074",
@@ -10949,7 +11280,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -10965,7 +11298,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120075.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120076",
@@ -10975,7 +11309,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Manillar Acelerador Repl St",
   "ubicacion": null,
@@ -10991,7 +11327,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120076.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120077",
@@ -11001,7 +11338,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Caño Compl Repl St- FS38/55 /",
   "ubicacion": null,
@@ -11017,7 +11356,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120077.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120078",
@@ -11027,7 +11367,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cardan Flexible 1440-D6-S (5*5mm) Repl St",
   "ubicacion": null,
@@ -11045,7 +11387,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120078.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120079",
@@ -11055,7 +11398,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cardan Flexible 1240-D6-S (5*5mm) Repl St- FS38",
   "ubicacion": null,
@@ -11073,7 +11418,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120079.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120085",
@@ -11083,7 +11429,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Arandela Elástica Repl St- FS38/55 /",
   "ubicacion": null,
@@ -11099,7 +11447,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120085.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120087",
@@ -11109,7 +11458,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Comando De Acelerador Repl St- FS160/220/280",
   "ubicacion": null,
@@ -11125,7 +11476,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2120087.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120090",
@@ -11485,7 +11837,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Kit de protector (traba metálica,…",
   "ubicacion": null,
@@ -11501,7 +11855,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2120105.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120107",
@@ -11537,7 +11892,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -11553,7 +11910,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2120109.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120110",
@@ -11563,7 +11921,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cortador De Cobertor Repl St- FS160/220/280",
   "ubicacion": null,
@@ -11579,7 +11939,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2120110.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120585",
@@ -11589,7 +11950,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Plástico Cobertor Soporte Repl St- FS450",
   "ubicacion": null,
@@ -11605,7 +11968,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2120585.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120586",
@@ -11615,7 +11979,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Soporte Plástico Repl St- FS450",
   "ubicacion": null,
@@ -11631,7 +11997,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2120586.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2120588",
@@ -11641,7 +12008,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Buje Caja Repl St- FS450",
   "ubicacion": null,
@@ -11657,7 +12026,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2120588.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2121061",
@@ -11719,7 +12089,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Mangueras",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Manguera Comb Repl St- FS450",
   "ubicacion": null,
@@ -11735,7 +12107,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2121065.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2122112",
@@ -11850,7 +12223,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cigüeñal",
   "marcas": [
-   "Husqvarna"
+   "Husqvarna",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Kit Pistón Y Aros Aros De Pistón Cigüeñal Repl St- FS38/55 34mm Repl St- FS38/55 34mm Repl St- FS38/55",
@@ -11869,7 +12243,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO HUSQVARNA 143R",
   "foto": "2122128.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2122129",
@@ -11909,7 +12284,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cigüeñal",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cigüeñal Repl St- FS160/220/280",
   "ubicacion": null,
@@ -11925,7 +12302,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2122130.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2122132",
@@ -11935,7 +12313,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cigüeñal",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cigüeñal Repl St- FS450",
   "ubicacion": null,
@@ -11951,7 +12331,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2122132.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2122136",
@@ -11991,7 +12372,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cigüeñal",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Block Repl St- FS450",
   "ubicacion": null,
@@ -12007,7 +12390,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2122138.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2122140",
@@ -12046,7 +12430,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cigüeñal",
   "marcas": [
-   "Husqvarna"
+   "Husqvarna",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Cigüeñal Husqvarna 128R",
@@ -12063,7 +12448,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2122143",
@@ -12235,7 +12621,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cigüeñal",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Jaula De Pistón Repl St- FS450",
   "ubicacion": null,
@@ -12251,7 +12639,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2122160.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2124221",
@@ -12313,7 +12702,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Bobina de ignición",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Volante Magnético Bobina De Ignición Repl St- FS38/55 Repl St- FS38/55",
   "ubicacion": null,
@@ -12329,7 +12720,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2124230.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2124231",
@@ -12339,7 +12731,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": null,
   "subcategoria": "BOBINA DE INGNICION 2T",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bobina de Ignicion ST-FS120/200",
   "ubicacion": null,
@@ -12355,7 +12749,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2124231.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2124232",
@@ -12365,7 +12760,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Bobina de ignición",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Boobina De Ignición Repl St- FS160/220/280",
   "ubicacion": null,
@@ -12381,7 +12778,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2124232.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2124233",
@@ -12391,7 +12789,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Bobina de ignición",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bobina Ignición Repl St- FS450",
   "ubicacion": null,
@@ -12407,7 +12807,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2124233.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2124235",
@@ -12726,7 +13127,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cables",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cable Acelerador Repl St- FS38/55",
   "ubicacion": null,
@@ -12742,7 +13145,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2125154.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2125156",
@@ -12752,7 +13156,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cables",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cable Acelerador Completo Repl St- FS160/220/280",
   "ubicacion": null,
@@ -12768,7 +13174,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2125156.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2125157",
@@ -12778,7 +13185,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cables",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cable Acelerador Completo Repl St- FS450",
   "ubicacion": null,
@@ -12794,7 +13203,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2125157.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2125158",
@@ -12830,7 +13240,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cables",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "ST-FS80/85",
   "ubicacion": null,
@@ -12846,7 +13258,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2125159.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2125161",
@@ -12857,7 +13270,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cables",
   "marcas": [
-   "Husqvarna"
+   "Husqvarna",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Varilla de acelerador (cable) Husqvarna 365/372",
@@ -12874,7 +13288,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2125161.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2125162",
@@ -12998,7 +13413,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cables",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Comando Acelerador Sin Caño Repl St- FS450",
   "ubicacion": null,
@@ -13014,7 +13431,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2125167.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2125168",
@@ -13052,7 +13470,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cables",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Caja Engranajes Cable Acelerador Solo Grasa De Caja Engranajes Repl St- FS450 Repl St- FS450 50gr",
   "ubicacion": null,
@@ -13068,7 +13488,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2125169.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2125170",
@@ -13078,7 +13499,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cables",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Juego de cable de acelerador",
   "ubicacion": null,
@@ -13094,7 +13517,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2125170.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2125171",
@@ -13104,7 +13528,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Cables",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cable Acelerador Repl St- FS160/220/280 / 220 / 280",
   "ubicacion": null,
@@ -13120,7 +13546,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2125171.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2127010",
@@ -13159,7 +13586,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Retén",
   "marcas": [
-   "Husqvarna"
+   "Husqvarna",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Retén De Aceite Repl St- FS38/55",
@@ -13176,7 +13604,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO HUSQVARNA 143R",
   "foto": "2127015.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2127016",
@@ -13186,7 +13615,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Retén",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Retén De Aceite Repl St- FS160/220/280",
   "ubicacion": null,
@@ -13202,7 +13633,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2127016.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2127017",
@@ -13212,7 +13644,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Retén",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Retén De Aceite Repl St- FS450",
   "ubicacion": null,
@@ -13228,7 +13662,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2127017.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2127018",
@@ -18508,7 +18943,8 @@
   "subcategoria": "KITS DE JUNTAS Y DIAFRAGMAS",
   "marcas": [
    "Homelite",
-   "McCulloch"
+   "McCulloch",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Homelite ST 155/175/185/ 285/385 Mc Culloch 28cc. 32cc",
@@ -18530,7 +18966,8 @@
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2209012.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2209019",
@@ -19469,7 +19906,8 @@
   "familia_indice": "Juntas de motor",
   "subcategoria": "Juntas de motor",
   "marcas": [
-   "Husqvarna"
+   "Husqvarna",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Junta De Admisión REPL ST MS 170/250 HUSQVARNA",
@@ -19486,7 +19924,8 @@
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - DESMALEZADORAS STIHL",
   "foto": "2210012.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2210015",
@@ -19581,7 +20020,8 @@
   "familia_indice": "Juntas de motor",
   "subcategoria": "Juntas de motor",
   "marcas": [
-   "Husqvarna"
+   "Husqvarna",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Junta Base De Cilindro REPL ST MS361 HUSQVARNA",
@@ -19598,7 +20038,8 @@
   "encabezado_pdf": "JUNTAS DE MOTOR REPL - MOTOSIERRAS STIHL",
   "foto": "2210032.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2210033",
@@ -20246,7 +20687,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "EMBRAGUES",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Embrague ST-180/250/251",
   "ubicacion": null,
@@ -20262,7 +20705,8 @@
   "encabezado_pdf": "EMBRAGUES",
   "foto": "2212036.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212037",
@@ -20272,7 +20716,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "EMBRAGUES",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Embrague ST-260/270/280/261",
   "ubicacion": null,
@@ -20288,7 +20734,8 @@
   "encabezado_pdf": "EMBRAGUES",
   "foto": "2212037.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212038",
@@ -20298,7 +20745,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "EMBRAGUES",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Embrague ST-MS361/044/036",
   "ubicacion": null,
@@ -20314,7 +20763,8 @@
   "encabezado_pdf": "EMBRAGUES",
   "foto": "2212038.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212039",
@@ -20324,7 +20774,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "EMBRAGUES",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Embrague ST-MS380/381",
   "ubicacion": null,
@@ -20340,7 +20792,8 @@
   "encabezado_pdf": "EMBRAGUES",
   "foto": "2212039.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212040",
@@ -20350,7 +20803,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "EMBRAGUES",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Embrague ST-MS382/362/44",
   "ubicacion": null,
@@ -20366,7 +20821,8 @@
   "encabezado_pdf": "EMBRAGUES",
   "foto": "2212040.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212043",
@@ -20404,7 +20860,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "EMBRAGUES",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Resorte De Embrague ST-180/250/251",
   "ubicacion": null,
@@ -20420,7 +20878,8 @@
   "encabezado_pdf": "EMBRAGUES",
   "foto": "2212045.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212046",
@@ -20430,7 +20889,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "EMBRAGUES",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Resorte De Embrague ST-361/044/036",
   "ubicacion": null,
@@ -20446,7 +20907,8 @@
   "encabezado_pdf": "EMBRAGUES",
   "foto": "2212046.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212047",
@@ -20456,7 +20918,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "EMBRAGUES",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Resorte De Embrague ST-MS380/381",
   "ubicacion": null,
@@ -20472,7 +20936,8 @@
   "encabezado_pdf": "EMBRAGUES",
   "foto": "2212047.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212055",
@@ -20876,7 +21341,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "CAMPANA DE EMBRAGUE",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Campana Embrague ST-MS230/250",
   "ubicacion": null,
@@ -20892,7 +21359,8 @@
   "encabezado_pdf": "CAMPANA DE EMBRAGUE",
   "foto": "2212090.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212091",
@@ -20902,7 +21370,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "CAMPANA DE EMBRAGUE",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Campana Embrague ST-MS360",
   "ubicacion": null,
@@ -20918,7 +21388,8 @@
   "encabezado_pdf": "CAMPANA DE EMBRAGUE",
   "foto": "2212091.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212092",
@@ -20928,7 +21399,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "CAMPANA DE EMBRAGUE",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Campana Embrague ST-044/361",
   "ubicacion": null,
@@ -20944,7 +21417,8 @@
   "encabezado_pdf": "CAMPANA DE EMBRAGUE",
   "foto": "2212092.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212093",
@@ -20980,7 +21454,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "CAMPANA DE EMBRAGUE",
-  "marcas": [],
+  "marcas": [
+   "Husqvarna"
+  ],
   "codigo_original": [],
   "compatibilidad": "Campana Embrague REPL HUSQ. 365 362 371 372 XP 372XP PIÑON",
   "ubicacion": null,
@@ -20996,7 +21472,8 @@
   "encabezado_pdf": "CAMPANA DE EMBRAGUE",
   "foto": "2212101.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212102",
@@ -21006,7 +21483,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "CAMPANA DE EMBRAGUE",
-  "marcas": [],
+  "marcas": [
+   "Husqvarna"
+  ],
   "codigo_original": [],
   "compatibilidad": "Campana Embrague REPL HUSQ. 61 268 PIÑON",
   "ubicacion": null,
@@ -21022,7 +21501,8 @@
   "encabezado_pdf": "CAMPANA DE EMBRAGUE",
   "foto": "2212102.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212103",
@@ -21032,7 +21512,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "CAMPANA DE EMBRAGUE",
-  "marcas": [],
+  "marcas": [
+   "Husqvarna"
+  ],
   "codigo_original": [],
   "compatibilidad": "Campana Embrague Campana Embrague HUSQ. 61 268 . 365 362 371 37 XP 372XP ANILLO",
   "ubicacion": null,
@@ -21048,7 +21530,8 @@
   "encabezado_pdf": "CAMPANA DE EMBRAGUE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2212104",
@@ -21380,7 +21863,9 @@
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "Tanque de combustible / tapa",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tapa Tanque ST MS170",
   "ubicacion": null,
@@ -21396,7 +21881,8 @@
   "encabezado_pdf": "MOTOSIERRAS CHINAS 45CC / 52CC / 60CC",
   "foto": "2214031.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2214032",
@@ -21458,7 +21944,9 @@
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "Tanque de combustible / tapa",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tapa Tanque Comb ST MS 290/660",
   "ubicacion": null,
@@ -21474,7 +21962,8 @@
   "encabezado_pdf": "MOTOSIERRAS CHINAS 45CC / 52CC / 60CC",
   "foto": "2214034.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2214035",
@@ -21484,7 +21973,9 @@
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "Tanque de combustible / tapa",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tapa Tanque Aceite ST MS 290/660",
   "ubicacion": null,
@@ -21500,7 +21991,8 @@
   "encabezado_pdf": "MOTOSIERRAS CHINAS 45CC / 52CC / 60CC",
   "foto": "2214035.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2214036",
@@ -21510,7 +22002,9 @@
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "Tanque de combustible / tapa",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tapa Tanque Aceite ST MS 381",
   "ubicacion": null,
@@ -21526,7 +22020,8 @@
   "encabezado_pdf": "MOTOSIERRAS CHINAS 45CC / 52CC / 60CC",
   "foto": "2214036.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2214037",
@@ -21536,7 +22031,9 @@
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "Tanque de combustible / tapa",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tapa Tanque Comb REPL ST MS 381",
   "ubicacion": null,
@@ -21552,7 +22049,8 @@
   "encabezado_pdf": "MOTOSIERRAS CHINAS 45CC / 52CC / 60CC",
   "foto": "2214037.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2214039",
@@ -21562,7 +22060,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "TAPAS DE DEPOSITOS",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Tapa Tanque Comb REPL ST FS 160/220/280",
   "ubicacion": null,
@@ -21578,7 +22078,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2214039.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2214040",
@@ -22492,7 +22993,9 @@
   "familia": "Sistemas de arranque",
   "familia_indice": "Sistemas de arranque",
   "subcategoria": "REEMPLAZOS",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Sistema de Arranque ST-044/046",
   "ubicacion": null,
@@ -22508,7 +23011,8 @@
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - MOTOSIERRAS - REEMPLAZOS",
   "foto": "2215024.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2215025",
@@ -22518,7 +23022,9 @@
   "familia": "Sistemas de arranque",
   "familia_indice": "Sistemas de arranque",
   "subcategoria": "REEMPLAZOS",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Sistema de Arranque ST-290/310/390",
   "ubicacion": null,
@@ -22534,7 +23040,8 @@
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - MOTOSIERRAS - REEMPLAZOS",
   "foto": "2215025.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2215026",
@@ -22570,7 +23077,9 @@
   "familia": "Sistemas de arranque",
   "familia_indice": "Sistemas de arranque",
   "subcategoria": "REEMPLAZOS",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Sistema de Arranque ST-MS362",
   "ubicacion": null,
@@ -22586,7 +23095,8 @@
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - MOTOSIERRAS - REEMPLAZOS",
   "foto": "2215027.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2215028",
@@ -22702,7 +23212,9 @@
   "familia": "Sistemas de arranque",
   "familia_indice": "Sistemas de arranque",
   "subcategoria": "REEMPLAZOS",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Sistema de Arranque ST-070",
   "ubicacion": null,
@@ -22718,7 +23230,8 @@
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - MOTOSIERRAS - REEMPLAZOS",
   "foto": "2215036.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2215037",
@@ -22728,7 +23241,9 @@
   "familia": "Sistemas de arranque",
   "familia_indice": "Sistemas de arranque",
   "subcategoria": "REEMPLAZOS",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Sistema de Arranque ST-400",
   "ubicacion": null,
@@ -22744,7 +23259,8 @@
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - MOTOSIERRAS - REEMPLAZOS",
   "foto": "2215037.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2215038",
@@ -22754,7 +23270,9 @@
   "familia": "Sistemas de arranque",
   "familia_indice": "Sistemas de arranque",
   "subcategoria": "REEMPLAZOS",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Sistema de Arranque ST-410/420",
   "ubicacion": null,
@@ -22770,7 +23288,8 @@
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - MOTOSIERRAS - REEMPLAZOS",
   "foto": "2215038.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2215039",
@@ -22780,7 +23299,9 @@
   "familia": "Sistemas de arranque",
   "familia_indice": "Sistemas de arranque",
   "subcategoria": "REEMPLAZOS",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Sistema de Arranque ST-700",
   "ubicacion": null,
@@ -22796,7 +23317,8 @@
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - MOTOSIERRAS - REEMPLAZOS",
   "foto": "2215039.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2215040",
@@ -23518,7 +24040,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tapas de arranque",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Conjunto de arranque (R)",
   "ubicacion": null,
@@ -23536,7 +24060,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2215086.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2215087",
@@ -23546,7 +24071,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tapas de arranque",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Conjunto de arranque (R- 2) CAJAS DE ENGRANAJE",
   "ubicacion": null,
@@ -23564,7 +24091,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2215087.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2215088",
@@ -23574,7 +24102,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tapas de arranque",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Conjunto de arranque (R- 2T)",
   "ubicacion": null,
@@ -23592,7 +24122,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2215088.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2215089",
@@ -23602,7 +24133,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tapas de arranque",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Manija De Arranque Repl St- FS160/220/280",
   "ubicacion": null,
@@ -23618,7 +24151,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2215089.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2215090",
@@ -23816,7 +24350,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bomba De Aceite ST-MS290/390/391",
   "ubicacion": null,
@@ -23832,7 +24368,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219042.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2219043",
@@ -23842,7 +24379,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bomba De Aceite ST-MS340/360",
   "ubicacion": null,
@@ -23858,7 +24397,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219043.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2219044",
@@ -23868,7 +24408,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bomba De Aceite ST-361/362/460",
   "ubicacion": null,
@@ -23884,7 +24426,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219044.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2219045",
@@ -23894,7 +24437,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bomba De Aceite ST-380/381",
   "ubicacion": null,
@@ -23910,7 +24455,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219045.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2219046",
@@ -23920,7 +24466,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bomba De Aceite ST-MS382",
   "ubicacion": null,
@@ -23936,7 +24484,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219046.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2219047",
@@ -23946,7 +24495,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bomba De Aceite ST-066/660",
   "ubicacion": null,
@@ -23962,7 +24513,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219047.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2219049",
@@ -23972,7 +24524,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bomba De Aceite ST-MS170/180/210/230/250",
   "ubicacion": null,
@@ -23988,7 +24542,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219049.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2219050",
@@ -23998,7 +24553,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bomba De Aceite ST-08/08S",
   "ubicacion": null,
@@ -24014,7 +24571,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219050.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2219055",
@@ -24196,7 +24754,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Sin Fin Bomba De Aceite ST-MS170/180/210/230/250",
   "ubicacion": null,
@@ -24212,7 +24772,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219063.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2219065",
@@ -24222,7 +24783,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Sin Fin Bomba de Aceite ST-MS361 362 460",
   "ubicacion": null,
@@ -24238,7 +24801,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219065.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2219066",
@@ -24274,7 +24838,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Sin Fin Bomba De Aceite ST-MS380 381",
   "ubicacion": null,
@@ -24290,7 +24856,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219067.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2219068",
@@ -24383,7 +24950,8 @@
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Bomba de aceite",
   "marcas": [
-   "Oleo Mac"
+   "Oleo Mac",
+   "Stihl"
   ],
   "codigo_original": [],
   "compatibilidad": "Engranaje sinfín Oleo Mac 936/937 3/8-6",
@@ -24400,7 +24968,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2219083.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2219084",
@@ -25577,7 +26146,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Protector Tanque De Comb Repl St- FS450",
   "ubicacion": null,
@@ -25593,7 +26164,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2220077.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2220080",
@@ -27378,7 +27950,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Partes",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -27394,7 +27968,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2220187.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2220190",
@@ -28234,7 +28809,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "TAPAS DE DEPOSITOS",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cigueñal ST-MS170 RETENES",
   "ubicacion": null,
@@ -28250,7 +28827,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2222030.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2222031",
@@ -28260,7 +28838,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "TAPAS DE DEPOSITOS",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cigueñal ST-MS180",
   "ubicacion": null,
@@ -28276,7 +28856,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2222031.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2222033",
@@ -28286,7 +28867,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "TAPAS DE DEPOSITOS",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Cigueñal ST-MS230/250",
   "ubicacion": null,
@@ -28302,7 +28885,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2222033.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2222036",
@@ -28878,7 +29462,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOBINA DE INGNICION 2T",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bobina de Ignicion ST-230/250",
   "ubicacion": null,
@@ -28894,7 +29480,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2224018.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2224019",
@@ -28930,7 +29517,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOBINA DE INGNICION 2T",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bobina de Ignicion ST-MS361",
   "ubicacion": null,
@@ -28946,7 +29535,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2224020.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2224021",
@@ -28956,7 +29546,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOBINA DE INGNICION 2T",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bobina de Ignicion ST-MS362",
   "ubicacion": null,
@@ -28972,7 +29564,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2224021.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2224023",
@@ -28982,7 +29575,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "BOBINA DE INGNICION 2T",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bobina de Ignicion ST-MS382(BR)",
   "ubicacion": null,
@@ -28998,7 +29593,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2224023.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2224028",
@@ -29367,7 +29963,9 @@
   "familia": "Motosierras",
   "familia_indice": null,
   "subcategoria": "TAPAS DE DEPOSITOS",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Reten De Aceite REPL Reten De Aceite REPL Reten De Aceite REPL Reten De Aceite REPL Reten De Aceite REPL MS 170-180-210-230-250 ST MS 380/381/382 ST MS 361/362/441 ST FS 260/280 HUS 61/266/268",
   "ubicacion": null,
@@ -29383,7 +29981,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2227656.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2227657",
@@ -31621,7 +32220,9 @@
   "familia": "Sopladoras",
   "familia_indice": null,
   "subcategoria": "BOBINA DE INGNICION 2T",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bobina de Ignicion ST-BR320/340",
   "ubicacion": null,
@@ -31637,7 +32238,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2324240.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2324241",
@@ -31647,7 +32249,9 @@
   "familia": "Sopladoras",
   "familia_indice": null,
   "subcategoria": "BOBINA DE INGNICION 2T",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bobina de Ignicion ST-BR350/430 BOBINA DE INGNICION 4T",
   "ubicacion": null,
@@ -31663,7 +32267,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2324241.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2324242",
@@ -31673,7 +32278,9 @@
   "familia": "Sopladoras",
   "familia_indice": null,
   "subcategoria": "BOBINA DE INGNICION 2T",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bobina de Ignicion ST-BR500/600",
   "ubicacion": null,
@@ -31689,7 +32296,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2324242.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2324244",
@@ -31727,7 +32335,9 @@
   "familia": "Sopladoras",
   "familia_indice": null,
   "subcategoria": "BOBINA DE INGNICION 2T",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Bobina de Ignicion ST-BG86/56",
   "ubicacion": null,
@@ -31743,7 +32353,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2324245.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "2502505",
@@ -33672,7 +34283,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Mangueras",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -33688,7 +34301,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2921065.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "3101007",
@@ -40628,7 +41242,8 @@
   "familia_indice": null,
   "subcategoria": "TORRETAS CARCASAS EJES",
   "marcas": [
-   "AYP"
+   "AYP",
+   "Husqvarna"
   ],
   "codigo_original": [
    "918-04865"
@@ -40647,7 +41262,8 @@
   "encabezado_pdf": "TORRETAS CARCASAS EJES - AYP / HQV / POULAN",
   "foto": "3120965.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "3120966",
@@ -42557,7 +43173,9 @@
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
   "subcategoria": "CABLES DE ACCIONAMIENTO",
-  "marcas": [],
+  "marcas": [
+   "Husqvarna"
+  ],
   "codigo_original": [
    "532183281",
    "532183567",
@@ -42578,7 +43196,8 @@
   "encabezado_pdf": "MINITRACTORES - CABLES DE ACCIONAMIENTO",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "3204132",
@@ -42667,7 +43286,8 @@
   "familia_indice": "Máquinas de cortar césped",
   "subcategoria": "CABLES",
   "marcas": [
-   "Toro"
+   "Toro",
+   "Husqvarna"
   ],
   "codigo_original": [
    "532431649",
@@ -42689,7 +43309,8 @@
   "encabezado_pdf": "MAQUINAS CORTACESPED - CABLES",
   "foto": "3204137.jpg",
   "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "3204138",
@@ -55019,7 +55640,9 @@
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
   "subcategoria": "Cables",
-  "marcas": [],
+  "marcas": [
+   "Husqvarna"
+  ],
   "codigo_original": [
    "532175566"
   ],
@@ -55037,7 +55660,8 @@
   "encabezado_pdf": "MINITRACTORES - TAMBOR DE ARRANQUE",
   "foto": "4325350.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "4325351",
@@ -55269,7 +55893,9 @@
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
   "subcategoria": "Cables",
-  "marcas": [],
+  "marcas": [
+   "Husqvarna"
+  ],
   "codigo_original": [
    "532193350"
   ],
@@ -55287,7 +55913,8 @@
   "encabezado_pdf": "MINITRACTORES - TAMBOR DE ARRANQUE",
   "foto": "4325359.jpg",
   "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "4325360",
@@ -58167,7 +58794,9 @@
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Bomba de aceite",
-  "marcas": [],
+  "marcas": [
+   "Stihl"
+  ],
   "codigo_original": [],
   "compatibilidad": "Grasa De Caja De Engranajes 50gr",
   "ubicacion": null,
@@ -58183,7 +58812,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "4919500.jpg",
   "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "4919501",
@@ -66360,7 +66990,9 @@
   "familia": "Minitractores",
   "familia_indice": null,
   "subcategoria": "UBICACIÓN",
-  "marcas": [],
+  "marcas": [
+   "Husqvarna"
+  ],
   "codigo_original": [],
   "compatibilidad": null,
   "ubicacion": null,
@@ -66379,7 +67011,8 @@
   "encabezado_pdf": "UBICACIÓN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_marca": "sigla"
  },
  {
   "codigo": "5888542",
