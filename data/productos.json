@@ -215,9 +215,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS CHINAS 43CC / 52CC",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2101101.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2102128",
@@ -6321,9 +6322,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2113029.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2113030",
@@ -6376,9 +6378,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2113031.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2113032",
@@ -7229,9 +7232,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - LLAVES PASES DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2114053.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2114054",
@@ -7289,9 +7293,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - LLAVES PASES DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2114055.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2114060",
@@ -7315,9 +7320,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMA DE ARRANQUE - MOTOSIERRAS - REPUESTOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2114060.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2114070",
@@ -9560,9 +9566,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2117540.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2117545",
@@ -17312,9 +17319,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS CHINAS 38CC",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204017.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204030",
@@ -18753,9 +18761,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2207050.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2207051",
@@ -18781,9 +18790,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2207051.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2207052",
@@ -18809,9 +18819,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2207052.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2207053",
@@ -18837,9 +18848,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2207053.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2207054",
@@ -18865,9 +18877,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2207054.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2207055",
@@ -18893,9 +18906,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2207055.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2207057",
@@ -18921,9 +18935,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2207057.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2207059",
@@ -18949,9 +18964,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2207059.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2208015",
@@ -20402,9 +20418,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2210068.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2210069",
@@ -21635,10 +21652,11 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CAMPANA DE EMBRAGUE",
-  "foto": null,
-  "foto_confianza": null,
+  "foto": "2212103.jpg",
+  "foto_confianza": "alta",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2212104",
@@ -23255,9 +23273,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - MOTOSIERRAS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2215029.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2215030",
@@ -23826,9 +23845,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - MOTOSIERRAS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2215070.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2215071",
@@ -24113,9 +24133,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE FRENO / CINTAS REEMPLAZO MOTOSIERRAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2215084.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2215085",
@@ -24141,9 +24162,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE FRENO / CINTAS REEMPLAZO MOTOSIERRAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2215085.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2215086",
@@ -30745,9 +30767,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ESPADAS PREMIUM",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2290537.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2290539",
@@ -30933,9 +30956,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ESPADAS STANDARD",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2290546.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2291003",
@@ -31096,9 +31120,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ESPADAS PREMIUM",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2291015.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2291016",
@@ -35665,9 +35690,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS CONVENCIONALES Y TRITURADORAS - MURRAY",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3101260.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101265",
@@ -37256,9 +37282,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TORRETAS CARCASAS EJES - MTD / CUB CADET / YARD MACHINES",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3102626.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3102628",
@@ -37286,9 +37313,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TORRETAS CARCASAS EJES - MTD / CUB CADET / YARD MACHINES",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3102628.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3102631",
@@ -38158,9 +38186,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TORRETAS CARCASAS EJES - MTD / CUB CADET / YARD MACHINES",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3102693.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3102701",
@@ -39290,9 +39319,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3103123.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3103124",
@@ -39468,9 +39498,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "POLEAS - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3103129.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3103132",
@@ -41647,9 +41678,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3120971.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3120972",
@@ -41737,9 +41769,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3120974.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3120975",
@@ -42431,9 +42464,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - JOHN DEERE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3201306.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201307",
@@ -43424,10 +43458,11 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CABLES DE ACCIONAMIENTO",
-  "foto": null,
-  "foto_confianza": null,
+  "foto": "3204131.jpg",
+  "foto_confianza": "alta",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3204132",
@@ -43768,9 +43803,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CÁMARAS Y NEUMÁTICOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3206126.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3206128",
@@ -43794,9 +43830,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CÁMARAS Y NEUMÁTICOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3206128.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3206129",
@@ -43820,9 +43857,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CÁMARAS Y NEUMÁTICOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3206129.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3206130",
@@ -43846,9 +43884,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CÁMARAS Y NEUMÁTICOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3206130.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3206131",
@@ -44830,9 +44869,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4301561.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4301562",
@@ -46342,9 +46382,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4303120.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4303121",
@@ -46368,9 +46409,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4303121.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4303122",
@@ -46950,9 +46992,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4307229.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307230",
@@ -46976,9 +47019,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4307230.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307231",
@@ -47002,9 +47046,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4307231.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307232",
@@ -47106,9 +47151,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4307327.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307328",
@@ -48946,9 +48992,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307671.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307672",
@@ -48974,9 +49021,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307672.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307673",
@@ -49004,9 +49052,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307673.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307674",
@@ -49034,9 +49083,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307674.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307675",
@@ -49062,9 +49112,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4307675.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307678",
@@ -50343,9 +50394,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4310427.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310428",
@@ -50369,9 +50421,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310428.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310429",
@@ -50395,9 +50448,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4310429.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310431",
@@ -50735,9 +50789,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4310445.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310446",
@@ -50918,9 +50973,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4310452.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310453",
@@ -51333,9 +51389,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4310492.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310493",
@@ -51544,9 +51601,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4311526.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4311527",
@@ -51570,9 +51628,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4311527.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4311528",
@@ -51596,9 +51655,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4311528.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4313767",
@@ -52280,9 +52340,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4315243.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4315244",
@@ -52811,9 +52872,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4320582.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320583",
@@ -53021,9 +53083,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4320593.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320594",
@@ -53307,9 +53370,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4320606.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320607",
@@ -53359,9 +53423,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4320608.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320609",
@@ -53463,9 +53528,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4320612.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320613",
@@ -53515,9 +53581,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4320614.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320615",
@@ -53697,9 +53764,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4320624.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320625",
@@ -53907,9 +53975,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4320635.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320636",
@@ -53959,9 +54028,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4320640.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320641",
@@ -54011,9 +54081,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4320642.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320643",
@@ -54115,9 +54186,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4320646.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320647",
@@ -54427,9 +54499,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4320658.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320659",
@@ -54895,9 +54968,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "GENERADOR 2500 - 3500",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4320682.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320683",
@@ -55055,9 +55129,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4322094.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4322095",
@@ -55159,9 +55234,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4324100.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4324102",
@@ -55185,9 +55261,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4324102.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4324235",
@@ -55871,9 +55948,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTORES 4T - BURROS DE ARRANQUE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4325322.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4325323",
@@ -56176,9 +56254,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTORES 4T - BURROS DE ARRANQUE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4325357.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4325358",
@@ -56497,9 +56576,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE GENERADOR 2500 - 3500",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4714334.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4720105",
@@ -56760,9 +56840,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE GENERADOR 5500 - 6500 - 7500",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4720516.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4720517",
@@ -56968,9 +57049,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE GENERADOR 5500 - 6500 - 7500",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4720524.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4720525",
@@ -57700,9 +57782,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE GENERADOR 2500 - 3500",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4722099.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4805017",
@@ -57934,9 +58017,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOBOMBAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4810307.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4810308",
@@ -57960,9 +58044,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOBOMBAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4810308.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4810309",
@@ -58276,9 +58361,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOBOMBAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4820210.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4820211",
@@ -58302,9 +58388,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOBOMBAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4820211.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4820212",
@@ -58706,9 +58793,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOBOMBAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4820227.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4820228",
@@ -58972,9 +59060,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOBOMBAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4820907.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4820908",

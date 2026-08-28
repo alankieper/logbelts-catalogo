@@ -1,13 +1,12 @@
 import CatalogoHeader from './components/CatalogoHeader';
 import Icono from './components/Icono';
 import MarcasMarquee from './components/MarcasMarquee';
-import { getFamilias, getCatalogoResumen, getMarcasConteo } from '../lib/catalogo';
+import { getFamilias, getMarcasConteo } from '../lib/catalogo';
 
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   const familias = await getFamilias();
-  const resumen = await getCatalogoResumen();
   const marcas = await getMarcasConteo();
 
   return (
@@ -16,10 +15,10 @@ export default async function Home() {
       <main className="cat">
         <div className="wrap">
           <p className="eyebrow">Catálogo de repuestos</p>
-          <h1 className="page">Repuestos para bosque, jardín e industria</h1>
+          <h1 className="page">Repuestos para bosque y jardín</h1>
           <p className="lead">
-            {resumen.total.toLocaleString('es-AR')} productos. Buscá por código Logbelts, por el
-            código original del fabricante, o por marca y modelo de máquina.
+            Buscá por código Logbelts, por el código original del fabricante, o por
+            marca y modelo de máquina.
           </p>
 
           <a className="home-cta" href="/identificar">

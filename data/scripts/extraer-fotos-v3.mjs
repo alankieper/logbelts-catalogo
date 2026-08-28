@@ -244,18 +244,31 @@ for (let p = 1; p <= pdfPages.length; p++) {
 
   const pos = await imgPositions(p);
   const xs = xobjImagesOfPage(p - 1);
-  if (pos.length !== xs.length) { sinCuadrar++; continue; }   // no puedo casar bytes<->posición con seguridad
 
-  // imágenes que son "foto de producto": caja dibujada mediana, no banner, no tira de texto
+  // cola de bytes por tamaño exacto (w x h en píxeles)
+  const byWH = new Map();
+  for (const x of xs) {
+    const k = x.w + 'x' + x.h;
+    if (!byWH.has(k)) byWH.set(k, []);
+    byWH.get(k).push(x.stream);
+  }
+
+  // de todo lo que pdf.js dibuja, quedarse con lo que parece FOTO de producto
+  // (cuadrada-ish, tamaño mediano), sin banners ni tiras de texto ni pixeles 1x1.
+  // Se deduplica por posición: el theme pinta cada foto 2 veces.
   const fotos = [];
-  for (let i = 0; i < pos.length; i++) {
-    const q = pos[i];
+  const vistas = [];
+  for (const q of pos) {
     if (!q.wpx || !q.hpx) continue;
-    if (q.wpx > 1550 || q.hpx > 1550) continue;
-    if (q.boxW < 45 || q.boxH < 52) continue;                  // las tiras de texto son más bajas
-    const arPix = q.wpx / q.hpx;
-    if (arPix < 0.45 || arPix > 2.2) continue;
-    fotos.push({ ...q, stream: xs[i].stream });
+    if (q.wpx < 90 || q.hpx < 90 || q.wpx > 1550 || q.hpx > 1550) continue;
+    const ar = q.wpx / q.hpx;
+    if (ar < 0.5 || ar > 1.75) continue;                        // las tiras de texto son más anchas
+    if (q.boxW < 42 || q.boxH < 42) continue;
+    if (vistas.some((v) => Math.abs(v.cx - q.cx) < 8 && Math.abs(v.cyTop - q.cyTop) < 8)) continue;
+    const cola = byWH.get(q.wpx + 'x' + q.hpx);
+    if (!cola || !cola.length) continue;
+    vistas.push(q);
+    fotos.push({ ...q, stream: cola.shift() });
   }
   if (!fotos.length) continue;
 
