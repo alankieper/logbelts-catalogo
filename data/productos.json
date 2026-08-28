@@ -327,9 +327,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2102701.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2102702",
@@ -353,9 +354,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2102702.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2102703",
@@ -435,9 +437,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2102720.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2102810",
@@ -463,9 +466,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2102810.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2102811",
@@ -489,9 +493,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2102811.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2102812",
@@ -515,9 +520,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2102812.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2102813",
@@ -543,9 +549,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2102813.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2102821",
@@ -569,9 +576,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2102821.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2102822",
@@ -597,9 +605,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2102822.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2102823",
@@ -623,9 +632,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2102823.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2102824",
@@ -883,9 +893,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2102871.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2102873",
@@ -995,9 +1006,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2102896.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2103001",
@@ -2317,9 +2329,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - DESMALEZADORAS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2104033.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2104034",
@@ -2343,9 +2356,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - DESMALEZADORAS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2104034.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2104035",
@@ -2431,9 +2445,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - DESMALEZADORAS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2104050.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2104051",
@@ -2457,9 +2472,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - DESMALEZADORAS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2104051.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2104061",
@@ -2483,9 +2499,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - DESMALEZADORAS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2104061.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2104063",
@@ -3391,9 +3408,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2107197.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2109013",
@@ -3995,9 +4013,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2109221.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2109222",
@@ -4021,9 +4040,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2109222.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2109223",
@@ -4047,9 +4067,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2109223.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2109224",
@@ -4073,9 +4094,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2109224.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2109225",
@@ -4099,9 +4121,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2109225.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2110001",
@@ -8267,9 +8290,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2115070.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2115071",
@@ -8293,9 +8317,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2115071.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2115072",
@@ -8319,9 +8344,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2115072.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2115073",
@@ -8345,9 +8371,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2115073.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2115074",
@@ -8401,9 +8428,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2115075.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2115076",
@@ -8427,9 +8455,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2115076.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2115101",
@@ -8583,9 +8612,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS - OTROS - REPUESTOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2115106.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2115108",
@@ -8609,9 +8639,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS - OTROS - REPUESTOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2115108.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2115111",
@@ -8663,9 +8694,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS - OTROS - REPUESTOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2115112.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2115113",
@@ -8718,9 +8750,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS - OTROS - REPUESTOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2115121.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2115122",
@@ -8773,9 +8806,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS - OTROS - REPUESTOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2115123.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2115130",
@@ -12051,9 +12085,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2121061.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2121062",
@@ -12077,9 +12112,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2121062.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2121065",
@@ -12446,10 +12482,11 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
-  "foto": null,
-  "foto_confianza": null,
+  "foto": "2122141.jpg",
+  "foto_confianza": "alta",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2122143",
@@ -13851,9 +13888,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202801.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202802",
@@ -13879,9 +13917,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202802.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202803",
@@ -13909,9 +13948,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202803.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202804",
@@ -13937,9 +13977,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202804.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202805",
@@ -13965,9 +14006,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202805.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202806",
@@ -13993,9 +14035,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202806.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202808",
@@ -14021,9 +14064,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202808.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202809",
@@ -14049,9 +14093,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202809.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202810",
@@ -14103,9 +14148,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202813.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202814",
@@ -14129,9 +14175,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202814.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202815",
@@ -14155,9 +14202,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202815.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202819",
@@ -14183,9 +14231,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202819.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202820",
@@ -14211,9 +14260,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202820.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202822",
@@ -14239,9 +14289,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202822.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202823",
@@ -14267,9 +14318,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202823.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202824",
@@ -14293,9 +14345,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202824.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202827",
@@ -14321,9 +14374,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202827.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202828",
@@ -14349,9 +14403,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202828.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202829",
@@ -14433,9 +14488,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202832.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202835",
@@ -14599,9 +14655,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202841.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202843",
@@ -14655,9 +14712,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202846.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202848",
@@ -14683,9 +14741,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202848.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202849",
@@ -14711,9 +14770,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202849.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202850",
@@ -14739,9 +14799,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202850.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202851",
@@ -14765,9 +14826,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202851.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202853",
@@ -14793,9 +14855,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202853.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202854",
@@ -14821,9 +14884,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202854.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202855",
@@ -14877,9 +14941,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202857.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202858",
@@ -14905,9 +14970,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202858.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202859",
@@ -14933,9 +14999,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202859.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202860",
@@ -14989,9 +15056,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202861.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202864",
@@ -15017,9 +15085,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202864.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202866",
@@ -15045,9 +15114,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202866.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202867",
@@ -15071,9 +15141,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202867.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202868",
@@ -15099,9 +15170,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202868.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202869",
@@ -15127,9 +15199,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202869.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202870",
@@ -15155,9 +15228,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202870.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202871",
@@ -15183,9 +15257,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202871.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202872",
@@ -15295,9 +15370,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202875.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202876",
@@ -15323,9 +15399,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202876.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202877",
@@ -15351,9 +15428,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202877.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202878",
@@ -15521,9 +15599,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202883.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2202884",
@@ -15549,9 +15628,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2202884.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2203011",
@@ -16979,9 +17059,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CILINDROS COMPLETOS - MOTOSIERRAS - HUSQVARNA - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2203085.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2203086",
@@ -17038,9 +17119,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "RETENES",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2203401.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2203402",
@@ -17064,9 +17146,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "RETENES",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2203402.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2203403",
@@ -17092,9 +17175,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "RETENES",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2203403.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2203404",
@@ -17120,9 +17204,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "RETENES",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2203404.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2203405",
@@ -17148,9 +17233,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "RETENES",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2203405.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204015",
@@ -17254,9 +17340,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204030.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204031",
@@ -17282,9 +17369,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204031.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204032",
@@ -17310,9 +17398,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204032.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204033",
@@ -17338,9 +17427,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204033.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204034",
@@ -17366,9 +17456,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204034.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204035",
@@ -17394,9 +17485,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204035.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204036",
@@ -17422,9 +17514,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204036.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204037",
@@ -17450,9 +17543,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204037.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204038",
@@ -17478,9 +17572,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204038.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204039",
@@ -17506,9 +17601,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204039.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204040",
@@ -17534,9 +17630,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204040.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204041",
@@ -17562,9 +17659,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204041.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204042",
@@ -17590,9 +17688,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204042.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204044",
@@ -17618,9 +17717,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204044.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204045",
@@ -17646,9 +17746,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204045.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204047",
@@ -17672,9 +17773,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - MOTOSIERRAS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204047.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204049",
@@ -17760,9 +17862,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "PISTONES Y AROS - MOTOSIERRAS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204055.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204056",
@@ -17786,9 +17889,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - MOTOSIERRAS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204056.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204057",
@@ -17812,9 +17916,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - MOTOSIERRAS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204057.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2204058",
@@ -17838,9 +17943,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - MOTOSIERRAS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2204058.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2205019",
@@ -18258,9 +18364,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2205032.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2207001",
@@ -23342,9 +23449,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS - OTROS - REPUESTOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2215040.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2215041",
@@ -23368,9 +23476,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS - OTROS - REPUESTOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2215041.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2215042",
@@ -23394,9 +23503,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS - OTROS - REPUESTOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2215042.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2215043",
@@ -23420,9 +23530,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS - OTROS - REPUESTOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2215043.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2215045",
@@ -23446,9 +23557,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS - OTROS - REPUESTOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2215045.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2215046",
@@ -23740,9 +23852,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2215071.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2215072",
@@ -25802,9 +25915,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2220042.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2220045",
@@ -25828,9 +25942,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2220045.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2220046",
@@ -25854,9 +25969,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2220046.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2220047",
@@ -25880,9 +25996,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2220047.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2220060",
@@ -25906,9 +26023,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2220060.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2220061",
@@ -25932,9 +26050,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2220061.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2220062",
@@ -25958,9 +26077,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2220062.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2220068",
@@ -26363,9 +26483,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2220093.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2220094",
@@ -26389,9 +26510,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2220094.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2220096",
@@ -26443,9 +26565,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2220097.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2220098",
@@ -26469,9 +26592,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2220098.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2220099",
@@ -27472,9 +27596,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2220146.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2220165",
@@ -28277,9 +28402,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2220210.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2221610",
@@ -28303,9 +28429,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2221610.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2221611",
@@ -28329,9 +28456,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2221611.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2221614",
@@ -28355,9 +28483,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2221614.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2221615",
@@ -28381,9 +28510,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2221615.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2221616",
@@ -28407,9 +28537,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2221616.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2221617",
@@ -28433,9 +28564,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2221617.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2221618",
@@ -28459,9 +28591,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2221618.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2221620",
@@ -28485,9 +28618,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2221620.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2221621",
@@ -28511,9 +28645,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2221621.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2221622",
@@ -28537,9 +28672,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2221622.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2222010",
@@ -29737,9 +29873,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2224037.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2224038",
@@ -29791,9 +29928,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2224039.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2224040",
@@ -30006,9 +30144,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "RETENES",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2227657.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2227658",
@@ -30820,9 +30959,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2291003.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2291004",
@@ -30846,9 +30986,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2291004.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2291005",
@@ -30872,9 +31013,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2291005.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2291006",
@@ -30898,9 +31040,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2291006.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2291007",
@@ -30924,9 +31067,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2291007.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2291015",
@@ -31394,9 +31538,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2291032.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2291033",
@@ -31420,9 +31565,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2291033.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2291034",
@@ -31556,9 +31702,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2291122.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2291123",
@@ -31582,9 +31729,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2291123.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2291124",
@@ -31608,9 +31756,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2291124.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2302836",
@@ -31636,9 +31785,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2302836.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2302837",
@@ -31666,9 +31816,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2302837.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2302838",
@@ -31694,9 +31845,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2302838.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2302839",
@@ -31722,9 +31874,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2302839.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2302840",
@@ -31752,9 +31905,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2302840.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2302842",
@@ -31778,9 +31932,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2302842.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2302843",
@@ -31806,9 +31961,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2302843.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2302860",
@@ -31834,9 +31990,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2302860.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2302867",
@@ -32100,9 +32257,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "FILTROS DE AIRE SOPLADORAS 2T",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2307081.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2315101",
@@ -32126,9 +32284,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2315101.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2315102",
@@ -32152,9 +32311,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2315102.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2315105",
@@ -32378,9 +32538,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2502505.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2502531",
@@ -32406,9 +32567,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - STIHL REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2502531.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2602100",
@@ -32757,9 +32919,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2906015.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2906020",
@@ -33348,9 +33511,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2909220.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2909225",
@@ -33823,9 +33987,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2921015.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921016",
@@ -33849,9 +34014,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2921016.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921017",
@@ -33875,9 +34041,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2921017.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921019",
@@ -33901,9 +34068,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2921019.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921021",
@@ -33927,9 +34095,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2921021.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921023",
@@ -33953,9 +34122,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2921023.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921026",
@@ -33979,9 +34149,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2921026.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921028",
@@ -34005,9 +34176,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2921028.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921031",
@@ -34087,9 +34259,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2921040.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921041",
@@ -34113,9 +34286,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2921041.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921042",
@@ -34139,9 +34313,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2921042.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921043",
@@ -34165,9 +34340,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2921043.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921044",
@@ -34191,9 +34367,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "2921044.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921045",
@@ -34217,9 +34394,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "2921045.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "2921051",
@@ -34682,9 +34860,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101051.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101053",
@@ -34711,9 +34890,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101053.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101054",
@@ -34740,9 +34920,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101054.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101056",
@@ -34769,9 +34950,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101056.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101059",
@@ -34798,9 +34980,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101059.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101061",
@@ -34827,9 +35010,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101061.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101090",
@@ -34889,9 +35073,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101143.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101147",
@@ -34918,9 +35103,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101147.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101152",
@@ -34947,9 +35133,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101152.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101162",
@@ -34976,9 +35163,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101162.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101163",
@@ -35006,9 +35194,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101163.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101164",
@@ -35036,9 +35225,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101164.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101170",
@@ -35066,9 +35256,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101170.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101171",
@@ -35096,9 +35287,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101171.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101173",
@@ -35126,9 +35318,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101173.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101181",
@@ -35156,9 +35349,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101181.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101183",
@@ -35186,9 +35380,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101183.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101185",
@@ -35216,9 +35411,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101185.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101187",
@@ -35246,9 +35442,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101187.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101188",
@@ -35276,9 +35473,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101188.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101189",
@@ -35308,9 +35506,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101189.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101190",
@@ -35340,9 +35539,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101190.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101193",
@@ -35370,9 +35570,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101193.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101194",
@@ -35400,9 +35601,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101194.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101235",
@@ -35429,9 +35631,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101235.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101260",
@@ -35591,9 +35794,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3101276.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101277",
@@ -35753,9 +35957,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101296.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101297",
@@ -35783,9 +35988,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3101297.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3101298",
@@ -40705,9 +40911,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3106029.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3106034",
@@ -40757,9 +40964,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "3106035.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3106036",
@@ -41941,9 +42149,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201196.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201207",
@@ -41970,9 +42179,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201207.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201211",
@@ -41999,9 +42209,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201211.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201221",
@@ -42028,9 +42239,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201221.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201223",
@@ -42057,9 +42269,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201223.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201240",
@@ -42308,9 +42521,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201389.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201390",
@@ -42334,9 +42548,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201390.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201395",
@@ -42360,9 +42575,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201395.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201397",
@@ -42417,9 +42633,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201400.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201406",
@@ -42474,9 +42691,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201408.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201410",
@@ -42500,9 +42718,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201410.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201415",
@@ -42526,9 +42745,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201415.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201417",
@@ -42552,9 +42772,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201417.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201418",
@@ -42578,9 +42799,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201418.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201421",
@@ -42663,9 +42885,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201425.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201428",
@@ -42689,9 +42912,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201428.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201430",
@@ -42715,9 +42939,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201430.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201435",
@@ -42741,9 +42966,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201435.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201440",
@@ -42767,9 +42993,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201440.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201443",
@@ -42795,9 +43022,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201443.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201445",
@@ -42821,9 +43049,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201445.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201446",
@@ -42847,9 +43076,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "3201446.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "3201449",
@@ -43815,9 +44045,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4301387.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4301388",
@@ -43841,9 +44072,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4301388.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4301401",
@@ -43867,9 +44099,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4301401.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4301402",
@@ -44011,9 +44244,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REPARACIONES DE CARBURADOR / KITS DE JUNTAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4301482.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4301490",
@@ -44037,9 +44271,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4301490.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4301491",
@@ -44065,9 +44300,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4301491.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4301492",
@@ -44091,9 +44327,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4301492.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4301493",
@@ -44119,9 +44356,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4301493.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4301494",
@@ -44145,9 +44383,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4301494.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4301495",
@@ -44647,9 +44886,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302101.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302102",
@@ -44675,9 +44915,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302102.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302105",
@@ -44992,9 +45233,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 4 TIEMPOS - BRIGGS & STRATTON REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302115.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302116",
@@ -45020,9 +45262,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 4 TIEMPOS - BRIGGS & STRATTON REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4302116.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302117",
@@ -45048,9 +45291,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 4 TIEMPOS - BRIGGS & STRATTON REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302117.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302118",
@@ -45076,9 +45320,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 4 TIEMPOS - BRIGGS & STRATTON REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302118.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302120",
@@ -45104,9 +45349,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 4 TIEMPOS - BRIGGS & STRATTON REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302120.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302129",
@@ -45160,9 +45406,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 4 TIEMPOS - BRIGGS & STRATTON REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302150.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302151",
@@ -45188,9 +45435,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 4 TIEMPOS - BRIGGS & STRATTON REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302151.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302152",
@@ -45216,9 +45464,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 4 TIEMPOS - BRIGGS & STRATTON REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302152.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302153",
@@ -45244,9 +45493,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 4 TIEMPOS - BRIGGS & STRATTON REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302153.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302154",
@@ -45272,9 +45522,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 4 TIEMPOS - BRIGGS & STRATTON REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302154.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302155",
@@ -45300,9 +45551,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 4 TIEMPOS - BRIGGS & STRATTON REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302155.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302180",
@@ -45328,9 +45580,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 4 TIEMPOS - BRIGGS & STRATTON REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302180.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302181",
@@ -45384,9 +45637,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302901.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302902",
@@ -45438,9 +45692,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302903.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302904",
@@ -45466,9 +45721,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302904.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302905",
@@ -45523,9 +45779,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302906.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302910",
@@ -45551,9 +45808,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302910.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302911",
@@ -45605,9 +45863,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302912.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302913",
@@ -45633,9 +45892,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302913.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302914",
@@ -45839,9 +46099,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302926.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302930",
@@ -45867,9 +46128,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4302930.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4302936",
@@ -46554,9 +46816,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307223.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307224",
@@ -46582,9 +46845,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307224.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307226",
@@ -46952,9 +47216,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307602.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307603",
@@ -46980,9 +47245,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307603.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307604",
@@ -47008,9 +47274,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307604.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307605",
@@ -47036,9 +47303,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307605.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307606",
@@ -47064,9 +47332,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307606.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307608",
@@ -47092,9 +47361,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307608.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307609",
@@ -47120,9 +47390,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307609.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307610",
@@ -47148,9 +47419,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4307610.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307611",
@@ -47624,9 +47896,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307630.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307631",
@@ -47652,9 +47925,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307631.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307633",
@@ -47680,9 +47954,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4307633.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307634",
@@ -47710,9 +47985,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307634.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307635",
@@ -47738,9 +48014,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307635.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307636",
@@ -47766,9 +48043,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "foto": "4307636.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307637",
@@ -47794,9 +48072,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307637.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307638",
@@ -47822,9 +48101,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307638.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307639",
@@ -47850,9 +48130,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307639.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307640",
@@ -47878,9 +48159,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307640.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307642",
@@ -47906,9 +48188,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307642.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307643",
@@ -47934,9 +48217,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307643.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307644",
@@ -47962,9 +48246,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307644.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307645",
@@ -47990,9 +48275,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307645.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307646",
@@ -48018,9 +48304,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307646.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307647",
@@ -48046,9 +48333,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307647.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307648",
@@ -48074,9 +48362,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307648.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307649",
@@ -48102,9 +48391,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307649.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307650",
@@ -48130,9 +48420,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307650.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307653",
@@ -48276,9 +48567,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307658.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307659",
@@ -48334,9 +48626,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307660.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307661",
@@ -48362,9 +48655,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307661.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307662",
@@ -48390,9 +48684,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307662.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307663",
@@ -48418,9 +48713,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307663.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307664",
@@ -48446,9 +48742,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307664.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307665",
@@ -48474,9 +48771,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307665.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307666",
@@ -48502,9 +48800,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307666.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307667",
@@ -48530,9 +48829,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307667.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307668",
@@ -48558,9 +48858,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307668.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307669",
@@ -48586,9 +48887,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - HUSQVARNA",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307669.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307670",
@@ -48788,9 +49090,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4307678.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4307679",
@@ -49036,9 +49339,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4309381.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4309384",
@@ -49062,9 +49366,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4309384.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4309385",
@@ -49904,9 +50209,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310421.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310422",
@@ -49930,9 +50236,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310422.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310424",
@@ -49956,9 +50263,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310424.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310425",
@@ -49982,9 +50290,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310425.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310426",
@@ -50112,9 +50421,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310431.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310432",
@@ -50346,9 +50656,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310442.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310443",
@@ -50580,9 +50891,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310451.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310452",
@@ -50684,9 +50996,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310455.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310471",
@@ -50712,9 +51025,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310471.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310476",
@@ -50738,9 +51052,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310476.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310480",
@@ -50766,9 +51081,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310480.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310483",
@@ -50794,9 +51110,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310483.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310485",
@@ -51042,9 +51359,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4310493.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4310494",
@@ -51486,9 +51804,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4315221.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4315222",
@@ -51512,9 +51831,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4315222.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4315223",
@@ -51564,9 +51884,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4315224.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4315225",
@@ -51616,9 +51937,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - DESMALEZADORAS - OTROS - REPUESTOS",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4315226.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4315227",
@@ -52410,9 +52732,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4320013.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4320580",
@@ -56332,9 +56655,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4720118.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4720513",
@@ -58702,9 +59026,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4906601.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4906602",
@@ -58730,9 +59055,10 @@
    "NUEVO"
   ],
   "encabezado_pdf": "FILTROS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4906602.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4906603",
@@ -58756,9 +59082,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "FILTROS DE COMBUSTIBLE",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4906603.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4906605",
@@ -58839,9 +59166,10 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "REEMPLAZOS BRIGGS & STRATTON",
-  "foto": null,
-  "foto_confianza": null,
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "foto": "4919501.jpg",
+  "foto_confianza": "alta",
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-v3-pos"
  },
  {
   "codigo": "4923484",
