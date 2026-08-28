@@ -1,12 +1,14 @@
 import CatalogoHeader from './components/CatalogoHeader';
 import Icono from './components/Icono';
-import { getFamilias, getCatalogoResumen } from '../lib/catalogo';
+import MarcasMarquee from './components/MarcasMarquee';
+import { getFamilias, getCatalogoResumen, getMarcasConteo } from '../lib/catalogo';
 
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   const familias = await getFamilias();
   const resumen = await getCatalogoResumen();
+  const marcas = await getMarcasConteo();
 
   return (
     <>
@@ -32,6 +34,8 @@ export default async function Home() {
             </span>
             <span className="go">Identificar por foto →</span>
           </a>
+
+          <MarcasMarquee marcas={marcas} />
 
           <div className="tiles">
             {familias.map((f) => (
