@@ -97,15 +97,6 @@
  },
  {
   "marca": "Echo",
-  "modelo": "CS 1700",
-  "productos": 2,
-  "ejemplos": [
-   "2203085",
-   "2215075"
-  ]
- },
- {
-  "marca": "Echo",
   "modelo": "CS 420",
   "productos": 2,
   "ejemplos": [
@@ -120,15 +111,6 @@
   "ejemplos": [
    "2202881",
    "2290535"
-  ]
- },
- {
-  "marca": "Echo",
-  "modelo": "FS 160",
-  "productos": 2,
-  "ejemplos": [
-   "2110058",
-   "2112108"
   ]
  },
  {
@@ -246,14 +228,6 @@
  },
  {
   "marca": "Echo",
-  "modelo": "4000",
-  "productos": 1,
-  "ejemplos": [
-   "2215075"
-  ]
- },
- {
-  "marca": "Echo",
   "modelo": "4200",
   "productos": 1,
   "ejemplos": [
@@ -362,6 +336,14 @@
   "productos": 1,
   "ejemplos": [
    "2202879"
+  ]
+ },
+ {
+  "marca": "Echo",
+  "modelo": "CS 1700",
+  "productos": 1,
+  "ejemplos": [
+   "2203085"
   ]
  },
  {
@@ -558,66 +540,10 @@
  },
  {
   "marca": "Echo",
-  "modelo": "FS 120",
+  "modelo": "FS 160",
   "productos": 1,
   "ejemplos": [
-   "2110059"
-  ]
- },
- {
-  "marca": "Echo",
-  "modelo": "FS 120/250",
-  "productos": 1,
-  "ejemplos": [
-   "2110059"
-  ]
- },
- {
-  "marca": "Echo",
-  "modelo": "FS 160/280",
-  "productos": 1,
-  "ejemplos": [
-   "2110058"
-  ]
- },
- {
-  "marca": "Echo",
-  "modelo": "FS 250",
-  "productos": 1,
-  "ejemplos": [
-   "2110059"
-  ]
- },
- {
-  "marca": "Echo",
-  "modelo": "FS 280",
-  "productos": 1,
-  "ejemplos": [
-   "2110058"
-  ]
- },
- {
-  "marca": "Echo",
-  "modelo": "FS 450",
-  "productos": 1,
-  "ejemplos": [
-   "2110060"
-  ]
- },
- {
-  "marca": "Echo",
-  "modelo": "FS 55",
-  "productos": 1,
-  "ejemplos": [
-   "2110061"
-  ]
- },
- {
-  "marca": "Echo",
-  "modelo": "FS 85",
-  "productos": 1,
-  "ejemplos": [
-   "2110062"
+   "2112108"
   ]
  },
  {
@@ -1048,22 +974,6 @@
  },
  {
   "marca": "Honda",
-  "modelo": "GX 160",
-  "productos": 1,
-  "ejemplos": [
-   "4315285"
-  ]
- },
- {
-  "marca": "Honda",
-  "modelo": "GX 200",
-  "productos": 1,
-  "ejemplos": [
-   "4315285"
-  ]
- },
- {
-  "marca": "Honda",
   "modelo": "GX 240",
   "productos": 1,
   "ejemplos": [
@@ -1093,7 +1003,7 @@
  {
   "marca": "Husqvarna",
   "modelo": "365",
-  "productos": 29,
+  "productos": 30,
   "ejemplos": [
    "2112107",
    "2125161",
@@ -1105,7 +1015,7 @@
  {
   "marca": "Husqvarna",
   "modelo": "268",
-  "productos": 21,
+  "productos": 23,
   "ejemplos": [
    "2112107",
    "2203025",
@@ -1117,7 +1027,7 @@
  {
   "marca": "Husqvarna",
   "modelo": "372",
-  "productos": 21,
+  "productos": 22,
   "ejemplos": [
    "2112107",
    "2125161",
@@ -1136,30 +1046,6 @@
    "2212055",
    "2212078",
    "2214023"
-  ]
- },
- {
-  "marca": "Husqvarna",
-  "modelo": "FS 38",
-  "productos": 7,
-  "ejemplos": [
-   "2103010",
-   "2103203",
-   "2112107",
-   "2115201",
-   "2122128"
-  ]
- },
- {
-  "marca": "Husqvarna",
-  "modelo": "FS 55",
-  "productos": 7,
-  "ejemplos": [
-   "2103010",
-   "2103203",
-   "2112107",
-   "2115201",
-   "2122128"
   ]
  },
  {
@@ -1267,6 +1153,17 @@
  },
  {
   "marca": "Husqvarna",
+  "modelo": "362",
+  "productos": 4,
+  "ejemplos": [
+   "2212101",
+   "2212103",
+   "2220121",
+   "2220172"
+  ]
+ },
+ {
+  "marca": "Husqvarna",
   "modelo": "550",
   "productos": 4,
   "ejemplos": [
@@ -1324,6 +1221,26 @@
    "2209208",
    "2209209",
    "2209210"
+  ]
+ },
+ {
+  "marca": "Husqvarna",
+  "modelo": "371",
+  "productos": 3,
+  "ejemplos": [
+   "2109207",
+   "2212101",
+   "2212103"
+  ]
+ },
+ {
+  "marca": "Husqvarna",
+  "modelo": "372XP",
+  "productos": 3,
+  "ejemplos": [
+   "2209024",
+   "2212101",
+   "2212103"
   ]
  },
  {
@@ -1444,15 +1361,6 @@
  },
  {
   "marca": "Husqvarna",
-  "modelo": "362",
-  "productos": 2,
-  "ejemplos": [
-   "2220121",
-   "2220172"
-  ]
- },
- {
-  "marca": "Husqvarna",
   "modelo": "455",
   "productos": 2,
   "ejemplos": [
@@ -1467,6 +1375,24 @@
   "ejemplos": [
    "2113046",
    "2113047"
+  ]
+ },
+ {
+  "marca": "Husqvarna",
+  "modelo": "FS 38",
+  "productos": 2,
+  "ejemplos": [
+   "2112107",
+   "2125161"
+  ]
+ },
+ {
+  "marca": "Husqvarna",
+  "modelo": "FS 55",
+  "productos": 2,
+  "ejemplos": [
+   "2112107",
+   "2125161"
   ]
  },
  {
@@ -1565,14 +1491,6 @@
   "productos": 1,
   "ejemplos": [
    "2290542"
-  ]
- },
- {
-  "marca": "Husqvarna",
-  "modelo": "116",
-  "productos": 1,
-  "ejemplos": [
-   "3103200"
   ]
  },
  {
@@ -1729,34 +1647,10 @@
  },
  {
   "marca": "Husqvarna",
-  "modelo": "3626",
-  "productos": 1,
-  "ejemplos": [
-   "3103200"
-  ]
- },
- {
-  "marca": "Husqvarna",
-  "modelo": "371",
-  "productos": 1,
-  "ejemplos": [
-   "2109207"
-  ]
- },
- {
-  "marca": "Husqvarna",
   "modelo": "372R",
   "productos": 1,
   "ejemplos": [
    "2222051"
-  ]
- },
- {
-  "marca": "Husqvarna",
-  "modelo": "372XP",
-  "productos": 1,
-  "ejemplos": [
-   "2209024"
   ]
  },
  {
@@ -2522,20 +2416,116 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "MS 361",
-  "productos": 19,
+  "modelo": "FS 160",
+  "productos": 86,
   "ejemplos": [
-   "2109207",
-   "2203017",
-   "2205028",
-   "2207017",
-   "2209135"
+   "2102825",
+   "2103011",
+   "2103012",
+   "2103015",
+   "2103198"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "280",
+  "productos": 84,
+  "ejemplos": [
+   "2102825",
+   "2103011",
+   "2103012",
+   "2103198",
+   "2103206"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "220",
+  "productos": 74,
+  "ejemplos": [
+   "2102825",
+   "2103011",
+   "2103012",
+   "2103198",
+   "2103206"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 55",
+  "productos": 65,
+  "ejemplos": [
+   "2102844",
+   "2103010",
+   "2103203",
+   "2104035",
+   "2105026"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 38",
+  "productos": 64,
+  "ejemplos": [
+   "2102844",
+   "2103010",
+   "2103203",
+   "2104035",
+   "2105026"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 450",
+  "productos": 57,
+  "ejemplos": [
+   "2103012",
+   "2103206",
+   "2103207",
+   "2104032",
+   "2105029"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 220",
+  "productos": 48,
+  "ejemplos": [
+   "2102825",
+   "2103011",
+   "2103016",
+   "2103208",
+   "2103209"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 160/220",
+  "productos": 44,
+  "ejemplos": [
+   "2102825",
+   "2103208",
+   "2103209",
+   "2103210",
+   "2107133"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 280",
+  "productos": 39,
+  "ejemplos": [
+   "2102825",
+   "2103208",
+   "2103209",
+   "2103210",
+   "2104031"
   ]
  },
  {
   "marca": "Stihl",
   "modelo": "MS 170",
-  "productos": 18,
+  "productos": 23,
   "ejemplos": [
    "2203014",
    "2205022",
@@ -2546,20 +2536,32 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "MS 180",
-  "productos": 17,
+  "modelo": "MS 361",
+  "productos": 23,
   "ejemplos": [
-   "2203014",
-   "2205023",
-   "2209033",
-   "2210015",
-   "2210033"
+   "2109207",
+   "2203017",
+   "2205028",
+   "2207017",
+   "2209135"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "250",
+  "productos": 21,
+  "ejemplos": [
+   "2107118",
+   "2113056",
+   "2113057",
+   "2122136",
+   "2125165"
   ]
  },
  {
   "marca": "Stihl",
   "modelo": "MS 250",
-  "productos": 17,
+  "productos": 21,
   "ejemplos": [
    "2203015",
    "2205026",
@@ -2570,20 +2572,20 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "MS 380",
-  "productos": 17,
+  "modelo": "MS 180",
+  "productos": 20,
   "ejemplos": [
-   "2203018",
-   "2205029",
-   "2207018",
-   "2209096",
-   "2209213"
+   "2203014",
+   "2205023",
+   "2209033",
+   "2210015",
+   "2210033"
   ]
  },
  {
   "marca": "Stihl",
   "modelo": "MS 381",
-  "productos": 17,
+  "productos": 20,
   "ejemplos": [
    "2203019",
    "2205029",
@@ -2594,32 +2596,8 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "250",
-  "productos": 16,
-  "ejemplos": [
-   "2107118",
-   "2122136",
-   "2125165",
-   "2207015",
-   "2210015"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "FS 160",
-  "productos": 16,
-  "ejemplos": [
-   "2103015",
-   "2103198",
-   "2115140",
-   "2117545",
-   "2117554"
-  ]
- },
- {
-  "marca": "Stihl",
   "modelo": "MS 360",
-  "productos": 16,
+  "productos": 18,
   "ejemplos": [
    "2203016",
    "2205027",
@@ -2630,32 +2608,20 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "280",
-  "productos": 15,
+  "modelo": "MS 380",
+  "productos": 18,
   "ejemplos": [
-   "2103198",
-   "2115140",
-   "2117545",
-   "2117554",
-   "2117595"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "FS 55",
-  "productos": 15,
-  "ejemplos": [
-   "2109055",
-   "2109089",
-   "2112106",
-   "2114082",
-   "2117550"
+   "2203018",
+   "2205029",
+   "2207018",
+   "2209096",
+   "2209213"
   ]
  },
  {
   "marca": "Stihl",
   "modelo": "MS 170/180",
-  "productos": 15,
+  "productos": 17,
   "ejemplos": [
    "2203014",
    "2209033",
@@ -2667,7 +2633,7 @@
  {
   "marca": "Stihl",
   "modelo": "MS 230",
-  "productos": 13,
+  "productos": 17,
   "ejemplos": [
    "2203015",
    "2203039",
@@ -2678,20 +2644,32 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "FS 38",
-  "productos": 12,
+  "modelo": "FS 38/55",
+  "productos": 16,
   "ejemplos": [
-   "2109055",
-   "2112106",
-   "2114082",
-   "2215065",
-   "2220180"
+   "2102844",
+   "2110016",
+   "2110025",
+   "2110026",
+   "2110027"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "450",
+  "productos": 14,
+  "ejemplos": [
+   "2107132",
+   "2107140",
+   "2112100",
+   "2113045",
+   "2113048"
   ]
  },
  {
   "marca": "Stihl",
   "modelo": "FS 85",
-  "productos": 12,
+  "productos": 13,
   "ejemplos": [
    "2103197",
    "2105024",
@@ -2702,20 +2680,20 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "220",
-  "productos": 11,
+  "modelo": "MS 382",
+  "productos": 12,
   "ejemplos": [
-   "2103198",
-   "2115140",
-   "2120025",
-   "2122129",
-   "2122136"
+   "2203019",
+   "2210061",
+   "2212040",
+   "2219046",
+   "2220073"
   ]
  },
  {
   "marca": "Stihl",
   "modelo": "MS 210",
-  "productos": 9,
+  "productos": 11,
   "ejemplos": [
    "2203043",
    "2205024",
@@ -2727,13 +2705,37 @@
  {
   "marca": "Stihl",
   "modelo": "MS 380/381",
-  "productos": 9,
+  "productos": 10,
   "ejemplos": [
    "2205029",
    "2207018",
    "2209096",
-   "2215085",
-   "2220072"
+   "2212039",
+   "2212047"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "230",
+  "productos": 9,
+  "ejemplos": [
+   "2210015",
+   "2212076",
+   "2215082",
+   "2219049",
+   "2219063"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 120",
+  "productos": 8,
+  "ejemplos": [
+   "2105025",
+   "2107118",
+   "2107132",
+   "2107140",
+   "2112100"
   ]
  },
  {
@@ -2750,26 +2752,62 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "MS 382",
-  "productos": 8,
+  "modelo": "210",
+  "productos": 7,
   "ejemplos": [
-   "2203019",
-   "2210061",
-   "2220073",
-   "2220126",
-   "2220209"
+   "2210015",
+   "2215082",
+   "2219049",
+   "2219063",
+   "2220080"
   ]
  },
  {
   "marca": "Stihl",
-  "modelo": "FS 220",
+  "modelo": "FS 80",
   "productos": 7,
   "ejemplos": [
-   "2103016",
-   "2117545",
-   "2117554",
-   "2117595",
-   "2122140"
+   "2103197",
+   "2112106",
+   "2114082",
+   "2120025",
+   "2125159"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "MS 230/250",
+  "productos": 7,
+  "ejemplos": [
+   "2203015",
+   "2212090",
+   "2220123",
+   "2220166",
+   "2220181"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "MS 340",
+  "productos": 7,
+  "ejemplos": [
+   "2207016",
+   "2219043",
+   "2220070",
+   "2220124",
+   "2220137"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "MS 340/360",
+  "productos": 7,
+  "ejemplos": [
+   "2207016",
+   "2219043",
+   "2220070",
+   "2220124",
+   "2220137"
   ]
  },
  {
@@ -2786,80 +2824,8 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "230",
-  "productos": 6,
-  "ejemplos": [
-   "2210015",
-   "2212076",
-   "2215082",
-   "2220080",
-   "2220143"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "FS 160/220",
-  "productos": 6,
-  "ejemplos": [
-   "2117545",
-   "2117554",
-   "2117595",
-   "2122140",
-   "2125166"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "FS 280",
-  "productos": 6,
-  "ejemplos": [
-   "2117545",
-   "2117554",
-   "2117595",
-   "2122140",
-   "2125166"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "FS 80",
-  "productos": 6,
-  "ejemplos": [
-   "2103197",
-   "2112106",
-   "2114082",
-   "2120025",
-   "2909051"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "MS 340",
-  "productos": 6,
-  "ejemplos": [
-   "2207016",
-   "2220070",
-   "2220124",
-   "2220137",
-   "2220182"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "MS 340/360",
-  "productos": 6,
-  "ejemplos": [
-   "2207016",
-   "2220070",
-   "2220124",
-   "2220137",
-   "2220182"
-  ]
- },
- {
-  "marca": "Stihl",
   "modelo": "BG 86",
-  "productos": 5,
+  "productos": 6,
   "ejemplos": [
    "2109088",
    "2303001",
@@ -2870,14 +2836,38 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "FS 450",
+  "modelo": "FS 250",
+  "productos": 6,
+  "ejemplos": [
+   "2107118",
+   "2107132",
+   "2107140",
+   "2112100",
+   "2122136"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "381",
   "productos": 5,
   "ejemplos": [
-   "2109098",
-   "2117545",
+   "2219067",
+   "2219095",
+   "2220081",
+   "2220146",
+   "2220193"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 80/85",
+  "productos": 5,
+  "ejemplos": [
+   "2103197",
+   "2112106",
+   "2114082",
    "2120025",
-   "2125168",
-   "2209028"
+   "2125159"
   ]
  },
  {
@@ -2918,25 +2908,25 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "MS 230/250",
+  "modelo": "MS 362",
   "productos": 5,
   "ejemplos": [
-   "2203015",
-   "2220123",
-   "2220166",
-   "2220181",
-   "2222046"
+   "2212040",
+   "2215027",
+   "2215073",
+   "2224021",
+   "2227656"
   ]
  },
  {
   "marca": "Stihl",
-  "modelo": "026",
+  "modelo": "036",
   "productos": 4,
   "ejemplos": [
-   "2212108",
-   "2220081",
-   "2220100",
-   "2220103"
+   "2209025",
+   "2212038",
+   "2212046",
+   "2220081"
   ]
  },
  {
@@ -2952,13 +2942,13 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "210",
+  "modelo": "180",
   "productos": 4,
   "ejemplos": [
-   "2210015",
-   "2215082",
    "2220080",
-   "2220192"
+   "2220143",
+   "2220191",
+   "2227656"
   ]
  },
  {
@@ -2996,23 +2986,23 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "381",
+  "modelo": "382",
   "productos": 4,
   "ejemplos": [
-   "2219095",
-   "2220081",
-   "2220146",
-   "2220193"
+   "2220193",
+   "2220209",
+   "2227656",
+   "2290534"
   ]
  },
  {
   "marca": "Stihl",
-  "modelo": "FS 120",
+  "modelo": "FS 120/200",
   "productos": 4,
   "ejemplos": [
-   "2105025",
    "2107118",
    "2122136",
+   "2124231",
    "2125165"
   ]
  },
@@ -3040,6 +3030,17 @@
  },
  {
   "marca": "Stihl",
+  "modelo": "FS 200",
+  "productos": 4,
+  "ejemplos": [
+   "2107118",
+   "2122136",
+   "2124231",
+   "2125165"
+  ]
+ },
+ {
+  "marca": "Stihl",
   "modelo": "FS 221",
   "productos": 4,
   "ejemplos": [
@@ -3062,17 +3063,6 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "FS 80/85",
-  "productos": 4,
-  "ejemplos": [
-   "2103197",
-   "2112106",
-   "2114082",
-   "2120025"
-  ]
- },
- {
-  "marca": "Stihl",
   "modelo": "MS 210/230",
   "productos": 4,
   "ejemplos": [
@@ -3080,6 +3070,28 @@
    "2220069",
    "2220092",
    "2220136"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "MS 290",
+  "productos": 4,
+  "ejemplos": [
+   "2214034",
+   "2214035",
+   "2215083",
+   "2219042"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "MS 660",
+  "productos": 4,
+  "ejemplos": [
+   "2210062",
+   "2214034",
+   "2214035",
+   "2220210"
   ]
  },
  {
@@ -3126,16 +3138,6 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "180",
-  "productos": 3,
-  "ejemplos": [
-   "2220080",
-   "2220143",
-   "2220191"
-  ]
- },
- {
-  "marca": "Stihl",
   "modelo": "290",
   "productos": 3,
   "ejemplos": [
@@ -3156,26 +3158,6 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "382",
-  "productos": 3,
-  "ejemplos": [
-   "2220193",
-   "2220209",
-   "2290534"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "450",
-  "productos": 3,
-  "ejemplos": [
-   "2117545",
-   "2117554",
-   "2209028"
-  ]
- },
- {
-  "marca": "Stihl",
   "modelo": "BG 55",
   "productos": 3,
   "ejemplos": [
@@ -3186,32 +3168,42 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "FS 120/200",
+  "modelo": "BG 56",
   "productos": 3,
   "ejemplos": [
-   "2107118",
-   "2122136",
-   "2125165"
+   "2109088",
+   "2307080",
+   "2324245"
   ]
  },
  {
   "marca": "Stihl",
-  "modelo": "FS 200",
+  "modelo": "BR 500",
   "productos": 3,
   "ejemplos": [
-   "2107118",
-   "2122136",
-   "2125165"
+   "2109093",
+   "2324242",
+   "2909072"
   ]
  },
  {
   "marca": "Stihl",
-  "modelo": "FS 250",
+  "modelo": "BR 600",
   "productos": 3,
   "ejemplos": [
-   "2107118",
-   "2122136",
-   "2125165"
+   "2109093",
+   "2324242",
+   "2909072"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 120/250",
+  "productos": 3,
+  "ejemplos": [
+   "2107132",
+   "2107140",
+   "2112100"
   ]
  },
  {
@@ -3226,6 +3218,46 @@
  },
  {
   "marca": "Stihl",
+  "modelo": "MS 036",
+  "productos": 3,
+  "ejemplos": [
+   "2212038",
+   "2220145",
+   "2222036"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 044",
+  "productos": 3,
+  "ejemplos": [
+   "2212046",
+   "2212092",
+   "2215024"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 250",
+  "productos": 3,
+  "ejemplos": [
+   "2212036",
+   "2212045",
+   "2224018"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 361",
+  "productos": 3,
+  "ejemplos": [
+   "2212046",
+   "2212092",
+   "2219044"
+  ]
+ },
+ {
+  "marca": "Stihl",
   "modelo": "TS 410/420",
   "productos": 3,
   "ejemplos": [
@@ -3236,20 +3268,20 @@
  },
  {
   "marca": "Stihl",
+  "modelo": "026",
+  "productos": 2,
+  "ejemplos": [
+   "2212108",
+   "2220081"
+  ]
+ },
+ {
+  "marca": "Stihl",
   "modelo": "0300",
   "productos": 2,
   "ejemplos": [
    "4307653",
    "4307654"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "036",
-  "productos": 2,
-  "ejemplos": [
-   "2209025",
-   "2220081"
   ]
  },
  {
@@ -3281,6 +3313,15 @@
  },
  {
   "marca": "Stihl",
+  "modelo": "251",
+  "productos": 2,
+  "ejemplos": [
+   "2212036",
+   "2212045"
+  ]
+ },
+ {
+  "marca": "Stihl",
   "modelo": "2800",
   "productos": 2,
   "ejemplos": [
@@ -3299,6 +3340,24 @@
  },
  {
   "marca": "Stihl",
+  "modelo": "441",
+  "productos": 2,
+  "ejemplos": [
+   "2215073",
+   "2227656"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "460",
+  "productos": 2,
+  "ejemplos": [
+   "2219044",
+   "2219065"
+  ]
+ },
+ {
+  "marca": "Stihl",
   "modelo": "600",
   "productos": 2,
   "ejemplos": [
@@ -3308,11 +3367,11 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "BG 56",
+  "modelo": "6001",
   "productos": 2,
   "ejemplos": [
-   "2109088",
-   "2307080"
+   "2113050",
+   "2113051"
   ]
  },
  {
@@ -3335,11 +3394,11 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "BR 500",
+  "modelo": "BR 320",
   "productos": 2,
   "ejemplos": [
-   "2109093",
-   "2909072"
+   "2109207",
+   "2324240"
   ]
  },
  {
@@ -3362,15 +3421,6 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "BR 600",
-  "productos": 2,
-  "ejemplos": [
-   "2109093",
-   "2909072"
-  ]
- },
- {
-  "marca": "Stihl",
   "modelo": "FS 106",
   "productos": 2,
   "ejemplos": [
@@ -3385,6 +3435,15 @@
   "ejemplos": [
    "2909051",
    "4307679"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 480",
+  "productos": 2,
+  "ejemplos": [
+   "2113034",
+   "2125168"
   ]
  },
  {
@@ -3416,24 +3475,6 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "MS 026",
-  "productos": 2,
-  "ejemplos": [
-   "2220100",
-   "2220103"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "MS 036",
-  "productos": 2,
-  "ejemplos": [
-   "2220145",
-   "2222036"
-  ]
- },
- {
-  "marca": "Stihl",
   "modelo": "MS 038",
   "productos": 2,
   "ejemplos": [
@@ -3452,11 +3493,11 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "MS 261",
+  "modelo": "MS 290/660",
   "productos": 2,
   "ejemplos": [
-   "2210071",
-   "2220101"
+   "2214034",
+   "2214035"
   ]
  },
  {
@@ -3479,11 +3520,11 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "MS 362",
+  "modelo": "MS 361/362",
   "productos": 2,
   "ejemplos": [
    "2215073",
-   "2220101"
+   "2227656"
   ]
  },
  {
@@ -3506,20 +3547,45 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "MS 660",
+  "modelo": "ST 180",
   "productos": 2,
   "ejemplos": [
-   "2210062",
-   "2220210"
+   "2212036",
+   "2212045"
   ]
  },
  {
   "marca": "Stihl",
-  "modelo": "TS 400",
+  "modelo": "ST 180/250",
   "productos": 2,
   "ejemplos": [
-   "2220103",
-   "2303002"
+   "2212036",
+   "2212045"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 251",
+  "productos": 2,
+  "ejemplos": [
+   "2212036",
+   "2212045"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "002",
+  "productos": 1,
+  "ejemplos": [
+   "2120030"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "003",
+  "productos": 1,
+  "ejemplos": [
+   "2120030"
   ]
  },
  {
@@ -3684,6 +3750,30 @@
  },
  {
   "marca": "Stihl",
+  "modelo": "261",
+  "productos": 1,
+  "ejemplos": [
+   "2212037"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "266",
+  "productos": 1,
+  "ejemplos": [
+   "2227656"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "268",
+  "productos": 1,
+  "ejemplos": [
+   "2227656"
+  ]
+ },
+ {
+  "marca": "Stihl",
   "modelo": "350",
   "productos": 1,
   "ejemplos": [
@@ -3719,7 +3809,7 @@
   "modelo": "362",
   "productos": 1,
   "ejemplos": [
-   "2220101"
+   "2219065"
   ]
  },
  {
@@ -3748,10 +3838,34 @@
  },
  {
   "marca": "Stihl",
+  "modelo": "390",
+  "productos": 1,
+  "ejemplos": [
+   "2215025"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "391",
+  "productos": 1,
+  "ejemplos": [
+   "2219042"
+  ]
+ },
+ {
+  "marca": "Stihl",
   "modelo": "400",
   "productos": 1,
   "ejemplos": [
    "2103198"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "4006",
+  "productos": 1,
+  "ejemplos": [
+   "2117570"
   ]
  },
  {
@@ -3804,14 +3918,6 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "441",
-  "productos": 1,
-  "ejemplos": [
-   "2215073"
-  ]
- },
- {
-  "marca": "Stihl",
   "modelo": "461",
   "productos": 1,
   "ejemplos": [
@@ -3828,10 +3934,18 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "5903",
+  "modelo": "6000",
   "productos": 1,
   "ejemplos": [
-   "2220101"
+   "2113053"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "6202",
+  "productos": 1,
+  "ejemplos": [
+   "2113054"
   ]
  },
  {
@@ -3852,26 +3966,10 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "9909",
-  "productos": 1,
-  "ejemplos": [
-   "2220100"
-  ]
- },
- {
-  "marca": "Stihl",
   "modelo": "9910",
   "productos": 1,
   "ejemplos": [
    "2220099"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "9930",
-  "productos": 1,
-  "ejemplos": [
-   "2220102"
   ]
  },
  {
@@ -3916,10 +4014,18 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "BR 320",
+  "modelo": "BG 86/56",
   "productos": 1,
   "ejemplos": [
-   "2109207"
+   "2324245"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "BR 320/340",
+  "productos": 1,
+  "ejemplos": [
+   "2324240"
   ]
  },
  {
@@ -3928,6 +4034,30 @@
   "productos": 1,
   "ejemplos": [
    "2109207"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "BR 340",
+  "productos": 1,
+  "ejemplos": [
+   "2324240"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "BR 350",
+  "productos": 1,
+  "ejemplos": [
+   "2324241"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "BR 350/430",
+  "productos": 1,
+  "ejemplos": [
+   "2324241"
   ]
  },
  {
@@ -3956,6 +4086,22 @@
  },
  {
   "marca": "Stihl",
+  "modelo": "BR 430",
+  "productos": 1,
+  "ejemplos": [
+   "2324241"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "BR 500/600",
+  "productos": 1,
+  "ejemplos": [
+   "2324242"
+  ]
+ },
+ {
+  "marca": "Stihl",
   "modelo": "FS 100",
   "productos": 1,
   "ejemplos": [
@@ -3968,6 +4114,22 @@
   "productos": 1,
   "ejemplos": [
    "2209028"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 260",
+  "productos": 1,
+  "ejemplos": [
+   "2227656"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 260/280",
+  "productos": 1,
+  "ejemplos": [
+   "2227656"
   ]
  },
  {
@@ -4044,6 +4206,30 @@
  },
  {
   "marca": "Stihl",
+  "modelo": "FS 450/",
+  "productos": 1,
+  "ejemplos": [
+   "2117585"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 450/480",
+  "productos": 1,
+  "ejemplos": [
+   "2113034"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "FS 4528",
+  "productos": 1,
+  "ejemplos": [
+   "2117585"
+  ]
+ },
+ {
+  "marca": "Stihl",
   "modelo": "FS 46",
   "productos": 1,
   "ejemplos": [
@@ -4056,14 +4242,6 @@
   "productos": 1,
   "ejemplos": [
    "4307654"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "FS 480",
-  "productos": 1,
-  "ejemplos": [
-   "2125168"
   ]
  },
  {
@@ -4140,6 +4318,22 @@
  },
  {
   "marca": "Stihl",
+  "modelo": "HUS 266",
+  "productos": 1,
+  "ejemplos": [
+   "2227656"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "HUS 268",
+  "productos": 1,
+  "ejemplos": [
+   "2227656"
+  ]
+ },
+ {
+  "marca": "Stihl",
   "modelo": "HUS 357",
   "productos": 1,
   "ejemplos": [
@@ -4168,6 +4362,14 @@
   "productos": 1,
   "ejemplos": [
    "2210075"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "HUS 61",
+  "productos": 1,
+  "ejemplos": [
+   "2227656"
   ]
  },
  {
@@ -4240,6 +4442,14 @@
   "productos": 1,
   "ejemplos": [
    "2220209"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "MS 044",
+  "productos": 1,
+  "ejemplos": [
+   "2212038"
   ]
  },
  {
@@ -4348,26 +4558,10 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "MS 261/271",
+  "modelo": "MS 261",
   "productos": 1,
   "ejemplos": [
-   "2220101"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "MS 271",
-  "productos": 1,
-  "ejemplos": [
-   "2220101"
-  ]
- },
- {
-  "marca": "Stihl",
-  "modelo": "MS 290",
-  "productos": 1,
-  "ejemplos": [
-   "2215083"
+   "2210071"
   ]
  },
  {
@@ -4376,6 +4570,14 @@
   "productos": 1,
   "ejemplos": [
    "2215083"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "MS 290/390",
+  "productos": 1,
+  "ejemplos": [
+   "2219042"
   ]
  },
  {
@@ -4404,10 +4606,10 @@
  },
  {
   "marca": "Stihl",
-  "modelo": "MS 361/362",
+  "modelo": "MS 361/044",
   "productos": 1,
   "ejemplos": [
-   "2215073"
+   "2212038"
   ]
  },
  {
@@ -4432,6 +4634,46 @@
   "productos": 1,
   "ejemplos": [
    "2203018"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "MS 382/362",
+  "productos": 1,
+  "ejemplos": [
+   "2212040"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "MS 390",
+  "productos": 1,
+  "ejemplos": [
+   "2219042"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "MS 391",
+  "productos": 1,
+  "ejemplos": [
+   "2219042"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "MS 44",
+  "productos": 1,
+  "ejemplos": [
+   "2212040"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "MS 441",
+  "productos": 1,
+  "ejemplos": [
+   "2227656"
   ]
  },
  {
@@ -4492,10 +4734,298 @@
  },
  {
   "marca": "Stihl",
+  "modelo": "SRM 4605",
+  "productos": 1,
+  "ejemplos": [
+   "2113061"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 036",
+  "productos": 1,
+  "ejemplos": [
+   "2212046"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 044/046",
+  "productos": 1,
+  "ejemplos": [
+   "2215024"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 044/361",
+  "productos": 1,
+  "ejemplos": [
+   "2212092"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 046",
+  "productos": 1,
+  "ejemplos": [
+   "2215024"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 066",
+  "productos": 1,
+  "ejemplos": [
+   "2219047"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 066/660",
+  "productos": 1,
+  "ejemplos": [
+   "2219047"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 070",
+  "productos": 1,
+  "ejemplos": [
+   "2215036"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 08",
+  "productos": 1,
+  "ejemplos": [
+   "2219050"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 08/08S",
+  "productos": 1,
+  "ejemplos": [
+   "2219050"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 11",
+  "productos": 1,
+  "ejemplos": [
+   "2117563"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 230",
+  "productos": 1,
+  "ejemplos": [
+   "2224018"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 230/250",
+  "productos": 1,
+  "ejemplos": [
+   "2224018"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 260",
+  "productos": 1,
+  "ejemplos": [
+   "2212037"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 260/270",
+  "productos": 1,
+  "ejemplos": [
+   "2212037"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 261",
+  "productos": 1,
+  "ejemplos": [
+   "2212037"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 270",
+  "productos": 1,
+  "ejemplos": [
+   "2212037"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 280",
+  "productos": 1,
+  "ejemplos": [
+   "2212037"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 290",
+  "productos": 1,
+  "ejemplos": [
+   "2215025"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 290/310",
+  "productos": 1,
+  "ejemplos": [
+   "2215025"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 310",
+  "productos": 1,
+  "ejemplos": [
+   "2215025"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 361/044",
+  "productos": 1,
+  "ejemplos": [
+   "2212046"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 361/362",
+  "productos": 1,
+  "ejemplos": [
+   "2219044"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 362",
+  "productos": 1,
+  "ejemplos": [
+   "2219044"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 380",
+  "productos": 1,
+  "ejemplos": [
+   "2219045"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 380/381",
+  "productos": 1,
+  "ejemplos": [
+   "2219045"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 381",
+  "productos": 1,
+  "ejemplos": [
+   "2219045"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 390",
+  "productos": 1,
+  "ejemplos": [
+   "2215025"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 400",
+  "productos": 1,
+  "ejemplos": [
+   "2215037"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 410",
+  "productos": 1,
+  "ejemplos": [
+   "2215038"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 410/420",
+  "productos": 1,
+  "ejemplos": [
+   "2215038"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 420",
+  "productos": 1,
+  "ejemplos": [
+   "2215038"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 460",
+  "productos": 1,
+  "ejemplos": [
+   "2219044"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 660",
+  "productos": 1,
+  "ejemplos": [
+   "2219047"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "ST 700",
+  "productos": 1,
+  "ejemplos": [
+   "2215039"
+  ]
+ },
+ {
+  "marca": "Stihl",
   "modelo": "TS 350",
   "productos": 1,
   "ejemplos": [
    "2202810"
+  ]
+ },
+ {
+  "marca": "Stihl",
+  "modelo": "TS 400",
+  "productos": 1,
+  "ejemplos": [
+   "2303002"
   ]
  },
  {

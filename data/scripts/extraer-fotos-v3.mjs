@@ -24,12 +24,13 @@ import sharp from 'sharp';
 const PDF = process.argv[2];
 const PAGES_JSON = process.argv[3] || 'data/scripts/pages.json';
 const APPLY = process.argv.includes('--apply');
+const OVERWRITE = process.argv.includes('--overwrite'); // rehace TODAS las fotos, no sólo las que faltan
 const OUT_DIRS = ['data/fotos', 'public/fotos'];
 const PRODUCTOS = 'data/productos.json';
 
 const textPages = JSON.parse(fs.readFileSync(PAGES_JSON, 'utf8'));
 const productos = JSON.parse(fs.readFileSync(PRODUCTOS, 'utf8'));
-const yaConFoto = new Set(productos.filter((p) => p.foto).map((p) => p.codigo));
+const yaConFoto = OVERWRITE ? new Set() : new Set(productos.filter((p) => p.foto).map((p) => p.codigo));
 const codigosValidos = new Set(productos.map((p) => p.codigo));
 
 /* ============ decodificación de bytes ============ */
@@ -310,11 +311,22 @@ if (!APPLY) {
   process.exit(0);
 }
 
+function writeRetry(file, buf, tries = 6) {
+  for (let i = 0; i < tries; i++) {
+    try { fs.writeFileSync(file, buf); return; }
+    catch (e) {
+      if (i === tries - 1) throw e;
+      const until = Date.now() + 150 * (i + 1);
+      while (Date.now() < until) {} // pequeña espera (Windows / antivirus bloquea el archivo)
+    }
+  }
+}
+
 let escritas = 0;
 for (const code of codes) {
   for (const dir of OUT_DIRS) {
     fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, code + '.jpg'), nuevos[code].jpg);
+    writeRetry(path.join(dir, code + '.jpg'), nuevos[code].jpg);
   }
   if (++escritas % 100 === 0) process.stdout.write(`  ${escritas}/${codes.length}\r`);
 }
@@ -326,7 +338,7 @@ for (const code of codes) {
   p.foto_confianza = 'alta';
   p.foto_origen = 'pdf-v3-pos';
 }
-fs.writeFileSync(PRODUCTOS, JSON.stringify(productos, null, 1));
+writeRetry(PRODUCTOS, JSON.stringify(productos, null, 1));
 
 const COLS = ['codigo', 'estado', 'nombre', 'descripcion', 'familia', 'familia_indice', 'subcategoria', 'marcas', 'codigo_original',
   'compatibilidad', 'ubicacion', 'medidas', 'ref_interna', 'clave_rubro', 'clave_subrubro', 'clave_producto',
