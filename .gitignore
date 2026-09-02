@@ -32,3 +32,6 @@ npm-debug.log*
 
 # tesseract lang data
 *.traineddata
+
+# fotos: sólo se versiona public/fotos (data/fotos es copia regenerable)
+/data/fotos/

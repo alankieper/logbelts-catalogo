@@ -13,7 +13,7 @@
 import fs from 'fs';
 import path from 'path';
 import * as mupdf from 'mupdf';
-import { createCanvas, loadImage } from '@napi-rs/canvas';
+import sharp from 'sharp';
 
 const PDF = process.argv[2];
 const PAGES_JSON = process.argv[3] || 'data/scripts/pages.json';
@@ -21,7 +21,7 @@ const APPLY = process.argv.includes('--apply');
 const onlyPages = (() => { const i = process.argv.indexOf('--pages'); return i > 0 ? process.argv[i + 1].split(',').map(Number) : null; })();
 const OUT_DIRS = ['data/fotos', 'public/fotos'];
 const PRODUCTOS = 'data/productos.json';
-const OBJETIVO_LADO = 760; // lado mayor deseado (para pantallas retina)
+const OBJETIVO_LADO = 900; // lado mayor deseado (nítida en pantallas retina)
 
 const textPages = JSON.parse(fs.readFileSync(PAGES_JSON, 'utf8'));
 const productos = JSON.parse(fs.readFileSync(PRODUCTOS, 'utf8'));
@@ -67,34 +67,23 @@ function imagenesDePagina(pi) {
   return out;
 }
 
-async function pixmapAJpeg(image, code) {
+async function pixmapAJpeg(image) {
   let px = image.toPixmap();
-  // pasar a RGB si hace falta
   const cs = String(px.getColorSpace() || '');
   if (!/RGB/i.test(cs)) {
     try { px = px.convertToColorSpace(mupdf.ColorSpace.DeviceRGB); } catch {}
   }
   const w = px.getWidth(), h = px.getHeight();
   const png = px.asPNG();
-  const img = await loadImage(png);
-
-  // canvas a tamaño nativo, sobre blanco (por si viene con alfa)
-  let cw = w, ch = h;
-  // agrandar si es chica, con suavizado (no pixela)
   const lado = Math.max(w, h);
-  if (lado < OBJETIVO_LADO) {
-    const k = OBJETIVO_LADO / lado;
-    cw = Math.round(w * k);
-    ch = Math.round(h * k);
+
+  let s = sharp(png).flatten({ background: '#ffffff' }); // aplana alfa sobre blanco
+  // llevar el lado mayor a OBJETIVO_LADO con Lanczos (escalado real, ni bloques ni borroso)
+  if (Math.abs(lado - OBJETIVO_LADO) > 4) {
+    if (w >= h) s = s.resize(OBJETIVO_LADO, null, { kernel: 'lanczos3', withoutEnlargement: false });
+    else s = s.resize(null, OBJETIVO_LADO, { kernel: 'lanczos3', withoutEnlargement: false });
   }
-  const c = createCanvas(cw, ch);
-  const ctx = c.getContext('2d');
-  ctx.imageSmoothingEnabled = true;
-  ctx.imageSmoothingQuality = 'high';
-  ctx.fillStyle = '#ffffff';
-  ctx.fillRect(0, 0, cw, ch);
-  ctx.drawImage(img, 0, 0, cw, ch);
-  return c.toBuffer('image/jpeg', 0.9);
+  return s.jpeg({ quality: 88, chromaSubsampling: '4:4:4' }).toBuffer();
 }
 
 /* ---- recorrido: asociar imagen <-> código por posición ---- */
