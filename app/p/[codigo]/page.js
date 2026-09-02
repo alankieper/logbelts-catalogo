@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../components/CatalogoHeader';
 import ProductoCard from '../../components/ProductoCard';
+import ZoomImg from '../../components/ZoomImg';
 import { getProducto, getRelacionados, getVecinos, getFamilia, slugify } from '../../../lib/catalogo';
 import { despiecesDeProducto } from '../../../lib/despieces';
 
@@ -57,11 +58,13 @@ export default async function ProductoPage({ params }) {
 
           <div className="detail">
             <div className="gallery">
-              <div className="gmain">
-                {p.foto ? <img src={`/fotos/${p.foto}`} alt={p.nombre || p.codigo} /> : <span className="noimg">sin foto</span>}
-              </div>
+              {p.foto ? (
+                <ZoomImg src={`/fotos/${p.foto}`} alt={p.nombre || p.codigo} />
+              ) : (
+                <div className="gmain"><span className="noimg">sin foto</span></div>
+              )}
               <p className="gcap">
-                {p.foto ? 'Imagen del catálogo Logbelts' : 'Sin imagen en el catálogo'}
+                {p.foto ? 'Imagen del catálogo Logbelts · pasá el mouse para ampliar' : 'Sin imagen en el catálogo'}
               </p>
             </div>
 

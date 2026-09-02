@@ -280,3 +280,47 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 .form-actions .danger { background: var(--surface); color: #b3261e; border: 1px solid #f0d3d3; }
 .ok-msg { background: var(--ok-bg); color: var(--ok); border-radius: 8px; padding: 10px 14px; font-size: 13px; font-weight: 700; margin-bottom: 16px; }
 .err-msg { background: #fbe6e4; color: #b3261e; border-radius: 8px; padding: 10px 14px; font-size: 13px; font-weight: 700; margin-bottom: 16px; }
+
+/* ===== Zoom de la foto del producto ===== */
+.gmain.zoomable { cursor: zoom-in; position: relative; touch-action: pan-y; }
+.gmain.zoomable img { transition: transform .16s ease-out; will-change: transform; }
+.zoomhint {
+  position: absolute; right: 8px; bottom: 8px; font-size: 13px; line-height: 1;
+  background: rgba(0,0,0,.35); color: #fff; border-radius: 6px; padding: 3px 5px;
+  pointer-events: none; opacity: .75;
+}
+
+/* ===== Botón modo claro / oscuro ===== */
+.themetoggle {
+  margin-left: auto; flex: none; display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,.12); color: #fff; border: 1px solid rgba(255,255,255,.25);
+  border-radius: 8px; padding: 7px 11px; font-size: 12px; font-weight: 700; cursor: pointer;
+  white-space: nowrap;
+}
+.themetoggle:hover { background: rgba(255,255,255,.2); }
+.themetoggle svg { width: 15px; height: 15px; }
+.themetoggle + .hlink { margin-left: 0; }
+
+/* ===== Modo oscuro ===== */
+:root[data-theme="oscuro"] {
+  --ground: #13151a;
+  --surface: #1c1f26;
+  --surface-2: #23262f;
+  --brand: #2f4a94;
+  --brand-ink: #93aeea;
+  --brand-wash: #253154;
+  --ink: #e8eaef;
+  --ink-soft: #b7bcc6;
+  --ink-faint: #868d9a;
+  --rule: #2c303a;
+  --rule-strong: #3b4150;
+  --ok: #4cc38a;
+  --ok-bg: #16352a;
+  --warn: #dca641;
+  --warn-bg: #3a2f16;
+  --shadow: 0 1px 2px rgba(0,0,0,.45), 0 10px 26px rgba(0,0,0,.4);
+}
+:root[data-theme="oscuro"] header.cat form.search input { background: #2a2e38; color: #e8eaef; }
+:root[data-theme="oscuro"] header.cat form.search input::placeholder { color: #8a91a0; }
+:root[data-theme="oscuro"] .b-ok { background: #17352a; color: #5fd39a; }
+:root[data-theme="oscuro"] .err-msg { background: #3a201e; color: #f0928a; }

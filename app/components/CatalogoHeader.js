@@ -1,3 +1,5 @@
+import ThemeToggle from './ThemeToggle';
+
 export default function CatalogoHeader({ q = '' }) {
   return (
     <header className="cat">
@@ -20,6 +22,7 @@ export default function CatalogoHeader({ q = '' }) {
             </svg>
           </button>
         </form>
+        <ThemeToggle />
         <a href="/manuales" className="hlink" title="Manuales y despieces">Manuales</a>
         <a
           href="/identificar"
