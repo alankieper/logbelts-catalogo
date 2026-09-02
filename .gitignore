@@ -29,3 +29,6 @@ npm-debug.log*
 
 /data/import/
 /public/despieces/
+
+# tesseract lang data
+*.traineddata

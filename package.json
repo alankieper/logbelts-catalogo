@@ -20,6 +20,9 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "sharp": "^0.35.4"
+    "@napi-rs/canvas": "^1.0.8",
+    "mupdf": "^1.28.0",
+    "sharp": "^0.35.4",
+    "tesseract.js": "^7.0.0"
   }
 }
