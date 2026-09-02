@@ -1,5 +1,6 @@
 import CatalogoHeader from '../components/CatalogoHeader';
 import ProductoCard from '../components/ProductoCard';
+import Registrar from '../components/Registrar';
 import { buscar } from '../../lib/catalogo';
 
 export const dynamic = 'force-dynamic';
@@ -16,6 +17,7 @@ export default async function BuscarPage({ searchParams }) {
   return (
     <>
       <CatalogoHeader q={q} />
+      {q ? <Registrar tipo="busqueda" q={q} n={res.length} /> : null}
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">

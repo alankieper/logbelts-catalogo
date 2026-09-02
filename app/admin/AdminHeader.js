@@ -12,6 +12,7 @@ export default function AdminHeader({ activo }) {
         </a>
         <nav>
           {link('/admin', 'Tablero', 'home')}
+          {link('/admin/metricas', 'Métricas', 'metricas')}
           {link('/admin/productos', 'Productos', 'productos')}
           {link('/admin/categorias', 'Categorías', 'categorias')}
           {link('/admin/manuales', 'Manuales', 'manuales')}

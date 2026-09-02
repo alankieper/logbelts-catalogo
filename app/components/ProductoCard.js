@@ -1,3 +1,5 @@
+import BotonAgregar from './BotonAgregar';
+
 export default function ProductoCard({ p, motivo }) {
   const meta =
     (p.medidas && p.medidas.length ? p.medidas.slice(0, 2).join(' · ') : '') ||
@@ -19,6 +21,7 @@ export default function ProductoCard({ p, motivo }) {
         {meta ? <span className="meta">{meta}</span> : <span className="meta" />}
         {motivo ? <span className="why">{motivo}</span> : null}
         {!motivo && derivada ? <span className="deriv">descripción a confirmar</span> : null}
+        <BotonAgregar codigo={p.codigo} nombre={p.nombre || p.clave_producto || p.codigo} chico />
       </div>
     </a>
   );

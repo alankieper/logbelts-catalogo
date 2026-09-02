@@ -324,3 +324,80 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 :root[data-theme="oscuro"] header.cat form.search input::placeholder { color: #8a91a0; }
 :root[data-theme="oscuro"] .b-ok { background: #17352a; color: #5fd39a; }
 :root[data-theme="oscuro"] .err-msg { background: #3a201e; color: #f0928a; }
+
+/* ===== Agregar al pedido ===== */
+.dacc { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.add-pedido {
+  border: 1px solid var(--rule-strong); background: var(--surface); color: var(--ink-soft);
+  border-radius: 10px; padding: 11px 16px; font-size: 13px; font-weight: 700; cursor: pointer;
+  font-family: inherit; white-space: nowrap;
+}
+.add-pedido:hover { border-color: var(--brand-ink); color: var(--brand-ink); }
+.add-pedido.on { background: var(--brand-wash); border-color: var(--brand-ink); color: var(--brand-ink); }
+.add-pedido.chico {
+  margin-top: 8px; align-self: flex-start; padding: 6px 10px; font-size: 11.5px; border-radius: 8px;
+}
+
+/* ===== Lista de pedido (widget flotante) ===== */
+.pedido-fab {
+  position: fixed; right: 18px; bottom: 18px; z-index: 60;
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--brand); color: #fff; border: 0; border-radius: 999px;
+  padding: 12px 18px; font-size: 13px; font-weight: 800; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0,0,0,.25); font-family: inherit;
+}
+.pedido-fab svg { width: 18px; height: 18px; }
+.pedido-badge {
+  background: #fff; color: var(--brand); border-radius: 999px; min-width: 20px; height: 20px;
+  display: inline-grid; place-items: center; font-size: 11px; font-weight: 800; padding: 0 5px;
+}
+.pedido-panel {
+  position: fixed; right: 18px; bottom: 74px; z-index: 61; width: min(360px, calc(100vw - 36px));
+  background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.28); padding: 14px; max-height: 70vh; display: flex; flex-direction: column;
+}
+.pedido-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.pedido-head button { background: none; border: 0; font-size: 16px; color: var(--ink-faint); cursor: pointer; }
+.pedido-items { list-style: none; margin: 0 0 10px; padding: 0; overflow-y: auto; }
+.pedido-items li { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-top: 1px solid var(--rule); }
+.pedido-items li:first-child { border-top: 0; }
+.pedido-items a { flex: 1; min-width: 0; display: flex; flex-direction: column; text-decoration: none; }
+.pedido-items .cod { font-size: 11px; font-weight: 800; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+.pedido-items .nm { font-size: 12.5px; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pedido-items li > button { background: none; border: 0; color: var(--ink-faint); cursor: pointer; font-size: 13px; padding: 4px; }
+.pedido-nota { font-size: 11px; color: var(--warn); font-weight: 700; margin: 0 0 10px; }
+.pedido-vacio { font-size: 12.5px; color: var(--ink-soft); margin: 6px 0 4px; }
+.pedido-acc { display: flex; gap: 8px; }
+.pedido-vaciar { flex: none; background: var(--surface); border: 1px solid var(--rule-strong); color: var(--ink-soft); border-radius: 9px; padding: 10px 12px; font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit; }
+.pedido-enviar { flex: 1; background: #1f9d55; border: 0; color: #fff; border-radius: 9px; padding: 10px 12px; font-size: 13px; font-weight: 800; cursor: pointer; font-family: inherit; }
+.pedido-enviar:hover { filter: brightness(1.06); }
+
+/* ===== Panel de métricas ===== */
+.mtop { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+.mtop h1 { margin: 0; }
+.mrange { display: flex; gap: 6px; margin-left: auto; }
+.mrange a { font-size: 12px; font-weight: 700; padding: 7px 12px; border-radius: 8px; border: 1px solid var(--rule-strong); color: var(--ink-soft); text-decoration: none; }
+.mrange a[data-on="true"] { background: var(--brand); border-color: var(--brand); color: #fff; }
+.mkpis { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); margin-bottom: 18px; }
+.mkpi { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 14px 16px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 3px; }
+.mkpi-t { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-faint); font-weight: 700; }
+.mkpi-v { font-size: 1.9rem; font-weight: 800; line-height: 1.05; color: var(--ink); font-variant-numeric: tabular-nums; }
+.mkpi-s { font-size: 11.5px; color: var(--ink-faint); }
+.mcard { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 16px 18px; box-shadow: var(--shadow); margin-bottom: 16px; }
+.mcard h2 { margin: 0 0 4px; font-size: 14px; }
+.mcard .mut { margin: 0 0 12px; }
+.mcols { display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media (min-width: 860px) { .mcols { grid-template-columns: 1fr 1fr; } .mcols .mcard { margin-bottom: 0; } }
+.mchart { width: 100%; height: auto; }
+.mchart .grid { stroke: var(--rule); stroke-width: 1; }
+.mchart .axis { fill: var(--ink-faint); font-size: 9px; }
+.mlegend { display: flex; gap: 14px; margin-bottom: 6px; font-size: 11px; color: var(--ink-soft); }
+.mlegend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+.mrank { list-style: none; margin: 0; padding: 0; }
+.mrank li { display: grid; grid-template-columns: minmax(90px, 44%) 1fr 46px; align-items: center; gap: 10px; padding: 5px 0; font-size: 12.5px; }
+.mrank-lbl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink); }
+.mrank-lbl a { color: var(--ink); }
+.mrank-bar { background: var(--surface-2); border-radius: 999px; height: 8px; overflow: hidden; }
+.mrank-bar span { display: block; height: 100%; border-radius: 999px; }
+.mrank-n { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-faint); font-weight: 700; }
+.adm .mut { font-size: 11.5px; color: var(--ink-faint); }
