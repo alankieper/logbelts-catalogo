@@ -164,7 +164,9 @@ h1.page {
 .gmain img { width: 100%; height: 100%; object-fit: contain; padding: 14px; }
 .gmain .noimg { color: var(--ink-faint); font-size: 12px; text-transform: uppercase; letter-spacing: .1em; }
 .gcap { font-size: 10.5px; color: var(--ink-faint); margin: 8px 0 0; }
-.dhead .code { font-size: 13px; color: var(--ink-faint); font-weight: 700; font-variant-numeric: tabular-nums; margin-bottom: 6px; }
+.dcode { margin-bottom: 10px; }
+.dcode-k { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .13em; color: var(--ink-faint); margin-bottom: 1px; }
+.dcode-n { display: block; font-size: clamp(1.7rem, 5vw, 2.4rem); font-weight: 800; line-height: 1; color: var(--brand); font-variant-numeric: tabular-nums; letter-spacing: .01em; }
 .dhead h1 { font-family: var(--f-display); font-style: italic; text-transform: uppercase; font-size: clamp(1.35rem, 3.4vw, 1.9rem); letter-spacing: .4px; line-height: 1.08; margin: 0 0 10px; text-wrap: balance; }
 .badges { display: flex; gap: 7px; flex-wrap: wrap; margin-bottom: 14px; }
 .badges span { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; padding: 4px 9px; border-radius: 6px; }
@@ -182,6 +184,9 @@ h1.page {
 .srow dt { color: var(--ink-faint); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
 .srow dd { margin: 0; color: var(--ink); }
 .srow dd .mut { color: var(--ink-faint); }
+.srow-desc { display: block; padding: 14px 16px; }
+.srow-desc .descfull { font-size: 15px; line-height: 1.5; color: var(--ink); }
+.srow-desc .revision { font-size: 13.5px; font-style: italic; color: var(--warn); }
 .cta { display: inline-flex; align-items: center; gap: 9px; background: #1f9d55; color: #fff; border: 0; border-radius: 10px; padding: 12px 18px; font-size: 14px; font-weight: 700; cursor: pointer; text-decoration: none; }
 .cta:hover { filter: brightness(1.05); text-decoration: none; }
 .cta svg { width: 18px; height: 18px; }

@@ -9,9 +9,10 @@ export const dynamic = 'force-dynamic';
 export async function generateMetadata({ params }) {
   const p = await getProducto(decodeURIComponent(params.codigo));
   if (!p) return { title: 'Producto no encontrado — Catálogo Logbelts' };
+  const descReal = p.descripcion && !(p.fuente_desc && p.fuente_desc.startsWith('derivada'));
   return {
     title: `${p.codigo} · ${p.nombre || p.clave_producto || 'Producto'} — Catálogo Logbelts`,
-    description: p.descripcion || undefined,
+    description: descReal ? p.descripcion : undefined,
   };
 }
 
@@ -27,14 +28,15 @@ export default async function ProductoPage({ params }) {
   const desp = await despiecesDeProducto(codigo, p.compatibilidad);
 
   const derivada = p.fuente_desc && p.fuente_desc.startsWith('derivada');
+  const tieneDesc = !!(p.descripcion && !derivada);
   const marcas = new Set([...(p.marcas || [])]);
   const catUrl = fam && sub ? `/c/${fam.slug}/${sub.slug}` : '/';
 
+  // sólo datos reales del catálogo (nunca inventados)
   const specs = [];
-  if (p.ubicacion) specs.push(['Ubicación', p.ubicacion]);
   if (p.medidas && p.medidas.length) specs.push(['Medidas', p.medidas.join(' · ')]);
+  if (p.ubicacion) specs.push(['Ubicación', p.ubicacion]);
   if (p.ref_interna && p.ref_interna.length) specs.push(['Ref. interna', p.ref_interna.join(' · ')]);
-  if (p.clave_producto) specs.push(['Tipo (clave)', p.clave_producto]);
 
   return (
     <>
@@ -59,31 +61,25 @@ export default async function ProductoPage({ params }) {
                 {p.foto ? <img src={`/fotos/${p.foto}`} alt={p.nombre || p.codigo} /> : <span className="noimg">sin foto</span>}
               </div>
               <p className="gcap">
-                {p.foto
-                  ? `Foto del catálogo (confianza ${p.foto_confianza || '—'}) · pendiente de alta resolución`
-                  : 'Sin foto cargada'}
+                {p.foto ? 'Imagen del catálogo Logbelts' : 'Sin imagen en el catálogo'}
               </p>
             </div>
 
             <div>
               <div className="dhead">
-                <div className="code">Código Logbelts · {p.codigo}</div>
+                <div className="dcode">
+                  <span className="dcode-k">Código Logbelts</span>
+                  <span className="dcode-n">{p.codigo}</span>
+                </div>
                 <h1>{p.nombre || p.clave_producto || 'Producto'}</h1>
                 <div className="badges">
                   {p.fuente_desc === 'editado' || p.fuente_desc === 'manual' ? <span className="b-ok">Revisado</span> : null}
-                  {p.fuente_desc === 'texto del PDF' ? <span className="b-ok">Datos del PDF</span> : null}
-                  {derivada ? <span className="b-warn">Descripción a confirmar</span> : null}
+                  {p.fuente_desc === 'texto del PDF' || p.fuente_desc === 'texto del PDF (OCR)' ? <span className="b-ok">Datos del catálogo</span> : null}
+                  {derivada ? <span className="b-warn">Requiere revisión</span> : null}
                   {p.flags && p.flags.includes('NUEVO') ? <span className="b-wash">Nuevo</span> : null}
                   {p.estado === 'sin_codigo' ? <span className="b-wash">Código a asignar</span> : null}
                 </div>
               </div>
-
-              {p.descripcion ? <p className="ddesc">{p.descripcion}</p> : <p className="muted-line">Descripción a completar.</p>}
-              {derivada ? (
-                <p className="muted-line">
-                  Esta descripción se derivó de la clasificación del código y la sección del catálogo. Falta precisar el modelo exacto.
-                </p>
-              ) : null}
 
               {marcas.size ? (
                 <div className="brandchips">
@@ -93,14 +89,19 @@ export default async function ProductoPage({ params }) {
                 </div>
               ) : null}
 
-              {specs.length ? (
-                <div className="specsheet">
-                  <h3>Datos técnicos</h3>
-                  {specs.map(([k, v]) => (
-                    <div className="srow" key={k}><dt>{k}</dt><dd>{v}</dd></div>
-                  ))}
+              <div className="specsheet">
+                <h3>Descripción</h3>
+                <div className="srow srow-desc">
+                  {tieneDesc ? (
+                    <dd className="descfull">{p.descripcion}</dd>
+                  ) : (
+                    <dd className="revision">Requiere revisión — el catálogo no tiene una descripción específica para este código.</dd>
+                  )}
                 </div>
-              ) : null}
+                {specs.map(([k, v]) => (
+                  <div className="srow" key={k}><dt>{k}</dt><dd>{v}</dd></div>
+                ))}
+              </div>
 
               <div className="specsheet">
                 <h3>Compatibilidad</h3>
