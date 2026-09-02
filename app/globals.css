@@ -197,54 +197,11 @@ h1.page {
 .note { background: var(--brand-wash); border-radius: 10px; padding: 12px 15px; font-size: 12.5px; color: var(--ink-soft); margin: 22px 0 0; max-width: 72ch; }
 .note b { color: var(--ink); }
 
-/* ===== Identificar por foto ===== */
-.home-cta {
-  display: flex; align-items: center; gap: 14px; background: var(--brand); color: #fff;
-  border-radius: 14px; padding: 14px 16px; margin: 0 0 22px; text-decoration: none;
-  max-width: 46%; flex-wrap: wrap;
-}
-.home-cta:hover { text-decoration: none; filter: brightness(1.06); }
-.home-cta svg { flex: none; width: 26px; height: 26px; }
-.home-cta .t { font-family: var(--f-display); font-style: italic; text-transform: uppercase; font-size: 1rem; letter-spacing: .3px; display: block; }
-.home-cta .d { font-size: 12px; opacity: .85; }
-.home-cta .go { flex-basis: 100%; font-weight: 800; font-size: 12.5px; white-space: nowrap; }
-@media (max-width: 760px) {
-  .home-cta { max-width: none; }
-}
-
-/* ===== Banner de marcas en movimiento ===== */
-.marq { margin: 0 0 26px; }
-.marq-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; }
-.marq-kick { font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-faint); }
-.marq-n { font-size: 11px; font-weight: 700; color: var(--brand-ink, var(--brand)); }
-.marq-mask {
-  position: relative; overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-}
-.marq-track {
-  display: flex; gap: 10px; width: max-content; list-style: none; margin: 0; padding: 4px 0;
-  animation: marq-scroll 70s linear infinite;
-}
-.marq-track:hover { animation-play-state: paused; }
-.marq-track li { flex: none; }
-.marq-chip {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: var(--surface); border: 1px solid var(--rule); border-radius: 999px;
-  padding: 8px 14px; text-decoration: none; color: var(--ink); white-space: nowrap;
-  box-shadow: var(--shadow);
-}
-.marq-chip:hover { border-color: var(--brand); text-decoration: none; }
-.marq-name { font-family: var(--f-display); font-style: italic; text-transform: uppercase; font-size: 14px; letter-spacing: .3px; }
-.marq-c { font-size: 11px; font-weight: 700; color: var(--ink-faint); background: var(--surface-2); border-radius: 999px; padding: 1px 7px; }
-@keyframes marq-scroll {
-  from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(-50%, 0, 0); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .marq-track { animation: none; flex-wrap: wrap; width: auto; }
-  .marq-mask { -webkit-mask-image: none; mask-image: none; }
-  .marq-track li[aria-hidden="true"] { display: none; }
+/* ===== Aviso venta mayorista ===== */
+.aviso-mayorista {
+  background: var(--brand); color: #fff;
+  border-radius: 12px; padding: 14px 18px; margin: 0 0 24px;
+  font-weight: 700; font-size: 14px; line-height: 1.4;
 }
 
 .idbox { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 18px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 12px; align-items: center; }

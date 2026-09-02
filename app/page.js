@@ -1,13 +1,11 @@
 import CatalogoHeader from './components/CatalogoHeader';
 import Icono from './components/Icono';
-import MarcasMarquee from './components/MarcasMarquee';
-import { getFamilias, getMarcasConteo } from '../lib/catalogo';
+import { getFamilias } from '../lib/catalogo';
 
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   const familias = await getFamilias();
-  const marcas = await getMarcasConteo();
 
   return (
     <>
@@ -21,20 +19,9 @@ export default async function Home() {
             marca y modelo de máquina.
           </p>
 
-          <a className="home-cta" href="/identificar">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-              <rect x="3" y="6" width="18" height="14" rx="2" />
-              <circle cx="12" cy="13" r="4" />
-              <path d="M8 6l1.5-2h5L16 6" />
-            </svg>
-            <span>
-              <span className="t">¿No sabés qué repuesto es?</span>
-              <span className="d"> Sacale una foto a la pieza rota y te decimos cuál es.</span>
-            </span>
-            <span className="go">Identificar por foto →</span>
-          </a>
-
-          <MarcasMarquee marcas={marcas} />
+          <p className="aviso-mayorista">
+            Venta mayorista únicamente. Comunicate con nuestros vendedores para más información.
+          </p>
 
           <div className="tiles">
             {familias.map((f) => (

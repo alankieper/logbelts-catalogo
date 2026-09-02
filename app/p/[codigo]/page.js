@@ -158,7 +158,7 @@ export default async function ProductoPage({ params }) {
 
               <a
                 className="cta"
-                href={`https://wa.me/?text=${encodeURIComponent(
+                href={`https://wa.me/5491161142012?text=${encodeURIComponent(
                   `Hola, consulto por el producto ${p.codigo} — ${p.nombre || ''} (Catálogo Logbelts, pág. ${p.pagina || '—'})`
                 )}`}
                 target="_blank"
