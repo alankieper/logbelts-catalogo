@@ -91,7 +91,7 @@ if (APPLY) {
 
 /* ---------------- modo OCR ---------------- */
 const mupdf = await import('mupdf');
-const { createCanvas, Image } = await import('@napi-rs/canvas');
+const { createCanvas, loadImage } = await import('@napi-rs/canvas');
 const { createWorker } = await import('tesseract.js');
 
 const isCod = (s) => /^C[OÓ]DIGO$/i.test(s.trim());
@@ -118,12 +118,19 @@ for (let i = 0; i < N; i++) {
   const pn = i + 1;
   if (pagesArg && !pagesArg.includes(pn)) continue;
   const L = lineasDe(doc.loadPage(i));
-  const nd = L.filter((l) => isDesc(l.t)).length;
-  if (nd < 3) continue;
+  // anclas de código
+  let anc = 0;
+  for (let k = 0; k < L.length; k++) {
+    if (!isCod(L[k].t)) continue;
+    if (L.find((o) => Math.abs(o.y - L[k].y) < 5 && o.x > L[k].x && o.x < L[k].x + 120 && isCode(o.t))) anc++;
+  }
+  if (anc < 5) continue;
+  // texto "de contenido" (posibles descripciones ya legibles)
   const cont = L.filter((l) => !isDesc(l.t) && !isCod(l.t) && !isCode(l.t) && l.y > 40 && l.y < 815 &&
     !/Marcelo T\.|C\.P\.|\+54|Ciudad Aut/i.test(l.t) && !/^\d{1,3}$/.test(l.t.trim()) &&
-    !(l.t.length > 14 && l.t === l.t.toUpperCase())).length;
-  if (pagesArg || cont < nd * 0.6) targets.push(pn);
+    !(l.t.length > 12 && l.t === l.t.toUpperCase())).length;
+  // hace falta OCR si faltan descripciones (poco texto de contenido para tantos códigos)
+  if (pagesArg || cont < anc * 0.9) targets.push(pn);
 }
 console.log(`páginas a OCRear: ${targets.length} -> ${targets.join(',')}`);
 
@@ -145,8 +152,7 @@ for (const pn of targets) {
   const labels = L.filter((l) => isDesc(l.t));
 
   const pix = page.toPixmap(mupdf.Matrix.scale(SC, SC), mupdf.ColorSpace.DeviceRGB, false, true);
-  const pImg = new Image();
-  pImg.src = pix.asPNG();
+  const pImg = await loadImage(pix.asPNG());
   const pageW = pix.getWidth();
 
   let nPage = 0;

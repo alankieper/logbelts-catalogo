@@ -63,15 +63,15 @@
  },
  {
   "codigo": "2101003",
-  "estado": "derivado_con_foto",
-  "nombre": "Partes de carburador",
-  "descripcion": "Partes de carburador",
+  "estado": "completo",
+  "nombre": "Valvula Check Walbro WYJ",
+  "descripcion": "Valvula Check Walbro WYJ",
   "familia": "Carburación",
   "familia_indice": "Carburación",
   "subcategoria": "VÁLVULAS",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Valvula Check Walbro WYJ",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -84,7 +84,7 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2101003.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -221,9 +221,9 @@
  },
  {
   "codigo": "2102128",
-  "estado": "derivado_con_foto",
-  "nombre": "Carburador — Echo",
-  "descripcion": "Carburador para Echo",
+  "estado": "completo",
+  "nombre": "Tipo Zama Husqvarna",
+  "descripcion": "Tipo Zama Husqvarna",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "CARBURADORES",
@@ -231,7 +231,7 @@
    "Echo"
   ],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Tipo Zama Husqvarna",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -244,7 +244,7 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS -DESMALEZADORAS - ECHO - REEMPLAZOS",
   "foto": "2102128.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -382,8 +382,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS -DESMALEZADORAS - ECHO - REEMPLAZOS",
   "foto": "2102703.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2102704",
@@ -1018,8 +1018,8 @@
   "flags": [],
   "encabezado_pdf": "ACCESORIOS / HERRAMIENTAS",
   "foto": "2102977.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2103001",
@@ -1049,15 +1049,15 @@
  },
  {
   "codigo": "2103002",
-  "estado": "derivado_con_foto",
-  "nombre": "Kit de cilindros — Chinas 26cc",
-  "descripcion": "Kit de cilindros para Chinas 26cc",
+  "estado": "completo",
+  "nombre": "Kit Cilindro y Piston Chinas 33cc 1ES6F 36mm",
+  "descripcion": "Kit Cilindro y Piston Chinas 33cc 1ES6F 36mm",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Kit de cilindros",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Kit Cilindro y Piston Chinas 33cc 1ES6F 36mm",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -1070,7 +1070,7 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS CHINAS 26CC",
   "foto": "2103002.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -1152,8 +1152,8 @@
   "flags": [],
   "encabezado_pdf": "CILINDROS COMPLETOS - MOTOSIERRAS - HUSQVARNA - REEMPLAZOS",
   "foto": "2103005.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2103009",
@@ -1475,9 +1475,9 @@
  },
  {
   "codigo": "2103030",
-  "estado": "derivado_con_foto",
-  "nombre": "Kit de cilindros — Husqvarna",
-  "descripcion": "Kit de cilindros para Husqvarna",
+  "estado": "completo",
+  "nombre": "Kit Cilindro y Pistón Echo SRM",
+  "descripcion": "Kit Cilindro y Pistón Echo SRM",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "CILINDROS COMPLETOS",
@@ -1485,7 +1485,7 @@
    "Husqvarna"
   ],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Kit Cilindro y Pistón Echo SRM",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -1498,7 +1498,7 @@
   "flags": [],
   "encabezado_pdf": "CILINDROS COMPLETOS - MOTOSIERRAS - HUSQVARNA - REEMPLAZOS",
   "foto": "2103030.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -2570,8 +2570,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS CHINAS 26CC",
   "foto": "2105021.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2105022",
@@ -2596,20 +2596,20 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS CHINAS 43CC / 52CC",
   "foto": "2105022.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2105023",
-  "estado": "derivado_con_foto",
-  "nombre": "Aros — Chinas 43cc / 52cc",
-  "descripcion": "Aros para Chinas 43cc / 52cc",
+  "estado": "completo",
+  "nombre": "Aros de Piston Chinas 52cc 44mm",
+  "descripcion": "Aros de Piston Chinas 52cc 44mm",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Aros",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Aros de Piston Chinas 52cc 44mm",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -2622,8 +2622,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS CHINAS 43CC / 52CC",
   "foto": "2105023.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2105024",
@@ -2712,9 +2712,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2105026.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2105027",
@@ -2743,9 +2743,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2105027.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2105028",
@@ -2774,9 +2774,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2105028.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2105029",
@@ -2805,9 +2805,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2105029.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2105030",
@@ -3456,8 +3456,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109017.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2109041",
@@ -3486,8 +3486,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109041.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2109055",
@@ -3516,8 +3516,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109055.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2109061",
@@ -3546,8 +3546,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109061.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2109088",
@@ -3576,8 +3576,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109088.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2109089",
@@ -3636,8 +3636,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109092.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2109093",
@@ -3696,8 +3696,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109095.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2109098",
@@ -3726,8 +3726,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109098.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2109107",
@@ -3787,8 +3787,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109201.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2109206",
@@ -3818,8 +3818,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109206.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2109207",
@@ -3908,8 +3908,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109214.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2109218",
@@ -4211,15 +4211,15 @@
  },
  {
   "codigo": "2110005",
-  "estado": "derivado_con_foto",
-  "nombre": "Juntas de motor",
-  "descripcion": "Juntas de motor",
+  "estado": "completo",
+  "nombre": "Junta Escape Chinas 26cc",
+  "descripcion": "Junta Escape Chinas 26cc",
   "familia": "Juntas de motor",
   "familia_indice": "Juntas de motor",
   "subcategoria": "Juntas de motor",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Junta Escape Chinas 26cc",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -4232,7 +4232,7 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - DESMALEZADORAS",
   "foto": "2110005.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -4310,8 +4310,8 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - DESMALEZADORAS",
   "foto": "2110008.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2110009",
@@ -5346,8 +5346,8 @@
   "flags": [],
   "encabezado_pdf": "SISTEMA DE ARRANQUE - MOTOSIERRAS - REPUESTOS",
   "foto": "2112063.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2112064",
@@ -6589,8 +6589,8 @@
   ],
   "encabezado_pdf": "SIN FINES HUSQVARNA / OTROS",
   "foto": "2113047.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2113048",
@@ -6820,9 +6820,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2113055.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2113056",
@@ -7374,9 +7374,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2114073.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2114080",
@@ -7639,15 +7639,15 @@
  },
  {
   "codigo": "2114090",
-  "estado": "derivado_con_foto",
-  "nombre": "Tanque de combustible / tapa — Chinas 43cc / 52cc",
-  "descripcion": "Tanque de combustible / tapa para Chinas 43cc / 52cc",
+  "estado": "completo",
+  "nombre": "Tanque Chinas 43/52cc 1 Elite",
+  "descripcion": "Tanque Chinas 43/52cc 1 Elite",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "Tanque de combustible / tapa",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Tanque Chinas 43/52cc 1 Elite",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -7660,7 +7660,7 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS CHINAS 43CC / 52CC",
   "foto": "2114090.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -9909,8 +9909,8 @@
   "flags": [],
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2117574.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2117575",
@@ -9935,8 +9935,8 @@
   "flags": [],
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117575.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2117576",
@@ -10872,9 +10872,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2120046.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2120047",
@@ -11130,8 +11130,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO HUSQVARNA 143R",
   "foto": "2120063.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2120069",
@@ -12212,9 +12212,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO HUSQVARNA 143R",
   "foto": "2122128.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2122129",
@@ -12355,9 +12355,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2122138.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2122140",
@@ -13049,8 +13049,8 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2125152.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2125153",
@@ -13075,8 +13075,8 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2125153.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2125154",
@@ -13103,9 +13103,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2125154.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2125156",
@@ -13188,8 +13188,8 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2125158.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2125159",
@@ -13418,8 +13418,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2125168.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2125169",
@@ -13504,9 +13504,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2125171.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2127010",
@@ -13562,9 +13562,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO HUSQVARNA 143R",
   "foto": "2127015.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2127016",
@@ -13705,8 +13705,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2201008.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2201009",
@@ -13731,8 +13731,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2201009.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2201010",
@@ -13783,8 +13783,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2201011.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2202801",
@@ -15512,15 +15512,15 @@
  },
  {
   "codigo": "2203011",
-  "estado": "derivado_con_foto",
-  "nombre": "Kit de cilindros",
-  "descripcion": "Kit de cilindros",
+  "estado": "completo",
+  "nombre": "Kit Cilindro y Piston Chinas 3800 39mm",
+  "descripcion": "Kit Cilindro y Piston Chinas 3800 39mm",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
   "subcategoria": "CAJAS DE ENGRANAJES",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Kit Cilindro y Piston Chinas 3800 39mm",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -15533,20 +15533,20 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2203011.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
   "codigo": "2203012",
-  "estado": "derivado_con_foto",
-  "nombre": "Kit de cilindros — Chinas 38cc",
-  "descripcion": "Kit de cilindros para Chinas 38cc",
+  "estado": "completo",
+  "nombre": "Kit Cilindro y Piston Chinas 4500 43mm",
+  "descripcion": "Kit Cilindro y Piston Chinas 4500 43mm",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "Kit de cilindros",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Kit Cilindro y Piston Chinas 4500 43mm",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -15559,7 +15559,7 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS CHINAS 38CC",
   "foto": "2203012.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -16060,9 +16060,9 @@
  },
  {
   "codigo": "2203044",
-  "estado": "derivado_con_foto",
-  "nombre": "Kit de cilindros — Stihl",
-  "descripcion": "Kit de cilindros para Stihl",
+  "estado": "completo",
+  "nombre": "Kit Cilindro y Pistón Stihl MS",
+  "descripcion": "Kit Cilindro y Pistón Stihl MS",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "CILINDROS COMPLETOS",
@@ -16070,7 +16070,7 @@
    "Stihl"
   ],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Kit Cilindro y Pistón Stihl MS",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -16083,7 +16083,7 @@
   "flags": [],
   "encabezado_pdf": "CILINDROS COMPLETOS - MOTOSIERRAS - REEMPLAZOS - STIHL",
   "foto": "2203044.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -17978,8 +17978,8 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
   "foto": "2205025.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2205026",
@@ -18324,8 +18324,8 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE SOPLADORAS 2T",
   "foto": "2207012.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2207013",
@@ -18350,8 +18350,8 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE SOPLADORAS 2T",
   "foto": "2207013.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2207014",
@@ -18892,9 +18892,9 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2209012.jpg",
-  "foto_confianza": "muy_baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2209019",
@@ -18923,8 +18923,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2209019.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2209021",
@@ -18953,8 +18953,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2209021.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2209024",
@@ -19014,8 +19014,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2209025.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2209026",
@@ -19106,8 +19106,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2209028.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2209033",
@@ -19138,8 +19138,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2209033.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2209035",
@@ -19169,8 +19169,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2209035.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2209083",
@@ -19199,8 +19199,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2209083.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2209096",
@@ -19229,8 +19229,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2209096.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2209135",
@@ -19260,8 +19260,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2209135.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2209205",
@@ -19538,15 +19538,15 @@
  },
  {
   "codigo": "2210001",
-  "estado": "derivado_con_foto",
-  "nombre": "Juntas de motor",
-  "descripcion": "Juntas de motor",
+  "estado": "completo",
+  "nombre": "Junta Base Cilindro Chinas 3800 38cc",
+  "descripcion": "Junta Base Cilindro Chinas 3800 38cc",
   "familia": "Juntas de motor",
   "familia_indice": "Juntas de motor",
   "subcategoria": "Juntas de motor",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Junta Base Cilindro Chinas 3800 38cc",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -19559,7 +19559,7 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210001.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -19611,8 +19611,8 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210003.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2210004",
@@ -19663,8 +19663,8 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210005.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2210006",
@@ -19741,8 +19741,8 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210008.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2210009",
@@ -21551,8 +21551,8 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS CHINAS 45CC / 52CC",
   "foto": "2214021.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2214023",
@@ -21690,15 +21690,15 @@
  },
  {
   "codigo": "2214028",
-  "estado": "derivado_con_foto",
-  "nombre": "Tanque de combustible / tapa — Chinas 45cc / 52cc",
-  "descripcion": "Tanque de combustible / tapa para Chinas 45cc / 52cc",
+  "estado": "completo",
+  "nombre": "Tapa Tanque Aceite Chinas",
+  "descripcion": "Tapa Tanque Aceite Chinas",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "Tanque de combustible / tapa",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Tapa Tanque Aceite Chinas",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -21711,7 +21711,7 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS CHINAS 45CC / 52CC",
   "foto": "2214028.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -22253,8 +22253,8 @@
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2214051.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2214052",
@@ -22525,8 +22525,8 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS CHINAS 45CC / 52CC",
   "foto": "2215003.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2215004",
@@ -23359,15 +23359,15 @@
  },
  {
   "codigo": "2215046",
-  "estado": "derivado_con_foto",
-  "nombre": "Tapas de arranque — Repuestos",
-  "descripcion": "Tapas de arranque para Repuestos",
+  "estado": "completo",
+  "nombre": "Polea Arranque Stihl MS",
+  "descripcion": "Polea Arranque Stihl MS",
   "familia": "Sistemas de arranque",
   "familia_indice": "Sistemas de arranque",
   "subcategoria": "REPUESTOS",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Polea Arranque Stihl MS",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -23380,7 +23380,7 @@
   "flags": [],
   "encabezado_pdf": "SISTEMA DE ARRANQUE - MOTOSIERRAS - REPUESTOS",
   "foto": "2215046.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -23981,9 +23981,9 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2215087.jpg",
-  "foto_confianza": "baja",
   "fuente_desc": "texto del PDF",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2215088",
@@ -24873,8 +24873,8 @@
   "flags": [],
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219084.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2219090",
@@ -25310,15 +25310,15 @@
  },
  {
   "codigo": "2220017",
-  "estado": "derivado_con_foto",
-  "nombre": "Partes — Chinas 45cc / 52cc",
-  "descripcion": "Partes para Chinas 45cc / 52cc",
+  "estado": "completo",
+  "nombre": "Volante Magnético Chinas",
+  "descripcion": "Volante Magnético Chinas",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "Partes",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Volante Magnético Chinas",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -25331,7 +25331,7 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS CHINAS 45CC / 52CC",
   "foto": "2220017.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -25383,8 +25383,8 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS CHINAS 45CC / 52CC",
   "foto": "2220019.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2220020",
@@ -26109,8 +26109,8 @@
   "flags": [],
   "encabezado_pdf": "ACCESORIOS Y REPUESTOS MOTOSIERRA HUSQVARNA",
   "foto": "2220082.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2220083",
@@ -26461,8 +26461,8 @@
   "flags": [],
   "encabezado_pdf": "ACCESORIOS Y REPUESTOS MOTOSIERRA HUSQVARNA",
   "foto": "2220107.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2220108",
@@ -26988,8 +26988,8 @@
   "flags": [],
   "encabezado_pdf": "ACCESORIOS Y REPUESTOS MOTOSIERRA HUSQVARNA",
   "foto": "2220134.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2220135",
@@ -27044,8 +27044,8 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2220136.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2220137",
@@ -27520,8 +27520,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "2220181.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2220182",
@@ -27687,8 +27687,8 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2220190.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2220191",
@@ -27883,8 +27883,8 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2220207.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2220208",
@@ -29709,8 +29709,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS CHINAS 43CC / 52CC",
   "foto": "2227658.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2290510",
@@ -30930,15 +30930,15 @@
  },
  {
   "codigo": "2291027",
-  "estado": "derivado_sin_foto",
-  "nombre": "Cadenas",
-  "descripcion": "Cadenas",
+  "estado": "completo",
+  "nombre": "0 LF VU l.d JUDL Chinas Espada",
+  "descripcion": "0 LF VU l.d JUDL Chinas Espada",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "CADENAS PREMIUM",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "0 LF VU l.d JUDL Chinas Espada",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -30951,7 +30951,7 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - CADENAS PREMIUM",
   "foto": "2291027.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -31010,15 +31010,15 @@
  },
  {
   "codigo": "2291030",
-  "estado": "derivado_sin_foto",
-  "nombre": "Cadenas",
-  "descripcion": "Cadenas",
+  "estado": "completo",
+  "nombre": "DESUNIN VII. Cadena Cortada Ca 3/8 063 1.6 72DL",
+  "descripcion": "DESUNIN VII. Cadena Cortada Ca 3/8 063 1.6 72DL Repl Ms360 Ms",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "CADENAS PREMIUM",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "DESUNIN VII. Cadena Cortada Ca 3/8 063 1.6 72DL Repl Ms360 Ms",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -31031,7 +31031,7 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - CADENAS PREMIUM",
   "foto": "2291030.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -31140,15 +31140,15 @@
  },
  {
   "codigo": "2291036",
-  "estado": "derivado_sin_foto",
-  "nombre": "Cadenas",
-  "descripcion": "Cadenas",
+  "estado": "completo",
+  "nombre": "LI.UJO 1.0 7UDL Chinas Espada",
+  "descripcion": "LI.UJO 1.0 7UDL Chinas Espada",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
   "subcategoria": "CADENAS PREMIUM",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "LI.UJO 1.0 7UDL Chinas Espada",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -31161,7 +31161,7 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - CADENAS PREMIUM",
   "foto": "2291036.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -32148,8 +32148,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2906001.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2906003",
@@ -32174,8 +32174,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2906003.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2906004",
@@ -32200,8 +32200,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2906004.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2906006",
@@ -32226,8 +32226,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2906006.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2906007",
@@ -32252,8 +32252,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2906007.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2906008",
@@ -32278,8 +32278,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2906008.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2906009",
@@ -32304,8 +32304,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2906009.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2906010",
@@ -32642,8 +32642,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2909051.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2909056",
@@ -32672,8 +32672,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2909056.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2909066",
@@ -32732,8 +32732,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2909072.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2909097",
@@ -32824,8 +32824,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2909106.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2909200",
@@ -32914,8 +32914,8 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2909203.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "2909204",
@@ -35657,8 +35657,8 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - JOHN DEERE",
   "foto": "3101346.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3101350",
@@ -35975,8 +35975,8 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS CARONI",
   "foto": "3101448.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3101449",
@@ -36943,9 +36943,9 @@
  },
  {
   "codigo": "3102642",
-  "estado": "derivado_con_foto",
-  "nombre": "Torretas — AYP / HQV / Poulan",
-  "descripcion": "Torretas para AYP / HQV / Poulan",
+  "estado": "completo",
+  "nombre": "Eje Torreta 187291 MP",
+  "descripcion": "Eje Torreta 187291 MP",
   "familia": "Máquinas de cortar césped",
   "familia_indice": null,
   "subcategoria": "TORRETAS CARCASAS EJES",
@@ -36955,7 +36955,7 @@
    "Husqvarna"
   ],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Eje Torreta 187291 MP",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -36968,7 +36968,7 @@
   "flags": [],
   "encabezado_pdf": "TORRETAS CARCASAS EJES - AYP / HQV / POULAN",
   "foto": "3102642.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -37273,9 +37273,9 @@
  },
  {
   "codigo": "3102670",
-  "estado": "derivado_con_foto",
-  "nombre": "Torretas — MTD / Cub Cadet / Yard Machines",
-  "descripcion": "Torretas para MTD / Cub Cadet / Yard Machines",
+  "estado": "completo",
+  "nombre": "Torreta completa",
+  "descripcion": "Torreta completa",
   "familia": "Máquinas de cortar césped",
   "familia_indice": null,
   "subcategoria": "TORRETAS CARCASAS EJES",
@@ -37285,7 +37285,7 @@
    "Cub Cadet"
   ],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Torreta completa",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -37298,7 +37298,7 @@
   "flags": [],
   "encabezado_pdf": "TORRETAS CARCASAS EJES - MTD / CUB CADET / YARD MACHINES",
   "foto": "3102670.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -37358,8 +37358,8 @@
   "flags": [],
   "encabezado_pdf": "TORRETAS CARCASAS EJES - MTD / CUB CADET / YARD MACHINES",
   "foto": "3102672.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3102673",
@@ -38113,9 +38113,9 @@
  },
  {
   "codigo": "3103026",
-  "estado": "derivado_con_foto",
-  "nombre": "Poleas — AYP / HQV / Poulan",
-  "descripcion": "Poleas para AYP / HQV / Poulan",
+  "estado": "completo",
+  "nombre": "Polea Plataforma 153532 173435 129206 120 mm",
+  "descripcion": "Polea Plataforma 153532 173435 129206 120 mm",
   "familia": "Máquinas de cortar césped",
   "familia_indice": null,
   "subcategoria": "POLEAS",
@@ -38125,7 +38125,7 @@
    "Husqvarna"
   ],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Polea Plataforma 153532 173435 129206 120 mm",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -38138,7 +38138,7 @@
   "flags": [],
   "encabezado_pdf": "POLEAS - AYP / HQV / POULAN",
   "foto": "3103026.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -38571,9 +38571,9 @@
  },
  {
   "codigo": "3103118",
-  "estado": "derivado_con_foto",
-  "nombre": "Poleas — MTD / Cub Cadet / Yard Machines / Craftman",
-  "descripcion": "Poleas para MTD / Cub Cadet / Yard Machines / Craftman",
+  "estado": "completo",
+  "nombre": "Polea Doble 756 04196 86 mm 153 mm",
+  "descripcion": "Polea Doble 756 04196 86 mm 153 mm",
   "familia": "Máquinas de cortar césped",
   "familia_indice": null,
   "subcategoria": "POLEAS",
@@ -38583,7 +38583,7 @@
    "Cub Cadet"
   ],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Polea Doble 756 04196 86 mm 153 mm",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -38596,7 +38596,7 @@
   "flags": [],
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103118.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -39821,15 +39821,15 @@
  },
  {
   "codigo": "3104115",
-  "estado": "derivado_con_foto",
-  "nombre": "Cables",
-  "descripcion": "Cables",
+  "estado": "completo",
+  "nombre": "Cable plataforma MTD",
+  "descripcion": "Cable plataforma MTD",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
   "subcategoria": "CABLES DE ACCIONAMIENTO",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Cable plataforma MTD",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -39842,7 +39842,7 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CABLES DE ACCIONAMIENTO",
   "foto": "3104115.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -40055,8 +40055,8 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106016.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)"
+  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3106017",
@@ -40107,8 +40107,8 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106018.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3106019",
@@ -40159,8 +40159,8 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106020.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3106021",
@@ -40185,8 +40185,8 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106021.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3106022",
@@ -40237,8 +40237,8 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106023.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3106024",
@@ -40263,8 +40263,8 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106024.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3106025",
@@ -40289,8 +40289,8 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106025.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3106026",
@@ -40891,8 +40891,8 @@
   "flags": [],
   "encabezado_pdf": "TORRETAS CARCASAS EJES - AYP / HQV / POULAN",
   "foto": "3120964.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3120965",
@@ -41265,8 +41265,8 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "3120977.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3201061",
@@ -41298,8 +41298,8 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3201061.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3201065",
@@ -41736,8 +41736,8 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS CONVENCIONALES Y TRITURADORAS - MURRAY",
   "foto": "3201240.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "3201245",
@@ -43863,8 +43863,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": "4301498.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4301499",
@@ -44117,8 +44117,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301558.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4301559",
@@ -45168,9 +45168,9 @@
  },
  {
   "codigo": "4302911",
-  "estado": "derivado_sin_foto",
-  "nombre": "Carburador — Stihl",
-  "descripcion": "Carburador para Stihl",
+  "estado": "completo",
+  "nombre": "DESUNIF VII Carburador con Ca Electroválvula",
+  "descripcion": "DESUNIF VII Carburador con Ca Electroválvula",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
   "subcategoria": "CARBURADORES",
@@ -45178,7 +45178,7 @@
    "Stihl"
   ],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "DESUNIF VII Carburador con Ca Electroválvula",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -45191,7 +45191,7 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
   "foto": "4302911.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -45954,8 +45954,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4305041.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4305042",
@@ -45980,8 +45980,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4305042.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4305043",
@@ -46006,8 +46006,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4305043.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4305044",
@@ -46032,8 +46032,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4305044.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4305045",
@@ -46119,9 +46119,9 @@
  },
  {
   "codigo": "4307222",
-  "estado": "derivado_sin_foto",
-  "nombre": "Filtro de aire — Honda",
-  "descripcion": "Filtro de aire para Honda",
+  "estado": "completo",
+  "nombre": "DUELJUNiIN VII Filtro Aire Ca de Esponja",
+  "descripcion": "DUELJUNiIN VII Filtro Aire Ca de Esponja",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
   "subcategoria": "FILTROS DE AIRE REEMPLAZOS 4T",
@@ -46129,7 +46129,7 @@
    "Honda"
   ],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "DUELJUNiIN VII Filtro Aire Ca de Esponja",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -46142,7 +46142,7 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307222.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -48968,8 +48968,8 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": "4310400.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4310401",
@@ -49001,9 +49001,9 @@
  },
  {
   "codigo": "4310402",
-  "estado": "derivado_con_foto",
-  "nombre": "Juntas de motor — Kohler",
-  "descripcion": "Juntas de motor para Kohler",
+  "estado": "completo",
+  "nombre": "Kohler 24 041 52 Base Carburador Cub Cadet RZT/Enduro",
+  "descripcion": "Kohler 24 041 52 Base Carburador Cub Cadet RZT/Enduro",
   "familia": "Juntas de motor",
   "familia_indice": "Juntas de motor",
   "subcategoria": "KOHLER",
@@ -49011,7 +49011,7 @@
    "Kohler"
   ],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Kohler 24 041 52 Base Carburador Cub Cadet RZT/Enduro",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -49024,7 +49024,7 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - KOHLER",
   "foto": "4310402.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -49376,8 +49376,8 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - KOHLER",
   "foto": "4310415.jpg",
-  "foto_confianza": "media",
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4310416",
@@ -50375,15 +50375,15 @@
  },
  {
   "codigo": "4310483",
-  "estado": "derivado_sin_foto",
-  "nombre": "Juntas de motor — Tapas Cilindro",
-  "descripcion": "Juntas de motor para Tapas Cilindro",
+  "estado": "completo",
+  "nombre": "DELI UILIN VII Junta Tapa de Cilindro BAS 13,5 14 hp 273280 GasT",
+  "descripcion": "DELI UILIN VII Junta Tapa de Cilindro BAS 13,5 14 hp 273280 GasT",
   "familia": "Juntas de motor",
   "familia_indice": "Juntas de motor",
   "subcategoria": "TAPAS DE CILINDRO",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "DELI UILIN VII Junta Tapa de Cilindro BAS 13,5 14 hp 273280 GasT",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -50396,7 +50396,7 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310483.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -52350,8 +52350,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4320595.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4320596",
@@ -52376,8 +52376,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4320596.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4320598",
@@ -53626,8 +53626,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
   "foto": "4320655.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4320656",
@@ -53964,8 +53964,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
   "foto": "4320671.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4320673",
@@ -54068,8 +54068,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
   "foto": "4320678.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4320679",
@@ -54094,8 +54094,8 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
   "foto": "4320679.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4320680",
@@ -54684,8 +54684,8 @@
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "4324243.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4324244",
@@ -54710,8 +54710,8 @@
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "4324244.jpg",
-  "foto_confianza": "muy_baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4324901",
@@ -54879,15 +54879,15 @@
  },
  {
   "codigo": "4325312",
-  "estado": "derivado_con_foto",
-  "nombre": "Cables",
-  "descripcion": "Cables",
+  "estado": "completo",
+  "nombre": "Motor de Arranque Simil Honda GX120 Sir",
+  "descripcion": "Motor de Arranque Simil Honda GX120 Sir",
   "familia": "Sistemas de arranque",
   "familia_indice": "Sistemas de arranque",
   "subcategoria": "MOTORES 4T",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Motor de Arranque Simil Honda GX120 Sir",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -54900,7 +54900,7 @@
   "flags": [],
   "encabezado_pdf": "MOTORES 4T - BURROS DE ARRANQUE",
   "foto": "4325312.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -55013,15 +55013,15 @@
  },
  {
   "codigo": "4325317",
-  "estado": "derivado_con_foto",
-  "nombre": "Cables",
-  "descripcion": "Cables",
+  "estado": "completo",
+  "nombre": "Motor de Arranque Simil Honda",
+  "descripcion": "Motor de Arranque Simil Honda",
   "familia": "Sistemas de arranque",
   "familia_indice": "Sistemas de arranque",
   "subcategoria": "MOTORES 4T",
   "marcas": [],
   "codigo_original": [],
-  "compatibilidad": null,
+  "compatibilidad": "Motor de Arranque Simil Honda",
   "ubicacion": null,
   "medidas": [],
   "ref_interna": [],
@@ -55034,7 +55034,7 @@
   "flags": [],
   "encabezado_pdf": "MOTORES 4T - BURROS DE ARRANQUE",
   "foto": "4325317.jpg",
-  "fuente_desc": "derivada (clave de código + sección del catálogo)",
+  "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-render"
  },
  {
@@ -55558,8 +55558,8 @@
   "flags": [],
   "encabezado_pdf": "TAPAS DE FRENO / CINTAS REEMPLAZO MOTOSIERRAS",
   "foto": "4525322.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4702900",
@@ -56782,8 +56782,8 @@
   "flags": [],
   "encabezado_pdf": "ACCESORIOS / HERRAMIENTAS",
   "foto": "4720547.jpg",
-  "foto_confianza": "baja",
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "foto_origen": "pdf-render"
  },
  {
   "codigo": "4720548",

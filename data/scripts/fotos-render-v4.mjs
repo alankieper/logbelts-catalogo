@@ -21,7 +21,7 @@ const APPLY = process.argv.includes('--apply');
 const onlyPages = (() => { const i = process.argv.indexOf('--pages'); return i > 0 ? process.argv[i + 1].split(',').map(Number) : null; })();
 const OUT_DIRS = ['data/fotos', 'public/fotos'];
 const PRODUCTOS = 'data/productos.json';
-const SCALE = 5;
+const SCALE = 8; // alta resolución: que no se vea pixelado en pantallas retina
 
 const textPages = JSON.parse(fs.readFileSync(PAGES_JSON, 'utf8'));
 const productos = JSON.parse(fs.readFileSync(PRODUCTOS, 'utf8'));
@@ -139,6 +139,58 @@ const mdoc = mupdf.Document.openDocument(fs.readFileSync(PDF), 'application/pdf'
 const porPagina = {};
 for (const [code, r] of Object.entries(recortes)) (porPagina[r.pagina] = porPagina[r.pagina] || []).push({ code, ...r });
 
+// tapa con blanco líneas divisorias de la grilla que se hayan colado en un borde.
+// NO recorta ni redimensiona: sólo pinta de blanco columnas/filas del borde que
+// sean casi enteramente de un color saturado (azul/negro de la maqueta).
+function limpiarBordes(ctx, w, h) {
+  const bandX = Math.max(6, Math.round(w * 0.12));
+  const bandY = Math.max(6, Math.round(h * 0.12));
+  const img = ctx.getImageData(0, 0, w, h);
+  const d = img.data;
+  // croma = color fuerte (azul/amarillo/rojo de la maqueta). Las piezas son grises.
+  const croma = (i) => { const r = d[i], g = d[i + 1], b = d[i + 2]; const mx = Math.max(r, g, b), mn = Math.min(r, g, b); return mx - mn > 55 && (mx - mn) / (mx || 1) > 0.3; };
+  const negro = (i) => Math.max(d[i], d[i + 1], d[i + 2]) < 60;
+  const pintaCol = (x) => { for (let y = 0; y < h; y++) { const i = (y * w + x) * 4; d[i] = d[i + 1] = d[i + 2] = 255; } };
+  const pintaRow = (y) => { for (let x = 0; x < w; x++) { const i = (y * w + x) * 4; d[i] = d[i + 1] = d[i + 2] = 255; } };
+  let cambiado = false;
+  const scanCol = (x) => { let c = 0, n = 0; for (let y = 0; y < h; y++) { const i = (y * w + x) * 4; if (croma(i)) c++; if (negro(i)) n++; } if (c / h > 0.15 || n / h > 0.6) { pintaCol(x); cambiado = true; } };
+  const scanRow = (y) => { let c = 0, n = 0; for (let x = 0; x < w; x++) { const i = (y * w + x) * 4; if (croma(i)) c++; if (negro(i)) n++; } if (c / w > 0.15 || n / w > 0.6) { pintaRow(y); cambiado = true; } };
+  for (let x = 0; x < bandX; x++) scanCol(x);
+  for (let x = 0; x < bandX; x++) scanCol(w - 1 - x);
+  for (let y = 0; y < bandY; y++) scanRow(y);
+  for (let y = 0; y < bandY; y++) scanRow(h - 1 - y);
+  if (cambiado) ctx.putImageData(img, 0, 0);
+}
+
+// recorta el lienzo a la caja que contiene la pieza (todo lo que no es blanco de
+// fondo) y le deja un margen parejo.  Es el mismo encuadre que ya usan las fotos
+// del catálogo (pieza centrada sobre blanco).  No cambia color ni nitidez.
+function encuadrar(canvas, ctx, w, h) {
+  const d = ctx.getImageData(0, 0, w, h).data;
+  const noBlanco = (i) => d[i] < 244 || d[i + 1] < 244 || d[i + 2] < 244;
+  let x0 = w, y0 = h, x1 = 0, y1 = 0, cnt = 0;
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+    if (noBlanco((y * w + x) * 4)) {
+      if (x < x0) x0 = x; if (x > x1) x1 = x;
+      if (y < y0) y0 = y; if (y > y1) y1 = y;
+      cnt++;
+    }
+  }
+  if (cnt < 30 || x1 <= x0 || y1 <= y0) return canvas; // nada que encuadrar
+  const cw = x1 - x0 + 1, ch = y1 - y0 + 1;
+  const m = Math.round(Math.max(cw, ch) * 0.08); // margen parejo
+  const ox = Math.max(0, x0 - m), oy = Math.max(0, y0 - m);
+  const ex = Math.min(w, x1 + 1 + m), ey = Math.min(h, y1 + 1 + m);
+  const nw = ex - ox, nh = ey - oy;
+  if (nw >= w - 2 && nh >= h - 2) return canvas; // ya estaba encuadrada
+  const out = createCanvas(nw, nh);
+  const octx = out.getContext('2d');
+  octx.fillStyle = '#ffffff';
+  octx.fillRect(0, 0, nw, nh);
+  octx.drawImage(canvas, ox, oy, nw, nh, 0, 0, nw, nh);
+  return out;
+}
+
 function writeRetry(file, buf, tries = 6) {
   for (let i = 0; i < tries; i++) {
     try { fs.writeFileSync(file, buf); return; } catch (e) {
@@ -156,12 +208,12 @@ for (const [pag, items] of Object.entries(porPagina)) {
   const PW = pix.getWidth(), PH = pix.getHeight();
 
   for (const it of items) {
-    // recorte con un pelín de margen para no comer el borde de la foto
-    const pad = 1.5;
-    let sx = Math.round((it.x - pad) * SCALE);
-    let sy = Math.round((it.y - pad) * SCALE);
-    let sw = Math.round((it.w + pad * 2) * SCALE);
-    let sh = Math.round((it.h + pad * 2) * SCALE);
+    // recorte con un pequeño inset para no arrastrar líneas divisorias de la grilla
+    const inset = 4;
+    let sx = Math.round((it.x + inset) * SCALE);
+    let sy = Math.round((it.y + inset) * SCALE);
+    let sw = Math.round((it.w - inset * 2) * SCALE);
+    let sh = Math.round((it.h - inset * 2) * SCALE);
     sx = Math.max(0, sx); sy = Math.max(0, sy);
     sw = Math.min(PW - sx, sw); sh = Math.min(PH - sy, sh);
     if (sw < 20 || sh < 20) continue;
@@ -170,7 +222,10 @@ for (const [pag, items] of Object.entries(porPagina)) {
     ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, sw, sh);
     ctx.drawImage(img, sx, sy, sw, sh, 0, 0, sw, sh);
-    const jpg = c.toBuffer('image/jpeg', 0.92);
+    limpiarBordes(ctx, sw, sh);
+    // encuadre a la pieza sobre blanco (como vienen las fotos del catálogo)
+    const fin = encuadrar(c, ctx, sw, sh);
+    const jpg = fin.toBuffer('image/jpeg', 0.9);
     for (const dir of OUT_DIRS) { fs.mkdirSync(dir, { recursive: true }); writeRetry(path.join(dir, it.code + '.jpg'), jpg); }
     const prod = idx.get(it.code);
     if (prod) { prod.foto = it.code + '.jpg'; prod.foto_origen = 'pdf-render'; delete prod.foto_confianza; }

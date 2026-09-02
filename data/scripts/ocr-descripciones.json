@@ -1,6 +1,11 @@
 {
+ "2101003": {
+  "desc": "Valvula Check Walbro WYJ",
+  "pagina": 26,
+  "conf": 81
+ },
  "2101004": {
-  "desc": "Valvula Venteo Echo 131300 56430",
+  "desc": "Valvula Venteo Echo",
   "pagina": 26,
   "conf": 75
  },
@@ -19,28 +24,33 @@
   "pagina": 96,
   "conf": 94
  },
+ "2102128": {
+  "desc": "Tipo Zama Husqvarna",
+  "pagina": 66,
+  "conf": 65
+ },
  "2102223": {
-  "desc": "Tipo Zama Husqvarna 223 Us",
+  "desc": "Tipo Zama Husqvarna 223",
   "pagina": 66,
   "conf": 80
  },
  "2102703": {
-  "desc": "Tipo TK Shindaiwa B530 CARBUF",
+  "desc": "Tipo TK Shindaiwa B530",
   "pagina": 66,
   "conf": 80
  },
  "2102827": {
-  "desc": "Tipo Zama C1Q K73C Echo SAM 4300 07 21 101 7",
+  "desc": "Tipo Zama C1Q K73C Echo SAM",
   "pagina": 66,
   "conf": 60
  },
  "2102828": {
-  "desc": "Tipo Walbro Echo SRAM 4605 ADORES 2",
+  "desc": "Tipo Walbro Echo SRAM 4605",
   "pagina": 66,
   "conf": 61
  },
  "2102829": {
-  "desc": "TipoZama Echo SRM 2305 DESMALEZADORAS",
+  "desc": "TipoZama Echo SRM 2305",
   "pagina": 66,
   "conf": 59
  },
@@ -54,6 +64,11 @@
   "pagina": 92,
   "conf": 71
  },
+ "2103002": {
+  "desc": "Kit Cilindro y Piston Chinas 33cc 1ES6F 36mm",
+  "pagina": 94,
+  "conf": 70
+ },
  "2103003": {
   "desc": "Kit Cilindro y Piston Chinas 43cc 1E40F 40mm",
   "pagina": 95,
@@ -65,12 +80,12 @@
   "conf": 80
  },
  "2103013": {
-  "desc": "Kit Cilindro y Pistón Stihl FS 85",
+  "desc": "Kit Cilindro y Pistón Stihl FS",
   "pagina": 80,
   "conf": 76
  },
  "2103014": {
-  "desc": "Kit Cilindro y Pistón Stihl FS 120",
+  "desc": "Kit Cilindro y Pistón Stihl FS",
   "pagina": 80,
   "conf": 94
  },
@@ -79,8 +94,13 @@
   "pagina": 83,
   "conf": 81
  },
+ "2103030": {
+  "desc": "Kit Cilindro y Pistón Echo SRM",
+  "pagina": 80,
+  "conf": 88
+ },
  "2103031": {
-  "desc": "Kit Cilindro y Pistón Echo SRM 4605",
+  "desc": "Kit Cilindro y Pistón Echo SRM",
   "pagina": 80,
   "conf": 94
  },
@@ -115,7 +135,7 @@
   "conf": 91
  },
  "2105020": {
-  "desc": "Aros de Piston Chinas 26cc 33 1.2 MM",
+  "desc": "Aros de Piston Chinas 26cc 33 1.2",
   "pagina": 92,
   "conf": 73
  },
@@ -128,6 +148,11 @@
   "desc": "Aros de Piston Chinas 43cc 40mm",
   "pagina": 95,
   "conf": 77
+ },
+ "2105023": {
+  "desc": "Aros de Piston Chinas 52cc 44mm",
+  "pagina": 95,
+  "conf": 79
  },
  "2107110": {
   "desc": "Filtro Aire Espuma Desmalezadoras 26/33/43/52 cc",
@@ -163,6 +188,11 @@
   "desc": "Junta Carter Chinas 26cc",
   "pagina": 56,
   "conf": 93
+ },
+ "2110005": {
+  "desc": "Junta Escape Chinas 26cc",
+  "pagina": 56,
+  "conf": 62
  },
  "2110006": {
   "desc": "Junta Base Cilindro Chinas 33cc",
@@ -284,6 +314,11 @@
   "pagina": 96,
   "conf": 79
  },
+ "2114090": {
+  "desc": "Tanque Chinas 43/52cc 1 Elite",
+  "pagina": 96,
+  "conf": 66
+ },
  "2114091": {
   "desc": "Tanque Chinas 43/52cc",
   "pagina": 96,
@@ -295,7 +330,7 @@
   "conf": 89
  },
  "2115130": {
-  "desc": "Kit Trinquete Arranque Stihl FS 250 280",
+  "desc": "Kit Trinquete Arranque Stihl FS",
   "pagina": 92,
   "conf": 70
  },
@@ -385,14 +420,24 @@
   "conf": 73
  },
  "2202835": {
-  "desc": "TpoTK Shindaiwa B450 350 URADORES 4",
+  "desc": "TpoTK Shindaiwa B450 350",
   "pagina": 66,
   "conf": 76
  },
  "2202836": {
-  "desc": "Tio TK Shindaiwa C35 DESMALEZADORAS",
+  "desc": "Tio TK Shindaiwa C35",
   "pagina": 66,
   "conf": 69
+ },
+ "2203011": {
+  "desc": "Kit Cilindro y Piston Chinas 3800 39mm",
+  "pagina": 114,
+  "conf": 77
+ },
+ "2203012": {
+  "desc": "Kit Cilindro y Piston Chinas 4500 43mm",
+  "pagina": 116,
+  "conf": 73
  },
  "2203013": {
   "desc": "Kit Cilindro y Piston Chinas 5200 45mm",
@@ -400,7 +445,7 @@
   "conf": 94
  },
  "2203020": {
-  "desc": "Escape Chinas 3800",
+  "desc": "Escape Chinas",
   "pagina": 116,
   "conf": 71
  },
@@ -410,77 +455,82 @@
   "conf": 70
  },
  "2203022": {
-  "desc": "Tornillo de escape Chinas 3800",
+  "desc": "Tornillo de escape Chinas",
   "pagina": 116,
   "conf": 96
  },
  "2203040": {
-  "desc": "Kit Cilindro y Pistón Stihl 08",
+  "desc": "Kit Cilindro y Pistón Stihl",
   "pagina": 79,
   "conf": 82
  },
  "2203041": {
-  "desc": "Kit Cilindro y Pistón Stihl MS 170",
+  "desc": "Kit Cilindro y Pistón Stihl MS",
   "pagina": 79,
   "conf": 75
  },
  "2203042": {
-  "desc": "Kit Cilindro y Pistón Stihl MS 180",
+  "desc": "Kit Cilindro y Pistón Stihl MS",
   "pagina": 79,
   "conf": 83
  },
+ "2203044": {
+  "desc": "Kit Cilindro y Pistón Stihl MS",
+  "pagina": 79,
+  "conf": 64
+ },
  "2203046": {
-  "desc": "Kit Cilindro y Pistón Stihl MS 290",
+  "desc": "Kit Cilindro y Pistón Stihl MS",
   "pagina": 79,
   "conf": 70
  },
  "2203047": {
-  "desc": "Kit Cilindro y Pistón Stihl MS 360",
+  "desc": "Kit Cilindro y Pistón Stihl MS",
   "pagina": 79,
   "conf": 82
  },
  "2203048": {
-  "desc": "Kit Cilindro y Pistón Stihl MS 361",
+  "desc": "Kit Cilindro y Pistón Stihl MS",
   "pagina": 79,
   "conf": 91
  },
  "2203052": {
-  "desc": "Kit Cilindro y Pistón Stihl MS 380",
+  "desc": "Kit Cilindro y Pistón Stihl MS",
   "pagina": 79,
   "conf": 72
  },
  "2203053": {
-  "desc": "Kit Cilindro y Pistón Stihl MS 381",
+  "desc": "Kit Cilindro y Pistón Stihl MS",
   "pagina": 79,
   "conf": 88
  },
  "2203054": {
-  "desc": "Kit Cilindro y Pistón Stihl MS 382",
+  "desc": "Kit Cilindro y Pistón Stihl MS",
   "pagina": 79,
   "conf": 68
  },
  "2203057": {
-  "desc": "Kit Cilindro y Pistón Stihl MS 440",
+  "desc": "Kit Cilindro y Pistón Stihl MS",
   "pagina": 79,
   "conf": 69
  },
  "2203058": {
-  "desc": "Kit Cilindro y Pistón Stihl MS 460",
+  "desc": "Kit Cilindro y Pistón Stihl MS",
   "pagina": 79,
   "conf": 93
  },
  "2203059": {
-  "desc": "Kit Cilindro y Pistón Stihl MS 560",
+  "desc": "Kit Cilindro y Pistón Stihl MS",
   "pagina": 79,
   "conf": 59
  },
  "2203061": {
-  "desc": "Kit Cilindro y Pistón Husqvarna 236 CILI",
+  "desc": "Kit Cilindro y Pistón Husqvarna 236",
   "pagina": 80,
   "conf": 93
  },
  "2203067": {
-  "desc": "Kit Cilindro y Pistón Husqvarna 435 STIHL REEMPLAZOS",
+  "desc": "Kit Cilindro y Pistón Husqvarna 435 STIHL",
   "pagina": 80,
   "conf": 93
  },
@@ -510,19 +560,24 @@
   "conf": 93
  },
  "2207001": {
-  "desc": "Filtro de Aire Chinas 3800",
+  "desc": "Filtro de Aire Chinas",
   "pagina": 116,
   "conf": 80
  },
  "2207002": {
-  "desc": "Filtro de Aire Chinas 4500/5200",
+  "desc": "Filtro de Aire Chinas",
   "pagina": 118,
   "conf": 80
  },
  "2208015": {
-  "desc": "Filtro de Aceite Chinas 4500",
+  "desc": "Filtro de Aceite Chinas",
   "pagina": 118,
   "conf": 96
+ },
+ "2210001": {
+  "desc": "Junta Base Cilindro Chinas 3800 38cc",
+  "pagina": 60,
+  "conf": 76
  },
  "2210002": {
   "desc": "Junta Carter Chinas 3800 38cc",
@@ -570,97 +625,92 @@
   "conf": 77
  },
  "2212020": {
-  "desc": "Embrague completo Chinas 3800",
+  "desc": "Embrague completo Chinas",
   "pagina": 114,
   "conf": 85
  },
  "2212021": {
-  "desc": "Embrague Completo Chinas 4500/5200",
+  "desc": "Embrague Completo Chinas",
   "pagina": 117,
   "conf": 75
  },
- "2212026": {
-  "desc": "Anillo 325 7 Piñon Flotante Chinas 4500/5200",
-  "pagina": 117,
-  "conf": 72
- },
- "2212027": {
-  "desc": "Anillo 3/8 7 Piñon Flotante Chinas 4500/5200",
-  "pagina": 117,
-  "conf": 78
- },
  "2212081": {
-  "desc": "Campana de Embrague Piñon Fijo Chinas 3800",
+  "desc": "Campana de Embrague Piñon Fijo Chinas",
   "pagina": 114,
   "conf": 84
  },
  "2212082": {
-  "desc": "Campana de embrague Piñon flotante kit Chinas 3800",
+  "desc": "Campana de embrague Piñon flotante kit Chinas",
   "pagina": 114,
   "conf": 86
  },
  "2212086": {
-  "desc": "Campana de Embrague Piñon Fijo Chinas 4500/5200",
+  "desc": "Campana de Embrague Piñon Fijo Chinas",
   "pagina": 117,
   "conf": 82
  },
  "2212087": {
-  "desc": "Campana de Embrague Piñon Flotante Kit Chinas 4500/5200",
+  "desc": "Campana de Embrague Piñon Flotante Kit Chinas",
   "pagina": 117,
   "conf": 79
  },
  "2214020": {
-  "desc": "Tanque de combustible Chinas 3800",
+  "desc": "Tanque de combustible Chinas",
   "pagina": 116,
   "conf": 68
  },
  "2214021": {
-  "desc": "Tanque Combustible Completo Chinas 4500/5200",
+  "desc": "Tanque Combustible Completo Chinas",
   "pagina": 117,
   "conf": 81
  },
  "2214025": {
-  "desc": "Tapa Tanque Aceite Te Chinas 3800",
+  "desc": "Tapa Tanque Aceite Te Chinas",
   "pagina": 116,
   "conf": 86
  },
  "2214026": {
-  "desc": "Tapa Tanque Combustible Chinas 3800",
+  "desc": "Tapa Tanque Combustible Chinas",
   "pagina": 116,
   "conf": 96
  },
  "2214027": {
-  "desc": "Tapa Tanque Combustible Chinas 4500/5200",
+  "desc": "Tapa Tanque Combustible Chinas",
   "pagina": 117,
   "conf": 96
  },
+ "2214028": {
+  "desc": "Tapa Tanque Aceite Chinas",
+  "pagina": 118,
+  "conf": 96
+ },
  "2215002": {
-  "desc": "Tapa Arranque Chinas 4500/5200",
+  "desc": "Tapa Arranque Chinas",
   "pagina": 118,
   "conf": 96
  },
  "2215003": {
-  "desc": "Kit Trinquete Plástico Arranque Chinas 4500/5200",
+  "desc": "Kit Trinquete Plástico Arranque Chinas",
   "pagina": 118,
   "conf": 81
  },
  "2215004": {
-  "desc": "Kit Trinquete Metálico Arranque Chinas 4500/5200",
+  "desc": "Kit Trinquete Metálico Arranque Chinas",
   "pagina": 118,
   "conf": 79
  },
  "2215006": {
-  "desc": "Kit Trinquete Metálico Arranque Chinas 4500/5200",
+  "desc": "Kit Trinquete Metálico Arranque Chinas",
   "pagina": 118,
   "conf": 79
  },
  "2215009": {
-  "desc": "Resorte Retráctil Arranque Chinas 4500/5200",
+  "desc": "Resorte Retráctil Arranque Chinas",
   "pagina": 118,
   "conf": 94
  },
  "2215010": {
-  "desc": "Resorte Retráctil Arranque Fácil Chinas 4500/5200",
+  "desc": "Resorte Retráctil Arranque Fácil Chinas",
   "pagina": 118,
   "conf": 94
  },
@@ -670,7 +720,7 @@
   "conf": 64
  },
  "2215013": {
-  "desc": "Cubre Cadena Completo Chinas 3800",
+  "desc": "Cubre Cadena Completo Chinas",
   "pagina": 116,
   "conf": 78
  },
@@ -679,65 +729,65 @@
   "pagina": 118,
   "conf": 96
  },
+ "2215046": {
+  "desc": "Polea Arranque Stihl MS",
+  "pagina": 92,
+  "conf": 63
+ },
  "2215047": {
-  "desc": "Polea Arranque Stihl MS 381/382",
+  "desc": "Polea Arranque Stihl MS",
   "pagina": 92,
   "conf": 74
  },
  "2215048": {
-  "desc": "Polea Arranque HQV 61 266 268 272 /268/272",
+  "desc": "Polea Arranque HQV",
   "pagina": 92,
   "conf": 66
  },
  "2215049": {
-  "desc": "Kit Arranque Stihl MS 170/180 250/280",
+  "desc": "Kit Arranque Stihl MS",
   "pagina": 92,
   "conf": 93
  },
  "2220010": {
-  "desc": "Amortiguador Chinas 3800",
+  "desc": "Amortiguador Chinas",
   "pagina": 116,
   "conf": 61
  },
  "2220011": {
-  "desc": "Amortiguador Chinas 4500/5200",
+  "desc": "Amortiguador Chinas",
   "pagina": 118,
   "conf": 72
  },
  "2220012": {
-  "desc": "Amortiguador Chinas 4500/5200",
+  "desc": "Amortiguador Chinas",
   "pagina": 118,
   "conf": 72
  },
  "2220013": {
-  "desc": "Amortiguador Atrapa Cadena Chinas 4500/5200",
+  "desc": "Amortiguador Atrapa Cadena Chinas",
   "pagina": 118,
   "conf": 79
  },
  "2220014": {
-  "desc": "Brida de Admisión Chinas 3800",
+  "desc": "Brida de Admisión Chinas",
   "pagina": 116,
   "conf": 76
  },
  "2220015": {
-  "desc": "Brida de Admision Chinas 4500/5200",
+  "desc": "Brida de Admision Chinas",
   "pagina": 118,
   "conf": 78
  },
  "2220016": {
-  "desc": "Volante magnético Chinas 3800",
+  "desc": "Volante magnético Chinas",
   "pagina": 114,
   "conf": 76
  },
- "2220018": {
-  "desc": "Switch stop Chinas 3800",
-  "pagina": 114,
-  "conf": 96
- },
- "2220019": {
-  "desc": "Switch Stop Tan Chinas 4500/5200",
+ "2220017": {
+  "desc": "Volante Magnético Chinas",
   "pagina": 117,
-  "conf": 80
+  "conf": 96
  },
  "2220020": {
   "desc": "Kit Estira cadena Lateral",
@@ -750,47 +800,47 @@
   "conf": 94
  },
  "2220027": {
-  "desc": "Palanca Cebador Chinas 3800",
+  "desc": "Palanca Cebador Chinas",
   "pagina": 116,
   "conf": 70
  },
  "2220030": {
-  "desc": "Zuncho de Freno Chinas 3800",
+  "desc": "Zuncho de Freno Chinas",
   "pagina": 116,
   "conf": 85
  },
  "2222010": {
-  "desc": "Carter completo Chinas 3800",
+  "desc": "Carter completo Chinas",
   "pagina": 114,
   "conf": 66
  },
  "2222011": {
-  "desc": "Carter Completo Chinas 4500/5200",
+  "desc": "Carter Completo Chinas",
   "pagina": 117,
   "conf": 64
  },
  "2222012": {
-  "desc": "Cigüeñal completo Chinas 3800",
+  "desc": "Cigüeñal completo Chinas",
   "pagina": 114,
   "conf": 95
  },
  "2222013": {
-  "desc": "Cigüeñal Completo Chinas 4500/5200",
+  "desc": "Cigüeñal Completo Chinas",
   "pagina": 117,
   "conf": 78
  },
  "2222014": {
-  "desc": "Jaula de agujas Cigüeñal Chinas 3800",
+  "desc": "Jaula de agujas Cigüeñal Chinas",
   "pagina": 114,
   "conf": 84
  },
  "2222015": {
-  "desc": "Jaula de agujas piston Chinas 3800",
+  "desc": "Jaula de agujas piston Chinas",
   "pagina": 114,
   "conf": 83
  },
  "2222016": {
-  "desc": "Jaula de agujas campana de embrague Chinas 3800",
+  "desc": "Jaula de agujas campana de embrague Chinas",
   "pagina": 114,
   "conf": 96
  },
@@ -805,104 +855,44 @@
   "conf": 94
  },
  "2222019": {
-  "desc": "Jaula de agujas Campana de embrague Chinas 4500/5200",
+  "desc": "Jaula de agujas Campana de embrague Chinas",
   "pagina": 117,
   "conf": 96
  },
  "2224011": {
-  "desc": "Bobina Ignición Chinas 3800",
+  "desc": "Bobina Ignición Chinas",
   "pagina": 116,
   "conf": 75
  },
  "2224012": {
-  "desc": "Bobina de Ignición Chinas 4500/5200",
+  "desc": "Bobina de Ignición Chinas",
   "pagina": 117,
   "conf": 78
  },
- "2906003": {
-  "desc": "Universal alta cilindrada BO Diam. 4,6 mm",
-  "pagina": 26,
-  "conf": 67
+ "2291027": {
+  "desc": "0 LF VU l.d JUDL Chinas Espada",
+  "pagina": 138,
+  "conf": 66
  },
- "2906004": {
-  "desc": "Universal alta cilindrada 5 Diam. 6,5 mm",
-  "pagina": 26,
-  "conf": 80
+ "2291030": {
+  "desc": "DESUNIN VII. Cadena Cortada Ca 3/8 063 1.6 72DL Repl Ms360 Ms",
+  "pagina": 138,
+  "conf": 81
  },
- "2906006": {
-  "desc": "Tipo Husqvarna porcelana Diam. 4,6 mm",
-  "pagina": 26,
-  "conf": 95
- },
- "2906007": {
-  "desc": "Tipo Husqvarna porcelana Diam. 6 mM",
-  "pagina": 26,
-  "conf": 93
- },
- "2906009": {
-  "desc": "Tipo Stihl FS/BG/HS Diam. 8 mm",
-  "pagina": 26,
-  "conf": 68
- },
- "2906010": {
-  "desc": "Walbro 125 127, Diam. 5,6X15 Echo/HQV/Shindaiwa",
-  "pagina": 26,
-  "conf": 86
- },
- "2906011": {
-  "desc": "Walbro 125 528, Diam. 5,3X18 Echo/HQV/Shindaiwa",
-  "pagina": 26,
-  "conf": 90
- },
- "2906012": {
-  "desc": "Walbro 125 552, Diam. 5,2X15 Honda GX 35",
-  "pagina": 26,
-  "conf": 94
- },
- "2911001": {
-  "desc": "Walbro 188 11 Diam. 18,5X10,5 mm",
-  "pagina": 25,
-  "conf": 65
- },
- "2911002": {
-  "desc": "Walbro 188 12 Diam. 18,5X15,5 mm Echo/Sithl/Shind.WYJ/WYL",
-  "pagina": 25,
-  "conf": 88
+ "2291036": {
+  "desc": "LI.UJO 1.0 7UDL Chinas Espada",
+  "pagina": 138,
+  "conf": 63
  },
  "2911003": {
   "desc": "Walbro HDA WYK 118 13 Diam 23,5 16 mm",
   "pagina": 25,
   "conf": 75
  },
- "2911004": {
-  "desc": "Zama 57004 Diam. 21,7X18,7 Stihl/Homelite/Mc Culloch",
-  "pagina": 25,
-  "conf": 83
- },
- "2911005": {
-  "desc": "Zama C1U 0057025 Diam 21,7 18,7 mm",
-  "pagina": 25,
-  "conf": 92
- },
  "2911007": {
-  "desc": "Walbro 188 513 Tornillo Poulan CARBUF",
+  "desc": "Walbro 188 513 Tornillo Poulan",
   "pagina": 25,
   "conf": 93
- },
- "2911008": {
-  "desc": "Stihl FS 450 0000 350 6201",
-  "pagina": 25,
-  "conf": 73
- },
- "2911009": {
-  "desc": "Stihl Motoguadañas 1130 350 6200",
-  "pagina": 25,
-  "conf": 93
- },
- "2911010": {
-  "desc": "Stihl Motoguadañas 0000 350 6202",
-  "pagina": 25,
-  "conf": 91
  },
  "2915009": {
   "desc": "Soga de arranque 2,5 mm Rollo 100 Mts",
@@ -920,12 +910,12 @@
   "conf": 86
  },
  "2921010": {
-  "desc": "Manguera Aceite Chinas 4500/5200",
+  "desc": "Manguera Aceite Chinas",
   "pagina": 117,
   "conf": 76
  },
  "2921011": {
-  "desc": "Manguera Aceite Chinas 4500/5200",
+  "desc": "Manguera Aceite Chinas",
   "pagina": 117,
   "conf": 96
  },
@@ -950,67 +940,62 @@
   "conf": 77
  },
  "3102641": {
-  "desc": "Carcasa Torreta 187281 AYP 38/42 7/48/54",
+  "desc": "Carcasa Torreta 187281 AYP",
   "pagina": 144,
   "conf": 72
  },
+ "3102642": {
+  "desc": "Eje Torreta 187291 MP",
+  "pagina": 144,
+  "conf": 65
+ },
  "3102643": {
-  "desc": "Torreta completa 174356 46/52",
+  "desc": "Torreta completa",
   "pagina": 144,
   "conf": 70
  },
  "3102644": {
-  "desc": "Carcasa Torreta AYP 174358",
+  "desc": "Carcasa Torreta AYP",
   "pagina": 144,
   "conf": 63
  },
  "3102645": {
-  "desc": "Eje Torreta Tor AYP 174360",
+  "desc": "Eje Torreta Tor AYP",
   "pagina": 144,
   "conf": 95
  },
  "3102647": {
-  "desc": "Carcasa Torreta 128774 AYP 36/38/42",
+  "desc": "Carcasa Torreta 128774 AYP",
   "pagina": 144,
   "conf": 78
  },
  "3102648": {
-  "desc": "Eje Torreta 137646 1 AYP 36/38/42",
+  "desc": "Eje Torreta 137646 1 AYP",
   "pagina": 144,
   "conf": 88
  },
  "3102649": {
-  "desc": "Torreta Completa AYP 143651",
+  "desc": "Torreta Completa AYP",
   "pagina": 144,
   "conf": 92
  },
  "3102650": {
-  "desc": "Carcasa Torreta AYP 137152",
+  "desc": "Carcasa Torreta AYP",
   "pagina": 144,
   "conf": 94
  },
  "3102651": {
-  "desc": "Eje Torreta AYP 137553",
+  "desc": "Eje Torreta AYP",
   "pagina": 144,
   "conf": 79
  },
- "3102659": {
-  "desc": "orreta completa 5391121 70",
-  "pagina": 144,
-  "conf": 88
- },
- "3102671": {
-  "desc": "Eje 91921 Largo 165mm",
+ "3102670": {
+  "desc": "Torreta completa",
   "pagina": 146,
-  "conf": 79
- },
- "3102672": {
-  "desc": "Eje 91922 Largo 200mm y",
-  "pagina": 146,
-  "conf": 91
+  "conf": 84
  },
  "3102673": {
-  "desc": "Torreta completa 55962 To 38/40/42",
+  "desc": "Torreta completa 55962",
   "pagina": 146,
   "conf": 80
  },
@@ -1025,27 +1010,27 @@
   "conf": 84
  },
  "3102686": {
-  "desc": "Torreta completa X300 To 42 AM136733",
+  "desc": "Torreta completa X300",
   "pagina": 146,
   "conf": 85
  },
  "3102690": {
-  "desc": "Torreta Comp. AM121342",
+  "desc": "Torreta Comp",
   "pagina": 146,
   "conf": 76
  },
  "3102693": {
-  "desc": "Torreta Completa GY20050",
+  "desc": "Torreta Completa",
   "pagina": 146,
   "conf": 94
  },
  "3102701": {
-  "desc": "Torreta Completa Toro 117 7439 5S4200 SS5000",
+  "desc": "Torreta Completa Toro 117 7439 5S4200",
   "pagina": 146,
   "conf": 74
  },
  "3102704": {
-  "desc": "Torreta Completa 88 4510 2560 ZX5000",
+  "desc": "Torreta Completa 88 4510 2560",
   "pagina": 146,
   "conf": 90
  },
@@ -1124,6 +1109,11 @@
   "pagina": 147,
   "conf": 93
  },
+ "3103026": {
+  "desc": "Polea Plataforma 153532 173435 129206 120 mm",
+  "pagina": 147,
+  "conf": 80
+ },
  "3103027": {
   "desc": "Polea Doble AYP 175410 88 mm 137 mm",
   "pagina": 147,
@@ -1164,6 +1154,11 @@
   "pagina": 149,
   "conf": 83
  },
+ "3103118": {
+  "desc": "Polea Doble 756 04196 86 mm 153 mm",
+  "pagina": 149,
+  "conf": 66
+ },
  "3103119": {
   "desc": "Polea Plataforma 756 04216 Diám. 5.4 137,16 mn",
   "pagina": 149,
@@ -1175,7 +1170,7 @@
   "conf": 77
  },
  "3103121": {
-  "desc": "Polea Tensora Plataforma 756 05034 Diám. 5 1/4",
+  "desc": "Polea Tensora Plataforma 756 05034 Diám",
   "pagina": 149,
   "conf": 60
  },
@@ -1205,7 +1200,7 @@
   "conf": 75
  },
  "3103128": {
-  "desc": "Polea Plataforma 756 05038 5,5 Diam",
+  "desc": "Polea Plataforma 756 05038 5,5",
   "pagina": 149,
   "conf": 80
  },
@@ -1215,69 +1210,14 @@
   "conf": 69
  },
  "3103133": {
-  "desc": "Polea en V' 756 04356",
+  "desc": "Polea en V'",
   "pagina": 149,
   "conf": 69
  },
- "3103503": {
-  "desc": "MTD 717 04127",
-  "pagina": 150,
-  "conf": 61
- },
- "3103505": {
-  "desc": "MTD 917 05209 Cub Cadet RZT 50",
-  "pagina": 150,
-  "conf": 84
- },
- "3103506": {
-  "desc": "MTD 917 05121 Cub Cadet RZT 42",
-  "pagina": 150,
-  "conf": 91
- },
- "3103511": {
-  "desc": "TORO 110 6766 Titan Timecutter",
-  "pagina": 150,
-  "conf": 63
- },
- "3103520": {
-  "desc": "HQV 532414336 YTH24V54",
-  "pagina": 150,
-  "conf": 68
- },
- "3103521": {
-  "desc": "HQV 532400008 Murray 48",
-  "pagina": 150,
-  "conf": 66
- },
- "3103522": {
-  "desc": "HQV 587241601",
-  "pagina": 150,
-  "conf": 66
- },
- "3103523": {
-  "desc": "HOV 532179335",
-  "pagina": 150,
-  "conf": 85
- },
- "3103524": {
-  "desc": "HQV 574607001 MZT 61",
-  "pagina": 150,
-  "conf": 66
- },
- "3103525": {
-  "desc": "HQV 532180505 YTH1842 5833897 01 LTH1842",
-  "pagina": 150,
-  "conf": 68
- },
- "3103570": {
-  "desc": "603273K HUSTLER 48 /54",
-  "pagina": 150,
-  "conf": 77
- },
- "3103571": {
-  "desc": "601325K HUSTLER",
-  "pagina": 150,
-  "conf": 92
+ "3104115": {
+  "desc": "Cable plataforma MTD",
+  "pagina": 152,
+  "conf": 74
  },
  "3106011": {
   "desc": "MTD 734 04155 Diam. 5 127mm",
@@ -1299,18 +1239,8 @@
   "pagina": 154,
   "conf": 77
  },
- "3106015": {
-  "desc": "AYP 174873 Diam 5 127mm",
-  "pagina": 154,
-  "conf": 93
- },
- "3106017": {
-  "desc": "1 603299 Toro 103 3168 Diam. 5 2.75",
-  "pagina": 154,
-  "conf": 77
- },
  "3106019": {
-  "desc": "Rueda De Plataforma 5321339 57",
+  "desc": "Rueda De Plataforma",
   "pagina": 154,
   "conf": 76
  },
@@ -1354,100 +1284,35 @@
   "pagina": 154,
   "conf": 76
  },
- "3106029": {
-  "desc": "HQV 196105 Plataforma Largo 190 mm",
-  "pagina": 154,
-  "conf": 70
- },
  "3106034": {
-  "desc": "Resorte De Plataforma 732 04287",
+  "desc": "Resorte De Plataforma",
   "pagina": 154,
   "conf": 95
  },
  "3120964": {
-  "desc": "Kit De Tuerca Y Bulones Para Torreta AYP 0 HUSQ",
+  "desc": "Kit De Tuerca Y Bulones Para Torreta AYP",
   "pagina": 144,
   "conf": 93
  },
- "4102300": {
-  "desc": "Tipo Honda",
-  "pagina": 66,
-  "conf": 76
- },
- "4102301": {
-  "desc": "Tipo Honda",
-  "pagina": 66,
-  "conf": 77
- },
- "4102302": {
-  "desc": "Tipo Honda",
-  "pagina": 66,
-  "conf": 89
- },
  "4301495": {
-  "desc": "Kit Reparacion B8S 699521",
+  "desc": "Kit Reparacion B8S",
   "pagina": 51,
   "conf": 80
  },
  "4301497": {
-  "desc": "Kit Reparacion B8S 498260 493762 492495 IR 4",
+  "desc": "Kit Reparacion B8S 498260 493762 492495 IR",
   "pagina": 51,
   "conf": 81
  },
  "4301498": {
-  "desc": "Kit Reparación Briggs 8 Stratton 498261 8 STRATTON",
+  "desc": "Kit Reparación Briggs & Stratton 498261 8 STRATTON",
   "pagina": 51,
   "conf": 92
  },
- "4301499": {
-  "desc": "Kit Reparación Briggs Stratton 590589 500e",
-  "pagina": 51,
-  "conf": 92
- },
- "4302105": {
-  "desc": "Briggs Stratton 799728 a",
-  "pagina": 71,
-  "conf": 68
- },
- "4302107": {
-  "desc": "Briggs 8 Stratton 591109",
-  "pagina": 71,
-  "conf": 76
- },
- "4302108": {
-  "desc": "Briggs 8 Stratton 591731 796109",
-  "pagina": 71,
-  "conf": 85
- },
- "4302109": {
-  "desc": "Briggs Stratton 792768 779727",
-  "pagina": 71,
-  "conf": 81
- },
- "4302110": {
-  "desc": "Briggs 8 Stratton 699807 699815",
-  "pagina": 71,
-  "conf": 93
- },
- "4302111": {
-  "desc": "Briggs 8 Stratton 799868",
-  "pagina": 71,
-  "conf": 72
- },
- "4302112": {
-  "desc": "Briggs 8 Stratton 798653 1",
-  "pagina": 71,
-  "conf": 74
- },
- "4302113": {
-  "desc": "Briggs 8 Stratton 796077",
-  "pagina": 71,
-  "conf": 61
- },
- "4302114": {
-  "desc": "Briggs 8 Stratton 498298",
-  "pagina": 71,
-  "conf": 76
+ "4302911": {
+  "desc": "DESUNIF VII Carburador con Ca Electroválvula",
+  "pagina": 175,
+  "conf": 75
  },
  "4302914": {
   "desc": "Carburador REPL Honda GX390 188F",
@@ -1455,42 +1320,22 @@
   "conf": 70
  },
  "4302915": {
-  "desc": "Carburador REPL GX 390 PURE",
+  "desc": "Carburador REPL GX 390",
   "pagina": 71,
   "conf": 67
  },
- "4302917": {
-  "desc": "Tipo Loncin 1575 675",
-  "pagina": 71,
-  "conf": 69
+ "4307222": {
+  "desc": "DUELJUNiIN VII Filtro Aire Ca de Esponja",
+  "pagina": 168,
+  "conf": 70
  },
- "4302918": {
-  "desc": "Tipo Loncin 45 16 mm",
-  "pagina": 71,
-  "conf": 81
- },
- "4302919": {
-  "desc": "Tipo Loncin 1P56F o",
-  "pagina": 71,
-  "conf": 69
- },
- "4310392": {
-  "desc": "Briggs Stratton 692667 Admision",
-  "pagina": 51,
-  "conf": 74
- },
- "4310393": {
-  "desc": "Briggs Stratton 691894 Admision",
-  "pagina": 51,
-  "conf": 76
- },
- "4310394": {
-  "desc": "Briggs Stratton 692232 Carter",
-  "pagina": 51,
-  "conf": 74
+ "4310402": {
+  "desc": "Kohler 24 041 52 Base Carburador Cub Cadet RZT/Enduro",
+  "pagina": 53,
+  "conf": 83
  },
  "4310404": {
-  "desc": "Kohler 24 041 14 Base Filtro Aire Cub Cadet RZT/Enduro 2 4",
+  "desc": "Kohler 24 041 14 Base Filtro Aire Cub Cadet RZT/Enduro",
   "pagina": 53,
   "conf": 88
  },
@@ -1534,24 +1379,19 @@
   "pagina": 53,
   "conf": 81
  },
- "4311520": {
-  "desc": "MTD 951 10639",
-  "pagina": 25,
-  "conf": 88
+ "4310483": {
+  "desc": "DELI UILIN VII Junta Tapa de Cilindro BAS 13,5 14 hp 273280 GasT",
+  "pagina": 55,
+  "conf": 64
  },
- "4311523": {
-  "desc": "Kawasaki 49043 2065",
-  "pagina": 25,
+ "4325312": {
+  "desc": "Motor de Arranque Simil Honda GX120 Sir",
+  "pagina": 160,
   "conf": 93
  },
- "4311524": {
-  "desc": "Briggs 8 Stratton 300E 450E",
-  "pagina": 25,
-  "conf": 87
- },
- "4311528": {
-  "desc": "Bombin Motores",
-  "pagina": 25,
-  "conf": 92
+ "4325317": {
+  "desc": "Motor de Arranque Simil Honda",
+  "pagina": 160,
+  "conf": 94
  }
 }
