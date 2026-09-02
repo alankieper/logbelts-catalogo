@@ -14,6 +14,7 @@ export default function AdminHeader({ activo }) {
           {link('/admin', 'Tablero', 'home')}
           {link('/admin/metricas', 'Métricas', 'metricas')}
           {link('/admin/productos', 'Productos', 'productos')}
+          {link('/admin/oem', 'OEM', 'oem')}
           {link('/admin/categorias', 'Categorías', 'categorias')}
           {link('/admin/manuales', 'Manuales', 'manuales')}
           {link('/admin/importar', 'Importar PDF', 'importar')}

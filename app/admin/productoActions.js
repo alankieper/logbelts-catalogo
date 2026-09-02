@@ -40,6 +40,45 @@ export async function guardarMediaUrl(formData) {
   return { ok: true };
 }
 
+// Agrega uno o más códigos originales (OEM) a un producto, sin pisar los que ya tiene.
+export async function agregarOem(formData) {
+  const codigo = formData.get('codigo');
+  const crudo = (formData.get('oem') || '').toString();
+  const volver = (formData.get('volver') || `/admin/productos/${encodeURIComponent(codigo)}`).toString();
+  const nuevos = crudo.split(/[,\n;]+/).map((s) => s.trim()).filter((s) => s.length >= 2);
+  if (nuevos.length) {
+    const p = await store.obtener(codigo);
+    if (p) {
+      const set = new Set((p.codigo_original || []).map((x) => x.toLowerCase()));
+      const add = nuevos.filter((x) => !set.has(x.toLowerCase()));
+      if (add.length) {
+        await store.actualizarOem(codigo, [...(p.codigo_original || []), ...add]);
+      }
+    }
+  }
+  revalidatePath('/', 'layout');
+  redirect(volver + (volver.includes('?') ? '&' : '?') + 'ok=1');
+}
+
+// Vincula un término de búsqueda (que no daba resultados) a un producto:
+// lo agrega como "código original" para que la próxima vez lo encuentre.
+export async function vincularBusqueda(formData) {
+  const termino = (formData.get('termino') || '').toString().trim();
+  const codigo = (formData.get('codigo') || '').toString().trim();
+  const d = (formData.get('d') || '30').toString();
+  if (termino && codigo) {
+    const p = await store.obtener(codigo);
+    if (p) {
+      const set = new Set((p.codigo_original || []).map((x) => x.toLowerCase()));
+      if (!set.has(termino.toLowerCase())) {
+        await store.actualizarOem(codigo, [...(p.codigo_original || []), termino]);
+      }
+    }
+  }
+  revalidatePath('/', 'layout');
+  redirect(`/admin/metricas?d=${encodeURIComponent(d)}&ok=1`);
+}
+
 export async function quitarMediaProducto(formData) {
   const codigo = formData.get('codigo');
   const campo = formData.get('campo') === 'video' ? 'video' : 'foto';

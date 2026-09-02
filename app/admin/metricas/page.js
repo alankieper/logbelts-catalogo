@@ -1,6 +1,7 @@
 import AdminHeader from '../AdminHeader';
 import { leerEventos, leerVisitas } from '../../../lib/eventos';
 import { leerTodosRaw } from '../../../lib/catalogo';
+import { vincularBusqueda } from '../productoActions';
 
 const PAISES = {
   AR: 'Argentina', UY: 'Uruguay', CL: 'Chile', BR: 'Brasil', PY: 'Paraguay', BO: 'Bolivia',
@@ -220,8 +221,23 @@ export default async function Metricas({ searchParams }) {
           <div className="mcols">
             <section className="mcard">
               <h2>Búsquedas sin resultado</h2>
-              <p className="mut">Lo que la gente busca y no encuentra. Sirve para cargar descripciones o códigos originales.</p>
-              <Ranking filas={topSinResultado} color="var(--warn)" href={(f) => `/buscar?q=${encodeURIComponent(f.k)}`} />
+              <p className="mut">Lo que la gente busca y no encuentra. Poné el código del producto al que corresponde y queda vinculado (la próxima vez lo va a encontrar).</p>
+              {topSinResultado.length ? (
+                <ul className="mvinc">
+                  {topSinResultado.map((f) => (
+                    <li key={f.k}>
+                      <a className="mvinc-q" href={`/buscar?q=${encodeURIComponent(f.k)}`} target="_blank" rel="noreferrer">{f.label}</a>
+                      <span className="mvinc-n">{fmt(f.n)}×</span>
+                      <form action={vincularBusqueda} className="mvinc-f">
+                        <input type="hidden" name="termino" value={f.k} />
+                        <input type="hidden" name="d" value={String(dias)} />
+                        <input name="codigo" placeholder="código" inputMode="numeric" />
+                        <button type="submit">Vincular</button>
+                      </form>
+                    </li>
+                  ))}
+                </ul>
+              ) : <p className="mut">Sin datos todavía.</p>}
             </section>
 
             <section className="mcard">

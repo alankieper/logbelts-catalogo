@@ -7,16 +7,35 @@ import BotonAgregar from '../../components/BotonAgregar';
 import Registrar from '../../components/Registrar';
 import { getProducto, getRelacionados, getVecinos, getFamilia, slugify } from '../../../lib/catalogo';
 import { despiecesDeProducto } from '../../../lib/despieces';
+import { SITE_URL } from '../../../lib/seo';
 
 export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }) {
-  const p = await getProducto(decodeURIComponent(params.codigo));
-  if (!p) return { title: 'Producto no encontrado — Catálogo Logbelts' };
+  const codigo = decodeURIComponent(params.codigo);
+  const p = await getProducto(codigo);
+  if (!p) return { title: 'Producto no encontrado' };
   const descReal = p.descripcion && !(p.fuente_desc && p.fuente_desc.startsWith('derivada'));
+  const nom = p.nombre || p.clave_producto || 'Repuesto';
+  const marca = (p.marcas || [])[0];
+  const oem = (p.codigo_original || []).slice(0, 4).join(', ');
+  // título pensado para búsqueda: nombre + marca + código
+  const title = `${nom}${marca ? ` ${marca}` : ''} — código ${p.codigo}`;
+  const desc =
+    (descReal ? p.descripcion + '. ' : '') +
+    `Repuesto Logbelts código ${p.codigo}` +
+    (oem ? ` · equivale a ${oem}` : '') +
+    (marca ? ` · compatible con ${marca}` : '') +
+    '. Consultá por WhatsApp (venta mayorista).';
   return {
-    title: `${p.codigo} · ${p.nombre || p.clave_producto || 'Producto'} — Catálogo Logbelts`,
-    description: descReal ? p.descripcion : undefined,
+    title,
+    description: desc.slice(0, 300),
+    alternates: { canonical: `${SITE_URL}/p/${encodeURIComponent(p.codigo)}` },
+    openGraph: {
+      title,
+      description: desc.slice(0, 200),
+      images: p.foto ? [/^https?:\/\//.test(p.foto) ? p.foto : `${SITE_URL}/fotos/${p.foto}`] : undefined,
+    },
   };
 }
 
@@ -44,8 +63,22 @@ export default async function ProductoPage({ params }) {
   if (p.ubicacion) specs.push(['Ubicación', p.ubicacion]);
   if (p.ref_interna && p.ref_interna.length) specs.push(['Ref. interna', p.ref_interna.join(' · ')]);
 
+  const ldJson = {
+    '@context': 'https://schema.org/',
+    '@type': 'Product',
+    name: `${p.nombre || p.clave_producto || 'Repuesto'}${marcas.size ? ' ' + [...marcas][0] : ''}`,
+    sku: p.codigo,
+    mpn: (p.codigo_original || [])[0] || undefined,
+    description: tieneDesc ? p.descripcion : undefined,
+    image: fotoSrc ? (/^https?:\/\//.test(fotoSrc) ? fotoSrc : SITE_URL + fotoSrc) : undefined,
+    brand: marcas.size ? { '@type': 'Brand', name: [...marcas][0] } : undefined,
+    category: fam ? `${fam.nombre}${sub ? ' / ' + sub.nombre : ''}` : undefined,
+    url: `${SITE_URL}/p/${encodeURIComponent(p.codigo)}`,
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }} />
       <CatalogoHeader />
       <main className="cat">
         <div className="wrap">

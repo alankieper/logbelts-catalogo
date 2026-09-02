@@ -695,7 +695,9 @@
   "marcas": [
    "Echo"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "C1Q-K73C"
+  ],
   "compatibilidad": "Tipo Zama C1Q K73C Echo SAM 4300 07 21 101 7",
   "ubicacion": null,
   "medidas": [],
@@ -710,7 +712,8 @@
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS -DESMALEZADORAS - ECHO - REEMPLAZOS",
   "foto": "2102827.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2102828",
@@ -780,7 +783,9 @@
    "Zama",
    "Stihl"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "C1Q-S34"
+  ],
   "compatibilidad": "Carburador Repl St- FS450 (C1Q-S34) Zama",
   "ubicacion": null,
   "medidas": [],
@@ -796,7 +801,8 @@
   "foto": "2102839.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2102844",
@@ -924,7 +930,9 @@
   "marcas": [
    "Echo"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "C1U-K52"
+  ],
   "compatibilidad": "Tipo Zama C1U K52 Echo SRM2100/GT2000",
   "ubicacion": null,
   "medidas": [],
@@ -939,7 +947,8 @@
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS -DESMALEZADORAS - ECHO - REEMPLAZOS",
   "foto": "2102875.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2102880",
@@ -15409,7 +15418,9 @@
   "marcas": [
    "Echo"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "HDA-268"
+  ],
   "compatibilidad": "Carburador REPL Echo CS600 HDA268",
   "ubicacion": null,
   "medidas": [],
@@ -15424,7 +15435,8 @@
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - MOTOSIERRAS - OLEO MAC REEMPLAZOS",
   "foto": "2202881.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2202882",
@@ -16293,7 +16305,9 @@
   "marcas": [
    "Stihl"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "1141 020 1206"
+  ],
   "compatibilidad": "Conjunto de cilindro, 47 mm Stihl MS291 1141 020 1206",
   "ubicacion": null,
   "medidas": [
@@ -16310,7 +16324,8 @@
   "encabezado_pdf": "CILINDROS COMPLETOS - MOTOSIERRAS - REEMPLAZOS - STIHL",
   "foto": "2203055.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2203057",
@@ -22211,7 +22226,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "799585"
+  ],
   "compatibilidad": "Tapa Tanque Comb REPL B&S 799585",
   "ubicacion": null,
   "medidas": [],
@@ -22226,7 +22243,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2214049.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2214051",
@@ -22239,7 +22257,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "692046"
+  ],
   "compatibilidad": "Tapa Tanque Comb Tapa Tanque Comb REPL B&S 3.5/4.5 REPL B&S 692046 CIGÜEÑAL",
   "ubicacion": null,
   "medidas": [],
@@ -22254,7 +22274,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2214051.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-render"
+  "foto_origen": "pdf-render",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2214052",
@@ -26151,7 +26172,9 @@
   "marcas": [
    "Stihl"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "1123 791 2800"
+  ],
   "compatibilidad": "Amortiguador anular (silentblock) Stihl MS170(1123 791 2800)",
   "ubicacion": null,
   "medidas": [],
@@ -26166,7 +26189,8 @@
   "encabezado_pdf": "ACCESORIOS / HERRAMIENTAS",
   "foto": "2220091.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2220092",
@@ -26259,7 +26283,9 @@
   "marcas": [
    "Stihl"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "9022 371 1020"
+  ],
   "compatibilidad": "Amortiguador anular (silentblock) Stihl MS341 (9022 371 1020)",
   "ubicacion": null,
   "medidas": [],
@@ -26274,7 +26300,8 @@
   "encabezado_pdf": "ACCESORIOS / HERRAMIENTAS",
   "foto": "2220096.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2220097",
@@ -26339,7 +26366,9 @@
   "marcas": [
    "Stihl"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "1125 790 9910"
+  ],
   "compatibilidad": "Amortiguador anular (silentblock) Stihl MS360 (1125 790 9910)",
   "ubicacion": null,
   "medidas": [],
@@ -26354,7 +26383,8 @@
   "encabezado_pdf": "ACCESORIOS / HERRAMIENTAS",
   "foto": "2220099.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2220104",
@@ -26501,7 +26531,9 @@
   "familia_indice": "Motosierras",
   "subcategoria": "Partes",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "1123 791 7300"
+  ],
   "compatibilidad": "Tapón de amortiguador anular ST170/180/250/290 (1123 791 7300)",
   "ubicacion": null,
   "medidas": [],
@@ -26516,7 +26548,8 @@
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
   "foto": "2220109.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2220110",
@@ -26527,7 +26560,9 @@
   "familia_indice": "Motosierras",
   "subcategoria": "Partes",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "1123 791 7310"
+  ],
   "compatibilidad": "Tapón de amortiguador anular ST250/290 (1123 791 7310)",
   "ubicacion": null,
   "medidas": [],
@@ -26542,7 +26577,8 @@
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
   "foto": "2220110.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2220111",
@@ -26553,7 +26589,9 @@
   "familia_indice": "Motosierras",
   "subcategoria": "Partes",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "1119 791 7305"
+  ],
   "compatibilidad": "Tapón de amortiguador anular ST026/038(1119 791 7305)",
   "ubicacion": null,
   "medidas": [],
@@ -26568,7 +26606,8 @@
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
   "foto": "2220111.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2220112",
@@ -26608,7 +26647,9 @@
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "1119 791 7306"
+  ],
   "compatibilidad": "Tapón de amortiguador anular ST044/038 (1119 791 7306)",
   "ubicacion": null,
   "medidas": [],
@@ -26623,7 +26664,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2220113.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2220114",
@@ -26634,7 +26676,9 @@
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "1119 791 7300"
+  ],
   "compatibilidad": "Tapón de amortiguador anular ST381/382 (1119 791 7300)",
   "ubicacion": null,
   "medidas": [],
@@ -26649,7 +26693,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2220114.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2220115",
@@ -26660,7 +26705,9 @@
   "familia_indice": null,
   "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "1125 791 7300"
+  ],
   "compatibilidad": "Tapón de amortiguador anular ST036 (1125 791 7300)",
   "ubicacion": null,
   "medidas": [],
@@ -26675,7 +26722,8 @@
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2220115.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2220118",
@@ -31504,7 +31552,9 @@
    "Husqvarna",
    "Zama"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "c1q-w37"
+  ],
   "compatibilidad": "Zama c1q-w37 Husqvarna 125B 125BX 125BVX",
   "ubicacion": null,
   "medidas": [],
@@ -31519,7 +31569,8 @@
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2302870",
@@ -31532,7 +31583,9 @@
   "marcas": [
    "Stihl"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "C1q-S74g"
+  ],
   "compatibilidad": "Carburador de reemplazo BT45 C1q-S74g BT45",
   "ubicacion": null,
   "medidas": [],
@@ -31547,7 +31600,8 @@
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - STIHL - OTROS - REEMPLAZOS",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2303001",
@@ -33095,7 +33149,9 @@
   "familia_indice": "Carburación",
   "subcategoria": "BOMBINES 2T",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "WYK-118"
+  ],
   "compatibilidad": "Walbro HDA WYK 118 13 Diam 23,5 16 mm",
   "ubicacion": null,
   "medidas": [],
@@ -33110,7 +33166,8 @@
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
   "foto": "2911003.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2911004",
@@ -33225,7 +33282,9 @@
   "familia_indice": "Carburación",
   "subcategoria": "BOMBINES 2T",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "0000 350 6201"
+  ],
   "compatibilidad": "Stihl FS 450 0000 350 6201",
   "ubicacion": null,
   "medidas": [],
@@ -33240,7 +33299,8 @@
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
   "foto": "2911008.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2911009",
@@ -33251,7 +33311,9 @@
   "familia_indice": "Carburación",
   "subcategoria": "BOMBINES 2T",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "1130 350 6200"
+  ],
   "compatibilidad": "Stihl Motoguadañas 1130 350 6200",
   "ubicacion": null,
   "medidas": [],
@@ -33266,7 +33328,8 @@
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
   "foto": "2911009.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2911010",
@@ -33277,7 +33340,9 @@
   "familia_indice": "Carburación",
   "subcategoria": "BOMBINES 2T",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "0000 350 6202"
+  ],
   "compatibilidad": "Stihl Motoguadañas 0000 350 6202",
   "ubicacion": null,
   "medidas": [],
@@ -33292,7 +33357,8 @@
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
   "foto": "2911010.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "2915009",
@@ -35225,7 +35291,9 @@
    "Poulan",
    "Husqvarna"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "531148303"
+  ],
   "compatibilidad": "Cuchilla de cortacésped 531148303",
   "ubicacion": null,
   "medidas": [],
@@ -35240,7 +35308,8 @@
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101276.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3101277",
@@ -36836,7 +36905,9 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "618-04865"
+  ],
   "compatibilidad": "ELE VII Torreta Completa 618 04865 LTX1045 Polea 164 mm a",
   "ubicacion": null,
   "medidas": [],
@@ -36851,7 +36922,8 @@
   "encabezado_pdf": "TORRETAS CARCASAS EJES - MTD / CUB CADET / YARD MACHINES",
   "foto": "3102635.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3102636",
@@ -38404,7 +38476,9 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "756-04129"
+  ],
   "compatibilidad": "Polea Tensora Plataforma 756 04129 Diám. 124 mm",
   "ubicacion": null,
   "medidas": [],
@@ -38419,7 +38493,8 @@
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103112.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103113",
@@ -38584,7 +38659,9 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "756-04196"
+  ],
   "compatibilidad": "Polea Doble 756 04196 86 mm 153 mm",
   "ubicacion": null,
   "medidas": [],
@@ -38599,7 +38676,8 @@
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103118.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103119",
@@ -38614,7 +38692,9 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "756-04216"
+  ],
   "compatibilidad": "Polea Plataforma 756 04216 Diám. 5.4 137,16 mn",
   "ubicacion": null,
   "medidas": [],
@@ -38629,7 +38709,8 @@
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103119.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103120",
@@ -38644,7 +38725,9 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "756-04224"
+  ],
   "compatibilidad": "Polea Tensora Pc 756 04224 Diám. 82 mm",
   "ubicacion": null,
   "medidas": [],
@@ -38659,7 +38742,8 @@
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103120.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103121",
@@ -38674,7 +38758,9 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "756-05034"
+  ],
   "compatibilidad": "Polea Tensora Plataforma 756 05034 Diám. 5 1/4",
   "ubicacion": null,
   "medidas": [],
@@ -38689,7 +38775,8 @@
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103121.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103122",
@@ -38704,7 +38791,9 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "756-05036"
+  ],
   "compatibilidad": "Polea Plataforma 756 05036 Diám. 129 mm",
   "ubicacion": null,
   "medidas": [],
@@ -38719,7 +38808,8 @@
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103122.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103123",
@@ -38734,7 +38824,10 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "756-05038",
+   "756-04356"
+  ],
   "compatibilidad": "Polea “V” Plataforma Polea en \"V\" Polea Tensora 756-05038 756-04356 756-04511B 5,5\" Diam.",
   "ubicacion": null,
   "medidas": [],
@@ -38749,7 +38842,8 @@
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103123.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103124",
@@ -38794,7 +38888,9 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "756-04224"
+  ],
   "compatibilidad": "Polea Tensora Transmisión 756 04224 739 mm",
   "ubicacion": null,
   "medidas": [],
@@ -38809,7 +38905,8 @@
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103125.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103126",
@@ -38824,7 +38921,9 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "756-04213"
+  ],
   "compatibilidad": "Polea Transmisión 756 04213 75 mm",
   "ubicacion": null,
   "medidas": [],
@@ -38839,7 +38938,8 @@
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103126.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103127",
@@ -38854,7 +38954,9 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "756-05097"
+  ],
   "compatibilidad": "Polea Plataforma 756 05097 756 1188 139 mm",
   "ubicacion": null,
   "medidas": [],
@@ -38869,7 +38971,8 @@
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103127.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103128",
@@ -38884,7 +38987,9 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "756-05038"
+  ],
   "compatibilidad": "Polea Plataforma 756 05038 5,5 Diam",
   "ubicacion": null,
   "medidas": [],
@@ -38899,7 +39004,8 @@
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103128.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103129",
@@ -38972,7 +39078,9 @@
    "Yard Machines",
    "Cub Cadet"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "756-04356"
+  ],
   "compatibilidad": "Polea en V' 756 04356",
   "ubicacion": null,
   "medidas": [],
@@ -38987,7 +39095,8 @@
   "encabezado_pdf": "POLEAS - MTD / CUB CADET / YARD MACHINES / CRAFTMAN",
   "foto": "3103133.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103200",
@@ -39116,7 +39225,9 @@
    "Cub Cadet",
    "Toro"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "717-04127"
+  ],
   "compatibilidad": "MTD 717 04127",
   "ubicacion": null,
   "medidas": [],
@@ -39131,7 +39242,8 @@
   "encabezado_pdf": "ELECTROEMBRAGUES - MTD / CUB CADET / TORO",
   "foto": "3103503.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103504",
@@ -39176,7 +39288,9 @@
    "Cub Cadet",
    "Toro"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "917-05209"
+  ],
   "compatibilidad": "MTD 917 05209 Cub Cadet RZT 50",
   "ubicacion": null,
   "medidas": [],
@@ -39191,7 +39305,8 @@
   "encabezado_pdf": "ELECTROEMBRAGUES - MTD / CUB CADET / TORO",
   "foto": "3103505.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103506",
@@ -39206,7 +39321,9 @@
    "Cub Cadet",
    "Toro"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "917-05121"
+  ],
   "compatibilidad": "MTD 917 05121 Cub Cadet RZT 42",
   "ubicacion": null,
   "medidas": [],
@@ -39221,7 +39338,8 @@
   "encabezado_pdf": "ELECTROEMBRAGUES - MTD / CUB CADET / TORO",
   "foto": "3103506.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103510",
@@ -39296,7 +39414,9 @@
    "Cub Cadet",
    "Toro"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "532414336"
+  ],
   "compatibilidad": "HQV 532414336 YTH24V54",
   "ubicacion": null,
   "medidas": [],
@@ -39311,7 +39431,8 @@
   "encabezado_pdf": "ELECTROEMBRAGUES - MTD / CUB CADET / TORO",
   "foto": "3103520.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103521",
@@ -39326,7 +39447,9 @@
    "Cub Cadet",
    "Toro"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "532400008"
+  ],
   "compatibilidad": "HQV 532400008 Murray 48",
   "ubicacion": null,
   "medidas": [],
@@ -39341,7 +39464,8 @@
   "encabezado_pdf": "ELECTROEMBRAGUES - MTD / CUB CADET / TORO",
   "foto": "3103521.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103522",
@@ -39356,7 +39480,9 @@
    "Cub Cadet",
    "Toro"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "587241601"
+  ],
   "compatibilidad": "HQV 587241601",
   "ubicacion": null,
   "medidas": [],
@@ -39371,7 +39497,8 @@
   "encabezado_pdf": "ELECTROEMBRAGUES - MTD / CUB CADET / TORO",
   "foto": "3103522.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103523",
@@ -39386,7 +39513,9 @@
    "Cub Cadet",
    "Toro"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "532179335"
+  ],
   "compatibilidad": "HOV 532179335",
   "ubicacion": null,
   "medidas": [],
@@ -39401,7 +39530,8 @@
   "encabezado_pdf": "ELECTROEMBRAGUES - MTD / CUB CADET / TORO",
   "foto": "3103523.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103524",
@@ -39416,7 +39546,9 @@
    "Cub Cadet",
    "Toro"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "574607001"
+  ],
   "compatibilidad": "HQV 574607001 MZT 61",
   "ubicacion": null,
   "medidas": [],
@@ -39431,7 +39563,8 @@
   "encabezado_pdf": "ELECTROEMBRAGUES - MTD / CUB CADET / TORO",
   "foto": "3103524.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103525",
@@ -39446,7 +39579,9 @@
    "Cub Cadet",
    "Toro"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "532180505"
+  ],
   "compatibilidad": "HQV 532180505 YTH1842 5833897 01 LTH1842",
   "ubicacion": null,
   "medidas": [],
@@ -39461,7 +39596,8 @@
   "encabezado_pdf": "ELECTROEMBRAGUES - MTD / CUB CADET / TORO",
   "foto": "3103525.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3103550",
@@ -39699,7 +39835,9 @@
    "MTD"
   ],
   "codigo_original": [
-   "532435110"
+   "532435110",
+   "946-04173",
+   "946-04092"
   ],
   "compatibilidad": "Cable Plataforma Acción de cuchillas Acción de cuchillas REPL 532435110 MTD 946-04173 MTD 946-04092",
   "ubicacion": null,
@@ -39715,7 +39853,8 @@
   "encabezado_pdf": "MINITRACTORES - CABLES DE ACCIONAMIENTO",
   "foto": "3104005.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3104111",
@@ -39726,7 +39865,9 @@
   "familia_indice": "Minitractores",
   "subcategoria": "CABLES DE ACCIONAMIENTO",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "946-04173"
+  ],
   "compatibilidad": "Acción de cuchillas MTD 946-04173",
   "ubicacion": null,
   "medidas": [],
@@ -39741,7 +39882,8 @@
   "encabezado_pdf": "MINITRACTORES - CABLES DE ACCIONAMIENTO",
   "foto": "3104111.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3104112",
@@ -39752,7 +39894,9 @@
   "familia_indice": "Minitractores",
   "subcategoria": "CABLES DE ACCIONAMIENTO",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "946-04092"
+  ],
   "compatibilidad": "Acción de cuchillas MTD 946-04092",
   "ubicacion": null,
   "medidas": [],
@@ -39767,7 +39911,8 @@
   "encabezado_pdf": "MINITRACTORES - CABLES DE ACCIONAMIENTO",
   "foto": "3104112.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3104113",
@@ -39856,7 +40001,9 @@
   "familia_indice": "Minitractores",
   "subcategoria": "CABLES DE ACCIONAMIENTO",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "946-05098"
+  ],
   "compatibilidad": "Cable Acelerador REPL - 946-05098",
   "ubicacion": null,
   "medidas": [],
@@ -39871,7 +40018,8 @@
   "encabezado_pdf": "MINITRACTORES - CABLES DE ACCIONAMIENTO",
   "foto": "3104117.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3104201",
@@ -39913,7 +40061,9 @@
   "familia_indice": null,
   "subcategoria": "RUEDAS DE PLATAFORMA Y BULONES",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "734-04155"
+  ],
   "compatibilidad": "MTD 734 04155 Diam. 5 127mm",
   "ubicacion": null,
   "medidas": [],
@@ -39928,7 +40078,8 @@
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106011.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3106012",
@@ -40173,7 +40324,9 @@
   "familia_indice": null,
   "subcategoria": "RUEDAS DE PLATAFORMA Y BULONES",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "732-04280"
+  ],
   "compatibilidad": "MTD 732 04280 Plataforma Largo 165 mm",
   "ubicacion": null,
   "medidas": [],
@@ -40188,7 +40341,8 @@
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106021.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3106022",
@@ -40199,7 +40353,9 @@
   "familia_indice": null,
   "subcategoria": "RUEDAS DE PLATAFORMA Y BULONES",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "732-04629"
+  ],
   "compatibilidad": "MTD 732 04629 Plataforma Largo 127mm",
   "ubicacion": null,
   "medidas": [],
@@ -40214,7 +40370,8 @@
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106022.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3106023",
@@ -40277,7 +40434,9 @@
   "familia_indice": null,
   "subcategoria": "RUEDAS DE PLATAFORMA Y BULONES",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "732-04609"
+  ],
   "compatibilidad": "MTD 732 04609 Plataforma Largo 107.95mm",
   "ubicacion": null,
   "medidas": [],
@@ -40292,7 +40451,8 @@
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106025.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-render"
+  "foto_origen": "pdf-render",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3106026",
@@ -40303,7 +40463,9 @@
   "familia_indice": null,
   "subcategoria": "RUEDAS DE PLATAFORMA Y BULONES",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "732-04960"
+  ],
   "compatibilidad": "MTD 732 04960 Plataforma Largo 193mm",
   "ubicacion": null,
   "medidas": [],
@@ -40318,7 +40480,8 @@
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106026.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3106027",
@@ -40329,7 +40492,9 @@
   "familia_indice": null,
   "subcategoria": "RUEDAS DE PLATAFORMA Y BULONES",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "732-04927"
+  ],
   "compatibilidad": "MTD 732 04927 Plataforma Largo 216mm",
   "ubicacion": null,
   "medidas": [],
@@ -40344,7 +40509,8 @@
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106027.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3106029",
@@ -40381,7 +40547,9 @@
   "familia_indice": null,
   "subcategoria": "RUEDAS DE PLATAFORMA Y BULONES",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "732-04287"
+  ],
   "compatibilidad": "Resorte De Plataforma 732 04287",
   "ubicacion": null,
   "medidas": [],
@@ -40396,7 +40564,8 @@
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF (OCR)"
+  "fuente_desc": "texto del PDF (OCR)",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3106035",
@@ -40407,7 +40576,9 @@
   "familia_indice": null,
   "subcategoria": "RUEDAS DE PLATAFORMA Y BULONES",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "732-04287"
+  ],
   "compatibilidad": "Resorte De Resorte Plataforma 732-0626 732-04287",
   "ubicacion": null,
   "medidas": [],
@@ -40422,7 +40593,8 @@
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106035.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3106036",
@@ -42713,7 +42885,9 @@
   "familia_indice": null,
   "subcategoria": "Cables",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "532176556"
+  ],
   "compatibilidad": "Cable de reemplazo 532176556",
   "ubicacion": null,
   "medidas": [],
@@ -42728,7 +42902,8 @@
   "encabezado_pdf": null,
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3204128",
@@ -42739,7 +42914,9 @@
   "familia_indice": "Minitractores",
   "subcategoria": "CABLES DE ACCIONAMIENTO",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "532183281"
+  ],
   "compatibilidad": "Cable De Freno HUSQ REPL-532183281",
   "ubicacion": null,
   "medidas": [],
@@ -42754,7 +42931,8 @@
   "encabezado_pdf": "MINITRACTORES - CABLES DE ACCIONAMIENTO",
   "foto": "3204128.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3204129",
@@ -42765,7 +42943,9 @@
   "familia_indice": "Minitractores",
   "subcategoria": "CABLES DE ACCIONAMIENTO",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "532183567"
+  ],
   "compatibilidad": "Cable De Freno HUSQ REPL-532183567",
   "ubicacion": null,
   "medidas": [],
@@ -42780,7 +42960,8 @@
   "encabezado_pdf": "MINITRACTORES - CABLES DE ACCIONAMIENTO",
   "foto": "3204129.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3204130",
@@ -42791,7 +42972,9 @@
   "familia_indice": "Minitractores",
   "subcategoria": "CABLES DE ACCIONAMIENTO",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "532194653"
+  ],
   "compatibilidad": "Cable De Freno HUSQ REPL-532194653",
   "ubicacion": null,
   "medidas": [],
@@ -42806,7 +42989,8 @@
   "encabezado_pdf": "MINITRACTORES - CABLES DE ACCIONAMIENTO",
   "foto": "3204130.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "3204131",
@@ -43499,7 +43683,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "693981"
+  ],
   "compatibilidad": "Aro sellador de goma 45,5 x 1,5 mm B&S 693981",
   "ubicacion": null,
   "medidas": [
@@ -43516,7 +43702,8 @@
   "encabezado_pdf": "KIT DE O´RING",
   "foto": "4301402.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4301403",
@@ -43529,7 +43716,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "799866"
+  ],
   "compatibilidad": "Aro sellador de goma 45,5 x 3,5 mm B&S 799866",
   "ubicacion": null,
   "medidas": [
@@ -43546,7 +43735,8 @@
   "encabezado_pdf": "KIT DE O´RING",
   "foto": "4301403.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4301404",
@@ -43559,7 +43749,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "694920"
+  ],
   "compatibilidad": "B&S 694920",
   "ubicacion": null,
   "medidas": [],
@@ -43574,7 +43766,8 @@
   "encabezado_pdf": "KIT DE O´RING",
   "foto": "4301404.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4301481",
@@ -43587,7 +43780,9 @@
   "marcas": [
    "Tecumseh"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "632347"
+  ],
   "compatibilidad": "4301842 — DATOS NO Código Logbelts: ENCONTRADOS 4301481 Reparación de carburador Tecumseh 632347",
   "ubicacion": null,
   "medidas": [],
@@ -43602,7 +43797,8 @@
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4301482",
@@ -43615,7 +43811,9 @@
   "marcas": [
    "Tecumseh"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "631021B"
+  ],
   "compatibilidad": "Kit de aguja de admisión Tecumseh 631021B 631021A",
   "ubicacion": null,
   "medidas": [],
@@ -43630,7 +43828,8 @@
   "encabezado_pdf": "REPARACIONES DE CARBURADOR / KITS DE JUNTAS",
   "foto": "4301482.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4301490",
@@ -43905,7 +44104,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "394681"
+  ],
   "compatibilidad": "Briggs & Stratton 394681 Briggs & Stratton 394681 18 hp vertical horizontal 18 HP Vertical Horizontal",
   "ubicacion": null,
   "medidas": [],
@@ -43920,7 +44121,8 @@
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301551.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4301552",
@@ -43933,7 +44135,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "715075"
+  ],
   "compatibilidad": "Briggs & Stratton 715075 Briggs & Stratton 715075 4,5/5,5/6 hp 4,5/5,5/6 HP",
   "ubicacion": null,
   "medidas": [],
@@ -43948,7 +44152,8 @@
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301552.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4301553",
@@ -43961,7 +44166,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "715155"
+  ],
   "compatibilidad": "Briggs & Stratton 715155 Briggs & Stratton 715155 18 hp horizontal 18 HP Horizontal",
   "ubicacion": null,
   "medidas": [],
@@ -43976,7 +44183,8 @@
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301553.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4301554",
@@ -43989,7 +44197,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "398188"
+  ],
   "compatibilidad": "Briggs & Stratton 398188 Briggs & Stratton 398188 3,5/5/6 hp 3,5/5/6 HP",
   "ubicacion": null,
   "medidas": [],
@@ -44004,7 +44214,8 @@
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301554.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4301555",
@@ -44017,7 +44228,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "398188"
+  ],
   "compatibilidad": "Briggs & Stratton 398188 Briggs & Stratton 398188 8/12 hp vertical 8/12 HP Vertical",
   "ubicacion": null,
   "medidas": [],
@@ -44032,7 +44245,8 @@
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301555.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4301556",
@@ -44219,7 +44433,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "594581"
+  ],
   "compatibilidad": "Briggs & Stratton 594581",
   "ubicacion": null,
   "medidas": [],
@@ -44234,7 +44450,8 @@
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4302101",
@@ -44956,7 +45173,9 @@
   "marcas": [
    "Tecumseh"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "632795"
+  ],
   "compatibilidad": "Tecumseh 632795 632750 632772",
   "ubicacion": null,
   "medidas": [],
@@ -44971,7 +45190,8 @@
   "encabezado_pdf": "CARBURADORES 4T OTROS REEMPLAZOS",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4302901",
@@ -46780,7 +47000,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "591334"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 591334",
   "ubicacion": null,
   "medidas": [],
@@ -46795,7 +47017,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307611.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307612",
@@ -46808,7 +47031,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "394018"
+  ],
   "compatibilidad": "Filtro De Aire Oregon REPL B&S 394018",
   "ubicacion": null,
   "medidas": [],
@@ -46823,7 +47048,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307612.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307613",
@@ -46836,7 +47062,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "498596"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 498596",
   "ubicacion": null,
   "medidas": [],
@@ -46851,7 +47079,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307613.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307615",
@@ -46864,7 +47093,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "793569"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 793569",
   "ubicacion": null,
   "medidas": [],
@@ -46879,7 +47110,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307615.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307616",
@@ -46892,7 +47124,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "276890"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 276890",
   "ubicacion": null,
   "medidas": [],
@@ -46907,7 +47141,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307616.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307617",
@@ -46920,7 +47155,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "272235"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 272235",
   "ubicacion": null,
   "medidas": [],
@@ -46935,7 +47172,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307617.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307618",
@@ -46948,7 +47186,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "499486"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 499486",
   "ubicacion": null,
   "medidas": [],
@@ -46963,7 +47203,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307618.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307619",
@@ -46976,7 +47217,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "591583"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 591583",
   "ubicacion": null,
   "medidas": [],
@@ -46991,7 +47234,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307619.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307621",
@@ -47004,7 +47248,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "798897"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 798897",
   "ubicacion": null,
   "medidas": [],
@@ -47019,7 +47265,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307621.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307622",
@@ -47032,7 +47279,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "792038"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 792038",
   "ubicacion": null,
   "medidas": [],
@@ -47047,7 +47296,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307622.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307623",
@@ -47060,7 +47310,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "795066"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 795066",
   "ubicacion": null,
   "medidas": [],
@@ -47075,7 +47327,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307623.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307624",
@@ -47088,7 +47341,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "697152"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 697152",
   "ubicacion": null,
   "medidas": [],
@@ -47103,7 +47358,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307624.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307625",
@@ -47116,7 +47372,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "710266"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 710266",
   "ubicacion": null,
   "medidas": [],
@@ -47131,7 +47389,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307625.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307626",
@@ -47144,7 +47403,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "697153"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 697153",
   "ubicacion": null,
   "medidas": [],
@@ -47159,7 +47420,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307626.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307627",
@@ -47172,7 +47434,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "394018"
+  ],
   "compatibilidad": "Filtro De Aire B&S 394018",
   "ubicacion": null,
   "medidas": [],
@@ -47187,7 +47451,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307627.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307628",
@@ -47200,7 +47465,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "493910"
+  ],
   "compatibilidad": "Filtro De Aire REPL B&S 493910",
   "ubicacion": null,
   "medidas": [],
@@ -47215,7 +47482,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - B&S",
   "foto": "4307628.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307630",
@@ -47761,7 +48029,9 @@
    "Stihl"
   ],
   "codigo_original": [
-   "4238"
+   "4238",
+   "4238 141 0300",
+   "4238 140 1800"
   ],
   "compatibilidad": "Oem 4238 141 0300 / 4238 140 1800 /… Stihl TS410 TS420 TS500i",
   "ubicacion": null,
@@ -47777,7 +48047,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - STIHL",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307654",
@@ -47791,7 +48062,8 @@
    "Stihl"
   ],
   "codigo_original": [
-   "4147"
+   "4147",
+   "4147 141 0300"
   ],
   "compatibilidad": "Oem 4147 141 0300 Stihl FS460",
   "ubicacion": null,
@@ -47807,7 +48079,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - STIHL",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307655",
@@ -47821,7 +48094,8 @@
    "Stihl"
   ],
   "codigo_original": [
-   "4137-124-2800"
+   "4137-124-2800",
+   "4137 124 2800"
   ],
   "compatibilidad": "Oem 4137-124-2800 Stihl FS85",
   "ubicacion": null,
@@ -47837,7 +48111,8 @@
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - STIHL",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4307656",
@@ -48522,7 +48797,9 @@
   "marcas": [
    "Kohler"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "12 050 01"
+  ],
   "compatibilidad": "Filtro De Aceite Kohler 1205001-s",
   "ubicacion": null,
   "medidas": [],
@@ -48537,7 +48814,8 @@
   "encabezado_pdf": "MINITRACTORES - TAMBOR DE ARRANQUE",
   "foto": "4308142.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4308143",
@@ -48550,7 +48828,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "491056"
+  ],
   "compatibilidad": "Filtro De Aceite Repl Briggs & Stratton 491056",
   "ubicacion": null,
   "medidas": [],
@@ -48565,7 +48845,8 @@
   "encabezado_pdf": "MINITRACTORES - TAMBOR DE ARRANQUE",
   "foto": "4308143.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4308144",
@@ -48578,7 +48859,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "492932"
+  ],
   "compatibilidad": "Filtro De Aceite Repl Briggs & Stratton 492932",
   "ubicacion": null,
   "medidas": [],
@@ -48593,7 +48876,8 @@
   "encabezado_pdf": "MINITRACTORES - TAMBOR DE ARRANQUE",
   "foto": "4308144.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4308145",
@@ -48606,7 +48890,9 @@
   "marcas": [
    "Toro"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "136-17848"
+  ],
   "compatibilidad": "Filtro De Aceite Repl Toro 24hp 136-17848",
   "ubicacion": null,
   "medidas": [],
@@ -48621,7 +48907,8 @@
   "encabezado_pdf": "MINITRACTORES - TAMBOR DE ARRANQUE",
   "foto": "4308145.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4309381",
@@ -48686,7 +48973,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "695426"
+  ],
   "compatibilidad": "Junta de cuba de carburador B&S 695426",
   "ubicacion": null,
   "medidas": [],
@@ -48701,7 +48990,8 @@
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4310391",
@@ -49012,7 +49302,9 @@
   "marcas": [
    "Kohler"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "24 041 52"
+  ],
   "compatibilidad": "Kohler 24 041 52 Base Carburador Cub Cadet RZT/Enduro",
   "ubicacion": null,
   "medidas": [],
@@ -49027,7 +49319,8 @@
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - KOHLER",
   "foto": "4310402.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4310403",
@@ -49068,7 +49361,9 @@
   "marcas": [
    "Kohler"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "24 041 14"
+  ],
   "compatibilidad": "Kohler 24 041 14 Base Filtro Aire Cub Cadet RZT/Enduro 2 4",
   "ubicacion": null,
   "medidas": [],
@@ -49083,7 +49378,8 @@
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - KOHLER",
   "foto": "4310404.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-render"
+  "foto_origen": "pdf-render",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4310405",
@@ -50438,7 +50734,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "799587"
+  ],
   "compatibilidad": "Briggs & Stratton 799587",
   "ubicacion": null,
   "medidas": [],
@@ -50453,7 +50751,8 @@
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4310487",
@@ -50466,7 +50765,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "692218"
+  ],
   "compatibilidad": "Briggs & Stratton 692218",
   "ubicacion": null,
   "medidas": [],
@@ -50481,7 +50782,8 @@
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4310488",
@@ -50520,7 +50822,9 @@
   "familia_indice": null,
   "subcategoria": "CARBURADORES",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "697110"
+  ],
   "compatibilidad": "Kit De Juntas REPL-B&S 697110",
   "ubicacion": null,
   "medidas": [],
@@ -50535,7 +50839,8 @@
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": "4310489.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4310490",
@@ -50548,7 +50853,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "693997"
+  ],
   "compatibilidad": "B&S Kit De Juntas REPL B&S 693997",
   "ubicacion": null,
   "medidas": [],
@@ -50563,7 +50870,8 @@
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": "4310490.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4310491",
@@ -50576,7 +50884,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "694012"
+  ],
   "compatibilidad": "B&S Kit De Juntas REPL B&S 694012",
   "ubicacion": null,
   "medidas": [],
@@ -50591,7 +50901,8 @@
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": "4310491.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4310492",
@@ -50604,7 +50915,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "690190"
+  ],
   "compatibilidad": "B&S Kit De Juntas REPL-B&S 690190",
   "ubicacion": null,
   "medidas": [],
@@ -50619,7 +50932,8 @@
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": "4310492.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4310493",
@@ -50684,7 +50998,9 @@
   "familia_indice": "Carburación",
   "subcategoria": "BOMBINES 2T",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "951-10639"
+  ],
   "compatibilidad": "MTD 951 10639",
   "ubicacion": null,
   "medidas": [],
@@ -50699,7 +51015,8 @@
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
   "foto": "4311520.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4311521",
@@ -51520,7 +51837,9 @@
   "familia_indice": "Sistemas de arranque",
   "subcategoria": "MAQUINAS 4 TIEMPOS",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "594062"
+  ],
   "compatibilidad": "Sistema de Arranque B&S 594062",
   "ubicacion": null,
   "medidas": [],
@@ -51535,7 +51854,8 @@
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - MAQUINAS 4 TIEMPOS",
   "foto": "4315242.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-render"
+  "foto_origen": "pdf-render",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4315243",
@@ -51572,7 +51892,9 @@
   "familia_indice": "Sistemas de arranque",
   "subcategoria": "MAQUINAS 4 TIEMPOS",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "591301"
+  ],
   "compatibilidad": "Sistema de Arranque REPL B&S 591301",
   "ubicacion": null,
   "medidas": [],
@@ -51587,7 +51909,8 @@
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - MAQUINAS 4 TIEMPOS",
   "foto": "4315244.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4315245",
@@ -51601,7 +51924,9 @@
    "Briggs & Stratton"
   ],
   "codigo_original": [
-   "497680"
+   "497680",
+   "594062",
+   "591301"
   ],
   "compatibilidad": "Sistema de Arranque Sistema de Arranque Sistema de Arranque Sistema de Arranque B&S 594062 Zongshen REPL B&S 591301 REPL 497680 XP140",
   "ubicacion": null,
@@ -51617,7 +51942,8 @@
   "encabezado_pdf": "SISTEMAS DE ARRANQUE - MAQUINAS 4 TIEMPOS",
   "foto": "4315245.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4315260",
@@ -54478,7 +54804,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "398811"
+  ],
   "compatibilidad": "Bobina de Ignicion REPL B&S 398811",
   "ubicacion": null,
   "medidas": [],
@@ -54493,7 +54821,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "4324235.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4324236",
@@ -54506,7 +54835,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "798212"
+  ],
   "compatibilidad": "Bobina de Ignicion REPL B&S 798212",
   "ubicacion": null,
   "medidas": [],
@@ -54521,7 +54852,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "4324236.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4324237",
@@ -54534,7 +54866,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "394891"
+  ],
   "compatibilidad": "Bobina de Ignicion REPL B&S 394891",
   "ubicacion": null,
   "medidas": [],
@@ -54549,7 +54883,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "4324237.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4324238",
@@ -54562,7 +54897,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "593872"
+  ],
   "compatibilidad": "Bobina de Ignicion REPL B&S 593872",
   "ubicacion": null,
   "medidas": [],
@@ -54577,7 +54914,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "4324238.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4324239",
@@ -54590,7 +54928,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "799651"
+  ],
   "compatibilidad": "Bobina de Ignicion REPL B&S 799651",
   "ubicacion": null,
   "medidas": [],
@@ -54605,7 +54945,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "4324239.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4324241",
@@ -54618,7 +54959,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "491760"
+  ],
   "compatibilidad": "Bobina de Ignicion REPL B&S 491760",
   "ubicacion": null,
   "medidas": [],
@@ -54633,7 +54976,8 @@
   "encabezado_pdf": "BOBINA DE I N G N I C I ON 4T",
   "foto": "4324241.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4324242",
@@ -54726,7 +55070,9 @@
   "marcas": [
    "Kohler"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "20 584 03"
+  ],
   "compatibilidad": "Bobina de Ignicion REPL Kohler 20 584 03-S",
   "ubicacion": null,
   "medidas": [],
@@ -54741,7 +55087,8 @@
   "encabezado_pdf": "BOBINA DE I N G N I C I ON 4T",
   "foto": "4324901.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4324902",
@@ -54754,7 +55101,9 @@
   "marcas": [
    "Kohler"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "24 584 45"
+  ],
   "compatibilidad": "Bobina de Ignicion REPL Kohler 24 584 45-S",
   "ubicacion": null,
   "medidas": [],
@@ -54769,7 +55118,8 @@
   "encabezado_pdf": "BOBINA DE I N G N I C I ON 4T",
   "foto": "4324902.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4324903",
@@ -54782,7 +55132,9 @@
   "marcas": [
    "Kohler"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "32 584 24"
+  ],
   "compatibilidad": "Bobina de Ignicion REPL Kohler 32 584 24-S",
   "ubicacion": null,
   "medidas": [],
@@ -54797,7 +55149,8 @@
   "encabezado_pdf": "BOBINA DE I N G N I C I ON 4T",
   "foto": "4324903.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4324904",
@@ -54810,7 +55163,9 @@
   "marcas": [
    "Kohler"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "14 584 04"
+  ],
   "compatibilidad": "Bobina de Ignicion REPL KOHLER 1458404",
   "ubicacion": null,
   "medidas": [],
@@ -54825,7 +55180,8 @@
   "encabezado_pdf": "BOBINA DE I N G N I C I ON 4T",
   "foto": "4324904.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4325310",
@@ -55050,7 +55406,9 @@
   "marcas": [
    "Briggs & Stratton"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "693551"
+  ],
   "compatibilidad": "Reparacion De Burro Repl B&S 693551s",
   "ubicacion": null,
   "medidas": [],
@@ -55065,7 +55423,8 @@
   "encabezado_pdf": "MOTORES 4T - BURROS DE ARRANQUE",
   "foto": "4325318.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4325320",
@@ -55078,7 +55437,9 @@
   "marcas": [
    "Kohler"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "20 098 11"
+  ],
   "compatibilidad": "Burro De Arranque Kohler 2009811-S",
   "ubicacion": null,
   "medidas": [],
@@ -55093,7 +55454,8 @@
   "encabezado_pdf": "MOTORES 4T - BURROS DE ARRANQUE",
   "foto": "4325320.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4325321",
@@ -55106,7 +55468,9 @@
   "marcas": [
    "Kohler"
   ],
-  "codigo_original": [],
+  "codigo_original": [
+   "32 098 08"
+  ],
   "compatibilidad": "Burro De Arranque Kohler 3209808-S",
   "ubicacion": null,
   "medidas": [],
@@ -55121,7 +55485,8 @@
   "encabezado_pdf": "MOTORES 4T - BURROS DE ARRANQUE",
   "foto": "4325321.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4325322",
@@ -55520,7 +55885,9 @@
   "familia_indice": "Minitractores",
   "subcategoria": "Cables",
   "marcas": [],
-  "codigo_original": [],
+  "codigo_original": [
+   "625-05002"
+  ],
   "compatibilidad": "Llave De Tambor De Arranque REPL N- 625-05002",
   "ubicacion": null,
   "medidas": [],
@@ -55535,7 +55902,8 @@
   "encabezado_pdf": "MINITRACTORES - TAMBOR DE ARRANQUE",
   "foto": "4325360.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "fuente_oem": "texto del catálogo"
  },
  {
   "codigo": "4525322",
