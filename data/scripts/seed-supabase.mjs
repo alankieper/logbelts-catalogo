@@ -57,6 +57,7 @@ const filas = productos.map((p) => ({
   encabezado_pdf: p.encabezado_pdf || null,
   foto: p.foto || null,
   foto_confianza: p.foto_confianza || null,
+  video: p.video || null,
   estado: p.estado || null,
   oculto: !!p.oculto,
 }));

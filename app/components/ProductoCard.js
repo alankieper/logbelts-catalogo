@@ -10,10 +10,15 @@ export default function ProductoCard({ p, motivo }) {
     <a className="card" href={`/p/${encodeURIComponent(p.codigo)}`}>
       <div className="thumb">
         {p.foto ? (
-          <img src={`/fotos/${p.foto}`} alt={p.nombre || p.codigo} loading="lazy" />
+          <img
+            src={/^https?:\/\//.test(p.foto) ? p.foto : `/fotos/${p.foto}`}
+            alt={p.nombre || p.codigo}
+            loading="lazy"
+          />
         ) : (
           <span className="noimg">sin foto</span>
         )}
+        {p.video ? <span className="hasvideo" aria-label="con video">▶</span> : null}
       </div>
       <div className="body">
         <span className="code">{p.codigo}</span>

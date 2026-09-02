@@ -1,10 +1,13 @@
 import { notFound } from 'next/navigation';
 import AdminHeader from '../../AdminHeader';
-import { guardarProducto, alternarOculto } from '../../productoActions';
+import { guardarProducto, alternarOculto, quitarMediaProducto } from '../../productoActions';
 import { obtener } from '../../../../lib/catalogoStore';
 import { getFamilias } from '../../../../lib/catalogo';
+import SubirMedia from '../../../components/SubirMedia';
 
 export const dynamic = 'force-dynamic';
+
+const mediaSrc = (v, carpeta) => (v ? (/^https?:\/\//.test(v) ? v : `/${carpeta}/${v}`) : null);
 
 export default async function EditarProducto({ params, searchParams }) {
   const codigo = decodeURIComponent(params.codigo);
@@ -12,6 +15,9 @@ export default async function EditarProducto({ params, searchParams }) {
   if (!p) notFound();
   const familias = (await getFamilias()).map((f) => f.nombre);
   const ok = searchParams?.ok === '1';
+  const err = searchParams?.err;
+  const fotoSrc = mediaSrc(p.foto, 'fotos');
+  const videoSrc = mediaSrc(p.video, 'videos');
 
   return (
     <>
@@ -26,17 +32,40 @@ export default async function EditarProducto({ params, searchParams }) {
           </p>
 
           {ok ? <div className="ok-msg">Cambios guardados.</div> : null}
+          {err ? <div className="err-msg">{err}</div> : null}
 
-          <div style={{ display: 'grid', gap: 28, gridTemplateColumns: '220px 1fr', alignItems: 'start' }}>
-            <div>
-              <div className="gmain" style={{ maxWidth: 220, borderRadius: 12 }}>
-                {p.foto ? <img src={`/fotos/${p.foto}`} alt="" /> : <span className="noimg">sin foto</span>}
+          <div style={{ display: 'grid', gap: 28, gridTemplateColumns: '240px 1fr', alignItems: 'start' }}>
+            <div className="media-col">
+              <div className="gmain" style={{ maxWidth: 240, borderRadius: 12 }}>
+                {fotoSrc ? <img src={fotoSrc} alt="" /> : <span className="noimg">sin foto</span>}
               </div>
-              <p className="gcap">
-                {p.foto ? `foto: ${p.foto} (${p.foto_confianza || '—'})` : 'sin foto'}
-              </p>
-              <p style={{ fontSize: 11, color: 'var(--ink-faint)' }}>
-                Para cambiar la foto: copiá el archivo a <code>public/fotos/</code> con el nombre <code>{p.codigo}.jpg</code> y poné ese nombre en el campo “Foto”.
+
+              {videoSrc ? (
+                <video className="media-video" src={videoSrc} controls preload="metadata" />
+              ) : null}
+
+              <SubirMedia codigo={p.codigo} />
+
+              <div className="media-acc">
+                {p.foto ? (
+                  <form action={quitarMediaProducto}>
+                    <input type="hidden" name="codigo" value={p.codigo} />
+                    <input type="hidden" name="campo" value="foto" />
+                    <button type="submit" className="media-del">Quitar foto</button>
+                  </form>
+                ) : null}
+                {p.video ? (
+                  <form action={quitarMediaProducto}>
+                    <input type="hidden" name="codigo" value={p.codigo} />
+                    <input type="hidden" name="campo" value="video" />
+                    <button type="submit" className="media-del">Quitar video</button>
+                  </form>
+                ) : null}
+              </div>
+
+              <p className="gcap" style={{ marginTop: 4 }}>
+                {p.foto ? `foto: ${/^https?:/.test(p.foto) ? 'subida' : p.foto} (${p.foto_confianza || '—'})` : 'sin foto'}
+                {p.video ? ' · con video' : ''}
               </p>
             </div>
 

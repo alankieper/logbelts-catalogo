@@ -33,6 +33,8 @@ export default async function ProductoPage({ params }) {
 
   const derivada = p.fuente_desc && p.fuente_desc.startsWith('derivada');
   const tieneDesc = !!(p.descripcion && !derivada);
+  const fotoSrc = p.foto ? (/^https?:\/\//.test(p.foto) ? p.foto : `/fotos/${p.foto}`) : null;
+  const videoSrc = p.video ? (/^https?:\/\//.test(p.video) ? p.video : `/videos/${p.video}`) : null;
   const marcas = new Set([...(p.marcas || [])]);
   const catUrl = fam && sub ? `/c/${fam.slug}/${sub.slug}` : '/';
 
@@ -61,13 +63,16 @@ export default async function ProductoPage({ params }) {
 
           <div className="detail">
             <div className="gallery">
-              {p.foto ? (
-                <ZoomImg src={`/fotos/${p.foto}`} alt={p.nombre || p.codigo} />
+              {fotoSrc ? (
+                <ZoomImg src={fotoSrc} alt={p.nombre || p.codigo} />
               ) : (
                 <div className="gmain"><span className="noimg">sin foto</span></div>
               )}
+              {videoSrc ? (
+                <video className="gvideo" src={videoSrc} controls preload="metadata" playsInline />
+              ) : null}
               <p className="gcap">
-                {p.foto ? 'Imagen del catálogo Logbelts · pasá el mouse para ampliar' : 'Sin imagen en el catálogo'}
+                {fotoSrc ? 'Imagen del catálogo Logbelts · pasá el mouse para ampliar' : 'Sin imagen en el catálogo'}
               </p>
             </div>
 
