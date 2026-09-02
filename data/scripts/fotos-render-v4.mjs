@@ -21,7 +21,8 @@ const APPLY = process.argv.includes('--apply');
 const onlyPages = (() => { const i = process.argv.indexOf('--pages'); return i > 0 ? process.argv[i + 1].split(',').map(Number) : null; })();
 const OUT_DIRS = ['data/fotos', 'public/fotos'];
 const PRODUCTOS = 'data/productos.json';
-const OBJETIVO_LADO = 900; // lado mayor deseado (nítida en pantallas retina)
+const OBJETIVO_LADO = 640; // lado mayor tope. Fotos chicas se agrandan poco (máx 1.5x)
+const MAX_ESCALA = 1.5;    // para que las de baja resolución no se estiren de más
 
 const textPages = JSON.parse(fs.readFileSync(PAGES_JSON, 'utf8'));
 const productos = JSON.parse(fs.readFileSync(PRODUCTOS, 'utf8'));
@@ -77,11 +78,16 @@ async function pixmapAJpeg(image) {
   const png = px.asPNG();
   const lado = Math.max(w, h);
 
+  // lado destino: nunca más grande que OBJETIVO_LADO, y a las chicas se las agranda poco
+  const destino = lado >= OBJETIVO_LADO
+    ? OBJETIVO_LADO
+    : Math.min(OBJETIVO_LADO, Math.round(lado * MAX_ESCALA));
+
   let s = sharp(png).flatten({ background: '#ffffff' }); // aplana alfa sobre blanco
-  // llevar el lado mayor a OBJETIVO_LADO con Lanczos (escalado real, ni bloques ni borroso)
-  if (Math.abs(lado - OBJETIVO_LADO) > 4) {
-    if (w >= h) s = s.resize(OBJETIVO_LADO, null, { kernel: 'lanczos3', withoutEnlargement: false });
-    else s = s.resize(null, OBJETIVO_LADO, { kernel: 'lanczos3', withoutEnlargement: false });
+  if (Math.abs(lado - destino) > 4) {
+    // Lanczos: escalado real, ni bloques ni borroso
+    if (w >= h) s = s.resize(destino, null, { kernel: 'lanczos3', withoutEnlargement: false });
+    else s = s.resize(null, destino, { kernel: 'lanczos3', withoutEnlargement: false });
   }
   return s.jpeg({ quality: 88, chromaSubsampling: '4:4:4' }).toBuffer();
 }
