@@ -1,6 +1,13 @@
 import AdminHeader from '../AdminHeader';
-import { leerEventos } from '../../../lib/eventos';
+import { leerEventos, leerVisitas } from '../../../lib/eventos';
 import { leerTodosRaw } from '../../../lib/catalogo';
+
+const PAISES = {
+  AR: 'Argentina', UY: 'Uruguay', CL: 'Chile', BR: 'Brasil', PY: 'Paraguay', BO: 'Bolivia',
+  PE: 'Perú', CO: 'Colombia', MX: 'México', EC: 'Ecuador', VE: 'Venezuela', US: 'Estados Unidos',
+  ES: 'España', DE: 'Alemania', CN: 'China',
+};
+const nombrePais = (c) => (c ? PAISES[c] || c : 'Desconocido');
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 30;
@@ -75,7 +82,7 @@ function Ranking({ filas, color = 'var(--brand-ink)', href }) {
 
 export default async function Metricas({ searchParams }) {
   const dias = RANGOS.some((r) => String(r.d) === searchParams?.d) ? Number(searchParams.d) : 30;
-  const [eventos, productos] = await Promise.all([leerEventos(dias), leerTodosRaw()]);
+  const [eventos, visitas, productos] = await Promise.all([leerEventos(dias), leerVisitas(dias), leerTodosRaw()]);
   const nombre = new Map(productos.map((p) => [p.codigo, p.nombre || p.clave_producto || p.codigo]));
 
   const por = (t) => eventos.filter((e) => e.tipo === t);
@@ -119,14 +126,36 @@ export default async function Metricas({ searchParams }) {
   const topSinResultado = rank(sinResultado, (e) => (e.q || '').toLowerCase().trim(), (q) => q, 15);
   const itemsPorPedido = pedidos.length ? Math.round((pedidos.reduce((s, e) => s + (e.n || 0), 0) / pedidos.length) * 10) / 10 : 0;
 
+  // ---- visitas ----
+  const personas = new Set(visitas.map((v) => v.ip_hash).filter(Boolean)).size;
+  const personasPorDia = {};
+  for (const v of visitas) {
+    const d = diaISO(v.creado);
+    (personasPorDia[d] = personasPorDia[d] || new Set()).add(v.ip_hash || v.id);
+  }
+  const seriePersonas = [{ key: 'per', label: 'Personas', color: 'var(--brand-ink)', data: Object.fromEntries(Object.entries(personasPorDia).map(([d, s]) => [d, s.size])) }];
+  const rankPersonas = (keyFn, labelFn, limit = 12) => {
+    const m = new Map();
+    for (const v of visitas) {
+      const k = keyFn(v) ?? '—';
+      if (!m.has(k)) m.set(k, new Set());
+      m.get(k).add(v.ip_hash || v.id);
+    }
+    return [...m.entries()].map(([k, s]) => ({ k, n: s.size, label: labelFn(k) })).sort((a, b) => b.n - a.n).slice(0, limit);
+  };
+  const porPais = rankPersonas((v) => v.pais, (c) => nombrePais(c), 10);
+  const porCiudad = rankPersonas((v) => (v.ciudad ? `${v.ciudad}${v.pais ? ', ' + v.pais : ''}` : null), (c) => (c === '—' ? 'Ciudad desconocida' : c), 12);
+  const porOrigen = rankPersonas((v) => v.ref, (r) => (r === '—' ? 'Directo / guardado' : r), 12);
+
   const kpis = [
+    { t: 'Personas que lo vieron', v: personas, s: `${fmt(visitas.length)} visitas (sesiones)` },
     { t: 'Búsquedas', v: busquedas.length, s: `${sinResultado.length} sin resultado (${busquedas.length ? Math.round((sinResultado.length / busquedas.length) * 100) : 0}%)` },
     { t: 'Consultas por WhatsApp', v: consultas.length, s: 'clics en “Consultar este producto”' },
     { t: 'Pedidos enviados', v: pedidos.length, s: pedidos.length ? `${itemsPorPedido} productos promedio` : 'lista enviada por WhatsApp' },
     { t: 'Productos vistos', v: vistas.length, s: `${new Set(vistas.map((e) => e.codigo)).size} productos distintos` },
   ];
 
-  const hayDatos = eventos.length > 0;
+  const hayDatos = eventos.length > 0 || visitas.length > 0;
 
   return (
     <>
@@ -160,12 +189,33 @@ export default async function Metricas({ searchParams }) {
           </div>
 
           <section className="mcard">
-            <h2>Actividad por día</h2>
-            <div className="mlegend">
-              {series.map((s) => <span key={s.key}><i style={{ background: s.color }} />{s.label}</span>)}
-            </div>
-            <BarrasDias dias={listaDias} series={series} />
+            <h2>Personas por día</h2>
+            <p className="mut">Cada persona (por IP) se cuenta una vez por día, aunque haya entrado varias veces.</p>
+            <BarrasDias dias={listaDias} series={seriePersonas} />
           </section>
+
+          <div className="mcols">
+            <section className="mcard">
+              <h2>Desde qué país</h2>
+              <Ranking filas={porPais} />
+            </section>
+            <section className="mcard">
+              <h2>Desde qué ciudad</h2>
+              <Ranking filas={porCiudad} />
+            </section>
+            <section className="mcard">
+              <h2>Cómo llegaron</h2>
+              <p className="mut">Sitio de origen. “Directo / guardado” = escribieron la dirección o la tienen guardada.</p>
+              <Ranking filas={porOrigen} color="var(--ok)" />
+            </section>
+            <section className="mcard">
+              <h2>Actividad por día</h2>
+              <div className="mlegend">
+                {series.map((s) => <span key={s.key}><i style={{ background: s.color }} />{s.label}</span>)}
+              </div>
+              <BarrasDias dias={listaDias} series={series} />
+            </section>
+          </div>
 
           <div className="mcols">
             <section className="mcard">
@@ -192,7 +242,8 @@ export default async function Metricas({ searchParams }) {
           </div>
 
           <p className="mut" style={{ marginTop: 20 }}>
-            Rango: últimos {dias} días · {fmt(eventos.length)} eventos.
+            Rango: últimos {dias} días · {fmt(visitas.length)} visitas · {fmt(eventos.length)} eventos.
+            Las personas se cuentan por IP (la IP no se guarda, se guarda un código).
           </p>
         </div>
       </main>

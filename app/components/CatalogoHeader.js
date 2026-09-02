@@ -1,9 +1,11 @@
 import ThemeToggle from './ThemeToggle';
 import ListaPedido from './ListaPedido';
+import RegistrarVisita from './RegistrarVisita';
 
 export default function CatalogoHeader({ q = '' }) {
   return (
     <header className="cat">
+      <RegistrarVisita />
       <ListaPedido />
       <div className="wrap">
         <a className="brand" href="/" aria-label="Logbelts — inicio">
