@@ -9,6 +9,7 @@ export default async function AdminExcel({ searchParams }) {
   const ok = searchParams?.ok != null ? Number(searchParams.ok) : null;
   const sin = searchParams?.sin != null ? Number(searchParams.sin) : null;
   const nf = (searchParams?.nf || '').toString().split(',').filter(Boolean);
+  const ch = (searchParams?.ch || '').toString().split(',').filter(Boolean);
   const err = searchParams?.err;
 
   return (
@@ -29,6 +30,12 @@ export default async function AdminExcel({ searchParams }) {
               {nf.length ? <> · {nf.length} códigos no encontrados</> : null}.
               {nf.length ? (
                 <div style={{ marginTop: 6, fontSize: 12, fontWeight: 400 }}>No encontrados: {nf.join(', ')}</div>
+              ) : null}
+              {ch.length ? (
+                <div style={{ marginTop: 6, fontSize: 12, fontWeight: 400 }}>
+                  Cambiados (código:campos): {ch.join('  ·  ')}
+                  {ok > ch.length ? ` … y ${ok - ch.length} más` : ''}
+                </div>
               ) : null}
             </div>
           ) : null}

@@ -22,7 +22,8 @@ export async function importarExcel(formData) {
     const productos = await leerTodos();
     const { cambios, sinCambio, noEncontrados } = calcularCambios(filas, productos);
     const r = await aplicarCambiosMasivo(cambios);
-    resumen = { aplicados: r.aplicados, sinCambio, noEncontrados };
+    const detalle = cambios.map((c) => `${c.codigo}:${Object.keys(c.campos).join('+')}`);
+    resumen = { aplicados: r.aplicados, sinCambio, noEncontrados, detalle };
   } catch (e) {
     redirect('/admin/excel?err=' + encodeURIComponent(e.message || 'No se pudo procesar el Excel.'));
   }
@@ -32,5 +33,6 @@ export async function importarExcel(formData) {
   sp.set('ok', String(resumen.aplicados));
   sp.set('sin', String(resumen.sinCambio));
   if (resumen.noEncontrados.length) sp.set('nf', resumen.noEncontrados.slice(0, 40).join(','));
+  if (resumen.detalle.length) sp.set('ch', resumen.detalle.slice(0, 60).join(','));
   redirect('/admin/excel?' + sp.toString());
 }
