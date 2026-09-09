@@ -18,7 +18,7 @@ export default function ProductoCard({ p, motivo }) {
         ) : (
           <span className="noimg">sin foto</span>
         )}
-        {p.video ? <span className="hasvideo" aria-label="con video">▶</span> : null}
+        {p.videos && p.videos.length ? <span className="hasvideo" aria-label="con video">▶</span> : null}
       </div>
       <div className="body">
         <span className="code">{p.codigo}</span>

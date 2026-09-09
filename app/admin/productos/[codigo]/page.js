@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import AdminHeader from '../../AdminHeader';
-import { guardarProducto, alternarOculto, quitarMediaProducto } from '../../productoActions';
+import { guardarProducto, alternarOculto, quitarMediaProducto, quitarMediaGaleria, promoverPortada } from '../../productoActions';
 import { obtener } from '../../../../lib/catalogoStore';
 import { getFamilias } from '../../../../lib/catalogo';
 import SubirMedia from '../../../components/SubirMedia';
@@ -17,7 +17,8 @@ export default async function EditarProducto({ params, searchParams }) {
   const ok = searchParams?.ok === '1';
   const err = searchParams?.err;
   const fotoSrc = mediaSrc(p.foto, 'fotos');
-  const videoSrc = mediaSrc(p.video, 'videos');
+  const galeria = (p.galeria || []).map((v) => mediaSrc(v, 'fotos'));
+  const videos = (p.videos || []).map((v) => mediaSrc(v, 'videos'));
 
   return (
     <>
@@ -34,39 +35,72 @@ export default async function EditarProducto({ params, searchParams }) {
           {ok ? <div className="ok-msg">Cambios guardados.</div> : null}
           {err ? <div className="err-msg">{err}</div> : null}
 
-          <div style={{ display: 'grid', gap: 28, gridTemplateColumns: '240px 1fr', alignItems: 'start' }}>
+          <div style={{ display: 'grid', gap: 28, gridTemplateColumns: '280px 1fr', alignItems: 'start' }}>
             <div className="media-col">
+              <p className="media-label">Portada</p>
               <div className="gmain" style={{ maxWidth: 240, borderRadius: 12 }}>
                 {fotoSrc ? <img src={fotoSrc} alt="" /> : <span className="noimg">sin foto</span>}
               </div>
+              {p.foto ? (
+                <form action={quitarMediaProducto} className="media-acc">
+                  <input type="hidden" name="codigo" value={p.codigo} />
+                  <button type="submit" className="media-del">Quitar foto de portada</button>
+                </form>
+              ) : null}
+              <p className="gcap" style={{ marginTop: 4 }}>
+                {p.foto ? `foto: ${/^https?:/.test(p.foto) ? 'subida' : p.foto} (${p.foto_confianza || '—'})` : 'sin foto'}
+              </p>
 
-              {videoSrc ? (
-                <video className="media-video" src={videoSrc} controls preload="metadata" />
+              {galeria.length ? (
+                <>
+                  <p className="media-label">Galería ({galeria.length})</p>
+                  <div className="media-grid">
+                    {galeria.map((src, i) => {
+                      const original = p.galeria[i];
+                      return (
+                        <div className="media-thumb" key={original}>
+                          <img src={src} alt="" />
+                          <div className="media-thumb-acc">
+                            <form action={promoverPortada}>
+                              <input type="hidden" name="codigo" value={p.codigo} />
+                              <input type="hidden" name="url" value={original} />
+                              <button type="submit" title="Usar como portada">Portada</button>
+                            </form>
+                            <form action={quitarMediaGaleria}>
+                              <input type="hidden" name="codigo" value={p.codigo} />
+                              <input type="hidden" name="tipo" value="galeria" />
+                              <input type="hidden" name="url" value={original} />
+                              <button type="submit" title="Quitar">✕</button>
+                            </form>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </>
+              ) : null}
+
+              {videos.length ? (
+                <>
+                  <p className="media-label">Videos ({videos.length})</p>
+                  {videos.map((src, i) => {
+                    const original = p.videos[i];
+                    return (
+                      <div className="media-thumb media-thumb-video" key={original}>
+                        <video className="media-video" src={src} controls preload="metadata" />
+                        <form action={quitarMediaGaleria}>
+                          <input type="hidden" name="codigo" value={p.codigo} />
+                          <input type="hidden" name="tipo" value="video" />
+                          <input type="hidden" name="url" value={original} />
+                          <button type="submit" className="media-del">Quitar video</button>
+                        </form>
+                      </div>
+                    );
+                  })}
+                </>
               ) : null}
 
               <SubirMedia codigo={p.codigo} />
-
-              <div className="media-acc">
-                {p.foto ? (
-                  <form action={quitarMediaProducto}>
-                    <input type="hidden" name="codigo" value={p.codigo} />
-                    <input type="hidden" name="campo" value="foto" />
-                    <button type="submit" className="media-del">Quitar foto</button>
-                  </form>
-                ) : null}
-                {p.video ? (
-                  <form action={quitarMediaProducto}>
-                    <input type="hidden" name="codigo" value={p.codigo} />
-                    <input type="hidden" name="campo" value="video" />
-                    <button type="submit" className="media-del">Quitar video</button>
-                  </form>
-                ) : null}
-              </div>
-
-              <p className="gcap" style={{ marginTop: 4 }}>
-                {p.foto ? `foto: ${/^https?:/.test(p.foto) ? 'subida' : p.foto} (${p.foto_confianza || '—'})` : 'sin foto'}
-                {p.video ? ' · con video' : ''}
-              </p>
             </div>
 
             <form action={guardarProducto} className="form-grid">

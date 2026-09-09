@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@supabase/supabase-js';
-import { guardarMediaUrl } from '../admin/productoActions';
+import { agregarMediaGaleria } from '../admin/productoActions';
 
 const MAX_FOTO = 15 * 1024 * 1024;
 const MAX_VIDEO = 80 * 1024 * 1024;
@@ -23,6 +23,12 @@ function ext(nombre, mime) {
   return /video/i.test(mime) ? 'mp4' : 'jpg';
 }
 
+/**
+ * Sube una foto o un video y lo agrega al producto (no reemplaza nada):
+ * si todavía no tiene foto de portada, la usa como portada; si no, la suma
+ * a la galería (o a la lista de videos). Se pueden subir varias fotos/videos,
+ * una por una.
+ */
 export default function SubirMedia({ codigo }) {
   const input = useRef(null);
   const router = useRouter();
@@ -64,12 +70,12 @@ export default function SubirMedia({ codigo }) {
       const pub = sb.storage.from('media').getPublicUrl(ruta).data.publicUrl;
       const fd = new FormData();
       fd.set('codigo', codigo);
-      fd.set('campo', clase);
+      fd.set('tipo', clase);
       fd.set('url', pub);
-      const r = await guardarMediaUrl(fd);
+      const r = await agregarMediaGaleria(fd);
       if (r && r.ok === false) throw new Error(r.error || 'No se pudo guardar.');
       setEstado('ok');
-      setMsg(esVideo ? 'Video subido.' : 'Foto subida.');
+      setMsg(esVideo ? 'Video agregado.' : 'Foto agregada.');
       input.current.value = '';
       router.refresh();
     } catch (err) {
@@ -81,7 +87,7 @@ export default function SubirMedia({ codigo }) {
 
   return (
     <div className="media-up">
-      <label htmlFor={`m-${codigo}`}>Subir foto o video (reemplaza el actual)</label>
+      <label htmlFor={`m-${codigo}`}>Agregar foto o video</label>
       <input
         id={`m-${codigo}`}
         ref={input}
@@ -94,7 +100,7 @@ export default function SubirMedia({ codigo }) {
       {estado === 'ok' ? <span className="media-hint" style={{ color: 'var(--ok)' }}>{msg}</span> : null}
       {estado === 'error' ? <span className="media-hint" style={{ color: '#b3261e' }}>{msg}</span> : null}
       {estado === 'idle' ? (
-        <span className="media-hint">Imagen: JPG / PNG / WEBP (máx. 15 MB) · Video: MP4 / MOV / WEBM (máx. 80 MB)</span>
+        <span className="media-hint">Podés subir varias, una por una · Imagen: JPG / PNG / WEBP (máx. 15 MB) · Video: MP4 / MOV / WEBM (máx. 80 MB)</span>
       ) : null}
     </div>
   );

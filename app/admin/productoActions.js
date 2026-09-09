@@ -23,21 +23,36 @@ export async function guardarProducto(formData) {
   redirect(`/admin/productos/${encodeURIComponent(codigo)}?ok=1`);
 }
 
-// Guarda la URL de un archivo YA subido a Supabase Storage desde el navegador.
-export async function guardarMediaUrl(formData) {
+// Agrega una foto o video YA subido a Supabase Storage a la galería del producto
+// (si todavía no tiene portada, la usa como portada). tipo = 'foto' | 'video'.
+export async function agregarMediaGaleria(formData) {
   const codigo = formData.get('codigo');
-  const campo = formData.get('campo') === 'video' ? 'video' : 'foto';
+  const tipo = formData.get('tipo') === 'video' ? 'video' : 'foto';
   const url = (formData.get('url') || '').toString();
   if (!codigo || !/^https?:\/\//.test(url)) return { ok: false, error: 'Datos inválidos.' };
-  if (campo === 'foto') {
-    const prev = await store.obtener(codigo);
-    if (prev?.foto && prev.foto !== url && /storage\/v1\/object\/public\/media\//.test(prev.foto)) {
-      await borrarMediaPorUrl(prev.foto);
-    }
-  }
-  await store.setMedia(codigo, campo, url);
+  await store.agregarMedia(codigo, tipo, url);
   revalidatePath('/', 'layout');
   return { ok: true };
+}
+
+// Quita una foto o video puntual de la galería (no la portada) y lo borra del storage.
+export async function quitarMediaGaleria(formData) {
+  const codigo = formData.get('codigo');
+  const tipo = formData.get('tipo') === 'video' ? 'video' : 'galeria';
+  const url = (formData.get('url') || '').toString();
+  if (url && /storage\/v1\/object\/public\/media\//.test(url)) await borrarMediaPorUrl(url);
+  await store.quitarDeGaleria(codigo, tipo, url);
+  revalidatePath('/', 'layout');
+  redirect(`/admin/productos/${encodeURIComponent(codigo)}?ok=1`);
+}
+
+// Promueve una foto de la galería a portada (la portada anterior pasa a la galería).
+export async function promoverPortada(formData) {
+  const codigo = formData.get('codigo');
+  const url = (formData.get('url') || '').toString();
+  await store.usarComoPortada(codigo, url);
+  revalidatePath('/', 'layout');
+  redirect(`/admin/productos/${encodeURIComponent(codigo)}?ok=1`);
 }
 
 // Agrega uno o más códigos originales (OEM) a un producto, sin pisar los que ya tiene.
@@ -79,13 +94,15 @@ export async function vincularBusqueda(formData) {
   redirect(`/admin/metricas?d=${encodeURIComponent(d)}&ok=1`);
 }
 
+// Quita la foto de portada. Si hay fotos en la galería, la primera pasa a ser la portada nueva.
 export async function quitarMediaProducto(formData) {
   const codigo = formData.get('codigo');
-  const campo = formData.get('campo') === 'video' ? 'video' : 'foto';
   const p = await store.obtener(codigo);
-  const url = campo === 'video' ? p?.video : p?.foto;
+  const url = p?.foto;
   if (url && /storage\/v1\/object\/public\/media\//.test(url)) await borrarMediaPorUrl(url);
-  await store.setMedia(codigo, campo, null);
+  const [siguiente] = p?.galeria || [];
+  await store.setFotoPortada(codigo, siguiente || null);
+  if (siguiente) await store.quitarDeGaleria(codigo, 'galeria', siguiente);
   revalidatePath('/', 'layout');
   redirect(`/admin/productos/${encodeURIComponent(codigo)}?ok=1`);
 }

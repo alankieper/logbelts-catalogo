@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../components/CatalogoHeader';
 import ProductoCard from '../../components/ProductoCard';
-import ZoomImg from '../../components/ZoomImg';
+import Galeria from '../../components/Galeria';
 import ConsultaCTA from '../../components/ConsultaCTA';
 import BotonAgregar from '../../components/BotonAgregar';
 import Registrar from '../../components/Registrar';
@@ -52,8 +52,11 @@ export default async function ProductoPage({ params }) {
 
   const derivada = p.fuente_desc && p.fuente_desc.startsWith('derivada');
   const tieneDesc = !!(p.descripcion && !derivada);
-  const fotoSrc = p.foto ? (/^https?:\/\//.test(p.foto) ? p.foto : `/fotos/${p.foto}`) : null;
-  const videoSrc = p.video ? (/^https?:\/\//.test(p.video) ? p.video : `/videos/${p.video}`) : null;
+  const aFotoUrl = (v) => (/^https?:\/\//.test(v) ? v : `/fotos/${v}`);
+  const aVideoUrl = (v) => (/^https?:\/\//.test(v) ? v : `/videos/${v}`);
+  const fotoSrc = p.foto ? aFotoUrl(p.foto) : null;
+  const fotos = [p.foto, ...(p.galeria || [])].filter(Boolean).map(aFotoUrl);
+  const videos = (p.videos || []).map(aVideoUrl);
   const marcas = new Set([...(p.marcas || [])]);
   const catUrl = fam && sub ? `/c/${fam.slug}/${sub.slug}` : '/';
 
@@ -96,14 +99,10 @@ export default async function ProductoPage({ params }) {
 
           <div className="detail">
             <div className="gallery">
-              {fotoSrc ? (
-                <ZoomImg src={fotoSrc} alt={p.nombre || p.codigo} />
-              ) : (
-                <div className="gmain"><span className="noimg">sin foto</span></div>
-              )}
-              {videoSrc ? (
-                <video className="gvideo" src={videoSrc} controls preload="metadata" playsInline />
-              ) : null}
+              <Galeria fotos={fotos} alt={p.nombre || p.codigo} />
+              {videos.map((src) => (
+                <video key={src} className="gvideo" src={src} controls preload="metadata" playsInline />
+              ))}
               <p className="gcap">
                 {fotoSrc ? 'Imagen del catálogo Logbelts · pasá el mouse para ampliar' : 'Sin imagen en el catálogo'}
               </p>
