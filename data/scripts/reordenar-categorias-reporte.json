@@ -1,0 +1,1466 @@
+[
+ {
+  "codigo": "2102143",
+  "campo": "subcategoria",
+  "antes": "Carburador",
+  "despues": "Carburadores"
+ },
+ {
+  "codigo": "2102825",
+  "campo": "subcategoria",
+  "antes": "Carburador",
+  "despues": "Carburadores"
+ },
+ {
+  "codigo": "2102839",
+  "campo": "subcategoria",
+  "antes": "Carburador",
+  "despues": "Carburadores"
+ },
+ {
+  "codigo": "2102844",
+  "campo": "subcategoria",
+  "antes": "Carburador",
+  "despues": "Carburadores"
+ },
+ {
+  "codigo": "2102855",
+  "campo": "subcategoria",
+  "antes": "Carburador",
+  "despues": "Carburadores"
+ },
+ {
+  "codigo": "2103197",
+  "campo": "subcategoria",
+  "antes": "RETENES",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2103197",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2103198",
+  "campo": "subcategoria",
+  "antes": "Kit de cilindros",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2103198",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2103199",
+  "campo": "subcategoria",
+  "antes": "REPUESTOS",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2103199",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2103200",
+  "campo": "subcategoria",
+  "antes": "Kit de cilindros",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2103200",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2103203",
+  "campo": "subcategoria",
+  "antes": "Kit de cilindros",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2103203",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2103205",
+  "campo": "subcategoria",
+  "antes": "Kit de cilindros",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2103205",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2103206",
+  "campo": "subcategoria",
+  "antes": "Kit de cilindros",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2103206",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2103207",
+  "campo": "subcategoria",
+  "antes": "Kit de cilindros",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2103207",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2103208",
+  "campo": "subcategoria",
+  "antes": "Kit de cilindros",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2103208",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2103209",
+  "campo": "subcategoria",
+  "antes": "Kit de cilindros",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2103209",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2113024",
+  "campo": "subcategoria",
+  "antes": "C ABLES ACELERADOR",
+  "despues": "Caja de engranaje"
+ },
+ {
+  "codigo": "2113025",
+  "campo": "subcategoria",
+  "antes": "C ABLES ACELERADOR",
+  "despues": "Caja de engranaje"
+ },
+ {
+  "codigo": "2113026",
+  "campo": "subcategoria",
+  "antes": "C ABLES ACELERADOR",
+  "despues": "Caja de engranaje"
+ },
+ {
+  "codigo": "2113027",
+  "campo": "subcategoria",
+  "antes": "C ABLES ACELERADOR",
+  "despues": "Caja de engranaje"
+ },
+ {
+  "codigo": "2113028",
+  "campo": "subcategoria",
+  "antes": "C ABLES ACELERADOR",
+  "despues": "Caja de engranaje"
+ },
+ {
+  "codigo": "2113029",
+  "campo": "subcategoria",
+  "antes": "C ABLES ACELERADOR",
+  "despues": "Caja de engranaje"
+ },
+ {
+  "codigo": "2113031",
+  "campo": "subcategoria",
+  "antes": "C ABLES ACELERADOR",
+  "despues": "Caja de engranaje"
+ },
+ {
+  "codigo": "2113034",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Caja de engranaje"
+ },
+ {
+  "codigo": "2113036",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Caja de engranaje"
+ },
+ {
+  "codigo": "2113060",
+  "campo": "subcategoria",
+  "antes": "CABLES ACELERADOR",
+  "despues": "Caja de engranaje"
+ },
+ {
+  "codigo": "2113062",
+  "campo": "subcategoria",
+  "antes": "CABLES ACELERADOR",
+  "despues": "Caja de engranaje"
+ },
+ {
+  "codigo": "2116560",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2116561",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2116562",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2116563",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2116564",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2116565",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2116566",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2116567",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2116593",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2116594",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117530",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117540",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117545",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117548",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117550",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117552",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117554",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117556",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117558",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117563",
+  "campo": "subcategoria",
+  "antes": "Cabezales porta tanza",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117568",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117570",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117571",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117572",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117573",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117574",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117575",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117576",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117577",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117585",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117586",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117587",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117588",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117590",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117591",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117592",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117593",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2117595",
+  "campo": "subcategoria",
+  "antes": "CABEZALES DE TANZA",
+  "despues": "Cabezales de tanza"
+ },
+ {
+  "codigo": "2120107",
+  "campo": "subcategoria",
+  "antes": "CABLES ACELERADOR",
+  "despues": "Partes"
+ },
+ {
+  "codigo": "2121061",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2121062",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2124231",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2124235",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2124236",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2124240",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2124245",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2124246",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2124247",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2124248",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2125151",
+  "campo": "subcategoria",
+  "antes": "C ABLES ACELERADOR",
+  "despues": "Cables"
+ },
+ {
+  "codigo": "2125152",
+  "campo": "subcategoria",
+  "antes": "C ABLES ACELERADOR",
+  "despues": "Cables"
+ },
+ {
+  "codigo": "2125153",
+  "campo": "subcategoria",
+  "antes": "C ABLES ACELERADOR",
+  "despues": "Cables"
+ },
+ {
+  "codigo": "2125158",
+  "campo": "subcategoria",
+  "antes": "C ABLES ACELERADOR",
+  "despues": "Cables"
+ },
+ {
+  "codigo": "2203011",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Kit de cilindros"
+ },
+ {
+  "codigo": "2203014",
+  "campo": "subcategoria",
+  "antes": "RETENES",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203014",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203015",
+  "campo": "subcategoria",
+  "antes": "RETENES",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203015",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203016",
+  "campo": "subcategoria",
+  "antes": "RETENES",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203016",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203017",
+  "campo": "subcategoria",
+  "antes": "RETENES",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203017",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203018",
+  "campo": "subcategoria",
+  "antes": "RETENES",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203018",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203019",
+  "campo": "subcategoria",
+  "antes": "RETENES",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203019",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203020",
+  "campo": "subcategoria",
+  "antes": "Kit de cilindros",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203020",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203021",
+  "campo": "subcategoria",
+  "antes": "Kit de cilindros",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203021",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203022",
+  "campo": "subcategoria",
+  "antes": "Kit de cilindros",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203022",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203025",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203025",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203026",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203026",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203027",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203027",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203401",
+  "campo": "subcategoria",
+  "antes": "RETENES",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203401",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203401",
+  "campo": "nombre",
+  "antes": "Kit de cilindros",
+  "despues": "Escape REPL · MS170 MS180"
+ },
+ {
+  "codigo": "2203402",
+  "campo": "subcategoria",
+  "antes": "RETENES",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203402",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203402",
+  "campo": "nombre",
+  "antes": "Kit de cilindros",
+  "despues": "Escape REPL · ST MS 380/381"
+ },
+ {
+  "codigo": "2203403",
+  "campo": "subcategoria",
+  "antes": "RETENES",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203403",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203403",
+  "campo": "nombre",
+  "antes": "Kit de cilindros",
+  "despues": "Escape REPL · ST MS 340/360"
+ },
+ {
+  "codigo": "2203404",
+  "campo": "subcategoria",
+  "antes": "RETENES",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203404",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203404",
+  "campo": "nombre",
+  "antes": "Kit de cilindros",
+  "despues": "Escape REPL · ST MS 361"
+ },
+ {
+  "codigo": "2203405",
+  "campo": "subcategoria",
+  "antes": "RETENES",
+  "despues": "Escapes"
+ },
+ {
+  "codigo": "2203405",
+  "campo": "clave_producto",
+  "antes": "Kit de cilindros",
+  "despues": "Escape"
+ },
+ {
+  "codigo": "2203405",
+  "campo": "nombre",
+  "antes": "Kit de cilindros",
+  "despues": "Escape REPL · HUS 61/268/272"
+ },
+ {
+  "codigo": "2204015",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Kit de pistón"
+ },
+ {
+  "codigo": "2205019",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Aros"
+ },
+ {
+  "codigo": "2212020",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Embragues / campanas / resortes"
+ },
+ {
+  "codigo": "2212055",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "EMBRAGUES"
+ },
+ {
+  "codigo": "2212056",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "EMBRAGUES"
+ },
+ {
+  "codigo": "2212076",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Embragues / campanas / resortes"
+ },
+ {
+  "codigo": "2212077",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Embragues / campanas / resortes"
+ },
+ {
+  "codigo": "2212078",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Embragues / campanas / resortes"
+ },
+ {
+  "codigo": "2212079",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Embragues / campanas / resortes"
+ },
+ {
+  "codigo": "2212080",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "CAMPANA DE EMBRAGUE"
+ },
+ {
+  "codigo": "2212081",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Embragues / campanas / resortes"
+ },
+ {
+  "codigo": "2212082",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Embragues / campanas / resortes"
+ },
+ {
+  "codigo": "2212084",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Embragues / campanas / resortes"
+ },
+ {
+  "codigo": "2212108",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "CAMPANA DE EMBRAGUE"
+ },
+ {
+  "codigo": "2214039",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Tanque de combustible / tapa"
+ },
+ {
+  "codigo": "2214045",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Tanque de combustible / tapa"
+ },
+ {
+  "codigo": "2214046",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Tanque de combustible / tapa"
+ },
+ {
+  "codigo": "2214048",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Tanque de combustible / tapa"
+ },
+ {
+  "codigo": "2214049",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Tanque de combustible / tapa"
+ },
+ {
+  "codigo": "2214051",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Tanque de combustible / tapa"
+ },
+ {
+  "codigo": "2214052",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Tanque de combustible / tapa"
+ },
+ {
+  "codigo": "2219091",
+  "campo": "subcategoria",
+  "antes": "SIN FINES HUSQVARNA / OTROS",
+  "despues": "BOMBA DE ACEITE Y SIN FIN"
+ },
+ {
+  "codigo": "2219092",
+  "campo": "subcategoria",
+  "antes": "SIN FINES HUSQVARNA / OTROS",
+  "despues": "BOMBA DE ACEITE Y SIN FIN"
+ },
+ {
+  "codigo": "2219093",
+  "campo": "subcategoria",
+  "antes": "SIN FINES HUSQVARNA / OTROS",
+  "despues": "BOMBA DE ACEITE Y SIN FIN"
+ },
+ {
+  "codigo": "2219094",
+  "campo": "subcategoria",
+  "antes": "SIN FINES HUSQVARNA / OTROS",
+  "despues": "BOMBA DE ACEITE Y SIN FIN"
+ },
+ {
+  "codigo": "2220016",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Partes"
+ },
+ {
+  "codigo": "2220018",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Partes"
+ },
+ {
+  "codigo": "2220093",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2220094",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2220097",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2220098",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2220118",
+  "campo": "subcategoria",
+  "antes": "SIN FINES HUSQVARNA / OTROS",
+  "despues": "Partes"
+ },
+ {
+  "codigo": "2220119",
+  "campo": "subcategoria",
+  "antes": "SIN FINES HUSQVARNA / OTROS",
+  "despues": "Partes"
+ },
+ {
+  "codigo": "2221610",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2221611",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2221614",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2221615",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2221616",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2221617",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2221618",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2221620",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2221621",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2221622",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2222010",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222012",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222014",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222015",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222016",
+  "campo": "subcategoria",
+  "antes": "CAJAS DE ENGRANAJES",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222030",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222031",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222033",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222036",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222037",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222038",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222039",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222040",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222045",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222046",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222047",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222048",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222049",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222050",
+  "campo": "subcategoria",
+  "antes": "SIN FINES HUSQVARNA / OTROS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222051",
+  "campo": "subcategoria",
+  "antes": "SIN FINES HUSQVARNA / OTROS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222052",
+  "campo": "subcategoria",
+  "antes": "SIN FINES HUSQVARNA / OTROS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222053",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222054",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222055",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2222056",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "Cigüeñal"
+ },
+ {
+  "codigo": "2224017",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2224018",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2224019",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2224020",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2224021",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2224023",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2224028",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2224029",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2224040",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2224041",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2227652",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "RETENES"
+ },
+ {
+  "codigo": "2227653",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "RETENES"
+ },
+ {
+  "codigo": "2227654",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "RETENES"
+ },
+ {
+  "codigo": "2227655",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "RETENES"
+ },
+ {
+  "codigo": "2227656",
+  "campo": "subcategoria",
+  "antes": "TAPAS DE DEPOSITOS",
+  "despues": "RETENES"
+ },
+ {
+  "codigo": "2324240",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2324241",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2324242",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2324244",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2324245",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "2921015",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921016",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921017",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921019",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921021",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921023",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921026",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921028",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921031",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921032",
+  "campo": "subcategoria",
+  "antes": "MANGUERA DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921040",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921041",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921042",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921043",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921044",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "2921045",
+  "campo": "subcategoria",
+  "antes": "MANGUERAS DE COMBUSTIBLE",
+  "despues": "Mangueras de combustible"
+ },
+ {
+  "codigo": "4324235",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "4324236",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "4324237",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "4324238",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "4324239",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE INGNICION 2T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "4324241",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE I N G N I C I ON 4T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "4324242",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE I N G N I C I ON 4T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "4324901",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE I N G N I C I ON 4T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "4324902",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE I N G N I C I ON 4T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "4324903",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE I N G N I C I ON 4T",
+  "despues": "Bobina de ignición"
+ },
+ {
+  "codigo": "4324904",
+  "campo": "subcategoria",
+  "antes": "BOBINA DE I N G N I C I ON 4T",
+  "despues": "Bobina de ignición"
+ }
+]

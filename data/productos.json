@@ -254,7 +254,7 @@
   "descripcion": "Carburador Repl Hus-143R",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Carburador",
+  "subcategoria": "Carburadores",
   "marcas": [
    "Husqvarna"
   ],
@@ -275,7 +275,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO HUSQVARNA 143R",
   "foto": "2102143.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.651Z"
  },
  {
   "codigo": "2102223",
@@ -660,7 +661,7 @@
   "descripcion": "Kit Junta Y Diafragma Carburador Repl St- FS160/220/280",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Carburador",
+  "subcategoria": "Carburadores",
   "marcas": [
    "Stihl"
   ],
@@ -682,7 +683,8 @@
   "foto": "2102825.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.653Z"
  },
  {
   "codigo": "2102827",
@@ -778,7 +780,7 @@
   "descripcion": "Carburador Repl St- FS450 (C1Q-S34) Zama",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Carburador",
+  "subcategoria": "Carburadores",
   "marcas": [
    "Zama",
    "Stihl"
@@ -802,7 +804,8 @@
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
   "fuente_marca": "sigla",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.653Z"
  },
  {
   "codigo": "2102844",
@@ -811,7 +814,7 @@
   "descripcion": "Carburador Repl St- FS38/55",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Carburador",
+  "subcategoria": "Carburadores",
   "marcas": [
    "Stihl"
   ],
@@ -831,7 +834,8 @@
   "foto": "2102844.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.653Z"
  },
  {
   "codigo": "2102855",
@@ -840,7 +844,7 @@
   "descripcion": "Carburador Repl St- FS450 Zama (Limitador)",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Carburador",
+  "subcategoria": "Carburadores",
   "marcas": [
    "Zama",
    "Stihl"
@@ -861,7 +865,8 @@
   "foto": "2102855.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.653Z"
  },
  {
   "codigo": "2102871",
@@ -1787,7 +1792,7 @@
   "descripcion": "Silenciador de escape Stihl FS80/85",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "RETENES",
+  "subcategoria": "Escapes",
   "marcas": [
    "Stihl"
   ],
@@ -1798,7 +1803,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Desmalezadora",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 124,
   "origen": "grilla",
@@ -1806,7 +1811,8 @@
   "encabezado_pdf": "RETENES",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T04:07:42.653Z"
  },
  {
   "codigo": "2103198",
@@ -1815,7 +1821,7 @@
   "descripcion": "Silenciador de escape Stihl SR(BR)400/420",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Kit de cilindros",
+  "subcategoria": "Escapes",
   "marcas": [
    "Stihl"
   ],
@@ -1826,7 +1832,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Desmalezadora",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 100,
   "origen": "grilla",
@@ -1834,7 +1840,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2103198.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2103199",
@@ -1843,7 +1850,7 @@
   "descripcion": "Escape Chinas 26cc",
   "familia": "Sistemas de arranque",
   "familia_indice": "Sistemas de arranque",
-  "subcategoria": "REPUESTOS",
+  "subcategoria": "Escapes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Escape Chinas 26cc",
@@ -1852,7 +1859,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Desmalezadora",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 92,
   "origen": "grilla",
@@ -1860,7 +1867,8 @@
   "encabezado_pdf": "SISTEMA DE ARRANQUE - MOTOSIERRAS - REPUESTOS",
   "foto": "2103199.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2103200",
@@ -1869,7 +1877,7 @@
   "descripcion": "Escape Chinas 33cc",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Kit de cilindros",
+  "subcategoria": "Escapes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Escape Chinas 33cc",
@@ -1878,7 +1886,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Desmalezadora",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 94,
   "origen": "grilla",
@@ -1886,7 +1894,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS CHINAS 26CC",
   "foto": "2103200.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2103201",
@@ -1921,7 +1930,7 @@
   "descripcion": "Escape Repl St- FS38/55",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Kit de cilindros",
+  "subcategoria": "Escapes",
   "marcas": [
    "Husqvarna",
    "Stihl"
@@ -1933,7 +1942,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Desmalezadora",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 99,
   "origen": "grilla",
@@ -1942,7 +1951,8 @@
   "foto": "2103203.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2103205",
@@ -1951,7 +1961,7 @@
   "descripcion": "Escape Repl Hus-143R",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Kit de cilindros",
+  "subcategoria": "Escapes",
   "marcas": [
    "Husqvarna"
   ],
@@ -1964,7 +1974,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Desmalezadora",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 97,
   "origen": "grilla",
@@ -1972,7 +1982,8 @@
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO HUSQVARNA 143R",
   "foto": "2103205.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2103206",
@@ -1981,7 +1992,7 @@
   "descripcion": "Escape Repl St- FS450",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Kit de cilindros",
+  "subcategoria": "Escapes",
   "marcas": [
    "Stihl"
   ],
@@ -1992,7 +2003,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Desmalezadora",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 107,
   "origen": "grilla",
@@ -2001,7 +2012,8 @@
   "foto": "2103206.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2103207",
@@ -2010,7 +2022,7 @@
   "descripcion": "Tubo De Escape Repl St- FS450",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Kit de cilindros",
+  "subcategoria": "Escapes",
   "marcas": [
    "Stihl"
   ],
@@ -2021,7 +2033,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Desmalezadora",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 107,
   "origen": "grilla",
@@ -2030,7 +2042,8 @@
   "foto": "2103207.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2103208",
@@ -2039,7 +2052,7 @@
   "descripcion": "Escape Repl St- FS160/220/280",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Kit de cilindros",
+  "subcategoria": "Escapes",
   "marcas": [
    "Stihl"
   ],
@@ -2050,7 +2063,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Desmalezadora",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 105,
   "origen": "grilla",
@@ -2059,7 +2072,8 @@
   "foto": "2103208.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2103209",
@@ -2068,7 +2082,7 @@
   "descripcion": "Tornillo De Escape Repl St- FS160/220/280",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Kit de cilindros",
+  "subcategoria": "Escapes",
   "marcas": [
    "Stihl"
   ],
@@ -2079,7 +2093,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Desmalezadora",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 105,
   "origen": "grilla",
@@ -2088,7 +2102,8 @@
   "foto": "2103209.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2103210",
@@ -6152,7 +6167,7 @@
   "descripcion": "Caja Engranajes 26mm Centro Cuadrado",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "C ABLES ACELERADOR",
+  "subcategoria": "Caja de engranaje",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Caja Engranajes 26mm Centro Cuadrado",
@@ -6171,7 +6186,8 @@
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2113024.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2113025",
@@ -6180,7 +6196,7 @@
   "descripcion": "Caja Engranajes 7 Estrias 26MM",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "C ABLES ACELERADOR",
+  "subcategoria": "Caja de engranaje",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Caja Engranajes 7 Estrias 26MM",
@@ -6199,7 +6215,8 @@
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2113025.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2113026",
@@ -6208,7 +6225,7 @@
   "descripcion": "Caja Engranajes 9 Estrias 26MM",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "C ABLES ACELERADOR",
+  "subcategoria": "Caja de engranaje",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Caja Engranajes 9 Estrias 26MM",
@@ -6227,7 +6244,8 @@
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2113026.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2113027",
@@ -6236,7 +6254,7 @@
   "descripcion": "Caja Engranajes 7 Estrias 28MM",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "C ABLES ACELERADOR",
+  "subcategoria": "Caja de engranaje",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Caja Engranajes 7 Estrias 28MM",
@@ -6255,7 +6273,8 @@
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2113027.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2113028",
@@ -6264,7 +6283,7 @@
   "descripcion": "Caja Engranajes 9 Estrias 28MM",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "C ABLES ACELERADOR",
+  "subcategoria": "Caja de engranaje",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Caja Engranajes 9 Estrias 28MM",
@@ -6283,7 +6302,8 @@
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2113028.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2113029",
@@ -6292,7 +6312,7 @@
   "descripcion": "Caja de Engranaje FS 120-200-250",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "C ABLES ACELERADOR",
+  "subcategoria": "Caja de engranaje",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Caja de Engranaje FS 120-200-250",
@@ -6309,7 +6329,8 @@
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2113029.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2113030",
@@ -6347,7 +6368,7 @@
   "descripcion": "Caja de Engranaje FS 235",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "C ABLES ACELERADOR",
+  "subcategoria": "Caja de engranaje",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Caja de Engranaje FS 235",
@@ -6364,7 +6385,8 @@
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2113031.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2113032",
@@ -6431,7 +6453,7 @@
   "descripcion": "Caja de Engranaje ST-FS 450/480",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Caja de engranaje",
   "marcas": [
    "Stihl"
   ],
@@ -6451,7 +6473,8 @@
   "foto": "2113034.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2113035",
@@ -6490,7 +6513,7 @@
   "descripcion": "Caja de Engranaje ECHO SRM 4605 CHINAS 38CC",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Caja de engranaje",
   "marcas": [
    "Echo"
   ],
@@ -6511,7 +6534,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2113036.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2113045",
@@ -6899,7 +6923,7 @@
   "descripcion": "Repuesto de caja de engranajes Echo ECHO-SRM4606",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CABLES ACELERADOR",
+  "subcategoria": "Caja de engranaje",
   "marcas": [
    "Echo"
   ],
@@ -6920,7 +6944,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CABLES ACELERADOR - REEMPLAZOS",
   "foto": "2113060.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2113061",
@@ -6960,7 +6985,7 @@
   "descripcion": "Caja de engranajes Husqvarna 125/128R EJES DE TRANSMISIÓN (NUEVA SUBSECCIÓN)",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CABLES ACELERADOR",
+  "subcategoria": "Caja de engranaje",
   "marcas": [
    "Husqvarna"
   ],
@@ -6979,7 +7004,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CABLES ACELERADOR - REEMPLAZOS",
   "foto": "2113062.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.654Z"
  },
  {
   "codigo": "2113063",
@@ -8995,7 +9021,7 @@
   "descripcion": "Tanza Redonda 2.4mm Blister 15mts Aprox.",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tanza Redonda 2.4mm Blister 15mts Aprox.",
@@ -9014,7 +9040,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2116560.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2116561",
@@ -9023,7 +9050,7 @@
   "descripcion": "Tanza Redonda 2mm Blister 450grs 120mts Aprox.",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tanza Redonda 2mm Blister 450grs 120mts Aprox.",
@@ -9042,7 +9069,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2116561.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2116562",
@@ -9051,7 +9079,7 @@
   "descripcion": "Tanza Redonda 2.4mm Blister 450grs 85mts Aprox.",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tanza Redonda 2.4mm Blister 450grs 85mts Aprox.",
@@ -9070,7 +9098,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2116562.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2116563",
@@ -9079,7 +9108,7 @@
   "descripcion": "Tanza Redonda 3mm Blister 450grs 60mts Aprox.",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tanza Redonda 3mm Blister 450grs 60mts Aprox.",
@@ -9098,7 +9127,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2116563.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2116564",
@@ -9107,7 +9137,7 @@
   "descripcion": "Tanza Cuadrada 2.4mm Blister 450grs 85mts Aprox.",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tanza Cuadrada 2.4mm Blister 450grs 85mts Aprox.",
@@ -9126,7 +9156,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2116564.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2116565",
@@ -9135,7 +9166,7 @@
   "descripcion": "Tanza Trenzada 3mm Tanza Cuadrada 2.4mm Tanza Redonda 2.4mm Tanza Cuadrada 3mm Blister 450grs 60mts 1.35kg 255mts Aprox. 1.35kg 255mts Aprox. Blister 450grs 60mts Aprox. Aprox.",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tanza Trenzada 3mm Tanza Cuadrada 2.4mm Tanza Redonda 2.4mm Tanza Cuadrada 3mm Blister 450grs 60mts 1.35kg 255mts Aprox. 1.35kg 255mts Aprox. Blister 450grs 60mts Aprox. Aprox.",
@@ -9155,7 +9186,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2116565.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2116566",
@@ -9164,7 +9196,7 @@
   "descripcion": "Tanza trenzada 2.4mm Blister 450grs 85mts Aprox.",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tanza trenzada 2.4mm Blister 450grs 85mts Aprox.",
@@ -9183,7 +9215,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2116566.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2116567",
@@ -9192,7 +9225,7 @@
   "descripcion": "Tanza Trenzada 3mm Blister 450grs 60mts Aprox.",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tanza Trenzada 3mm Blister 450grs 60mts Aprox.",
@@ -9209,7 +9242,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2116567.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2116570",
@@ -9302,7 +9336,7 @@
   "descripcion": "Tanza Cuadrada 2.4mm 1.35kg 255mts Aprox.",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tanza Cuadrada 2.4mm 1.35kg 255mts Aprox.",
@@ -9319,7 +9353,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2116593.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2116594",
@@ -9328,7 +9363,7 @@
   "descripcion": "Tanza Redonda 2.4mm 1.35kg 255mts Aprox.",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tanza Redonda 2.4mm 1.35kg 255mts Aprox.",
@@ -9345,7 +9380,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2116594.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2116595",
@@ -9466,7 +9502,7 @@
   "descripcion": "Chinas 33/34/40/43/52 10x1.25 FLH",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Chinas 33/34/40/43/52 10x1.25 FLH",
@@ -9483,7 +9519,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2117530.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117540",
@@ -9492,7 +9529,7 @@
   "descripcion": "Chinas 33/34/40/43/52 Echo SRM Series 10x1.25 FLH",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Echo"
   ],
@@ -9511,7 +9548,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117540.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117545",
@@ -9520,7 +9558,7 @@
   "descripcion": "Stihl FS 160/220/280/450 12X1.5 FLH",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -9539,7 +9577,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117545.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117548",
@@ -9548,7 +9587,7 @@
   "descripcion": "Oleo Mac 740/745/755 Paso 8X1.25 MLH",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Oleo Mac"
   ],
@@ -9569,7 +9608,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117548.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117550",
@@ -9578,7 +9618,7 @@
   "descripcion": "Stihl FS 86/106/44/55 Paso 10X1 FLH",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -9599,7 +9639,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117550.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117552",
@@ -9608,7 +9649,7 @@
   "descripcion": "Chinas 33/34/40/43/52 Echo 2300/4300/4605 Paso 10X1.25 FLH",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Echo"
   ],
@@ -9629,7 +9670,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117552.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117554",
@@ -9638,7 +9680,7 @@
   "descripcion": "Stihl FS 160/220/280 360/450 Paso 12x1.5 FLH",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -9659,7 +9701,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117554.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117556",
@@ -9668,7 +9711,7 @@
   "descripcion": "Husqv. 132/142R/236R 265R/345R Echo 5810 Paso 10x1.75 FLH",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Echo",
    "Husqvarna"
@@ -9691,7 +9734,8 @@
   "foto": "2117556.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117558",
@@ -9700,7 +9744,7 @@
   "descripcion": "Shindaiwa C35/C350/B530 B450/B45LA Paso 10x1.25 MLH",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Shindaiwa C35/C350/B530 B450/B45LA Paso 10x1.25 MLH",
@@ -9717,7 +9761,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117558.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117563",
@@ -9726,7 +9771,7 @@
   "descripcion": "Cuchillas Desmalezadora Repl St 11,8”",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "Cabezales porta tanza",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -9746,7 +9791,8 @@
   "foto": "2117563.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117568",
@@ -9755,7 +9801,7 @@
   "descripcion": "Stihl FS 500/550 Estrella 5P Paso 14X1.50 FLH",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Stihl FS 500/550 Estrella 5P Paso 14X1.50 FLH",
@@ -9772,7 +9818,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117568.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117570",
@@ -9781,7 +9828,7 @@
   "descripcion": "Cabezal Porta Tanza Repl ST FS38 C6-2 OEM 4006 7102126",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -9803,7 +9850,8 @@
   "foto": "2117570.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117571",
@@ -9812,7 +9860,7 @@
   "descripcion": "Part. Aut. Repl ST FS FS38 C6-2 OEM 40067104003",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -9834,7 +9882,8 @@
   "foto": "2117571.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117572",
@@ -9843,7 +9892,7 @@
   "descripcion": "Ojal Repl ST FS38 C6-2 OEM",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -9863,7 +9912,8 @@
   "foto": "2117572.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117573",
@@ -9872,7 +9922,7 @@
   "descripcion": "Resorte Repl ST FS38 C6-2 OEM",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -9892,7 +9942,8 @@
   "foto": "2117573.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117574",
@@ -9901,7 +9952,7 @@
   "descripcion": "Repl Honda UMK425E/UMK435E TANZA",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Honda"
   ],
@@ -9920,7 +9971,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2117574.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-render"
+  "foto_origen": "pdf-render",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117575",
@@ -9929,7 +9981,7 @@
   "descripcion": "Ojalillo Presentación 20u.",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Ojalillo Presentación 20u.",
@@ -9946,7 +9998,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117575.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-render"
+  "foto_origen": "pdf-render",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117576",
@@ -9955,7 +10008,7 @@
   "descripcion": "Shindaiwa C35/C350/B530 Stihl FS 500/550 Ojalillo Tuerca Cierre B450/B45LA Estrella 5P Presentación 20u. Presentación 10u. Paso 10x1.25 MLH Paso 14X1.50",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl",
    "Shindaiwa"
@@ -9978,7 +10031,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117576.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117577",
@@ -9987,7 +10041,7 @@
   "descripcion": "Resorte Presentación 10u.",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Resorte Presentación 10u.",
@@ -10004,7 +10058,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117577.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117585",
@@ -10013,7 +10068,7 @@
   "descripcion": "Repl ST FS450/45280 OEM 46-2",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -10035,7 +10090,8 @@
   "foto": "2117585.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117586",
@@ -10044,7 +10100,7 @@
   "descripcion": "Part. Aut. Repl ST FS FS450 46-2",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -10064,7 +10120,8 @@
   "foto": "2117586.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117587",
@@ -10073,7 +10130,7 @@
   "descripcion": "Ojal Repl ST FS450 46-2",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -10093,7 +10150,8 @@
   "foto": "2117587.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117588",
@@ -10102,7 +10160,7 @@
   "descripcion": "Resorte De Cabezal Repl FS450/FS460 Desbrozadora 46-2",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [
    "FS450/FS460"
@@ -10121,7 +10179,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2117588.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117590",
@@ -10130,7 +10189,7 @@
   "descripcion": "Repl Stihl Fs 55/56/70 94/91/111/13",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -10149,7 +10208,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117590.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117591",
@@ -10158,7 +10218,7 @@
   "descripcion": "Part. Aut. Repl ST FS FS55 C26-2",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -10178,7 +10238,8 @@
   "foto": "2117591.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117592",
@@ -10187,7 +10248,7 @@
   "descripcion": "Ojal Repl ST FS55 C26-2",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -10207,7 +10268,8 @@
   "foto": "2117592.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117593",
@@ -10216,7 +10278,7 @@
   "descripcion": "Resorte De Cabezal Repl FS55",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [],
   "codigo_original": [
    "FS55"
@@ -10235,7 +10297,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - MANUALES - CORTE BAJO",
   "foto": "2117593.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2117595",
@@ -10244,7 +10307,7 @@
   "descripcion": "Stihl Trimcut 42-2 Repl Fs 160/220/280 OEM",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "CABEZALES DE TANZA",
+  "subcategoria": "Cabezales de tanza",
   "marcas": [
    "Stihl"
   ],
@@ -10263,7 +10326,8 @@
   "encabezado_pdf": "CABEZALES DE TANZA - AUTOMÁTICOS - CARGA RÁPIDA",
   "foto": "2117595.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2120011",
@@ -11845,7 +11909,7 @@
   "descripcion": "Eje de transmisión (cardán 9…",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CABLES ACELERADOR",
+  "subcategoria": "Partes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Eje de transmisión (cardán 9…",
@@ -11862,7 +11926,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CABLES ACELERADOR - REEMPLAZOS",
   "foto": "2120107.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2120109",
@@ -12016,7 +12081,7 @@
   "descripcion": "Manguera Comb · Stihl FS 38-55",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Comb · Stihl FS 38-55",
@@ -12033,7 +12098,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2121061.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2121062",
@@ -12042,7 +12108,7 @@
   "descripcion": "Manguera Comb REPL · Stihl FS 120/250/450",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Comb REPL · Stihl FS 120/250/450",
@@ -12059,7 +12125,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2121062.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2121065",
@@ -12706,7 +12773,7 @@
   "descripcion": "Bobina de Ignicion ST-FS120/200",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -12726,7 +12793,8 @@
   "foto": "2124231.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2124232",
@@ -12793,7 +12861,7 @@
   "descripcion": "Bobina de encendido Stihl FS85",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -12812,7 +12880,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2124235.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2124236",
@@ -12821,7 +12890,7 @@
   "descripcion": "Bobina de encendido Stihl FS161/221/291",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -12842,7 +12911,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2124236.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2124240",
@@ -12851,7 +12921,7 @@
   "descripcion": "Bobina de Ignicion ECHO SRM4605",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Echo"
   ],
@@ -12870,7 +12940,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2124240.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2124245",
@@ -12879,7 +12950,7 @@
   "descripcion": "Bobina de encendido TLE43 Kasei BC46 BC430",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Bobina de encendido TLE43 Kasei BC46 BC430",
@@ -12896,7 +12967,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2124245.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2124246",
@@ -12905,7 +12977,7 @@
   "descripcion": "Bobina de encendido Oleo Mac SPARTA42/44",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Oleo Mac"
   ],
@@ -12924,7 +12996,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2124246.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2124247",
@@ -12933,7 +13006,7 @@
   "descripcion": "Bobina de encendido Oleo Mac 753/746/750/453 CAMPANA DE EMBRAGUE",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Oleo Mac"
   ],
@@ -12952,7 +13025,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2124247.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2124248",
@@ -12961,7 +13035,7 @@
   "descripcion": "Bobina de encendido Shindaiwa Shindawa- C230",
   "familia": "Desmalezadoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Shindaiwa"
   ],
@@ -12980,7 +13054,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2124248.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2124249",
@@ -13017,7 +13092,7 @@
   "descripcion": "Cable Acelerador Tl33 43 52",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "C ABLES ACELERADOR",
+  "subcategoria": "Cables",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Cable Acelerador Tl33 43 52",
@@ -13034,7 +13109,8 @@
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2125151.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-render"
+  "foto_origen": "pdf-render",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2125152",
@@ -13043,7 +13119,7 @@
   "descripcion": "Cable Acelerador · Echo SRM-4605 · Modelo Nuevo",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "C ABLES ACELERADOR",
+  "subcategoria": "Cables",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Cable Acelerador · Echo SRM-4605 · Modelo Nuevo",
@@ -13060,7 +13136,8 @@
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2125152.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2125153",
@@ -13069,7 +13146,7 @@
   "descripcion": "Cable Acelerador · Echo SRM-4300",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "C ABLES ACELERADOR",
+  "subcategoria": "Cables",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Cable Acelerador · Echo SRM-4300",
@@ -13086,7 +13163,8 @@
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2125153.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2125154",
@@ -13182,7 +13260,7 @@
   "descripcion": "CAJAS DE ENGRANAJES",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "C ABLES ACELERADOR",
+  "subcategoria": "Cables",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "CAJAS DE ENGRANAJES",
@@ -13199,7 +13277,8 @@
   "encabezado_pdf": "DESMALEZADORAS - C ABLES ACELERADOR - REEMPLAZOS",
   "foto": "2125158.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.655Z"
  },
  {
   "codigo": "2125159",
@@ -15530,7 +15609,7 @@
   "descripcion": "Kit Cilindro y Piston Chinas 3800 39mm",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Kit de cilindros",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Kit Cilindro y Piston Chinas 3800 39mm",
@@ -15547,7 +15626,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2203011.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203012",
@@ -15608,7 +15688,7 @@
   "descripcion": "Silenciador de escape Stihl MS170/180",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "RETENES",
+  "subcategoria": "Escapes",
   "marcas": [
    "Stihl"
   ],
@@ -15619,7 +15699,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 124,
   "origen": "grilla",
@@ -15627,7 +15707,8 @@
   "encabezado_pdf": "RETENES",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203015",
@@ -15636,7 +15717,7 @@
   "descripcion": "Silenciador de escape Stihl MS230/250",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "RETENES",
+  "subcategoria": "Escapes",
   "marcas": [
    "Stihl"
   ],
@@ -15647,7 +15728,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 124,
   "origen": "grilla",
@@ -15655,7 +15736,8 @@
   "encabezado_pdf": "RETENES",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203016",
@@ -15664,7 +15746,7 @@
   "descripcion": "Silenciador de escape Stihl MS360",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "RETENES",
+  "subcategoria": "Escapes",
   "marcas": [
    "Stihl"
   ],
@@ -15675,7 +15757,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 124,
   "origen": "grilla",
@@ -15683,7 +15765,8 @@
   "encabezado_pdf": "RETENES",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203017",
@@ -15692,7 +15775,7 @@
   "descripcion": "Silenciador de escape Stihl MS341/361",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "RETENES",
+  "subcategoria": "Escapes",
   "marcas": [
    "Stihl"
   ],
@@ -15703,7 +15786,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 124,
   "origen": "grilla",
@@ -15711,7 +15794,8 @@
   "encabezado_pdf": "RETENES",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203018",
@@ -15720,7 +15804,7 @@
   "descripcion": "Silenciador de escape Stihl MS380/038",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "RETENES",
+  "subcategoria": "Escapes",
   "marcas": [
    "Stihl"
   ],
@@ -15731,7 +15815,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 124,
   "origen": "grilla",
@@ -15739,7 +15823,8 @@
   "encabezado_pdf": "RETENES",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203019",
@@ -15748,7 +15833,7 @@
   "descripcion": "Silenciador de escape Stihl MS381/382",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "RETENES",
+  "subcategoria": "Escapes",
   "marcas": [
    "Stihl"
   ],
@@ -15759,7 +15844,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 124,
   "origen": "grilla",
@@ -15767,7 +15852,8 @@
   "encabezado_pdf": "RETENES",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203020",
@@ -15776,7 +15862,7 @@
   "descripcion": "Escape Chinas 3800",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
-  "subcategoria": "Kit de cilindros",
+  "subcategoria": "Escapes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Escape Chinas 3800",
@@ -15785,7 +15871,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 116,
   "origen": "grilla",
@@ -15793,7 +15879,8 @@
   "encabezado_pdf": "MOTOSIERRAS CHINAS 38CC",
   "foto": "2203020.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203021",
@@ -15802,7 +15889,7 @@
   "descripcion": "Escape Motosierras Chinas",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
-  "subcategoria": "Kit de cilindros",
+  "subcategoria": "Escapes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Escape Motosierras Chinas",
@@ -15811,7 +15898,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 118,
   "origen": "grilla",
@@ -15819,7 +15906,8 @@
   "encabezado_pdf": "MOTOSIERRAS CHINAS 45CC / 52CC",
   "foto": "2203021.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203022",
@@ -15828,7 +15916,7 @@
   "descripcion": "Tornillo de escape Chinas 3800",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
-  "subcategoria": "Kit de cilindros",
+  "subcategoria": "Escapes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tornillo de escape Chinas 3800",
@@ -15837,7 +15925,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 116,
   "origen": "grilla",
@@ -15845,7 +15933,8 @@
   "encabezado_pdf": "MOTOSIERRAS CHINAS 38CC",
   "foto": "2203022.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203025",
@@ -15854,7 +15943,7 @@
   "descripcion": "Silenciador de escape (con chapa) Husqvarna 61/268/272",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Escapes",
   "marcas": [
    "Husqvarna"
   ],
@@ -15865,7 +15954,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 128,
   "origen": "grilla",
@@ -15873,7 +15962,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2203025.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203026",
@@ -15882,7 +15972,7 @@
   "descripcion": "Silenciador de escape (con chapa) Husqvarna 365/372",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Escapes",
   "marcas": [
    "Husqvarna"
   ],
@@ -15893,7 +15983,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 128,
   "origen": "grilla",
@@ -15901,7 +15991,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2203026.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203027",
@@ -15910,7 +16001,7 @@
   "descripcion": "Silenciador de escape (con… Husqvarna 365/372/385/390",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Escapes",
   "marcas": [
    "Husqvarna"
   ],
@@ -15921,7 +16012,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 128,
   "origen": "grilla",
@@ -15929,7 +16020,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2203027.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203039",
@@ -16979,11 +17071,11 @@
  {
   "codigo": "2203401",
   "estado": "completo",
-  "nombre": "Kit de cilindros",
+  "nombre": "Escape REPL · MS170 MS180",
   "descripcion": "Escape REPL · MS170 MS180",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "RETENES",
+  "subcategoria": "Escapes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Escape REPL · MS170 MS180",
@@ -16992,7 +17084,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 124,
   "origen": "grilla",
@@ -17000,16 +17092,17 @@
   "encabezado_pdf": "RETENES",
   "foto": "2203401.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203402",
   "estado": "completo",
-  "nombre": "Kit de cilindros",
+  "nombre": "Escape REPL · ST MS 380/381",
   "descripcion": "Escape REPL · ST MS 380/381",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "RETENES",
+  "subcategoria": "Escapes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Escape REPL · ST MS 380/381",
@@ -17018,7 +17111,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 124,
   "origen": "grilla",
@@ -17026,16 +17119,17 @@
   "encabezado_pdf": "RETENES",
   "foto": "2203402.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203403",
   "estado": "completo",
-  "nombre": "Kit de cilindros",
+  "nombre": "Escape REPL · ST MS 340/360",
   "descripcion": "Escape REPL · ST MS 340/360",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "RETENES",
+  "subcategoria": "Escapes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Escape REPL · ST MS 340/360",
@@ -17044,7 +17138,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 124,
   "origen": "grilla",
@@ -17052,16 +17146,17 @@
   "encabezado_pdf": "RETENES",
   "foto": "2203403.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203404",
   "estado": "completo",
-  "nombre": "Kit de cilindros",
+  "nombre": "Escape REPL · ST MS 361",
   "descripcion": "Escape REPL · ST MS 361",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "RETENES",
+  "subcategoria": "Escapes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Escape REPL · ST MS 361",
@@ -17070,7 +17165,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 124,
   "origen": "grilla",
@@ -17078,16 +17173,17 @@
   "encabezado_pdf": "RETENES",
   "foto": "2203404.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2203405",
   "estado": "completo",
-  "nombre": "Kit de cilindros",
+  "nombre": "Escape REPL · HUS 61/268/272",
   "descripcion": "Escape REPL · HUS 61/268/272",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "RETENES",
+  "subcategoria": "Escapes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Escape REPL · HUS 61/268/272",
@@ -17096,7 +17192,7 @@
   "ref_interna": [],
   "clave_rubro": "2 Tiempos",
   "clave_subrubro": "Motosierra",
-  "clave_producto": "Kit de cilindros",
+  "clave_producto": "Escape",
   "clave_valida": true,
   "pagina": 124,
   "origen": "grilla",
@@ -17104,7 +17200,8 @@
   "encabezado_pdf": "RETENES",
   "foto": "2203405.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2204015",
@@ -17113,7 +17210,7 @@
   "descripcion": "Kit Piston Chinas 3800 39mm",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Kit de pistón",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Kit Piston Chinas 3800 39mm",
@@ -17130,7 +17227,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2204015.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2204016",
@@ -17801,7 +17899,7 @@
   "descripcion": "Aros de Piston Chinas 3800 39mm",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Aros",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Aros de Piston Chinas 3800 39mm",
@@ -17818,7 +17916,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2205019.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.656Z"
  },
  {
   "codigo": "2205020",
@@ -20473,7 +20572,7 @@
   "descripcion": "Embrague completo Chinas 3800",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Embragues / campanas / resortes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Embrague completo Chinas 3800",
@@ -20490,7 +20589,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2212020.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2212021",
@@ -20889,7 +20989,7 @@
   "descripcion": "Conjunto de embrague Husqvarna 61/268/272",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "EMBRAGUES",
   "marcas": [
    "Husqvarna"
   ],
@@ -20908,7 +21008,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2212055.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2212056",
@@ -20917,7 +21018,7 @@
   "descripcion": "Conjunto de embrague Husqvarna 365/372",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "EMBRAGUES",
   "marcas": [
    "Husqvarna"
   ],
@@ -20938,7 +21039,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2212056.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2212076",
@@ -20947,7 +21049,7 @@
   "descripcion": "Piñón recto + rodamiento, .325\" 7… Stihl 230/250 pinon",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Embragues / campanas / resortes",
   "marcas": [
    "Stihl"
   ],
@@ -20966,7 +21068,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2212076.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2212077",
@@ -20975,7 +21078,7 @@
   "descripcion": "Piñón recto + rodamiento, 3/8\" 6… P340/350/360S Pinon",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Embragues / campanas / resortes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Piñón recto + rodamiento, 3/8\" 6… P340/350/360S Pinon",
@@ -20994,7 +21097,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2212077.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2212078",
@@ -21003,7 +21107,7 @@
   "descripcion": "Piñón recto + rodamiento, 3/8\" 7… Husqvarna 61/268/272 Pinon",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Embragues / campanas / resortes",
   "marcas": [
    "Husqvarna"
   ],
@@ -21022,7 +21126,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2212078.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2212079",
@@ -21031,7 +21136,7 @@
   "descripcion": "Piñón recto, 3/8\" 7 dientes Stihl 290/360 Pinon",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Embragues / campanas / resortes",
   "marcas": [
    "Stihl"
   ],
@@ -21050,7 +21155,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2212079.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2212080",
@@ -21059,7 +21165,7 @@
   "descripcion": "Juego de campana de embrague, 3/8\"…",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "CAMPANA DE EMBRAGUE",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Juego de campana de embrague, 3/8\"…",
@@ -21076,7 +21182,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2212080.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2212081",
@@ -21085,7 +21192,7 @@
   "descripcion": "Campana de Embrague Piñon Fijo Chinas 3800",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Embragues / campanas / resortes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Campana de Embrague Piñon Fijo Chinas 3800",
@@ -21102,7 +21209,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2212081.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2212082",
@@ -21111,7 +21219,7 @@
   "descripcion": "Campana de embrague Piñon flotante kit Chinas 3800",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Embragues / campanas / resortes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Campana de embrague Piñon flotante kit Chinas 3800",
@@ -21128,7 +21236,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2212082.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2212083",
@@ -21137,7 +21246,7 @@
   "descripcion": "Piñón recto, .404\" 7 dientes Stihl 08/08S TAPAS DE DEPOSITOS",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Embragues / campanas / resortes",
   "marcas": [
    "Stihl"
   ],
@@ -21156,7 +21265,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2212083.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:08:36.508Z"
  },
  {
   "codigo": "2212084",
@@ -21165,7 +21275,7 @@
   "descripcion": "Piñón recto + rodamiento, 3/8\" 7… Husqvarna 365/372 Pinon",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Embragues / campanas / resortes",
   "marcas": [
    "Husqvarna"
   ],
@@ -21184,7 +21294,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2212084.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2212086",
@@ -21497,7 +21608,7 @@
   "descripcion": "Juego de campana de embrague, .325\"… Stihl 024/026",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "CAMPANA DE EMBRAGUE",
   "marcas": [
    "Stihl"
   ],
@@ -21516,7 +21627,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2212108.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2214020",
@@ -21986,7 +22098,7 @@
   "descripcion": "Tapa Tanque Comb REPL ST FS 160/220/280",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Tanque de combustible / tapa",
   "marcas": [
    "Stihl"
   ],
@@ -22006,7 +22118,8 @@
   "foto": "2214039.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2214040",
@@ -22119,7 +22232,7 @@
   "descripcion": "Tapa Tanque Aceite REPL HUS 340/345",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Tanque de combustible / tapa",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tapa Tanque Aceite REPL HUS 340/345",
@@ -22136,7 +22249,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2214045.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2214046",
@@ -22145,7 +22259,7 @@
   "descripcion": "Tapa Tanque Comb Y Aceite REPL HUS 288/365/455",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Tanque de combustible / tapa",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tapa Tanque Comb Y Aceite REPL HUS 288/365/455",
@@ -22162,7 +22276,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2214046.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2214047",
@@ -22197,7 +22312,7 @@
   "descripcion": "Tapa Tanque Comb HUS 143RII",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Tanque de combustible / tapa",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tapa Tanque Comb HUS 143RII",
@@ -22214,7 +22329,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2214048.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2214049",
@@ -22223,7 +22339,7 @@
   "descripcion": "Tapa Tanque Comb REPL B&S 799585",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Tanque de combustible / tapa",
   "marcas": [
    "Briggs & Stratton"
   ],
@@ -22245,7 +22361,8 @@
   "foto": "2214049.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2214051",
@@ -22254,7 +22371,7 @@
   "descripcion": "Tapa Tanque Comb Tapa Tanque Comb REPL B&S 3.5/4.5 REPL B&S 692046 CIGÜEÑAL",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Tanque de combustible / tapa",
   "marcas": [
    "Briggs & Stratton"
   ],
@@ -22276,7 +22393,8 @@
   "foto": "2214051.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-render",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2214052",
@@ -22285,7 +22403,7 @@
   "descripcion": "Tapa Tanque Comb REPL B&S 3.5/4.5",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Tanque de combustible / tapa",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Tapa Tanque Comb REPL B&S 3.5/4.5",
@@ -22302,7 +22420,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2214052.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2214060",
@@ -24935,7 +25054,7 @@
   "descripcion": "Engranaje sinfín Husqvarna 235/236/240",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "SIN FINES HUSQVARNA / OTROS",
+  "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
   "marcas": [
    "Husqvarna"
   ],
@@ -24954,7 +25073,8 @@
   "encabezado_pdf": "SIN FINES HUSQVARNA / OTROS",
   "foto": "2219091.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2219092",
@@ -24963,7 +25083,7 @@
   "descripcion": "Engranaje sinfín Husqvarna 61/268/272 MANUBRIOS (DENTRO DE )",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "SIN FINES HUSQVARNA / OTROS",
+  "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
   "marcas": [
    "Husqvarna"
   ],
@@ -24982,7 +25102,8 @@
   "encabezado_pdf": "SIN FINES HUSQVARNA / OTROS",
   "foto": "2219092.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2219093",
@@ -24991,7 +25112,7 @@
   "descripcion": "Engranaje sinfín Husqvarna 365/372(NEW) 575/570",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "SIN FINES HUSQVARNA / OTROS",
+  "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
   "marcas": [
    "Husqvarna"
   ],
@@ -25010,7 +25131,8 @@
   "encabezado_pdf": "SIN FINES HUSQVARNA / OTROS",
   "foto": "2219093.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2219094",
@@ -25019,7 +25141,7 @@
   "descripcion": "Engranaje sinfín Husqvarna 365(Old)/385/390",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "SIN FINES HUSQVARNA / OTROS",
+  "subcategoria": "BOMBA DE ACEITE Y SIN FIN",
   "marcas": [
    "Husqvarna"
   ],
@@ -25038,7 +25160,8 @@
   "encabezado_pdf": "SIN FINES HUSQVARNA / OTROS",
   "foto": "2219094.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2219095",
@@ -25313,7 +25436,7 @@
   "descripcion": "Volante Magnético Chinas 3800",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Partes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Volante magnético Chinas 3800",
@@ -25330,7 +25453,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2220016.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2220017",
@@ -25365,7 +25489,7 @@
   "descripcion": "Switch stop Chinas 3800",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Partes",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Switch stop Chinas 3800",
@@ -25382,7 +25506,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2220018.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2220019",
@@ -26230,7 +26355,7 @@
   "descripcion": "Brida De Admisión · REPL ST MS 170/180",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Brida De Admisión · REPL ST MS 170/180",
@@ -26247,7 +26372,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2220093.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2220094",
@@ -26256,7 +26382,7 @@
   "descripcion": "Brida De Admisión · REPL ST MS 210/230",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Brida De Admisión · REPL ST MS 210/230",
@@ -26273,7 +26399,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2220094.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2220096",
@@ -26313,7 +26440,7 @@
   "descripcion": "Brida De Admisión · REPL ST MS 381/382",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Brida De Admisión · REPL ST MS 381/382",
@@ -26330,7 +26457,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2220097.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2220098",
@@ -26339,7 +26467,7 @@
   "descripcion": "Brida De Admisión · REPL HUS 365/372",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Brida De Admisión · REPL HUS 365/372",
@@ -26356,7 +26484,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2220098.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.657Z"
  },
  {
   "codigo": "2220099",
@@ -26735,7 +26864,7 @@
   "descripcion": "Manubrio Código Logbelts: Mandril portacuchilla 54\" 618P09257 Código Logbelts: Eje 46\"",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "SIN FINES HUSQVARNA / OTROS",
+  "subcategoria": "Partes",
   "marcas": [
    "Husqvarna"
   ],
@@ -26756,7 +26885,8 @@
   "encabezado_pdf": "SIN FINES HUSQVARNA / OTROS",
   "foto": "2220118.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2220119",
@@ -26765,7 +26895,7 @@
   "descripcion": "Manubrio (aluminio, buje de goma… EJES DE TRANSMISIÓN — A CAJAS DE ENGRANAJE Código Logbelts: Eje 54\"",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "SIN FINES HUSQVARNA / OTROS",
+  "subcategoria": "Partes",
   "marcas": [
    "Husqvarna"
   ],
@@ -26786,7 +26916,8 @@
   "encabezado_pdf": "SIN FINES HUSQVARNA / OTROS",
   "foto": "2220119.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2220120",
@@ -28028,7 +28159,7 @@
   "descripcion": "Mangueras Motosierras · Sthil MS 170/180",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Mangueras Motosierras · Sthil MS 170/180",
@@ -28045,7 +28176,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2221610.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2221611",
@@ -28054,7 +28186,7 @@
   "descripcion": "Mangueras Motosierras · Sthil MS 230/250",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Mangueras Motosierras · Sthil MS 230/250",
@@ -28071,7 +28203,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2221611.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2221614",
@@ -28080,7 +28213,7 @@
   "descripcion": "Mangueras Motosierras · Sthil MS 380/381",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Mangueras Motosierras · Sthil MS 380/381",
@@ -28097,7 +28230,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2221614.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2221615",
@@ -28106,7 +28240,7 @@
   "descripcion": "Manguera Comb REPL · Stihl MS 290/360",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Comb REPL · Stihl MS 290/360",
@@ -28123,7 +28257,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2221615.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2221616",
@@ -28132,7 +28267,7 @@
   "descripcion": "Manguera Comb REPL · Stihl MS 260/280",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Comb REPL · Stihl MS 260/280",
@@ -28149,7 +28284,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2221616.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2221617",
@@ -28158,7 +28294,7 @@
   "descripcion": "Manguera Comb REPL · Stihl MS 341/460",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Comb REPL · Stihl MS 341/460",
@@ -28175,7 +28311,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2221617.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2221618",
@@ -28184,7 +28321,7 @@
   "descripcion": "Manguera Comb REPL · Stihl MS 381",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Comb REPL · Stihl MS 381",
@@ -28201,7 +28338,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2221618.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2221620",
@@ -28210,7 +28348,7 @@
   "descripcion": "Chinas 45/52",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Chinas 45/52",
@@ -28227,7 +28365,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2221620.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2221621",
@@ -28236,7 +28375,7 @@
   "descripcion": "Manguera Comb · MS230 MS250",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Comb · MS230 MS250",
@@ -28253,7 +28392,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2221621.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2221622",
@@ -28262,7 +28402,7 @@
   "descripcion": "Manguera Comb Doble · REPL 38CC",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Comb Doble · REPL 38CC",
@@ -28279,7 +28419,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2221622.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222010",
@@ -28288,7 +28429,7 @@
   "descripcion": "Carter completo Chinas 3800",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Cigüeñal",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Carter completo Chinas 3800",
@@ -28305,7 +28446,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2222010.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222011",
@@ -28340,7 +28482,7 @@
   "descripcion": "Cigüeñal completo Chinas 3800",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Cigüeñal",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Cigüeñal completo Chinas 3800",
@@ -28357,7 +28499,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2222012.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222013",
@@ -28392,7 +28535,7 @@
   "descripcion": "Jaula de agujas Cigüeñal Chinas 3800",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Cigüeñal",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Jaula de agujas Cigüeñal Chinas 3800",
@@ -28411,7 +28554,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": null,
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": null
+  "foto_origen": null,
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222015",
@@ -28420,7 +28564,7 @@
   "descripcion": "Jaula de agujas piston Chinas 3800",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Cigüeñal",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Jaula de agujas piston Chinas 3800",
@@ -28437,7 +28581,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2222015.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222016",
@@ -28446,7 +28591,7 @@
   "descripcion": "Jaula de agujas campana de embrague Chinas 3800",
   "familia": "Desmalezadoras",
   "familia_indice": "Desmalezadoras",
-  "subcategoria": "CAJAS DE ENGRANAJES",
+  "subcategoria": "Cigüeñal",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Jaula de agujas campana de embrague Chinas 3800",
@@ -28463,7 +28608,8 @@
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2222016.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222017",
@@ -28550,7 +28696,7 @@
   "descripcion": "Cigüeñal ST-MS170 RETENES",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Stihl"
   ],
@@ -28570,7 +28716,8 @@
   "foto": "2222030.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222031",
@@ -28579,7 +28726,7 @@
   "descripcion": "Cigüeñal ST-MS180",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Stihl"
   ],
@@ -28599,7 +28746,8 @@
   "foto": "2222031.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222033",
@@ -28608,7 +28756,7 @@
   "descripcion": "Cigüeñal ST-MS230/250",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Stihl"
   ],
@@ -28628,7 +28776,8 @@
   "foto": "2222033.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222036",
@@ -28637,7 +28786,7 @@
   "descripcion": "Cigüeñal Stihl MS360/036",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Stihl"
   ],
@@ -28656,7 +28805,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2222036.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222037",
@@ -28665,7 +28815,7 @@
   "descripcion": "Cigüeñal Stihl MS361",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Stihl"
   ],
@@ -28684,7 +28834,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2222037.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222038",
@@ -28693,7 +28844,7 @@
   "descripcion": "Cigüeñal Stihl MS380/381",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Stihl"
   ],
@@ -28712,7 +28863,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2222038.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222039",
@@ -28721,7 +28873,7 @@
   "descripcion": "Cigüeñal Stihl MS382",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Stihl"
   ],
@@ -28740,7 +28892,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2222039.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222040",
@@ -28749,7 +28902,7 @@
   "descripcion": "Cigüeñal Husqvarna 445/450",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Husqvarna"
   ],
@@ -28768,7 +28921,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2222040.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222045",
@@ -28777,7 +28931,7 @@
   "descripcion": "Bloque de cárter Stihl MS170/180",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Stihl"
   ],
@@ -28796,7 +28950,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2222045.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222046",
@@ -28805,7 +28960,7 @@
   "descripcion": "Bloque de cárter Stihl MS230/250",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Stihl"
   ],
@@ -28824,7 +28979,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2222046.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222047",
@@ -28833,7 +28989,7 @@
   "descripcion": "Bloque de cárter Stihl MS340/360",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Stihl"
   ],
@@ -28852,7 +29008,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2222047.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222048",
@@ -28861,7 +29018,7 @@
   "descripcion": "Bloque de cárter Stihl MS341/361",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Stihl"
   ],
@@ -28880,7 +29037,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2222048.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222049",
@@ -28889,7 +29047,7 @@
   "descripcion": "Bloque de cárter Stihl MS380/381",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Stihl"
   ],
@@ -28908,7 +29066,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2222049.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222050",
@@ -28917,7 +29076,7 @@
   "descripcion": "Bloque de cárter Husqvarna 61/268/272",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "SIN FINES HUSQVARNA / OTROS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Husqvarna"
   ],
@@ -28936,7 +29095,8 @@
   "encabezado_pdf": "SIN FINES HUSQVARNA / OTROS",
   "foto": "2222050.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222051",
@@ -28945,7 +29105,7 @@
   "descripcion": "Bloque de cárter Husqvarna 365/372R",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "SIN FINES HUSQVARNA / OTROS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Husqvarna"
   ],
@@ -28964,7 +29124,8 @@
   "encabezado_pdf": "SIN FINES HUSQVARNA / OTROS",
   "foto": "2222051.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222052",
@@ -28973,7 +29134,7 @@
   "descripcion": "Bloque de cárter Husqvarna 365/372S",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "SIN FINES HUSQVARNA / OTROS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Husqvarna"
   ],
@@ -28992,7 +29153,8 @@
   "encabezado_pdf": "SIN FINES HUSQVARNA / OTROS",
   "foto": "2222052.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222053",
@@ -29001,7 +29163,7 @@
   "descripcion": "Cigüeñal Husqvarna 51/55",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Husqvarna"
   ],
@@ -29020,7 +29182,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2222053.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222054",
@@ -29029,7 +29192,7 @@
   "descripcion": "Cigüeñal Husqvarna 136/137/141/142",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Husqvarna"
   ],
@@ -29048,7 +29211,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2222054.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222055",
@@ -29057,7 +29221,7 @@
   "descripcion": "Cigüeñal Husqvarna 61/268/272 BOBINA DE INGNICION 2T",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Husqvarna"
   ],
@@ -29076,7 +29240,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2222055.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2222056",
@@ -29085,7 +29250,7 @@
   "descripcion": "Cigüeñal (D15 / original) Husqvarna 365/372",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "Cigüeñal",
   "marcas": [
    "Husqvarna"
   ],
@@ -29104,7 +29269,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2222056.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2224011",
@@ -29165,7 +29331,7 @@
   "descripcion": "Bobina de Ignicion REPL MS 170/180",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Bobina de Ignicion REPL MS 170/180",
@@ -29182,7 +29348,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2224017.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2224018",
@@ -29191,7 +29358,7 @@
   "descripcion": "Bobina de Ignicion ST-230/250",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -29211,7 +29378,8 @@
   "foto": "2224018.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2224019",
@@ -29220,7 +29388,7 @@
   "descripcion": "Bobina de Ignicion T-260/290/360/380",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Bobina de Ignicion T-260/290/360/380",
@@ -29237,7 +29405,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2224019.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2224020",
@@ -29246,7 +29415,7 @@
   "descripcion": "Bobina de Ignicion ST-MS361",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -29266,7 +29435,8 @@
   "foto": "2224020.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2224021",
@@ -29275,7 +29445,7 @@
   "descripcion": "Bobina de Ignicion ST-MS362",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -29295,7 +29465,8 @@
   "foto": "2224021.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2224023",
@@ -29304,7 +29475,7 @@
   "descripcion": "Bobina de Ignicion ST-MS382(BR)",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -29324,7 +29495,8 @@
   "foto": "2224023.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2224028",
@@ -29333,7 +29505,7 @@
   "descripcion": "Bobina de encendido Stihl MS162/172 RETENES",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -29354,7 +29526,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2224028.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2224029",
@@ -29363,7 +29536,7 @@
   "descripcion": "Bobina de encendido Stihl MS382(CN)",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -29382,7 +29555,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2224029.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2224035",
@@ -29529,7 +29703,7 @@
   "descripcion": "Bobina de encendido Husqvarna 445/450/455/460",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Husqvarna"
   ],
@@ -29548,7 +29722,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2224040.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2224041",
@@ -29557,7 +29732,7 @@
   "descripcion": "Bobina de encendido Oleo Mac 936/940/947/952",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Oleo Mac"
   ],
@@ -29576,7 +29751,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2224041.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2227652",
@@ -29585,7 +29761,7 @@
   "descripcion": "Reten De Aceite REPL MS 170-180-210-230-250",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "RETENES",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Reten De Aceite REPL MS 170-180-210-230-250",
@@ -29602,7 +29778,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2227652.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2227653",
@@ -29611,7 +29788,7 @@
   "descripcion": "Reten De Aceite REPL ST MS 380/381/382",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "RETENES",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Reten De Aceite REPL ST MS 380/381/382",
@@ -29628,7 +29805,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2227653.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2227654",
@@ -29637,7 +29815,7 @@
   "descripcion": "Reten De Aceite REPL ST MS 361/362/441",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "RETENES",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Reten De Aceite REPL ST MS 361/362/441",
@@ -29654,7 +29832,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2227654.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2227655",
@@ -29663,7 +29842,7 @@
   "descripcion": "Reten De Aceite REPL ST FS 260/280",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "RETENES",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Reten De Aceite REPL ST FS 260/280",
@@ -29680,7 +29859,8 @@
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
   "foto": "2227655.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2227656",
@@ -29689,7 +29869,7 @@
   "descripcion": "Reten De Aceite REPL Reten De Aceite REPL Reten De Aceite REPL Reten De Aceite REPL Reten De Aceite REPL MS 170-180-210-230-250 ST MS 380/381/382 ST MS 361/362/441 ST FS 260/280 HUS 61/266/268",
   "familia": "Motosierras",
   "familia_indice": null,
-  "subcategoria": "TAPAS DE DEPOSITOS",
+  "subcategoria": "RETENES",
   "marcas": [
    "Stihl"
   ],
@@ -29709,7 +29889,8 @@
   "foto": "2227656.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.658Z"
  },
  {
   "codigo": "2227657",
@@ -31928,7 +32109,7 @@
   "descripcion": "Bobina de Ignicion ST-BR320/340",
   "familia": "Sopladoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -31948,7 +32129,8 @@
   "foto": "2324240.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2324241",
@@ -31957,7 +32139,7 @@
   "descripcion": "Bobina de Ignicion ST-BR350/430 BOBINA DE INGNICION 4T",
   "familia": "Sopladoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -31977,7 +32159,8 @@
   "foto": "2324241.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2324242",
@@ -31986,7 +32169,7 @@
   "descripcion": "Bobina de Ignicion ST-BR500/600",
   "familia": "Sopladoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -32006,7 +32189,8 @@
   "foto": "2324242.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2324244",
@@ -32015,7 +32199,7 @@
   "descripcion": "Bobina de encendido Stihl TS410/420",
   "familia": "Sopladoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -32034,7 +32218,8 @@
   "encabezado_pdf": "BOBINA DE INGNICION 2T",
   "foto": "2324244.png",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "gaston-final-consolidado"
+  "foto_origen": "gaston-final-consolidado",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2324245",
@@ -32043,7 +32228,7 @@
   "descripcion": "Bobina de Ignicion ST-BG86/56",
   "familia": "Sopladoras",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Stihl"
   ],
@@ -32063,7 +32248,8 @@
   "foto": "2324245.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_marca": "sigla"
+  "fuente_marca": "sigla",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2502505",
@@ -33529,7 +33715,7 @@
   "descripcion": "Manguera de Aceite · MS170 MS180",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera de Aceite · MS170 MS180",
@@ -33546,7 +33732,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2921015.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2921016",
@@ -33555,7 +33742,7 @@
   "descripcion": "Manguera de Aceite · MS230 MS250",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera de Aceite · MS230 MS250",
@@ -33572,7 +33759,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2921016.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2921017",
@@ -33581,7 +33769,7 @@
   "descripcion": "BRIDAS DE ADMISIÓN",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "BRIDAS DE ADMISIÓN",
@@ -33598,7 +33786,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2921017.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2921019",
@@ -33607,7 +33796,7 @@
   "descripcion": "Manguera De Aceite REPL · Stihl MS 240/260",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera De Aceite REPL · Stihl MS 240/260",
@@ -33624,7 +33813,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2921019.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2921021",
@@ -33633,7 +33823,7 @@
   "descripcion": "Manguera De Aceite REPL · Stihl MS 380/381",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera De Aceite REPL · Stihl MS 380/381",
@@ -33650,7 +33840,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2921021.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2921023",
@@ -33659,7 +33850,7 @@
   "descripcion": "MANGUERA DE ACEITE",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "MANGUERA DE ACEITE",
@@ -33676,7 +33867,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2921023.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2921026",
@@ -33685,7 +33877,7 @@
   "descripcion": "Manguera De Aceite REPL · Husqvarna 335/350",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera De Aceite REPL · Husqvarna 335/350",
@@ -33702,7 +33894,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2921026.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2921028",
@@ -33711,7 +33904,7 @@
   "descripcion": "Manguera De Aceite REPL · Husqvarna 435/445/445E",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera De Aceite REPL · Husqvarna 435/445/445E",
@@ -33728,7 +33921,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERA DE COMBUSTIBLE - MOTOSIERRAS - DESMALEZADORAS",
   "foto": "2921028.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2921031",
@@ -33737,7 +33931,7 @@
   "descripcion": "Manguera de combustible negra 4 mm…",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera de combustible negra 4 mm…",
@@ -33756,7 +33950,8 @@
   "encabezado_pdf": "CARBURACION - MANGUERA DE COMBUSTIBLE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T04:07:42.659Z"
  },
  {
   "codigo": "2921032",
@@ -33765,7 +33960,7 @@
   "descripcion": "Manguera de combustible negra 6 mm…",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERA DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera de combustible negra 6 mm…",
@@ -33784,7 +33979,8 @@
   "encabezado_pdf": "CARBURACION - MANGUERA DE COMBUSTIBLE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T04:07:42.660Z"
  },
  {
   "codigo": "2921040",
@@ -33793,7 +33989,7 @@
   "descripcion": "Manguera Hidrocarburos · Diam. 2.00 mm (15mts)",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Hidrocarburos · Diam. 2.00 mm (15mts)",
@@ -33810,7 +34006,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2921040.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.660Z"
  },
  {
   "codigo": "2921041",
@@ -33819,7 +34016,7 @@
   "descripcion": "Manguera Hidrocarburos · Diam. 2.25 mm (15mts)",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Hidrocarburos · Diam. 2.25 mm (15mts)",
@@ -33836,7 +34033,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2921041.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.660Z"
  },
  {
   "codigo": "2921042",
@@ -33845,7 +34043,7 @@
   "descripcion": "Manguera Hidrocarburos · Diam. 2.75 mm (15mts)",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Hidrocarburos · Diam. 2.75 mm (15mts)",
@@ -33862,7 +34060,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2921042.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.660Z"
  },
  {
   "codigo": "2921043",
@@ -33871,7 +34070,7 @@
   "descripcion": "Manguera Hidrocarburos · Diam. 3,25 mm (15mts)",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Hidrocarburos · Diam. 3,25 mm (15mts)",
@@ -33888,7 +34087,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2921043.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.660Z"
  },
  {
   "codigo": "2921044",
@@ -33897,7 +34097,7 @@
   "descripcion": "Manguera Hidrocarburos · Diam. 4,50 mm (5mts)",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "Manguera Hidrocarburos · Diam. 4,50 mm (5mts)",
@@ -33914,7 +34114,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2921044.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.660Z"
  },
  {
   "codigo": "2921045",
@@ -33923,7 +34124,7 @@
   "descripcion": "MANGUERA DE",
   "familia": "Carburación",
   "familia_indice": "Carburación",
-  "subcategoria": "MANGUERAS DE COMBUSTIBLE",
+  "subcategoria": "Mangueras de combustible",
   "marcas": [],
   "codigo_original": [],
   "compatibilidad": "MANGUERA DE",
@@ -33940,7 +34141,8 @@
   "encabezado_pdf": "CARBURACIÓN - MANGUERAS DE COMBUSTIBLE",
   "foto": "2921045.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.660Z"
  },
  {
   "codigo": "2921051",
@@ -54811,7 +55013,7 @@
   "descripcion": "Bobina de Ignicion REPL B&S 398811",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Briggs & Stratton"
   ],
@@ -54833,7 +55035,8 @@
   "foto": "4324235.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.662Z"
  },
  {
   "codigo": "4324236",
@@ -54842,7 +55045,7 @@
   "descripcion": "Bobina de Ignicion REPL B&S 798212",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Briggs & Stratton"
   ],
@@ -54864,7 +55067,8 @@
   "foto": "4324236.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.662Z"
  },
  {
   "codigo": "4324237",
@@ -54873,7 +55077,7 @@
   "descripcion": "Bobina de Ignicion REPL B&S 394891",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Briggs & Stratton"
   ],
@@ -54895,7 +55099,8 @@
   "foto": "4324237.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.662Z"
  },
  {
   "codigo": "4324238",
@@ -54904,7 +55109,7 @@
   "descripcion": "Bobina de Ignicion REPL B&S 593872",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Briggs & Stratton"
   ],
@@ -54926,7 +55131,8 @@
   "foto": "4324238.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.662Z"
  },
  {
   "codigo": "4324239",
@@ -54935,7 +55141,7 @@
   "descripcion": "Bobina de Ignicion REPL B&S 799651",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE INGNICION 2T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Briggs & Stratton"
   ],
@@ -54957,7 +55163,8 @@
   "foto": "4324239.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.662Z"
  },
  {
   "codigo": "4324241",
@@ -54966,7 +55173,7 @@
   "descripcion": "Bobina de Ignicion REPL B&S 491760",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE I N G N I C I ON 4T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Briggs & Stratton"
   ],
@@ -54988,7 +55195,8 @@
   "foto": "4324241.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.662Z"
  },
  {
   "codigo": "4324242",
@@ -54997,7 +55205,7 @@
   "descripcion": "Bobina de Ignicion REPL B&S 96964",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE I N G N I C I ON 4T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Briggs & Stratton"
   ],
@@ -55016,7 +55224,8 @@
   "encabezado_pdf": "BOBINA DE I N G N I C I ON 4T",
   "foto": "4324242.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:07:42.662Z"
  },
  {
   "codigo": "4324243",
@@ -55077,7 +55286,7 @@
   "descripcion": "Bobina de Ignicion REPL Kohler 20 584 03-S",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE I N G N I C I ON 4T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Kohler"
   ],
@@ -55099,7 +55308,8 @@
   "foto": "4324901.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.662Z"
  },
  {
   "codigo": "4324902",
@@ -55108,7 +55318,7 @@
   "descripcion": "Bobina de Ignicion REPL Kohler 24 584 45-S",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE I N G N I C I ON 4T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Kohler"
   ],
@@ -55130,7 +55340,8 @@
   "foto": "4324902.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.662Z"
  },
  {
   "codigo": "4324903",
@@ -55139,7 +55350,7 @@
   "descripcion": "Bobina de Ignicion REPL Kohler 32 584 24-S",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE I N G N I C I ON 4T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Kohler"
   ],
@@ -55161,7 +55372,8 @@
   "foto": "4324903.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.662Z"
  },
  {
   "codigo": "4324904",
@@ -55170,7 +55382,7 @@
   "descripcion": "Bobina de Ignicion REPL KOHLER 1458404",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
-  "subcategoria": "BOBINA DE I N G N I C I ON 4T",
+  "subcategoria": "Bobina de ignición",
   "marcas": [
    "Kohler"
   ],
@@ -55192,7 +55404,8 @@
   "foto": "4324904.jpg",
   "fuente_desc": "texto del PDF",
   "foto_origen": "pdf-nativa",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T04:07:42.662Z"
  },
  {
   "codigo": "4325310",
