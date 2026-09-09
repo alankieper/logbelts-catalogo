@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import AdminHeader from '../../AdminHeader';
-import { guardarProducto, alternarOculto, quitarMediaProducto, quitarMediaGaleria, promoverPortada } from '../../productoActions';
+import { guardarProducto, alternarOculto, quitarMediaProducto, quitarMediaGaleria, promoverPortada, cambiarCodigoProducto } from '../../productoActions';
 import { obtener } from '../../../../lib/catalogoStore';
 import { getFamilias } from '../../../../lib/catalogo';
 import SubirMedia from '../../../components/SubirMedia';
@@ -26,7 +26,17 @@ export default async function EditarProducto({ params, searchParams }) {
       <main className="adm">
         <div className="wrap">
           <a className="backlink" href="/admin/productos">← Volver a la lista</a>
-          <h1>{p.codigo}</h1>
+          <div className="cod-row">
+            <h1>{p.codigo}</h1>
+            <details className="cod-edit">
+              <summary title="Editar código Logbelts">✏️</summary>
+              <form action={cambiarCodigoProducto}>
+                <input type="hidden" name="codigoViejo" value={p.codigo} />
+                <input name="codigoNuevo" defaultValue={p.codigo} maxLength={7} />
+                <button type="submit">Guardar código</button>
+              </form>
+            </details>
+          </div>
           <p className="sub">
             Origen: {p.origen} · página {p.pagina || '—'} · fuente descripción: {p.fuente_desc || '—'}
             {p.editado_en ? ` · editado ${new Date(p.editado_en).toLocaleString('es-AR')}` : ''}

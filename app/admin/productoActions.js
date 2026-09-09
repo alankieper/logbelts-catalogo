@@ -115,6 +115,17 @@ export async function alternarOculto(formData) {
   revalidatePath('/admin/productos');
 }
 
+export async function cambiarCodigoProducto(formData) {
+  const codigoViejo = formData.get('codigoViejo');
+  const codigoNuevo = formData.get('codigoNuevo');
+  const r = await store.cambiarCodigo(codigoViejo, codigoNuevo);
+  if (!r.ok) {
+    redirect(`/admin/productos/${encodeURIComponent(codigoViejo)}?err=${encodeURIComponent(r.error)}`);
+  }
+  revalidatePath('/', 'layout');
+  redirect(`/admin/productos/${encodeURIComponent(r.codigo)}?ok=1`);
+}
+
 export async function crearProducto(formData) {
   const datos = Object.fromEntries(formData.entries());
   const r = await store.crear(datos);
