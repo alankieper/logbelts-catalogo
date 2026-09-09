@@ -1,11 +1,14 @@
 import AdminHeader from '../../AdminHeader';
 import { crearProducto } from '../../productoActions';
 import { getFamilias } from '../../../../lib/catalogo';
+import { leerTodos } from '../../../../lib/catalogoStore';
+import GeneradorCodigo from './GeneradorCodigo';
 
 export const dynamic = 'force-dynamic';
 
 export default async function NuevoProducto({ searchParams }) {
   const familias = (await getFamilias()).map((f) => f.nombre);
+  const codigos = (await leerTodos()).map((p) => p.codigo);
   const err = searchParams?.err;
 
   return (
@@ -22,8 +25,7 @@ export default async function NuevoProducto({ searchParams }) {
           <form action={crearProducto} className="form-grid">
             <div className="row2">
               <div>
-                <label>Código Logbelts *</label>
-                <input name="codigo" required placeholder="Ej: 5888090" />
+                <GeneradorCodigo codigos={codigos} />
               </div>
               <div>
                 <label>Foto (archivo en public/fotos/)</label>

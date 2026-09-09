@@ -286,6 +286,28 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 .form-actions .save { background: var(--brand); color: #fff; }
 .form-actions .cancel { background: var(--surface); color: var(--ink-soft); border: 1px solid var(--rule-strong); }
 .form-actions .danger { background: var(--surface); color: #b3261e; border: 1px solid #f0d3d3; }
+
+.cod-lectura { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 14px 16px; margin-bottom: 20px; }
+.cod-lectura-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-faint); margin: 0 0 8px; }
+.cod-lectura-link { text-transform: none; font-weight: 600; letter-spacing: 0; margin-left: 6px; }
+.cod-lectura-warn { font-size: 12.5px; color: #9a6a00; margin: 8px 0 0; }
+.cod-tag { display: inline-block; background: var(--surface-2); border: 1px solid var(--rule); border-radius: 999px; padding: 5px 12px; font-size: 12.5px; margin: 0 6px 6px 0; }
+
+.cod-gen { margin-top: 4px; }
+.cod-gen-label { font-size: 12px; color: var(--ink-faint); margin: 10px 0 6px; }
+.cod-gen-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.cod-gen-row select { flex: 1; min-width: 140px; border: 1px solid var(--rule-strong); border-radius: 8px; padding: 9px 10px; font-size: 13px; font-family: inherit; background: var(--surface); color: var(--ink); }
+.cod-gen-prop { margin-top: 10px; font-size: 13.5px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.cod-gen-prop button { border: 0; border-radius: 7px; padding: 6px 12px; font-size: 12px; font-weight: 700; background: var(--brand); color: #fff; cursor: pointer; }
+
+.cod-explorar-box { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; margin-bottom: 18px; }
+.cod-explorar-box > label { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-faint); margin-bottom: 8px; }
+.cod-explorar-box > input { width: 100%; max-width: 260px; border: 1px solid var(--rule-strong); border-radius: 8px; padding: 9px 11px; font-size: 14px; font-family: inherit; background: var(--surface); color: var(--ink); box-sizing: border-box; }
+.cod-ref-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.cod-ref-title { font-size: 12.5px; font-weight: 700; margin: 0 0 8px; }
+.cod-ref-sub { font-size: 12px; font-weight: 700; color: var(--ink-soft); margin: 0 0 4px; }
+.cod-ref-list { list-style: none; margin: 0 0 8px; padding: 0; font-size: 12.5px; color: var(--ink-soft); line-height: 1.7; }
+.cod-ref-list b { color: var(--ink); font-variant-numeric: tabular-nums; }
 .ok-msg { background: var(--ok-bg); color: var(--ok); border-radius: 8px; padding: 10px 14px; font-size: 13px; font-weight: 700; margin-bottom: 16px; }
 .err-msg { background: #fbe6e4; color: #b3261e; border-radius: 8px; padding: 10px 14px; font-size: 13px; font-weight: 700; margin-bottom: 16px; }
 

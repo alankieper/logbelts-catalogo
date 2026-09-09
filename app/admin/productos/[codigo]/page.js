@@ -3,6 +3,7 @@ import AdminHeader from '../../AdminHeader';
 import { guardarProducto, alternarOculto, quitarMediaProducto, quitarMediaGaleria, promoverPortada, cambiarCodigoProducto } from '../../productoActions';
 import { obtener } from '../../../../lib/catalogoStore';
 import { getFamilias } from '../../../../lib/catalogo';
+import { decodificarCodigo } from '../../../../lib/codigoLogbelts';
 import SubirMedia from '../../../components/SubirMedia';
 
 export const dynamic = 'force-dynamic';
@@ -19,6 +20,7 @@ export default async function EditarProducto({ params, searchParams }) {
   const fotoSrc = mediaSrc(p.foto, 'fotos');
   const galeria = (p.galeria || []).map((v) => mediaSrc(v, 'fotos'));
   const videos = (p.videos || []).map((v) => mediaSrc(v, 'videos'));
+  const dec = decodificarCodigo(p.codigo);
 
   return (
     <>
@@ -44,6 +46,19 @@ export default async function EditarProducto({ params, searchParams }) {
 
           {ok ? <div className="ok-msg">Cambios guardados.</div> : null}
           {err ? <div className="err-msg">{err}</div> : null}
+
+          <div className="cod-lectura">
+            <p className="cod-lectura-title">Lectura del código <a href="/admin/codigos" className="cod-lectura-link">(ver tabla completa)</a></p>
+            {dec.rubroNombre ? <span className="cod-tag">Rubro {dec.rubro} · {dec.rubroNombre}</span> : null}
+            {dec.subrubroNombre ? <span className="cod-tag">Subrubro {dec.subrubro} · {dec.subrubroNombre}</span> : null}
+            {dec.productoNombre ? <span className="cod-tag">Tipo {dec.producto} · {dec.productoNombre}</span> : null}
+            {dec.item ? <span className="cod-tag">Variante {dec.item}</span> : null}
+            {dec.errores.length ? (
+              <p className="cod-lectura-warn">
+                Este código no coincide del todo con el esquema estándar (no afecta al producto): {dec.errores.join(' ')}
+              </p>
+            ) : null}
+          </div>
 
           <div style={{ display: 'grid', gap: 28, gridTemplateColumns: '280px 1fr', alignItems: 'start' }}>
             <div className="media-col">
