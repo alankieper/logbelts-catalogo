@@ -54957,7 +54957,7 @@
  {
   "codigo": "4324100",
   "estado": "completo",
-  "nombre": "Varilla Nivel de Aceite Capuchón de Bujia GX270 GX390 GX440 GX270 GX390 ",
+  "nombre": "Capuchón de Bujía · GX270/GX390/GX440",
   "descripcion": "Varilla Nivel de Aceite Capuchón de Bujia GX270 GX390 GX440 GX270 GX390 GX440",
   "familia": "Motores 4T y generadores",
   "familia_indice": null,
@@ -54970,7 +54970,7 @@
   "ref_interna": [],
   "clave_rubro": "4 Tiempos",
   "clave_subrubro": "Motor general",
-  "clave_producto": "Bobina de ignición",
+  "clave_producto": "Partes",
   "clave_valida": true,
   "pagina": 174,
   "origen": "grilla",
@@ -54978,7 +54978,8 @@
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4324100.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T04:18:59.781Z"
  },
  {
   "codigo": "4324102",
