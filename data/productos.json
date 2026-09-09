@@ -1007,7 +1007,7 @@
  {
   "codigo": "2102977",
   "estado": "completo",
-  "nombre": "PENDIENTE — Sin datos disponibles. Consultar…",
+  "nombre": "]",
   "descripcion": "PENDIENTE — Sin datos disponibles. Consultar…",
   "familia": "Desmalezadoras",
   "familia_indice": null,
@@ -1028,7 +1028,8 @@
   "encabezado_pdf": "ACCESORIOS / HERRAMIENTAS",
   "foto": "2102977.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-render"
+  "foto_origen": "pdf-render",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "2103001",
@@ -22474,7 +22475,7 @@
  {
   "codigo": "2215001",
   "estado": "completo",
-  "nombre": "Tapas de arranque — Chinas 38cc",
+  "nombre": "` CODIGO",
   "descripcion": "Tapa Arranque · Chinas 3800",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
@@ -22495,7 +22496,8 @@
   "encabezado_pdf": "MOTOSIERRAS CHINAS 38CC",
   "foto": "2215001.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "2215002",
@@ -23755,7 +23757,7 @@
  {
   "codigo": "2215075",
   "estado": "completo",
-  "nombre": "Tornillo de regulación",
+  "nombre": "]",
   "descripcion": "Tornillo de regulación REPL Echo CS…",
   "familia": "Motosierras",
   "familia_indice": "Motosierras",
@@ -23778,7 +23780,8 @@
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "2215080",
@@ -32147,7 +32150,7 @@
  {
   "codigo": "2888255",
   "estado": "completo",
-  "nombre": "Plataforma 1° Serie 700H-779H 46\" De Corte 91,40\" X1/2”",
+  "nombre": "754-04142 Plataforma 1° Serie 700H-779H 46\" De Corte 91,40\" X1/2”",
   "descripcion": "Plataforma 1° Serie 700H-779H 46\" De Corte 91,40\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -32179,7 +32182,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "2906001",
@@ -44311,7 +44315,7 @@
  {
   "codigo": "4301558",
   "estado": "completo",
-  "nombre": "Honda 5,5/6hp GX110/120",
+  "nombre": "CODIGO 43001559 CODIGO",
   "descripcion": "Honda 5,5/6hp GX110/120",
   "familia": "Carburación",
   "familia_indice": "Carburación",
@@ -44334,7 +44338,8 @@
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301558.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-render"
+  "foto_origen": "pdf-render",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "4301559",
@@ -50992,7 +50997,7 @@
  {
   "codigo": "4311520",
   "estado": "completo",
-  "nombre": "MTD 951 10639",
+  "nombre": "CCOODDIIGGOO",
   "descripcion": "MTD 951 10639",
   "familia": "Carburación",
   "familia_indice": "Carburación",
@@ -51016,12 +51021,13 @@
   "foto": "4311520.jpg",
   "fuente_desc": "texto del PDF (OCR)",
   "foto_origen": "pdf-nativa",
-  "fuente_oem": "texto del catálogo"
+  "fuente_oem": "texto del catálogo",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "4311521",
   "estado": "completo",
-  "nombre": "Bombines",
+  "nombre": "CCOODDIIGGOO",
   "descripcion": "B&S 793382",
   "familia": "Carburación",
   "familia_indice": "Carburación",
@@ -51042,12 +51048,13 @@
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
   "foto": "4311521.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "4311522",
   "estado": "completo",
-  "nombre": "Bombines",
+  "nombre": "CCOODDIIGGOO",
   "descripcion": "Sensei 6,8hp",
   "familia": "Carburación",
   "familia_indice": "Carburación",
@@ -51068,12 +51075,13 @@
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
   "foto": "4311522.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "4311523",
   "estado": "completo",
-  "nombre": "Kawasaki 49043 2065",
+  "nombre": "CCOODDIIGGOO",
   "descripcion": "Kawasaki 49043 2065",
   "familia": "Carburación",
   "familia_indice": "Carburación",
@@ -51094,7 +51102,8 @@
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
   "foto": "4311523.jpg",
   "fuente_desc": "texto del PDF (OCR)",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "4311524",
@@ -51125,7 +51134,7 @@
  {
   "codigo": "4311526",
   "estado": "completo",
-  "nombre": "Bombines",
+  "nombre": "CCOODDIIGGOO",
   "descripcion": "B&S 494408 · 3,5hp/4hp",
   "familia": "Carburación",
   "familia_indice": "Carburación",
@@ -51146,12 +51155,13 @@
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
   "foto": "4311526.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "4311527",
   "estado": "completo",
-  "nombre": "Bombines",
+  "nombre": "CCOODDIIGGOO",
   "descripcion": "B&S 496115 · 5hp/5,5hp/6hp",
   "familia": "Carburación",
   "familia_indice": "Carburación",
@@ -51172,7 +51182,8 @@
   "encabezado_pdf": "CARBURACIÓN - BOMBINES 2T",
   "foto": "4311527.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-nativa"
+  "foto_origen": "pdf-nativa",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "4311528",
@@ -57132,7 +57143,7 @@
  {
   "codigo": "4720547",
   "estado": "completo",
-  "nombre": "PENDIENTE — Sin datos disponibles. Consultar…",
+  "nombre": "] PENDIENTE",
   "descripcion": "PENDIENTE — Sin datos disponibles. Consultar…",
   "familia": "Generadores",
   "familia_indice": null,
@@ -57153,7 +57164,8 @@
   "encabezado_pdf": "ACCESORIOS / HERRAMIENTAS",
   "foto": "4720547.jpg",
   "fuente_desc": "texto del PDF",
-  "foto_origen": "pdf-render"
+  "foto_origen": "pdf-render",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "4720548",
@@ -58963,7 +58975,7 @@
  {
   "codigo": "5888065",
   "estado": "completo",
-  "nombre": "Plataforma Cub Cadet - MTD 48\"X1/2\"",
+  "nombre": "754-0200 Plataforma Cub Cadet - MTD 48\"X1/2\"",
   "descripcion": "Plataforma Cub Cadet - MTD 48\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -58991,12 +59003,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888069",
   "estado": "completo",
-  "nombre": "Cub Cadet LX 54” 139” X 5/8”",
+  "nombre": "754-0505 Plataforma Cub Cadet LX 54” 139” X 5/8”",
   "descripcion": "Cub Cadet LX 54” 139” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59024,12 +59037,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888071",
   "estado": "completo",
-  "nombre": "Yard Man - Rider 52” X 5/8”",
+  "nombre": "754-0754 Plataforma Yard Man - Rider 52” X 5/8”",
   "descripcion": "Yard Man - Rider 52” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59061,12 +59075,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888072",
   "estado": "completo",
-  "nombre": "Cub Cadet LX 54” 91,2” X 1/2”",
+  "nombre": "754-05027 Transmisión Cub Cadet LX 54” 91,2” X 1/2”",
   "descripcion": "Cub Cadet LX 54” 91,2” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59094,12 +59109,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888073",
   "estado": "completo",
-  "nombre": "Cub Cadet LT 42” 100” X 1/2”",
+  "nombre": "754-05021 Plataforma Cub Cadet LT 42” 100” X 1/2”",
   "descripcion": "Cub Cadet LT 42” 100” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59127,12 +59143,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888075",
   "estado": "completo",
-  "nombre": "Cub Cadet 44” De Corte 103” X 1/2”",
+  "nombre": "754-3039 Plataforma Cub Cadet 44” De Corte 103” X 1/2”",
   "descripcion": "Cub Cadet 44” De Corte 103” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59160,12 +59177,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888076",
   "estado": "completo",
-  "nombre": "Cub Cadet 48” De Corte 105” X 1/2”",
+  "nombre": "754-0341 Plataforma Cub Cadet 48” De Corte 105” X 1/2”",
   "descripcion": "Cub Cadet 48” De Corte 105” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59193,12 +59211,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888077",
   "estado": "completo",
-  "nombre": "Cub Cadet 46” y 48” Serie 2500 161” X 5/8”",
+  "nombre": "754-3078 Plataforma Cub Cadet 46” y 48” Serie 2500 161” X 5/8”",
   "descripcion": "Cub Cadet 46” y 48” Serie 2500 161” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59226,12 +59245,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888078",
   "estado": "completo",
-  "nombre": "Plataforma Rider 30\" 13504A 52\"X1/2\"",
+  "nombre": "754-0264 Plataforma Rider 30\" 13504A 52\"X1/2\"",
   "descripcion": "Plataforma Rider 30\" 13504A 52\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59262,7 +59282,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888079",
@@ -59304,7 +59325,7 @@
  {
   "codigo": "5888080",
   "estado": "completo",
-  "nombre": "Plataforma 54\" Autodrive Serie 808K 137,5\" X 5/5\"",
+  "nombre": "754-0642 Plataforma 54\" Autodrive Serie 808K 137,5\" X 5/5\"",
   "descripcion": "Plataforma 54\" Autodrive Serie 808K 137,5\" X 5/5\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59335,12 +59356,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888082",
   "estado": "completo",
-  "nombre": "CubCadet 97,4” X 5/8”",
+  "nombre": "754-3051 Transmisión CubCadet 97,4” X 5/8”",
   "descripcion": "CubCadet 97,4” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59372,12 +59394,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888083",
   "estado": "completo",
-  "nombre": "Cub Cadet 42” Serie 2000 112,5” X 5/8”",
+  "nombre": "754-3055A Plataforma Cub Cadet 42” Serie 2000 112,5” X 5/8”",
   "descripcion": "Cub Cadet 42” Serie 2000 112,5” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59405,12 +59428,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888085",
   "estado": "completo",
-  "nombre": "84,25” X 1/2”",
+  "nombre": "954-04252 Transmisión MTD Gold 42” De Corte Hidrostático 84,25” X 1/2”",
   "descripcion": "84,25” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59442,12 +59466,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888086",
   "estado": "completo",
-  "nombre": "Transmisión Motocultivador 42\"X1/2\"",
+  "nombre": "754-0428 Transmisión Motocultivador 42\"X1/2\"",
   "descripcion": "Transmisión Motocultivador 42\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59478,12 +59503,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888087",
   "estado": "completo",
-  "nombre": "Tracción Troy Bilt Motocultivador 25,3\" X1/2\"",
+  "nombre": "754-04090 Tracción Troy Bilt Motocultivador 25,3\" X1/2\"",
   "descripcion": "Tracción Troy Bilt Motocultivador 25,3\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59510,12 +59536,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888088",
   "estado": "completo",
-  "nombre": "Tracción Cub Cadet Rotovator 29\" X 3/8\"",
+  "nombre": "754-04091 Tracción Cub Cadet Rotovator 29\" X 3/8\"",
   "descripcion": "Tracción Cub Cadet Rotovator 29\" X 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59542,12 +59569,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888089",
   "estado": "completo",
-  "nombre": "Cub Cadet RZT 50” Serie 3 141,3” X 5/8”",
+  "nombre": "754-05078 Plataforma Cub Cadet RZT 50” Serie 3 141,3” X 5/8”",
   "descripcion": "Cub Cadet RZT 50” Serie 3 141,3” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59575,12 +59603,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888093",
   "estado": "completo",
-  "nombre": "Transmisión Riders Serie 497 82\"X1/2\"",
+  "nombre": "754-0226 Transmisión Riders Serie 497 82\"X1/2\"",
   "descripcion": "Transmisión Riders Serie 497 82\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59611,12 +59640,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888094",
   "estado": "completo",
-  "nombre": "32” y 42” De Corte 34,91” X 5/8”",
+  "nombre": "754-04285 Vel. Variable 32” y 42” De Corte 34,91” X 5/8”",
   "descripcion": "32” y 42” De Corte 34,91” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59648,12 +59678,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888095",
   "estado": "completo",
-  "nombre": "Plataforma 1° 46\" Auto Drive Serie 808H 62\"X5/8\"",
+  "nombre": "754-0228 Plataforma 1° 46\" Auto Drive Serie 808H 62\"X5/8\"",
   "descripcion": "Plataforma 1° 46\" Auto Drive Serie 808H 62\"X5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59684,12 +59715,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888096",
   "estado": "completo",
-  "nombre": "Plataforma 199 30\" De Corte 52\"X1/2\"",
+  "nombre": "754-0229 Plataforma 199 30\" De Corte 52\"X1/2\"",
   "descripcion": "Plataforma 199 30\" De Corte 52\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59720,12 +59752,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888097",
   "estado": "completo",
-  "nombre": "Transmisión Troy Bilt 42\" De Corte 85,2\" X1/2\"",
+  "nombre": "754-0236 Transmisión Troy Bilt 42\" De Corte 85,2\" X1/2\"",
   "descripcion": "Transmisión Troy Bilt 42\" De Corte 85,2\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59752,12 +59785,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888098",
   "estado": "completo",
-  "nombre": "MTD 34” X 3/8”",
+  "nombre": "754-04260 Transmisión MTD 34” X 3/8”",
   "descripcion": "MTD 34” X 3/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59785,12 +59819,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888099",
   "estado": "completo",
-  "nombre": "Transmisión 1° Rider 30\" 13504A 38” X 5/8”",
+  "nombre": "754-0240 Transmisión 1° Rider 30\" 13504A 38” X 5/8”",
   "descripcion": "Transmisión 1° Rider 30\" 13504A 38” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59822,12 +59857,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888100",
   "estado": "completo",
-  "nombre": "Transmisión 2° 38\" y 42\" De Corte 760-779 35\" X 5/8”",
+  "nombre": "754-0241 Transmisión 2° 38\" y 42\" De Corte 760-779 35\" X 5/8”",
   "descripcion": "Transmisión 2° 38\" y 42\" De Corte 760-779 35\" X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59859,12 +59895,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888101",
   "estado": "completo",
-  "nombre": "Transmisión MTD 35\" X 3/8\"",
+  "nombre": "754-0431 Transmisión MTD 35\" X 3/8\"",
   "descripcion": "Transmisión MTD 35\" X 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59891,12 +59928,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888102",
   "estado": "completo",
-  "nombre": "Plataforma MTD 43'' X 1/2''",
+  "nombre": "754-0253 Plataforma MTD 43'' X 1/2''",
   "descripcion": "Plataforma MTD 43'' X 1/2''",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59923,12 +59961,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888103",
   "estado": "completo",
-  "nombre": "Transmisión White 30\" X 5/8\"",
+  "nombre": "754-0249 Transmisión White 30\" X 5/8\"",
   "descripcion": "Transmisión White 30\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59955,12 +59994,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888104",
   "estado": "completo",
-  "nombre": "Tracción Autopropulsada 29\" X 3/8\"",
+  "nombre": "754-0256 Tracción Autopropulsada 29\" X 3/8\"",
   "descripcion": "Tracción Autopropulsada 29\" X 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -59991,12 +60031,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888105",
   "estado": "completo",
-  "nombre": "Plataforma 38\" De Corte 84,25\" X1/2”",
+  "nombre": "754-0270 Plataforma 38\" De Corte 84,25\" X1/2”",
   "descripcion": "Plataforma 38\" De Corte 84,25\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60028,12 +60069,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888106",
   "estado": "completo",
-  "nombre": "Autopropulsada 39\" x 3/8\"",
+  "nombre": "754-0271 Tracción Autopropulsada 39\" x 3/8\"",
   "descripcion": "Autopropulsada 39\" x 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60064,12 +60106,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888107",
   "estado": "completo",
-  "nombre": "Transmisión MTD WHITE 580 59'' X 1/2''",
+  "nombre": "754-0267 Transmisión MTD WHITE 580 59'' X 1/2''",
   "descripcion": "Transmisión MTD WHITE 580 59'' X 1/2''",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60097,7 +60140,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888110",
@@ -60138,7 +60182,7 @@
  {
   "codigo": "5888111",
   "estado": "completo",
-  "nombre": "Transmisión 2° 450E 36\" De Corte 44,20\" X 5/8\"",
+  "nombre": "754-0281 Transmisión 2° 450E 36\" De Corte 44,20\" X 5/8\"",
   "descripcion": "Transmisión 2° 450E 36\" De Corte 44,20\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60169,12 +60213,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888114",
   "estado": "completo",
-  "nombre": "Transmisión Modelos 300 y 450 41 \"X 5/8\"",
+  "nombre": "754-0284 Transmisión Modelos 300 y 450 41 \"X 5/8\"",
   "descripcion": "Transmisión Modelos 300 y 450 41 \"X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60205,12 +60250,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888118",
   "estado": "completo",
-  "nombre": "Transmisión Modelo 1986 40\" 88,25\" x 1/2\"",
+  "nombre": "754-0291 Transmisión Modelo 1986 40\" 88,25\" x 1/2\"",
   "descripcion": "Transmisión Modelo 1986 40\" 88,25\" x 1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60241,7 +60287,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888120",
@@ -60283,7 +60330,7 @@
  {
   "codigo": "5888124",
   "estado": "completo",
-  "nombre": "Transmisión MTD 49\" X 5/8\"",
+  "nombre": "754-0328 Transmisión MTD 49\" X 5/8\"",
   "descripcion": "Transmisión MTD 49\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60310,12 +60357,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888125",
   "estado": "completo",
-  "nombre": "Plataforma 12,5 HP 38\" De Corte 650F-694F 69\" X 5/8\"",
+  "nombre": "754-0329A Plataforma 12,5 HP 38\" De Corte 650F-694F 69\" X 5/8\"",
   "descripcion": "Plataforma 12,5 HP 38\" De Corte 650F-694F 69\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60346,12 +60394,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888130",
   "estado": "completo",
-  "nombre": "Transmisión 604H 46\" De Corte 77\" X1/2”",
+  "nombre": "754-0338 Transmisión 604H 46\" De Corte 77\" X1/2”",
   "descripcion": "Transmisión 604H 46\" De Corte 77\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60383,12 +60432,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888132",
   "estado": "completo",
-  "nombre": "Tracción Cespera Autopropulsada 31\" X 3/8\"",
+  "nombre": "754-0343 Tracción Cespera Autopropulsada 31\" X 3/8\"",
   "descripcion": "Tracción Cespera Autopropulsada 31\" X 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60419,12 +60469,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888133",
   "estado": "completo",
-  "nombre": "Plataforma Troy Bilt 30\" De Corte 89\" X 5/8\"",
+  "nombre": "754-0341 Plataforma Troy Bilt 30\" De Corte 89\" X 5/8\"",
   "descripcion": "Plataforma Troy Bilt 30\" De Corte 89\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60451,12 +60502,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888134",
   "estado": "completo",
-  "nombre": "Tracción Serie 400 30\" X 3/8\"",
+  "nombre": "754-0346 Tracción Serie 400 30\" X 3/8\"",
   "descripcion": "Tracción Serie 400 30\" X 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60487,12 +60539,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888135",
   "estado": "completo",
-  "nombre": "Plataforma 2° 840H 808H y 600H 46\" 79,09\" X1/2”",
+  "nombre": "754-0349 Plataforma 2° 840H 808H y 600H 46\" 79,09\" X1/2”",
   "descripcion": "Plataforma 2° 840H 808H y 600H 46\" 79,09\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60524,12 +60577,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888136",
   "estado": "completo",
-  "nombre": "Plataforma 1° 809H-840H 46\" De Corte 64\" X 5/8\"",
+  "nombre": "754-0350 Plataforma 1° 809H-840H 46\" De Corte 64\" X 5/8\"",
   "descripcion": "Plataforma 1° 809H-840H 46\" De Corte 64\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60560,12 +60614,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888137",
   "estado": "completo",
-  "nombre": "Transmisión MTD 61\"X1/2\"",
+  "nombre": "754-0351 Transmisión MTD 61\"X1/2\"",
   "descripcion": "Transmisión MTD 61\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60592,12 +60647,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888138",
   "estado": "completo",
-  "nombre": "Transmisión Serie 800 1988/96 51\" X 7/8\"",
+  "nombre": "754-0358 Transmisión Serie 800 1988/96 51\" X 7/8\"",
   "descripcion": "Transmisión Serie 800 1988/96 51\" X 7/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60628,12 +60684,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888140",
   "estado": "completo",
-  "nombre": "Transmisión Serie 800 1990/96 47,7/8\" X 7/8\"",
+  "nombre": "754-0362 Transmisión Serie 800 1990/96 47,7/8\" X 7/8\"",
   "descripcion": "Transmisión Serie 800 1990/96 47,7/8\" X 7/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60665,12 +60722,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888143",
   "estado": "completo",
-  "nombre": "Transmisión Serie 800 1990/96 47,7/8\" X 7/8\"",
+  "nombre": "754-0362 Transmisión Serie 800 1990/96 47,7/8\" X 7/8\"",
   "descripcion": "Transmisión Serie 800 1990/96 47,7/8\" X 7/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60702,12 +60760,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888145",
   "estado": "completo",
-  "nombre": "Plataforma 450E 36\" De Corte 68\" X 5/8\"",
+  "nombre": "754-0364 Plataforma 450E 36\" De Corte 68\" X 5/8\"",
   "descripcion": "Plataforma 450E 36\" De Corte 68\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60738,12 +60797,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888148",
   "estado": "completo",
-  "nombre": "Tracción Cespera Autopropulsada 34,50\" X 3/8\"",
+  "nombre": "754-0367 Tracción Cespera Autopropulsada 34,50\" X 3/8\"",
   "descripcion": "Tracción Cespera Autopropulsada 34,50\" X 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60774,12 +60834,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888150",
   "estado": "completo",
-  "nombre": "Transmisión 2° Model LT-12 Serie 673F-676F 47,50\" X 5/8\"",
+  "nombre": "754-0370 Transmisión 2° Model LT-12 Serie 673F-676F 47,50\" X 5/8\"",
   "descripcion": "Transmisión 2° Model LT-12 Serie 673F-676F 47,50\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60810,12 +60871,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888151",
   "estado": "completo",
-  "nombre": "Plataforma 42\" De Corte Serie 690G 74\" X 5/8\"",
+  "nombre": "754-0371A Plataforma 42\" De Corte Serie 690G 74\" X 5/8\"",
   "descripcion": "Plataforma 42\" De Corte Serie 690G 74\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60846,12 +60908,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888158",
   "estado": "completo",
-  "nombre": "Plataforma 675 38” De Corte 70” X 5/8”",
+  "nombre": "754-0427 Plataforma 675 38” De Corte 70” X 5/8”",
   "descripcion": "Plataforma 675 38” De Corte 70” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60883,12 +60946,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888160",
   "estado": "completo",
-  "nombre": "Plataforma 38\" De Corte Serie 690F 69,70\" X 5/8\"",
+  "nombre": "754-0433 Plataforma 38\" De Corte Serie 690F 69,70\" X 5/8\"",
   "descripcion": "Plataforma 38\" De Corte Serie 690F 69,70\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60919,12 +60983,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888161",
   "estado": "completo",
-  "nombre": "Transmisión Motocultivador 58,16\" X1/2\"",
+  "nombre": "754-0434 Transmisión Motocultivador 58,16\" X1/2\"",
   "descripcion": "Transmisión Motocultivador 58,16\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60955,12 +61020,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888165",
   "estado": "completo",
-  "nombre": "Plataforma 2° 46\" De Corte Serie 690H-699H 99\"X1/2”",
+  "nombre": "754-0440 Plataforma 2° 46\" De Corte Serie 690H-699H 99\"X1/2”",
   "descripcion": "Plataforma 2° 46\" De Corte Serie 690H-699H 99\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -60992,12 +61058,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888166",
   "estado": "completo",
-  "nombre": "Transmisión 42\" Hidrostático 673G-695G 76\"X1/2”",
+  "nombre": "754-0441 Transmisión 42\" Hidrostático 673G-695G 76\"X1/2”",
   "descripcion": "Transmisión 42\" Hidrostático 673G-695G 76\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61029,12 +61096,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888170",
   "estado": "completo",
-  "nombre": "Transmisión 2° 845H 46\" De Corte 45,78\" X 5/8\"",
+  "nombre": "754-0446 Transmisión 2° 845H 46\" De Corte 45,78\" X 5/8\"",
   "descripcion": "Transmisión 2° 845H 46\" De Corte 45,78\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61065,12 +61133,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888172",
   "estado": "completo",
-  "nombre": "Transmisión Yardman Rider 36\" x 5/8\"",
+  "nombre": "754-0453 Transmisión Yardman Rider 36\" x 5/8\"",
   "descripcion": "Transmisión Yardman Rider 36\" x 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61097,12 +61166,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888175",
   "estado": "completo",
-  "nombre": "Transmisión 800 Hidrostático 78,25\" X1/2”",
+  "nombre": "754-0461 Transmisión 800 Hidrostático 78,25\" X1/2”",
   "descripcion": "Transmisión 800 Hidrostático 78,25\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61134,12 +61204,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888180",
   "estado": "completo",
-  "nombre": "Transmisión 1° 42\" 46\" 50\" De Corte Auto-Drive 91,50\" X 5/8\"",
+  "nombre": "754-0467 Transmisión 1° 42\" 46\" 50\" De Corte Auto-Drive 91,50\" X 5/8\"",
   "descripcion": "Transmisión 1° 42\" 46\" 50\" De Corte Auto-Drive 91,50\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61170,12 +61241,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888181",
   "estado": "completo",
-  "nombre": "Transmisión 2° 42\" 46\" 50\" De Corte Auto-Drive 41,50\" X 5/8\"",
+  "nombre": "754-0468 Transmisión 2° 42\" 46\" 50\" De Corte Auto-Drive 41,50\" X 5/8\"",
   "descripcion": "Transmisión 2° 42\" 46\" 50\" De Corte Auto-Drive 41,50\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61206,12 +61278,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888182",
   "estado": "completo",
-  "nombre": "Plataforma Autodrive 42\" U604 83,75\" x 5/8\"",
+  "nombre": "754-0472 Plataforma Autodrive 42\" U604 83,75\" x 5/8\"",
   "descripcion": "Plataforma Autodrive 42\" U604 83,75\" x 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61242,12 +61315,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888185",
   "estado": "completo",
-  "nombre": "Plataforma 42\" De Corte 808K Auto-Drive 101\" X 5/8\"",
+  "nombre": "754-0474 Plataforma 42\" De Corte 808K Auto-Drive 101\" X 5/8\"",
   "descripcion": "Plataforma 42\" De Corte 808K Auto-Drive 101\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61278,12 +61352,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888187",
   "estado": "completo",
-  "nombre": "Plataforma 46\" De Corte 804H PTO Electric 100,5\" X 5/8\"",
+  "nombre": "754-0476 Plataforma 46\" De Corte 804H PTO Electric 100,5\" X 5/8\"",
   "descripcion": "Plataforma 46\" De Corte 804H PTO Electric 100,5\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61314,12 +61389,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888189",
   "estado": "completo",
-  "nombre": "Plataforma 42\" De Corte 97\" X 5/8\"",
+  "nombre": "754-0485 Plataforma 42\" De Corte 97\" X 5/8\"",
   "descripcion": "Plataforma 42\" De Corte 97\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61350,12 +61426,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888190",
   "estado": "completo",
-  "nombre": "Plataforma 1° T604H 22 HP 46\" De Corte 67,25\" X 5/8\"",
+  "nombre": "754-0486 Plataforma 1° T604H 22 HP 46\" De Corte 67,25\" X 5/8\"",
   "descripcion": "Plataforma 1° T604H 22 HP 46\" De Corte 67,25\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61386,12 +61463,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888191",
   "estado": "completo",
-  "nombre": "Plataforma 46\" De Corte 804H PTO Manual 66,2\" X 5/8\"",
+  "nombre": "754-0487 Plataforma 46\" De Corte 804H PTO Manual 66,2\" X 5/8\"",
   "descripcion": "Plataforma 46\" De Corte 804H PTO Manual 66,2\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61422,12 +61500,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888195",
   "estado": "completo",
-  "nombre": "Plataforma 1° T604G 17.5HP42\" De Corte 60\"X1/2”",
+  "nombre": "754-0497 Plataforma 1° T604G 17.5HP42\" De Corte 60\"X1/2”",
   "descripcion": "Plataforma 1° T604G 17.5HP42\" De Corte 60\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61459,12 +61538,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888196",
   "estado": "completo",
-  "nombre": "Plataforma 2° 42\" De Corte T604G 66,9\" X1/2”",
+  "nombre": "754-0498 Plataforma 2° 42\" De Corte T604G 66,9\" X1/2”",
   "descripcion": "Plataforma 2° 42\" De Corte T604G 66,9\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61496,12 +61576,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888198",
   "estado": "completo",
-  "nombre": "Tracción Yard Machine 31 \"X 3/8\"",
+  "nombre": "754-0637 Tracción Yard Machine 31 \"X 3/8\"",
   "descripcion": "Tracción Yard Machine 31 \"X 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61532,12 +61613,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888205",
   "estado": "completo",
-  "nombre": "Transmisión 1° 38\" v 42\" De Corte760-779 69,25\" X 5/8\"",
+  "nombre": "754-04001A Transmisión 1° 38\" v 42\" De Corte760-779 69,25\" X 5/8\"",
   "descripcion": "Transmisión 1° 38\" v 42\" De Corte760-779 69,25\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61568,12 +61650,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888206",
   "estado": "completo",
-  "nombre": "Transmisión 2° LT115 LT175 Yard Man 683F 31,75\"X 5/8\"",
+  "nombre": "754-04002 Transmisión 2° LT115 LT175 Yard Man 683F 31,75\"X 5/8\"",
   "descripcion": "Transmisión 2° LT115 LT175 Yard Man 683F 31,75\"X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61604,12 +61687,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888215",
   "estado": "completo",
-  "nombre": "Transmisión RZT 42 y RZT 50 57,7\" X1/2”",
+  "nombre": "754-04043 Transmisión RZT 42 y RZT 50 57,7\" X1/2”",
   "descripcion": "Transmisión RZT 42 y RZT 50 57,7\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61641,12 +61725,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888216",
   "estado": "completo",
-  "nombre": "Plataforma RZT 50 134\" X1/2”",
+  "nombre": "754-04044 Plataforma RZT 50 134\" X1/2”",
   "descripcion": "Plataforma RZT 50 134\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61678,12 +61763,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888217",
   "estado": "completo",
-  "nombre": "Plataforma 42\" Troy Bilt Auto-Drive 109,10\" X1/2”",
+  "nombre": "754-04045 Plataforma 42\" Troy Bilt Auto-Drive 109,10\" X1/2”",
   "descripcion": "Plataforma 42\" Troy Bilt Auto-Drive 109,10\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61711,12 +61797,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888225",
   "estado": "completo",
-  "nombre": "Transmisión Yard Man 34\"X1/2\"",
+  "nombre": "754-04050 Transmisión Yard Man 34\"X1/2\"",
   "descripcion": "Transmisión Yard Man 34\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61747,12 +61834,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888230",
   "estado": "completo",
-  "nombre": "Plataforma 42\" De Corte 760G-779G 96,50\" X1/2”",
+  "nombre": "754-04060B Plataforma 42\" De Corte 760G-779G 96,50\" X1/2”",
   "descripcion": "Plataforma 42\" De Corte 760G-779G 96,50\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61784,12 +61872,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888231",
   "estado": "completo",
-  "nombre": "Transmisión Motocultivador 26”X1/2”",
+  "nombre": "754-04061 Transmisión Motocultivador 26”X1/2”",
   "descripcion": "Transmisión Motocultivador 26”X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61821,12 +61910,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888232",
   "estado": "completo",
-  "nombre": "Plataforma 38\" De Corte 760F-779F 77,70X1/2”",
+  "nombre": "754-04062 Plataforma 38\" De Corte 760F-779F 77,70X1/2”",
   "descripcion": "Plataforma 38\" De Corte 760F-779F 77,70X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61857,12 +61947,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888235",
   "estado": "completo",
-  "nombre": "Plataforma Cub Cadet 46\" De Corte 122\" X1/2\"",
+  "nombre": "754-04118 Plataforma Cub Cadet 46\" De Corte 122\" X1/2\"",
   "descripcion": "Plataforma Cub Cadet 46\" De Corte 122\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61889,12 +61980,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888239",
   "estado": "completo",
-  "nombre": "Tracción Autopropulsada 32,25\" x 3/8\"",
+  "nombre": "754-04066 Tracción Autopropulsada 32,25\" x 3/8\"",
   "descripcion": "Tracción Autopropulsada 32,25\" x 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61925,12 +62017,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888240",
   "estado": "completo",
-  "nombre": "Plataforma 1° 46” De Corte 604H-606H 68,20” X 5/8”",
+  "nombre": "754-04064 Plataforma 1° 46” De Corte 604H-606H 68,20” X 5/8”",
   "descripcion": "Plataforma 1° 46” De Corte 604H-606H 68,20” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61962,12 +62055,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888241",
   "estado": "completo",
-  "nombre": "Transmisión 790-799 Hidrostático 78,3\" x 1/2\"",
+  "nombre": "754-04074A Transmisión 790-799 Hidrostático 78,3\" x 1/2\"",
   "descripcion": "Transmisión 790-799 Hidrostático 78,3\" x 1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -61998,12 +62092,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888242",
   "estado": "completo",
-  "nombre": "Plataforma 50” De Corte White 134” X 5/8”",
+  "nombre": "754-04077 Plataforma 50” De Corte White 134” X 5/8”",
   "descripcion": "Plataforma 50” De Corte White 134” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62031,12 +62126,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888243",
   "estado": "completo",
-  "nombre": "Cub Cadet LTX 79,5” X 1/2”",
+  "nombre": "754-04207 Plataforma Cub Cadet LTX 79,5” X 1/2”",
   "descripcion": "Cub Cadet LTX 79,5” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62064,12 +62160,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888244",
   "estado": "completo",
-  "nombre": "Plataforma 50\" Troy Bilt Serie 800 135” X 5/8”",
+  "nombre": "754-04107 Plataforma 50\" Troy Bilt Serie 800 135” X 5/8”",
   "descripcion": "Plataforma 50\" Troy Bilt Serie 800 135” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62097,12 +62194,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888245",
   "estado": "completo",
-  "nombre": "Plataforma 1° Serie 600H 46” De Corte 90,25” X1/2”",
+  "nombre": "754-04122 Plataforma 1° Serie 600H 46” De Corte 90,25” X1/2”",
   "descripcion": "Plataforma 1° Serie 600H 46” De Corte 90,25” X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62134,12 +62232,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888246",
   "estado": "completo",
-  "nombre": "Tracción Motocultivador 24,10\" X1/2\"",
+  "nombre": "754-04123 Tracción Motocultivador 24,10\" X1/2\"",
   "descripcion": "Tracción Motocultivador 24,10\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62170,12 +62269,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888247",
   "estado": "completo",
-  "nombre": "2765F Autodrive 41,25” X 5/8”",
+  "nombre": "754-04208 Transmisión 2° 2765F Autodrive 41,25” X 5/8”",
   "descripcion": "2765F Autodrive 41,25” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62207,12 +62307,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888249",
   "estado": "completo",
-  "nombre": "C.C Rider 56B36D4K75 50” X 1/2”",
+  "nombre": "754-04212 Transmisión C.C Rider 56B36D4K75 50” X 1/2”",
   "descripcion": "C.C Rider 56B36D4K75 50” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62244,12 +62345,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888250",
   "estado": "completo",
-  "nombre": "Plataforma RZT 42” De Corte 114,47” X1/2”",
+  "nombre": "754-04137A Plataforma RZT 42” De Corte 114,47” X1/2”",
   "descripcion": "Plataforma RZT 42” De Corte 114,47” X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62281,12 +62383,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888254",
   "estado": "completo",
-  "nombre": "Transmisión Cub Cadet Cc760 64\"X1/2\"",
+  "nombre": "754-04145 Transmisión Cub Cadet Cc760 64\"X1/2\"",
   "descripcion": "Transmisión Cub Cadet Cc760 64\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62313,12 +62416,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888256",
   "estado": "completo",
-  "nombre": "Rider 30” De Corte 44” X 1/2”",
+  "nombre": "754-05001 Plataforma Rider 30” De Corte 44” X 1/2”",
   "descripcion": "Rider 30” De Corte 44” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62350,12 +62454,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888258",
   "estado": "completo",
-  "nombre": "RZT 50” De Corte Nuevo 141,4” X 1/2”",
+  "nombre": "754-05008 Plataforma RZT 50” De Corte Nuevo 141,4” X 1/2”",
   "descripcion": "RZT 50” De Corte Nuevo 141,4” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62389,12 +62494,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888259",
   "estado": "completo",
-  "nombre": "2765F Control Manual 70,50” X 5/8”",
+  "nombre": "754-04249 Transmisión 1° 2765F Control Manual 70,50” X 5/8”",
   "descripcion": "2765F Control Manual 70,50” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62426,12 +62532,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888260",
   "estado": "completo",
-  "nombre": "LT1045 46” De Corte 78” X 1/2”",
+  "nombre": "754-04165 Transmisión LT1045 46” De Corte 78” X 1/2”",
   "descripcion": "LT1045 46” De Corte 78” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62463,12 +62570,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888261",
   "estado": "completo",
-  "nombre": "46” De Corte 2 Cuchillas T77KT 103,24” X 1/2”",
+  "nombre": "754-04219 Plataforma 46” De Corte 2 Cuchillas T77KT 103,24” X 1/2”",
   "descripcion": "46” De Corte 2 Cuchillas T77KT 103,24” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62500,12 +62608,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888262",
   "estado": "completo",
-  "nombre": "RZT 42” y 50” Serie 3 67,5” X 1/2”",
+  "nombre": "754-04317 Transmisión RZT 42” y 50” Serie 3 67,5” X 1/2”",
   "descripcion": "RZT 42” y 50” Serie 3 67,5” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62537,12 +62646,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888263",
   "estado": "completo",
-  "nombre": "Rider 30” De Corte 226JD 45” X 5/8”",
+  "nombre": "754-04318 Plataforma Rider 30” De Corte 226JD 45” X 5/8”",
   "descripcion": "Rider 30” De Corte 226JD 45” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62574,12 +62684,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888264",
   "estado": "completo",
-  "nombre": "Rider 30” De Corte 226JD 35,25” X 5/8”",
+  "nombre": "754-04331 Transmisión 1° Rider 30” De Corte 226JD 35,25” X 5/8”",
   "descripcion": "Rider 30” De Corte 226JD 35,25” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62611,12 +62722,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888267",
   "estado": "completo",
-  "nombre": "Cub Cadet RZT 46” 125” X 1/2”",
+  "nombre": "754-04325 Plataforma Cub Cadet RZT 46” 125” X 1/2”",
   "descripcion": "Cub Cadet RZT 46” 125” X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62644,12 +62756,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888269",
   "estado": "completo",
-  "nombre": "Cub Cadet RZT 54” 148” X 5/8”",
+  "nombre": "754-04329 Plataforma Cub Cadet RZT 54” 148” X 5/8”",
   "descripcion": "Cub Cadet RZT 54” 148” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62677,12 +62790,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MTD / YARD MACHINES / YARD-MAN / TROY BILT / WHITE",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888270",
   "estado": "completo",
-  "nombre": "PB195H42LT y PB195H46YT 90\"X1/2”",
+  "nombre": "125907X Transmisión PB195H42LT y PB195H46YT 90\"X1/2”",
   "descripcion": "PB195H42LT y PB195H46YT 90\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62713,12 +62827,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888275",
   "estado": "completo",
-  "nombre": "36\" Y 38\" De Corte 88,50\" X1/2”",
+  "nombre": "126520 Transmisión 36\" Y 38\" De Corte 88,50\" X1/2”",
   "descripcion": "36\" Y 38\" De Corte 88,50\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62749,7 +62864,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888276",
@@ -62818,7 +62934,7 @@
  {
   "codigo": "5888280",
   "estado": "completo",
-  "nombre": "16Hp 42\" De Corte 95\"X 1/2”",
+  "nombre": "130801 Plataforma 16Hp 42\" De Corte 95\"X 1/2”",
   "descripcion": "16Hp 42\" De Corte 95\"X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62849,12 +62965,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888285",
   "estado": "completo",
-  "nombre": "48L22AH0X8A y PB22H46YT 92,50\" X1/2”",
+  "nombre": "130969 Transmisión 48L22AH0X8A y PB22H46YT 92,50\" X1/2”",
   "descripcion": "48L22AH0X8A y PB22H46YT 92,50\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62885,12 +63002,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888288",
   "estado": "completo",
-  "nombre": "18 HP 42” De Corte 98” X1/2”",
+  "nombre": "131006 Transmisión 18 HP 42” De Corte 98” X1/2”",
   "descripcion": "18 HP 42” De Corte 98” X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62921,12 +63039,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888290",
   "estado": "completo",
-  "nombre": "10HP11 HP 36\" De Corte 78,50\" X1/2”",
+  "nombre": "131264 Plataforma 10HP11 HP 36\" De Corte 78,50\" X1/2”",
   "descripcion": "10HP11 HP 36\" De Corte 78,50\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62957,12 +63076,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888295",
   "estado": "completo",
-  "nombre": "12,5 HP 38\" HA125R38B 88\"X1/2”",
+  "nombre": "131290X Plataforma 12,5 HP 38\" HA125R38B 88\"X1/2”",
   "descripcion": "12,5 HP 38\" HA125R38B 88\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -62993,12 +63113,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888296",
   "estado": "completo",
-  "nombre": "Motocultivador 52\"X1/2”",
+  "nombre": "132801 Transmisión Motocultivador 52\"X1/2”",
   "descripcion": "Motocultivador 52\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63029,12 +63150,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888300",
   "estado": "completo",
-  "nombre": "20HP46\" De Corte 83,50\" X1/2”",
+  "nombre": "137153 Transmisión 20HP46\" De Corte 83,50\" X1/2”",
   "descripcion": "20HP46\" De Corte 83,50\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63065,12 +63187,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888305",
   "estado": "completo",
-  "nombre": "42L15G60X8A y P015538LT 95\"X1/2”",
+  "nombre": "138255 Transmisión 42L15G60X8A y P015538LT 95\"X1/2”",
   "descripcion": "42L15G60X8A y P015538LT 95\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63101,12 +63224,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888310",
   "estado": "completo",
-  "nombre": "22Hp 46\" De Corte 83,70\" X1/2”",
+  "nombre": "139573 Plataforma 22Hp 46\" De Corte 83,70\" X1/2”",
   "descripcion": "22Hp 46\" De Corte 83,70\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63137,12 +63261,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888311",
   "estado": "completo",
-  "nombre": "8 HP 36” De Corte 82,75” X1/2”",
+  "nombre": "140067 Transmisión 8 HP 36” De Corte 82,75” X1/2”",
   "descripcion": "8 HP 36” De Corte 82,75” X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63173,12 +63298,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888315",
   "estado": "completo",
-  "nombre": "PB22H54YT LTH1538 84,50\" X1/2”",
+  "nombre": "140218 Transmisión PB22H54YT LTH1538 84,50\" X1/2”",
   "descripcion": "PB22H54YT LTH1538 84,50\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63209,12 +63335,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888320",
   "estado": "completo",
-  "nombre": "18HP46\" De Corte 82,25\" X1/2”",
+  "nombre": "140294 Transmisión 18HP46\" De Corte 82,25\" X1/2”",
   "descripcion": "18HP46\" De Corte 82,25\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63245,12 +63372,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888323",
   "estado": "completo",
-  "nombre": "Craftman Weed Eater 77,78\" X1/2\"",
+  "nombre": "140910 Transmisión Craftman Weed Eater 77,78\" X1/2\"",
   "descripcion": "Craftman Weed Eater 77,78\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63278,12 +63406,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888325",
   "estado": "completo",
-  "nombre": "12Hp 14Hp 16.5HP 42\" De Corte 88,75\" X1/2\"",
+  "nombre": "144200 Plataforma 12Hp 14Hp 16.5HP 42\" De Corte 88,75\" X1/2\"",
   "descripcion": "12Hp 14Hp 16.5HP 42\" De Corte 88,75\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63314,12 +63443,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888330",
   "estado": "completo",
-  "nombre": "38\" y 42\" De Corte P017542LT 95 ,50\" X1/2”",
+  "nombre": "144959 Plataforma 38\" y 42\" De Corte P017542LT 95 ,50\" X1/2”",
   "descripcion": "38\" y 42\" De Corte P017542LT 95 ,50\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63350,12 +63480,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888331",
   "estado": "completo",
-  "nombre": "22\" De Corte 32,5\" X 3/8\"",
+  "nombre": "146527 Tracción 22\" De Corte 32,5\" X 3/8\"",
   "descripcion": "22\" De Corte 32,5\" X 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63386,12 +63517,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888332",
   "estado": "completo",
-  "nombre": "18HP46\" De Corte 85,25\" X 5/8\"",
+  "nombre": "148763 Plataforma 18HP46\" De Corte 85,25\" X 5/8\"",
   "descripcion": "18HP46\" De Corte 85,25\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63422,12 +63554,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888334",
   "estado": "completo",
-  "nombre": "46” De Corte 84,40” X1/2”",
+  "nombre": "158818 Transmisión 46” De Corte 84,40” X1/2”",
   "descripcion": "46” De Corte 84,40” X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63458,12 +63591,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888335",
   "estado": "completo",
-  "nombre": "12HP 38\" De Corte 95\"X1/2”",
+  "nombre": "160855 Transmisión 12HP 38\" De Corte 95\"X1/2”",
   "descripcion": "12HP 38\" De Corte 95\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63494,12 +63628,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888336",
   "estado": "completo",
-  "nombre": "Tracción CESPERA 35\" X 3/8\"",
+  "nombre": "160816 Tracción CESPERA 35\" X 3/8\"",
   "descripcion": "Tracción CESPERA 35\" X 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63529,12 +63664,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888340",
   "estado": "completo",
-  "nombre": "10HP11HP 36\" De Corte 79\"X1/2”",
+  "nombre": "161741 Transmisión 10HP11HP 36\" De Corte 79\"X1/2”",
   "descripcion": "10HP11HP 36\" De Corte 79\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63565,12 +63701,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888343",
   "estado": "completo",
-  "nombre": "Wed Eater 14,5hp - 42\" 85’X1/2’",
+  "nombre": "161850 Plataforma Wed Eater 14,5hp - 42\" 85’X1/2’",
   "descripcion": "Wed Eater 14,5hp - 42\" 85’X1/2’",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63600,12 +63737,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888345",
   "estado": "completo",
-  "nombre": "48\" De Corte 108,50\" X1/2”",
+  "nombre": "165555 Transmisión 48\" De Corte 108,50\" X1/2”",
   "descripcion": "48\" De Corte 108,50\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63636,12 +63774,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888347",
   "estado": "completo",
-  "nombre": "Hidrostatico 199 9 112\" X1/2\"",
+  "nombre": "165632 Transmisión Hidrostatico 199 9 112\" X1/2\"",
   "descripcion": "Hidrostatico 199 9 112\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63672,12 +63811,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888349",
   "estado": "completo",
-  "nombre": "AYP 42” De Corte 114\" X 1/2\"",
+  "nombre": "169178 Plataforma AYP 42” De Corte 114\" X 1/2\"",
   "descripcion": "AYP 42” De Corte 114\" X 1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63705,12 +63845,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888350",
   "estado": "completo",
-  "nombre": "Tracción CESPERA 38\" X 3/8\" 8",
+  "nombre": "166060 Tracción CESPERA 38\" X 3/8\" 8",
   "descripcion": "Tracción CESPERA 38\" X 3/8\" 8",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63741,12 +63882,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888360",
   "estado": "completo",
-  "nombre": "48” De Corte 89.50\" X 5/8\"",
+  "nombre": "174368 Plataforma 48” De Corte 89.50\" X 5/8\"",
   "descripcion": "48” De Corte 89.50\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63777,12 +63919,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888362",
   "estado": "completo",
-  "nombre": "Poulan 42\" 97\" X 5/8\"",
+  "nombre": "174883 Plataforma Poulan 42\" 97\" X 5/8\"",
   "descripcion": "Poulan 42\" 97\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63810,12 +63953,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888363",
   "estado": "completo",
-  "nombre": "21\" De Corte 32” X 3/8”",
+  "nombre": "175436 Tracción 21\" De Corte 32” X 3/8”",
   "descripcion": "21\" De Corte 32” X 3/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63846,12 +63990,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888365",
   "estado": "completo",
-  "nombre": "42\" De Corte 87,75\" X1/2\"",
+  "nombre": "178138 Plataforma 42\" De Corte 87,75\" X1/2\"",
   "descripcion": "42\" De Corte 87,75\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63882,12 +64027,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888370",
   "estado": "completo",
-  "nombre": "12,5Hp 38\" De Corte 87\"X1/2”",
+  "nombre": "180214 Plataforma 12,5Hp 38\" De Corte 87\"X1/2”",
   "descripcion": "12,5Hp 38\" De Corte 87\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63918,7 +64064,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888373",
@@ -63959,7 +64106,7 @@
  {
   "codigo": "5888375",
   "estado": "completo",
-  "nombre": "22 HP 48” De Corte 89,25” X 5/8”",
+  "nombre": "180808 Transmisión 22 HP 48” De Corte 89,25” X 5/8”",
   "descripcion": "22 HP 48” De Corte 89,25” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -63990,12 +64137,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888376",
   "estado": "completo",
-  "nombre": "54\" De Corte Hidra 140,98\" X 5/8\"",
+  "nombre": "187283 Plataforma 54\" De Corte Hidra 140,98\" X 5/8\"",
   "descripcion": "54\" De Corte Hidra 140,98\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64026,12 +64174,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888377",
   "estado": "completo",
-  "nombre": "54” De Corte 141,50” X 5/8”",
+  "nombre": "191273 Plataforma 54” De Corte 141,50” X 5/8”",
   "descripcion": "54” De Corte 141,50” X 5/8”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64062,12 +64211,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888378",
   "estado": "completo",
-  "nombre": "Cespera Autopropulsada 35\" X 3/8\"",
+  "nombre": "182212 Tracción Cespera Autopropulsada 35\" X 3/8\"",
   "descripcion": "Cespera Autopropulsada 35\" X 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64098,7 +64248,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888379",
@@ -64138,7 +64289,7 @@
  {
   "codigo": "5888380",
   "estado": "completo",
-  "nombre": "38L12G50X8A y P015538LT 90\"X 1/2”",
+  "nombre": "193214 Plataforma 38L12G50X8A y P015538LT 90\"X 1/2”",
   "descripcion": "38L12G50X8A y P015538LT 90\"X 1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64169,12 +64320,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888382",
   "estado": "completo",
-  "nombre": "Tracción CESPERA 34\" X 3/8\"",
+  "nombre": "183688 Tracción CESPERA 34\" X 3/8\"",
   "descripcion": "Tracción CESPERA 34\" X 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64204,12 +64356,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888385",
   "estado": "completo",
-  "nombre": "42L18G60X8A 42\" De Corte 97,40\" X1/2”",
+  "nombre": "194346 Transmisión 42L18G60X8A 42\" De Corte 97,40\" X1/2”",
   "descripcion": "42L18G60X8A 42\" De Corte 97,40\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64240,12 +64393,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888390",
   "estado": "completo",
-  "nombre": "54G26G60X8A y PB22H54YT 148\" X 5/8\"",
+  "nombre": "196103 Plataforma 54G26G60X8A y PB22H54YT 148\" X 5/8\"",
   "descripcion": "54G26G60X8A y PB22H54YT 148\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64276,12 +64430,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888395",
   "estado": "completo",
-  "nombre": "48L22AH0X8A y 48G24G60X8A 138,75\" X 5/8\"",
+  "nombre": "197242 Plataforma 48L22AH0X8A y 48G24G60X8A 138,75\" X 5/8\"",
   "descripcion": "48L22AH0X8A y 48G24G60X8A 138,75\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64312,12 +64467,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888402",
   "estado": "completo",
-  "nombre": "Transmisión Ariens 42\" 95\"X1/2\"",
+  "nombre": "21547026 Transmisión Ariens 42\" 95\"X1/2\"",
   "descripcion": "Transmisión Ariens 42\" 95\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64344,12 +64500,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888403",
   "estado": "completo",
-  "nombre": "Plataforma Ariens 42\" 95,5\" X 1/2\"",
+  "nombre": "21547027 Plataforma Ariens 42\" 95,5\" X 1/2\"",
   "descripcion": "Plataforma Ariens 42\" 95,5\" X 1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64376,12 +64533,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888404",
   "estado": "completo",
-  "nombre": "Transmisión 48G24G60X8A y 54G26G60X8A 97,60” X1/2”",
+  "nombre": "199612 Transmisión 48G24G60X8A y 54G26G60X8A 97,60” X1/2”",
   "descripcion": "Transmisión 48G24G60X8A y 54G26G60X8A 97,60” X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64412,12 +64570,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888405",
   "estado": "completo",
-  "nombre": "Transmisión LT4140G 90\"X1/2”",
+  "nombre": "303241 Transmisión LT4140G 90\"X1/2”",
   "descripcion": "Transmisión LT4140G 90\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64448,12 +64607,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888406",
   "estado": "completo",
-  "nombre": "Tracción Autopropulsada 40\"X1/2\"",
+  "nombre": "300142 Tracción Autopropulsada 40\"X1/2\"",
   "descripcion": "Tracción Autopropulsada 40\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64483,12 +64643,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888408",
   "estado": "completo",
-  "nombre": "Variador Poulan 22 X 17",
+  "nombre": "GT37401 Transmisión Variador Poulan 22 X 17",
   "descripcion": "Variador Poulan 22 X 17",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64515,12 +64676,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888409",
   "estado": "completo",
-  "nombre": "Plataforma Poulan 110\" X 1/2\"",
+  "nombre": "429532 Plataforma Poulan 110\" X 1/2\"",
   "descripcion": "Plataforma Poulan 110\" X 1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64547,12 +64709,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888410",
   "estado": "completo",
-  "nombre": "Transmisión 42\" De Corte 95,68\" X1/2”",
+  "nombre": "401603 Transmisión 42\" De Corte 95,68\" X1/2”",
   "descripcion": "Transmisión 42\" De Corte 95,68\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64583,12 +64746,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888411",
   "estado": "completo",
-  "nombre": "Craftsman 42\" 96,4\" X 1/2\"",
+  "nombre": "408381 Plataforma Craftsman 42\" 96,4\" X 1/2\"",
   "descripcion": "Craftsman 42\" 96,4\" X 1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64616,12 +64780,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888412",
   "estado": "completo",
-  "nombre": "Plataforma PB19546LT y PB195H46YT 105,76” X1/2”",
+  "nombre": "405143 Plataforma PB19546LT y PB195H46YT 105,76” X1/2”",
   "descripcion": "Plataforma PB19546LT y PB195H46YT 105,76” X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64652,12 +64817,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888413",
   "estado": "completo",
-  "nombre": "Plataforma LT126 89,25X1/2\"",
+  "nombre": "419271 Plataforma LT126 89,25X1/2\"",
   "descripcion": "Plataforma LT126 89,25X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64687,12 +64853,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888414",
   "estado": "completo",
-  "nombre": "Plataforma 42L18G60X8A 42\" De Corte 102\" X1/2\"",
+  "nombre": "429636 Plataforma 42L18G60X8A 42\" De Corte 102\" X1/2\"",
   "descripcion": "Plataforma 42L18G60X8A 42\" De Corte 102\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64722,12 +64889,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888415",
   "estado": "completo",
-  "nombre": "Plataforma 26\" De Corte (One We261) 68,25” X1/2”",
+  "nombre": "428578 Plataforma 26\" De Corte (One We261) 68,25” X1/2”",
   "descripcion": "Plataforma 26\" De Corte (One We261) 68,25” X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64758,12 +64926,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888416",
   "estado": "completo",
-  "nombre": "Plataforma Pb30 30\" De Corte 72\"X1/2\"",
+  "nombre": "441597 Plataforma Pb30 30\" De Corte 72\"X1/2\"",
   "descripcion": "Plataforma Pb30 30\" De Corte 72\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64793,12 +64962,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888417",
   "estado": "completo",
-  "nombre": "Plataforma Dinamark-Noma 38\" De Corte 84,75\" X1/2\"",
+  "nombre": "57214 Plataforma Dinamark-Noma 38\" De Corte 84,75\" X1/2\"",
   "descripcion": "Plataforma Dinamark-Noma 38\" De Corte 84,75\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64826,12 +64996,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888418",
   "estado": "completo",
-  "nombre": "Tracción Jet 555 34\" X 3/8\"",
+  "nombre": "83691 Tracción Jet 555 34\" X 3/8\"",
   "descripcion": "Tracción Jet 555 34\" X 3/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64859,12 +65030,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888420",
   "estado": "completo",
-  "nombre": "Plataforma 42\" De Corte 55\" X1/2”",
+  "nombre": "37X12 Plataforma 42\" De Corte 55\" X1/2”",
   "descripcion": "Plataforma 42\" De Corte 55\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64893,12 +65065,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888421",
   "estado": "completo",
-  "nombre": "Plataforma 30577X8A 30\" De Corte 53,75\" X1/2\"",
+  "nombre": "37X57 Plataforma 30577X8A 30\" De Corte 53,75\" X1/2\"",
   "descripcion": "Plataforma 30577X8A 30\" De Corte 53,75\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64926,12 +65099,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888422",
   "estado": "completo",
-  "nombre": "Transmisión 30” De Corte 40,30” X1/2”",
+  "nombre": "37X38 Transmisión 30” De Corte 40,30” X1/2”",
   "descripcion": "Transmisión 30” De Corte 40,30” X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64960,12 +65134,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888423",
   "estado": "completo",
-  "nombre": "Plataforma 36” De Corte 83”X1/2”",
+  "nombre": "37X43 Plataforma 36” De Corte 83”X1/2”",
   "descripcion": "Plataforma 36” De Corte 83”X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -64994,12 +65169,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888424",
   "estado": "completo",
-  "nombre": "Plataforma 42” De Corte 90,50” X1/2”",
+  "nombre": "37X45 Plataforma 42” De Corte 90,50” X1/2”",
   "descripcion": "Plataforma 42” De Corte 90,50” X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65028,12 +65204,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888425",
   "estado": "completo",
-  "nombre": "Transmisión 38618X92A v 40702X92A 95\"X1/2”",
+  "nombre": "37X61 Transmisión 38618X92A v 40702X92A 95\"X1/2”",
   "descripcion": "Transmisión 38618X92A v 40702X92A 95\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65062,12 +65239,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888426",
   "estado": "completo",
-  "nombre": "Plataforma 40702X92A 40\" De Corte 86\"X1/2”",
+  "nombre": "37X62 Plataforma 40702X92A 40\" De Corte 86\"X1/2”",
   "descripcion": "Plataforma 40702X92A 40\" De Corte 86\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65096,12 +65274,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888427",
   "estado": "completo",
-  "nombre": "Plataforma 38618X92A 38\" De Corte 83\"X1/2”",
+  "nombre": "37X63 Plataforma 38618X92A 38\" De Corte 83\"X1/2”",
   "descripcion": "Plataforma 38618X92A 38\" De Corte 83\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65130,12 +65309,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888428",
   "estado": "completo",
-  "nombre": "Transmisión 30577X8A 30\" De Corte 30\"X1/2\"",
+  "nombre": "37X65 Transmisión 30577X8A 30\" De Corte 30\"X1/2\"",
   "descripcion": "Transmisión 30577X8A 30\" De Corte 30\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65163,12 +65343,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888430",
   "estado": "completo",
-  "nombre": "Tracción MURRAY 37 X 1/2\"",
+  "nombre": "37*64 Tracción MURRAY 37 X 1/2\"",
   "descripcion": "Tracción MURRAY 37 X 1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65195,12 +65376,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888437",
   "estado": "completo",
-  "nombre": "Plataforma 18 Hp 46” De Corte 47,10” X1/2”",
+  "nombre": "37X66 Plataforma 18 Hp 46” De Corte 47,10” X1/2”",
   "descripcion": "Plataforma 18 Hp 46” De Corte 47,10” X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65229,12 +65411,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888440",
   "estado": "completo",
-  "nombre": "Transmisión 52\" De Corte 52100X92A 101,70\" X1/2”",
+  "nombre": "37X68 Transmisión 52\" De Corte 52100X92A 101,70\" X1/2”",
   "descripcion": "Transmisión 52\" De Corte 52100X92A 101,70\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65263,12 +65446,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888444",
   "estado": "completo",
-  "nombre": "Plataforma 18Hp 46\" De Corte Serie 46300 80,30\" X1/2\"",
+  "nombre": "37X69 Plataforma 18Hp 46\" De Corte Serie 46300 80,30\" X1/2\"",
   "descripcion": "Plataforma 18Hp 46\" De Corte Serie 46300 80,30\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65296,12 +65480,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888445",
   "estado": "completo",
-  "nombre": "Plataforma 46\" De Corte 76,50\" X1/2”",
+  "nombre": "37X70 Plataforma 46\" De Corte 76,50\" X1/2”",
   "descripcion": "Plataforma 46\" De Corte 76,50\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65330,12 +65515,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888449",
   "estado": "completo",
-  "nombre": "Plataforma 13/30\" 1992 57\" X1/2\"",
+  "nombre": "37X74 Plataforma 13/30\" 1992 57\" X1/2\"",
   "descripcion": "Plataforma 13/30\" 1992 57\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65363,12 +65549,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888450",
   "estado": "completo",
-  "nombre": "Plataforma 42\" De Corte 42910X92A 91.25\" X1/2”",
+  "nombre": "37X75 Plataforma 42\" De Corte 42910X92A 91.25\" X1/2”",
   "descripcion": "Plataforma 42\" De Corte 42910X92A 91.25\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65397,12 +65584,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888455",
   "estado": "completo",
-  "nombre": "Transmisión 42\" De Corte 42910X92A 86,12\" X1/2”",
+  "nombre": "37X80 Transmisión 42\" De Corte 42910X92A 86,12\" X1/2”",
   "descripcion": "Transmisión 42\" De Corte 42910X92A 86,12\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65431,12 +65619,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.367Z"
  },
  {
   "codigo": "5888456",
   "estado": "completo",
-  "nombre": "Transmisión 14.5HP42\" De Corte 89\"X1/2”",
+  "nombre": "37X81 Transmisión 14.5HP42\" De Corte 89\"X1/2”",
   "descripcion": "Transmisión 14.5HP42\" De Corte 89\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65465,12 +65654,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888457",
   "estado": "completo",
-  "nombre": "Plataforma 46” y 52” GT 89,40” X1/2”",
+  "nombre": "37X82 Plataforma 46” y 52” GT 89,40” X1/2”",
   "descripcion": "Plataforma 46” y 52” GT 89,40” X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65499,12 +65689,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888465",
   "estado": "completo",
-  "nombre": "Plataforma Sentinel 38\" 385002x108B 84\"X1/2”",
+  "nombre": "37X86 Plataforma Sentinel 38\" 385002x108B 84\"X1/2”",
   "descripcion": "Plataforma Sentinel 38\" 385002x108B 84\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65533,12 +65724,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888467",
   "estado": "completo",
-  "nombre": "Plataforma Hidrostático 425600X48A 42\" 88,25\" X1/2”",
+  "nombre": "37X88 Plataforma Hidrostático 425600X48A 42\" 88,25\" X1/2”",
   "descripcion": "Plataforma Hidrostático 425600X48A 42\" 88,25\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65567,12 +65759,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888468",
   "estado": "completo",
-  "nombre": "Plataforma LT 46\" De Corte 87\" X1/2”",
+  "nombre": "37X89 Plataforma LT 46\" De Corte 87\" X1/2”",
   "descripcion": "Plataforma LT 46\" De Corte 87\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65601,12 +65794,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888471",
   "estado": "completo",
-  "nombre": "Plataforma 48\" De Corte 48560X92A 52,75\" X1/2\"",
+  "nombre": "37X92 Plataforma 48\" De Corte 48560X92A 52,75\" X1/2\"",
   "descripcion": "Plataforma 48\" De Corte 48560X92A 52,75\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65634,12 +65828,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888485",
   "estado": "completo",
-  "nombre": "Plataforma Rider 46\" De Corte 88,25\" X1/2”",
+  "nombre": "37X96 Plataforma Rider 46\" De Corte 88,25\" X1/2”",
   "descripcion": "Plataforma Rider 46\" De Corte 88,25\" X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65668,12 +65863,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888490",
   "estado": "completo",
-  "nombre": "Transmisión Hidrostático 38\" 40\" 42\" 46\" 89\"X1/2”",
+  "nombre": "37X106 Transmisión Hidrostático 38\" 40\" 42\" 46\" 89\"X1/2”",
   "descripcion": "Transmisión Hidrostático 38\" 40\" 42\" 46\" 89\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65702,12 +65898,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888494",
   "estado": "completo",
-  "nombre": "Transmisión (10/30) 30\" De Corte 44\"X1/2\"",
+  "nombre": "37X110 Transmisión (10/30) 30\" De Corte 44\"X1/2\"",
   "descripcion": "Transmisión (10/30) 30\" De Corte 44\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65735,12 +65932,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888495",
   "estado": "completo",
-  "nombre": "Plataforma (10/30) 30\" De Corte 45\" X 9/16\"",
+  "nombre": "37X111 Plataforma (10/30) 30\" De Corte 45\" X 9/16\"",
   "descripcion": "Plataforma (10/30) 30\" De Corte 45\" X 9/16\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65768,12 +65966,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888496",
   "estado": "completo",
-  "nombre": "Plataforma 42\" y 46\" De Corte 66,25\" X 5/8\"",
+  "nombre": "37X112 Plataforma 42\" y 46\" De Corte 66,25\" X 5/8\"",
   "descripcion": "Plataforma 42\" y 46\" De Corte 66,25\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65801,12 +66000,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888497",
   "estado": "completo",
-  "nombre": "Transmisión 38\" y 42\" De Corte 44,3\" X 5/8\"",
+  "nombre": "37X113 Transmisión 38\" y 42\" De Corte 44,3\" X 5/8\"",
   "descripcion": "Transmisión 38\" y 42\" De Corte 44,3\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65834,12 +66034,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888499",
   "estado": "completo",
-  "nombre": "Plataforma GTH 48\" de Corte 126\"x1/2\"",
+  "nombre": "1703466SM Plataforma GTH 48\" de Corte 126\"x1/2\"",
   "descripcion": "Plataforma GTH 48\" de Corte 126\"x1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65867,12 +66068,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888500",
   "estado": "completo",
-  "nombre": "Transmisión Hidrostático 425600X48A 42\" 88\"X1/2”",
+  "nombre": "37X144 Transmisión Hidrostático 425600X48A 42\" 88\"X1/2”",
   "descripcion": "Transmisión Hidrostático 425600X48A 42\" 88\"X1/2”",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65901,7 +66103,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888501",
@@ -65939,7 +66142,7 @@
  {
   "codigo": "5888502",
   "estado": "completo",
-  "nombre": "Transmisión EZM 2042 42\" De Corte 54,4\" X1/2\"",
+  "nombre": "1732224SM Transmisión EZM 2042 42\" De Corte 54,4\" X1/2\"",
   "descripcion": "Transmisión EZM 2042 42\" De Corte 54,4\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -65967,12 +66170,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888503",
   "estado": "completo",
-  "nombre": "Plataforma EZM 2042 42\" De Corte 103\" X1/2\"",
+  "nombre": "1734048SM Plataforma EZM 2042 42\" De Corte 103\" X1/2\"",
   "descripcion": "Plataforma EZM 2042 42\" De Corte 103\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -66000,12 +66204,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888504",
   "estado": "completo",
-  "nombre": "Transmisión RZT 26520 52\" De Corte 58\"X1/2\"",
+  "nombre": "7100102SM Transmisión RZT 26520 52\" De Corte 58\"X1/2\"",
   "descripcion": "Transmisión RZT 26520 52\" De Corte 58\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -66033,7 +66238,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888505",
@@ -66071,7 +66277,7 @@
  {
   "codigo": "5888506",
   "estado": "completo",
-  "nombre": "Plataforma RZT 26520 52\" De Corte 158\" X1/2\"",
+  "nombre": "7103789YP Plataforma RZT 26520 52\" De Corte 158\" X1/2\"",
   "descripcion": "Plataforma RZT 26520 52\" De Corte 158\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -66099,12 +66305,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888507",
   "estado": "completo",
-  "nombre": "Plataforma LT4140G 1994 82,5\" X 5/8\"",
+  "nombre": "48044 Plataforma LT4140G 1994 82,5\" X 5/8\"",
   "descripcion": "Plataforma LT4140G 1994 82,5\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -66132,12 +66339,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888508",
   "estado": "completo",
-  "nombre": "Transmisión 12Hp 38\" De Corte 82\"X1/2\"",
+  "nombre": "54758 Transmisión 12Hp 38\" De Corte 82\"X1/2\"",
   "descripcion": "Transmisión 12Hp 38\" De Corte 82\"X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -66165,12 +66373,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888509",
   "estado": "completo",
-  "nombre": "Plataforma Noma 38\" De Corte 77,5\" X 5/8\"",
+  "nombre": "300680 Plataforma Noma 38\" De Corte 77,5\" X 5/8\"",
   "descripcion": "Plataforma Noma 38\" De Corte 77,5\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -66197,7 +66406,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888510",
@@ -67261,7 +67471,7 @@
  {
   "codigo": "5888552",
   "estado": "completo",
-  "nombre": "Transmisión E4821 64,75\" X1/2\"",
+  "nombre": "510201401 Transmisión E4821 64,75\" X1/2\"",
   "descripcion": "Transmisión E4821 64,75\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -67288,7 +67498,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSQVARNA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888553",
@@ -67798,7 +68009,7 @@
  {
   "codigo": "5888570",
   "estado": "completo",
-  "nombre": "Transmisión Poulan Pro P54ZXT 5,375\" X 1/2\"",
+  "nombre": "574 870901 Transmisión M-ZT 52 / MZ48 / MZ54 75,375\" X1/2\"",
   "descripcion": "Transmisión Poulan Pro P54ZXT 5,375\" X 1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -67825,7 +68036,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - AYP / POULAN / WEED EATER / CRAFTSMAN",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888571",
@@ -67859,7 +68071,7 @@
  {
   "codigo": "5888572",
   "estado": "completo",
-  "nombre": "Plataforma P-ZT60 176\" X 5/8\"",
+  "nombre": "575 658403 Plataforma P-ZT60 176\" X 5/8\"",
   "descripcion": "Plataforma P-ZT60 176\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -67886,7 +68098,8 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSQVARNA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888573",
@@ -68771,7 +68984,7 @@
  {
   "codigo": "5888711",
   "estado": "completo",
-  "nombre": "Plataforma 48\" DE CORTE 148\" X 5/8\"",
+  "nombre": "708273 Plataforma 48\" DE CORTE 148\" X 5/8\"",
   "descripcion": "Plataforma 48\" DE CORTE 148\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -68799,12 +69012,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888713",
   "estado": "completo",
-  "nombre": "Transmisión 48\" DE CORTE 92,50\" X 1/2\"",
+  "nombre": "708337 Transmisión 48\" DE CORTE 92,50\" X 1/2\"",
   "descripcion": "Transmisión 48\" DE CORTE 92,50\" X 1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -68832,12 +69046,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - MURRAY / NOMA",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888714",
   "estado": "completo",
-  "nombre": "Transmisión Fastrak 48\" y 54\" 70\" X1/2\"",
+  "nombre": "600979 Transmisión Fastrak 48\" y 54\" 70\" X1/2\"",
   "descripcion": "Transmisión Fastrak 48\" y 54\" 70\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -68864,12 +69079,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSTLER",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888716",
   "estado": "completo",
-  "nombre": "Transmisión Hustler X-One 60\" De Corte 61,5\" X1/2\"",
+  "nombre": "602907 Transmisión Hustler X-One 60\" De Corte 61,5\" X1/2\"",
   "descripcion": "Transmisión Hustler X-One 60\" De Corte 61,5\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -68896,12 +69112,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSTLER",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888718",
   "estado": "completo",
-  "nombre": "Plataforma Hustler X-One 60\" De Corte 171,25\" X 5/8'",
+  "nombre": "602988 Plataforma Hustler X-One 60\" De Corte 171,25\" X 5/8'",
   "descripcion": "Plataforma Hustler X-One 60\" De Corte 171,25\" X 5/8'",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -68929,12 +69146,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSTLER",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888720",
   "estado": "completo",
-  "nombre": "Transmisión Hustler Sport 67,24\" X1/2\"",
+  "nombre": "769133 Transmisión Hustler Sport 67,24\" X1/2\"",
   "descripcion": "Transmisión Hustler Sport 67,24\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -68961,12 +69179,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSTLER",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888722",
   "estado": "completo",
-  "nombre": "Plataforma Hustler Sport 48\" De Corte 134,5\" x 5/8\"",
+  "nombre": "771634 Plataforma Hustler Sport 48\" De Corte 134,5\" x 5/8\"",
   "descripcion": "Plataforma Hustler Sport 48\" De Corte 134,5\" x 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -68993,12 +69212,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSTLER",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888724",
   "estado": "completo",
-  "nombre": "Plataforma Hustler Sport 54\" De Corte 145,5\" X 5/8\"",
+  "nombre": "777185 Plataforma Hustler Sport 54\" De Corte 145,5\" X 5/8\"",
   "descripcion": "Plataforma Hustler Sport 54\" De Corte 145,5\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -69025,12 +69245,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSTLER",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888726",
   "estado": "completo",
-  "nombre": "Transmisión Hustler ZXR-7 62,25\" X1/2\"",
+  "nombre": "781443 Transmisión Hustler ZXR-7 62,25\" X1/2\"",
   "descripcion": "Transmisión Hustler ZXR-7 62,25\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -69057,12 +69278,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSTLER",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888728",
   "estado": "completo",
-  "nombre": "Plataforma Hustler Fastrak 60\" De Corte 165,5\" X 5/8\"",
+  "nombre": "782292 Plataforma Hustler Fastrak 60\" De Corte 165,5\" X 5/8\"",
   "descripcion": "Plataforma Hustler Fastrak 60\" De Corte 165,5\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -69089,12 +69311,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSTLER",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888730",
   "estado": "completo",
-  "nombre": "Transmisión Mini Fastrak 42\" De Corte 63,325\" X1/2'",
+  "nombre": "793836 Transmisión Mini Fastrak 42\" De Corte 63,325\" X1/2'",
   "descripcion": "Transmisión Mini Fastrak 42\" De Corte 63,325\" X1/2'",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -69122,12 +69345,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSTLER",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888732",
   "estado": "completo",
-  "nombre": "Plataforma Mini Fastrak 42\" De Corte 127\" X1/2\"",
+  "nombre": "793893 Plataforma Mini Fastrak 42\" De Corte 127\" X1/2\"",
   "descripcion": "Plataforma Mini Fastrak 42\" De Corte 127\" X1/2\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -69154,12 +69378,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSTLER",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888736",
   "estado": "completo",
-  "nombre": "Plataforma MX5050 Hustler Fastrak 48\" De Corte 143\" X 5/8\"",
+  "nombre": "791335 Plataforma MX5050 Hustler Fastrak 48\" De Corte 143\" X 5/8\"",
   "descripcion": "Plataforma MX5050 Hustler Fastrak 48\" De Corte 143\" X 5/8\"",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -69186,12 +69411,13 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSTLER",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  },
  {
   "codigo": "5888738",
   "estado": "completo",
-  "nombre": "Plataforma Hustler ZXR-7 176,79\" X 5/8'",
+  "nombre": "797720 Plataforma Hustler ZXR-7 176,79\" X 5/8'",
   "descripcion": "Plataforma Hustler ZXR-7 176,79\" X 5/8'",
   "familia": "Minitractores",
   "familia_indice": "Minitractores",
@@ -69219,6 +69445,7 @@
   "encabezado_pdf": "MINITRACTORES - CORREAS DE KEVLAR - HUSTLER",
   "foto": null,
   "foto_confianza": null,
-  "fuente_desc": "texto del PDF"
+  "fuente_desc": "texto del PDF",
+  "editado_en": "2026-09-09T03:41:09.368Z"
  }
 ]
