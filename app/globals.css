@@ -308,6 +308,25 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 .cod-ref-sub { font-size: 12px; font-weight: 700; color: var(--ink-soft); margin: 0 0 4px; }
 .cod-ref-list { list-style: none; margin: 0 0 8px; padding: 0; font-size: 12.5px; color: var(--ink-soft); line-height: 1.7; }
 .cod-ref-list b { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* ===== Login clientes: pantalla de acceso ===== */
+.acceso { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; background: var(--brand); }
+.acceso-card { background: var(--surface); border-radius: 16px; padding: 32px 28px; max-width: 380px; width: 100%; box-shadow: 0 16px 40px rgba(0,0,0,.25); text-align: center; }
+.acceso-logo { height: 34px; margin-bottom: 18px; }
+.acceso-card h1 { font-family: var(--f-display); font-style: italic; text-transform: uppercase; font-size: 1.4rem; margin: 0 0 8px; }
+.acceso-sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
+.acceso-form { display: grid; gap: 14px; text-align: left; }
+.acceso-form label { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-faint); margin-bottom: 5px; }
+.acceso-form input { width: 100%; border: 1px solid var(--rule-strong); border-radius: 8px; padding: 11px 13px; font-size: 15px; font-family: inherit; background: var(--surface); color: var(--ink); box-sizing: border-box; }
+.acceso-form button { border: 0; border-radius: 9px; padding: 13px; font-size: 14.5px; font-weight: 700; background: var(--brand); color: #fff; cursor: pointer; margin-top: 4px; }
+.acceso-err { color: #b3261e; font-size: 13px; font-weight: 700; margin: 0; }
+
+/* ===== Toggle "Login clientes" en /admin/metricas ===== */
+.mgate { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.mgate-txt h2 { margin: 0 0 4px; font-size: 14px; }
+.mgate-txt .mut { margin: 0; }
+.mgate-btn { border: 0; border-radius: 9px; padding: 11px 20px; font-size: 13.5px; font-weight: 700; cursor: pointer; background: var(--brand); color: #fff; white-space: nowrap; }
+.mgate-btn.on { background: var(--surface-2); color: #b3261e; border: 1px solid #f0d3d3; }
 .ok-msg { background: var(--ok-bg); color: var(--ok); border-radius: 8px; padding: 10px 14px; font-size: 13px; font-weight: 700; margin-bottom: 16px; }
 .err-msg { background: #fbe6e4; color: #b3261e; border-radius: 8px; padding: 10px 14px; font-size: 13px; font-weight: 700; margin-bottom: 16px; }
 

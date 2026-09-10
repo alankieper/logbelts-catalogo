@@ -33,7 +33,8 @@ export async function POST(req) {
       }
     } catch {}
 
-    await registrarVisita({ ip_hash, pais, ciudad, region, path, ref });
+    const visitanteId = req.cookies.get('lb_visitante')?.value || null;
+    await registrarVisita({ ip_hash, pais, ciudad, region, path, ref, visitanteId });
   } catch {
     /* nada */
   }

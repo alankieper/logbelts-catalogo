@@ -6,7 +6,8 @@ export const dynamic = 'force-dynamic';
 export async function POST(req) {
   try {
     const body = await req.json().catch(() => null);
-    if (body && body.tipo) await registrar(body);
+    const visitanteId = req.cookies.get('lb_visitante')?.value || null;
+    if (body && body.tipo) await registrar({ ...body, visitanteId });
   } catch {
     /* nada */
   }

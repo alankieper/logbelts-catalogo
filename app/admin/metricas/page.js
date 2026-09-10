@@ -1,7 +1,10 @@
 import AdminHeader from '../AdminHeader';
 import { leerEventos, leerVisitas } from '../../../lib/eventos';
 import { leerTodosRaw } from '../../../lib/catalogo';
+import { leerVisitantes } from '../../../lib/visitantes';
+import { gateClientesActivo } from '../../../lib/config';
 import { vincularBusqueda } from '../productoActions';
+import { cambiarGateClientes } from '../configActions';
 
 const PAISES = {
   AR: 'Argentina', UY: 'Uruguay', CL: 'Chile', BR: 'Brasil', PY: 'Paraguay', BO: 'Bolivia',
@@ -83,8 +86,11 @@ function Ranking({ filas, color = 'var(--brand-ink)', href }) {
 
 export default async function Metricas({ searchParams }) {
   const dias = RANGOS.some((r) => String(r.d) === searchParams?.d) ? Number(searchParams.d) : 30;
-  const [eventos, visitas, productos] = await Promise.all([leerEventos(dias), leerVisitas(dias), leerTodosRaw()]);
+  const [eventos, visitas, productos, visitantes, gateActivo] = await Promise.all([
+    leerEventos(dias), leerVisitas(dias), leerTodosRaw(), leerVisitantes(), gateClientesActivo(),
+  ]);
   const nombre = new Map(productos.map((p) => [p.codigo, p.nombre || p.clave_producto || p.codigo]));
+  const errGate = searchParams?.errGate === '1';
 
   const por = (t) => eventos.filter((e) => e.tipo === t);
   const busquedas = por('busqueda');
@@ -126,6 +132,18 @@ export default async function Metricas({ searchParams }) {
   const topBusquedas = rank(busquedas, (e) => (e.q || '').toLowerCase().trim(), (q) => q, 15);
   const topSinResultado = rank(sinResultado, (e) => (e.q || '').toLowerCase().trim(), (q) => q, 15);
   const itemsPorPedido = pedidos.length ? Math.round((pedidos.reduce((s, e) => s + (e.n || 0), 0) / pedidos.length) * 10) / 10 : 0;
+
+  // ---- visitantes (login clientes: empresa/nombre + teléfono) ----
+  const visitanteInfo = new Map(visitantes.map((v) => [v.id, v]));
+  const topVisitantes = rank(
+    eventos.filter((e) => e.visitante_id && visitanteInfo.has(e.visitante_id)),
+    (e) => e.visitante_id,
+    (id) => {
+      const v = visitanteInfo.get(id);
+      return `${v.empresa_nombre} · ${v.telefono}`;
+    },
+    15
+  );
 
   // ---- visitas ----
   const personas = new Set(visitas.map((v) => v.ip_hash).filter(Boolean)).size;
@@ -171,6 +189,26 @@ export default async function Metricas({ searchParams }) {
               ))}
             </div>
           </div>
+
+          <section className="mcard mgate">
+            <div className="mgate-txt">
+              <h2>Login clientes</h2>
+              <p className="mut">
+                {gateActivo
+                  ? 'Prendido: para ver el catálogo hay que completar empresa/nombre y teléfono (una sola vez por navegador).'
+                  : 'Apagado: cualquiera puede ver el catálogo sin completar nada.'}
+                {' '}{fmt(visitantes.length)} clientes registrados hasta ahora.
+              </p>
+              {errGate ? <p className="acceso-err" style={{ margin: '6px 0 0' }}>No se pudo guardar el cambio, probá de nuevo.</p> : null}
+            </div>
+            <form action={cambiarGateClientes}>
+              <input type="hidden" name="activo" value={gateActivo ? '0' : '1'} />
+              <input type="hidden" name="d" value={String(dias)} />
+              <button type="submit" className={gateActivo ? 'mgate-btn on' : 'mgate-btn'}>
+                {gateActivo ? 'Apagar' : 'Prender'}
+              </button>
+            </form>
+          </section>
 
           {!hayDatos ? (
             <div className="ok-msg" style={{ background: 'var(--surface-2)', color: 'var(--ink-soft)' }}>
@@ -254,6 +292,12 @@ export default async function Metricas({ searchParams }) {
             <section className="mcard">
               <h2>Productos más vistos</h2>
               <Ranking filas={topVistos} href={(f) => `/admin/productos/${encodeURIComponent(f.k)}`} />
+            </section>
+
+            <section className="mcard">
+              <h2>Clientes más activos</h2>
+              <p className="mut">Quién completó el acceso y qué tan activo estuvo en este rango. Hace clic para ver el detalle (qué buscó, qué vio).</p>
+              <Ranking filas={topVisitantes} color="var(--ok)" href={(f) => `/admin/visitantes/${encodeURIComponent(f.k)}`} />
             </section>
           </div>
 
