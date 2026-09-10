@@ -312,12 +312,24 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 .err-msg { background: #fbe6e4; color: #b3261e; border-radius: 8px; padding: 10px 14px; font-size: 13px; font-weight: 700; margin-bottom: 16px; }
 
 /* ===== Zoom de la foto del producto ===== */
+.zoomwrap { position: relative; }
 .gmain.zoomable { cursor: zoom-in; position: relative; touch-action: pan-y; }
 .gmain.zoomable img { transition: transform .16s ease-out; will-change: transform; }
 .zoomhint {
   position: absolute; right: 8px; bottom: 8px; font-size: 13px; line-height: 1;
   background: rgba(0,0,0,.35); color: #fff; border-radius: 6px; padding: 3px 5px;
   pointer-events: none; opacity: .75;
+}
+/* Lupa + panel flotante (pantallas anchas, estilo Amazon) */
+.zoomlens {
+  position: absolute; background: rgba(255, 221, 87, .3); border: 1px solid rgba(0,0,0,.4);
+  pointer-events: none; z-index: 30;
+}
+.zoompanel {
+  position: absolute; left: calc(100% + 16px); top: 0; z-index: 40;
+  background-repeat: no-repeat; background-color: var(--surface);
+  border: 1px solid var(--rule); border-radius: 14px; box-shadow: 0 12px 32px rgba(0,0,0,.22);
+  pointer-events: none;
 }
 
 /* ===== Botón modo claro / oscuro ===== */
