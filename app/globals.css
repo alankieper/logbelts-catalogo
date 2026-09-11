@@ -37,6 +37,7 @@
   --ok-bg: #dcefe4;
   --warn: #8f6410;
   --warn-bg: #f5e8cf;
+  --accent2: #7c4fb0;
   --shadow: 0 1px 2px rgba(20,28,50,.06), 0 8px 24px rgba(20,28,50,.06);
   --f-display: 'Dunk95', 'Anton', Impact, system-ui, sans-serif;
   --f-body: 'Aktiv Grotesk', system-ui, -apple-system, sans-serif;
@@ -379,6 +380,7 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
   --ok-bg: #16352a;
   --warn: #dca641;
   --warn-bg: #3a2f16;
+  --accent2: #b58ce0;
   --shadow: 0 1px 2px rgba(0,0,0,.45), 0 10px 26px rgba(0,0,0,.4);
 }
 :root[data-theme="oscuro"] header.cat form.search input { background: #2a2e38; color: #e8eaef; }
@@ -459,9 +461,25 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 .mrank-lbl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink); }
 .mrank-lbl a { color: var(--ink); }
 .mrank-bar { background: var(--surface-2); border-radius: 999px; height: 8px; overflow: hidden; }
-.mrank-bar span { display: block; height: 100%; border-radius: 999px; }
+.mrank-bar span { display: block; height: 100%; border-radius: 999px; transition: width 900ms cubic-bezier(.22,.9,.28,1); }
 .mrank-n { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-faint); font-weight: 700; }
 .adm .mut { font-size: 11.5px; color: var(--ink-faint); }
+
+/* ---- animación de las barras (día a día) ---- */
+.mchart rect.mbar { transition: height 700ms cubic-bezier(.22,.9,.28,1), y 700ms cubic-bezier(.22,.9,.28,1); }
+.mchart rect.mbar:hover { opacity: .8; }
+
+/* ---- gráfico de torta (mezcla de actividad) ---- */
+.mdonut-row { display: flex; gap: 26px; align-items: center; flex-wrap: wrap; }
+.mdonut-svg { flex: none; transform: rotate(-90deg); }
+.mdonut-seg { transition: stroke-dasharray 900ms cubic-bezier(.22,.9,.28,1); }
+.mdonut-total { transform: rotate(90deg); }
+.mdonut-total tspan.n { font-size: 22px; font-weight: 800; fill: var(--ink); font-family: inherit; }
+.mdonut-total tspan.l { font-size: 9px; fill: var(--ink-faint); text-transform: uppercase; letter-spacing: .06em; }
+.mdonut-legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.mdonut-legend li { display: flex; align-items: center; gap: 9px; font-size: 13px; color: var(--ink); }
+.mdonut-legend i { width: 11px; height: 11px; border-radius: 3px; flex: none; }
+.mdonut-legend b { font-variant-numeric: tabular-nums; margin-left: auto; padding-left: 14px; color: var(--ink-faint); font-weight: 700; }
 
 /* ===== Video de producto ===== */
 .gvideo { width: 100%; max-width: 380px; margin-top: 10px; border: 1px solid var(--rule); border-radius: 12px; background: #000; display: block; }

@@ -96,7 +96,7 @@ export default async function DetalleVisitante({ params }) {
                     return (
                       <li key={clave}>
                         <span className="mrank-lbl">{clave}</span>
-                        <span className="mrank-bar"><span style={{ width: `${(n / max) * 100}%`, background: 'var(--ok)' }} /></span>
+                        <span className="mrank-bar"><span className="bar-fill" data-final-w={((n / max) * 100).toFixed(1)} style={{ width: '0%', background: 'var(--ok)' }} /></span>
                         <span className="mrank-n">{n}</span>
                       </li>
                     );
@@ -114,7 +114,7 @@ export default async function DetalleVisitante({ params }) {
                     return (
                       <li key={q}>
                         <span className="mrank-lbl"><a href={`/buscar?q=${encodeURIComponent(q)}`} target="_blank" rel="noreferrer">{q}</a></span>
-                        <span className="mrank-bar"><span style={{ width: `${(n / max) * 100}%`, background: 'var(--brand-ink)' }} /></span>
+                        <span className="mrank-bar"><span className="bar-fill" data-final-w={((n / max) * 100).toFixed(1)} style={{ width: '0%', background: 'var(--brand-ink)' }} /></span>
                         <span className="mrank-n">{n}</span>
                       </li>
                     );
@@ -145,6 +145,19 @@ export default async function DetalleVisitante({ params }) {
           </section>
         </div>
       </main>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(){
+            function anim(){
+              document.querySelectorAll('.bar-fill[data-final-w]').forEach(function(el,i){
+                setTimeout(function(){ el.style.width = el.getAttribute('data-final-w') + '%'; }, 20 + i * 12);
+              });
+            }
+            if (document.readyState === 'complete') anim();
+            else window.addEventListener('load', anim);
+          })();`,
+        }}
+      />
     </>
   );
 }

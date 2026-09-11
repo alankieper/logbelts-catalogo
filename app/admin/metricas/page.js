@@ -33,9 +33,10 @@ function etiquetaDia(iso) {
   return `${d}/${m}`;
 }
 
-/* ---- barras verticales (serie por día) ---- */
+/* ---- barras verticales (serie por día), animadas: arrancan en 0 y crecen al cargar ---- */
 function BarrasDias({ dias, series }) {
   const W = 720, H = 190, padB = 22, padL = 6, padT = 8;
+  const base = padT + (H - padT - padB);
   const max = Math.max(1, ...dias.map((k) => series.reduce((s, ser) => s + (ser.data[k] || 0), 0)));
   const bw = (W - padL * 2) / dias.length;
   const paso = Math.ceil(dias.length / 12);
@@ -51,9 +52,21 @@ function BarrasDias({ dias, series }) {
             {series.map((ser) => {
               const v = ser.data[k] || 0;
               const h = ((H - padT - padB) * v) / max;
-              const y = padT + (H - padT - padB) - acc - h;
+              const y = base - acc - h;
               acc += h;
-              return v ? <rect key={ser.key} x={bw * 0.15} y={y} width={bw * 0.7} height={h} fill={ser.color} rx="1.5" /> : null;
+              if (!v) return null;
+              return (
+                <rect
+                  key={ser.key}
+                  className="mbar"
+                  data-final-h={h.toFixed(2)}
+                  data-final-y={y.toFixed(2)}
+                  x={bw * 0.15} y={base} width={bw * 0.7} height={0}
+                  fill={ser.color} rx="1.5"
+                >
+                  <title>{`${ser.label}: ${v} · ${etiquetaDia(k)}`}</title>
+                </rect>
+              );
             })}
             {i % paso === 0 ? (
               <text x={bw / 2} y={H - 7} textAnchor="middle" className="axis">{etiquetaDia(k)}</text>
@@ -65,7 +78,7 @@ function BarrasDias({ dias, series }) {
   );
 }
 
-/* ---- barras horizontales (ranking) ---- */
+/* ---- barras horizontales (ranking), animadas: arrancan en 0 y crecen al cargar ---- */
 function Ranking({ filas, color = 'var(--brand-ink)', href }) {
   const max = Math.max(1, ...filas.map((f) => f.n));
   if (!filas.length) return <p className="mut">Sin datos todavía.</p>;
@@ -76,11 +89,58 @@ function Ranking({ filas, color = 'var(--brand-ink)', href }) {
           <span className="mrank-lbl">
             {href ? <a href={href(f)}>{f.label}</a> : f.label}
           </span>
-          <span className="mrank-bar"><span style={{ width: `${(f.n / max) * 100}%`, background: color }} /></span>
+          <span className="mrank-bar">
+            <span className="bar-fill" data-final-w={((f.n / max) * 100).toFixed(1)} style={{ width: '0%', background: color }} />
+          </span>
           <span className="mrank-n">{fmt(f.n)}</span>
         </li>
       ))}
     </ul>
+  );
+}
+
+/* ---- gráfico de torta: mezcla de tipos de actividad, animado (crece el arco) ---- */
+function Donut({ segmentos, size = 148, grosor = 20 }) {
+  const total = segmentos.reduce((s, x) => s + x.v, 0);
+  const r = (size - grosor) / 2;
+  const c = 2 * Math.PI * r;
+  if (!total) return <p className="mut">Sin datos todavía.</p>;
+  let acc = 0;
+  const arcos = segmentos.filter((s) => s.v > 0).map((s) => {
+    const frac = s.v / total;
+    const len = frac * c;
+    const offset = -acc;
+    acc += len;
+    return { ...s, len, offset };
+  });
+  return (
+    <div className="mdonut-row">
+      <svg viewBox={`0 0 ${size} ${size}`} width={size} height={size} className="mdonut-svg" role="img" aria-label="Mezcla de actividad">
+        <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="var(--surface-2)" strokeWidth={grosor} />
+        {arcos.map((a) => (
+          <circle
+            key={a.label}
+            className="mdonut-seg"
+            cx={size / 2} cy={size / 2} r={r} fill="none"
+            stroke={a.color} strokeWidth={grosor}
+            strokeDasharray={`0 ${c.toFixed(2)}`}
+            data-final-dash={`${a.len.toFixed(2)} ${(c - a.len).toFixed(2)}`}
+            strokeDashoffset={a.offset.toFixed(2)}
+          >
+            <title>{`${a.label}: ${fmt(a.v)}`}</title>
+          </circle>
+        ))}
+        <g className="mdonut-total">
+          <text x={size / 2} y={size / 2 - 4} textAnchor="middle"><tspan className="n">{fmt(total)}</tspan></text>
+          <text x={size / 2} y={size / 2 + 13} textAnchor="middle"><tspan className="l">eventos</tspan></text>
+        </g>
+      </svg>
+      <ul className="mdonut-legend">
+        {segmentos.map((s) => (
+          <li key={s.label}><i style={{ background: s.color }} />{s.label}<b>{fmt(s.v)}</b></li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
@@ -233,7 +293,7 @@ export default async function Metricas({ searchParams }) {
                   {inactivos.map((v) => (
                     <li key={v.id}>
                       <span className="mrank-lbl"><a href={`/admin/visitantes/${v.id}`}>{v.empresa_nombre} · {v.telefono}</a></span>
-                      <span className="mrank-bar"><span style={{ width: '100%', background: 'var(--warn)' }} /></span>
+                      <span className="mrank-bar"><span className="bar-fill" data-final-w="100" style={{ width: '0%', background: 'var(--warn)' }} /></span>
                       <span className="mrank-n">{v.diasSinEntrar}d</span>
                     </li>
                   ))}
@@ -259,11 +319,25 @@ export default async function Metricas({ searchParams }) {
             ))}
           </div>
 
-          <section className="mcard">
-            <h2>Personas por día</h2>
-            <p className="mut">Cada persona (por IP) se cuenta una vez por día, aunque haya entrado varias veces.</p>
-            <BarrasDias dias={listaDias} series={seriePersonas} />
-          </section>
+          <div className="mcols">
+            <section className="mcard">
+              <h2>Personas por día</h2>
+              <p className="mut">Cada persona (por IP) se cuenta una vez por día, aunque haya entrado varias veces.</p>
+              <BarrasDias dias={listaDias} series={seriePersonas} />
+            </section>
+            <section className="mcard">
+              <h2>Mezcla de actividad</h2>
+              <p className="mut">De qué está hecho todo lo que pasó en este rango.</p>
+              <Donut
+                segmentos={[
+                  { label: 'Búsquedas', v: busquedas.length, color: 'var(--brand-ink)' },
+                  { label: 'Productos vistos', v: vistas.length, color: 'var(--ok)' },
+                  { label: 'Consultas WhatsApp', v: consultas.length, color: 'var(--accent2)' },
+                  { label: 'Pedidos enviados', v: pedidos.length, color: 'var(--warn)' },
+                ]}
+              />
+            </section>
+          </div>
 
           <div className="mcols">
             <section className="mcard">
@@ -339,6 +413,28 @@ export default async function Metricas({ searchParams }) {
           </p>
         </div>
       </main>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(){
+            function anim(){
+              document.querySelectorAll('.bar-fill[data-final-w]').forEach(function(el,i){
+                setTimeout(function(){ el.style.width = el.getAttribute('data-final-w') + '%'; }, 20 + i * 12);
+              });
+              document.querySelectorAll('rect.mbar[data-final-h]').forEach(function(el,i){
+                setTimeout(function(){
+                  el.setAttribute('height', el.getAttribute('data-final-h'));
+                  el.setAttribute('y', el.getAttribute('data-final-y'));
+                }, 20 + i * 3);
+              });
+              document.querySelectorAll('.mdonut-seg[data-final-dash]').forEach(function(el,i){
+                setTimeout(function(){ el.setAttribute('stroke-dasharray', el.getAttribute('data-final-dash')); }, 120 + i * 140);
+              });
+            }
+            if (document.readyState === 'complete') anim();
+            else window.addEventListener('load', anim);
+          })();`,
+        }}
+      />
     </>
   );
 }
