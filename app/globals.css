@@ -481,6 +481,22 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 .mdonut-legend i { width: 11px; height: 11px; border-radius: 3px; flex: none; }
 .mdonut-legend b { font-variant-numeric: tabular-nums; margin-left: auto; padding-left: 14px; color: var(--ink-faint); font-weight: 700; }
 
+/* ---- mapa de Argentina con pines ---- */
+.mmap-svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+.mmap-pais { fill: var(--surface-2); stroke: var(--rule-strong); stroke-width: 1.4; }
+.mmap-pin {
+  fill: var(--warn); stroke: var(--surface); stroke-width: 1.4; fill-opacity: .88;
+  transition: r 480ms cubic-bezier(.34,1.56,.64,1);
+}
+.mmap-pin:hover { fill-opacity: 1; }
+
+/* ---- rosa de los vientos (de dónde llegó la gente) ---- */
+.mrose-row { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+.mrose-svg { flex: none; }
+.mrose-ring { fill: none; stroke: var(--rule); stroke-width: 1; }
+.mrose-petal { stroke: var(--surface); stroke-width: 1.5; fill-opacity: .92; transition: d 650ms cubic-bezier(.22,.9,.28,1); }
+.mrose-petal:hover { fill-opacity: 1; }
+
 /* ===== Video de producto ===== */
 .gvideo { width: 100%; max-width: 380px; margin-top: 10px; border: 1px solid var(--rule); border-radius: 12px; background: #000; display: block; }
 

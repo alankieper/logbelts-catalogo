@@ -148,13 +148,28 @@ export default async function DetalleVisitante({ params }) {
       <script
         dangerouslySetInnerHTML={{
           __html: `(function(){
-            function anim(){
-              document.querySelectorAll('.bar-fill[data-final-w]').forEach(function(el,i){
+            function activar(root){
+              root.querySelectorAll('.bar-fill[data-final-w]').forEach(function(el,i){
                 setTimeout(function(){ el.style.width = el.getAttribute('data-final-w') + '%'; }, 20 + i * 12);
               });
             }
-            if (document.readyState === 'complete') anim();
-            else window.addEventListener('load', anim);
+            function conectar(){
+              var tarjetas = document.querySelectorAll('.mcard');
+              if (!('IntersectionObserver' in window)) { tarjetas.forEach(function(t){ activar(t); }); return; }
+              var vistos = new WeakSet();
+              var obs = new IntersectionObserver(function(entries){
+                entries.forEach(function(entry){
+                  if (entry.isIntersecting && !vistos.has(entry.target)) {
+                    vistos.add(entry.target);
+                    activar(entry.target);
+                    obs.unobserve(entry.target);
+                  }
+                });
+              }, { threshold: 0.15 });
+              tarjetas.forEach(function(t){ obs.observe(t); });
+            }
+            if (document.readyState === 'complete') conectar();
+            else window.addEventListener('load', conectar);
           })();`,
         }}
       />

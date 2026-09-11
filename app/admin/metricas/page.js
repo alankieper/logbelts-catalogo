@@ -5,6 +5,7 @@ import { leerVisitantes } from '../../../lib/visitantes';
 import { gateClientesActivo } from '../../../lib/config';
 import { vincularBusqueda } from '../productoActions';
 import { cambiarGateClientes } from '../configActions';
+import { RUTA_ARGENTINA, MAPA_ANCHO, MAPA_ALTO, CIUDADES_AR, proyectar, normalizarCiudad } from './mapaArgentina';
 
 const PAISES = {
   AR: 'Argentina', UY: 'Uruguay', CL: 'Chile', BR: 'Brasil', PY: 'Paraguay', BO: 'Bolivia',
@@ -144,6 +145,79 @@ function Donut({ segmentos, size = 148, grosor = 20 }) {
   );
 }
 
+/* ---- mapa de Argentina con pines por ciudad, animado (crecen los pines) ---- */
+function MapaArgentina({ ciudades }) {
+  const pines = ciudades
+    .map((c) => {
+      const coords = CIUDADES_AR[normalizarCiudad(c.nombre)];
+      if (!coords) return null;
+      const [x, y] = proyectar(coords);
+      return { ...c, x, y };
+    })
+    .filter(Boolean);
+  const maxN = Math.max(1, ...pines.map((p) => p.n));
+  if (!pines.length) return <p className="mut">Todavía no hay suficientes visitas de Argentina para ubicar en el mapa.</p>;
+  return (
+    <svg viewBox={`0 0 ${MAPA_ANCHO} ${MAPA_ALTO}`} width={MAPA_ANCHO} height={MAPA_ALTO} className="mmap-svg" role="img" aria-label="Mapa de Argentina con ciudades de origen">
+      <path d={RUTA_ARGENTINA} className="mmap-pais" />
+      {pines.map((p) => (
+        <circle
+          key={p.nombre}
+          className="mmap-pin"
+          cx={p.x} cy={p.y} r="0"
+          data-final-r={Math.min(9, 3.5 + Math.sqrt(p.n / maxN) * 6).toFixed(1)}
+        >
+          <title>{`${p.nombre}: ${p.n}`}</title>
+        </circle>
+      ))}
+    </svg>
+  );
+}
+
+/* ---- rosa de los vientos: de dónde llegó la gente, en pétalos en vez de barras ---- */
+function RosaVientos({ filas }) {
+  const COLORES = ['var(--brand-ink)', 'var(--ok)', 'var(--warn)', 'var(--accent2)'];
+  if (!filas.length) return <p className="mut">Sin datos todavía.</p>;
+  const SZ = 190, cx = SZ / 2, cy = SZ / 2, R = 72;
+  const maxN = Math.max(...filas.map((f) => f.n));
+  const n = filas.length;
+  const petalo = (r, a0, a1) => {
+    const x0 = cx + r * Math.cos(a0), y0 = cy + r * Math.sin(a0);
+    const x1 = cx + r * Math.cos(a1), y1 = cy + r * Math.sin(a1);
+    const grande = a1 - a0 > Math.PI ? 1 : 0;
+    return `M${cx.toFixed(1)},${cy.toFixed(1)} L${x0.toFixed(1)},${y0.toFixed(1)} A${r.toFixed(1)},${r.toFixed(1)} 0 ${grande} 1 ${x1.toFixed(1)},${y1.toFixed(1)} Z`;
+  };
+  return (
+    <div className="mrose-row">
+      <svg viewBox={`0 0 ${SZ} ${SZ}`} width={SZ} height={SZ} className="mrose-svg" role="img" aria-label="De dónde llegó la gente">
+        <circle cx={cx} cy={cy} r={R} className="mrose-ring" />
+        <circle cx={cx} cy={cy} r={R * 0.5} className="mrose-ring" />
+        {filas.map((f, i) => {
+          const a0 = (i / n) * 2 * Math.PI - Math.PI / 2;
+          const a1 = ((i + 1) / n) * 2 * Math.PI - Math.PI / 2;
+          const rf = Math.max(10, R * Math.sqrt(f.n / maxN));
+          return (
+            <path
+              key={f.k}
+              className="mrose-petal"
+              d={petalo(1, a0, a1)}
+              data-final-d={petalo(rf, a0, a1)}
+              fill={COLORES[i % COLORES.length]}
+            >
+              <title>{`${f.label}: ${fmt(f.n)}`}</title>
+            </path>
+          );
+        })}
+      </svg>
+      <ul className="mdonut-legend">
+        {filas.map((f, i) => (
+          <li key={f.k}><i style={{ background: COLORES[i % COLORES.length] }} />{f.label}<b>{fmt(f.n)}</b></li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export default async function Metricas({ searchParams }) {
   const dias = RANGOS.some((r) => String(r.d) === searchParams?.d) ? Number(searchParams.d) : 30;
   const [eventos, visitas, productos, visitantes, gateActivo, ultimaActividad] = await Promise.all([
@@ -240,6 +314,16 @@ export default async function Metricas({ searchParams }) {
   const porCiudad = rankPersonas((v) => (v.ciudad ? `${v.ciudad}${v.pais ? ', ' + v.pais : ''}` : null), (c) => (c === '—' ? 'Ciudad desconocida' : c), 12);
   const porOrigen = rankPersonas((v) => v.ref, (r) => (r === '—' ? 'Directo / guardado' : r), 12);
 
+  // ---- ciudades de Argentina, para ubicar en el mapa ----
+  const ciudadesArgMap = new Map();
+  for (const v of visitas) {
+    if (!v.ciudad || v.pais !== 'AR') continue;
+    const key = normalizarCiudad(v.ciudad);
+    if (!ciudadesArgMap.has(key)) ciudadesArgMap.set(key, { nombre: v.ciudad, ids: new Set() });
+    ciudadesArgMap.get(key).ids.add(v.ip_hash || v.id);
+  }
+  const ciudadesMapa = [...ciudadesArgMap.values()].map((c) => ({ nombre: c.nombre, n: c.ids.size }));
+
   const kpis = [
     { t: 'Personas que lo vieron', v: personas, s: `${fmt(visitas.length)} visitas (sesiones)` },
     { t: 'Búsquedas', v: busquedas.length, s: `${sinResultado.length} sin resultado (${busquedas.length ? Math.round((sinResultado.length / busquedas.length) * 100) : 0}%)` },
@@ -319,12 +403,13 @@ export default async function Metricas({ searchParams }) {
             ))}
           </div>
 
+          <section className="mcard">
+            <h2>Personas por día</h2>
+            <p className="mut">Cada persona (por IP) se cuenta una vez por día, aunque haya entrado varias veces.</p>
+            <BarrasDias dias={listaDias} series={seriePersonas} />
+          </section>
+
           <div className="mcols">
-            <section className="mcard">
-              <h2>Personas por día</h2>
-              <p className="mut">Cada persona (por IP) se cuenta una vez por día, aunque haya entrado varias veces.</p>
-              <BarrasDias dias={listaDias} series={seriePersonas} />
-            </section>
             <section className="mcard">
               <h2>Mezcla de actividad</h2>
               <p className="mut">De qué está hecho todo lo que pasó en este rango.</p>
@@ -336,6 +421,11 @@ export default async function Metricas({ searchParams }) {
                   { label: 'Pedidos enviados', v: pedidos.length, color: 'var(--warn)' },
                 ]}
               />
+            </section>
+            <section className="mcard">
+              <h2>Mapa de dónde entran</h2>
+              <p className="mut">Ciudades de Argentina detectadas por IP, con más peso donde hay más visitas.</p>
+              <MapaArgentina ciudades={ciudadesMapa} />
             </section>
           </div>
 
@@ -351,7 +441,7 @@ export default async function Metricas({ searchParams }) {
             <section className="mcard">
               <h2>Cómo llegaron</h2>
               <p className="mut">Sitio de origen. “Directo / guardado” = escribieron la dirección o la tienen guardada.</p>
-              <Ranking filas={porOrigen} color="var(--ok)" />
+              <RosaVientos filas={porOrigen} />
             </section>
             <section className="mcard">
               <h2>Actividad por día</h2>
@@ -416,22 +506,43 @@ export default async function Metricas({ searchParams }) {
       <script
         dangerouslySetInnerHTML={{
           __html: `(function(){
-            function anim(){
-              document.querySelectorAll('.bar-fill[data-final-w]').forEach(function(el,i){
+            function activar(root){
+              root.querySelectorAll('.bar-fill[data-final-w]').forEach(function(el,i){
                 setTimeout(function(){ el.style.width = el.getAttribute('data-final-w') + '%'; }, 20 + i * 12);
               });
-              document.querySelectorAll('rect.mbar[data-final-h]').forEach(function(el,i){
+              root.querySelectorAll('rect.mbar[data-final-h]').forEach(function(el,i){
                 setTimeout(function(){
                   el.setAttribute('height', el.getAttribute('data-final-h'));
                   el.setAttribute('y', el.getAttribute('data-final-y'));
                 }, 20 + i * 3);
               });
-              document.querySelectorAll('.mdonut-seg[data-final-dash]').forEach(function(el,i){
+              root.querySelectorAll('.mdonut-seg[data-final-dash]').forEach(function(el,i){
                 setTimeout(function(){ el.setAttribute('stroke-dasharray', el.getAttribute('data-final-dash')); }, 120 + i * 140);
               });
+              root.querySelectorAll('.mrose-petal[data-final-d]').forEach(function(el,i){
+                setTimeout(function(){ el.setAttribute('d', el.getAttribute('data-final-d')); }, 20 + i * 90);
+              });
+              root.querySelectorAll('.mmap-pin[data-final-r]').forEach(function(el,i){
+                setTimeout(function(){ el.setAttribute('r', el.getAttribute('data-final-r')); }, 80 + i * 70);
+              });
             }
-            if (document.readyState === 'complete') anim();
-            else window.addEventListener('load', anim);
+            function conectar(){
+              var tarjetas = document.querySelectorAll('.mcard, .mgate');
+              if (!('IntersectionObserver' in window)) { tarjetas.forEach(function(t){ activar(t); }); return; }
+              var vistos = new WeakSet();
+              var obs = new IntersectionObserver(function(entries){
+                entries.forEach(function(entry){
+                  if (entry.isIntersecting && !vistos.has(entry.target)) {
+                    vistos.add(entry.target);
+                    activar(entry.target);
+                    obs.unobserve(entry.target);
+                  }
+                });
+              }, { threshold: 0.15 });
+              tarjetas.forEach(function(t){ obs.observe(t); });
+            }
+            if (document.readyState === 'complete') conectar();
+            else window.addEventListener('load', conectar);
           })();`,
         }}
       />
