@@ -1,22 +1,19 @@
 /**
- * Silueta simplificada de Argentina + tabla de coordenadas de ciudades, para
- * dibujar un mapa chico en SVG con pines donde entró gente al catálogo.
- * No es un mapa de precisión (no hace falta para un panel de 200px) — los
- * puntos del borde y las coordenadas de ciudades son aproximados, pero usan
- * la MISMA proyección, así que los pines caen en el lugar relativo correcto
- * dentro de la silueta.
+ * Contorno real de Argentina (continente + Tierra del Fuego, datos públicos
+ * de johan/world.geo.json) + tabla de coordenadas de ciudades, para dibujar
+ * un mapa chico en SVG con pines donde entró gente al catálogo. Los puntos
+ * del borde son geografía real (simplificada); las coordenadas de ciudades
+ * son aproximadas, pero usan la MISMA proyección, así que los pines caen en
+ * el lugar relativo correcto dentro de la silueta.
  */
 
-// Borde de Argentina simplificado, [longitud, latitud], sentido horario desde el norte.
-const BORDE_ARG = [
-  [-64.5, -22.0], [-62.3, -22.0], [-60.0, -23.2], [-57.6, -25.4], [-54.6, -25.6],
-  [-56.0, -27.3], [-58.0, -27.5], [-58.6, -30.0], [-58.4, -32.0], [-58.0, -34.0],
-  [-57.5, -34.5], [-57.0, -36.0], [-57.5, -38.0], [-59.5, -39.0], [-62.0, -40.5],
-  [-64.0, -42.5], [-65.5, -45.0], [-67.0, -47.5], [-66.5, -50.3], [-68.5, -52.5],
-  [-68.3, -54.5], [-68.6, -54.9], [-70.0, -52.5], [-72.3, -50.5], [-72.0, -47.0],
-  [-71.8, -44.0], [-71.5, -41.5], [-71.2, -38.5], [-70.5, -36.0], [-70.0, -33.0],
-  [-69.8, -30.0], [-69.0, -27.0], [-68.0, -24.5], [-66.0, -22.3], [-64.5, -22.0],
-];
+// Continente (incluye el extremo sur patagónico, sin Tierra del Fuego).
+const BORDE_CONTINENTE = [[-64.96,-22.08],[-64.38,-22.8],[-63.99,-21.99],[-62.85,-22.03],[-62.69,-22.25],[-60.85,-23.88],[-60.03,-24.03],[-58.81,-24.77],[-57.78,-25.16],[-57.63,-25.6],[-58.62,-27.12],[-57.61,-27.4],[-56.49,-27.55],[-55.7,-27.39],[-54.79,-26.62],[-54.63,-25.74],[-54.13,-25.55],[-53.63,-26.12],[-53.65,-26.92],[-54.49,-27.47],[-55.16,-27.88],[-56.29,-28.85],[-57.63,-30.22],[-57.87,-31.02],[-58.14,-32.04],[-58.13,-33.04],[-58.35,-33.26],[-58.43,-33.91],[-58.5,-34.43],[-57.23,-35.29],[-57.36,-35.98],[-56.74,-36.41],[-56.79,-36.9],[-57.75,-38.18],[-59.23,-38.72],[-61.24,-38.93],[-62.34,-38.83],[-62.13,-39.42],[-62.33,-40.17],[-62.15,-40.68],[-62.75,-41.03],[-63.77,-41.17],[-64.73,-40.8],[-65.12,-41.06],[-64.98,-42.06],[-64.3,-42.36],[-63.76,-42.04],[-63.46,-42.56],[-64.38,-42.87],[-65.18,-43.5],[-65.33,-44.5],[-65.57,-45.04],[-66.51,-45.04],[-67.29,-45.55],[-67.58,-46.3],[-66.6,-47.03],[-65.64,-47.24],[-65.99,-48.13],[-67.17,-48.7],[-67.82,-49.87],[-68.73,-50.26],[-69.14,-50.73],[-68.82,-51.77],[-68.15,-52.35],[-68.57,-52.3],[-69.5,-52.14],[-71.91,-52.01],[-72.33,-51.43],[-72.31,-50.68],[-72.98,-50.74],[-73.33,-50.38],[-73.42,-49.32],[-72.65,-48.88],[-72.33,-48.24],[-72.45,-47.74],[-71.92,-46.88],[-71.55,-45.56],[-71.66,-44.97],[-71.22,-44.78],[-71.33,-44.41],[-71.79,-44.21],[-71.46,-43.79],[-71.92,-43.41],[-72.15,-42.25],[-71.75,-42.05],[-71.92,-40.83],[-71.68,-39.81],[-71.41,-38.92],[-70.81,-38.55],[-71.12,-37.58],[-71.12,-36.66],[-70.36,-36.01],[-70.39,-35.17],[-69.82,-34.19],[-69.81,-33.27],[-70.07,-33.09],[-70.54,-31.37],[-69.92,-30.34],[-70.01,-29.37],[-69.66,-28.46],[-69,-27.52],[-68.3,-26.9],[-68.59,-26.51],[-68.39,-26.19],[-68.42,-24.52],[-67.33,-24.03],[-66.99,-22.99],[-67.11,-22.74],[-66.27,-21.83],[-64.96,-22.08]];
+
+// Tierra del Fuego (polígono aparte, separado por el estrecho de Magallanes).
+const BORDE_TDF = [[-65.5,-55.2],[-66.45,-55.25],[-66.96,-54.9],[-67.56,-54.87],[-68.63,-54.87],[-68.63,-52.64],[-68.25,-53.1],[-67.75,-53.85],[-66.45,-54.45],[-65.05,-54.7],[-65.5,-55.2]];
+
+const BORDE_ARG = [...BORDE_CONTINENTE, ...BORDE_TDF];
 
 // Líneas internas simplificadas (no son límites provinciales exactos, son una
 // aproximación prolija para que el mapa se vea "dividido" en regiones en vez
@@ -77,9 +74,14 @@ export function proyectar([lon, lat]) {
   ];
 }
 
-export const RUTA_ARGENTINA = BORDE_ARG.map(proyectar)
-  .map(([x, y], i) => `${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`)
-  .join(' ') + ' Z';
+function anillo(puntos) {
+  return puntos.map(proyectar)
+    .map(([x, y], i) => `${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`)
+    .join(' ') + ' Z';
+}
+// Dos subtrazos separados (continente + Tierra del Fuego) en un mismo path,
+// para no dibujar una línea recta uniendo un extremo con el otro.
+export const RUTA_ARGENTINA = anillo(BORDE_CONTINENTE) + ' ' + anillo(BORDE_TDF);
 
 export const RUTAS_DIVISIONES = DIVISIONES.map((linea) =>
   linea.map(proyectar)

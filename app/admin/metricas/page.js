@@ -535,22 +535,22 @@ export default async function Metricas({ searchParams }) {
           __html: `(function(){
             function activar(root){
               root.querySelectorAll('.bar-fill[data-final-w]').forEach(function(el,i){
-                setTimeout(function(){ el.style.width = el.getAttribute('data-final-w') + '%'; }, 20 + i * 12);
+                setTimeout(function(){ el.style.width = el.getAttribute('data-final-w') + '%'; }, 26 + i * 16);
               });
               root.querySelectorAll('rect.mbar[data-final-h]').forEach(function(el,i){
                 setTimeout(function(){
                   el.setAttribute('height', el.getAttribute('data-final-h'));
                   el.setAttribute('y', el.getAttribute('data-final-y'));
-                }, 20 + i * 3);
+                }, 26 + i * 4);
               });
               root.querySelectorAll('.mdonut-seg[data-final-dash]').forEach(function(el,i){
-                setTimeout(function(){ el.setAttribute('stroke-dasharray', el.getAttribute('data-final-dash')); }, 120 + i * 140);
+                setTimeout(function(){ el.setAttribute('stroke-dasharray', el.getAttribute('data-final-dash')); }, 156 + i * 182);
               });
               root.querySelectorAll('.mrose-petal[data-final-d]').forEach(function(el,i){
-                setTimeout(function(){ el.setAttribute('d', el.getAttribute('data-final-d')); }, 20 + i * 90);
+                setTimeout(function(){ el.setAttribute('d', el.getAttribute('data-final-d')); }, 26 + i * 117);
               });
               root.querySelectorAll('.mmap-pin[data-final-r]').forEach(function(el,i){
-                setTimeout(function(){ el.setAttribute('r', el.getAttribute('data-final-r')); }, 80 + i * 70);
+                setTimeout(function(){ el.setAttribute('r', el.getAttribute('data-final-r')); }, 104 + i * 91);
               });
             }
             function conectar(){

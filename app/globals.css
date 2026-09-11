@@ -469,18 +469,18 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 .mrank-lbl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ink); }
 .mrank-lbl a { color: var(--ink); }
 .mrank-bar { background: var(--surface-2); border-radius: 999px; height: 8px; overflow: hidden; }
-.mrank-bar span { display: block; height: 100%; border-radius: 999px; transition: width 900ms cubic-bezier(.22,.9,.28,1); }
+.mrank-bar span { display: block; height: 100%; border-radius: 999px; transition: width 1170ms cubic-bezier(.22,.9,.28,1); }
 .mrank-n { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-faint); font-weight: 700; }
 .adm .mut { font-size: 11.5px; color: var(--ink-faint); }
 
 /* ---- animación de las barras (día a día) ---- */
-.mchart rect.mbar { transition: height 700ms cubic-bezier(.22,.9,.28,1), y 700ms cubic-bezier(.22,.9,.28,1); }
+.mchart rect.mbar { transition: height 910ms cubic-bezier(.22,.9,.28,1), y 910ms cubic-bezier(.22,.9,.28,1); }
 .mchart rect.mbar:hover { opacity: .8; }
 
 /* ---- gráfico de torta (mezcla de actividad) ---- */
 .mdonut-row { display: flex; gap: 26px; align-items: center; flex-wrap: wrap; }
 .mdonut-svg { flex: none; transform: rotate(-90deg); }
-.mdonut-seg { transition: stroke-dasharray 900ms cubic-bezier(.22,.9,.28,1); }
+.mdonut-seg { transition: stroke-dasharray 1170ms cubic-bezier(.22,.9,.28,1); }
 .mdonut-total { transform: rotate(90deg); }
 .mdonut-total tspan.n { font-size: 22px; font-weight: 800; fill: var(--ink); font-family: inherit; }
 .mdonut-total tspan.l { font-size: 9px; fill: var(--ink-faint); text-transform: uppercase; letter-spacing: .06em; }
@@ -495,7 +495,7 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 .mmap-division { fill: none; stroke: var(--rule-strong); stroke-width: .8; stroke-dasharray: 2.5 2.5; opacity: .7; }
 .mmap-pin {
   fill: var(--warn); stroke: var(--surface); stroke-width: 1.4; fill-opacity: .88;
-  transition: r 480ms cubic-bezier(.34,1.56,.64,1);
+  transition: r 624ms cubic-bezier(.34,1.56,.64,1);
 }
 .mmap-pin:hover { fill-opacity: 1; }
 
@@ -503,7 +503,7 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 .mrose-row { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
 .mrose-svg { flex: none; }
 .mrose-ring { fill: none; stroke: var(--rule); stroke-width: 1; }
-.mrose-petal { stroke: var(--surface); stroke-width: 1.5; fill-opacity: .92; transition: d 650ms cubic-bezier(.22,.9,.28,1); }
+.mrose-petal { stroke: var(--surface); stroke-width: 1.5; fill-opacity: .92; transition: d 845ms cubic-bezier(.22,.9,.28,1); }
 .mrose-petal:hover { fill-opacity: 1; }
 
 /* ===== Video de producto ===== */

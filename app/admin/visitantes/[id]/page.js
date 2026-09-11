@@ -150,7 +150,7 @@ export default async function DetalleVisitante({ params }) {
           __html: `(function(){
             function activar(root){
               root.querySelectorAll('.bar-fill[data-final-w]').forEach(function(el,i){
-                setTimeout(function(){ el.style.width = el.getAttribute('data-final-w') + '%'; }, 20 + i * 12);
+                setTimeout(function(){ el.style.width = el.getAttribute('data-final-w') + '%'; }, 26 + i * 16);
               });
             }
             function conectar(){
