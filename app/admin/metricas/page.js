@@ -5,7 +5,7 @@ import { leerVisitantes } from '../../../lib/visitantes';
 import { gateClientesActivo } from '../../../lib/config';
 import { vincularBusqueda } from '../productoActions';
 import { cambiarGateClientes } from '../configActions';
-import { RUTA_ARGENTINA, MAPA_ANCHO, MAPA_ALTO, CIUDADES_AR, proyectar, normalizarCiudad } from './mapaArgentina';
+import { RUTA_ARGENTINA, RUTAS_DIVISIONES, MAPA_ANCHO, MAPA_ALTO, CIUDADES_AR, proyectar, normalizarCiudad } from './mapaArgentina';
 
 /* ---- íconos chicos para las tarjetas de KPI ---- */
 const trazo = { fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' };
@@ -177,7 +177,13 @@ function MapaArgentina({ ciudades }) {
   if (!pines.length) return <p className="mut">Todavía no hay suficientes visitas de Argentina para ubicar en el mapa.</p>;
   return (
     <svg viewBox={`0 0 ${MAPA_ANCHO} ${MAPA_ALTO}`} width={MAPA_ANCHO} height={MAPA_ALTO} className="mmap-svg" role="img" aria-label="Mapa de Argentina con ciudades de origen">
+      <defs>
+        <clipPath id="mmap-recorte"><path d={RUTA_ARGENTINA} /></clipPath>
+      </defs>
       <path d={RUTA_ARGENTINA} className="mmap-pais" />
+      <g clipPath="url(#mmap-recorte)">
+        {RUTAS_DIVISIONES.map((d, i) => <path key={i} d={d} className="mmap-division" />)}
+      </g>
       {pines.map((p) => (
         <circle
           key={p.nombre}

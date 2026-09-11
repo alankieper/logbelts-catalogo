@@ -492,6 +492,7 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 /* ---- mapa de Argentina con pines ---- */
 .mmap-svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
 .mmap-pais { fill: var(--surface-2); stroke: var(--rule-strong); stroke-width: 1.4; }
+.mmap-division { fill: none; stroke: var(--rule-strong); stroke-width: .8; stroke-dasharray: 2.5 2.5; opacity: .7; }
 .mmap-pin {
   fill: var(--warn); stroke: var(--surface); stroke-width: 1.4; fill-opacity: .88;
   transition: r 480ms cubic-bezier(.34,1.56,.64,1);

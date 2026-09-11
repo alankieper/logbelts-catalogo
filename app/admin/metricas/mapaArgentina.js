@@ -18,6 +18,18 @@ const BORDE_ARG = [
   [-69.8, -30.0], [-69.0, -27.0], [-68.0, -24.5], [-66.0, -22.3], [-64.5, -22.0],
 ];
 
+// Líneas internas simplificadas (no son límites provinciales exactos, son una
+// aproximación prolija para que el mapa se vea "dividido" en regiones en vez
+// de una silueta lisa — igual espíritu que el mapa con provincias que pasó
+// el cliente, pero manteniendo el mismo sistema de proyección de los pines).
+const DIVISIONES = [
+  [[-62.0, -39.2], [-66.0, -39.5], [-70.3, -39.7]], // arranque de la Patagonia (río Colorado)
+  [[-68.2, -27.3], [-64.5, -27.2], [-59.7, -27.0]], // sur del NOA
+  [[-68.4, -30.3], [-67.4, -32.8], [-66.9, -35.3]], // este de Cuyo
+  [[-62.3, -33.6], [-61.2, -35.6], [-59.8, -37.8]], // borde de Buenos Aires
+  [[-58.5, -27.5], [-58.6, -30.8], [-58.9, -33.6]], // Paraná / Mesopotamia
+];
+
 // Ciudades más habituales para un cliente mayorista argentino (nombre normalizado -> [lon, lat]).
 export const CIUDADES_AR = {
   'buenos aires': [-58.42, -34.61], 'ciudad autonoma de buenos aires': [-58.42, -34.61],
@@ -68,6 +80,12 @@ export function proyectar([lon, lat]) {
 export const RUTA_ARGENTINA = BORDE_ARG.map(proyectar)
   .map(([x, y], i) => `${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`)
   .join(' ') + ' Z';
+
+export const RUTAS_DIVISIONES = DIVISIONES.map((linea) =>
+  linea.map(proyectar)
+    .map(([x, y], i) => `${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`)
+    .join(' ')
+);
 
 export function normalizarCiudad(s) {
   return String(s || '')
