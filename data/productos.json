@@ -26,7 +26,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "2101001.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -37,7 +36,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2101002",
@@ -66,7 +66,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "2101002.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -77,7 +76,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2101003",
@@ -101,7 +101,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2101003.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -112,7 +111,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2101004",
@@ -136,7 +136,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2101004.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -147,7 +146,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2101005",
@@ -171,7 +171,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2101005.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -182,7 +181,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2101099",
@@ -642,7 +642,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
   "foto": "2102811.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -653,7 +652,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2102812",
@@ -677,7 +677,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
   "foto": "2102812.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -688,7 +687,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2102813",
@@ -714,7 +714,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
   "foto": "2102813.jpg",
-  "foto_confianza": null,
   "estado": "falta_descripcion",
   "oculto": false,
   "orden": 0,
@@ -725,7 +724,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2102821",
@@ -1160,7 +1160,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
   "foto": "2102871.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -1171,7 +1170,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2102873",
@@ -2579,7 +2579,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO HUSQVARNA 143R",
   "foto": "2103205.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -2590,7 +2589,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2103206",
@@ -4115,7 +4115,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS450",
   "foto": "2107132.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -4126,7 +4125,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2107133",
@@ -4152,7 +4152,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2107133.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -4163,7 +4162,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2107134",
@@ -4189,7 +4189,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS160 / 220 / 280",
   "foto": "2107134.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -4200,7 +4199,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2107135",
@@ -4725,7 +4725,6 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109089.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -4736,7 +4735,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2109092",
@@ -4842,7 +4842,6 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2109095.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -4853,7 +4852,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2109098",
@@ -8443,7 +8443,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2113034.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -8454,7 +8453,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2113035",
@@ -8482,7 +8482,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO HUSQVARNA 143R",
   "foto": "2113035.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -8493,7 +8492,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2113036",
@@ -8521,7 +8521,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2113036.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -8532,7 +8531,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2113045",
@@ -8597,7 +8597,6 @@
   ],
   "encabezado_pdf": "SIN FINES HUSQVARNA / OTROS",
   "foto": "2113046.jpg",
-  "foto_confianza": null,
   "estado": "sin_codigo",
   "oculto": false,
   "orden": 0,
@@ -8608,7 +8607,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2113047",
@@ -8636,7 +8636,6 @@
   ],
   "encabezado_pdf": "SIN FINES HUSQVARNA / OTROS",
   "foto": "2113047.jpg",
-  "foto_confianza": null,
   "estado": "sin_codigo",
   "oculto": false,
   "orden": 0,
@@ -8647,7 +8646,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2113048",
@@ -9044,8 +9044,7 @@
    "VERIFICAR FOTO"
   ],
   "encabezado_pdf": "DESMALEZADORAS - CABLES ACELERADOR - REEMPLAZOS",
-  "foto": "2113060.png",
-  "foto_confianza": null,
+  "foto": "2113060.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -9056,7 +9055,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2113061",
@@ -9120,8 +9120,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CABLES ACELERADOR - REEMPLAZOS",
-  "foto": "2113062.png",
-  "foto_confianza": null,
+  "foto": "2113062.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -9132,7 +9131,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2113063",
@@ -15564,8 +15564,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CABLES ACELERADOR - REEMPLAZOS",
-  "foto": "2120107.png",
-  "foto_confianza": null,
+  "foto": "2120107.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -15576,7 +15575,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2120109",
@@ -17950,7 +17950,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2201007.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -17961,7 +17960,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2201008",
@@ -18020,7 +18020,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2201009.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -18031,7 +18030,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2201010",
@@ -18055,7 +18055,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - VÁLVULAS",
   "foto": "2201010.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -18066,7 +18065,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2201011",
@@ -19741,7 +19741,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
   "foto": "2202867.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -19752,7 +19751,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2202868",
@@ -20409,7 +20409,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2203011.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -20420,7 +20419,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2203012",
@@ -22320,7 +22320,6 @@
   "flags": [],
   "encabezado_pdf": "RETENES",
   "foto": "2203401.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -22331,7 +22330,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2203402",
@@ -22355,7 +22355,6 @@
   "flags": [],
   "encabezado_pdf": "RETENES",
   "foto": "2203402.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -22366,7 +22365,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2203403",
@@ -22390,7 +22390,6 @@
   "flags": [],
   "encabezado_pdf": "RETENES",
   "foto": "2203403.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -22401,7 +22400,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2203404",
@@ -22425,7 +22425,6 @@
   "flags": [],
   "encabezado_pdf": "RETENES",
   "foto": "2203404.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -22436,7 +22435,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2203405",
@@ -22460,7 +22460,6 @@
   "flags": [],
   "encabezado_pdf": "RETENES",
   "foto": "2203405.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -22471,7 +22470,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2204015",
@@ -22495,7 +22495,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2204015.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -22506,7 +22505,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2204016",
@@ -23155,7 +23155,6 @@
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - MOTOSIERRAS REEMPLAZOS",
   "foto": "2204047.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -23166,7 +23165,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2204049",
@@ -23268,7 +23268,6 @@
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - MOTOSIERRAS REEMPLAZOS",
   "foto": "2204055.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -23279,7 +23278,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2204056",
@@ -23303,7 +23303,6 @@
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - MOTOSIERRAS REEMPLAZOS",
   "foto": "2204056.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -23314,7 +23313,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2204057",
@@ -23338,7 +23338,6 @@
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - MOTOSIERRAS REEMPLAZOS",
   "foto": "2204057.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -23349,7 +23348,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2204058",
@@ -23373,7 +23373,6 @@
   "flags": [],
   "encabezado_pdf": "PISTONES Y AROS - MOTOSIERRAS REEMPLAZOS",
   "foto": "2204058.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -23384,7 +23383,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2205019",
@@ -23408,7 +23408,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2205019.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -23419,7 +23418,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2205020",
@@ -23518,8 +23518,7 @@
    "VERIFICAR FOTO"
   ],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
-  "foto": "2205022.png",
-  "foto_confianza": null,
+  "foto": "2205022.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -23530,7 +23529,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2205023",
@@ -23559,8 +23559,7 @@
    "VERIFICAR FOTO"
   ],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
-  "foto": "2205023.png",
-  "foto_confianza": null,
+  "foto": "2205023.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -23571,7 +23570,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2205024",
@@ -23599,8 +23599,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
-  "foto": "2205024.png",
-  "foto_confianza": null,
+  "foto": "2205024.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -23611,7 +23610,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2205025",
@@ -23677,8 +23677,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
-  "foto": "2205026.png",
-  "foto_confianza": null,
+  "foto": "2205026.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -23689,7 +23688,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2205027",
@@ -23911,8 +23911,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
-  "foto": "2205032.png",
-  "foto_confianza": null,
+  "foto": "2205032.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -23923,7 +23922,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2207001",
@@ -24019,7 +24019,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "2207003.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -24030,7 +24029,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2207004",
@@ -24424,7 +24424,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "2207050.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -24435,7 +24434,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2207051",
@@ -24461,7 +24461,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "2207051.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -24472,7 +24471,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2207052",
@@ -24498,7 +24498,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "2207052.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -24509,7 +24508,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2207053",
@@ -24535,7 +24535,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "2207053.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -24546,7 +24545,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2207054",
@@ -24572,7 +24572,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "2207054.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -24583,7 +24582,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2207055",
@@ -24609,7 +24609,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "2207055.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -24620,7 +24619,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2207057",
@@ -24646,7 +24646,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "2207057.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -24657,7 +24656,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2207059",
@@ -24683,7 +24683,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "2207059.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -24694,7 +24693,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2208015",
@@ -25705,7 +25705,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210001.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -25716,7 +25715,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2210002",
@@ -25740,7 +25740,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210002.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -25751,7 +25750,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2210003",
@@ -25810,7 +25810,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210004.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -25821,7 +25820,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2210005",
@@ -25880,7 +25880,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210006.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -25891,7 +25890,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2210007",
@@ -25950,7 +25950,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210008.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -25961,7 +25960,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2210009",
@@ -25985,7 +25985,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210009.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -25996,7 +25995,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2210010",
@@ -26544,7 +26544,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210067.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -26555,7 +26554,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2210068",
@@ -26583,7 +26583,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210068.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -26594,7 +26593,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2210069",
@@ -26844,7 +26844,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 2 TIEMPOS - MOTOSIERRAS",
   "foto": "2210080.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -26855,7 +26854,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2212019",
@@ -26914,7 +26914,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2212020.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -26925,7 +26924,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2212021",
@@ -27716,7 +27716,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2212081.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -27727,7 +27726,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2212082",
@@ -27751,7 +27751,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2212082.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -27762,7 +27761,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2212083",
@@ -31707,7 +31707,6 @@
   "flags": [],
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219030.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -31718,7 +31717,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2219031",
@@ -31777,7 +31777,6 @@
   "flags": [],
   "encabezado_pdf": "BOMBA DE ACEITE Y SIN FIN",
   "foto": "2219032.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -31788,7 +31787,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2219033",
@@ -33300,7 +33300,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2220016.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -33311,7 +33310,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220017",
@@ -33370,7 +33370,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2220018.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -33381,7 +33380,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220019",
@@ -33793,7 +33793,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2220042.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -33804,7 +33803,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220045",
@@ -33828,7 +33828,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2220045.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -33839,7 +33838,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220046",
@@ -33863,7 +33863,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2220046.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -33874,7 +33873,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220047",
@@ -33898,7 +33898,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2220047.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -33909,7 +33908,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220060",
@@ -33933,7 +33933,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2220060.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -33944,7 +33943,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220061",
@@ -33968,7 +33968,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2220061.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -33979,7 +33978,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220062",
@@ -34003,7 +34003,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2220062.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -34014,7 +34013,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220068",
@@ -34738,8 +34738,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
-  "foto": "2220104.png",
-  "foto_confianza": null,
+  "foto": "2220104.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -34750,7 +34749,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220105",
@@ -34773,8 +34773,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
-  "foto": "2220105.png",
-  "foto_confianza": null,
+  "foto": "2220105.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -34785,7 +34784,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220106",
@@ -34921,8 +34921,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
-  "foto": "2220109.png",
-  "foto_confianza": null,
+  "foto": "2220109.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -34933,7 +34932,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220110",
@@ -34958,8 +34958,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
-  "foto": "2220110.png",
-  "foto_confianza": null,
+  "foto": "2220110.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -34970,7 +34969,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220111",
@@ -34995,8 +34995,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
-  "foto": "2220111.png",
-  "foto_confianza": null,
+  "foto": "2220111.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -35007,7 +35006,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220112",
@@ -35033,8 +35033,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS / AMORTIGUADORES",
-  "foto": "2220112.png",
-  "foto_confianza": null,
+  "foto": "2220112.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -35045,7 +35044,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2220113",
@@ -37236,7 +37236,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2222010.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -37247,7 +37246,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2222011",
@@ -37306,7 +37306,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2222012.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -37317,7 +37316,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2222013",
@@ -37378,7 +37378,6 @@
   ],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": null,
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -37389,7 +37388,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2222015",
@@ -37413,7 +37413,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2222015.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -37424,7 +37423,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2222016",
@@ -37448,7 +37448,6 @@
   "flags": [],
   "encabezado_pdf": "DESMALEZADORAS - CAJAS DE ENGRANAJES - REEMPLAZOS",
   "foto": "2222016.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -37459,7 +37458,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2222017",
@@ -37922,8 +37922,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": "2222046.png",
-  "foto_confianza": null,
+  "foto": "2222046.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -37934,7 +37933,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2222047",
@@ -37959,8 +37959,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": "2222047.png",
-  "foto_confianza": null,
+  "foto": "2222047.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -37971,7 +37970,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2222048",
@@ -37996,8 +37996,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": "2222048.png",
-  "foto_confianza": null,
+  "foto": "2222048.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -38008,7 +38007,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2222049",
@@ -38033,8 +38033,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": "2222049.png",
-  "foto_confianza": null,
+  "foto": "2222049.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -38045,7 +38044,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2222050",
@@ -38181,8 +38181,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": "2222053.png",
-  "foto_confianza": null,
+  "foto": "2222053.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -38193,7 +38192,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2222054",
@@ -38218,8 +38218,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": "2222054.png",
-  "foto_confianza": null,
+  "foto": "2222054.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -38230,7 +38229,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2222055",
@@ -38255,8 +38255,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": "2222055.png",
-  "foto_confianza": null,
+  "foto": "2222055.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -38267,7 +38266,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2222056",
@@ -38292,8 +38292,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": "2222056.png",
-  "foto_confianza": null,
+  "foto": "2222056.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -38304,7 +38303,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2224011",
@@ -38693,8 +38693,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": "2224035.png",
-  "foto_confianza": null,
+  "foto": "2224035.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -38705,7 +38704,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2224036",
@@ -38730,8 +38730,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": "2224036.png",
-  "foto_confianza": null,
+  "foto": "2224036.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -38742,7 +38741,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2224037",
@@ -38767,8 +38767,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": "2224037.png",
-  "foto_confianza": null,
+  "foto": "2224037.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -38779,7 +38778,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2224038",
@@ -38839,8 +38839,7 @@
   "origen": "grilla",
   "flags": [],
   "encabezado_pdf": "TAPAS DE DEPOSITOS - REEMPLAZOS",
-  "foto": "2224039.png",
-  "foto_confianza": null,
+  "foto": "2224039.jpg",
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -38851,7 +38850,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2224040",
@@ -39126,7 +39126,6 @@
   "flags": [],
   "encabezado_pdf": "RETENES",
   "foto": "2227657.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -39137,7 +39136,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2227658",
@@ -40201,7 +40201,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2291003.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -40212,7 +40211,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2291004",
@@ -40236,7 +40236,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2291004.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -40247,7 +40246,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2291005",
@@ -40271,7 +40271,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2291005.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -40282,7 +40281,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2291006",
@@ -40306,7 +40306,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2291006.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -40317,7 +40316,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2291007",
@@ -40341,7 +40341,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2291007.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -40352,7 +40351,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2291015",
@@ -40952,7 +40952,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2291032.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -40963,7 +40962,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2291033",
@@ -40987,7 +40987,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2291033.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -40998,7 +40997,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2291034",
@@ -41162,7 +41162,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2291122.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -41173,7 +41172,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2291123",
@@ -41197,7 +41197,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2291123.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -41208,7 +41207,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2291124",
@@ -41232,7 +41232,6 @@
   "flags": [],
   "encabezado_pdf": "MOTOSIERRAS - ACCESORIOS",
   "foto": "2291124.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -41243,7 +41242,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2302836",
@@ -41417,7 +41417,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
   "foto": "2302840.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -41428,7 +41427,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2302842",
@@ -41452,7 +41452,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
   "foto": "2302842.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -41463,7 +41462,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2302843",
@@ -42239,7 +42239,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - 2 TIEMPOS - DESMALEZADORAS - CHINAS / OTROS",
   "foto": "2502505.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -42250,7 +42249,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2502531",
@@ -42744,7 +42744,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE COMBUSTIBLE",
   "foto": "2906015.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -42755,7 +42754,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2906020",
@@ -43128,7 +43128,6 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2909066.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -43139,7 +43138,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2909072",
@@ -43208,7 +43208,6 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2909097.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -43219,7 +43218,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2909100",
@@ -43247,7 +43247,6 @@
   "flags": [],
   "encabezado_pdf": "KITS DE JUNTAS Y DIAFRAGMAS",
   "foto": "2909100.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -43258,7 +43257,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "2909106",
@@ -45287,7 +45287,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3101051.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45298,7 +45297,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101053",
@@ -45325,7 +45325,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3101053.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45336,7 +45335,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101054",
@@ -45363,7 +45363,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3101054.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45374,7 +45373,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101056",
@@ -45401,7 +45401,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3101056.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45412,7 +45411,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101059",
@@ -45439,7 +45439,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3101059.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45450,7 +45449,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101061",
@@ -45477,7 +45477,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3101061.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45488,7 +45487,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101090",
@@ -45557,7 +45557,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3101143.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45568,7 +45567,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101147",
@@ -45595,7 +45595,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3101147.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45606,7 +45605,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101152",
@@ -45633,7 +45633,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3101152.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45644,7 +45643,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101162",
@@ -45671,7 +45671,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3101162.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45682,7 +45681,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101163",
@@ -45710,7 +45710,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101163.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45721,7 +45720,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101164",
@@ -45749,7 +45749,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101164.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45760,7 +45759,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101170",
@@ -45788,7 +45788,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101170.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45799,7 +45798,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101171",
@@ -45827,7 +45827,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101171.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45838,7 +45837,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101173",
@@ -45866,7 +45866,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101173.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45877,7 +45876,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101181",
@@ -45905,7 +45905,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101181.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45916,7 +45915,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101183",
@@ -45944,7 +45944,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101183.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45955,7 +45954,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101185",
@@ -45983,7 +45983,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101185.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -45994,7 +45993,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101187",
@@ -46022,7 +46022,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101187.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -46033,7 +46032,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101188",
@@ -46061,7 +46061,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101188.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -46072,7 +46071,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101189",
@@ -46100,7 +46100,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101189.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -46111,7 +46110,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101190",
@@ -46139,7 +46139,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101190.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -46150,7 +46149,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101193",
@@ -46178,7 +46178,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101193.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -46189,7 +46188,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101194",
@@ -46217,7 +46217,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101194.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -46228,7 +46227,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101235",
@@ -46255,7 +46255,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3101235.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -46266,7 +46265,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101260",
@@ -46297,7 +46297,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS CONVENCIONALES Y TRITURADORAS - MURRAY",
   "foto": "3101260.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -46308,7 +46307,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101265",
@@ -46464,7 +46464,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101276.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -46475,7 +46474,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101277",
@@ -46671,7 +46671,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101296.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -46682,7 +46681,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101297",
@@ -46710,7 +46710,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - HUSQVARNA / POULAN / AYP",
   "foto": "3101297.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -46721,7 +46720,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101298",
@@ -47041,7 +47041,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - JOHN DEERE",
   "foto": "3101350.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -47052,7 +47051,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101356",
@@ -47121,7 +47121,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - JOHN DEERE",
   "foto": "3101360.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -47132,7 +47131,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101366",
@@ -47493,7 +47493,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS CARONI",
   "foto": "3101450.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -47504,7 +47503,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3101463",
@@ -52009,7 +52009,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3103550.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52020,7 +52019,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3103551",
@@ -52046,7 +52046,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3103551.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52057,7 +52056,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3103552",
@@ -52083,7 +52083,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3103552.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52094,7 +52093,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3103553",
@@ -52120,7 +52120,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3103553.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52131,7 +52130,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3103570",
@@ -52602,7 +52602,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106011.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52613,7 +52612,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106012",
@@ -52672,7 +52672,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106013.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52683,7 +52682,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106014",
@@ -52707,7 +52707,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106014.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52718,7 +52717,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106015",
@@ -52742,7 +52742,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106015.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52753,7 +52752,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106016",
@@ -52777,7 +52777,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106016.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52788,7 +52787,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106017",
@@ -52812,7 +52812,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106017.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52823,7 +52822,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106018",
@@ -52847,7 +52847,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106018.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52858,7 +52857,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106019",
@@ -52882,7 +52882,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106019.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52893,7 +52892,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106020",
@@ -52954,7 +52954,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106021.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -52965,7 +52964,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106022",
@@ -52991,7 +52991,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106022.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -53002,7 +53001,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106023",
@@ -53061,7 +53061,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106024.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -53072,7 +53071,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106025",
@@ -53135,7 +53135,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106026.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -53146,7 +53145,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106027",
@@ -53172,7 +53172,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106027.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -53183,7 +53182,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106029",
@@ -53207,7 +53207,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106029.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -53218,7 +53217,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106034",
@@ -53281,7 +53281,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS DE PLATAFORMA Y BULONES",
   "foto": "3106035.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -53292,7 +53291,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3106036",
@@ -53992,7 +53992,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3120966.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54003,7 +54002,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3120967",
@@ -54029,7 +54029,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3120967.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54040,7 +54039,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3120968",
@@ -54066,7 +54066,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3120968.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54077,7 +54076,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3120969",
@@ -54103,7 +54103,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3120969.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54114,7 +54113,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3120970",
@@ -54140,7 +54140,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3120970.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54151,7 +54150,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3120971",
@@ -54177,7 +54177,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3120971.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54188,7 +54187,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3120972",
@@ -54214,7 +54214,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3120972.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54225,7 +54224,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3120973",
@@ -54251,7 +54251,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3120973.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54262,7 +54261,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3120974",
@@ -54288,7 +54288,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "3120974.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54299,7 +54298,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3120975",
@@ -54817,7 +54817,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3201196.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54828,7 +54827,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201207",
@@ -54855,7 +54855,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3201207.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54866,7 +54865,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201211",
@@ -54893,7 +54893,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3201211.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54904,7 +54903,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201221",
@@ -54931,7 +54931,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3201221.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54942,7 +54941,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201223",
@@ -54969,7 +54969,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - MTD / YARD MAN / CUB CADET",
   "foto": "3201223.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -54980,7 +54979,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201240",
@@ -55175,7 +55175,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - JOHN DEERE",
   "foto": "3201306.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55186,7 +55185,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201307",
@@ -55217,7 +55217,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS REEMPLAZOS - JOHN DEERE",
   "foto": "3201307.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55228,7 +55227,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201386",
@@ -55292,7 +55292,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201389.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55303,7 +55302,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201390",
@@ -55327,7 +55327,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201390.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55338,7 +55337,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201395",
@@ -55362,7 +55362,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201395.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55373,7 +55372,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201397",
@@ -55437,7 +55437,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201400.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55448,7 +55447,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201406",
@@ -55512,7 +55512,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201408.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55523,7 +55522,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201410",
@@ -55547,7 +55547,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201410.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55558,7 +55557,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201415",
@@ -55582,7 +55582,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201415.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55593,7 +55592,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201417",
@@ -55617,7 +55617,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201417.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55628,7 +55627,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201418",
@@ -55652,7 +55652,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201418.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55663,7 +55662,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201421",
@@ -55764,7 +55764,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201425.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55775,7 +55774,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201428",
@@ -55799,7 +55799,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201428.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55810,7 +55809,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201430",
@@ -55834,7 +55834,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201430.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55845,7 +55844,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201435",
@@ -55869,7 +55869,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201435.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55880,7 +55879,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201440",
@@ -55904,7 +55904,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201440.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55915,7 +55914,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201443",
@@ -55939,7 +55939,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201443.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55950,7 +55949,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201445",
@@ -55974,7 +55974,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201445.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -55985,7 +55984,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201446",
@@ -56009,7 +56009,6 @@
   "flags": [],
   "encabezado_pdf": "MINITRACTORES - CUCHILLAS UNIVERSALES Y OTROS REEMPLAZOS",
   "foto": "3201446.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56020,7 +56019,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3201449",
@@ -56254,7 +56254,6 @@
   "flags": [],
   "encabezado_pdf": null,
   "foto": "3204120.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56265,7 +56264,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3204121",
@@ -56289,7 +56289,6 @@
   "flags": [],
   "encabezado_pdf": null,
   "foto": "3204121.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56300,7 +56299,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3204125",
@@ -56514,7 +56514,6 @@
   "flags": [],
   "encabezado_pdf": null,
   "foto": "3204132.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56525,7 +56524,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3204135",
@@ -56549,7 +56549,6 @@
   "flags": [],
   "encabezado_pdf": null,
   "foto": "3204135.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56560,7 +56559,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3204136",
@@ -56584,7 +56584,6 @@
   "flags": [],
   "encabezado_pdf": null,
   "foto": "3204136.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56595,7 +56594,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3204137",
@@ -56619,7 +56619,6 @@
   "flags": [],
   "encabezado_pdf": null,
   "foto": "3204137.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56630,7 +56629,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3204138",
@@ -56654,7 +56654,6 @@
   "flags": [],
   "encabezado_pdf": null,
   "foto": "3204138.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56665,7 +56664,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3204139",
@@ -56767,7 +56767,6 @@
   "flags": [],
   "encabezado_pdf": null,
   "foto": "3204141.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56778,7 +56777,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3204142",
@@ -56802,7 +56802,6 @@
   "flags": [],
   "encabezado_pdf": null,
   "foto": "3204142.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56813,7 +56812,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3204143",
@@ -56837,7 +56837,6 @@
   "flags": [],
   "encabezado_pdf": null,
   "foto": "3204143.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56848,7 +56847,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3206125",
@@ -56872,7 +56872,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS PARA MÁQUINAS DE EMPUJE",
   "foto": "3206125.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56883,7 +56882,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3206126",
@@ -56907,7 +56907,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS PARA MÁQUINAS DE EMPUJE",
   "foto": "3206126.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56918,7 +56917,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3206128",
@@ -56942,7 +56942,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS PARA MÁQUINAS DE EMPUJE",
   "foto": "3206128.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56953,7 +56952,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3206129",
@@ -56977,7 +56977,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS PARA MÁQUINAS DE EMPUJE",
   "foto": "3206129.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -56988,7 +56987,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3206130",
@@ -57012,7 +57012,6 @@
   "flags": [],
   "encabezado_pdf": "RUEDAS PARA MÁQUINAS DE EMPUJE",
   "foto": "3206130.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -57023,7 +57022,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "3206131",
@@ -57575,7 +57575,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": "4301490.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -57586,7 +57585,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301491",
@@ -57610,7 +57610,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": "4301491.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -57621,7 +57620,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301492",
@@ -57645,7 +57645,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": "4301492.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -57656,7 +57655,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301493",
@@ -57680,7 +57680,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": "4301493.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -57691,7 +57690,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301494",
@@ -57715,7 +57715,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURADORES - REPARACIONES DE CARBURADOR",
   "foto": "4301494.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -57726,7 +57725,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301495",
@@ -57931,7 +57931,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301551.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -57942,7 +57941,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301552",
@@ -57970,7 +57970,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301552.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -57981,7 +57980,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301553",
@@ -58009,7 +58009,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301553.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -58020,7 +58019,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301554",
@@ -58048,7 +58048,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301554.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -58059,7 +58058,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301555",
@@ -58087,7 +58087,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301555.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -58098,7 +58097,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301556",
@@ -58126,7 +58126,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301556.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -58137,7 +58136,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301557",
@@ -58165,7 +58165,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301557.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -58176,7 +58175,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301558",
@@ -58315,7 +58315,6 @@
   "flags": [],
   "encabezado_pdf": "CARBURACIÓN - PUNZUARES DE CARBURADOR - 2 TIEMPOS",
   "foto": "4301561.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -58326,7 +58325,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4301562",
@@ -60427,7 +60427,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4304056.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -60438,7 +60437,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4304057",
@@ -60497,7 +60497,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4304058.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -60508,7 +60507,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4304059",
@@ -60532,7 +60532,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4304059.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -60543,7 +60542,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4304060",
@@ -60567,7 +60567,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4304060.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -60578,7 +60577,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4305040",
@@ -60637,7 +60637,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4305041.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -60648,7 +60647,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4305042",
@@ -60672,7 +60672,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4305042.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -60683,7 +60682,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4305043",
@@ -60707,7 +60707,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4305043.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -60718,7 +60717,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4305044",
@@ -60742,7 +60742,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4305044.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -60753,7 +60752,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4305045",
@@ -60888,7 +60888,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307222.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -60899,7 +60898,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307223",
@@ -60925,7 +60925,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307223.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -60936,7 +60935,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307224",
@@ -60962,7 +60962,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307224.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -60973,7 +60972,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307226",
@@ -61458,7 +61458,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307602.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -61469,7 +61468,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307603",
@@ -62415,7 +62415,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307631.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62426,7 +62425,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307633",
@@ -62489,7 +62489,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307634.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62500,7 +62499,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307635",
@@ -62526,7 +62526,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307635.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62537,7 +62536,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307636",
@@ -62563,7 +62563,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307636.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62574,7 +62573,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307637",
@@ -62600,7 +62600,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307637.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62611,7 +62610,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307638",
@@ -62637,7 +62637,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307638.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62648,7 +62647,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307639",
@@ -62674,7 +62674,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307639.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62685,7 +62684,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307640",
@@ -62711,7 +62711,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307640.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62722,7 +62721,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307642",
@@ -62748,7 +62748,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307642.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62759,7 +62758,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307643",
@@ -62785,7 +62785,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307643.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62796,7 +62795,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307644",
@@ -62822,7 +62822,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307644.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62833,7 +62832,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307645",
@@ -62933,7 +62933,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307647.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62944,7 +62943,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307648",
@@ -62970,7 +62970,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307648.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -62981,7 +62980,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307649",
@@ -63007,7 +63007,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 4T - HONDA",
   "foto": "4307649.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -63018,7 +63017,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307650",
@@ -63722,7 +63722,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "4307671.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -63733,7 +63732,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307672",
@@ -63759,7 +63759,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "4307672.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -63770,7 +63769,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307673",
@@ -63796,7 +63796,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "4307673.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -63807,7 +63806,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307674",
@@ -63833,7 +63833,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "4307674.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -63844,7 +63843,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307675",
@@ -63870,7 +63870,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE AIRE REEMPLAZOS 2T - ECHO",
   "foto": "4307675.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -63881,7 +63880,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4307678",
@@ -65406,7 +65406,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310421.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -65417,7 +65416,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310422",
@@ -65441,7 +65441,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310422.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -65452,7 +65451,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310424",
@@ -65476,7 +65476,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310424.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -65487,7 +65486,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310425",
@@ -65511,7 +65511,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310425.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -65522,7 +65521,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310426",
@@ -65686,7 +65686,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310431.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -65697,7 +65696,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310432",
@@ -66001,7 +66001,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310442.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -66012,7 +66011,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310443",
@@ -66036,7 +66036,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 5.5 HP 6.5 HP REEMPLAZO GX160 GX200",
   "foto": "4310443.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -66047,7 +66046,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310444",
@@ -66071,7 +66071,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310444.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -66082,7 +66081,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310445",
@@ -66316,7 +66316,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310451.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -66327,7 +66326,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310452",
@@ -66491,7 +66491,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310471.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -66502,7 +66501,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310476",
@@ -66526,7 +66526,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310476.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -66537,7 +66536,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310480",
@@ -66561,7 +66561,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310480.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -66572,7 +66571,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310483",
@@ -66596,7 +66596,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310483.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -66607,7 +66606,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310485",
@@ -66935,7 +66935,6 @@
   "flags": [],
   "encabezado_pdf": "JUNTAS DE MOTOR 4 TIEMPOS - TAPAS DE CILINDRO - REEMPLAZOS",
   "foto": "4310493.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -66946,7 +66945,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4310494",
@@ -68849,7 +68849,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4320581.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -68860,7 +68859,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4320582",
@@ -68884,7 +68884,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4320582.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -68895,7 +68894,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4320583",
@@ -69761,7 +69761,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4320612.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -69772,7 +69771,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4320613",
@@ -70076,7 +70076,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4320624.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -70087,7 +70086,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4320625",
@@ -70111,7 +70111,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4320625.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -70122,7 +70121,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4320626",
@@ -70358,7 +70358,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4320635.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -70369,7 +70368,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4320636",
@@ -71902,7 +71902,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4322094.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -71913,7 +71912,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4322095",
@@ -71937,7 +71937,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4322095.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -71948,7 +71947,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4322096",
@@ -71972,7 +71972,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4322096.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -71983,7 +71982,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4322097",
@@ -72007,7 +72007,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE MOTOR 4T 13 HP 15HP HP 16HP REEMPLAZO GX270 GX390 GX420 GX440",
   "foto": "4322097.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -72018,7 +72017,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4324100",
@@ -73339,7 +73339,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "4325355.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -73350,7 +73349,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4325356",
@@ -73376,7 +73376,6 @@
   "flags": [],
   "encabezado_pdf": "ELECTROEMBRAGUES - JOHN DEERE",
   "foto": "4325356.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -73387,7 +73386,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4325357",
@@ -77227,7 +77227,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE COMBUSTIBLE",
   "foto": "4906601.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -77238,7 +77237,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4906602",
@@ -77262,7 +77262,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE COMBUSTIBLE",
   "foto": "4906602.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -77273,7 +77272,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4906603",
@@ -77297,7 +77297,6 @@
   "flags": [],
   "encabezado_pdf": "FILTROS DE COMBUSTIBLE",
   "foto": "4906603.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -77308,7 +77307,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4906605",
@@ -77369,7 +77369,6 @@
   "flags": [],
   "encabezado_pdf": "PARTES DE DESMALEZADORAS REEMPLAZO ST FS38 / FS55",
   "foto": "4919500.jpg",
-  "foto_confianza": null,
   "estado": "completo",
   "oculto": false,
   "orden": 0,
@@ -77380,7 +77379,8 @@
   "descontinuado": false,
   "video": null,
   "galeria": [],
-  "videos": []
+  "videos": [],
+  "foto_origen": "pdf-nativa"
  },
  {
   "codigo": "4919501",
