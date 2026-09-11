@@ -7,6 +7,24 @@ import { vincularBusqueda } from '../productoActions';
 import { cambiarGateClientes } from '../configActions';
 import { RUTA_ARGENTINA, MAPA_ANCHO, MAPA_ALTO, CIUDADES_AR, proyectar, normalizarCiudad } from './mapaArgentina';
 
+/* ---- íconos chicos para las tarjetas de KPI ---- */
+const trazo = { fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round', strokeLinejoin: 'round' };
+const IconoPersona = () => (
+  <svg viewBox="0 0 24 24" {...trazo} aria-hidden="true"><circle cx="12" cy="8" r="3.4" /><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7" /></svg>
+);
+const IconoLupa = () => (
+  <svg viewBox="0 0 24 24" {...trazo} aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+);
+const IconoWhatsapp = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5A10 10 0 0 0 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1 1 12 20z" />
+    <path d="M16.6 13.9c-.3-.1-1.5-.7-1.8-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z" />
+  </svg>
+);
+const IconoCaja = () => (
+  <svg viewBox="0 0 24 24" {...trazo} aria-hidden="true"><path d="M3 8l9-5 9 5-9 5-9-5z" /><path d="M3 8v8l9 5 9-5V8" /><path d="M12 13v8" /></svg>
+);
+
 const PAISES = {
   AR: 'Argentina', UY: 'Uruguay', CL: 'Chile', BR: 'Brasil', PY: 'Paraguay', BO: 'Bolivia',
   PE: 'Perú', CO: 'Colombia', MX: 'México', EC: 'Ecuador', VE: 'Venezuela', US: 'Estados Unidos',
@@ -325,11 +343,11 @@ export default async function Metricas({ searchParams }) {
   const ciudadesMapa = [...ciudadesArgMap.values()].map((c) => ({ nombre: c.nombre, n: c.ids.size }));
 
   const kpis = [
-    { t: 'Personas que lo vieron', v: personas, s: `${fmt(visitas.length)} visitas (sesiones)` },
-    { t: 'Búsquedas', v: busquedas.length, s: `${sinResultado.length} sin resultado (${busquedas.length ? Math.round((sinResultado.length / busquedas.length) * 100) : 0}%)` },
-    { t: 'Consultas por WhatsApp', v: consultas.length, s: 'clics en “Consultar este producto”' },
-    { t: 'Pedidos enviados', v: pedidos.length, s: pedidos.length ? `${itemsPorPedido} productos promedio` : 'lista enviada por WhatsApp' },
-    { t: 'Productos vistos', v: vistas.length, s: `${new Set(vistas.map((e) => e.codigo)).size} productos distintos` },
+    { t: 'Personas que lo vieron', v: personas, s: `${fmt(visitas.length)} visitas (sesiones)`, icon: <IconoPersona />, tono: 'brand' },
+    { t: 'Búsquedas', v: busquedas.length, s: `${sinResultado.length} sin resultado (${busquedas.length ? Math.round((sinResultado.length / busquedas.length) * 100) : 0}%)`, icon: <IconoLupa />, tono: 'accent2' },
+    { t: 'Consultas por WhatsApp', v: consultas.length, s: 'clics en “Consultar este producto”', icon: <IconoWhatsapp />, tono: 'wpp' },
+    { t: 'Pedidos enviados', v: pedidos.length, s: pedidos.length ? `${itemsPorPedido} productos promedio` : 'lista enviada por WhatsApp', icon: <IconoCaja />, tono: 'warn' },
+    { t: 'Productos vistos', v: vistas.length, s: `${new Set(vistas.map((e) => e.codigo)).size} productos distintos`, icon: '👀', tono: 'ojos' },
   ];
 
   const hayDatos = eventos.length > 0 || visitas.length > 0;
@@ -396,9 +414,12 @@ export default async function Metricas({ searchParams }) {
           <div className="mkpis">
             {kpis.map((k) => (
               <div className="mkpi" key={k.t}>
-                <span className="mkpi-t">{k.t}</span>
-                <span className="mkpi-v">{fmt(k.v)}</span>
-                <span className="mkpi-s">{k.s}</span>
+                <span className={`mkpi-ic mkpi-ic-${k.tono}`}>{k.icon}</span>
+                <div className="mkpi-txt">
+                  <span className="mkpi-t">{k.t}</span>
+                  <span className="mkpi-v">{fmt(k.v)}</span>
+                  <span className="mkpi-s">{k.s}</span>
+                </div>
               </div>
             ))}
           </div>
