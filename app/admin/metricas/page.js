@@ -1,5 +1,5 @@
 import AdminHeader from '../AdminHeader';
-import { leerEventos, leerVisitas } from '../../../lib/eventos';
+import { leerEventos, leerVisitas, leerUltimaActividadPorVisitante } from '../../../lib/eventos';
 import { leerTodosRaw } from '../../../lib/catalogo';
 import { leerVisitantes } from '../../../lib/visitantes';
 import { gateClientesActivo } from '../../../lib/config';
@@ -86,8 +86,8 @@ function Ranking({ filas, color = 'var(--brand-ink)', href }) {
 
 export default async function Metricas({ searchParams }) {
   const dias = RANGOS.some((r) => String(r.d) === searchParams?.d) ? Number(searchParams.d) : 30;
-  const [eventos, visitas, productos, visitantes, gateActivo] = await Promise.all([
-    leerEventos(dias), leerVisitas(dias), leerTodosRaw(), leerVisitantes(), gateClientesActivo(),
+  const [eventos, visitas, productos, visitantes, gateActivo, ultimaActividad] = await Promise.all([
+    leerEventos(dias), leerVisitas(dias), leerTodosRaw(), leerVisitantes(), gateClientesActivo(), leerUltimaActividadPorVisitante(),
   ]);
   const nombre = new Map(productos.map((p) => [p.codigo, p.nombre || p.clave_producto || p.codigo]));
   const errGate = searchParams?.errGate === '1';
@@ -144,6 +144,20 @@ export default async function Metricas({ searchParams }) {
     },
     15
   );
+
+  // ---- alerta: clientes que dejaron de entrar (15+ días sin actividad) ----
+  const UMBRAL_INACTIVO_DIAS = 15;
+  const ahoraMs = Date.now();
+  const inactivos = visitantes
+    .map((v) => {
+      const ultima = ultimaActividad.get(v.id);
+      if (!ultima) return null;
+      const diasSinEntrar = Math.floor((ahoraMs - new Date(ultima).getTime()) / 86400000);
+      return diasSinEntrar >= UMBRAL_INACTIVO_DIAS ? { ...v, ultima, diasSinEntrar } : null;
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.diasSinEntrar - a.diasSinEntrar)
+    .slice(0, 20);
 
   // ---- visitas ----
   const personas = new Set(visitas.map((v) => v.ip_hash).filter(Boolean)).size;
@@ -209,6 +223,24 @@ export default async function Metricas({ searchParams }) {
               </button>
             </form>
           </section>
+
+          {inactivos.length ? (
+            <section className="mcard mgate" style={{ borderColor: 'var(--warn)', alignItems: 'flex-start' }}>
+              <div className="mgate-txt">
+                <h2>⚠ Clientes que dejaron de entrar</h2>
+                <p className="mut">Hace {UMBRAL_INACTIVO_DIAS} días o más que no tienen actividad. Puede ser buen momento para escribirles.</p>
+                <ul className="mrank" style={{ marginTop: 10 }}>
+                  {inactivos.map((v) => (
+                    <li key={v.id}>
+                      <span className="mrank-lbl"><a href={`/admin/visitantes/${v.id}`}>{v.empresa_nombre} · {v.telefono}</a></span>
+                      <span className="mrank-bar"><span style={{ width: '100%', background: 'var(--warn)' }} /></span>
+                      <span className="mrank-n">{v.diasSinEntrar}d</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+          ) : null}
 
           {!hayDatos ? (
             <div className="ok-msg" style={{ background: 'var(--surface-2)', color: 'var(--ink-soft)' }}>
