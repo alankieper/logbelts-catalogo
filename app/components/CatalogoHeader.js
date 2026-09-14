@@ -1,12 +1,16 @@
+import '../catalogo-extra.css';
 import ThemeToggle from './ThemeToggle';
 import ListaPedido from './ListaPedido';
 import RegistrarVisita from './RegistrarVisita';
+import CatNav from './CatNav';
+import Asistente from './Asistente';
 
 export default function CatalogoHeader({ q = '' }) {
   return (
     <header className="cat">
       <RegistrarVisita />
       <ListaPedido />
+      <Asistente />
       <div className="wrap">
         <a className="brand" href="/" aria-label="Logbelts — inicio">
           <img src="/logo-blanco.png" alt="Logbelts — Premium Quality Professional" />
@@ -27,9 +31,8 @@ export default function CatalogoHeader({ q = '' }) {
           </button>
         </form>
         <ThemeToggle />
-        <a href="/productos" className="hlink" title="Todas las familias de repuestos">Catálogo</a>
-        <a href="/manuales" className="hlink hlink-last" title="Manuales y despieces">Manuales</a>
       </div>
+      <CatNav />
     </header>
   );
 }

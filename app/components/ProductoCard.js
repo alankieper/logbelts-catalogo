@@ -1,4 +1,5 @@
 import BotonAgregar from './BotonAgregar';
+import BotonFavorito from './BotonFavorito';
 
 export default function ProductoCard({ p, motivo }) {
   const meta =
@@ -6,6 +7,7 @@ export default function ProductoCard({ p, motivo }) {
     (p.ubicacion || '') ||
     (p.marcas && p.marcas.length ? p.marcas.slice(0, 2).join(' · ') : '');
   const derivada = p.fuente_desc && p.fuente_desc.startsWith('derivada');
+  const nombre = p.nombre || p.clave_producto || p.codigo;
   return (
     <a className="card" href={`/p/${encodeURIComponent(p.codigo)}`}>
       <div className="thumb">
@@ -19,6 +21,7 @@ export default function ProductoCard({ p, motivo }) {
           <span className="noimg">sin foto</span>
         )}
         {p.videos && p.videos.length ? <span className="hasvideo" aria-label="con video">▶</span> : null}
+        <BotonFavorito codigo={p.codigo} nombre={nombre} chico />
       </div>
       <div className="body">
         <span className="code">{p.codigo}</span>
@@ -26,7 +29,7 @@ export default function ProductoCard({ p, motivo }) {
         {meta ? <span className="meta">{meta}</span> : <span className="meta" />}
         {motivo ? <span className="why">{motivo}</span> : null}
         {!motivo && derivada ? <span className="deriv">descripción a confirmar</span> : null}
-        <BotonAgregar codigo={p.codigo} nombre={p.nombre || p.clave_producto || p.codigo} chico />
+        <BotonAgregar codigo={p.codigo} nombre={nombre} chico />
       </div>
     </a>
   );

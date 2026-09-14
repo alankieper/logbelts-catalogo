@@ -4,9 +4,11 @@ import ProductoCard from '../../components/ProductoCard';
 import Galeria from '../../components/Galeria';
 import ConsultaCTA from '../../components/ConsultaCTA';
 import BotonAgregar from '../../components/BotonAgregar';
+import BotonFavorito from '../../components/BotonFavorito';
 import Registrar from '../../components/Registrar';
 import { getProducto, getRelacionados, getVecinos, getFamilia, slugify } from '../../../lib/catalogo';
 import { despiecesDeProducto } from '../../../lib/despieces';
+import { compatiblesPorMaquina, maquinasDeProducto } from '../../../lib/maquinas';
 import { SITE_URL } from '../../../lib/seo';
 
 export const dynamic = 'force-dynamic';
@@ -49,6 +51,8 @@ export default async function ProductoPage({ params }) {
   const rel = await getRelacionados(codigo, 4);
   const { prev, next } = await getVecinos(codigo);
   const desp = await despiecesDeProducto(codigo, p.compatibilidad);
+  const maquinas = maquinasDeProducto(codigo);
+  const compatibles = await compatiblesPorMaquina(codigo, 8);
 
   const derivada = p.fuente_desc && p.fuente_desc.startsWith('derivada');
   const tieneDesc = !!(p.descripcion && !derivada);
@@ -132,6 +136,18 @@ export default async function ProductoPage({ params }) {
                 </div>
               ) : null}
 
+              {maquinas.length ? (
+                <div className="compat-chips">
+                  <span className="k">Sirve para</span>
+                  {maquinas.slice(0, 14).map((m) => (
+                    <a key={`${m.marcaSlug}/${m.modeloSlug}`} href={`/maquinas/${m.marcaSlug}/${m.modeloSlug}`}>
+                      {m.marca} {m.modelo}
+                    </a>
+                  ))}
+                  {maquinas.length > 14 ? <span className="mut" style={{ fontSize: 12 }}>y {maquinas.length - 14} más</span> : null}
+                </div>
+              ) : null}
+
               <div className="specsheet">
                 <h3>Descripción</h3>
                 <div className="srow srow-desc">
@@ -203,6 +219,7 @@ export default async function ProductoPage({ params }) {
               <div className="dacc">
                 <ConsultaCTA codigo={p.codigo} nombre={p.nombre || p.clave_producto || ''} pagina={p.pagina} />
                 <BotonAgregar codigo={p.codigo} nombre={p.nombre || p.clave_producto || p.codigo} />
+                <BotonFavorito codigo={p.codigo} nombre={p.nombre || p.clave_producto || p.codigo} />
               </div>
 
               <p className="dfoot">Referencia: Catálogo Logbelts 2025/26 · página {p.pagina || '—'}</p>
@@ -224,6 +241,17 @@ export default async function ProductoPage({ params }) {
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 6l6 6-6 6" /></svg>
                 </a>
               ) : <span />}
+            </div>
+          ) : null}
+
+          {compatibles.length ? (
+            <div className="related">
+              <h2>Otros repuestos para las mismas máquinas</h2>
+              <div className="pgrid">
+                {compatibles.map((r) => (
+                  <ProductoCard key={r.codigo} p={r} />
+                ))}
+              </div>
             </div>
           ) : null}
 

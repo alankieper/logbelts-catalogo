@@ -3,6 +3,7 @@ import Header from '../components/sitio/Header';
 import Pie from '../components/sitio/Pie';
 import PopupBienvenida from '../components/sitio/PopupBienvenida';
 import WhatsApp from '../components/sitio/WhatsApp';
+import Asistente from '../components/Asistente';
 
 // Web institucional (portada, nosotros, contacto…). El catálogo y el admin tienen su propio diseño.
 export const metadata = {
@@ -21,6 +22,7 @@ export default function SitioLayout({ children }) {
       <main>{children}</main>
       <Pie />
       <WhatsApp />
+      <Asistente />
       <PopupBienvenida />
     </div>
   );

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { getFamilias } from '../../lib/catalogo';
 import { CATALOGO, CATEGORIAS_HOME, LINEAS, img } from '../../lib/sitio';
 import { Auricular, Buscar, Escudo, Flecha, Medalla } from '../components/sitio/Iconos';
+import SelectorMaquina from '../components/SelectorMaquina';
+import { datosSelector } from '../../lib/maquinas';
 
 export const revalidate = 3600;
 
@@ -73,6 +75,24 @@ export default async function Inicio() {
           <div className="dato"><strong>{totalRedondeado || 'Online'}</strong><span>{totalRedondeado ? 'repuestos en catálogo' : 'catálogo de repuestos'}</span></div>
           <div className="dato"><strong>B2B</strong><span>portal de pedidos</span></div>
           <div className="dato"><strong>100%</strong><span>venta mayorista</span></div>
+        </div>
+      </section>
+
+      <section className="herramientas oscuro" aria-labelledby="herramientas-titulo">
+        <div className="contenedor herramientas__grilla">
+          <div>
+            <p className="antetitulo">Encontrá el repuesto correcto</p>
+            <h2 id="herramientas-titulo" className="titulo-seccion">¿Para qué máquina es?</h2>
+            <p className="bajada">Elegí marca y modelo y te mostramos los repuestos compatibles del catálogo.</p>
+          </div>
+          <div>
+            <SelectorMaquina datos={datosSelector()} oscuro />
+            <div className="herramientas__accesos">
+              <a href="/pedido-rapido"><strong>Pedido rápido</strong><span>Pegá tus códigos o subí un Excel</span></a>
+              <Link href="/guias"><strong>Guías técnicas</strong><span>Correas, espadas y cadenas por medida</span></Link>
+              <a href="/mi-cuenta"><strong>Mi cuenta</strong><span>Favoritos y pedidos para repetir</span></a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -151,6 +171,7 @@ export default async function Inicio() {
           <div className="pasos__cta">
             <Link href="/contacto" className="boton boton--claro">Quiero ser distribuidor <Flecha /></Link>
             <Link href="/distribuidores" className="boton boton--borde">Ya soy distribuidor</Link>
+            <Link href="/donde-comprar" className="boton boton--borde">Dónde comprar</Link>
           </div>
         </div>
       </section>

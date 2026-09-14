@@ -1,63 +1,77 @@
+import AdminHeader from '../AdminHeader';
 import { supabase } from '../../../lib/supabase';
-import { agregarVendedor, cambiarActivo } from './actions';
-import { pageStyle, containerStyle, heroTitleStyle, heroSubtitleStyle, cardStyle, COLOR_PRIMARY, COLOR_TEXTO, COLOR_CEMENTO, SHADOW_SOFT, FONT_TEXTO } from '../../theme';
-import { IconFlecha } from '../../components/Icons';
+import { PROVINCIAS } from '../../../lib/provincias';
+import { agregarVendedor, cambiarActivo, guardarDatosVendedor } from './actions';
 
 export const dynamic = 'force-dynamic';
 
-const page = pageStyle;
-const container = containerStyle('480px');
-const card = { ...cardStyle, padding: '10px 22px' };
-const fila = { display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 0', borderBottom: '1px solid #f0f2f6' };
-const avatar = { width: '38px', height: '38px', borderRadius: '50%', backgroundColor: COLOR_PRIMARY, color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '13.5px', fontWeight: '800', flexShrink: 0 };
-const nombreRow = { display: 'flex', alignItems: 'center', gap: '12px' };
-const nombreEstilo = (activo) => ({ fontSize: '15px', fontWeight: '700', color: activo ? COLOR_TEXTO : '#aaa', textDecoration: activo ? 'none' : 'line-through' });
-const botonToggle = (activo) => ({ backgroundColor: activo ? 'white' : COLOR_PRIMARY, color: activo ? '#c0392b' : 'white', border: activo ? '2px solid #f0d3d3' : 'none', borderRadius: '10px', padding: '8px 14px', fontSize: '12.5px', fontWeight: '700', cursor: 'pointer', fontFamily: FONT_TEXTO });
-const formNuevo = { display: 'flex', gap: '10px', marginTop: '22px' };
-const input = { flex: 1, padding: '14px 16px', borderRadius: '14px', border: '1px solid #e1e6f0', fontSize: '15px', outline: 'none', fontFamily: FONT_TEXTO, backgroundColor: 'white' };
-const botonAgregar = { backgroundColor: COLOR_PRIMARY, color: 'white', border: 'none', borderRadius: '14px', padding: '0 22px', fontSize: '14px', fontWeight: '700', cursor: 'pointer', boxShadow: SHADOW_SOFT };
-const link = { display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '7px', marginTop: '30px', color: 'white', fontWeight: '700', textDecoration: 'none', backgroundColor: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.18)', borderRadius: '14px', padding: '14px' };
-const emptyState = { color: COLOR_CEMENTO, textAlign: 'center', fontSize: '14px', padding: '18px 0', fontFamily: FONT_TEXTO };
-
-function iniciales(nombre) {
-  const partes = nombre.trim().split(/\s+/);
-  return ((partes[0]?.[0] || '') + (partes[1]?.[0] || '')).toUpperCase();
-}
-
-export default async function Vendedores() {
+export default async function Vendedores({ searchParams }) {
   const result = await supabase.from('vendedores').select('*').order('nombre');
   const vendedores = result.data || [];
+  const faltaMigracion = vendedores.length > 0 && !('provincias' in vendedores[0]);
 
   return (
-    <main style={page}>
-      <div style={container}>
-        <h1 style={heroTitleStyle}>Vendedores</h1>
-        <p style={heroSubtitleStyle}>Alta y baja de perfiles del equipo comercial.</p>
+    <>
+      <AdminHeader activo="vendedores" />
+      <main className="adm">
+        <div className="wrap">
+          <h1>Vendedores</h1>
+          <p className="sub">
+            Cada contacto de la web se asigna al vendedor que cubre su provincia. Si nadie la cubre, va a un vendedor sin
+            provincias marcadas (general). Con teléfono cargado, el cliente puede escribirle directo y los pedidos le llegan a él.
+          </p>
 
-        <div style={card}>
-          {vendedores.length === 0 && <p style={emptyState}>No hay vendedores cargados.</p>}
+          {searchParams?.ok ? <p className="ok-msg">Datos guardados.</p> : null}
+          {searchParams?.err ? <p className="err-msg">No se pudo guardar. ¿Ya se corrió la migración 0011?</p> : null}
+          {faltaMigracion ? (
+            <div className="adm-aviso">
+              <b>Falta la migración 0011.</b> Corré <code>supabase/migrations/0011_web_contactos.sql</code> en Supabase para cargar teléfono, email y zonas.
+            </div>
+          ) : null}
+
           {vendedores.map((v) => (
-            <div key={v.id} style={fila}>
-              <span style={nombreRow}>
-                <span style={avatar}>{iniciales(v.nombre)}</span>
-                <span style={nombreEstilo(v.activo)}>{v.nombre}</span>
-              </span>
-              <form action={cambiarActivo}>
+            <div key={v.id} className={'adm-card' + (v.activo ? '' : ' adm-inactivo')}>
+              <h3>
+                {v.nombre}
+                {v.activo ? null : <span className="est estado-descartado">Inactivo</span>}
+                <form action={cambiarActivo} style={{ marginLeft: 'auto' }}>
+                  <input type="hidden" name="id" value={v.id} />
+                  <input type="hidden" name="activo" value={String(v.activo)} />
+                  <span className="adm-acciones" style={{ marginTop: 0 }}>
+                    <button type="submit" className={v.activo ? 'ghost' : ''}>{v.activo ? 'Desactivar' : 'Activar'}</button>
+                  </span>
+                </form>
+              </h3>
+              <form action={guardarDatosVendedor}>
                 <input type="hidden" name="id" value={v.id} />
-                <input type="hidden" name="activo" value={String(v.activo)} />
-                <button type="submit" style={botonToggle(v.activo)}>{v.activo ? 'Desactivar' : 'Activar'}</button>
+                <div className="adm-form">
+                  <label>WhatsApp<input name="telefono" defaultValue={v.telefono || ''} placeholder="11 5555-5555" /></label>
+                  <label>Email para avisos<input name="email" type="email" defaultValue={v.email || ''} placeholder="nombre@logbelts.com.ar" /></label>
+                  <label style={{ alignSelf: 'end', display: 'flex', gap: 8, alignItems: 'center', fontWeight: 400 }}>
+                    <input type="checkbox" name="recibe_contactos" defaultChecked={v.recibe_contactos !== false} /> Recibe contactos de la web
+                  </label>
+                  <fieldset className="full" style={{ border: 0, padding: 0, margin: 0 }}>
+                    <legend style={{ fontSize: 12, fontWeight: 700, color: 'var(--ink-soft)', marginBottom: 6 }}>Provincias que atiende (vacío = general)</legend>
+                    <div className="adm-provincias">
+                      {PROVINCIAS.map((p) => (
+                        <label key={p}>
+                          <input type="checkbox" name="provincias" value={p} defaultChecked={(v.provincias || []).includes(p)} /> {p}
+                        </label>
+                      ))}
+                    </div>
+                  </fieldset>
+                </div>
+                <div className="adm-acciones"><button type="submit">Guardar</button></div>
               </form>
             </div>
           ))}
+
+          <form action={agregarVendedor} className="admbar" style={{ marginTop: 18 }}>
+            <input name="nombre" required placeholder="Nombre del nuevo vendedor" />
+            <button className="btn" type="submit">Agregar vendedor</button>
+          </form>
         </div>
-
-        <form action={agregarVendedor} style={formNuevo}>
-          <input name="nombre" required style={input} placeholder="Nombre del nuevo vendedor" />
-          <button type="submit" style={botonAgregar}>Agregar</button>
-        </form>
-
-        <a href="/admin" style={link}><IconFlecha width={16} height={16} />Volver al panel</a>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }

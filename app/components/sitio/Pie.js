@@ -14,20 +14,29 @@ export default function Pie() {
           <h2>Sitio</h2>
           <ul>
             {NAV.map(n => <li key={n.href}><Link href={n.href}>{n.label}</Link></li>)}
+            <li><Link href="/donde-comprar">Dónde comprar</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Herramientas</h2>
+          <ul>
+            <li><Link href={CATALOGO}>Catálogo online</Link></li>
+            <li><a href="/maquinas">Repuestos por máquina</a></li>
+            <li><a href="/pedido-rapido">Pedido rápido</a></li>
+            <li><Link href="/guias">Guías técnicas</Link></li>
+            <li><Link href="/descargas">Catálogos en PDF</Link></li>
+            <li><a href="/manuales">Manuales y despieces</a></li>
           </ul>
         </div>
         <div>
           <h2>Distribuidores</h2>
           <ul>
             <li><Link href="/contacto">Quiero ser distribuidor</Link></li>
-            <li><Link href={CATALOGO}>Catálogo online</Link></li>
-            <li><Link href="/descargas">Catálogos en PDF</Link></li>
-            <li><a href="/manuales">Manuales y despieces</a></li>
+            <li><Link href="/material">Material para tu comercio</Link></li>
+            <li><a href="/mi-cuenta">Mi cuenta</a></li>
             <li><a href={PORTAL_DISTRIBUIDORES} target="_blank" rel="noopener noreferrer">Portal B2B</a></li>
           </ul>
-        </div>
-        <div>
-          <h2>Contacto</h2>
+          <h2 style={{ marginTop: 22 }}>Contacto</h2>
           <ul>
             <li><a href="tel:+541161142012">{CONTACTO.telefono}</a></li>
             <li><a href={`mailto:${CONTACTO.email}`}>{CONTACTO.email}</a></li>

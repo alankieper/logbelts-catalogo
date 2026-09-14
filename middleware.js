@@ -42,12 +42,13 @@ async function gateClientesActivo() {
 }
 
 // Páginas de la web institucional (app/(sitio)): siempre públicas, aunque el login clientes esté prendido.
-const PAGINAS_SITIO = new Set(['/', '/lanzamientos', '/tutoriales', '/distribuidores', '/acerca-de', '/contacto', '/descargas']);
+const PAGINAS_SITIO = new Set(['/', '/lanzamientos', '/tutoriales', '/distribuidores', '/acerca-de', '/contacto', '/descargas', '/donde-comprar', '/material']);
 
 // Rutas siempre libres del "login clientes" (nunca deben quedar bloqueadas).
 function exceptuadaDelGate(path) {
   return (
     PAGINAS_SITIO.has(path) ||
+    path === '/guias' || path.startsWith('/guias/') ||
     path.startsWith('/img/') ||
     path.startsWith('/api') ||
     path.startsWith('/auth') ||

@@ -1,5 +1,6 @@
 import { SITE_URL, SITIO_PUBLICO } from '../lib/seo';
 import { getFamilias, getMarcasConteo, leerTodosRaw } from '../lib/catalogo';
+import { listarMarcas, listarModelos } from '../lib/maquinas';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 3600;
@@ -17,9 +18,17 @@ export default async function sitemap() {
   const urls = [
     { url: SITE_URL, lastModified: now, changeFrequency: 'weekly', priority: 1 },
     { url: `${SITE_URL}/productos`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
-    ...['/contacto', '/distribuidores', '/descargas', '/lanzamientos', '/tutoriales', '/acerca-de'].map(p => ({
+    ...['/contacto', '/distribuidores', '/descargas', '/lanzamientos', '/tutoriales', '/acerca-de',
+      '/donde-comprar', '/material', '/guias', '/guias/correas', '/guias/espadas-y-cadenas', '/guias/tanza-o-cuchilla',
+      '/pedido-rapido', '/maquinas'].map(p => ({
       url: `${SITE_URL}${p}`, lastModified: now, changeFrequency: 'monthly', priority: 0.5,
     })),
+    ...listarMarcas().flatMap(m => [
+      { url: `${SITE_URL}/maquinas/${m.slug}`, lastModified: now, changeFrequency: 'weekly', priority: 0.5 },
+      ...listarModelos(m.slug).modelos.map(mo => ({
+        url: `${SITE_URL}/maquinas/${m.slug}/${mo.slug}`, lastModified: now, changeFrequency: 'weekly', priority: 0.6,
+      })),
+    ]),
     { url: `${SITE_URL}/buscar`, lastModified: now, changeFrequency: 'weekly', priority: 0.3 },
     { url: `${SITE_URL}/manuales`, lastModified: now, changeFrequency: 'monthly', priority: 0.3 },
   ];

@@ -1,6 +1,8 @@
 import CatalogoHeader from '../components/CatalogoHeader';
 import Icono from '../components/Icono';
+import SelectorMaquina from '../components/SelectorMaquina';
 import { getFamilias } from '../../lib/catalogo';
+import { datosSelector } from '../../lib/maquinas';
 
 export const dynamic = 'force-dynamic';
 
@@ -30,6 +32,17 @@ export default async function CatalogoInicio() {
           <p className="aviso-mayorista">
             Venta mayorista únicamente. Comunicate con nuestros vendedores para más información.
           </p>
+
+          <section className="banda-maquina" aria-labelledby="por-maquina">
+            <h2 id="por-maquina">Buscá por máquina</h2>
+            <p>Elegí marca y modelo y te mostramos los repuestos que le sirven.</p>
+            <SelectorMaquina datos={datosSelector()} />
+            <div className="accesos">
+              <a className="chip-lnk" href="/pedido-rapido">Pedido rápido por códigos o Excel</a>
+              <a className="chip-lnk" href="/guias">Guías técnicas: correas, espadas y cadenas</a>
+              <a className="chip-lnk" href="/mi-cuenta">Mis favoritos y pedidos</a>
+            </div>
+          </section>
 
           <div className="tiles">
             {familias.map((f) => (

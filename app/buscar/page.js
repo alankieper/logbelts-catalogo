@@ -1,6 +1,7 @@
 import CatalogoHeader from '../components/CatalogoHeader';
 import ProductoCard from '../components/ProductoCard';
 import Registrar from '../components/Registrar';
+import NoEncontrado from '../components/NoEncontrado';
 import { buscar } from '../../lib/catalogo';
 
 export const dynamic = 'force-dynamic';
@@ -33,15 +34,25 @@ export default async function BuscarPage({ searchParams }) {
           </p>
 
           {q && res.length ? (
-            <div className="pgrid">
-              {res.map((r) => (
-                <ProductoCard key={r.p.codigo} p={r.p} motivo={r.motivo} />
-              ))}
-            </div>
+            <>
+              <div className="pgrid">
+                {res.map((r) => (
+                  <ProductoCard key={r.p.codigo} p={r.p} motivo={r.motivo} />
+                ))}
+              </div>
+              <details className="solicitud-mini">
+                <summary>¿No es el repuesto exacto que buscás? Pedilo y te lo buscamos →</summary>
+                <NoEncontrado q={q} />
+              </details>
+            </>
           ) : q ? (
-            <div className="empty">
-              No se encontraron productos. Probá con parte del código (por ejemplo <b>5888</b>) o con la marca.
-            </div>
+            <>
+              <div className="empty">
+                No se encontraron productos. Probá con parte del código (por ejemplo <b>5888</b>), con la marca,
+                o buscá <a href="/maquinas">por máquina</a>.
+              </div>
+              <NoEncontrado q={q} />
+            </>
           ) : null}
         </div>
       </main>

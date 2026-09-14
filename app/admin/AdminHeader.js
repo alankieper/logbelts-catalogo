@@ -1,3 +1,5 @@
+import '../catalogo-extra.css';
+
 export default function AdminHeader({ activo }) {
   const link = (href, label, key) => (
     <a href={href} data-on={activo === key ? 'true' : undefined}>
@@ -13,6 +15,9 @@ export default function AdminHeader({ activo }) {
         <nav>
           {link('/admin', 'Tablero', 'home')}
           {link('/admin/metricas', 'Métricas', 'metricas')}
+          {link('/admin/contactos', 'Contactos', 'contactos')}
+          {link('/admin/vendedores', 'Vendedores', 'vendedores')}
+          {link('/admin/distribuidores', 'Distribuidores', 'distribuidores')}
           {link('/admin/productos', 'Productos', 'productos')}
           {link('/admin/codigos', 'Códigos', 'codigos')}
           {link('/admin/oem', 'OEM', 'oem')}
