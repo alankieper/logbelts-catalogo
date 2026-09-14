@@ -498,6 +498,9 @@
 .marca--logo { background: #f4f6fa; border-color: #f4f6fa; align-items: flex-start; }
 .marca--logo:hover, .marca--logo:focus-visible { background: #fff; border-color: var(--marca-claro); }
 .marca--logo .marca__n { color: var(--tinta-suave); }
+.marca--logo-oscuro { background: #1b2433; border-color: #1b2433; }
+.marca--logo-oscuro:hover, .marca--logo-oscuro:focus-visible { background: #232e40; }
+.marca--logo-oscuro .marca__n { color: rgba(255,255,255,.7); }
 .marca__logo { display: block; height: 32px; width: auto; max-width: 150px; object-fit: contain; object-position: left center; }
 .marca__n { margin-top: 6px; font-size: 12px; color: rgba(255,255,255,.6); white-space: nowrap; }
 @keyframes sitio-marcas { to { transform: translateX(-50%); } }
