@@ -8,7 +8,7 @@ export default function CintaMarcas({ marcas }) {
     <ul className="marcas__lista" aria-hidden={copia || undefined}>
       {marcas.map((m) => (
         <li key={m.slug}>
-          <a className="marca" href={`/m/${m.slug}`} tabIndex={copia ? -1 : undefined}>
+          <a className={m.logo ? 'marca marca--logo' : 'marca'} href={`/m/${m.slug}`} tabIndex={copia ? -1 : undefined} aria-label={m.logo ? `Repuestos para ${m.nombre}` : undefined}>
             {m.logo ? <img className="marca__logo" src={m.logo} alt={m.nombre} loading="lazy" /> : <span className="marca__nombre">{m.nombre}</span>}
             <span className="marca__n">{m.count.toLocaleString('es-AR')} repuestos</span>
           </a>
@@ -20,7 +20,7 @@ export default function CintaMarcas({ marcas }) {
   return (
     <section className="marcas" aria-labelledby="marcas-titulo">
       <div className="contenedor marcas__cabeza">
-        <p id="marcas-titulo">Repuestos para las marcas que usan tus clientes</p>
+        <p id="marcas-titulo">Repuestos compatibles con estas marcas</p>
         <a href="/productos">Ver catálogo →</a>
       </div>
       <div className="marcas__ventana">
