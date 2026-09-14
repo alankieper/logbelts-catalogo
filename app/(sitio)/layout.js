@@ -6,8 +6,9 @@ import WhatsApp from '../components/sitio/WhatsApp';
 
 // Web institucional (portada, nosotros, contacto…). El catálogo y el admin tienen su propio diseño.
 export const metadata = {
+  // absolute: que no le agregue el "· Catálogo Logbelts" del layout raíz
   title: {
-    default: 'Logbelts | Repuestos para bosque y jardín · Venta mayorista',
+    absolute: 'Logbelts | Repuestos para bosque y jardín · Venta mayorista',
     template: '%s | Logbelts',
   },
   description: 'Importadores y distribuidores de repuestos para motosierras, desmalezadoras, minitractores y motores. Venta mayorista a comercios y talleres.',
