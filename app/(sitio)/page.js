@@ -1,30 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { getFamilias } from '../../lib/catalogo';
-import { CATALOGO, CATEGORIAS_HOME, LINEAS, img } from '../../lib/sitio';
+import { getMarcasConteo } from '../../lib/catalogo';
+import { logosMarcas } from '../../lib/logosMarcas';
+import { datosSelector } from '../../lib/maquinas';
+import { CATALOGO, CATEGORIAS_HOME, img } from '../../lib/sitio';
 import { Auricular, Buscar, Escudo, Flecha, Medalla } from '../components/sitio/Iconos';
 import SelectorMaquina from '../components/SelectorMaquina';
 import Dibujo from '../components/sitio/Dibujo';
-import Piston3D from '../components/sitio/Piston3D';
+import Carburador3D from '../components/sitio/Carburador3D';
+import CintaMarcas from '../components/sitio/CintaMarcas';
 import { Arranque, Bujia, Cabezal, Cadena, Carburador, CarburadorPlano, Correa, FiltroAire, Piston } from '../components/sitio/LineasRepuestos';
-
-const TIPOS = [
-  { Dibujo: Carburador, nombre: 'Carburadores', href: '/f/carburacion' },
-  { Dibujo: Piston, nombre: 'Pistones y cilindros', href: '/buscar?q=piston' },
-  { Dibujo: Bujia, nombre: 'Bujías y encendido', href: '/buscar?q=bujia' },
-  { Dibujo: Cadena, nombre: 'Cadenas y espadas', href: '/guias/espadas-y-cadenas' },
-  { Dibujo: Correa, nombre: 'Correas y poleas', href: '/guias/correas' },
-  { Dibujo: FiltroAire, nombre: 'Filtros de aire', href: '/buscar?q=filtro%20aire' },
-  { Dibujo: Cabezal, nombre: 'Cabezales y tanzas', href: '/buscar?q=cabezal' },
-  { Dibujo: Arranque, nombre: 'Sistemas de arranque', href: '/f/sistemas-de-arranque' },
-];
-
-const PRECISION = [
-  { Dibujo: Piston, titulo: 'Motor', texto: 'Pistones, aros, cilindros, bielas y juntas para motores 2T y 4T.', href: '/f/motores-4t-y-generadores' },
-  { Dibujo: Carburador, titulo: 'Carburación', texto: 'Carburadores completos, kits de membranas y ajuste.', href: '/f/carburacion' },
-  { Dibujo: Bujia, titulo: 'Encendido', texto: 'Bujías, bobinas y juntas de motor.', href: '/f/juntas-de-motor' },
-];
-import { datosSelector } from '../../lib/maquinas';
 
 export const revalidate = 3600;
 
@@ -40,21 +25,44 @@ const PASOS = [
   { titulo: 'Accedé al portal B2B', texto: 'Hacé tus pedidos y consultá el catálogo completo cuando quieras.' },
 ];
 
-// Cantidades reales del catálogo; si la base no responde, la portada igual se muestra sin números.
-async function conteos() {
+const TIPOS = [
+  { Icono: Carburador, nombre: 'Carburadores', href: '/f/carburacion' },
+  { Icono: Piston, nombre: 'Pistones y cilindros', href: '/buscar?q=piston' },
+  { Icono: Bujia, nombre: 'Bujías y encendido', href: '/buscar?q=bujia' },
+  { Icono: Cadena, nombre: 'Cadenas y espadas', href: '/guias/espadas-y-cadenas' },
+  { Icono: Correa, nombre: 'Correas y poleas', href: '/guias/correas' },
+  { Icono: FiltroAire, nombre: 'Filtros de aire', href: '/buscar?q=filtro%20aire' },
+  { Icono: Cabezal, nombre: 'Cabezales y tanzas', href: '/buscar?q=cabezal' },
+  { Icono: Arranque, nombre: 'Sistemas de arranque', href: '/f/sistemas-de-arranque' },
+];
+
+const PRECISION = [
+  { Icono: Carburador, titulo: 'Carburación', texto: 'Carburadores completos, kits de membranas, tornillos de regulación y cebadores.', href: '/f/carburacion' },
+  { Icono: Piston, titulo: 'Motor', texto: 'Pistones, aros, cilindros, bielas y juntas para motores 2T y 4T.', href: '/f/motores-4t-y-generadores' },
+  { Icono: Bujia, titulo: 'Encendido', texto: 'Bujías, bobinas y juntas de motor.', href: '/f/juntas-de-motor' },
+];
+
+/** Dibujo de línea grande de fondo, se traza al entrar en pantalla. */
+const Decor = ({ Icono, clase }) => (
+  <Dibujo className={`decor ${clase}`} aria-hidden="true">
+    <Icono />
+  </Dibujo>
+);
+
+async function marcasDelCatalogo() {
   try {
-    const familias = await getFamilias();
-    const porSlug = Object.fromEntries(familias.map(f => [f.slug, f.count]));
-    const total = familias.reduce((acc, f) => acc + (f.count || 0), 0);
-    return { porSlug, total };
+    const logos = logosMarcas();
+    return (await getMarcasConteo())
+      .filter((m) => m.count >= 2)
+      .slice(0, 40)
+      .map((m) => ({ ...m, logo: logos[m.slug] || null }));
   } catch {
-    return { porSlug: {}, total: 0 };
+    return [];
   }
 }
 
 export default async function Inicio() {
-  const { porSlug, total } = await conteos();
-  const totalRedondeado = total >= 100 ? `+${(Math.floor(total / 100) * 100).toLocaleString('es-AR')}` : null;
+  const marcas = await marcasDelCatalogo();
 
   return (
     <>
@@ -73,7 +81,7 @@ export default async function Inicio() {
             </p>
 
             <form className="hero__buscar" action="/buscar" method="get" role="search">
-              <label htmlFor="hero-q" className="visually-hidden" style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clipPath: 'inset(50%)' }}>Buscar repuestos</label>
+              <label htmlFor="hero-q" style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clipPath: 'inset(50%)' }}>Buscar repuestos</label>
               <input id="hero-q" name="q" type="search" placeholder="Código, código original o modelo de máquina" autoComplete="off" />
               <button type="submit" className="boton"><Buscar /> Buscar</button>
             </form>
@@ -92,16 +100,10 @@ export default async function Inicio() {
         </div>
       </section>
 
-      <section className="datos" aria-label="Logbelts en números">
-        <div className="contenedor datos__grilla">
-          <div className="dato"><strong>+10</strong><span>años en el rubro</span></div>
-          <div className="dato"><strong>{totalRedondeado || 'Online'}</strong><span>{totalRedondeado ? 'repuestos en catálogo' : 'catálogo de repuestos'}</span></div>
-          <div className="dato"><strong>B2B</strong><span>portal de pedidos</span></div>
-          <div className="dato"><strong>100%</strong><span>venta mayorista</span></div>
-        </div>
-      </section>
+      <CintaMarcas marcas={marcas} />
 
-      <section className="herramientas oscuro" aria-labelledby="herramientas-titulo">
+      <section className="herramientas oscuro con-decor" aria-labelledby="herramientas-titulo">
+        <Decor Icono={Correa} clase="decor--der-arriba decor--grande" />
         <div className="contenedor herramientas__grilla">
           <div>
             <p className="antetitulo">Encontrá el repuesto correcto</p>
@@ -119,7 +121,8 @@ export default async function Inicio() {
         </div>
       </section>
 
-      <section className="precision oscuro" aria-labelledby="precision-titulo">
+      <section className="precision oscuro con-decor" aria-labelledby="precision-titulo">
+        <Decor Icono={Piston} clase="decor--izq-abajo decor--grande" />
         <div className="contenedor precision__grilla">
           <div>
             <p className="antetitulo">Ingeniería en cada repuesto</p>
@@ -129,7 +132,7 @@ export default async function Inicio() {
               medidas y compatibilidades por modelo.
             </p>
             <ul className="precision__lista">
-              {PRECISION.map(({ Dibujo: Icono, titulo, texto, href }) => (
+              {PRECISION.map(({ Icono, titulo, texto, href }) => (
                 <li key={titulo}>
                   <a href={href}>
                     <Dibujo className="precision__icono"><Icono /></Dibujo>
@@ -143,7 +146,7 @@ export default async function Inicio() {
               ))}
             </ul>
           </div>
-          <Piston3D />
+          <Carburador3D />
         </div>
       </section>
 
@@ -160,7 +163,9 @@ export default async function Inicio() {
         </div>
       </section>
 
-      <section className="seccion tipos" aria-labelledby="tipos-titulo">
+      <section className="seccion tipos con-decor" aria-labelledby="tipos-titulo">
+        <Decor Icono={Carburador} clase="decor--izq-arriba decor--enorme" />
+        <Decor Icono={FiltroAire} clase="decor--der-abajo" />
         <div className="contenedor">
           <div className="seccion__cabeza">
             <div>
@@ -170,7 +175,7 @@ export default async function Inicio() {
             <Link className="boton boton--borde" href={CATALOGO}>Todo el catálogo <Flecha /></Link>
           </div>
           <Dibujo className="tipos__grilla">
-            {TIPOS.map(({ Dibujo: Icono, nombre, href }) => (
+            {TIPOS.map(({ Icono, nombre, href }) => (
               <a key={nombre} href={href} className="tipo">
                 <Icono className="tipo__dibujo" />
                 <span className="tipo__nombre">{nombre}</span>
@@ -181,7 +186,8 @@ export default async function Inicio() {
         </div>
       </section>
 
-      <section className="seccion" aria-labelledby="porque-titulo">
+      <section className="seccion con-decor" aria-labelledby="porque-titulo">
+        <Decor Icono={Bujia} clase="decor--izq-abajo" />
         <div className="contenedor porque__grilla">
           <div>
             <p className="antetitulo">Por qué Logbelts</p>
@@ -209,7 +215,8 @@ export default async function Inicio() {
         </div>
       </section>
 
-      <section className="seccion seccion--oscura oscuro" aria-labelledby="pasos-titulo">
+      <section className="seccion seccion--oscura oscuro con-decor" aria-labelledby="pasos-titulo">
+        <Decor Icono={Cadena} clase="decor--der-abajo decor--enorme" />
         <div className="contenedor">
           <div className="seccion__cabeza">
             <div>
@@ -233,7 +240,9 @@ export default async function Inicio() {
         </div>
       </section>
 
-      <section className="seccion seccion--suelo" aria-labelledby="categorias-titulo">
+      <section className="seccion seccion--suelo con-decor" aria-labelledby="categorias-titulo">
+        <Decor Icono={Cabezal} clase="decor--der-arriba" />
+        <Decor Icono={Arranque} clase="decor--izq-abajo" />
         <div className="contenedor">
           <div className="seccion__cabeza">
             <div>
@@ -252,7 +261,6 @@ export default async function Inicio() {
           </div>
         </div>
       </section>
-
     </>
   );
 }
