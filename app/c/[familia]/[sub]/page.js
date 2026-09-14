@@ -50,7 +50,7 @@ export default async function SubcategoriaPage({ params, searchParams }) {
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">
-            <a href="/">Inicio</a>
+            <a href="/productos">Catálogo</a>
             <span className="sep">/</span>
             <a href={`/f/${fam.slug}`}>{fam.nombre}</a>
             <span className="sep">/</span>

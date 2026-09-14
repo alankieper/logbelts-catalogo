@@ -21,7 +21,7 @@ export default async function BuscarPage({ searchParams }) {
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">
-            <a href="/">Inicio</a>
+            <a href="/productos">Catálogo</a>
             <span className="sep">/</span>
             <span aria-current="page">Búsqueda</span>
           </nav>

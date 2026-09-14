@@ -1,10 +1,13 @@
-import CatalogoHeader from './components/CatalogoHeader';
-import Icono from './components/Icono';
-import { getFamilias } from '../lib/catalogo';
+import CatalogoHeader from '../components/CatalogoHeader';
+import Icono from '../components/Icono';
+import { getFamilias } from '../../lib/catalogo';
 
 export const dynamic = 'force-dynamic';
 
-export default async function Home() {
+export const metadata = { title: 'Repuestos para bosque y jardín' };
+
+// Portada del catálogo (antes estaba en "/"; ahora "/" es la web institucional)
+export default async function CatalogoInicio() {
   const familias = await getFamilias();
 
   return (
@@ -12,6 +15,11 @@ export default async function Home() {
       <CatalogoHeader />
       <main className="cat">
         <div className="wrap">
+          <nav className="crumb">
+            <a href="/">Inicio</a>
+            <span className="sep">/</span>
+            <span aria-current="page">Catálogo</span>
+          </nav>
           <p className="eyebrow">Catálogo de repuestos</p>
           <h1 className="page">Repuestos para bosque y jardín</h1>
           <p className="lead">

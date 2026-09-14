@@ -33,7 +33,7 @@ export default async function ManualesPage({ searchParams }) {
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">
-            <a href="/">Inicio</a><span className="sep">/</span>
+            <a href="/productos">Catálogo</a><span className="sep">/</span>
             <span aria-current="page">Manuales y despieces</span>
           </nav>
           <p className="eyebrow">Nuevo</p>

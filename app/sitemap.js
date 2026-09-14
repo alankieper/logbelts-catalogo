@@ -16,6 +16,10 @@ export default async function sitemap() {
   const now = new Date();
   const urls = [
     { url: SITE_URL, lastModified: now, changeFrequency: 'weekly', priority: 1 },
+    { url: `${SITE_URL}/productos`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
+    ...['/contacto', '/distribuidores', '/descargas', '/lanzamientos', '/tutoriales', '/acerca-de'].map(p => ({
+      url: `${SITE_URL}${p}`, lastModified: now, changeFrequency: 'monthly', priority: 0.5,
+    })),
     { url: `${SITE_URL}/buscar`, lastModified: now, changeFrequency: 'weekly', priority: 0.3 },
     { url: `${SITE_URL}/manuales`, lastModified: now, changeFrequency: 'monthly', priority: 0.3 },
   ];

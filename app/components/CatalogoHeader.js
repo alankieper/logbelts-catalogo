@@ -27,6 +27,7 @@ export default function CatalogoHeader({ q = '' }) {
           </button>
         </form>
         <ThemeToggle />
+        <a href="/productos" className="hlink" title="Todas las familias de repuestos">Catálogo</a>
         <a href="/manuales" className="hlink hlink-last" title="Manuales y despieces">Manuales</a>
       </div>
     </header>

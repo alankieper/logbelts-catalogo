@@ -90,7 +90,7 @@ export default async function ProductoPage({ params }) {
             Volver a {sub ? sub.nombre : 'inicio'}
           </a>
           <nav className="crumb">
-            <a href="/">Inicio</a>
+            <a href="/productos">Catálogo</a>
             <span className="sep">/</span>
             {fam ? (<><a href={`/f/${fam.slug}`}>{fam.nombre}</a><span className="sep">/</span></>) : null}
             {fam && sub ? (<><a href={catUrl}>{sub.nombre}</a><span className="sep">/</span></>) : null}
