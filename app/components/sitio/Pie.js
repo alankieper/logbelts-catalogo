@@ -25,7 +25,7 @@ export default function Pie() {
             <li><a href="/pedido-rapido">Pedido rápido</a></li>
             <li><Link href="/guias">Guías técnicas</Link></li>
             <li><Link href="/descargas">Catálogos en PDF</Link></li>
-            <li><a href="/manuales">Manuales y despieces</a></li>
+            <li><a href="/despiece">Despiece por modelo</a></li>
           </ul>
         </div>
         <div>

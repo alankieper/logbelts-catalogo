@@ -4,6 +4,10 @@ const nextConfig = {
     // subir el Excel del catálogo (carga masiva) desde el admin
     serverActions: { bodySizeLimit: '12mb' },
   },
+  async redirects() {
+    // "Manuales" ahora se llama "Despiece"; los links viejos siguen funcionando
+    return [{ source: '/manuales', destination: '/despiece', permanent: true }];
+  },
 };
 
 module.exports = nextConfig;

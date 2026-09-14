@@ -96,30 +96,15 @@ export default async function Inicio() {
         </div>
       </section>
 
-      <section className="seccion seccion--suelo" aria-labelledby="lineas-titulo">
+      <section className="fondo-foto fondo-foto--oscuro temporada oscuro">
+        <Image className="fondo-foto__img" src={img('3d5e5148663349a9beae8fb6ac532baff000')} alt="" fill sizes="100vw" />
         <div className="contenedor">
-          <div className="seccion__cabeza">
-            <div>
-              <p className="antetitulo">Líneas principales</p>
-              <h2 id="lineas-titulo" className="titulo-seccion">Todo lo que tu mostrador necesita</h2>
-            </div>
-            <Link className="boton boton--borde" href={CATALOGO}>Catálogo completo <Flecha /></Link>
-          </div>
-          <div className="lineas__grilla">
-            {LINEAS.map(l => (
-              <Link key={l.titulo} className="linea" href={l.href}>
-                <div className="linea__img">
-                  <Image src={l.img} alt={l.titulo} width={400} height={400} sizes="(max-width: 520px) 90vw, (max-width: 1000px) 45vw, 280px" />
-                </div>
-                <div className="linea__pie">
-                  <h3 className="display">{l.titulo}</h3>
-                  <p>{l.sub}</p>
-                  <span className="linea__meta">
-                    {porSlug[l.slug] ? `${porSlug[l.slug].toLocaleString('es-AR')} productos` : 'Ver productos'} <Flecha />
-                  </span>
-                </div>
-              </Link>
-            ))}
+          <p className="antetitulo">Temporada primavera · verano</p>
+          <h2 className="display">Prepará tu stock para la temporada</h2>
+          <p className="temporada__bajada">¡No te lo pierdas!</p>
+          <p>Registrate como distribuidor e incorporá toda la línea de productos de calidad Logbelts.</p>
+          <div className="hero__acciones">
+            <Link href="/contacto" className="boton boton--claro">Contactate con nosotros <Flecha /></Link>
           </div>
         </div>
       </section>
@@ -196,18 +181,6 @@ export default async function Inicio() {
         </div>
       </section>
 
-      <section className="fondo-foto fondo-foto--oscuro temporada oscuro">
-        <Image className="fondo-foto__img" src={img('3d5e5148663349a9beae8fb6ac532baff000')} alt="" fill sizes="100vw" />
-        <div className="contenedor">
-          <p className="antetitulo">Temporada primavera · verano</p>
-          <h2 className="display">Prepará tu stock para la temporada</h2>
-          <p className="temporada__bajada">¡No te lo pierdas!</p>
-          <p>Registrate como distribuidor e incorporá toda la línea de productos de calidad Logbelts.</p>
-          <div className="hero__acciones">
-            <Link href="/contacto" className="boton boton--claro">Contactate con nosotros <Flecha /></Link>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

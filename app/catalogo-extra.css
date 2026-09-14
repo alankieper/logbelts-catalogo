@@ -198,3 +198,13 @@ details.solicitud-mini[open] > summary { margin-bottom: 4px; }
 .adm-acciones .ghost { background: var(--surface); color: var(--brand-ink); border: 1px solid var(--rule-strong); }
 .adm-acciones .peligro { background: #b42318; }
 .adm-inactivo { opacity: .6; }
+
+/* ---------- Despiece por modelo ---------- */
+.despiece-grilla { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.despiece-tile { display: grid; gap: 4px; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 10px 12px; box-shadow: var(--shadow); }
+.despiece-tile h3 { margin: 0 0 2px; font-size: 14px; color: var(--ink); }
+.despiece-tile a { font-size: 12.5px; font-weight: 700; }
+.despiece-tile a.directo { color: var(--brand-ink); }
+.despiece-tile a:not(.directo):not(.repuestos) { color: var(--ink-soft); }
+.despiece-tile a.repuestos { color: var(--ink-faint); font-weight: 600; }
+.despiece-tile .sin { font-size: 12.5px; color: var(--ink-faint); }

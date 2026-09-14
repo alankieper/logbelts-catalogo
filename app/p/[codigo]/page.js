@@ -184,7 +184,7 @@ export default async function ProductoPage({ params }) {
 
               {desp.oficiales.length ? (
                 <div className="specsheet">
-                  <h3>Manuales y despieces de la máquina</h3>
+                  <h3>Despiece de la máquina</h3>
                   {desp.curados.map((c) => (
                     <div className="srow" key={c.id}>
                       <dt>{c.marca} {c.modelo}</dt>
@@ -203,7 +203,11 @@ export default async function ProductoPage({ params }) {
                         {o.oficial ? (
                           <a href={o.oficial.url} target="_blank" rel="noreferrer">{o.oficial.label} ↗</a>
                         ) : null}
-                        <a href={o.diagramas.url} target="_blank" rel="noreferrer">Diagramas de partes ↗</a>
+                        {o.diagramas ? (
+                          <a href={o.diagramas.url} target="_blank" rel="noreferrer">
+                            {o.diagramas.directo ? 'Ver despiece del modelo ↗' : `Despieces ${o.marca} ↗`}
+                          </a>
+                        ) : null}
                       </dd>
                     </div>
                   ))}

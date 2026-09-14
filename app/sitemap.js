@@ -30,7 +30,7 @@ export default async function sitemap() {
       })),
     ]),
     { url: `${SITE_URL}/buscar`, lastModified: now, changeFrequency: 'weekly', priority: 0.3 },
-    { url: `${SITE_URL}/manuales`, lastModified: now, changeFrequency: 'monthly', priority: 0.3 },
+    { url: `${SITE_URL}/despiece`, lastModified: now, changeFrequency: 'monthly', priority: 0.3 },
   ];
 
   for (const f of familias) {

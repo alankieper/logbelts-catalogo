@@ -8,7 +8,7 @@ const LINKS = [
   { href: '/pedido-rapido', label: 'Pedido rápido', nuevo: true },
   { href: '/mi-cuenta', label: 'Mi cuenta' },
   { href: '/guias', label: 'Guías técnicas' },
-  { href: '/manuales', label: 'Manuales' },
+  { href: '/despiece', label: 'Despiece' },
   { href: '/', label: 'Sitio Logbelts' },
 ];
 
