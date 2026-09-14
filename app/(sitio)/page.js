@@ -4,6 +4,26 @@ import { getFamilias } from '../../lib/catalogo';
 import { CATALOGO, CATEGORIAS_HOME, LINEAS, img } from '../../lib/sitio';
 import { Auricular, Buscar, Escudo, Flecha, Medalla } from '../components/sitio/Iconos';
 import SelectorMaquina from '../components/SelectorMaquina';
+import Dibujo from '../components/sitio/Dibujo';
+import Piston3D from '../components/sitio/Piston3D';
+import { Arranque, Bujia, Cabezal, Cadena, Carburador, CarburadorPlano, Correa, FiltroAire, Piston } from '../components/sitio/LineasRepuestos';
+
+const TIPOS = [
+  { Dibujo: Carburador, nombre: 'Carburadores', href: '/f/carburacion' },
+  { Dibujo: Piston, nombre: 'Pistones y cilindros', href: '/buscar?q=piston' },
+  { Dibujo: Bujia, nombre: 'Bujías y encendido', href: '/buscar?q=bujia' },
+  { Dibujo: Cadena, nombre: 'Cadenas y espadas', href: '/guias/espadas-y-cadenas' },
+  { Dibujo: Correa, nombre: 'Correas y poleas', href: '/guias/correas' },
+  { Dibujo: FiltroAire, nombre: 'Filtros de aire', href: '/buscar?q=filtro%20aire' },
+  { Dibujo: Cabezal, nombre: 'Cabezales y tanzas', href: '/buscar?q=cabezal' },
+  { Dibujo: Arranque, nombre: 'Sistemas de arranque', href: '/f/sistemas-de-arranque' },
+];
+
+const PRECISION = [
+  { Dibujo: Piston, titulo: 'Motor', texto: 'Pistones, aros, cilindros, bielas y juntas para motores 2T y 4T.', href: '/f/motores-4t-y-generadores' },
+  { Dibujo: Carburador, titulo: 'Carburación', texto: 'Carburadores completos, kits de membranas y ajuste.', href: '/f/carburacion' },
+  { Dibujo: Bujia, titulo: 'Encendido', texto: 'Bujías, bobinas y juntas de motor.', href: '/f/juntas-de-motor' },
+];
 import { datosSelector } from '../../lib/maquinas';
 
 export const revalidate = 3600;
@@ -40,6 +60,9 @@ export default async function Inicio() {
     <>
       <section className="hero oscuro">
         <Image className="hero__foto" src={img('8250887d5bc84de4ae3e2b1157a80746')} alt="" fill sizes="100vw" priority />
+        <Dibujo className="hero__plano" aria-hidden="true">
+          <CarburadorPlano />
+        </Dibujo>
         <div className="contenedor hero__grilla">
           <div>
             <p className="antetitulo">Venta mayorista · Bosque y jardín</p>
@@ -96,6 +119,34 @@ export default async function Inicio() {
         </div>
       </section>
 
+      <section className="precision oscuro" aria-labelledby="precision-titulo">
+        <div className="contenedor precision__grilla">
+          <div>
+            <p className="antetitulo">Ingeniería en cada repuesto</p>
+            <h2 id="precision-titulo" className="titulo-seccion">Precisión que se ve</h2>
+            <p className="bajada" style={{ marginTop: 14 }}>
+              Cada pieza tiene que calzar exacto en la máquina de tu cliente. Por eso trabajamos con códigos originales,
+              medidas y compatibilidades por modelo.
+            </p>
+            <ul className="precision__lista">
+              {PRECISION.map(({ Dibujo: Icono, titulo, texto, href }) => (
+                <li key={titulo}>
+                  <a href={href}>
+                    <Dibujo className="precision__icono"><Icono /></Dibujo>
+                    <span>
+                      <strong>{titulo}</strong>
+                      <span>{texto}</span>
+                    </span>
+                    <Flecha />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <Piston3D />
+        </div>
+      </section>
+
       <section className="fondo-foto fondo-foto--oscuro temporada oscuro">
         <Image className="fondo-foto__img" src={img('3d5e5148663349a9beae8fb6ac532baff000')} alt="" fill sizes="100vw" />
         <div className="contenedor">
@@ -106,6 +157,27 @@ export default async function Inicio() {
           <div className="hero__acciones">
             <Link href="/contacto" className="boton boton--claro">Contactate con nosotros <Flecha /></Link>
           </div>
+        </div>
+      </section>
+
+      <section className="seccion tipos" aria-labelledby="tipos-titulo">
+        <div className="contenedor">
+          <div className="seccion__cabeza">
+            <div>
+              <p className="antetitulo">Por tipo de repuesto</p>
+              <h2 id="tipos-titulo" className="titulo-seccion">¿Qué pieza necesitás?</h2>
+            </div>
+            <Link className="boton boton--borde" href={CATALOGO}>Todo el catálogo <Flecha /></Link>
+          </div>
+          <Dibujo className="tipos__grilla">
+            {TIPOS.map(({ Dibujo: Icono, nombre, href }) => (
+              <a key={nombre} href={href} className="tipo">
+                <Icono className="tipo__dibujo" />
+                <span className="tipo__nombre">{nombre}</span>
+                <span className="tipo__ver">Ver repuestos <Flecha /></span>
+              </a>
+            ))}
+          </Dibujo>
         </div>
       </section>
 
