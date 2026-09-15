@@ -8,6 +8,7 @@ import { Auricular, Buscar, Escudo, Flecha, Medalla } from '../components/sitio/
 import SelectorMaquina from '../components/SelectorMaquina';
 import Dibujo from '../components/sitio/Dibujo';
 import Piezas3D from '../components/sitio/Piezas3D';
+import HeroCarburador3D from '../components/sitio/HeroCarburador3D';
 import CintaMarcas from '../components/sitio/CintaMarcas';
 import { Arranque, Bujia, Cabezal, Cadena, Carburador, Correa, FiltroAire, Piston, dibujoFamilia } from '../components/sitio/LineasRepuestos';
 
@@ -104,6 +105,10 @@ export default async function Inicio() {
             </div>
           </div>
           <div className="hero__productos">
+            <div className="hero__prod hero__prod--carbu">
+              <HeroCarburador3D />
+              <Link href="/f/carburacion" className="hero__prod-nombre">Carburadores <Flecha /></Link>
+            </div>
             {PRODUCTOS_HERO.map((p, i) => (
               <Link key={p.clase} href={p.href} className={`hero__prod hero__prod--${p.clase}`}>
                 <Image src={p.src} alt="" width={p.w} height={p.h} sizes={p.sizes} priority={i === 0} />
