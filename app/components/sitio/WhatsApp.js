@@ -1,11 +1,16 @@
-import { CONTACTO } from '../../../lib/sitio';
+import BotonWhatsAppVendedor from '../BotonWhatsAppVendedor';
 import { LogoWhatsApp } from './Iconos';
 
+/** Botón flotante: abre WhatsApp con el vendedor de la zona (o el general). */
 export default function WhatsApp() {
   return (
-    <a className="whatsapp-flotante" href={CONTACTO.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="Hablar con un vendedor por WhatsApp">
+    <BotonWhatsAppVendedor
+      className="whatsapp-flotante"
+      texto="Hola, les escribo desde la web de Logbelts."
+      ariaLabel="Hablar con un vendedor por WhatsApp"
+    >
       <LogoWhatsApp />
       <span>Hablá con<br />un vendedor</span>
-    </a>
+    </BotonWhatsAppVendedor>
   );
 }

@@ -1,0 +1,25 @@
+/* WhatsApp con el vendedor de la zona: diálogo de provincia y botón chico de las tarjetas */
+
+.lbwa-fondo { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 16px; background: rgba(10, 33, 73, .55); font-family: 'Aktiv Grotesk', system-ui, sans-serif; }
+.lbwa-dialogo { position: relative; width: 100%; max-width: 380px; background: #fff; color: #0a2149; border-radius: 16px; padding: 26px 22px 20px; box-shadow: 0 24px 60px rgba(10, 33, 73, .35); display: flex; flex-direction: column; gap: 8px; text-align: left; }
+.lbwa-cerrar { position: absolute; top: 10px; right: 10px; width: 34px; height: 34px; border: 0; border-radius: 50%; background: transparent; color: #0a2149; font-size: 16px; cursor: pointer; }
+.lbwa-cerrar:hover { background: #eef2fb; }
+.lbwa-titulo { margin: 0 30px 0 0; font-size: 19px; line-height: 1.25; font-weight: 700; color: #0a2149; letter-spacing: 0; text-transform: none; }
+.lbwa-ayuda { margin: 0 0 6px; font-size: 14px; color: #4a5a78; }
+.lbwa-label { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #203c7f; }
+.lbwa-select { width: 100%; min-height: 44px; padding: 8px 12px; border: 1px solid #c3cde0; border-radius: 10px; background: #fff; color: #0a2149; font: inherit; font-size: 15px; }
+.lbwa-select:focus-visible, .lbwa-abrir:focus-visible, .lbwa-seguir:focus-visible, .lbwa-cerrar:focus-visible, .lbwa-chip:focus-visible { outline: 3px solid #8fb0ff; outline-offset: 2px; }
+.lbwa-estado { min-height: 20px; margin: 2px 0; font-size: 14px; color: #203c7f; }
+.lbwa-abrir { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 46px; margin-top: 4px; border-radius: 10px; background: #1fae55; color: #fff; font-weight: 700; font-size: 15px; text-decoration: none; }
+.lbwa-abrir:hover { filter: brightness(1.05); text-decoration: none; color: #fff; }
+.lbwa-abrir[aria-disabled='true'] { background: #b9c3d6; cursor: not-allowed; filter: none; }
+.lbwa-abrir svg { width: 20px; height: 20px; }
+.lbwa-seguir { align-self: center; padding: 8px; font-size: 13.5px; color: #203c7f; text-decoration: underline; }
+
+/* Tarjeta de producto: el botón va como hermano del link (no se anidan <a>) */
+.lbwa-card { position: relative; display: flex; flex-direction: column; container-type: inline-size; }
+.lbwa-card > .card { flex: 1; }
+.lbwa-chip { position: absolute; right: 12px; bottom: 14px; display: inline-flex; align-items: center; gap: 5px; min-height: 28px; padding: 5px 9px; border-radius: 8px; background: #1fae55; color: #fff; font-family: inherit; font-size: 11.5px; font-weight: 700; line-height: 1; text-decoration: none; }
+.lbwa-chip:hover { filter: brightness(1.06); color: #fff; text-decoration: none; }
+.lbwa-chip svg { width: 15px; height: 15px; flex: none; }
+@container (max-width: 250px) { .lbwa-chip { padding: 6px; } .lbwa-chip__txt { display: none; } }

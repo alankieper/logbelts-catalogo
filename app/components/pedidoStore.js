@@ -7,6 +7,7 @@ const K_PEDIDO = 'lb_pedido';
 const K_HISTORIAL = 'lb_pedidos_hist';
 const K_FAVORITOS = 'lb_favoritos';
 const K_VENDEDOR = 'lb_vendedor';
+const K_PROVINCIA = 'lb_provincia';
 
 const leerJSON = (clave, def) => {
   try { return JSON.parse(localStorage.getItem(clave) || 'null') ?? def; } catch { return def; }
@@ -31,14 +32,26 @@ export function agregarAlPedido(items) {
   return lista;
 }
 
-// ---- Vendedor asignado (lo devuelve el alta de contacto) ----
+// ---- Vendedor asignado (lo devuelve el alta de contacto o /api/vendedor) ----
 export const leerVendedor = () => leerJSON(K_VENDEDOR, null);
 export function guardarVendedor(vendedor) {
   if (vendedor && vendedor.nombre) guardarJSON(K_VENDEDOR, { nombre: vendedor.nombre, telefono: vendedor.telefono || null }, 'lb-vendedor-cambio');
+  else if (vendedor === null) {
+    try { localStorage.removeItem(K_VENDEDOR); } catch {}
+    window.dispatchEvent(new Event('lb-vendedor-cambio'));
+  }
 }
 export function numeroWhatsApp() {
   return telefonoWhatsApp(leerVendedor()?.telefono) || WA_GENERAL;
 }
+
+// ---- Provincia elegida por el visitante (para derivar al vendedor de la zona) ----
+export const leerProvincia = () => leerJSON(K_PROVINCIA, null);
+export const guardarProvincia = provincia => guardarJSON(K_PROVINCIA, provincia || null, 'lb-vendedor-cambio');
+
+/** Link de WhatsApp con el vendedor guardado, o el general si no hay. */
+export const linkWhatsApp = (texto, numero = numeroWhatsApp()) =>
+  `https://wa.me/${numero}${texto ? `?text=${encodeURIComponent(texto)}` : ''}`;
 
 // ---- Envío por WhatsApp + registro ----
 export function textoPedido(items) {
@@ -53,7 +66,7 @@ export function enviarPedido(items, origen = 'lista') {
     fetch('/api/pedido', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ items, origen }),
+      body: JSON.stringify({ items, origen, provincia: leerProvincia() }),
       keepalive: true,
     });
   } catch {}
