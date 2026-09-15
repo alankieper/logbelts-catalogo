@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../components/CatalogoHeader';
+import CatalogoPie from '../../components/CatalogoPie';
 import ListaModelos from '../../components/ListaModelos';
 import { listarModelos } from '../../../lib/maquinas';
 
@@ -24,7 +25,7 @@ export default function MarcaMaquinaPage({ params }) {
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">
-            <a href="/productos">Catálogo</a>
+            <a href="/#catalogo">Catálogo</a>
             <span className="sep">/</span>
             <a href="/maquinas">Por máquina</a>
             <span className="sep">/</span>
@@ -35,9 +36,7 @@ export default function MarcaMaquinaPage({ params }) {
           <ListaModelos marcaSlug={datos.slug} modelos={datos.modelos} />
         </div>
       </main>
-      <footer className="cat">
-        <div className="wrap">Logbelts · Catálogo · versión de trabajo</div>
-      </footer>
+      <CatalogoPie />
     </>
   );
 }

@@ -13,14 +13,10 @@ export const metadata = {
   openGraph: { siteName: 'Catálogo Logbelts', locale: 'es_AR', type: 'website' },
 };
 
-const temaScript = `(function(){try{var t=localStorage.getItem('tema');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'oscuro':'claro';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
-
+// Web y catálogo son un solo sitio con un solo aspecto (claro); ya no hay modo oscuro aparte.
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: temaScript }} />
-      </head>
+    <html lang="es" data-theme="claro">
       <body>{children}</body>
     </html>
   );

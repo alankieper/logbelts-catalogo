@@ -1,38 +1,20 @@
+import '../sitio.css';
 import '../catalogo-extra.css';
-import ThemeToggle from './ThemeToggle';
+import Header from './sitio/Header';
 import ListaPedido from './ListaPedido';
 import RegistrarVisita from './RegistrarVisita';
-import CatNav from './CatNav';
 import Asistente from './Asistente';
 
+/** Encabezado de las páginas del catálogo: el mismo de la web (menú + buscador + herramientas). */
 export default function CatalogoHeader({ q = '' }) {
   return (
-    <header className="cat">
+    <>
+      <div className="sitio sitio-fijo">
+        <Header q={q} />
+      </div>
       <RegistrarVisita />
       <ListaPedido />
       <Asistente />
-      <div className="wrap">
-        <a className="brand" href="/" aria-label="Logbelts — inicio">
-          <img src="/logo-blanco.png" alt="Logbelts — Premium Quality Professional" />
-        </a>
-        <form className="search" action="/buscar" method="get" role="search">
-          <input
-            name="q"
-            type="search"
-            defaultValue={q}
-            placeholder="Buscar por código, código original, marca, modelo…"
-            aria-label="Buscar productos"
-          />
-          <button type="submit" aria-label="Buscar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4">
-              <circle cx="11" cy="11" r="7" />
-              <path d="m20 20-3.5-3.5" />
-            </svg>
-          </button>
-        </form>
-        <ThemeToggle />
-      </div>
-      <CatNav />
-    </header>
+    </>
   );
 }

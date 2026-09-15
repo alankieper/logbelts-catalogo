@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../components/CatalogoHeader';
+import CatalogoPie from '../../components/CatalogoPie';
 import Icono from '../../components/Icono';
 import { getFamilia } from '../../../lib/catalogo';
 
@@ -15,7 +16,7 @@ export default async function FamiliaPage({ params }) {
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">
-            <a href="/productos">Catálogo</a>
+            <a href="/#catalogo">Catálogo</a>
             <span className="sep">/</span>
             <span aria-current="page">{fam.nombre}</span>
           </nav>
@@ -35,9 +36,7 @@ export default async function FamiliaPage({ params }) {
           </div>
         </div>
       </main>
-      <footer className="cat">
-        <div className="wrap">Logbelts · Catálogo · versión de trabajo</div>
-      </footer>
+      <CatalogoPie />
     </>
   );
 }

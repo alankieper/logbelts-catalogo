@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../components/CatalogoHeader';
+import CatalogoPie from '../../components/CatalogoPie';
 import ProductoCard from '../../components/ProductoCard';
 import { getPorMarca, getFamilias } from '../../../lib/catalogo';
 
@@ -25,7 +26,7 @@ export default async function MarcaPage({ params }) {
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">
-            <a href="/productos">Catálogo</a>
+            <a href="/#catalogo">Catálogo</a>
             <span className="sep">/</span>
             <span aria-current="page">Marca</span>
           </nav>
@@ -53,9 +54,7 @@ export default async function MarcaPage({ params }) {
           })}
         </div>
       </main>
-      <footer className="cat">
-        <div className="wrap">Logbelts · Catálogo · versión de trabajo</div>
-      </footer>
+      <CatalogoPie />
     </>
   );
 }

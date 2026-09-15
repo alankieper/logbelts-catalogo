@@ -1,4 +1,5 @@
 import CatalogoHeader from '../components/CatalogoHeader';
+import CatalogoPie from '../components/CatalogoPie';
 import PedidoRapido from '../components/PedidoRapido';
 
 export const metadata = {
@@ -13,7 +14,7 @@ export default function PedidoRapidoPage() {
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">
-            <a href="/productos">Catálogo</a>
+            <a href="/#catalogo">Catálogo</a>
             <span className="sep">/</span>
             <span aria-current="page">Pedido rápido</span>
           </nav>
@@ -26,9 +27,7 @@ export default function PedidoRapidoPage() {
           <PedidoRapido />
         </div>
       </main>
-      <footer className="cat">
-        <div className="wrap">Logbelts · Catálogo · versión de trabajo</div>
-      </footer>
+      <CatalogoPie />
     </>
   );
 }

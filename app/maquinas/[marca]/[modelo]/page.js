@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../../components/CatalogoHeader';
+import CatalogoPie from '../../../components/CatalogoPie';
 import ProductoCard from '../../../components/ProductoCard';
 import NoEncontrado from '../../../components/NoEncontrado';
 import Registrar from '../../../components/Registrar';
@@ -34,7 +35,7 @@ export default async function ModeloMaquinaPage({ params }) {
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">
-            <a href="/productos">Catálogo</a>
+            <a href="/#catalogo">Catálogo</a>
             <span className="sep">/</span>
             <a href="/maquinas">Por máquina</a>
             <span className="sep">/</span>
@@ -66,9 +67,7 @@ export default async function ModeloMaquinaPage({ params }) {
           />
         </div>
       </main>
-      <footer className="cat">
-        <div className="wrap">Logbelts · Catálogo · versión de trabajo</div>
-      </footer>
+      <CatalogoPie />
     </>
   );
 }

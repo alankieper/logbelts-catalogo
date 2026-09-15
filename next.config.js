@@ -6,7 +6,11 @@ const nextConfig = {
   },
   async redirects() {
     // "Manuales" ahora se llama "Despiece"; los links viejos siguen funcionando
-    return [{ source: '/manuales', destination: '/despiece', permanent: true }];
+    return [
+      { source: '/manuales', destination: '/despiece', permanent: true },
+      // el catálogo ahora es parte de la portada
+      { source: '/productos', destination: '/#catalogo', permanent: false },
+    ];
   },
 };
 

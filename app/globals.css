@@ -128,7 +128,7 @@ h1.page {
 .catgrid { display: grid; gap: 26px; grid-template-columns: 1fr; }
 @media (min-width: 900px) { .catgrid { grid-template-columns: 250px 1fr; } }
 .filters { align-self: start; }
-@media (min-width: 900px) { .filters { position: sticky; top: 92px; } }
+@media (min-width: 900px) { .filters { position: sticky; top: 136px; } }
 .fpanel { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 8px 16px 14px; box-shadow: var(--shadow); }
 .fgroup { border-top: 1px solid var(--rule); padding: 13px 0 6px; }
 .fgroup:first-child { border-top: 0; }

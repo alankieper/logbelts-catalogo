@@ -3,13 +3,20 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { NAV } from '../../../lib/sitio';
+import { HERRAMIENTAS, NAV, esCatalogo } from '../../../lib/sitio';
 
-export default function Header() {
-  const pathname = usePathname();
+/** Encabezado único de todo el sitio: menú principal arriba y, abajo, buscador y herramientas del catálogo. */
+export default function Header({ q = '' }) {
+  const pathname = usePathname() || '/';
   const [abierto, setAbierto] = useState(false);
 
   useEffect(() => setAbierto(false), [pathname]);
+
+  const actual = (href) => {
+    if (href === '/#catalogo') return esCatalogo(pathname);
+    if (href === '/') return pathname === '/';
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   return (
     <header className="sitio-header">
@@ -25,7 +32,7 @@ export default function Header() {
               key={href}
               href={href}
               className={destacado ? 'destacado' : undefined}
-              aria-current={pathname === href ? 'page' : undefined}
+              aria-current={actual(href) ? 'page' : undefined}
             >
               {label}
             </Link>
@@ -51,6 +58,32 @@ export default function Header() {
             {abierto ? <path d="M6 6l12 12M18 6L6 18" /> : <path d="M3 6h18M3 12h18M3 18h18" />}
           </svg>
         </button>
+      </div>
+
+      <div className="sitio-herramientas">
+        <div className="contenedor sitio-herramientas__fila">
+          <form className="sitio-buscar" action="/buscar" method="get" role="search">
+            <input
+              name="q"
+              type="search"
+              defaultValue={q}
+              placeholder="Buscar por código, código original, marca o modelo…"
+              aria-label="Buscar repuestos en el catálogo"
+              autoComplete="off"
+            />
+            <button type="submit" aria-label="Buscar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3.5-3.5" />
+              </svg>
+            </button>
+          </form>
+          <nav className="sitio-herramientas__links" aria-label="Herramientas del catálogo">
+            {HERRAMIENTAS.map(({ href, label }) => (
+              <a key={href} href={href} aria-current={actual(href) ? 'page' : undefined}>{label}</a>
+            ))}
+          </nav>
+        </div>
       </div>
     </header>
   );

@@ -1,15 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { getMarcasConteo } from '../../lib/catalogo';
+import { getFamilias, getMarcasConteo } from '../../lib/catalogo';
 import { logosMarcas } from '../../lib/logosMarcas';
 import { datosSelector } from '../../lib/maquinas';
-import { CATALOGO, CATEGORIAS_HOME, img } from '../../lib/sitio';
+import { img } from '../../lib/sitio';
+import Icono from '../components/Icono';
 import { Auricular, Buscar, Escudo, Flecha, Medalla } from '../components/sitio/Iconos';
 import SelectorMaquina from '../components/SelectorMaquina';
 import Dibujo from '../components/sitio/Dibujo';
-import Carburador3D from '../components/sitio/Carburador3D';
+import Piezas3D from '../components/sitio/Piezas3D';
 import CintaMarcas from '../components/sitio/CintaMarcas';
-import { Arranque, Bujia, Cabezal, Cadena, Carburador, CarburadorPlano, Correa, FiltroAire, Piston } from '../components/sitio/LineasRepuestos';
+import { Arranque, Bujia, Cabezal, Cadena, Carburador, Correa, FiltroAire, Piston } from '../components/sitio/LineasRepuestos';
 
 export const revalidate = 3600;
 
@@ -61,16 +62,27 @@ async function marcasDelCatalogo() {
   }
 }
 
+async function familiasDelCatalogo() {
+  try {
+    return await getFamilias();
+  } catch {
+    return [];
+  }
+}
+
+const PRODUCTOS_HERO = [
+  { clase: 'tractor', nombre: 'Minitractores', href: '/f/minitractores', src: '/img/recorte-minitractor.webp', w: 616, h: 470, sizes: '(max-width: 900px) 70vw, 400px' },
+  { clase: 'desma', nombre: 'Desmalezadoras', href: '/f/desmalezadoras', src: '/img/recorte-desmalezadora.webp', w: 929, h: 467, sizes: '(max-width: 900px) 45vw, 260px' },
+  { clase: 'moto', nombre: 'Motosierras', href: '/f/motosierras', src: '/img/recorte-motosierra.webp', w: 708, h: 257, sizes: '(max-width: 900px) 45vw, 260px' },
+];
+
 export default async function Inicio() {
-  const marcas = await marcasDelCatalogo();
+  const [marcas, familias] = await Promise.all([marcasDelCatalogo(), familiasDelCatalogo()]);
 
   return (
     <>
       <section className="hero oscuro">
         <Image className="hero__foto" src={img('8250887d5bc84de4ae3e2b1157a80746')} alt="" fill sizes="100vw" priority />
-        <Dibujo className="hero__plano" aria-hidden="true">
-          <CarburadorPlano />
-        </Dibujo>
         <div className="contenedor hero__grilla">
           <div>
             <p className="antetitulo">Venta mayorista · Bosque y jardín</p>
@@ -89,18 +101,49 @@ export default async function Inicio() {
 
             <div className="hero__acciones">
               <Link href="/contacto" className="boton boton--claro">Quiero ser distribuidor <Flecha /></Link>
-              <Link href={CATALOGO} className="boton boton--borde">Ver catálogo</Link>
+              <a href="#catalogo" className="boton boton--borde">Ver catálogo</a>
             </div>
           </div>
-          <div className="hero__productos" aria-hidden="true">
-            <Image className="hero__p3" src="/img/recorte-desmalezadora.webp" alt="" width={929} height={467} sizes="(max-width: 900px) 50vw, 300px" />
-            <Image className="hero__p1" src="/img/recorte-minitractor.webp" alt="" width={616} height={470} sizes="(max-width: 900px) 65vw, 380px" priority />
-            <Image className="hero__p2" src="/img/recorte-motosierra.webp" alt="" width={708} height={257} sizes="(max-width: 900px) 55vw, 320px" />
+          <div className="hero__productos">
+            {PRODUCTOS_HERO.map((p, i) => (
+              <Link key={p.clase} href={p.href} className={`hero__prod hero__prod--${p.clase}`}>
+                <Image src={p.src} alt="" width={p.w} height={p.h} sizes={p.sizes} priority={i === 0} />
+                <span className="hero__prod-nombre">{p.nombre} <Flecha /></span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       <CintaMarcas marcas={marcas} />
+
+      <section id="catalogo" className="seccion catalogo-portada" aria-labelledby="catalogo-titulo">
+        <div className="contenedor">
+          <div className="seccion__cabeza">
+            <div>
+              <p className="antetitulo">Catálogo de repuestos</p>
+              <h2 id="catalogo-titulo" className="titulo-seccion">Todo el catálogo, por familia</h2>
+              <p className="bajada" style={{ marginTop: 14 }}>
+                Buscá por código Logbelts, por código original del fabricante o por marca y modelo de máquina.
+              </p>
+            </div>
+            <Link className="boton boton--borde" href="/descargas">Catálogos en PDF <Flecha /></Link>
+          </div>
+          <div className="familias">
+            {familias.map((f) => (
+              <a key={f.slug} className="familia" href={`/f/${f.slug}`}>
+                <span className="familia__ic"><Icono nombre={f.nombre} size={26} /></span>
+                <span>
+                  <strong>{f.nombre}</strong>
+                  <small>{f.count.toLocaleString('es-AR')} productos</small>
+                </span>
+                <Flecha />
+              </a>
+            ))}
+          </div>
+          <p className="catalogo-portada__aviso">Venta mayorista únicamente. Comunicate con nuestros vendedores para más información.</p>
+        </div>
+      </section>
 
       <section className="herramientas oscuro con-decor" aria-labelledby="herramientas-titulo">
         <Decor Icono={Correa} clase="decor--der-arriba decor--grande" />
@@ -146,7 +189,7 @@ export default async function Inicio() {
               ))}
             </ul>
           </div>
-          <Carburador3D />
+          <Piezas3D />
         </div>
       </section>
 
@@ -172,7 +215,7 @@ export default async function Inicio() {
               <p className="antetitulo">Por tipo de repuesto</p>
               <h2 id="tipos-titulo" className="titulo-seccion">¿Qué pieza necesitás?</h2>
             </div>
-            <Link className="boton boton--borde" href={CATALOGO}>Todo el catálogo <Flecha /></Link>
+            <a className="boton boton--borde" href="#catalogo">Todo el catálogo <Flecha /></a>
           </div>
           <Dibujo className="tipos__grilla">
             {TIPOS.map(({ Icono, nombre, href }) => (
@@ -240,27 +283,6 @@ export default async function Inicio() {
         </div>
       </section>
 
-      <section className="seccion seccion--suelo con-decor" aria-labelledby="categorias-titulo">
-        <Decor Icono={Cabezal} clase="decor--der-arriba" />
-        <Decor Icono={Arranque} clase="decor--izq-abajo" />
-        <div className="contenedor">
-          <div className="seccion__cabeza">
-            <div>
-              <p className="antetitulo">Catálogo por categoría</p>
-              <h2 id="categorias-titulo" className="titulo-seccion">Encontrá el repuesto justo</h2>
-            </div>
-            <Link className="boton boton--borde" href="/descargas">Catálogos en PDF <Flecha /></Link>
-          </div>
-          <div className="categorias__grilla">
-            {CATEGORIAS_HOME.map(c => (
-              <Link key={c.titulo} href={c.href} className="categoria">
-                <Image src={c.img} alt="" fill sizes="(max-width: 1000px) 45vw, 290px" />
-                <span>{c.titulo} <Flecha /></span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }

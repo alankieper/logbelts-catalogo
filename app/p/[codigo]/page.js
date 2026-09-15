@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../components/CatalogoHeader';
+import CatalogoPie from '../../components/CatalogoPie';
 import ProductoCard from '../../components/ProductoCard';
 import Galeria from '../../components/Galeria';
 import ConsultaCTA from '../../components/ConsultaCTA';
@@ -94,7 +95,7 @@ export default async function ProductoPage({ params }) {
             Volver a {sub ? sub.nombre : 'inicio'}
           </a>
           <nav className="crumb">
-            <a href="/productos">Catálogo</a>
+            <a href="/#catalogo">Catálogo</a>
             <span className="sep">/</span>
             {fam ? (<><a href={`/f/${fam.slug}`}>{fam.nombre}</a><span className="sep">/</span></>) : null}
             {fam && sub ? (<><a href={catUrl}>{sub.nombre}</a><span className="sep">/</span></>) : null}
@@ -271,9 +272,7 @@ export default async function ProductoPage({ params }) {
           ) : null}
         </div>
       </main>
-      <footer className="cat">
-        <div className="wrap">Logbelts · Catálogo · versión de trabajo</div>
-      </footer>
+      <CatalogoPie />
     </>
   );
 }

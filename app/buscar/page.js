@@ -1,4 +1,5 @@
 import CatalogoHeader from '../components/CatalogoHeader';
+import CatalogoPie from '../components/CatalogoPie';
 import ProductoCard from '../components/ProductoCard';
 import Registrar from '../components/Registrar';
 import NoEncontrado from '../components/NoEncontrado';
@@ -22,7 +23,7 @@ export default async function BuscarPage({ searchParams }) {
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">
-            <a href="/productos">Catálogo</a>
+            <a href="/#catalogo">Catálogo</a>
             <span className="sep">/</span>
             <span aria-current="page">Búsqueda</span>
           </nav>
@@ -56,9 +57,7 @@ export default async function BuscarPage({ searchParams }) {
           ) : null}
         </div>
       </main>
-      <footer className="cat">
-        <div className="wrap">Logbelts · Catálogo · versión de trabajo</div>
-      </footer>
+      <CatalogoPie />
     </>
   );
 }

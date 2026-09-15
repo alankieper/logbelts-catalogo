@@ -1,4 +1,5 @@
 import CatalogoHeader from '../components/CatalogoHeader';
+import CatalogoPie from '../components/CatalogoPie';
 import { catalogoModelos, leerCurados } from '../../lib/despieces';
 import { linkDespiece } from '../../lib/despieceLinks';
 import { slugify } from '../../lib/catalogo';
@@ -31,7 +32,7 @@ export default async function DespiecePage({ searchParams }) {
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">
-            <a href="/productos">Catálogo</a><span className="sep">/</span>
+            <a href="/#catalogo">Catálogo</a><span className="sep">/</span>
             <span aria-current="page">Despiece</span>
           </nav>
           <h1 className="page">Despiece por modelo</h1>
@@ -89,7 +90,7 @@ export default async function DespiecePage({ searchParams }) {
           </p>
         </div>
       </main>
-      <footer className="cat"><div className="wrap">Logbelts · Catálogo · versión de trabajo</div></footer>
+      <CatalogoPie />
     </>
   );
 }

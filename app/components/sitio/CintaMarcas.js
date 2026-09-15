@@ -24,7 +24,7 @@ export default function CintaMarcas({ marcas }) {
     <section className="marcas" aria-labelledby="marcas-titulo">
       <div className="contenedor marcas__cabeza">
         <p id="marcas-titulo">Repuestos compatibles con estas marcas</p>
-        <a href="/productos">Ver catálogo →</a>
+        <a href="/#catalogo">Ver catálogo →</a>
       </div>
       <div className="marcas__ventana">
         <div className="marcas__pista" style={{ '--duracion': `${Math.max(30, marcas.length * 3)}s` }}>

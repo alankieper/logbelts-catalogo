@@ -27,7 +27,7 @@ export default function AdminHeader({ activo }) {
           {link('/admin/importar', 'Importar PDF', 'importar')}
         </nav>
         <span className="right">
-          <a href="/">Ver sitio</a> &nbsp;·&nbsp; <a href="/productos">Ver catálogo</a> &nbsp;·&nbsp; <a href="/logout">Salir</a>
+          <a href="/">Ver sitio</a> &nbsp;·&nbsp; <a href="/#catalogo">Ver catálogo</a> &nbsp;·&nbsp; <a href="/logout">Salir</a>
         </span>
       </div>
     </header>

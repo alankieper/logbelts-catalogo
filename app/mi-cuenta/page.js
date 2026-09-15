@@ -1,4 +1,5 @@
 import CatalogoHeader from '../components/CatalogoHeader';
+import CatalogoPie from '../components/CatalogoPie';
 import MiCuenta from '../components/MiCuenta';
 
 export const metadata = { title: 'Mi cuenta', robots: { index: false } };
@@ -10,7 +11,7 @@ export default function MiCuentaPage() {
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">
-            <a href="/productos">Catálogo</a>
+            <a href="/#catalogo">Catálogo</a>
             <span className="sep">/</span>
             <span aria-current="page">Mi cuenta</span>
           </nav>
@@ -19,9 +20,7 @@ export default function MiCuentaPage() {
           <MiCuenta />
         </div>
       </main>
-      <footer className="cat">
-        <div className="wrap">Logbelts · Catálogo · versión de trabajo</div>
-      </footer>
+      <CatalogoPie />
     </>
   );
 }

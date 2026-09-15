@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../../components/CatalogoHeader';
+import CatalogoPie from '../../../components/CatalogoPie';
 import ProductoCard from '../../../components/ProductoCard';
 import { getFamilia, getProductosDeSubcategoria, slugify } from '../../../../lib/catalogo';
 
@@ -50,7 +51,7 @@ export default async function SubcategoriaPage({ params, searchParams }) {
       <main className="cat">
         <div className="wrap">
           <nav className="crumb">
-            <a href="/productos">Catálogo</a>
+            <a href="/#catalogo">Catálogo</a>
             <span className="sep">/</span>
             <a href={`/f/${fam.slug}`}>{fam.nombre}</a>
             <span className="sep">/</span>
@@ -116,9 +117,7 @@ export default async function SubcategoriaPage({ params, searchParams }) {
           </div>
         </div>
       </main>
-      <footer className="cat">
-        <div className="wrap">Logbelts · Catálogo · versión de trabajo</div>
-      </footer>
+      <CatalogoPie />
     </>
   );
 }
