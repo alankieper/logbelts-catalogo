@@ -2,19 +2,40 @@ import CatalogoHeader from '../components/CatalogoHeader';
 import CatalogoPie from '../components/CatalogoPie';
 import SelectorMaquina from '../components/SelectorMaquina';
 import { datosSelector, listarMarcas } from '../../lib/maquinas';
+import { SITE_URL } from '../../lib/seo';
 
 export const dynamic = 'force-dynamic';
 
+const plural = (n, uno, varios) => (n === 1 ? uno : varios);
+const ld = (obj) => JSON.stringify(obj).replace(/</g, '\\u003c');
+
+const TITLE = 'Repuestos por máquina';
+const DESCRIPTION = 'Elegí la marca y el modelo de la máquina y encontrá los repuestos compatibles del catálogo Logbelts.';
+
 export const metadata = {
-  title: 'Repuestos por máquina',
-  description: 'Elegí la marca y el modelo de la máquina y encontrá los repuestos compatibles del catálogo Logbelts.',
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: `${SITE_URL}/maquinas` },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: `${SITE_URL}/maquinas` },
 };
 
 export default function MaquinasPage() {
   const marcas = listarMarcas();
+  const nMarcas = marcas.length;
+  const nModelos = marcas.reduce((s, m) => s + m.nModelos, 0);
+
+  const ldBreadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Catálogo', item: `${SITE_URL}/#catalogo` },
+      { '@type': 'ListItem', position: 2, name: 'Por máquina', item: `${SITE_URL}/maquinas` },
+    ],
+  };
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ld(ldBreadcrumb) }} />
       <CatalogoHeader />
       <main className="cat">
         <div className="wrap">
@@ -25,7 +46,15 @@ export default function MaquinasPage() {
           </nav>
           <p className="eyebrow">Buscador por máquina</p>
           <h1 className="page">¿Para qué máquina es el repuesto?</h1>
-          <p className="lead">Elegí la marca y el modelo, y te mostramos los repuestos del catálogo que le sirven.</p>
+          <p className="lead">
+            Elegí la marca y el modelo, y te mostramos los repuestos del catálogo que le sirven.
+            {nMarcas ? (
+              <>
+                {' '}Hay {nModelos} {plural(nModelos, 'modelo', 'modelos')} de {nMarcas}{' '}
+                {plural(nMarcas, 'marca', 'marcas')} con repuestos Logbelts compatibles.
+              </>
+            ) : null}
+          </p>
 
           <div className="banda-maquina">
             <SelectorMaquina datos={datosSelector()} />

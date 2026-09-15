@@ -141,24 +141,19 @@
 .hero__acciones { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
 
 /* Productos del hero: cada uno en su lugar, sin encimarse, y cada uno lleva a su familia */
-.hero__productos { display: grid; grid-template-columns: 1fr 1fr; grid-template-areas: 'carbu tractor' 'desma moto'; gap: 40px 32px; align-items: end; }
-/* Carburador 3D (modelo de Meshy en public/modelos/carburador.glb, o el hecho en código) */
-.hero__prod--carbu { grid-area: carbu; }
-.carbu-hero { position: relative; width: 100%; aspect-ratio: 1; }
-.carbu-hero::before { content: ''; position: absolute; inset: 12%; z-index: -1; border-radius: 50%; background: radial-gradient(closest-side, rgba(143,176,255,.3), transparent); }
-.carbu-hero canvas { position: absolute; inset: 0; width: 100% !important; height: 100% !important; cursor: grab; animation: sitio-aparecer .8s var(--ease) both; }
-.carbu-hero__respaldo { position: absolute; inset: 20%; width: 60%; height: 60%; color: rgba(143,176,255,.5); transition: opacity .5s ease; }
-.carbu-hero[data-estado='listo'] .carbu-hero__respaldo { opacity: 0; }
+.hero__productos { display: grid; grid-template-columns: 1fr 1fr; grid-template-areas: 'tractor tractor' 'desma moto'; gap: 40px 32px; align-items: end; }
 .hero__prod { position: relative; display: grid; justify-items: center; gap: 14px; color: #fff; }
-.hero__prod img { width: 100%; height: auto; object-fit: contain; filter: drop-shadow(0 18px 22px rgba(0,0,0,.45)); transition: transform .35s var(--ease); }
-.hero__prod::before { content: ''; position: absolute; left: 10%; right: 10%; top: calc(100% - 46px); height: 22px; z-index: -1; border-radius: 50%; background: radial-gradient(closest-side, rgba(0,0,0,.5), transparent); }
-.hero__prod--tractor { grid-area: tractor; width: 100%; justify-self: center; }
+/* Máquinas en dibujo de contorno (se trazan al cargar y se redibujan al pasar el mouse) */
+.hero__contorno { width: 100%; height: auto; color: #cfdcff; filter: drop-shadow(0 0 6px rgba(91,140,255,.55)); transition: transform .35s var(--ease), color .25s var(--ease); }
+.hero__contorno :is(path, circle, ellipse):not([stroke-dasharray]) { transition-duration: 2.4s, .3s; }
+.hero__prod:hover .hero__contorno { transform: translateY(-6px); color: #fff; }
+.hero__prod:hover .hero__contorno :is(path, circle, ellipse):not([stroke-dasharray]) { animation: sitio-redibujar 1.2s var(--ease); }
+.hero__prod--tractor { grid-area: tractor; width: 74%; justify-self: center; }
 .hero__prod--tractor::after { content: ''; position: absolute; inset: -14% -22% 10%; z-index: -2; border-radius: 50%; background: radial-gradient(closest-side, rgba(143,176,255,.28), transparent); }
 .hero__prod--desma { grid-area: desma; }
 .hero__prod--moto { grid-area: moto; }
 .hero__prod-nombre { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); font-size: 13px; font-weight: 700; letter-spacing: .02em; transition: background-color .2s var(--ease), border-color .2s var(--ease); }
 .hero__prod-nombre svg { width: 14px; height: 14px; transition: transform .2s var(--ease); }
-.hero__prod:hover img { transform: translateY(-6px); }
 .hero__prod:hover .hero__prod-nombre, .hero__prod:focus-visible .hero__prod-nombre { background: rgba(143,176,255,.2); border-color: var(--marca-claro); }
 .hero__prod:hover .hero__prod-nombre svg { transform: translateX(3px); }
 @media (max-width: 900px) {
@@ -633,3 +628,15 @@ body:has(.pedido-fab) .whatsapp-flotante { bottom: 82px; }
   .revelar > * { opacity: 1; transform: none; }
   .nosotros-bloque::after { transform: none; }
 }
+
+/* ---------- Condiciones para distribuidores ---------- */
+.condiciones__pendiente { color: var(--tinta-tenue); font-style: italic; }
+.faq { display: grid; gap: 10px; max-width: 860px; }
+.faq details { background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--radio); transition: border-color .2s var(--ease); }
+.faq details[open] { border-color: var(--marca-tinta); }
+.faq summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 20px; font-weight: 700; font-size: 17px; cursor: pointer; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: '+'; flex: none; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: var(--lavado); color: var(--marca); font-size: 20px; line-height: 1; transition: transform .2s var(--ease); }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq summary:focus-visible { outline: 2px solid var(--marca-tinta); outline-offset: 2px; border-radius: var(--radio); }
+.faq details p { margin: 0; padding: 0 20px 18px; color: var(--tinta-suave); }

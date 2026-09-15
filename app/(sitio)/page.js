@@ -8,7 +8,7 @@ import { Auricular, Buscar, Escudo, Flecha, Medalla } from '../components/sitio/
 import SelectorMaquina from '../components/SelectorMaquina';
 import Dibujo from '../components/sitio/Dibujo';
 import Piezas3D from '../components/sitio/Piezas3D';
-import HeroCarburador3D from '../components/sitio/HeroCarburador3D';
+import { DesmalezadoraContorno, MinitractorContorno, MotosierraContorno } from '../components/sitio/LineasMaquinas';
 import CintaMarcas from '../components/sitio/CintaMarcas';
 import { Arranque, Bujia, Cabezal, Cadena, Carburador, Correa, FiltroAire, Piston, dibujoFamilia } from '../components/sitio/LineasRepuestos';
 
@@ -71,9 +71,9 @@ async function familiasDelCatalogo() {
 }
 
 const PRODUCTOS_HERO = [
-  { clase: 'tractor', nombre: 'Minitractores', href: '/f/minitractores', src: '/img/recorte-minitractor.webp', w: 616, h: 470, sizes: '(max-width: 900px) 70vw, 400px' },
-  { clase: 'desma', nombre: 'Desmalezadoras', href: '/f/desmalezadoras', src: '/img/recorte-desmalezadora.webp', w: 929, h: 467, sizes: '(max-width: 900px) 45vw, 260px' },
-  { clase: 'moto', nombre: 'Motosierras', href: '/f/motosierras', src: '/img/recorte-motosierra.webp', w: 708, h: 257, sizes: '(max-width: 900px) 45vw, 260px' },
+  { clase: 'tractor', nombre: 'Minitractores', href: '/f/minitractores', Dibujo: MinitractorContorno },
+  { clase: 'desma', nombre: 'Desmalezadoras', href: '/f/desmalezadoras', Dibujo: DesmalezadoraContorno },
+  { clase: 'moto', nombre: 'Motosierras', href: '/f/motosierras', Dibujo: MotosierraContorno },
 ];
 
 export default async function Inicio() {
@@ -105,15 +105,11 @@ export default async function Inicio() {
             </div>
           </div>
           <div className="hero__productos">
-            <div className="hero__prod hero__prod--carbu">
-              <HeroCarburador3D />
-              <Link href="/f/carburacion" className="hero__prod-nombre">Carburadores <Flecha /></Link>
-            </div>
-            {PRODUCTOS_HERO.map((p, i) => (
-              <Link key={p.clase} href={p.href} className={`hero__prod hero__prod--${p.clase}`}>
-                <Image src={p.src} alt="" width={p.w} height={p.h} sizes={p.sizes} priority={i === 0} />
-                <span className="hero__prod-nombre">{p.nombre} <Flecha /></span>
-              </Link>
+            {PRODUCTOS_HERO.map(({ clase, nombre, href, Dibujo: Contorno }) => (
+              <Dibujo key={clase} as="a" href={href} className={`hero__prod hero__prod--${clase}`}>
+                <Contorno className="hero__contorno" />
+                <span className="hero__prod-nombre">{nombre} <Flecha /></span>
+              </Dibujo>
             ))}
           </div>
         </div>

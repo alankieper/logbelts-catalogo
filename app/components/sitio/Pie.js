@@ -32,6 +32,7 @@ export default function Pie() {
           <h2>Distribuidores</h2>
           <ul>
             <li><Link href="/contacto">Quiero ser distribuidor</Link></li>
+            <li><Link href="/condiciones">Condiciones comerciales</Link></li>
             <li><Link href="/material">Material para tu comercio</Link></li>
             <li><a href="/mi-cuenta">Mi cuenta</a></li>
             <li><a href={PORTAL_DISTRIBUIDORES} target="_blank" rel="noopener noreferrer">Portal B2B</a></li>

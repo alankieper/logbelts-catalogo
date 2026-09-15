@@ -38,6 +38,9 @@ export default function Distribuidores() {
               </div>
             ))}
           </dl>
+          <div className="pasos__cta">
+            <Link className="boton boton--borde" href="/condiciones">Condiciones y preguntas frecuentes</Link>
+          </div>
         </div>
       </section>
 

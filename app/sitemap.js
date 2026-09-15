@@ -17,9 +17,8 @@ export default async function sitemap() {
   const now = new Date();
   const urls = [
     { url: SITE_URL, lastModified: now, changeFrequency: 'weekly', priority: 1 },
-    { url: `${SITE_URL}/productos`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     ...['/contacto', '/distribuidores', '/descargas', '/lanzamientos', '/tutoriales', '/acerca-de',
-      '/donde-comprar', '/material', '/guias', '/guias/correas', '/guias/espadas-y-cadenas', '/guias/tanza-o-cuchilla',
+      '/donde-comprar', '/material', '/condiciones', '/guias', '/guias/correas', '/guias/espadas-y-cadenas', '/guias/tanza-o-cuchilla',
       '/pedido-rapido', '/maquinas'].map(p => ({
       url: `${SITE_URL}${p}`, lastModified: now, changeFrequency: 'monthly', priority: 0.5,
     })),
