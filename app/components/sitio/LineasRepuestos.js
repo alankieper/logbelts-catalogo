@@ -109,6 +109,174 @@ export const Arranque = (p) => (
   </svg>
 );
 
+/* ---------- Máquinas y familias del catálogo ---------- */
+
+export const Motosierra = (p) => (
+  <svg {...base} {...p}>
+    <path {...L} d="M16 50h32l6-8h14v42H22q-6 0-6-6z" />
+    <path {...L} d="M16 58q-10 0-10 12t10 12" />
+    <path {...L} d="M30 42q6-20 28-20" />
+    <circle {...L} cx="38" cy="66" r="8" />
+    <circle {...L} cx="38" cy="66" r="3" />
+    <path {...L} d="M68 52h40q8 0 8 8t-8 8H68" />
+    <path {...L} d="M72 48h36M72 72h36" strokeDasharray="3 3" />
+    <circle {...L} cx="108" cy="60" r="2.5" />
+  </svg>
+);
+
+export const Minitractor = (p) => (
+  <svg {...base} {...p}>
+    <circle {...L} cx="34" cy="82" r="20" />
+    <circle {...L} cx="34" cy="82" r="8" />
+    <circle {...L} cx="94" cy="90" r="12" />
+    <circle {...L} cx="94" cy="90" r="4" />
+    <path {...L} d="M14 72V56h34l10-20h14l6 20h24q8 0 8 8v14h-4" />
+    <path {...L} d="M44 56V40H32" />
+    <path {...L} d="M78 36l4-14M74 22h16" />
+    <path {...L} d="M54 82h28" />
+    <rect {...L} x="46" y="100" width="36" height="8" rx="3" />
+  </svg>
+);
+
+export const Desmalezadora = (p) => (
+  <svg {...base} {...p}>
+    <rect {...L} x="8" y="12" width="28" height="26" rx="7" />
+    <circle {...L} cx="18" cy="25" r="5" />
+    <path {...L} d="M34 36l60 58M38 32l60 58" />
+    <path {...L} d="M56 52q-12-18 2-32M60 56q18-4 30 8" />
+    <circle {...L} cx="58" cy="17" r="3" />
+    <circle {...L} cx="92" cy="66" r="3" />
+    <ellipse {...L} cx="102" cy="98" rx="13" ry="6" />
+    <path {...L} d="M82 104q20 14 36-2" />
+    <path {...L} d="M89 98H72" strokeDasharray="3 3" />
+  </svg>
+);
+
+export const Motor = (p) => (
+  <svg {...base} {...p}>
+    <rect {...L} x="28" y="42" width="56" height="48" rx="6" />
+    <path {...L} d="M36 42V22h40v20M36 28h40M36 34h40" />
+    <circle {...L} cx="56" cy="66" r="14" />
+    <circle {...L} cx="56" cy="66" r="5" />
+    <path {...L} d="M84 52h16v26H84" />
+    <path {...L} d="M28 58H14v20h14" />
+    <path {...L} d="M42 90v10M70 90v10M34 100h44" />
+    <path {...L} d="M76 22l8-8" />
+    <circle {...L} cx="87" cy="11" r="3" />
+  </svg>
+);
+
+export const Generador = (p) => (
+  <svg {...base} {...p}>
+    <rect {...L} x="12" y="30" width="96" height="58" rx="9" />
+    <rect {...L} x="22" y="42" width="42" height="34" rx="4" />
+    <circle {...L} cx="43" cy="59" r="9" />
+    <rect {...L} x="72" y="42" width="26" height="16" rx="2" />
+    <circle {...L} cx="79" cy="69" r="3" />
+    <circle {...L} cx="91" cy="69" r="3" />
+    <path {...L} d="M50 30v-8h20v8" />
+    <path {...L} d="M22 88v12M98 88v12M14 100h16M90 100h16" />
+  </svg>
+);
+
+export const Cortadora = (p) => (
+  <svg {...base} {...p}>
+    <path {...L} d="M12 86l6-20h70l10 20z" />
+    <circle {...L} cx="28" cy="94" r="9" />
+    <circle {...L} cx="84" cy="94" r="9" />
+    <rect {...L} x="36" y="46" width="30" height="20" rx="4" />
+    <circle {...L} cx="51" cy="56" r="5" />
+    <path {...L} d="M86 66l20-48M98 18h16" />
+    <path {...L} d="M96 42H80" />
+  </svg>
+);
+
+export const Junta = (p) => (
+  <svg {...base} {...p}>
+    <path {...L} d="M24 24h72q8 0 8 8v56q0 8-8 8H24q-8 0-8-8V32q0-8 8-8z" />
+    <circle {...L} cx="60" cy="60" r="22" />
+    <circle {...L} cx="60" cy="60" r="15" />
+    <circle {...L} cx="30" cy="38" r="5" />
+    <circle {...L} cx="90" cy="38" r="5" />
+    <circle {...L} cx="30" cy="82" r="5" />
+    <circle {...L} cx="90" cy="82" r="5" />
+  </svg>
+);
+
+export const Hidrolavadora = (p) => (
+  <svg {...base} {...p}>
+    <rect {...L} x="12" y="42" width="46" height="44" rx="8" />
+    <circle {...L} cx="35" cy="64" r="11" />
+    <path {...L} d="M22 42V18h18" />
+    <circle {...L} cx="22" cy="94" r="7" />
+    <circle {...L} cx="48" cy="94" r="7" />
+    <path {...L} d="M58 72q22 0 26-18t16-14" />
+    <path {...L} d="M96 38l16-8M104 40l4 12" />
+    <path {...L} d="M112 26l6-4M114 32h6" strokeDasharray="2 3" />
+  </svg>
+);
+
+export const Sopladora = (p) => (
+  <svg {...base} {...p}>
+    <rect {...L} x="12" y="40" width="42" height="42" rx="10" />
+    <circle {...L} cx="33" cy="61" r="13" />
+    <path {...L} d="M33 48v26M20 61h26" />
+    <path {...L} d="M33 40q0-22 22-22h10" />
+    <path {...L} d="M54 64l48-10v16l-48 6" />
+    <path {...L} d="M106 56l10-4M106 62h12M106 68l10 4" strokeDasharray="2 3" />
+  </svg>
+);
+
+export const Universal = (p) => (
+  <svg {...base} {...p}>
+    <path {...L} d="M24 84l34-34M32 92l34-34" />
+    <path {...L} d="M58 50q-6-16 8-26 10-6 20-2L76 32l2 8 8 2 10-10q4 10-2 20-10 14-28 8" />
+    <path {...L} d="M24 84q-8 8 0 12 4 4 8-4" />
+    <path {...L} d="M88 70l13 7v15l-13 7-13-7V77z" />
+    <circle {...L} cx="88" cy="84" r="5" />
+  </svg>
+);
+
+export const Arnes = (p) => (
+  <svg {...base} {...p}>
+    <path {...L} d="M34 14q-12 30 8 54M86 14q12 30-8 54" />
+    <path {...L} d="M42 68q18 12 36 0" />
+    <path {...L} d="M28 30h14M78 30h14" />
+    <rect {...L} x="50" y="54" width="20" height="14" rx="4" />
+    <path {...L} d="M60 76v12" />
+    <circle {...L} cx="60" cy="94" r="6" />
+    <path {...L} d="M60 100q0 10 8 10" />
+  </svg>
+);
+
+const sinTildes = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const POR_FAMILIA = [
+  [/motosierra/, Motosierra],
+  [/minitractor|tractor/, Minitractor],
+  [/desmalezadora|bordeadora/, Desmalezadora],
+  [/cortar|cortadora|cesped/, Cortadora],
+  [/motores|motor 4t/, Motor],
+  [/generador/, Generador],
+  [/arranque/, Arranque],
+  [/carbur/, Carburador],
+  [/junta/, Junta],
+  [/hidrolavadora|motobomba/, Hidrolavadora],
+  [/sopladora/, Sopladora],
+  [/encendido|bujia/, Bujia],
+  [/arnes/, Arnes],
+  [/cadena|espada/, Cadena],
+  [/correa/, Correa],
+  [/filtro/, FiltroAire],
+  [/cabezal|tanza/, Cabezal],
+  [/piston|cilindro/, Piston],
+];
+
+/** Dibujo de línea que corresponde a una familia del catálogo (por su nombre). */
+export function dibujoFamilia(nombre = '') {
+  const n = sinTildes(nombre);
+  return (POR_FAMILIA.find(([re]) => re.test(n)) || [null, Universal])[1];
+}
+
 /** Carburador grande con cotas y líneas de eje, para fondos (estilo plano). */
 export const CarburadorPlano = (p) => (
   <svg viewBox="0 0 560 400" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...p}>

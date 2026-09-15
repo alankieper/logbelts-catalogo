@@ -4,13 +4,12 @@ import { getFamilias, getMarcasConteo } from '../../lib/catalogo';
 import { logosMarcas } from '../../lib/logosMarcas';
 import { datosSelector } from '../../lib/maquinas';
 import { img } from '../../lib/sitio';
-import Icono from '../components/Icono';
 import { Auricular, Buscar, Escudo, Flecha, Medalla } from '../components/sitio/Iconos';
 import SelectorMaquina from '../components/SelectorMaquina';
 import Dibujo from '../components/sitio/Dibujo';
 import Piezas3D from '../components/sitio/Piezas3D';
 import CintaMarcas from '../components/sitio/CintaMarcas';
-import { Arranque, Bujia, Cabezal, Cadena, Carburador, Correa, FiltroAire, Piston } from '../components/sitio/LineasRepuestos';
+import { Arranque, Bujia, Cabezal, Cadena, Carburador, Correa, FiltroAire, Piston, dibujoFamilia } from '../components/sitio/LineasRepuestos';
 
 export const revalidate = 3600;
 
@@ -129,18 +128,19 @@ export default async function Inicio() {
             </div>
             <Link className="boton boton--borde" href="/descargas">Catálogos en PDF <Flecha /></Link>
           </div>
-          <div className="familias">
-            {familias.map((f) => (
-              <a key={f.slug} className="familia" href={`/f/${f.slug}`}>
-                <span className="familia__ic"><Icono nombre={f.nombre} size={26} /></span>
-                <span>
-                  <strong>{f.nombre}</strong>
-                  <small>{f.count.toLocaleString('es-AR')} productos</small>
-                </span>
-                <Flecha />
-              </a>
-            ))}
-          </div>
+          <Dibujo className="tipos__grilla">
+            {familias.map((f) => {
+              const DibujoFamilia = dibujoFamilia(f.nombre);
+              return (
+                <a key={f.slug} className="tipo" href={`/f/${f.slug}`}>
+                  <DibujoFamilia className="tipo__dibujo" />
+                  <span className="tipo__nombre">{f.nombre.charAt(0).toUpperCase() + f.nombre.slice(1)}</span>
+                  <span className="tipo__cant">{f.count.toLocaleString('es-AR')} {f.count === 1 ? 'producto' : 'productos'}</span>
+                  <span className="tipo__ver">Ver repuestos <Flecha /></span>
+                </a>
+              );
+            })}
+          </Dibujo>
           <p className="catalogo-portada__aviso">Venta mayorista únicamente. Comunicate con nuestros vendedores para más información.</p>
         </div>
       </section>

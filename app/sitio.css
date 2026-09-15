@@ -499,14 +499,8 @@
 
 /* ---------- Catálogo dentro de la portada ---------- */
 .catalogo-portada { background: var(--suelo); scroll-margin-top: 110px; }
-.familias { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
-.familia { display: grid; grid-template-columns: 48px 1fr auto; gap: 14px; align-items: center; padding: 14px 16px; background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--radio); transition: border-color .2s var(--ease), transform .2s var(--ease), box-shadow .2s var(--ease); }
-.familia:hover, .familia:focus-visible { border-color: var(--marca-tinta); transform: translateY(-2px); box-shadow: 0 12px 28px rgba(20,28,50,.1); }
-.familia__ic { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 10px; background: var(--lavado); color: var(--marca); }
-.familia strong { display: block; font-size: 16px; line-height: 1.25; }
-.familia small { font-size: 13px; color: var(--tinta-tenue); }
-.familia > svg { width: 18px; height: 18px; color: var(--marca-tinta); transition: transform .2s var(--ease); }
-.familia:hover > svg { transform: translateX(3px); }
+/* Las familias usan las mismas tarjetas con dibujo de línea que "¿Qué pieza necesitás?" (.tipo) */
+.tipo__cant { position: relative; margin-top: -4px; font-size: 13px; color: var(--tinta-tenue); }
 .catalogo-portada__aviso { margin: 22px 0 0; font-size: 14px; color: var(--tinta-suave); }
 
 /* Botón de WhatsApp arriba del botón "Pedido" en las páginas del catálogo */
