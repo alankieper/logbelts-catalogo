@@ -249,7 +249,41 @@ export const Arnes = (p) => (
   </svg>
 );
 
-const sinTildes = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+/* ---------- Nosotros: misión, visión y valores ---------- */
+
+export const Diana = (p) => (
+  <svg {...base} {...p}>
+    <circle {...L} cx="54" cy="66" r="42" />
+    <circle {...L} cx="54" cy="66" r="28" />
+    <circle {...L} cx="54" cy="66" r="14" />
+    <circle {...L} cx="54" cy="66" r="3" />
+    <path {...L} d="M54 66L102 18" />
+    <path {...L} d="M102 18l2-12M102 18l12-2M94 26l2-10M94 26l10-2" />
+  </svg>
+);
+
+export const Binoculares = (p) => (
+  <svg {...base} {...p}>
+    <circle {...L} cx="34" cy="78" r="20" />
+    <circle {...L} cx="86" cy="78" r="20" />
+    <circle {...L} cx="34" cy="78" r="10" />
+    <circle {...L} cx="86" cy="78" r="10" />
+    <path {...L} d="M18 66l10-36h16l6 30M102 66L92 30H76l-6 30" />
+    <path {...L} d="M50 52h20v18H50z" />
+    <path {...L} d="M30 30V20h12v10M78 30V20h12v10" />
+    <path {...L} d="M8 108h104" strokeDasharray="4 5" />
+  </svg>
+);
+
+export const Escudo = (p) => (
+  <svg {...base} {...p}>
+    <path {...L} d="M60 10l42 14v32c0 30-18 46-42 54-24-8-42-24-42-54V24z" />
+    <path {...L} d="M60 24l28 10v22c0 20-12 32-28 38-16-6-28-18-28-38V34z" />
+    <path {...L} d="M44 60l12 12 22-24" />
+  </svg>
+);
+
+const sinTildes =(s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const POR_FAMILIA = [
   [/motosierra/, Motosierra],
   [/minitractor|tractor/, Minitractor],

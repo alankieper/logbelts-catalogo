@@ -1,16 +1,30 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { HERRAMIENTAS, NAV, esCatalogo } from '../../../lib/sitio';
+import { Buscar } from './Iconos';
 
-/** Encabezado único de todo el sitio: menú principal arriba y, abajo, buscador y herramientas del catálogo. */
+/** Encabezado único de todo el sitio. La lupa abre un panel de búsqueda con accesos rápidos del catálogo. */
 export default function Header({ q = '' }) {
   const pathname = usePathname() || '/';
   const [abierto, setAbierto] = useState(false);
+  const [buscando, setBuscando] = useState(false);
+  const campo = useRef(null);
 
-  useEffect(() => setAbierto(false), [pathname]);
+  useEffect(() => {
+    setAbierto(false);
+    setBuscando(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!buscando) return undefined;
+    campo.current?.focus();
+    const cerrarConEsc = (e) => { if (e.key === 'Escape') setBuscando(false); };
+    window.addEventListener('keydown', cerrarConEsc);
+    return () => window.removeEventListener('keydown', cerrarConEsc);
+  }, [buscando]);
 
   const actual = (href) => {
     if (href === '/#catalogo') return esCatalogo(pathname);
@@ -48,11 +62,24 @@ export default function Header({ q = '' }) {
 
         <button
           type="button"
+          className="buscar-boton"
+          aria-expanded={buscando}
+          aria-controls="buscador-sitio"
+          aria-label={buscando ? 'Cerrar buscador' : 'Buscar repuestos'}
+          onClick={() => { setBuscando(b => !b); setAbierto(false); }}
+        >
+          {buscando ? (
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+          ) : <Buscar />}
+        </button>
+
+        <button
+          type="button"
           className="menu-boton"
           aria-expanded={abierto}
           aria-controls="menu-sitio"
           aria-label={abierto ? 'Cerrar menú' : 'Abrir menú'}
-          onClick={() => setAbierto(a => !a)}
+          onClick={() => { setAbierto(a => !a); setBuscando(false); }}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
             {abierto ? <path d="M6 6l12 12M18 6L6 18" /> : <path d="M3 6h18M3 12h18M3 18h18" />}
@@ -60,25 +87,26 @@ export default function Header({ q = '' }) {
         </button>
       </div>
 
-      <div className="sitio-herramientas">
-        <div className="contenedor sitio-herramientas__fila">
-          <form className="sitio-buscar" action="/buscar" method="get" role="search">
-            <input
-              name="q"
-              type="search"
-              defaultValue={q}
-              placeholder="Buscar por código, código original, marca o modelo…"
-              aria-label="Buscar repuestos en el catálogo"
-              autoComplete="off"
-            />
-            <button type="submit" aria-label="Buscar">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden="true">
-                <circle cx="11" cy="11" r="7" />
-                <path d="m20 20-3.5-3.5" />
-              </svg>
-            </button>
+      <div id="buscador-sitio" className="buscador" hidden={!buscando}>
+        <div className="buscador__fondo" aria-hidden="true" onClick={() => setBuscando(false)} />
+        <div className="contenedor buscador__caja">
+          <form action="/buscar" method="get" role="search">
+            <label htmlFor="buscador-q" className="buscador__label">Buscar en el catálogo</label>
+            <div className="buscador__fila">
+              <input
+                ref={campo}
+                id="buscador-q"
+                name="q"
+                type="search"
+                defaultValue={q}
+                placeholder="Código Logbelts, código original o marca y modelo"
+                autoComplete="off"
+              />
+              <button type="submit" className="boton"><Buscar /> <span>Buscar</span></button>
+            </div>
           </form>
-          <nav className="sitio-herramientas__links" aria-label="Herramientas del catálogo">
+          <p className="buscador__ayuda">Ej: 5888 · Stihl MS 250 · Husqvarna 143R</p>
+          <nav className="buscador__accesos" aria-label="Accesos rápidos del catálogo">
             {HERRAMIENTAS.map(({ href, label }) => (
               <a key={href} href={href} aria-current={actual(href) ? 'page' : undefined}>{label}</a>
             ))}
