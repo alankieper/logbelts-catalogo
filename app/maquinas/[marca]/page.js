@@ -36,7 +36,7 @@ export function generateMetadata({ params }) {
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url },
+    openGraph: { title, description, url, images: ['/opengraph-image.png'] },
   };
 }
 

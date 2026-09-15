@@ -6,6 +6,16 @@ import { getFamilia, getProductosDeSubcategoria, slugify } from '../../../../lib
 
 export const dynamic = 'force-dynamic';
 
+export async function generateMetadata({ params }) {
+  const fam = await getFamilia(params.familia);
+  const sub = fam?.subcats.find((s) => s.slug === params.sub);
+  if (!sub) return { title: 'Categoría no encontrada' };
+  const n = (await getProductosDeSubcategoria(fam.slug, sub.slug)).length;
+  const title = `${sub.nombre} para ${fam.nombre.toLowerCase()}`;
+  const description = `${n} repuestos Logbelts de ${sub.nombre.toLowerCase()} para ${fam.nombre.toLowerCase()}. Buscá por código, código original o marca. Venta mayorista.`;
+  return { title, description, openGraph: { title: `${title} · Logbelts`, description, images: ['/opengraph-image.png'] } };
+}
+
 export default async function SubcategoriaPage({ params, searchParams }) {
   const fam = await getFamilia(params.familia);
   if (!fam) notFound();

@@ -16,7 +16,7 @@ export const metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: `${SITE_URL}/maquinas` },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: `${SITE_URL}/maquinas` },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: `${SITE_URL}/maquinas`, images: ['/opengraph-image.png'] },
 };
 
 export default function MaquinasPage() {

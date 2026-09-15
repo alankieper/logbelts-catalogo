@@ -6,6 +6,14 @@ import { getFamilia } from '../../../lib/catalogo';
 
 export const dynamic = 'force-dynamic';
 
+export async function generateMetadata({ params }) {
+  const fam = await getFamilia(params.familia);
+  if (!fam) return { title: 'Familia no encontrada' };
+  const title = `Repuestos para ${fam.nombre.toLowerCase()}`;
+  const description = `${fam.count} repuestos Logbelts para ${fam.nombre.toLowerCase()} en ${fam.subcats.length} categorías. Buscá por código, código original o marca. Venta mayorista.`;
+  return { title, description, openGraph: { title: `${title} · Logbelts`, description, images: ['/opengraph-image.png'] } };
+}
+
 export default async function FamiliaPage({ params }) {
   const fam = await getFamilia(params.familia);
   if (!fam) notFound();

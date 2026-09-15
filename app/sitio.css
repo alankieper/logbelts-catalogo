@@ -83,7 +83,9 @@
 .sitio-fijo { position: sticky; top: 0; z-index: 50; }
 
 /* Lupa del encabezado y panel de búsqueda desplegable (con accesos rápidos del catálogo) */
-.buscar-boton { flex: none; width: 44px; height: 44px; display: inline-grid; place-items: center; border: 0; border-radius: 8px; background: rgba(255,255,255,.08); color: #fff; cursor: pointer; transition: background-color .15s; }
+.buscar-boton { flex: none; min-width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 16px 0 12px; border: 1px solid rgba(255,255,255,.16); border-radius: 8px; background: rgba(255,255,255,.08); color: #fff; font: 700 14px/1 var(--f-texto); white-space: nowrap; cursor: pointer; transition: background-color .15s, border-color .15s; }
+.buscar-boton:hover { border-color: rgba(255,255,255,.35); }
+@media (max-width: 380px) { .buscar-boton__texto { display: none; } .buscar-boton { padding: 0; width: 44px; } }
 .buscar-boton:hover, .buscar-boton[aria-expanded='true'] { background: rgba(255,255,255,.18); }
 .buscar-boton:focus-visible, .menu-boton:focus-visible { outline: 2px solid var(--marca-claro); outline-offset: 2px; }
 .buscar-boton svg { width: 20px; height: 20px; }
