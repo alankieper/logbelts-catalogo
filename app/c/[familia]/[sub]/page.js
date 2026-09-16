@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import CatalogoHeader from '../../../components/CatalogoHeader';
 import CatalogoPie from '../../../components/CatalogoPie';
 import ProductoCard from '../../../components/ProductoCard';
+import FiltrosMovil from '../../../components/FiltrosMovil';
+import { MarcaDeAgua } from '../../../components/DibujoCatalogo';
 import { getFamilia, getProductosDeSubcategoria, slugify } from '../../../../lib/catalogo';
 
 export const dynamic = 'force-dynamic';
@@ -42,6 +44,7 @@ export default async function SubcategoriaPage({ params, searchParams }) {
     orden === 'nombre' ? (a.nombre || '').localeCompare(b.nombre || '') : a.codigo.localeCompare(b.codigo)
   );
 
+  const filtrosActivos = (marcaSel ? 1 : 0) + (soloFoto ? 1 : 0);
   const base = `/c/${fam.slug}/${sub.slug}`;
   const qp = (over) => {
     const sp = new URLSearchParams();
@@ -60,17 +63,54 @@ export default async function SubcategoriaPage({ params, searchParams }) {
       <CatalogoHeader />
       <main className="cat">
         <div className="wrap">
-          <nav className="crumb">
-            <a href="/#catalogo">Catálogo</a>
-            <span className="sep">/</span>
-            <a href={`/f/${fam.slug}`}>{fam.nombre}</a>
-            <span className="sep">/</span>
-            <span aria-current="page">{sub.nombre}</span>
-          </nav>
-          <h1 className="page">{sub.nombre}</h1>
+          <div className="pghead">
+            <nav className="crumb">
+              <a href="/#catalogo">Catálogo</a>
+              <span className="sep">/</span>
+              <a href={`/f/${fam.slug}`}>{fam.nombre}</a>
+              <span className="sep">/</span>
+              <span aria-current="page">{sub.nombre}</span>
+            </nav>
+            <h1 className="page">{sub.nombre}</h1>
+            <p className="lead">
+              {todos.length.toLocaleString('es-AR')} repuestos de {sub.nombre.toLowerCase()} para {fam.nombre.toLowerCase()}.
+            </p>
+            <MarcaDeAgua nombre={sub.nombre} familia={fam.nombre} />
+          </div>
+
+          {/* En celular: subcategorías hermanas y marcas como chips deslizables */}
+          <div className="chiprow" aria-label="Otras categorías">
+            <span className="chiprow__k">Categorías</span>
+            {fam.subcats.map((s) => (
+              <a
+                className="chip-lnk"
+                key={s.slug}
+                href={`/c/${fam.slug}/${s.slug}`}
+                data-on={s.slug === sub.slug ? 'true' : undefined}
+                aria-current={s.slug === sub.slug ? 'page' : undefined}
+              >
+                {s.nombre}
+              </a>
+            ))}
+          </div>
+          {marcasDisp.length ? (
+            <div className="chiprow" aria-label="Marcas">
+              <span className="chiprow__k">Marcas</span>
+              <a className="chip-lnk" href={qp({ marca: '' })} data-on={marcaSel ? undefined : 'true'}>Todas</a>
+              {marcasDisp.map((m) => {
+                const sm = slugify(m);
+                return (
+                  <a className="chip-lnk" key={sm} href={qp({ marca: marcaSel === sm ? '' : sm })} data-on={marcaSel === sm ? 'true' : undefined}>
+                    {m}
+                  </a>
+                );
+              })}
+            </div>
+          ) : null}
 
           <div className="catgrid">
             <div className="filters">
+              <FiltrosMovil activos={filtrosActivos} resultados={lista.length}>
               <div className="fpanel">
                 <div className="fgroup">
                   <h4>Marca</h4>
@@ -98,6 +138,7 @@ export default async function SubcategoriaPage({ params, searchParams }) {
                   </a>
                 </div>
               </div>
+              </FiltrosMovil>
             </div>
 
             <div>

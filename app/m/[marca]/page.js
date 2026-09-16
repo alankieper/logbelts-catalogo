@@ -38,9 +38,7 @@ export default async function MarcaPage({ params }) {
           {Object.entries(porFam).map(([fslug, arr]) => {
             return (
               <div key={fslug} style={{ marginBottom: 34 }}>
-                <h2 className="page" style={{ fontSize: '1.15rem', margin: '10px 0 12px' }}>
-                  {nombreFam(fslug)}
-                </h2>
+                <h2 className="sec">{nombreFam(fslug)}</h2>
                 <div className="pgrid">
                   {arr
                     .slice()

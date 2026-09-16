@@ -41,7 +41,23 @@
   --shadow: 0 1px 2px rgba(20,28,50,.06), 0 8px 24px rgba(20,28,50,.06);
   --f-display: 'Dunk95', 'Anton', Impact, system-ui, sans-serif;
   --f-body: 'Aktiv Grotesk', system-ui, -apple-system, sans-serif;
+  --f-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --maxw: 1220px;
+
+  /* Escala tipografica unificada con la web institucional (base 16px) */
+  --t-xs: 12px;     /* etiquetas, contadores */
+  --t-sm: 13.5px;   /* apoyos */
+  --t-base: 16px;   /* cuerpo */
+  --t-md: 15px;     /* textos de tarjeta */
+  --t-lg: 17px;     /* subtitulos */
+  --lh-larga: 1.5;  /* altura de linea de textos largos */
+  --medida: 68ch;   /* ancho maximo de lectura */
+
+  /* Curva compartida con la web (sitio.css la define dentro de .sitio) */
+  --ease: cubic-bezier(.2,.7,.2,1);
+  /* Convencion unica de hover / foco del catalogo */
+  --foco: var(--brand-ink);
+  --elevacion: 0 10px 26px rgba(20,28,50,.12);
 }
 
 * { box-sizing: border-box; }
@@ -50,15 +66,20 @@ body {
   font-family: var(--f-body);
   background: var(--ground);
   color: var(--ink);
-  font-size: 15px;
-  line-height: 1.55;
+  font-size: var(--t-base);
+  line-height: var(--lh-larga);
   -webkit-font-smoothing: antialiased;
 }
 a { color: var(--brand-ink); text-decoration: none; }
 a:hover { text-decoration: underline; }
 button { font-family: inherit; }
 img { max-width: 100%; }
-:focus-visible { outline: 2px solid var(--brand-ink); outline-offset: 2px; border-radius: 3px; }
+/* Anillo de foco unico para todo el catalogo (links, botones, chips, tarjetas, campos) */
+:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; border-radius: 6px; }
+a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-visible,
+input:focus-visible, select:focus-visible, textarea:focus-visible, [role='button']:focus-visible {
+  outline: 3px solid var(--foco); outline-offset: 2px;
+}
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
 
@@ -99,20 +120,30 @@ header.cat .hlink + .hlink { margin-left: 14px; }
 
 /* ===== Migas / títulos ===== */
 main.cat { padding: 26px 0 90px; }
-.crumb { font-size: 12.5px; color: var(--ink-faint); margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.crumb { font-size: var(--t-sm); color: var(--ink-faint); margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; }
 .crumb a { color: var(--ink-faint); }
 .crumb .sep { opacity: .5; }
 .crumb [aria-current] { color: var(--ink-soft); font-weight: 700; }
 h1.page {
   font-family: var(--f-display); font-style: italic; text-transform: uppercase;
-  font-size: clamp(1.6rem, 4vw, 2.3rem); letter-spacing: .5px; line-height: 1.05;
-  margin: 0 0 6px; text-wrap: balance;
+  font-size: clamp(2rem, 4.6vw, 2.9rem); letter-spacing: .5px; line-height: 1.04;
+  margin: 0 0 8px; text-wrap: balance;
 }
-.lead { color: var(--ink-soft); font-size: 14px; margin: 0 0 22px; max-width: 65ch; }
-.eyebrow { font-weight: 700; text-transform: uppercase; letter-spacing: .16em; font-size: 11px; color: var(--brand-ink); margin: 0 0 12px; }
+/* Jerarquia pareja: h2 y h3 del catalogo con la misma familia display de la web */
+h2.sec {
+  font-family: var(--f-display); font-style: italic; text-transform: uppercase;
+  font-size: clamp(1.3rem, 2.6vw, 1.65rem); letter-spacing: .4px; line-height: 1.1;
+  margin: 0 0 12px; color: var(--ink); text-wrap: balance;
+}
+h3.sub { font-size: var(--t-lg); font-weight: 700; line-height: 1.3; margin: 0 0 8px; color: var(--ink); }
+main.cat p { line-height: var(--lh-larga); }
+.lead { color: var(--ink-soft); font-size: var(--t-base); line-height: var(--lh-larga); margin: 0 0 24px; max-width: var(--medida); }
+.eyebrow { font-weight: 700; text-transform: uppercase; letter-spacing: .16em; font-size: var(--t-xs); color: var(--brand-ink); margin: 0 0 12px; }
 
 /* ===== Tiles (familias / subcategorías) — compactos con icono lineal ===== */
 .tiles { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+/* Variante con el dibujo de linea grande (mismo aire que las tarjetas .tipo de la portada) */
+.tiles--dib { gap: 16px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
 .tile {
   background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 11px 13px;
   display: flex; align-items: center; gap: 11px; box-shadow: var(--shadow);
@@ -121,8 +152,32 @@ h1.page {
 .tile:hover { border-color: var(--brand-ink); transform: translateY(-1px); background: var(--surface-2); text-decoration: none; }
 .tile .ic { flex: none; color: var(--brand-ink); display: grid; place-items: center; }
 .tile .txt { min-width: 0; display: flex; flex-direction: column; gap: 1px; }
-.tile h3 { margin: 0; font-size: 13px; color: var(--ink); font-weight: 700; line-height: 1.25; }
-.tile .count { font-size: 10.5px; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+.tile h3 { margin: 0; font-size: var(--t-md); color: var(--ink); font-weight: 700; line-height: 1.3; }
+.tile .count { font-size: var(--t-xs); color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+
+/* --- Tarjeta de familia / subcategoria con dibujo de linea (estilo .tipo de la portada) --- */
+.tile--dib {
+  position: relative; display: grid; justify-items: start; align-items: start; gap: 6px;
+  padding: 22px 20px 20px; border-radius: 12px; overflow: hidden; min-height: 200px;
+  align-content: start;
+  transition: border-color .2s var(--ease), transform .2s var(--ease), box-shadow .2s var(--ease);
+}
+.tile--dib::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0;
+  background-image: linear-gradient(rgba(32,60,127,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(32,60,127,.06) 1px, transparent 1px);
+  background-size: 16px 16px; transition: opacity .25s ease;
+}
+.tile--dib:hover, .tile--dib:focus-visible { border-color: var(--brand-ink); transform: translateY(-4px); box-shadow: var(--elevacion); background: var(--surface); }
+.tile--dib:hover::before { opacity: 1; }
+.tile--dib .tdib { position: relative; width: 108px; height: 108px; color: var(--brand); margin-bottom: 4px; }
+.tile--dib .tdib svg { width: 100%; height: 100%; display: block; }
+.tile--dib:hover .tdib { color: var(--brand-ink); }
+.tile--dib:hover .tdib :is(path, circle, rect, line, ellipse, polyline):not([stroke-dasharray]) { animation: cat-redibujar 1.1s var(--ease); }
+.tile--dib .txt { position: relative; gap: 3px; }
+.tile--dib h3 { font-size: var(--t-lg); }
+.tile--dib .ver { position: relative; display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; font-size: var(--t-sm); font-weight: 700; color: var(--brand-ink); }
+@keyframes cat-redibujar { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@media (max-width: 480px) { .tile--dib .tdib { width: 84px; height: 84px; } .tile--dib { min-height: 170px; padding: 18px 16px 16px; } }
 
 /* ===== Grilla de productos ===== */
 .catgrid { display: grid; gap: 26px; grid-template-columns: 1fr; }
@@ -132,30 +187,68 @@ h1.page {
 .fpanel { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 8px 16px 14px; box-shadow: var(--shadow); }
 .fgroup { border-top: 1px solid var(--rule); padding: 13px 0 6px; }
 .fgroup:first-child { border-top: 0; }
-.fgroup h4 { margin: 0 0 9px; font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-faint); font-weight: 700; }
-.fopt { display: flex; align-items: center; gap: 9px; padding: 4px 0; font-size: 13px; color: var(--ink-soft); }
+.fgroup h4 { margin: 0 0 9px; font-size: var(--t-xs); text-transform: uppercase; letter-spacing: .12em; color: var(--ink-faint); font-weight: 700; }
+.fopt { display: flex; align-items: center; gap: 9px; padding: 6px 0; min-height: 34px; font-size: var(--t-sm); line-height: 1.35; color: var(--ink-soft); border-radius: 6px; }
+.fopt:hover { color: var(--brand-ink); text-decoration: none; }
 .fopt input { accent-color: var(--brand); width: 15px; height: 15px; flex: none; }
-.fopt .n { margin-left: auto; font-size: 11px; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
-.fmini { width: 100%; border: 1px solid var(--rule-strong); background: var(--surface-2); color: var(--ink); border-radius: 8px; padding: 8px 10px; font-size: 13px; font-family: inherit; }
+.fopt .n { margin-left: auto; font-size: var(--t-xs); color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+.fmini { width: 100%; border: 1px solid var(--rule-strong); background: var(--surface-2); color: var(--ink); border-radius: 8px; padding: 8px 10px; font-size: var(--t-sm); font-family: inherit; }
+.fmini[data-on='true'] { background: var(--brand); border-color: var(--brand); color: #fff; }
 
 .toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
-.toolbar .res { font-size: 12.5px; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+.toolbar .res { font-size: var(--t-sm); color: var(--ink-faint); font-variant-numeric: tabular-nums; }
 .toolbar select { margin-left: auto; border: 1px solid var(--rule-strong); background: var(--surface); color: var(--ink); border-radius: 8px; padding: 7px 10px; font-size: 12.5px; font-family: inherit; }
 
-.pgrid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
-.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; box-shadow: var(--shadow); transition: border-color .14s, transform .14s; }
-.card:hover { border-color: var(--brand-ink); transform: translateY(-2px); text-decoration: none; }
-.card .thumb { aspect-ratio: 4/3; background: #fff; display: grid; place-items: center; border-bottom: 1px solid var(--rule); position: relative; }
-.card .thumb img { width: 100%; height: 100%; object-fit: contain; padding: 8px; }
-.card .thumb .noimg { font-size: 11px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .08em; }
-.card .body { padding: 12px 13px 14px; display: flex; flex-direction: column; gap: 5px; flex: 1; }
-.card .code { font-size: 11.5px; color: var(--ink-faint); font-weight: 700; font-variant-numeric: tabular-nums; }
-.card .nm { font-size: 13.5px; color: var(--ink); font-weight: 600; line-height: 1.32; }
-.card .meta { margin-top: auto; font-size: 11.5px; color: var(--ink-faint); }
-.card .why { font-size: 10.5px; color: var(--brand-ink); background: var(--brand-wash); border-radius: 5px; padding: 2px 6px; align-self: flex-start; margin-top: 6px; }
-.card .deriv { font-size: 10px; color: var(--warn); background: var(--warn-bg); border-radius: 4px; padding: 1px 5px; align-self: flex-start; }
+.pgrid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+.card {
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden;
+  display: flex; flex-direction: column; box-shadow: var(--shadow); height: 100%;
+  transition: border-color .18s var(--ease), transform .18s var(--ease), box-shadow .18s var(--ease);
+}
+.card:hover, .card:focus-visible { border-color: var(--brand-ink); transform: translateY(-3px); box-shadow: var(--elevacion); text-decoration: none; }
+/* Caja de imagen 1:1, fondo blanco y foto contenida: todas las tarjetas quedan iguales */
+.card .thumb {
+  aspect-ratio: 1/1; background: #fff; display: grid; place-items: center;
+  border-bottom: 1px solid var(--rule); position: relative; overflow: hidden;
+}
+.card .thumb img { width: 100%; height: 100%; object-fit: contain; padding: 10px; }
+/* Sin foto: dibujo de linea de la familia, tenue y centrado (en vez del gris vacio) */
+.card .thumb .noimg { display: grid; place-items: center; align-content: center; gap: 6px; width: 100%; height: 100%; padding: 14px; }
+.card .thumb .noimg__dib { width: 70%; max-width: 116px; aspect-ratio: 1/1; color: var(--rule-strong); opacity: .9; }
+.card .thumb .noimg__dib svg { width: 100%; height: 100%; display: block; }
+.card .thumb .noimg__t { font-size: 10.5px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .1em; font-weight: 700; }
+.card:hover .thumb .noimg__dib { color: var(--brand-ink); opacity: .6; }
+.card .body { padding: 12px 13px 12px; display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
+/* Codigo Logbelts en su renglon, monoespaciado, chico y tenue */
+.card .code {
+  display: block; font-family: var(--f-mono); font-size: var(--t-xs); letter-spacing: .04em;
+  color: var(--ink-faint); font-weight: 600; font-variant-numeric: tabular-nums;
+}
+/* Nombre: 2 lineas como maximo, corte por elipsis */
+.card .nm {
+  font-size: var(--t-md); color: var(--ink); font-weight: 600; line-height: 1.3;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;
+  overflow: hidden; text-overflow: ellipsis; min-height: calc(var(--t-md) * 1.3 * 2);
+  overflow-wrap: anywhere;
+}
+.card .tags { display: flex; align-items: center; gap: 7px; min-height: 24px; min-width: 0; overflow: hidden; }
+.card .chipmarca {
+  flex: none; max-width: 65%; font-size: 10.5px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .07em; color: var(--brand-ink); background: var(--brand-wash); border-radius: 999px;
+  padding: 3px 9px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.card .meta { min-width: 0; font-size: var(--t-xs); color: var(--ink-faint); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.card .why {
+  font-size: 11px; line-height: 1.35; color: var(--brand-ink); background: var(--brand-wash);
+  border-radius: 5px; padding: 2px 6px; align-self: flex-start; max-width: 100%;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.card .deriv { flex: none; font-size: 10.5px; color: var(--warn); background: var(--warn-bg); border-radius: 4px; padding: 1px 5px; white-space: nowrap; }
+/* Acciones siempre abajo y en el mismo lugar (el chip de WhatsApp va a la derecha, absoluto) */
+.card .acts { margin-top: auto; padding-top: 10px; display: flex; align-items: center; min-height: 40px; padding-right: 104px; }
+@container (max-width: 250px) { .card .acts { padding-right: 46px; } }
 
-.empty { background: var(--surface); border: 1px dashed var(--rule-strong); border-radius: 12px; padding: 40px 24px; text-align: center; color: var(--ink-faint); font-size: 13.5px; }
+.empty { background: var(--surface); border: 1px dashed var(--rule-strong); border-radius: 12px; padding: 40px 24px; text-align: center; color: var(--ink-faint); font-size: var(--t-md); line-height: var(--lh-larga); }
 
 /* ===== Ficha ===== */
 .detail { display: grid; gap: 28px; grid-template-columns: 1fr; }
@@ -175,7 +268,7 @@ h1.page {
 .b-ok { background: var(--ok-bg); color: var(--ok); }
 .b-warn { background: var(--warn-bg); color: var(--warn); }
 .b-wash { background: var(--brand-wash); color: var(--brand-ink); }
-.ddesc { font-size: 14.5px; color: var(--ink-soft); margin: 0 0 8px; max-width: 62ch; }
+.ddesc { font-size: var(--t-base); line-height: var(--lh-larga); color: var(--ink-soft); margin: 0 0 8px; max-width: var(--medida); }
 .muted-line { font-size: 13px; color: var(--ink-faint); font-style: italic; margin: 0 0 16px; }
 .brandchips { display: flex; flex-wrap: wrap; gap: 7px; margin: 0 0 18px; }
 .brandchips a { font-size: 12px; font-weight: 700; color: var(--brand-ink); background: var(--brand-wash); border-radius: 20px; padding: 5px 12px; }
@@ -187,7 +280,7 @@ h1.page {
 .srow dd { margin: 0; color: var(--ink); }
 .srow dd .mut { color: var(--ink-faint); }
 .srow-desc { display: block; padding: 14px 16px; }
-.srow-desc .descfull { font-size: 15px; line-height: 1.5; color: var(--ink); }
+.srow-desc .descfull { font-size: var(--t-md); line-height: var(--lh-larga); color: var(--ink); max-width: var(--medida); }
 .srow-desc .revision { font-size: 13.5px; font-style: italic; color: var(--warn); }
 .cta { display: inline-flex; align-items: center; gap: 9px; background: #1f9d55; color: #fff; border: 0; border-radius: 10px; padding: 12px 18px; font-size: 14px; font-weight: 700; cursor: pointer; text-decoration: none; }
 .cta:hover { filter: brightness(1.05); text-decoration: none; }
@@ -199,9 +292,9 @@ h1.page {
 .prevnext a { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-soft); background: var(--surface); border: 1px solid var(--rule); border-radius: 9px; padding: 9px 12px; max-width: 48%; }
 .prevnext svg { width: 13px; height: 13px; flex: none; }
 .related { margin-top: 36px; }
-.related h2 { font-family: var(--f-display); font-style: italic; text-transform: uppercase; font-size: 16px; letter-spacing: .5px; margin: 0 0 14px; }
+.related h2 { font-family: var(--f-display); font-style: italic; text-transform: uppercase; font-size: clamp(1.15rem, 2.4vw, 1.4rem); letter-spacing: .5px; margin: 0 0 14px; }
 
-.note { background: var(--brand-wash); border-radius: 10px; padding: 12px 15px; font-size: 12.5px; color: var(--ink-soft); margin: 22px 0 0; max-width: 72ch; }
+.note { background: var(--brand-wash); border-radius: 10px; padding: 14px 17px; font-size: var(--t-sm); line-height: var(--lh-larga); color: var(--ink-soft); margin: 22px 0 0; max-width: var(--medida); }
 .note b { color: var(--ink); }
 
 /* ===== Aviso venta mayorista ===== */
@@ -576,3 +669,231 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 .xls-card .btn { background: var(--brand); color: #fff; border: 0; border-radius: 9px; padding: 10px 14px; font-size: 13px; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-block; font-family: inherit; }
 .xls-up { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
 .xls-up input[type="file"] { font-size: 12px; }
+
+/* =========================================================================
+   Mejoras visuales del catálogo (encabezados con dibujo, hover/foco parejos,
+   esqueletos de carga y filtros en celular). Usa los mismos tokens de arriba.
+   ========================================================================= */
+
+/* ---------- 4a) Encabezado de familia / subcategoría con marca de agua ---------- */
+.pghead { position: relative; margin: 0 0 20px; min-height: 96px; }
+.pghead > *:not(.pghead__dib) { position: relative; z-index: 1; }
+.pghead__dib {
+  position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+  width: clamp(140px, 22vw, 260px); aspect-ratio: 1 / 1;
+  color: var(--brand); opacity: .12; pointer-events: none; z-index: 0;
+}
+.pghead__dib svg { width: 100%; height: 100%; display: block; }
+.pghead .lead { max-width: min(var(--medida), calc(100% - clamp(140px, 22vw, 260px) + 60px)); }
+@media (max-width: 600px) {
+  .pghead__dib { width: 132px; opacity: .09; right: -10px; }
+  .pghead .lead { max-width: 100%; }
+}
+
+/* ---------- 8) Hover y foco parejos en todo el catálogo ---------- */
+main.cat a, main.cat button, main.cat summary { -webkit-tap-highlight-color: transparent; }
+.tile { transition: border-color .18s var(--ease), transform .18s var(--ease), box-shadow .18s var(--ease), background .18s var(--ease); }
+.tile:hover { transform: translateY(-2px); box-shadow: var(--elevacion); }
+.chip-lnk, .compat-chips a, .brandchips a {
+  display: inline-flex; align-items: center; border: 1px solid transparent;
+  transition: border-color .16s var(--ease), background-color .16s var(--ease), color .16s var(--ease), transform .16s var(--ease);
+}
+.chip-lnk:hover, .brandchips a:hover { border-color: var(--brand-ink); transform: translateY(-1px); text-decoration: none; }
+.compat-chips a:hover { transform: translateY(-1px); }
+.fmini { transition: border-color .16s var(--ease), color .16s var(--ease); }
+.fmini:hover { border-color: var(--brand-ink); color: var(--brand-ink); text-decoration: none; }
+.prevnext a { transition: border-color .16s var(--ease), transform .16s var(--ease), box-shadow .16s var(--ease); }
+.prevnext a:hover { border-color: var(--brand-ink); transform: translateY(-2px); box-shadow: var(--elevacion); text-decoration: none; }
+.lista-modelos a, .despiece-tile { transition: border-color .16s var(--ease), transform .16s var(--ease), box-shadow .16s var(--ease); }
+.lista-modelos a:hover { transform: translateY(-2px); box-shadow: var(--elevacion); }
+.add-pedido, .fav-btn { transition: border-color .16s var(--ease), color .16s var(--ease), background-color .16s var(--ease); }
+/* el chip de WhatsApp de la tarjeta también usa el mismo anillo de foco */
+.lbwa-card .lbwa-chip:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
+
+/* ---------- 7) Esqueletos de carga ---------- */
+.sk {
+  background: linear-gradient(90deg, var(--surface-2) 25%, var(--rule) 37%, var(--surface-2) 63%);
+  background-size: 400% 100%; border-radius: 6px;
+  animation: cat-sk 1.5s ease-in-out infinite;
+}
+@keyframes cat-sk { from { background-position: 100% 50%; } to { background-position: 0 50%; } }
+.sk-crumb { height: 14px; width: 220px; max-width: 60%; margin-bottom: 18px; }
+.sk-h1 { height: 38px; width: 420px; max-width: 80%; margin-bottom: 12px; border-radius: 8px; }
+.sk-lead { height: 16px; width: 320px; max-width: 70%; margin-bottom: 24px; }
+.sk-toolbar { height: 18px; width: 180px; max-width: 50%; margin-bottom: 16px; }
+.skcard {
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 12px;
+  overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column;
+}
+.skcard__img { aspect-ratio: 1 / 1; border-bottom: 1px solid var(--rule); border-radius: 0; }
+.skcard__body { padding: 12px 13px; display: flex; flex-direction: column; gap: 6px; }
+.skcard__code { height: 14px; width: 52%; }
+.skcard__nm { height: 18px; width: 92%; }
+.skcard__nm2 { height: 18px; width: 66%; }
+.skcard__tags { height: 21px; width: 55%; border-radius: 999px; }
+.skcard__acts { height: 40px; width: 62%; border-radius: 10px; }
+.skfilters { display: none; }
+@media (min-width: 900px) {
+  .skfilters { display: block; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; box-shadow: var(--shadow); padding: 16px; }
+  .skfilters .sk { height: 14px; margin-bottom: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sk { animation: none; background: var(--surface-2); }
+  main.cat *, main.cat *::before, main.cat *::after { transition-duration: .001ms !important; animation-duration: .001ms !important; }
+}
+
+/* ---------- 9) Celular: chips deslizables + panel de filtros a pantalla completa ---------- */
+.chiprow { display: none; }
+.fmov-fab, .fmov-back, .fmov-panel { display: none; }
+
+@media (max-width: 899px) {
+  /* subcategorías y marcas como chips deslizables horizontalmente */
+  .chiprow {
+    display: flex; gap: 8px; align-items: center;
+    margin: 0 -20px 14px; padding: 2px 20px 8px;
+    overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .chiprow::-webkit-scrollbar { display: none; }
+  .chiprow > * { flex: none; }
+  .chiprow__k {
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em;
+    color: var(--ink-faint); padding-right: 2px;
+  }
+
+  /* el panel de filtros de escritorio se reemplaza por el botón fijo */
+  .fdesk { display: none; }
+  .catgrid { gap: 0; }
+
+  .fmov-fab {
+    position: fixed; left: 50%; transform: translateX(-50%);
+    bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 65;
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: 48px; min-width: 44px; padding: 0 18px;
+    border: 0; border-radius: 999px; background: var(--brand); color: #fff;
+    font-family: var(--f-body); font-size: 15px; font-weight: 700; line-height: 1;
+    box-shadow: 0 8px 22px rgba(3,13,33,.32); cursor: pointer;
+  }
+  .fmov-fab svg { width: 17px; height: 17px; }
+  .fmov-fab .fmov-n {
+    min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px;
+    background: #fff; color: var(--brand); display: inline-grid; place-items: center;
+    font-size: 12px; font-weight: 800; font-variant-numeric: tabular-nums;
+  }
+
+  .fmov-back { display: block; position: fixed; inset: 0; z-index: 90; background: rgba(7,21,49,.45); border: 0; }
+  .fmov-panel {
+    display: flex; flex-direction: column; position: fixed; inset: 0; z-index: 91;
+    background: var(--ground); animation: cat-fmov-entra .22s var(--ease);
+  }
+  .fmov-cab { display: flex; align-items: center; gap: 12px; padding: 10px 16px; background: var(--surface); border-bottom: 1px solid var(--rule); }
+  .fmov-cab h2 { margin: 0; font-size: var(--t-lg); font-weight: 700; }
+  .fmov-x {
+    margin-left: auto; min-width: 44px; min-height: 44px; display: grid; place-items: center;
+    border: 1px solid var(--rule-strong); border-radius: 10px; background: var(--surface);
+    color: var(--ink-soft); cursor: pointer; font-family: inherit;
+  }
+  .fmov-x svg { width: 18px; height: 18px; }
+  .fmov-body { flex: 1; overflow-y: auto; padding: 14px 16px 20px; }
+  .fmov-body .fpanel { border: 0; box-shadow: none; background: transparent; padding: 0; }
+  .fmov-body .fopt { min-height: 48px; font-size: var(--t-base); border-bottom: 1px solid var(--rule); }
+  .fmov-body .fgroup h4 { font-size: var(--t-sm); }
+  .fmov-pie {
+    display: flex; gap: 10px; padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background: var(--surface); border-top: 1px solid var(--rule);
+  }
+  .fmov-ver {
+    flex: 1; min-height: 50px; border: 0; border-radius: 12px; background: var(--brand); color: #fff;
+    font-family: var(--f-body); font-size: 16px; font-weight: 700; cursor: pointer;
+  }
+  @keyframes cat-fmov-entra { from { opacity: 0; transform: translateY(14px); } }
+
+  /* objetivos táctiles de al menos 44x44 */
+  .fopt { min-height: 44px; padding: 8px 0; }
+  .chip-lnk, .compat-chips a, .brandchips a { min-height: 44px; padding: 0 14px; font-size: var(--t-sm); }
+  .fmini { min-height: 44px; display: inline-flex; align-items: center; }
+  .toolbar select { min-height: 44px; }
+  .crumb a, .crumb [aria-current] { min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }
+  .fav-btn.chico { min-width: 44px; min-height: 44px; top: 8px; right: 8px; }
+  .add-pedido.chico { min-height: 44px; padding: 8px 14px; font-size: var(--t-sm); }
+  .lbwa-card .lbwa-chip { min-height: 44px; padding: 8px 12px; bottom: 10px; right: 10px; }
+  .card .acts { min-height: 44px; padding-right: 116px; }
+  .prevnext a { min-height: 44px; }
+  .pedido-items li > button { min-width: 44px; min-height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fmov-panel { animation: none; }
+}
+
+/* ---------- Ajustes finos de las piezas nuevas ---------- */
+.tile--dib .tdib { display: block; }
+.tile--dib .ver svg { width: 16px; height: 16px; transition: transform .2s var(--ease); }
+.tile--dib:hover .ver svg { transform: translateX(3px); }
+.card .acts .add-pedido.chico { margin-top: 0; }
+
+/* Esqueleto de las tarjetas de familia / subcategoría (/f) */
+.sktile {
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 12px;
+  box-shadow: var(--shadow); padding: 22px 20px 20px; min-height: 200px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.sktile__dib { width: 108px; height: 108px; border-radius: 12px; }
+.sktile__nm { height: 16px; width: 70%; }
+.sktile__n { height: 12px; width: 45%; }
+@media (max-width: 480px) { .sktile { min-height: 170px; padding: 18px 16px 16px; } .sktile__dib { width: 84px; height: 84px; } }
+
+/* Texto sólo para lectores de pantalla */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+
+/* ---------- Trazado de las ilustraciones del catálogo ----------
+   Mismas reglas de dibujo que usa la web en .dibujo (app/sitio.css), replicadas con una
+   clase propia (.cdib) para que el catálogo no dependa de esa hoja ni pise sus reglas.
+   El atributo data-visible lo pone <DibujoVisible> al entrar el dibujo en pantalla. */
+.cdib :is(path, circle, rect, line, ellipse, polyline):not([stroke-dasharray]) {
+  stroke-dasharray: 1; stroke-dashoffset: 1; opacity: 0;
+  transition: stroke-dashoffset 1.8s var(--ease), opacity .2s ease;
+}
+.cdib :is(path, circle, rect, line, ellipse, polyline)[stroke-dasharray] { opacity: 0; transition: opacity 1.2s ease .6s; }
+.cdib :is(path, circle, rect, line, ellipse, polyline):nth-child(2n) { transition-delay: .12s; }
+.cdib :is(path, circle, rect, line, ellipse, polyline):nth-child(3n) { transition-delay: .24s; }
+.cdib :is(path, circle, rect, line, ellipse, polyline):nth-child(5n) { transition-delay: .36s; }
+.cdib[data-visible='true'] :is(path, circle, rect, line, ellipse, polyline) { stroke-dashoffset: 0; opacity: 1; }
+.cdib text { opacity: 0; transition: opacity .8s ease 1.2s; }
+.cdib[data-visible='true'] text { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .cdib :is(path, circle, rect, line, ellipse, polyline) { stroke-dashoffset: 0; opacity: 1; transition: none; }
+  .cdib text { opacity: 1; }
+}
+
+/* Tarjetas angostas (2 o 3 columnas): el chip de WhatsApp se achica a icono y las
+   acciones reservan menos lugar a la derecha, para que "Agregar al pedido" entre entero. */
+@container (max-width: 300px) {
+  .lbwa-card .lbwa-chip__txt { display: none; }
+  .lbwa-card .lbwa-chip { padding: 8px; }
+  .card .acts { padding-right: 52px; }
+}
+@media (max-width: 899px) {
+  @container (max-width: 320px) {
+    .lbwa-card .lbwa-chip__txt { display: none; }
+    .lbwa-card .lbwa-chip { padding: 10px; }
+    .card .acts { padding-right: 58px; }
+  }
+}
+
+/* ---------- Fondo gris con trama técnica en movimiento (igual que la web) ---------- */
+body {
+  background-color: #eef0f4;
+  background-image:
+    linear-gradient(115deg, rgba(32,60,127,.055) 1px, transparent 1px),
+    linear-gradient(65deg, rgba(32,60,127,.055) 1px, transparent 1px),
+    radial-gradient(rgba(32,60,127,.10) 1.2px, transparent 1.2px);
+  background-size: 46px 46px, 46px 46px, 24px 24px;
+  background-attachment: fixed;
+  animation: cat-trama 60s linear infinite;
+}
+@keyframes cat-trama { to { background-position: 460px 0, -460px 0, 240px 0; } }
+@media (prefers-reduced-motion: reduce) { body { animation: none; } }
