@@ -71,6 +71,12 @@ async function familiasDelCatalogo() {
   }
 }
 
+const VENTAJAS = [
+  { Icono: Medalla, titulo: "Calidad premium", texto: "Repuestos que marcan la diferencia: elegimos línea por línea lo que de verdad aguanta en el taller." },
+  { Icono: Auricular, titulo: "Atención al cliente personalizada", texto: "Un vendedor te asesora por WhatsApp, te ayuda a identificar la pieza y te acompaña en cada pedido." },
+  { Icono: Escudo, titulo: "Abastecemos todo el país", texto: "Trabajamos con comercios y talleres de todas las provincias, con reposición durante toda la temporada." },
+];
+
 const PRODUCTOS_HERO = [
   { clase: 'tractor', nombre: 'Minitractores', href: '/f/minitractores', Dibujo: MinitractorContorno },
   { clase: 'desma', nombre: 'Desmalezadoras', href: '/f/desmalezadoras', Dibujo: DesmalezadoraContorno },
@@ -82,6 +88,40 @@ export default async function Inicio() {
 
   return (
     <>
+      <section className="banner-portada oscuro" aria-labelledby="banner-titulo">
+        <Image className="banner-portada__foto" src={img("77d023f846654192a94d33c8a444d7f2f000")} alt="" fill sizes="100vw" priority />
+        <div className="contenedor banner-portada__grilla">
+          <div>
+            <p className="antetitulo">Temporada de corte</p>
+            <h2 id="banner-titulo" className="display banner-portada__titulo">
+              Encontrá todo para tu temporada en
+              {" "}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img className="banner-portada__logo" src="/logo-blanco.png" alt="Logbelts" width="178" height="88" />
+            </h2>
+            <div className="hero__acciones">
+              <a className="boton boton--claro" href="#catalogo">Ver el catálogo <Flecha /></a>
+              <Link className="boton boton--borde" href="/contacto">Hablar con un vendedor</Link>
+            </div>
+          </div>
+          <Image className="banner-portada__repuestos" src={img("35daaca77e6a45339220cc0b68371b60")} alt="Repuestos Logbelts para máquinas de jardín" width={1000} height={667} sizes="(max-width: 900px) 92vw, 540px" priority />
+        </div>
+      </section>
+
+      <section className="ventajas" aria-label="Por qué nos eligen">
+        <div className="contenedor ventajas__grilla">
+          {VENTAJAS.map(({ Icono, titulo, texto }) => (
+            <div className="ventaja" key={titulo}>
+              <span className="ventaja__icono"><Icono /></span>
+              <div>
+                <h3>{titulo}</h3>
+                <p>{texto}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="hero oscuro">
         <Image className="hero__foto" src={img('8250887d5bc84de4ae3e2b1157a80746')} alt="" fill sizes="100vw" priority />
         <div className="contenedor hero__grilla">

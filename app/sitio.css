@@ -548,12 +548,12 @@ body:has(.pedido-fab) .whatsapp-flotante { bottom: 82px; }
 .marca__nombre { font-family: var(--f-display); font-style: italic; font-weight: 700; text-transform: uppercase; font-size: 24px; line-height: 1; white-space: nowrap; }
 .marca--logo { background: #f4f6fa; border-color: #f4f6fa; box-shadow: inset 0 0 0 1px rgba(10,33,73,.1); align-items: flex-start; }
 .marca--logo:hover, .marca--logo:focus-visible { background: #fff; border-color: var(--marca-claro); }
-.marca:hover .marca__logo, .marca:focus-visible .marca__logo { filter: none; opacity: 1; }
+.marca:hover .marca__logo, .marca:focus-visible .marca__logo { transform: scale(1.04); }
 .marca--logo .marca__n { color: var(--tinta-suave); }
 .marca--logo-oscuro { background: #1b2433; border-color: #1b2433; }
 .marca--logo-oscuro:hover, .marca--logo-oscuro:focus-visible { background: #232e40; }
 .marca--logo-oscuro .marca__n { color: rgba(255,255,255,.7); }
-.marca__logo { filter: grayscale(1); opacity: .85; transition: filter .25s var(--ease), opacity .25s var(--ease); display: block; height: 32px; width: auto; max-width: 150px; object-fit: contain; object-position: left center; }
+.marca__logo { transition: transform .25s var(--ease); display: block; height: 32px; width: auto; max-width: 150px; object-fit: contain; object-position: left center; }
 .marca__n { margin-top: 6px; font-size: 12px; color: rgba(255,255,255,.6); white-space: nowrap; }
 @keyframes sitio-marcas { to { transform: translateX(-50%); } }
 
@@ -651,3 +651,39 @@ body:has(.pedido-fab) .whatsapp-flotante { bottom: 82px; }
 .seccion--suelo .paso { background: var(--superficie); border-color: var(--linea); box-shadow: var(--sombra); }
 .seccion--suelo .paso::before { color: var(--marca-tinta); }
 .seccion--suelo .paso p { color: var(--tinta-suave); }
+
+/* ---------- Banner de portada (temporada) ---------- */
+.banner-portada { position: relative; isolation: isolate; overflow: hidden; color: #fff; background: var(--navy-900); }
+.banner-portada__foto { position: absolute; inset: 0; z-index: -2; object-fit: cover; object-position: 35% 65%; }
+.banner-portada::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(95deg, rgba(6,17,41,.94) 0%, rgba(7,21,49,.82) 44%, rgba(7,21,49,.42) 72%, rgba(7,21,49,.18) 100%); }
+.banner-portada__grilla { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 44px; align-items: center; padding: 64px 0 60px; }
+.banner-portada__titulo { font-size: clamp(30px, 3.6vw, 46px); line-height: 1.08; max-width: 20ch; }
+.banner-portada__logo { display: inline-block; height: 1em; width: auto; vertical-align: -.1em; margin-left: .2em; }
+.banner-portada .hero__acciones { margin-top: 26px; }
+.banner-portada__repuestos { width: 100%; height: auto; border-radius: var(--radio); border: 1px solid rgba(255,255,255,.16); box-shadow: 0 26px 50px rgba(3,13,33,.5); }
+@media (max-width: 900px) { .banner-portada__grilla { grid-template-columns: 1fr; gap: 26px; padding: 44px 0 40px; } }
+
+/* ---------- Banda de ventajas (debajo del banner) ---------- */
+.ventajas { border-bottom: 1px solid var(--linea); }
+.ventajas__grilla { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 22px 0; }
+.ventaja { display: grid; grid-template-columns: 46px 1fr; gap: 14px; align-items: start; padding: 16px 18px; background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--radio); box-shadow: var(--sombra); }
+.ventaja__icono { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 10px; background: var(--lavado); color: var(--marca); }
+.ventaja__icono svg { width: 22px; height: 22px; }
+.ventaja h3 { font-size: 16px; margin-bottom: 4px; }
+.ventaja p { margin: 0; font-size: 14px; color: var(--tinta-suave); }
+@media (max-width: 900px) { .ventajas__grilla { grid-template-columns: 1fr; } }
+
+/* ---------- Fondo gris con trama técnica en movimiento (en vez del blanco plano) ---------- */
+.sitio { background: var(--suelo); }
+.sitio .seccion:not(.seccion--oscura), .sitio .tipos, .sitio .ventajas, .sitio .catalogos, .sitio .texto-largo, .sitio .tutoriales, .sitio .formulario--pagina, .sitio .faq {
+  background-color: var(--suelo);
+  background-image:
+    linear-gradient(115deg, rgba(32,60,127,.055) 1px, transparent 1px),
+    linear-gradient(65deg, rgba(32,60,127,.055) 1px, transparent 1px),
+    radial-gradient(rgba(32,60,127,.10) 1.2px, transparent 1.2px);
+  background-size: 46px 46px, 46px 46px, 24px 24px;
+  animation: sitio-trama 60s linear infinite;
+}
+.sitio .formulario--pagina, .sitio .faq details { background-color: var(--superficie); background-image: none; animation: none; }
+@keyframes sitio-trama { to { background-position: 460px 0, -460px 0, 240px 0; } }
+@media (prefers-reduced-motion: reduce) { .sitio .seccion, .sitio .tipos, .sitio .ventajas { animation: none !important; } }

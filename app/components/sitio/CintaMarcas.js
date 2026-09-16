@@ -57,6 +57,7 @@ export default function CintaMarcas({ marcas }) {
       const dx = e.clientX - ultimoX;
       ultimoX = e.clientX;
       recorrido += Math.abs(dx);
+      if (recorrido > 4) el.dataset.arrastrando = "true";
       el.scrollLeft -= dx;
       impulso = dx;
       normalizar();
@@ -78,7 +79,6 @@ export default function CintaMarcas({ marcas }) {
       bloquearClick = false;
       impulso = 0;
       ultimoX = e.clientX;
-      el.dataset.arrastrando = "true";
       window.addEventListener("pointermove", mover);
       window.addEventListener("pointerup", soltar);
       window.addEventListener("pointercancel", soltar);
