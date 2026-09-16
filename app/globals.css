@@ -22,9 +22,9 @@
 
 /* ===== Tokens ===== */
 :root {
-  --ground: #eef0f4;
-  --surface: #ffffff;
-  --surface-2: #f4f6f9;
+  --ground: #e7ebf3;
+  --surface: #eef1f7;
+  --surface-2: #e6ebf4;
   --brand: #203c7f;
   --brand-ink: #2f52a8;
   --brand-wash: #e7ecf7;
@@ -884,16 +884,23 @@ main.cat a, main.cat button, main.cat summary { -webkit-tap-highlight-color: tra
   }
 }
 
-/* ---------- Fondo gris con trama técnica en movimiento (igual que la web) ---------- */
+/* ---------- Trama técnica: ningún fondo queda blanco plano ---------- */
 body {
-  background-color: #eef0f4;
+  background-color: var(--ground);
   background-image:
-    linear-gradient(115deg, rgba(32,60,127,.055) 1px, transparent 1px),
-    linear-gradient(65deg, rgba(32,60,127,.055) 1px, transparent 1px),
-    radial-gradient(rgba(32,60,127,.10) 1.2px, transparent 1.2px);
-  background-size: 46px 46px, 46px 46px, 24px 24px;
-  background-attachment: fixed;
-  animation: cat-trama 60s linear infinite;
+    repeating-linear-gradient(115deg, rgba(32,60,127,.075) 0 1px, transparent 1px 16px),
+    radial-gradient(rgba(32,60,127,.11) 1.3px, transparent 1.3px);
+  background-size: auto, 22px 22px;
+  animation: cat-trama 14s linear infinite;
 }
-@keyframes cat-trama { to { background-position: 460px 0, -460px 0, 240px 0; } }
+@keyframes cat-trama { to { background-position: 320px 0, 220px 0; } }
+/* Tarjetas y paneles con trama fina */
+.card, .tile, .fpanel, .specsheet, .idbox, .idcard, .kpi, .empty, .prevnext a, .skcard, .banda-maquina, .fmov-panel {
+  background-color: var(--surface);
+  background-image: radial-gradient(rgba(32,60,127,.08) 1.2px, transparent 1.2px);
+  background-size: 18px 18px;
+}
+/* Las fotos de producto necesitan fondo blanco */
+.card .thumb, .gmain, .idth, .skcard__img, .media-thumb { background-color: #fff; background-image: none; }
+.toolbar select, .fmini, input, textarea, select { background-image: none; }
 @media (prefers-reduced-motion: reduce) { body { animation: none; } }
