@@ -536,9 +536,12 @@ body:has(.pedido-fab) .whatsapp-flotante { bottom: 82px; }
 .marcas__cabeza p { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--marca-claro); }
 .marcas__cabeza a { font-size: 13px; font-weight: 700; color: rgba(255,255,255,.75); white-space: nowrap; }
 .marcas__cabeza a:hover { color: #fff; }
-.marcas__ventana { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
-.marcas__pista { display: flex; width: max-content; animation: sitio-marcas var(--duracion, 60s) linear infinite; }
-.marcas:hover .marcas__pista, .marcas:focus-within .marcas__pista { animation-play-state: paused; }
+.marcas__ventana { overflow-x: auto; overflow-y: hidden; scrollbar-width: none; -ms-overflow-style: none; cursor: grab; touch-action: pan-y; overscroll-behavior-x: contain; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.marcas__ventana::-webkit-scrollbar { display: none; }
+.marcas__ventana[data-arrastrando] { cursor: grabbing; }
+.marcas__ventana[data-arrastrando] .marca { pointer-events: none; }
+.marcas__pista { display: flex; width: max-content; }
+
 .marcas__lista { display: flex; gap: 12px; margin: 0; padding: 0 6px; list-style: none; }
 .marca { display: flex; flex-direction: column; justify-content: center; min-width: 168px; height: 82px; padding: 10px 22px; border-radius: 12px; border: 1px solid rgba(143,176,255,.18); background: rgba(255,255,255,.03); transition: background-color .2s var(--ease), border-color .2s var(--ease), transform .2s var(--ease); }
 .marca:hover, .marca:focus-visible { background: rgba(143,176,255,.12); border-color: rgba(143,176,255,.55); transform: translateY(-2px); }
