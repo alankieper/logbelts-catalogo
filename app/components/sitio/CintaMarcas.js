@@ -22,6 +22,7 @@ export default function CintaMarcas({ marcas }) {
     let pausado = false;
     let ultimoX = 0;
     let recorrido = 0;
+    let bloquearClick = false;
     let impulso = 0;
     let ultimoT = 0;
     let cuadro = 0;
@@ -49,16 +50,8 @@ export default function CintaMarcas({ marcas }) {
     };
     cuadro = requestAnimationFrame(paso);
 
-    // Arrastre con el mouse (en pantallas táctiles ya funciona el desplazamiento del navegador)
-    const bajar = (e) => {
-      if (e.pointerType === 'touch') return;
-      arrastrando = true;
-      recorrido = 0;
-      impulso = 0;
-      ultimoX = e.clientX;
-      el.dataset.arrastrando = 'true';
-      try { el.setPointerCapture(e.pointerId); } catch { /* sin puntero activo */ }
-    };
+    // Arrastre con el mouse. No se captura el puntero: si se captura, el click termina en el
+    // contenedor y la marca no se abre. Mientras se arrastra se escucha en la ventana.
     const mover = (e) => {
       if (!arrastrando) return;
       const dx = e.clientX - ultimoX;
@@ -68,28 +61,40 @@ export default function CintaMarcas({ marcas }) {
       impulso = dx;
       normalizar();
     };
-    const soltar = (e) => {
+    const soltar = () => {
       if (!arrastrando) return;
       arrastrando = false;
+      bloquearClick = recorrido > 8;
+      recorrido = 0;
       delete el.dataset.arrastrando;
-      try { el.releasePointerCapture(e.pointerId); } catch { /* ya liberado */ }
+      window.removeEventListener("pointermove", mover);
+      window.removeEventListener("pointerup", soltar);
+      window.removeEventListener("pointercancel", soltar);
+    };
+    const bajar = (e) => {
+      if (e.pointerType === "touch" || e.button !== 0) return;
+      arrastrando = true;
+      recorrido = 0;
+      bloquearClick = false;
+      impulso = 0;
+      ultimoX = e.clientX;
+      el.dataset.arrastrando = "true";
+      window.addEventListener("pointermove", mover);
+      window.addEventListener("pointerup", soltar);
+      window.addEventListener("pointercancel", soltar);
     };
     // Si arrastró, el click no debe abrir la marca
     const click = (e) => {
-      if (recorrido > 6) {
-        e.preventDefault();
-        e.stopPropagation();
-        recorrido = 0;
-      }
+      if (!bloquearClick) return;
+      bloquearClick = false;
+      e.preventDefault();
+      e.stopPropagation();
     };
 
     const entrar = () => { pausado = true; };
     const salir = () => { pausado = false; };
 
     el.addEventListener('pointerdown', bajar);
-    el.addEventListener('pointermove', mover);
-    el.addEventListener('pointerup', soltar);
-    el.addEventListener('pointercancel', soltar);
     el.addEventListener('click', click, true);
     el.addEventListener('pointerenter', entrar);
     el.addEventListener('pointerleave', salir);
@@ -99,10 +104,8 @@ export default function CintaMarcas({ marcas }) {
     return () => {
       cancelAnimationFrame(cuadro);
       el.removeEventListener('pointerdown', bajar);
-      el.removeEventListener('pointermove', mover);
-      el.removeEventListener('pointerup', soltar);
-      el.removeEventListener('pointercancel', soltar);
       el.removeEventListener('click', click, true);
+      soltar();
       el.removeEventListener('pointerenter', entrar);
       el.removeEventListener('pointerleave', salir);
       el.removeEventListener('focusin', entrar);
