@@ -658,7 +658,7 @@ body:has(.pedido-fab) .whatsapp-flotante { bottom: 82px; }
 .banner-portada::after { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(95deg, rgba(6,17,41,.94) 0%, rgba(7,21,49,.82) 44%, rgba(7,21,49,.42) 72%, rgba(7,21,49,.18) 100%); }
 .banner-portada__grilla { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 44px; align-items: center; padding: 64px 0 60px; }
 .banner-portada__titulo { font-size: clamp(30px, 3.6vw, 46px); line-height: 1.08; max-width: 20ch; }
-.banner-portada__logo { display: inline-block; height: 1em; width: auto; vertical-align: -.1em; margin-left: .2em; }
+.banner-portada__logo { display: inline-block; height: 1.35em; width: auto; vertical-align: -.1em; margin-left: .2em; }
 .banner-portada .hero__acciones { margin-top: 26px; }
 .banner-portada__repuestos { width: 100%; height: auto; border-radius: var(--radio); border: 1px solid rgba(255,255,255,.16); box-shadow: 0 26px 50px rgba(3,13,33,.5); }
 @media (max-width: 900px) { .banner-portada__grilla { grid-template-columns: 1fr; gap: 26px; padding: 44px 0 40px; } }
