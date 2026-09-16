@@ -546,13 +546,14 @@ body:has(.pedido-fab) .whatsapp-flotante { bottom: 82px; }
 .marca { display: flex; flex-direction: column; justify-content: center; min-width: 168px; height: 82px; padding: 10px 22px; border-radius: 12px; border: 1px solid rgba(143,176,255,.18); background: rgba(255,255,255,.03); transition: background-color .2s var(--ease), border-color .2s var(--ease), transform .2s var(--ease); }
 .marca:hover, .marca:focus-visible { background: rgba(143,176,255,.12); border-color: rgba(143,176,255,.55); transform: translateY(-2px); }
 .marca__nombre { font-family: var(--f-display); font-style: italic; font-weight: 700; text-transform: uppercase; font-size: 24px; line-height: 1; white-space: nowrap; }
-.marca--logo { background: #f4f6fa; border-color: #f4f6fa; align-items: flex-start; }
+.marca--logo { background: #f4f6fa; border-color: #f4f6fa; box-shadow: inset 0 0 0 1px rgba(10,33,73,.1); align-items: flex-start; }
 .marca--logo:hover, .marca--logo:focus-visible { background: #fff; border-color: var(--marca-claro); }
+.marca:hover .marca__logo, .marca:focus-visible .marca__logo { filter: none; opacity: 1; }
 .marca--logo .marca__n { color: var(--tinta-suave); }
 .marca--logo-oscuro { background: #1b2433; border-color: #1b2433; }
 .marca--logo-oscuro:hover, .marca--logo-oscuro:focus-visible { background: #232e40; }
 .marca--logo-oscuro .marca__n { color: rgba(255,255,255,.7); }
-.marca__logo { display: block; height: 32px; width: auto; max-width: 150px; object-fit: contain; object-position: left center; }
+.marca__logo { filter: grayscale(1); opacity: .85; transition: filter .25s var(--ease), opacity .25s var(--ease); display: block; height: 32px; width: auto; max-width: 150px; object-fit: contain; object-position: left center; }
 .marca__n { margin-top: 6px; font-size: 12px; color: rgba(255,255,255,.6); white-space: nowrap; }
 @keyframes sitio-marcas { to { transform: translateX(-50%); } }
 
@@ -645,3 +646,8 @@ body:has(.pedido-fab) .whatsapp-flotante { bottom: 82px; }
 .faq details[open] summary::after { transform: rotate(45deg); }
 .faq summary:focus-visible { outline: 2px solid var(--marca-tinta); outline-offset: 2px; border-radius: var(--radio); }
 .faq details p { margin: 0; padding: 0 20px 18px; color: var(--tinta-suave); }
+
+/* Pasos sobre fondo claro (la portada cierra con una banda clara) */
+.seccion--suelo .paso { background: var(--superficie); border-color: var(--linea); box-shadow: var(--sombra); }
+.seccion--suelo .paso::before { color: var(--marca-tinta); }
+.seccion--suelo .paso p { color: var(--tinta-suave); }

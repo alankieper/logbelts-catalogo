@@ -4,9 +4,6 @@
 
 import { useEffect, useRef } from 'react';
 
-// Logos claros (texto blanco) que necesitan placa oscura para verse.
-const LOGOS_CLAROS = new Set(['echo', 'troy-bilt']);
-
 /**
  * Cinta de marcas del catálogo; cada una lleva a sus repuestos (/m/<marca>).
  * Se mueve sola y se puede arrastrar con el mouse o el dedo (la lista está duplicada,
@@ -119,7 +116,7 @@ export default function CintaMarcas({ marcas }) {
     <ul className="marcas__lista" aria-hidden={copia || undefined}>
       {marcas.map((m) => (
         <li key={m.slug}>
-          <a className={m.logo ? `marca marca--logo${LOGOS_CLAROS.has(m.slug) ? ' marca--logo-oscuro' : ''}` : 'marca'} href={`/m/${m.slug}`} tabIndex={copia ? -1 : undefined} aria-label={m.logo ? `Repuestos para ${m.nombre}` : undefined} draggable="false">
+          <a className={m.logo ? `marca marca--logo${m.claro ? ' marca--logo-oscuro' : ''}` : 'marca'} href={`/m/${m.slug}`} tabIndex={copia ? -1 : undefined} aria-label={m.logo ? `Repuestos para ${m.nombre}` : undefined} draggable="false">
             {m.logo ? <img className="marca__logo" src={m.logo} alt={m.nombre} loading="lazy" draggable="false" /> : <span className="marca__nombre">{m.nombre}</span>}
             <span className="marca__n">{m.count.toLocaleString('es-AR')} repuestos</span>
           </a>

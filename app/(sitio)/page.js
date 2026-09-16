@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getFamilias, getMarcasConteo } from '../../lib/catalogo';
-import { logosMarcas } from '../../lib/logosMarcas';
+import { logosClaros, logosMarcas } from '../../lib/logosMarcas';
 import { datosSelector } from '../../lib/maquinas';
 import { img } from '../../lib/sitio';
 import { Auricular, Buscar, Escudo, Flecha, Medalla } from '../components/sitio/Iconos';
@@ -53,10 +53,11 @@ const Decor = ({ Icono, clase }) => (
 async function marcasDelCatalogo() {
   try {
     const logos = logosMarcas();
+    const claros = logosClaros();
     return (await getMarcasConteo())
       .filter((m) => m.count >= 2)
       .slice(0, 40)
-      .map((m) => ({ ...m, logo: logos[m.slug] || null }));
+      .map((m) => ({ ...m, logo: logos[m.slug] || null, claro: claros.has(m.slug) }));
   } catch {
     return [];
   }
@@ -145,7 +146,6 @@ export default async function Inicio() {
           <p className="catalogo-portada__aviso">Venta mayorista únicamente. Comunicate con nuestros vendedores para más información.</p>
         </div>
       </section>
-
       <section className="herramientas oscuro con-decor" aria-labelledby="herramientas-titulo">
         <Decor Icono={Correa} clase="decor--der-arriba decor--grande" />
         <div className="contenedor herramientas__grilla">
@@ -164,7 +164,28 @@ export default async function Inicio() {
           </div>
         </div>
       </section>
-
+      <section className="seccion tipos con-decor" aria-labelledby="tipos-titulo">
+        <Decor Icono={Carburador} clase="decor--izq-arriba decor--enorme" />
+        <Decor Icono={FiltroAire} clase="decor--der-abajo" />
+        <div className="contenedor">
+          <div className="seccion__cabeza">
+            <div>
+              <p className="antetitulo">Por tipo de repuesto</p>
+              <h2 id="tipos-titulo" className="titulo-seccion">¿Qué pieza necesitás?</h2>
+            </div>
+            <a className="boton boton--borde" href="#catalogo">Todo el catálogo <Flecha /></a>
+          </div>
+          <Dibujo className="tipos__grilla">
+            {TIPOS.map(({ Icono, nombre, href }) => (
+              <a key={nombre} href={href} className="tipo">
+                <Icono className="tipo__dibujo" />
+                <span className="tipo__nombre">{nombre}</span>
+                <span className="tipo__ver">Ver repuestos <Flecha /></span>
+              </a>
+            ))}
+          </Dibujo>
+        </div>
+      </section>
       <section className="precision oscuro con-decor" aria-labelledby="precision-titulo">
         <Decor Icono={Piston} clase="decor--izq-abajo decor--grande" />
         <div className="contenedor precision__grilla">
@@ -193,43 +214,6 @@ export default async function Inicio() {
           <Piezas3D />
         </div>
       </section>
-
-      <section className="fondo-foto fondo-foto--oscuro temporada oscuro">
-        <Image className="fondo-foto__img" src={img('3d5e5148663349a9beae8fb6ac532baff000')} alt="" fill sizes="100vw" />
-        <div className="contenedor">
-          <p className="antetitulo">Temporada primavera · verano</p>
-          <h2 className="display">Prepará tu stock para la temporada</h2>
-          <p className="temporada__bajada">¡No te lo pierdas!</p>
-          <p>Registrate como distribuidor e incorporá toda la línea de productos de calidad Logbelts.</p>
-          <div className="hero__acciones">
-            <Link href="/contacto" className="boton boton--claro">Contactate con nosotros <Flecha /></Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="seccion tipos con-decor" aria-labelledby="tipos-titulo">
-        <Decor Icono={Carburador} clase="decor--izq-arriba decor--enorme" />
-        <Decor Icono={FiltroAire} clase="decor--der-abajo" />
-        <div className="contenedor">
-          <div className="seccion__cabeza">
-            <div>
-              <p className="antetitulo">Por tipo de repuesto</p>
-              <h2 id="tipos-titulo" className="titulo-seccion">¿Qué pieza necesitás?</h2>
-            </div>
-            <a className="boton boton--borde" href="#catalogo">Todo el catálogo <Flecha /></a>
-          </div>
-          <Dibujo className="tipos__grilla">
-            {TIPOS.map(({ Icono, nombre, href }) => (
-              <a key={nombre} href={href} className="tipo">
-                <Icono className="tipo__dibujo" />
-                <span className="tipo__nombre">{nombre}</span>
-                <span className="tipo__ver">Ver repuestos <Flecha /></span>
-              </a>
-            ))}
-          </Dibujo>
-        </div>
-      </section>
-
       <section className="seccion con-decor" aria-labelledby="porque-titulo">
         <Decor Icono={Bujia} clase="decor--izq-abajo" />
         <div className="contenedor porque__grilla">
@@ -258,8 +242,19 @@ export default async function Inicio() {
           </div>
         </div>
       </section>
-
-      <section className="seccion seccion--oscura oscuro con-decor" aria-labelledby="pasos-titulo">
+      <section className="fondo-foto fondo-foto--oscuro temporada oscuro">
+        <Image className="fondo-foto__img" src={img('3d5e5148663349a9beae8fb6ac532baff000')} alt="" fill sizes="100vw" />
+        <div className="contenedor">
+          <p className="antetitulo">Temporada primavera · verano</p>
+          <h2 className="display">Prepará tu stock para la temporada</h2>
+          <p className="temporada__bajada">¡No te lo pierdas!</p>
+          <p>Registrate como distribuidor e incorporá toda la línea de productos de calidad Logbelts.</p>
+          <div className="hero__acciones">
+            <Link href="/contacto" className="boton boton--claro">Contactate con nosotros <Flecha /></Link>
+          </div>
+        </div>
+      </section>
+      <section className="seccion seccion--suelo con-decor" aria-labelledby="pasos-titulo">
         <Decor Icono={Cadena} clase="decor--der-abajo decor--enorme" />
         <div className="contenedor">
           <div className="seccion__cabeza">
@@ -283,6 +278,12 @@ export default async function Inicio() {
           </div>
         </div>
       </section>
+
+
+
+
+
+
 
     </>
   );
