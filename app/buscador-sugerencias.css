@@ -1,0 +1,206 @@
+/* ------------------------------------------------------------------ *
+ * Sugerencias del buscador (lupa del encabezado + buscador de portada).
+ * Estilos propios, con prefijo .bsug, para no pisar sitio.css ni globals.css.
+ * Paleta: navy #0a2149/#071531 · marca #203c7f · claro #8fb0ff
+ *         gris #e7ebf3 · superficie #eef1f7 · tinta #191c22
+ * ------------------------------------------------------------------ */
+
+.bsug {
+  --bsug-navy: #0a2149;
+  --bsug-navy-hondo: #071531;
+  --bsug-marca: #203c7f;
+  --bsug-claro: #8fb0ff;
+  --bsug-gris: #e7ebf3;
+  --bsug-superficie: #eef1f7;
+  --bsug-tinta: #191c22;
+  --bsug-ancho: 100%;
+  position: relative;
+}
+
+.bsug__panel {
+  position: absolute;
+  z-index: 60;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  max-width: var(--bsug-ancho);
+  background: #fff;
+  border: 1px solid var(--bsug-gris);
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(3, 13, 33, 0.28);
+  overflow: hidden;
+  animation: bsug-aparecer 0.14s ease-out both;
+}
+
+@keyframes bsug-aparecer {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: none; }
+}
+
+.bsug__lista {
+  list-style: none;
+  margin: 0;
+  padding: 4px;
+  max-height: min(62vh, 430px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* --- una sugerencia --- */
+.bsug__op {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 8px;
+  border-radius: 9px;
+  cursor: pointer;
+  color: var(--bsug-tinta);
+  font: 14px/1.25 inherit;
+}
+.bsug__op + .bsug__op { border-top: 1px solid rgba(231, 235, 243, 0.9); }
+.bsug__op.es-activa,
+.bsug__op:hover {
+  background: var(--bsug-superficie);
+  border-top-color: transparent;
+}
+.bsug__op.es-activa { box-shadow: inset 0 0 0 2px var(--bsug-marca); }
+
+.bsug__foto {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: var(--bsug-superficie);
+  border: 1px solid var(--bsug-gris);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.bsug__foto img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.bsug__sinfoto { color: #9aa7c0; }
+.bsug__sinfoto svg { width: 22px; height: 22px; }
+
+.bsug__txt { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.bsug__codigo {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--bsug-marca);
+}
+.bsug__nombre {
+  font-size: 14px;
+  color: var(--bsug-tinta);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bsug__marca {
+  flex: 0 0 auto;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--bsug-navy);
+  background: var(--bsug-gris);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
+
+/* --- última fila: ver todos --- */
+.bsug__todos {
+  justify-content: space-between;
+  margin-top: 2px;
+  background: var(--bsug-superficie);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--bsug-navy);
+}
+.bsug__todos.es-activa { background: var(--bsug-navy); color: #fff; }
+.bsug__todos svg { width: 18px; height: 18px; flex: 0 0 auto; }
+
+/* --- sin resultados --- */
+.bsug__nada {
+  padding: 12px 10px;
+  font-size: 14px;
+  color: #45506b;
+}
+.bsug__nada b { color: var(--bsug-tinta); }
+.bsug__chips { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 9px; }
+.bsug__chips-t { font-size: 12px; color: #6b7690; }
+.bsug__chip {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--bsug-gris);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--bsug-marca);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.bsug__chip:hover { background: var(--bsug-superficie); }
+.bsug__chip:focus-visible { outline: 3px solid var(--bsug-claro); outline-offset: 2px; }
+
+/* Aviso para lectores de pantalla */
+.bsug__vivo {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Barra finita mientras se consulta */
+.bsug[data-cargando='1'] .bsug__panel::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--bsug-claro), transparent);
+  animation: bsug-cargando 0.9s linear infinite;
+}
+@keyframes bsug-cargando {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+
+@media (max-width: 600px) {
+  .bsug__panel { max-width: 100%; }
+  .bsug__marca { display: none; }
+  .bsug__lista { max-height: min(56vh, 330px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bsug__panel { animation: none; }
+  .bsug[data-cargando='1'] .bsug__panel::before { animation: none; opacity: 0.6; }
+}
+
+/* ------------------------------------------------------------------ *
+ * Alternativas cuando la búsqueda no trajo nada (página /buscar)
+ * ------------------------------------------------------------------ */
+.bsug-alt {
+  margin: 0 0 18px;
+  padding: 14px 16px;
+  background: var(--bsug-superficie, #eef1f7);
+  border: 1px solid var(--bsug-gris, #e7ebf3);
+  border-radius: 12px;
+}
+.bsug-alt__t { margin: 0 0 10px; font-size: 14px; font-weight: 700; color: #0a2149; }
+.bsug-alt__lista { display: flex; flex-wrap: wrap; gap: 8px; }
+.bsug-alt__item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 7px 13px;
+  background: #fff;
+  border: 1px solid #e7ebf3;
+  border-radius: 999px;
+  color: #203c7f;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.bsug-alt__item:hover { background: #e7ebf3; }
+.bsug-alt__item:focus-visible { outline: 3px solid #8fb0ff; outline-offset: 2px; }
+.bsug-alt__n { font-size: 12px; font-weight: 500; color: #6b7690; }

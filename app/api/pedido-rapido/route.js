@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import * as XLSX from 'xlsx';
-import { buscar, getProducto } from '../../../lib/catalogo';
+import { PUNTAJE, buscar, getProducto } from '../../../lib/catalogo';
 import { MARCA } from '../../../lib/marca';
 
 export const runtime = 'nodejs';
@@ -60,8 +60,8 @@ async function resolver(item) {
   if (exacto) return { ...item, estado: 'ok', producto: resumen(exacto), motivo: MARCA.codigo.etiqueta };
 
   const res = await buscar(item.codigo, 4);
-  if (res[0] && res[0].score >= 100) return { ...item, estado: 'ok', producto: resumen(res[0].p), motivo: res[0].motivo };
-  const opciones = res.filter(r => r.score >= 40).slice(0, 3).map(r => ({ ...resumen(r.p), motivo: r.motivo }));
+  if (res[0] && res[0].score >= PUNTAJE.ORIGINAL) return { ...item, estado: 'ok', producto: resumen(res[0].p), motivo: res[0].motivo };
+  const opciones = res.filter(r => r.score >= PUNTAJE.TEXTO).slice(0, 3).map(r => ({ ...resumen(r.p), motivo: r.motivo }));
   return { ...item, estado: opciones.length ? 'dudoso' : 'no_encontrado', opciones };
 }
 

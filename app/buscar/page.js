@@ -3,7 +3,7 @@ import CatalogoPie from '../components/CatalogoPie';
 import ProductoCard from '../components/ProductoCard';
 import Registrar from '../components/Registrar';
 import NoEncontrado from '../components/NoEncontrado';
-import { buscar } from '../../lib/catalogo';
+import { buscar, sugerenciasBusqueda } from '../../lib/catalogo';
 import { MARCA, modulo } from '../../lib/marca';
 
 export const dynamic = 'force-dynamic';
@@ -16,6 +16,8 @@ export function generateMetadata({ searchParams }) {
 export default async function BuscarPage({ searchParams }) {
   const q = (searchParams?.q || '').toString().trim();
   const res = q ? await buscar(q, 300) : [];
+  // Sin resultados: ofrecemos marcas y familias reales del catálogo parecidas a lo buscado.
+  const alternativas = q && !res.length ? await sugerenciasBusqueda(q, 6) : [];
   // Primer ejemplo de código del archivo de marca (ej: "5888"), para la ayuda de "sin resultados".
   const ejemploCodigo = (MARCA.codigo.ejemplos || '').split('·')[0].trim();
 
@@ -55,7 +57,7 @@ export default async function BuscarPage({ searchParams }) {
                 No se encontraron productos. Probá con parte del código{ejemploCodigo ? <> (por ejemplo <b>{ejemploCodigo}</b>)</> : null}, con la marca
                 {modulo('maquinas') ? <>, o buscá <a href="/maquinas">por {MARCA.maquinas.singular}</a></> : null}.
               </div>
-              <NoEncontrado q={q} />
+              <NoEncontrado q={q} sugerencias={alternativas} />
             </>
           ) : null}
         </div>

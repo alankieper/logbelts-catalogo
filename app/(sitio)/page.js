@@ -5,8 +5,9 @@ import { logosClaros, logosMarcas } from '../../lib/logosMarcas';
 import { datosSelector } from '../../lib/maquinas';
 import { img } from '../../lib/sitio';
 import { MARCA, enFrase, modulo } from '../../lib/marca';
-import { Auricular, Buscar, Escudo, Flecha, Medalla } from '../components/sitio/Iconos';
+import { Auricular, Escudo, Flecha, Medalla } from '../components/sitio/Iconos';
 import SelectorMaquina from '../components/SelectorMaquina';
+import BuscadorSugerencias from '../components/sitio/BuscadorSugerencias';
 import Dibujo from '../components/sitio/Dibujo';
 import Piezas3D from '../components/sitio/Piezas3D';
 import { DesmalezadoraContorno, MinitractorContorno, MotosierraContorno } from '../components/sitio/LineasMaquinas';
@@ -101,11 +102,14 @@ export default async function Inicio() {
               Abastecemos a comercios y talleres de todo el país.
             </p>
 
-            <form className="hero__buscar" action="/buscar" method="get" role="search">
-              <label htmlFor="hero-q" style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clipPath: 'inset(50%)' }}>Buscar repuestos</label>
-              <input id="hero-q" name="q" type="search" placeholder="Código, código original o modelo de máquina" autoComplete="off" />
-              <button type="submit" className="boton"><Buscar /> Buscar</button>
-            </form>
+            <BuscadorSugerencias
+              id="hero-q"
+              formClase="hero__buscar"
+              etiqueta="Buscar repuestos"
+              etiquetaOculta
+              placeholder="Código, código original o modelo de máquina"
+              ancho={560}
+            />
             <p className="hero__ayuda">Ej: {MARCA.codigo.ejemplos}</p>
 
             <div className="hero__acciones">

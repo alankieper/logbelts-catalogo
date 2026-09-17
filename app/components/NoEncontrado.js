@@ -4,12 +4,13 @@ import { useState } from 'react';
 import { PROVINCIAS } from '../../lib/provincias';
 import { waLink } from '../../lib/telefono';
 import { guardarVendedor, WA_GENERAL } from './pedidoStore';
+import '../buscador-sugerencias.css';
 
 /**
  * "¿No encontrás el repuesto? Pedilo": deja el contacto con lo que busca (queda en /admin/contactos
  * asignado al vendedor de la zona) y ofrece seguir por WhatsApp.
  */
-export default function NoEncontrado({ q = '', origen = 'busqueda', titulo, texto, prefijo }) {
+export default function NoEncontrado({ q = '', origen = 'busqueda', titulo, texto, prefijo, sugerencias = [] }) {
   const [estado, setEstado] = useState('form'); // form | enviando | listo
   const [resultado, setResultado] = useState(null);
   const detalleInicial = prefijo ?? (q ? `Busco: ${q}` : '');
@@ -52,6 +53,19 @@ export default function NoEncontrado({ q = '', origen = 'busqueda', titulo, text
 
   return (
     <div className="solicitud">
+      {sugerencias.length ? (
+        <div className="bsug-alt">
+          <p className="bsug-alt__t">Mientras tanto, mirá estas partes del catálogo:</p>
+          <div className="bsug-alt__lista">
+            {sugerencias.map((s) => (
+              <a key={s.href} className="bsug-alt__item" href={s.href}>
+                {s.nombre}
+                <span className="bsug-alt__n">{s.count.toLocaleString('es-AR')}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      ) : null}
       <h2>{titulo || '¿No encontrás el repuesto? Pedilo y te lo buscamos'}</h2>
       <p>{texto || 'Muchos repuestos todavía no están cargados en el catálogo. Contanos qué necesitás y te respondemos.'}</p>
       <form onSubmit={enviar}>

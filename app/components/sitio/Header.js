@@ -1,18 +1,18 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { HERRAMIENTAS, NAV, esCatalogo } from '../../../lib/sitio';
 import { MARCA } from '../../../lib/marca';
 import { Buscar } from './Iconos';
+import BuscadorSugerencias from './BuscadorSugerencias';
 
 /** Encabezado único de todo el sitio. La lupa abre un panel de búsqueda con accesos rápidos del catálogo. */
 export default function Header({ q = '' }) {
   const pathname = usePathname() || '/';
   const [abierto, setAbierto] = useState(false);
   const [buscando, setBuscando] = useState(false);
-  const campo = useRef(null);
 
   useEffect(() => {
     setAbierto(false);
@@ -21,7 +21,6 @@ export default function Header({ q = '' }) {
 
   useEffect(() => {
     if (!buscando) return undefined;
-    campo.current?.focus();
     const cerrarConEsc = (e) => { if (e.key === 'Escape') setBuscando(false); };
     window.addEventListener('keydown', cerrarConEsc);
     return () => window.removeEventListener('keydown', cerrarConEsc);
@@ -92,21 +91,17 @@ export default function Header({ q = '' }) {
       <div id="buscador-sitio" className="buscador" hidden={!buscando}>
         <div className="buscador__fondo" aria-hidden="true" onClick={() => setBuscando(false)} />
         <div className="contenedor buscador__caja">
-          <form action="/buscar" method="get" role="search">
-            <label htmlFor="buscador-q" className="buscador__label">Buscar en el catálogo</label>
-            <div className="buscador__fila">
-              <input
-                ref={campo}
-                id="buscador-q"
-                name="q"
-                type="search"
-                defaultValue={q}
-                placeholder={`${MARCA.codigo.etiqueta}, código original o marca y modelo`}
-                autoComplete="off"
-              />
-              <button type="submit" className="boton"><Buscar /> <span>Buscar</span></button>
-            </div>
-          </form>
+          <BuscadorSugerencias
+            id="buscador-q"
+            filaClase="buscador__fila"
+            etiqueta="Buscar en el catálogo"
+            etiquetaClase="buscador__label"
+            placeholder={`${MARCA.codigo.etiqueta}, código original o marca y modelo`}
+            defaultValue={q}
+            ancho={760}
+            enfocar={buscando}
+            onCerrar={() => setBuscando(false)}
+          />
           <p className="buscador__ayuda">Ej: {MARCA.codigo.ejemplos}</p>
           <nav className="buscador__accesos" aria-label="Accesos rápidos del catálogo">
             {HERRAMIENTAS.map(({ href, label }) => (
