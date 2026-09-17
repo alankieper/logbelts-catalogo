@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import * as XLSX from 'xlsx';
 import { buscar, getProducto } from '../../../lib/catalogo';
+import { MARCA } from '../../../lib/marca';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -23,8 +24,9 @@ function interpretarLinea(texto) {
   if (cantExplicita) cant = Number(cantExplicita[1]);
 
   const tokens = limpio.split(/[\s\t;,|]+/).filter(Boolean);
-  const logbelts = tokens.find(t => /^\d{7}$/.test(t));
-  let codigo = logbelts;
+  // Código propio del catálogo (en Logbelts, 7 dígitos). Con otro formato igual lo resuelve la búsqueda de abajo.
+  const propio = tokens.find(t => /^\d{7}$/.test(t));
+  let codigo = propio;
   if (!codigo) {
     codigo = tokens
       .filter(t => /\d/.test(t) && t.replace(/[^a-z0-9]/gi, '').length >= 4 && !/^\d{1,4}$/.test(t))
@@ -55,7 +57,7 @@ function lineasDeExcel(buffer) {
 async function resolver(item) {
   if (!item || !item.codigo) return { entrada: item?.entrada || '', cant: item?.cant || 1, estado: 'no_encontrado', opciones: [] };
   const exacto = await getProducto(item.codigo);
-  if (exacto) return { ...item, estado: 'ok', producto: resumen(exacto), motivo: 'Código Logbelts' };
+  if (exacto) return { ...item, estado: 'ok', producto: resumen(exacto), motivo: MARCA.codigo.etiqueta };
 
   const res = await buscar(item.codigo, 4);
   if (res[0] && res[0].score >= 100) return { ...item, estado: 'ok', producto: resumen(res[0].p), motivo: res[0].motivo };

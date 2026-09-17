@@ -6,6 +6,13 @@
  */
 import DibujoVisible from './DibujoVisible';
 import { dibujoFamilia, Universal } from './sitio/LineasRepuestos';
+import { modulo } from '../../lib/marca';
+
+/**
+ * ¿Está prendido el módulo de dibujos? Las páginas lo usan para elegir las clases
+ * (tarjeta con dibujo grande o tarjeta compacta con ícono, como antes).
+ */
+export const hayDibujos = () => modulo('dibujos');
 
 /** Elige el dibujo más específico: primero por el nombre propio, si no por el de la familia. */
 export function elegirDibujo(...nombres) {
@@ -19,6 +26,7 @@ export function elegirDibujo(...nombres) {
 
 /** Marca de agua grande y tenue, del lado derecho del encabezado de familia o subcategoría. */
 export function MarcaDeAgua({ nombre, familia }) {
+  if (!modulo('dibujos')) return null;
   const D = elegirDibujo(nombre, familia);
   return (
     <DibujoVisible className="pghead__dib" aria-hidden="true">
@@ -29,6 +37,7 @@ export function MarcaDeAgua({ nombre, familia }) {
 
 /** Dibujo grande de una tarjeta de familia / subcategoría (mismo aire que las tarjetas .tipo). */
 export function DibujoTile({ nombre, familia }) {
+  if (!modulo('dibujos')) return null;
   const D = elegirDibujo(nombre, familia);
   return (
     <DibujoVisible as="span" className="tdib" aria-hidden="true">
@@ -39,6 +48,7 @@ export function DibujoTile({ nombre, familia }) {
 
 /** Dibujo tenue y centrado para un producto sin foto (sin animación: hay muchos por grilla). */
 export function DibujoSinFoto({ subcategoria, familia }) {
+  if (!modulo('dibujos')) return null;
   const D = elegirDibujo(subcategoria, familia);
   return (
     <span className="noimg__dib" aria-hidden="true">

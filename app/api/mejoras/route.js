@@ -1,6 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { NextResponse } from 'next/server';
 import { supabase } from '../../../lib/supabase';
+import { MARCA } from '../../../lib/marca';
 
 const MIME_A_MEDIA_TYPE = {
   'image/jpeg': 'image/jpeg',
@@ -13,7 +14,7 @@ async function pedirPropuestaIA({ instruccion, productoCodigo, pagina, referenci
   const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
   const contexto = [
-    'Sos un asistente que ayuda al equipo comercial de Logbelts (venden motosierras, cadenas, espadas, piñones, filtros, desmalezadoras, minitractores, motores 4T y repuestos) a preparar propuestas de mejora para su catálogo de productos.',
+    `Sos un asistente que ayuda al equipo comercial de ${MARCA.nombre} (${MARCA.rubro}: ${MARCA.descripcionCorta}) a preparar propuestas de mejora para su catálogo de productos.`,
     'Un vendedor propuso un cambio. Tu tarea es redactar una propuesta de edición clara y accionable para que un editor humano la revise y apruebe. No inventes datos que no te dieron: si falta información, decilo en el resumen.',
     `Código de producto: ${productoCodigo || 'no especificado'}`,
     `Página del catálogo: ${pagina || 'no especificada'}`,

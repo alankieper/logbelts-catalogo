@@ -1,13 +1,16 @@
+import { notFound } from 'next/navigation';
 import CatalogoHeader from '../components/CatalogoHeader';
 import CatalogoPie from '../components/CatalogoPie';
 import PedidoRapido from '../components/PedidoRapido';
+import { MARCA, modulo } from '../../lib/marca';
 
 export const metadata = {
   title: 'Pedido rápido por códigos',
-  description: 'Pegá tu lista de códigos Logbelts u originales, o subí un Excel, y armá el pedido en segundos.',
+  description: `Pegá tu lista de códigos propios u originales, o subí un Excel, y armá el pedido de ${MARCA.nombre} en segundos.`,
 };
 
 export default function PedidoRapidoPage() {
+  if (!modulo('pedidoRapido')) notFound();
   return (
     <>
       <CatalogoHeader />

@@ -1,6 +1,7 @@
 import AdminHeader from '../AdminHeader';
 import { guardarDespiece, borrarDespiece } from './actions';
 import { leerCurados, catalogoModelos } from '../../../lib/despieces';
+import { MARCA } from '../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
@@ -18,7 +19,7 @@ export default async function AdminManuales({ searchParams }) {
         <div className="wrap">
           <h1>Manuales y despieces</h1>
           <p className="sub">
-            Cargá acá los PDF de despieces / manuales que Logbelts obtiene por canales propios
+            Cargá acá los PDF de despieces / manuales que {MARCA.nombre} obtiene por canales propios
             (proveedor, portal de concesionario) o el enlace oficial de la marca. Se enganchan
             solos a los productos por marca + modelo. <b>No cargar material de otras webs sin permiso.</b>
           </p>

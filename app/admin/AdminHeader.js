@@ -1,4 +1,5 @@
 import '../catalogo-extra.css';
+import { MARCA } from '../../lib/marca';
 
 export default function AdminHeader({ activo }) {
   const link = (href, label, key) => (
@@ -10,7 +11,7 @@ export default function AdminHeader({ activo }) {
     <header className="adm-top">
       <div className="wrap">
         <a className="brand" href="/admin">
-          <img src="/logo-blanco.png" alt="Logbelts" />
+          <img src={MARCA.logoClaro} alt={MARCA.nombre} />
         </a>
         <nav>
           {link('/admin', 'Tablero', 'home')}

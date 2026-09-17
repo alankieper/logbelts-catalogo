@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { COLOR_TEXT_LIGHT_MUTED, FONT_TEXTO } from '../theme';
 import { IconCatalogo, IconAdmin, IconSalir } from './Icons';
 import { esAdmin } from '../../lib/admins';
+import { MARCA } from '../../lib/marca';
 
 const navBar = {
   backgroundColor: 'rgba(7,21,49,0.72)',
@@ -100,7 +101,7 @@ export default function Nav() {
   return (
     <nav style={navBar}>
       <a href="/" style={logoLink}>
-        <img src="/logo-blanco.png" alt="Logbelts" style={logoImg} />
+        <img src={MARCA.logoClaro} alt={MARCA.nombre} style={logoImg} />
       </a>
       <div style={navLinks}>
         <a href="/catalogo" style={pathname?.startsWith('/catalogo') ? pillLinkActive : pillLink}>

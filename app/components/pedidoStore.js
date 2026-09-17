@@ -1,8 +1,13 @@
 // Estado del pedido y datos del visitante guardados en el navegador (sin precios: los cotiza el vendedor).
 import { logEvento } from './Registrar';
 import { telefonoWhatsApp } from '../../lib/telefono';
+import { MARCA } from '../../lib/marca';
 
-export const WA_GENERAL = '5491161142012';
+/** Número general del negocio: sale del link de WhatsApp de lib/marca.js, o del teléfono. */
+export const WA_GENERAL =
+  String(MARCA.contacto?.whatsapp || '').replace(/[^0-9]/g, '') ||
+  telefonoWhatsApp(MARCA.contacto?.telefono) ||
+  '';
 const K_PEDIDO = 'lb_pedido';
 const K_HISTORIAL = 'lb_pedidos_hist';
 const K_FAVORITOS = 'lb_favoritos';
@@ -56,7 +61,7 @@ export const linkWhatsApp = (texto, numero = numeroWhatsApp()) =>
 // ---- Envío por WhatsApp + registro ----
 export function textoPedido(items) {
   const lineas = items.map(x => `- ${x.cant > 1 ? `${x.cant} x ` : ''}${x.codigo} · ${x.nombre}`).join('\n');
-  return `Hola, quiero hacer este pedido (Catálogo Logbelts):\n${lineas}`;
+  return `Hola, quiero hacer este pedido (Catálogo ${MARCA.nombre}):\n${lineas}`;
 }
 
 export function enviarPedido(items, origen = 'lista') {

@@ -11,6 +11,7 @@ import { getProducto, getRelacionados, getVecinos, getFamilia, slugify } from '.
 import { despiecesDeProducto } from '../../../lib/despieces';
 import { compatiblesPorMaquina, maquinasDeProducto } from '../../../lib/maquinas';
 import { SITE_URL } from '../../../lib/seo';
+import { MARCA, modulo } from '../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }) {
   const title = `${nom}${marca ? ` ${marca}` : ''} — código ${p.codigo}`;
   const desc =
     (descReal ? p.descripcion + '. ' : '') +
-    `Repuesto Logbelts código ${p.codigo}` +
+    `Repuesto ${MARCA.nombre} código ${p.codigo}` +
     (oem ? ` · equivale a ${oem}` : '') +
     (marca ? ` · compatible con ${marca}` : '') +
     '. Consultá por WhatsApp (venta mayorista).';
@@ -51,9 +52,11 @@ export default async function ProductoPage({ params }) {
   const sub = fam?.subcats.find((s) => s.slug === p.subSlug);
   const rel = await getRelacionados(codigo, 4);
   const { prev, next } = await getVecinos(codigo);
-  const desp = await despiecesDeProducto(codigo, p.compatibilidad);
-  const maquinas = maquinasDeProducto(codigo);
-  const compatibles = await compatiblesPorMaquina(codigo, 8);
+  const hayDespiece = modulo('despiece');
+  const hayMaquinas = modulo('maquinas');
+  const desp = hayDespiece ? await despiecesDeProducto(codigo, p.compatibilidad) : { curados: [], oficiales: [] };
+  const maquinas = hayMaquinas ? maquinasDeProducto(codigo) : [];
+  const compatibles = hayMaquinas ? await compatiblesPorMaquina(codigo, 8) : [];
 
   const derivada = p.fuente_desc && p.fuente_desc.startsWith('derivada');
   const tieneDesc = !!(p.descripcion && !derivada);
@@ -109,14 +112,14 @@ export default async function ProductoPage({ params }) {
                 <video key={src} className="gvideo" src={src} controls preload="metadata" playsInline />
               ))}
               <p className="gcap">
-                {fotoSrc ? 'Imagen del catálogo Logbelts · pasá el mouse para ampliar' : 'Sin imagen en el catálogo'}
+                {fotoSrc ? `Imagen del catálogo ${MARCA.nombre} · pasá el mouse para ampliar` : 'Sin imagen en el catálogo'}
               </p>
             </div>
 
             <div>
               <div className="dhead">
                 <div className="dcode">
-                  <span className="dcode-k">Código Logbelts</span>
+                  <span className="dcode-k">{MARCA.codigo.etiqueta}</span>
                   <span className="dcode-n">{p.codigo}</span>
                 </div>
                 <h1>{p.nombre || p.clave_producto || 'Producto'}</h1>
@@ -183,9 +186,9 @@ export default async function ProductoPage({ params }) {
                 )}
               </div>
 
-              {desp.oficiales.length ? (
+              {hayDespiece && desp.oficiales.length ? (
                 <div className="specsheet">
-                  <h3>Despiece de la máquina</h3>
+                  <h3>Despiece de la {MARCA.maquinas.singular}</h3>
                   {desp.curados.map((c) => (
                     <div className="srow" key={c.id}>
                       <dt>{c.marca} {c.modelo}</dt>
@@ -215,7 +218,7 @@ export default async function ProductoPage({ params }) {
                   <div className="srow">
                     <dt>—</dt>
                     <dd className="mut" style={{ fontSize: 11.5 }}>
-                      Enlaces a sitios oficiales de cada marca. Los PDF propios de Logbelts se cargan desde Administración.
+                      Enlaces a sitios oficiales de cada marca. Los PDF propios de {MARCA.nombre} se cargan desde Administración.
                     </dd>
                   </div>
                 </div>
@@ -227,7 +230,7 @@ export default async function ProductoPage({ params }) {
                 <BotonFavorito codigo={p.codigo} nombre={p.nombre || p.clave_producto || p.codigo} />
               </div>
 
-              <p className="dfoot">Referencia: Catálogo Logbelts 2025/26 · página {p.pagina || '—'}</p>
+              <p className="dfoot">Referencia: Catálogo {MARCA.nombre} · página {p.pagina || '—'}</p>
               <Registrar tipo="ver" codigo={p.codigo} />
             </div>
           </div>
@@ -251,7 +254,7 @@ export default async function ProductoPage({ params }) {
 
           {compatibles.length ? (
             <div className="related">
-              <h2>Otros repuestos para las mismas máquinas</h2>
+              <h2>Otros repuestos para las mismas {MARCA.maquinas.plural}</h2>
               <div className="pgrid">
                 {compatibles.map((r) => (
                   <ProductoCard key={r.codigo} p={r} />

@@ -4,6 +4,7 @@ import { getFamilias, getMarcasConteo } from '../../lib/catalogo';
 import { logosClaros, logosMarcas } from '../../lib/logosMarcas';
 import { datosSelector } from '../../lib/maquinas';
 import { img } from '../../lib/sitio';
+import { MARCA, enFrase, modulo } from '../../lib/marca';
 import { Auricular, Buscar, Escudo, Flecha, Medalla } from '../components/sitio/Iconos';
 import SelectorMaquina from '../components/SelectorMaquina';
 import Dibujo from '../components/sitio/Dibujo';
@@ -30,8 +31,8 @@ const TIPOS = [
   { Icono: Carburador, nombre: 'Carburadores', href: '/f/carburacion' },
   { Icono: Piston, nombre: 'Pistones y cilindros', href: '/buscar?q=piston' },
   { Icono: Bujia, nombre: 'Bujías y encendido', href: '/buscar?q=bujia' },
-  { Icono: Cadena, nombre: 'Cadenas y espadas', href: '/guias/espadas-y-cadenas' },
-  { Icono: Correa, nombre: 'Correas y poleas', href: '/guias/correas' },
+  { Icono: Cadena, nombre: 'Cadenas y espadas', href: modulo('guias') ? '/guias/espadas-y-cadenas' : '/buscar?q=cadena' },
+  { Icono: Correa, nombre: 'Correas y poleas', href: modulo('guias') ? '/guias/correas' : '/buscar?q=correa' },
   { Icono: FiltroAire, nombre: 'Filtros de aire', href: '/buscar?q=filtro%20aire' },
   { Icono: Cabezal, nombre: 'Cabezales y tanzas', href: '/buscar?q=cabezal' },
   { Icono: Arranque, nombre: 'Sistemas de arranque', href: '/f/sistemas-de-arranque' },
@@ -105,7 +106,7 @@ export default async function Inicio() {
               <input id="hero-q" name="q" type="search" placeholder="Código, código original o modelo de máquina" autoComplete="off" />
               <button type="submit" className="boton"><Buscar /> Buscar</button>
             </form>
-            <p className="hero__ayuda">Ej: 5888 · Stihl MS 250 · Husqvarna 143R</p>
+            <p className="hero__ayuda">Ej: {MARCA.codigo.ejemplos}</p>
 
             <div className="hero__acciones">
               <Link href="/contacto" className="boton boton--claro">Quiero ser distribuidor <Flecha /></Link>
@@ -145,7 +146,7 @@ export default async function Inicio() {
               <p className="antetitulo">Catálogo de repuestos</p>
               <h2 id="catalogo-titulo" className="titulo-seccion">Todo el catálogo, por familia</h2>
               <p className="bajada" style={{ marginTop: 14 }}>
-                Buscá por código Logbelts, por código original del fabricante o por marca y modelo de máquina.
+                Buscá por {enFrase(MARCA.codigo.etiqueta)}, por código original del fabricante o por marca y modelo de {MARCA.maquinas.singular}.
               </p>
             </div>
             <Link className="boton boton--borde" href="/descargas">Catálogos en PDF <Flecha /></Link>
@@ -166,24 +167,26 @@ export default async function Inicio() {
           <p className="catalogo-portada__aviso">Venta mayorista únicamente. Comunicate con nuestros vendedores para más información.</p>
         </div>
       </section>
+      {modulo('maquinas') && (
       <section className="herramientas oscuro con-decor" aria-labelledby="herramientas-titulo">
         <Decor Icono={Correa} clase="decor--der-arriba decor--grande" />
         <div className="contenedor herramientas__grilla">
           <div>
             <p className="antetitulo">Encontrá el repuesto correcto</p>
-            <h2 id="herramientas-titulo" className="titulo-seccion">¿Para qué máquina es?</h2>
+            <h2 id="herramientas-titulo" className="titulo-seccion">¿Para qué {MARCA.maquinas.singular} es?</h2>
             <p className="bajada">Elegí marca y modelo y te mostramos los repuestos compatibles del catálogo.</p>
           </div>
           <div>
             <SelectorMaquina datos={datosSelector()} oscuro />
             <div className="herramientas__accesos">
-              <a href="/pedido-rapido"><strong>Pedido rápido</strong><span>Pegá tus códigos o subí un Excel</span></a>
-              <Link href="/guias"><strong>Guías técnicas</strong><span>Correas, espadas y cadenas por medida</span></Link>
+              {modulo('pedidoRapido') && <a href="/pedido-rapido"><strong>Pedido rápido</strong><span>Pegá tus códigos o subí un Excel</span></a>}
+              {modulo('guias') && <Link href="/guias"><strong>Guías técnicas</strong><span>Correas, espadas y cadenas por medida</span></Link>}
               <a href="/mi-cuenta"><strong>Mi cuenta</strong><span>Favoritos y pedidos para repetir</span></a>
             </div>
           </div>
         </div>
       </section>
+      )}
       <section className="seccion tipos con-decor" aria-labelledby="tipos-titulo">
         <Decor Icono={Carburador} clase="decor--izq-arriba decor--enorme" />
         <Decor Icono={FiltroAire} clase="decor--der-abajo" />
@@ -231,17 +234,17 @@ export default async function Inicio() {
               ))}
             </ul>
           </div>
-          <Piezas3D />
+          {modulo('piezas3d') && <Piezas3D />}
         </div>
       </section>
       <section className="seccion con-decor" aria-labelledby="porque-titulo">
         <Decor Icono={Bujia} clase="decor--izq-abajo" />
         <div className="contenedor porque__grilla">
           <div>
-            <p className="antetitulo">Por qué Logbelts</p>
+            <p className="antetitulo">Por qué {MARCA.nombre}</p>
             <h2 id="porque-titulo" className="titulo-seccion">Experiencia y solución</h2>
             <p className="bajada" style={{ marginTop: 16 }}>
-              Cuando elegís Logbelts no comprás solo un repuesto: sumás un proveedor que te acompaña.
+              Cuando elegís {MARCA.nombre} no comprás solo un repuesto: sumás un proveedor que te acompaña.
               Nuestro principal motor es tu satisfacción.
             </p>
             <div className="valores">
@@ -257,8 +260,8 @@ export default async function Inicio() {
             </div>
           </div>
           <div className="porque__fotos">
-            <Image src={img('35b7b447b348484c9263a1ec91cde1eff000')} alt="Asesor de Logbelts explicando el uso de una desmalezadora" width={540} height={828} sizes="(max-width: 900px) 45vw, 270px" />
-            <Image src={img('b07cb7ce240040feb30766b5e4571b47f000')} alt="Asesor de Logbelts con cabezales y bobinas de tanza" width={540} height={828} sizes="(max-width: 900px) 45vw, 270px" />
+            <Image src={img('35b7b447b348484c9263a1ec91cde1eff000')} alt={`Asesor de ${MARCA.nombre} explicando el uso de una desmalezadora`} width={540} height={828} sizes="(max-width: 900px) 45vw, 270px" />
+            <Image src={img('b07cb7ce240040feb30766b5e4571b47f000')} alt={`Asesor de ${MARCA.nombre} con cabezales y bobinas de tanza`} width={540} height={828} sizes="(max-width: 900px) 45vw, 270px" />
           </div>
         </div>
       </section>
@@ -268,7 +271,7 @@ export default async function Inicio() {
           <p className="antetitulo">Temporada primavera · verano</p>
           <h2 className="display">Prepará tu stock para la temporada</h2>
           <p className="temporada__bajada">¡No te lo pierdas!</p>
-          <p>Registrate como distribuidor e incorporá toda la línea de productos de calidad Logbelts.</p>
+          <p>Registrate como distribuidor e incorporá toda la línea de productos de calidad {MARCA.nombre}.</p>
           <div className="hero__acciones">
             <Link href="/contacto" className="boton boton--claro">Contactate con nosotros <Flecha /></Link>
           </div>
@@ -293,8 +296,8 @@ export default async function Inicio() {
           </ol>
           <div className="pasos__cta">
             <Link href="/contacto" className="boton boton--claro">Quiero ser distribuidor <Flecha /></Link>
-            <Link href="/distribuidores" className="boton boton--borde">Ya soy distribuidor</Link>
-            <Link href="/donde-comprar" className="boton boton--borde">Dónde comprar</Link>
+            {modulo('distribuidores') && <Link href="/distribuidores" className="boton boton--borde">Ya soy distribuidor</Link>}
+            {modulo('distribuidores') && <Link href="/donde-comprar" className="boton boton--borde">Dónde comprar</Link>}
           </div>
         </div>
       </section>

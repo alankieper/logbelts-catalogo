@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { MARCA, modulo } from '../../../../lib/marca';
 import { correas } from '../../../../lib/guias';
 import FiltroCorreas from '../../../components/sitio/FiltroCorreas';
 
@@ -6,10 +8,11 @@ export const revalidate = 3600;
 
 export const metadata = {
   title: 'Correas de minitractor: cómo medirlas y buscador',
-  description: 'Guía para identificar correas de plataforma y transmisión de minitractores, con buscador por largo, ancho y marca sobre el catálogo Logbelts.',
+  description: `Guía para identificar correas de plataforma y transmisión de minitractores, con buscador por largo, ancho y marca sobre el catálogo ${MARCA.nombre}.`,
 };
 
 export default async function GuiaCorreas() {
+  if (!modulo('guias')) notFound();
   const lista = await correas();
 
   return (

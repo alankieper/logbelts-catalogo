@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { createClient } from '../../lib/supabase/client';
 import { pageStyle, containerStyle, heroTitleStyle, heroSubtitleStyle, cardStyle, COLOR_PRIMARY, COLOR_ERROR, COLOR_CEMENTO, SHADOW_SOFT, FONT_TEXTO } from '../theme';
 import { IconCatalogo, IconMejora } from '../components/Icons';
+import { MARCA } from '../../lib/marca';
 
 const page = pageStyle;
 const container = containerStyle('640px');
@@ -50,7 +51,7 @@ export default function CatalogoDigital() {
     <main style={page}>
       <div style={container}>
         <h1 style={heroTitleStyle}><IconCatalogo width={26} height={26} style={{ verticalAlign: '-4px', marginRight: '8px' }} />Catálogo Digital</h1>
-        <p style={heroSubtitleStyle}>Mirá el catálogo vigente de Logbelts.</p>
+        <p style={heroSubtitleStyle}>Mirá el catálogo vigente de {MARCA.nombre}.</p>
 
         <div style={card}>
           {loading && <p style={{ color: COLOR_CEMENTO, fontFamily: FONT_TEXTO }}>Cargando...</p>}

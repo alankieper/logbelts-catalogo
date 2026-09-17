@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { MARCA, modulo } from '../../../lib/marca';
 import { Flecha } from '../../components/sitio/Iconos';
 
 export const metadata = {
   title: 'Guías técnicas',
-  description: 'Cómo identificar correas de minitractor, espadas y cadenas de motosierra, y cuándo usar tanza o cuchilla. Con buscador sobre el catálogo Logbelts.',
+  description: `Cómo identificar correas de minitractor, espadas y cadenas de motosierra, y cuándo usar tanza o cuchilla. Con buscador sobre el catálogo ${MARCA.nombre}.`,
 };
 
 const GUIAS = [
@@ -13,11 +15,13 @@ const GUIAS = [
 ];
 
 export default function Guias() {
+  if (!modulo('guias')) notFound();
+
   return (
     <>
       <section className="cabecera oscuro">
         <div className="contenedor">
-          <p className="antetitulo">Aprendé con Logbelts</p>
+          <p className="antetitulo">Aprendé con {MARCA.nombre}</p>
           <h1 className="titulo-seccion">Guías técnicas</h1>
           <p>Para identificar el repuesto correcto en el mostrador, sin vueltas.</p>
         </div>

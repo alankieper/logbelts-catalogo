@@ -2,6 +2,7 @@ import AdminHeader from '../AdminHeader';
 import { leerTodos } from '../../../lib/catalogoStore';
 import { RUBROS, SUBRUBROS, PRODUCTOS, decodificarCodigo } from '../../../lib/codigoLogbelts';
 import ExplorarCodigos from './ExplorarCodigos';
+import { MARCA } from '../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
@@ -17,7 +18,7 @@ export default async function Codigos() {
       <AdminHeader activo="codigos" />
       <main className="adm">
         <div className="wrap">
-          <h1>Códigos Logbelts</h1>
+          <h1>Códigos de {MARCA.nombre}</h1>
           <p className="sub">
             Esquema [RUBRO][SUBRUBRO][PRODUCTO][ITEM] = 7 dígitos. Sirve para decodificar cualquier código
             y para armar el código de un producto nuevo desde "Agregar producto".

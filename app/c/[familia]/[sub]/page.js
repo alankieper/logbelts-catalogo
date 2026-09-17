@@ -5,6 +5,7 @@ import ProductoCard from '../../../components/ProductoCard';
 import FiltrosMovil from '../../../components/FiltrosMovil';
 import { MarcaDeAgua } from '../../../components/DibujoCatalogo';
 import { getFamilia, getProductosDeSubcategoria, slugify } from '../../../../lib/catalogo';
+import { MARCA } from '../../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
@@ -14,8 +15,8 @@ export async function generateMetadata({ params }) {
   if (!sub) return { title: 'Categoría no encontrada' };
   const n = (await getProductosDeSubcategoria(fam.slug, sub.slug)).length;
   const title = `${sub.nombre} para ${fam.nombre.toLowerCase()}`;
-  const description = `${n} repuestos Logbelts de ${sub.nombre.toLowerCase()} para ${fam.nombre.toLowerCase()}. Buscá por código, código original o marca. Venta mayorista.`;
-  return { title, description, openGraph: { title: `${title} · Logbelts`, description, images: ['/opengraph-image.png'] } };
+  const description = `${n} repuestos ${MARCA.nombre} de ${sub.nombre.toLowerCase()} para ${fam.nombre.toLowerCase()}. Buscá por código, código original o marca. Venta mayorista.`;
+  return { title, description, openGraph: { title: `${title} · ${MARCA.nombre}`, description, images: ['/opengraph-image.png'] } };
 }
 
 export default async function SubcategoriaPage({ params, searchParams }) {

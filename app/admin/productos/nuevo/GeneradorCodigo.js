@@ -2,6 +2,7 @@
 
 import { useMemo, useRef, useState } from 'react';
 import { RUBROS, SUBRUBROS, PRODUCTOS, siguienteItem, armarCodigo } from '../../../../lib/codigoLogbelts';
+import { MARCA } from '../../../../lib/marca';
 
 export default function GeneradorCodigo({ codigos }) {
   const [rubro, setRubro] = useState('');
@@ -21,7 +22,7 @@ export default function GeneradorCodigo({ codigos }) {
 
   return (
     <div className="cod-gen">
-      <label>Código Logbelts *</label>
+      <label>{MARCA.codigo.etiqueta} *</label>
       <input ref={inputRef} name="codigo" required placeholder="Ej: 5888090" maxLength={7} />
 
       <p className="cod-gen-label">¿No sabés qué código poner? Armalo acá:</p>

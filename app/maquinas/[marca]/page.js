@@ -4,6 +4,7 @@ import CatalogoPie from '../../components/CatalogoPie';
 import ListaModelos from '../../components/ListaModelos';
 import { listarMarcas, listarModelos } from '../../../lib/maquinas';
 import { SITE_URL } from '../../../lib/seo';
+import { MARCA, modulo } from '../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
@@ -27,7 +28,7 @@ export function generateMetadata({ params }) {
   const nm = datos.modelos.length;
   const title = `Repuestos para ${datos.marca} por modelo`;
   const description =
-    `${datos.nProductos} ${plural(datos.nProductos, 'repuesto Logbelts compatible', 'repuestos Logbelts compatibles')} con ` +
+    `${datos.nProductos} ${plural(datos.nProductos, `repuesto ${MARCA.nombre} compatible`, `repuestos ${MARCA.nombre} compatibles`)} con ` +
     `${nm} ${plural(nm, 'modelo', 'modelos')} de ${datos.marca}` +
     (datos.destacados.length ? `, como ${datos.destacados.slice(0, 3).map((m) => m.modelo).join(', ')}` : '') +
     '. Venta mayorista.';
@@ -41,6 +42,7 @@ export function generateMetadata({ params }) {
 }
 
 export default function MarcaMaquinaPage({ params }) {
+  if (!modulo('maquinas')) notFound();
   const datos = datosMarca(params.marca);
   if (!datos) notFound();
 
@@ -51,7 +53,7 @@ export default function MarcaMaquinaPage({ params }) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Catálogo', item: `${SITE_URL}/#catalogo` },
-      { '@type': 'ListItem', position: 2, name: 'Por máquina', item: `${SITE_URL}/maquinas` },
+      { '@type': 'ListItem', position: 2, name: `Por ${MARCA.maquinas.singular}`, item: `${SITE_URL}/maquinas` },
       { '@type': 'ListItem', position: 3, name: datos.marca, item: url },
     ],
   };
@@ -82,13 +84,13 @@ export default function MarcaMaquinaPage({ params }) {
           <nav className="crumb">
             <a href="/#catalogo">Catálogo</a>
             <span className="sep">/</span>
-            <a href="/maquinas">Por máquina</a>
+            <a href="/maquinas">Por {MARCA.maquinas.singular}</a>
             <span className="sep">/</span>
             <span aria-current="page">{datos.marca}</span>
           </nav>
           <h1 className="page">Repuestos para {datos.marca}</h1>
           <p className="lead">
-            El catálogo Logbelts tiene {datos.nProductos}{' '}
+            El catálogo {MARCA.nombre} tiene {datos.nProductos}{' '}
             {plural(datos.nProductos, 'repuesto compatible', 'repuestos compatibles')} con {nm}{' '}
             {plural(nm, 'modelo', 'modelos')} de {datos.marca}.
             {datos.destacados.length ? (

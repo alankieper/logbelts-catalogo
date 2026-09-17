@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { HERRAMIENTAS, NAV, esCatalogo } from '../../../lib/sitio';
+import { MARCA } from '../../../lib/marca';
 import { Buscar } from './Iconos';
 
 /** Encabezado único de todo el sitio. La lupa abre un panel de búsqueda con accesos rápidos del catálogo. */
@@ -35,9 +36,9 @@ export default function Header({ q = '' }) {
   return (
     <header className="sitio-header">
       <div className="contenedor sitio-header__fila">
-        <Link href="/" className="sitio-header__logo" aria-label="Logbelts, ir al inicio">
+        <Link href="/" className="sitio-header__logo" aria-label={`${MARCA.nombre}, ir al inicio`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo-blanco.png" alt="Logbelts" width="89" height="44" />
+          <img src={MARCA.logoClaro} alt={MARCA.nombre} width="89" height="44" />
         </Link>
 
         <nav id="menu-sitio" className="sitio-nav" data-abierto={abierto} aria-label="Principal">
@@ -100,13 +101,13 @@ export default function Header({ q = '' }) {
                 name="q"
                 type="search"
                 defaultValue={q}
-                placeholder="Código Logbelts, código original o marca y modelo"
+                placeholder={`${MARCA.codigo.etiqueta}, código original o marca y modelo`}
                 autoComplete="off"
               />
               <button type="submit" className="boton"><Buscar /> <span>Buscar</span></button>
             </div>
           </form>
-          <p className="buscador__ayuda">Ej: 5888 · Stihl MS 250 · Husqvarna 143R</p>
+          <p className="buscador__ayuda">Ej: {MARCA.codigo.ejemplos}</p>
           <nav className="buscador__accesos" aria-label="Accesos rápidos del catálogo">
             {HERRAMIENTAS.map(({ href, label }) => (
               <a key={href} href={href} aria-current={actual(href) ? 'page' : undefined}>{label}</a>

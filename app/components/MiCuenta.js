@@ -2,10 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import { waLink } from '../../lib/telefono';
+import { MARCA } from '../../lib/marca';
 import {
   agregarAlPedido, descargarCSV, guardarFavoritos, guardarPedidoLocal,
   leerFavoritos, leerHistorial, leerVendedor, WA_GENERAL,
 } from './pedidoStore';
+
+const ARCHIVO = MARCA.nombre.toLowerCase().normalize('NFD').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'catalogo';
 
 const fecha = (iso) => new Date(iso).toLocaleString('es-AR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
 
@@ -30,7 +33,7 @@ export default function MiCuenta() {
 
   if (!listo) return null;
 
-  const waVendedor = waLink(vendedor?.telefono, 'Hola, te escribo desde el catálogo Logbelts.') || `https://wa.me/${WA_GENERAL}`;
+  const waVendedor = waLink(vendedor?.telefono, `Hola, te escribo desde el catálogo ${MARCA.nombre}.`) || `https://wa.me/${WA_GENERAL}`;
 
   return (
     <div className="mc-grid">
@@ -75,7 +78,7 @@ export default function MiCuenta() {
                 <button type="button" className="pr-btn" onClick={() => { agregarAlPedido(favoritos.map((f) => ({ ...f, cant: 1 }))); setAviso('Favoritos agregados al pedido.'); }}>
                   Agregar todos al pedido
                 </button>
-                <button type="button" className="pr-btn ghost" onClick={() => descargarCSV('favoritos-logbelts.csv', [['Código', 'Producto'], ...favoritos.map((f) => [f.codigo, f.nombre])])}>
+                <button type="button" className="pr-btn ghost" onClick={() => descargarCSV(`favoritos-${ARCHIVO}.csv`, [['Código', 'Producto'], ...favoritos.map((f) => [f.codigo, f.nombre])])}>
                   Descargar lista
                 </button>
               </div>

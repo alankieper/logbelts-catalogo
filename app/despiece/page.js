@@ -1,18 +1,21 @@
+import { notFound } from 'next/navigation';
 import CatalogoHeader from '../components/CatalogoHeader';
 import CatalogoPie from '../components/CatalogoPie';
 import { catalogoModelos, leerCurados } from '../../lib/despieces';
 import { linkDespiece } from '../../lib/despieceLinks';
 import { slugify } from '../../lib/catalogo';
+import { MARCA, modulo } from '../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 export const metadata = {
   title: 'Despiece por modelo',
-  description: 'Despieces y diagramas de partes por marca y modelo de máquina, con acceso directo a cada modelo y a los repuestos Logbelts compatibles.',
+  description: `Despieces y diagramas de partes por marca y modelo de ${MARCA.maquinas.singular}, con acceso directo a cada modelo y a los repuestos ${MARCA.nombre} compatibles.`,
 };
 
 const plano = (s) => (s || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
 
 export default async function DespiecePage({ searchParams }) {
+  if (!modulo('despiece')) notFound();
   const grupos = catalogoModelos();
   const curados = (await leerCurados()).filter((c) => c.publico);
   const marcaF = searchParams?.marca || '';
@@ -37,8 +40,8 @@ export default async function DespiecePage({ searchParams }) {
           </nav>
           <h1 className="page">Despiece por modelo</h1>
           <p className="lead">
-            Elegí el modelo de la máquina y abrí directo su despiece (diagramas de partes). Desde cada modelo también
-            ves los repuestos Logbelts compatibles.
+            Elegí el modelo de la {MARCA.maquinas.singular} y abrí directo su despiece (diagramas de partes). Desde cada
+            modelo también ves los repuestos {MARCA.nombre} compatibles.
           </p>
 
           <form method="get" className="admbar" style={{ marginBottom: 18 }}>
@@ -86,7 +89,7 @@ export default async function DespiecePage({ searchParams }) {
           {!vista.length ? <div className="empty">Sin resultados.</div> : null}
           <p className="note">
             Los despieces se abren en diyspareparts.com, un sitio externo con diagramas de partes por modelo. Los PDF propios
-            de Logbelts se cargan desde Administración y aparecen primero.
+            de {MARCA.nombre} se cargan desde Administración y aparecen primero.
           </p>
         </div>
       </main>

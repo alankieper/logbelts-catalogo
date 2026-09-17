@@ -3,12 +3,13 @@ import CatalogoHeader from '../../components/CatalogoHeader';
 import CatalogoPie from '../../components/CatalogoPie';
 import ProductoCard from '../../components/ProductoCard';
 import { getPorMarca, getFamilias } from '../../../lib/catalogo';
+import { MARCA } from '../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }) {
   const { nombre } = await getPorMarca(params.marca);
-  return { title: `Todo para ${nombre} — Catálogo Logbelts` };
+  return { title: `Todo para ${nombre} — Catálogo ${MARCA.nombre}` };
 }
 
 export default async function MarcaPage({ params }) {

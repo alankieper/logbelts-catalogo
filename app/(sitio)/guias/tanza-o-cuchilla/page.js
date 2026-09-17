@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { modulo } from '../../../../lib/marca';
 import { Flecha } from '../../../components/sitio/Iconos';
 
 export const metadata = {
@@ -7,6 +9,8 @@ export const metadata = {
 };
 
 export default function GuiaTanzaCuchilla() {
+  if (!modulo('guias')) notFound();
+
   return (
     <>
       <section className="cabecera oscuro">

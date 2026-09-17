@@ -1,10 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { modulo } from '../../../lib/marca';
 import { CONDICIONES, PORTAL_DISTRIBUIDORES, img } from '../../../lib/sitio';
 
 export const metadata = { title: 'Portal Distribuidores' };
 
 export default function Distribuidores() {
+  if (!modulo('distribuidores')) notFound();
+
   const condiciones = CONDICIONES.filter(c => c.texto);
 
   return (
@@ -53,8 +57,8 @@ export default function Distribuidores() {
             </div>
           </div>
           <div className="herramientas__accesos herramientas__accesos--claro">
-            <a href="/pedido-rapido"><strong>Pedido rápido</strong><span>Reponé stock pegando códigos o subiendo tu Excel.</span></a>
-            <Link href="/material"><strong>Material para redes</strong><span>Logos, fotos y placas con el nombre de tu comercio.</span></Link>
+            {modulo('pedidoRapido') && <a href="/pedido-rapido"><strong>Pedido rápido</strong><span>Reponé stock pegando códigos o subiendo tu Excel.</span></a>}
+            {modulo('material') && <Link href="/material"><strong>Material para redes</strong><span>Logos, fotos y placas con el nombre de tu comercio.</span></Link>}
             <Link href="/donde-comprar"><strong>Dónde comprar</strong><span>Aparecé en el mapa para que te encuentren clientes de tu zona.</span></Link>
             <a href="/mi-cuenta"><strong>Mi cuenta</strong><span>Favoritos, pedidos anteriores y tu vendedor asignado.</span></a>
           </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { MARCA, slugMarca } from '../../../lib/marca';
 
 const TAM = 1080;
 
@@ -26,7 +27,7 @@ function ajustarTexto(ctx, texto, maxAncho, tamInicial, fuente) {
 export default function GeneradorPlaca({ fotos }) {
   const lienzo = useRef(null);
   const [foto, setFoto] = useState(fotos[0]?.src);
-  const [titulo, setTitulo] = useState('Repuestos Logbelts');
+  const [titulo, setTitulo] = useState(`Repuestos ${MARCA.nombre}`);
   const [comercio, setComercio] = useState('');
   const [contacto, setContacto] = useState('');
   const [generando, setGenerando] = useState(false);
@@ -50,7 +51,7 @@ export default function GeneradorPlaca({ fotos }) {
     ctx.fill();
 
     try {
-      const logo = await cargarImagen('/logo-blanco.png');
+      const logo = await cargarImagen(MARCA.logoClaro);
       const ancho = 250;
       ctx.drawImage(logo, 70, 60, ancho, (logo.height / logo.width) * ancho);
     } catch {}
@@ -100,7 +101,7 @@ export default function GeneradorPlaca({ fotos }) {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `placa-logbelts-${(comercio || 'comercio').toLowerCase().replace(/[^a-z0-9]+/g, '-')}.png`;
+      a.download = `placa-${slugMarca()}-${(comercio || 'comercio').toLowerCase().replace(/[^a-z0-9]+/g, '-')}.png`;
       document.body.appendChild(a);
       a.click();
       a.remove();

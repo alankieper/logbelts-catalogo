@@ -2,6 +2,7 @@ import { supabase } from '../../lib/supabase';
 import { pageStyle, containerStyle, heroTitleStyle, heroSubtitleStyle, cardStyle, COLOR_TEXT_LIGHT_MUTED, FONT_TEXTO } from '../theme';
 import EntrarComoBoton from './EntrarComoBoton';
 import AdminLogin from './AdminLogin';
+import { MARCA } from '../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
@@ -19,7 +20,7 @@ export default async function Login() {
   return (
     <main style={page}>
       <div style={container}>
-        <img src="/logo-blanco.png" alt="Logbelts" style={logoImg} />
+        <img src={MARCA.logoClaro} alt={MARCA.nombre} style={logoImg} />
         <h1 style={heroTitleStyle}>Cataloplus</h1>
         <p style={heroSubtitleStyle}>¿Quién sos?</p>
         <div style={card}>

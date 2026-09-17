@@ -5,6 +5,7 @@ import path from 'path';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { guardarCurado, borrarCurado } from '../../../lib/despieces';
+import { MARCA } from '../../../lib/marca';
 
 const DEST = path.join(process.cwd(), 'public', 'despieces');
 
@@ -35,7 +36,7 @@ export async function guardarDespiece(formData) {
     url = '';
   }
 
-  const entry = { id, marca, modelo, tipo, titulo, url: url || null, archivo, fuente: fuente || 'Logbelts', publico };
+  const entry = { id, marca, modelo, tipo, titulo, url: url || null, archivo, fuente: fuente || MARCA.nombre, publico };
   await guardarCurado(entry);
 
   revalidatePath('/', 'layout');

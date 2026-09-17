@@ -2,6 +2,10 @@
 
 import { useState } from 'react';
 import { agregarAlPedido, descargarCSV, enviarPedido } from './pedidoStore';
+import { MARCA } from '../../lib/marca';
+
+// Nombre de los archivos que se descargan (pedido-mi-empresa.csv).
+const ARCHIVO = MARCA.nombre.toLowerCase().normalize('NFD').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'catalogo';
 
 const EJEMPLO = '5888064 x2\n754-0260 x5\n2291029 10';
 
@@ -49,7 +53,7 @@ export default function PedidoRapido() {
       <div className="pr-entrada">
         <div className="pr-caja">
           <h2>Pegá tu lista de códigos</h2>
-          <p>Un código por línea, con la cantidad al lado. Sirven códigos Logbelts o códigos originales del fabricante.</p>
+          <p>Un código por línea, con la cantidad al lado. Sirven los códigos del catálogo o los códigos originales del fabricante.</p>
           <textarea
             value={texto}
             onChange={(e) => setTexto(e.target.value)}
@@ -75,7 +79,7 @@ export default function PedidoRapido() {
             <input type="file" accept=".xlsx,.xls,.csv" onChange={subirArchivo} disabled={cargando} />
           </label>
           <div className="pr-acc">
-            <button type="button" className="pr-btn ghost" onClick={() => descargarCSV('plantilla-pedido-logbelts.csv', [['Código', 'Cantidad'], ['5888064', '2'], ['754-0260', '5']])}>
+            <button type="button" className="pr-btn ghost" onClick={() => descargarCSV(`plantilla-pedido-${ARCHIVO}.csv`, [['Código', 'Cantidad'], ['5888064', '2'], ['754-0260', '5']])}>
               Descargar plantilla
             </button>
           </div>
@@ -173,8 +177,8 @@ export default function PedidoRapido() {
               type="button"
               className="pr-btn ghost"
               disabled={!filas.length}
-              onClick={() => descargarCSV('pedido-logbelts.csv', [
-                ['Código Logbelts', 'Producto', 'Cantidad', 'Línea original', 'Estado'],
+              onClick={() => descargarCSV(`pedido-${ARCHIVO}.csv`, [
+                [MARCA.codigo.etiqueta, 'Producto', 'Cantidad', 'Línea original', 'Estado'],
                 ...filas.map((f) => [f.elegido?.codigo || '', f.elegido?.nombre || '', f.cant, f.entrada, f.elegido ? 'OK' : 'Sin coincidencia']),
               ])}
             >

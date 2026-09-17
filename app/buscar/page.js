@@ -4,17 +4,20 @@ import ProductoCard from '../components/ProductoCard';
 import Registrar from '../components/Registrar';
 import NoEncontrado from '../components/NoEncontrado';
 import { buscar } from '../../lib/catalogo';
+import { MARCA, modulo } from '../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
 export function generateMetadata({ searchParams }) {
   const q = (searchParams?.q || '').toString();
-  return { title: q ? `“${q}” — Catálogo Logbelts` : 'Búsqueda — Catálogo Logbelts' };
+  return { title: q ? `“${q}” — Catálogo ${MARCA.nombre}` : `Búsqueda — Catálogo ${MARCA.nombre}` };
 }
 
 export default async function BuscarPage({ searchParams }) {
   const q = (searchParams?.q || '').toString().trim();
   const res = q ? await buscar(q, 300) : [];
+  // Primer ejemplo de código del archivo de marca (ej: "5888"), para la ayuda de "sin resultados".
+  const ejemploCodigo = (MARCA.codigo.ejemplos || '').split('·')[0].trim();
 
   return (
     <>
@@ -30,7 +33,7 @@ export default async function BuscarPage({ searchParams }) {
           <h1 className="page">{q ? `Resultados para “${q}”` : 'Búsqueda'}</h1>
           <p className="lead">
             {q
-              ? `${res.length.toLocaleString('es-AR')} ${res.length === 1 ? 'producto' : 'productos'}. Se busca por código Logbelts, código original, nombre, marca, modelo y descripción.`
+              ? `${res.length.toLocaleString('es-AR')} ${res.length === 1 ? 'producto' : 'productos'}. Se busca por ${MARCA.codigo.etiqueta.toLowerCase()}, código original, nombre, marca, modelo y descripción.`
               : 'Escribí un código, un código original del fabricante, o una marca y modelo.'}
           </p>
 
@@ -49,8 +52,8 @@ export default async function BuscarPage({ searchParams }) {
           ) : q ? (
             <>
               <div className="empty">
-                No se encontraron productos. Probá con parte del código (por ejemplo <b>5888</b>), con la marca,
-                o buscá <a href="/maquinas">por máquina</a>.
+                No se encontraron productos. Probá con parte del código{ejemploCodigo ? <> (por ejemplo <b>{ejemploCodigo}</b>)</> : null}, con la marca
+                {modulo('maquinas') ? <>, o buscá <a href="/maquinas">por {MARCA.maquinas.singular}</a></> : null}.
               </div>
               <NoEncontrado q={q} />
             </>

@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { MARCA, modulo } from '../../../../lib/marca';
 import { espadasYCadenas } from '../../../../lib/guias';
 import FiltroEspadas from '../../../components/sitio/FiltroEspadas';
 
@@ -6,10 +8,11 @@ export const revalidate = 3600;
 
 export const metadata = {
   title: 'Espadas y cadenas de motosierra: paso, calibre y eslabones',
-  description: 'Qué significan el paso, el calibre y la cantidad de eslabones de una cadena de motosierra, y buscador por medida sobre el catálogo Logbelts.',
+  description: `Qué significan el paso, el calibre y la cantidad de eslabones de una cadena de motosierra, y buscador por medida sobre el catálogo ${MARCA.nombre}.`,
 };
 
 export default async function GuiaEspadas() {
+  if (!modulo('guias')) notFound();
   const lista = await espadasYCadenas();
 
   return (

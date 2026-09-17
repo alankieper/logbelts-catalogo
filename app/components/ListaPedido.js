@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import { enviarPedido, guardarPedidoLocal, leerPedido, leerVendedor } from './pedidoStore';
+import { modulo } from '../../lib/marca';
+
+const HAY_PEDIDO_RAPIDO = modulo('pedidoRapido');
 
 export default function ListaPedido() {
   const [lista, setLista] = useState([]);
@@ -57,7 +60,7 @@ export default function ListaPedido() {
             <button type="button" onClick={() => setAbierto(false)} aria-label="Cerrar">✕</button>
           </div>
           <p className="pedido-links">
-            <a href="/pedido-rapido">Pedido rápido por códigos</a>
+            {HAY_PEDIDO_RAPIDO ? <a href="/pedido-rapido">Pedido rápido por códigos</a> : null}
             <a href="/mi-cuenta">Mis pedidos</a>
           </p>
 
@@ -97,8 +100,8 @@ export default function ListaPedido() {
             </>
           ) : (
             <p className="pedido-vacio">
-              Todavía no agregaste productos. Usá <b>“+ Agregar al pedido”</b> en cada producto, o cargá una lista de
-              códigos en <a href="/pedido-rapido">Pedido rápido</a>.
+              Todavía no agregaste productos. Usá <b>“+ Agregar al pedido”</b> en cada producto
+              {HAY_PEDIDO_RAPIDO ? <>, o cargá una lista de códigos en <a href="/pedido-rapido">Pedido rápido</a></> : null}.
             </p>
           )}
         </div>

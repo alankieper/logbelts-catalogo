@@ -7,6 +7,7 @@ import Registrar from '../../../components/Registrar';
 import { productosDeMaquina } from '../../../../lib/maquinas';
 import { linkDespiece } from '../../../../lib/despieceLinks';
 import { SITE_URL } from '../../../../lib/seo';
+import { MARCA, modulo } from '../../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
@@ -37,7 +38,7 @@ export async function generateMetadata({ params }) {
   const familias = agruparPorFamilia(d.productos).filter((f) => f.slug).slice(0, 3);
   const title = `Repuestos para ${d.marca} ${d.modelo}`;
   const description =
-    `${n} ${plural(n, 'repuesto Logbelts compatible', 'repuestos Logbelts compatibles')} con ${d.marca} ${d.modelo}` +
+    `${n} ${plural(n, `repuesto ${MARCA.nombre} compatible`, `repuestos ${MARCA.nombre} compatibles`)} con ${d.marca} ${d.modelo}` +
     (familias.length ? `: ${familias.map((f) => `${f.productos.length} en ${f.nombre}`).join(', ')}` : '') +
     '. Venta mayorista.';
   const url = `${SITE_URL}/maquinas/${d.marcaSlug}/${d.modeloSlug}`;
@@ -50,13 +51,14 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ModeloMaquinaPage({ params }) {
+  if (!modulo('maquinas')) notFound();
   const d = await productosDeMaquina(params.marca, params.modelo);
   if (!d) notFound();
 
   const n = d.productos.length;
   const familias = agruparPorFamilia(d.productos);
   const conOem = d.productos.filter((p) => p.codigo_original && p.codigo_original.length).length;
-  const despiece = linkDespiece(d.marca, d.modelo);
+  const despiece = modulo('despiece') ? linkDespiece(d.marca, d.modelo) : null;
   const despieceDirecto = despiece && despiece.directo ? despiece : null;
   const idFamilia = (f) => `fam-${f.slug || 'otros'}`;
 
@@ -67,7 +69,7 @@ export default async function ModeloMaquinaPage({ params }) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Catálogo', item: `${SITE_URL}/#catalogo` },
-      { '@type': 'ListItem', position: 2, name: 'Por máquina', item: `${SITE_URL}/maquinas` },
+      { '@type': 'ListItem', position: 2, name: `Por ${MARCA.maquinas.singular}`, item: `${SITE_URL}/maquinas` },
       { '@type': 'ListItem', position: 3, name: d.marca, item: urlMarca },
       { '@type': 'ListItem', position: 4, name: d.modelo, item: urlModelo },
     ],
@@ -102,7 +104,7 @@ export default async function ModeloMaquinaPage({ params }) {
           <nav className="crumb">
             <a href="/#catalogo">Catálogo</a>
             <span className="sep">/</span>
-            <a href="/maquinas">Por máquina</a>
+            <a href="/maquinas">Por {MARCA.maquinas.singular}</a>
             <span className="sep">/</span>
             <a href={`/maquinas/${d.marcaSlug}`}>{d.marca}</a>
             <span className="sep">/</span>
@@ -111,7 +113,7 @@ export default async function ModeloMaquinaPage({ params }) {
           <p className="eyebrow">Repuestos compatibles</p>
           <h1 className="page">{d.marca} {d.modelo}</h1>
           <p className="lead">
-            Encontrá {n} {plural(n, 'repuesto Logbelts compatible', 'repuestos Logbelts compatibles')} con la {d.marca}{' '}
+            Encontrá {n} {plural(n, `repuesto ${MARCA.nombre} compatible`, `repuestos ${MARCA.nombre} compatibles`)} con la {d.marca}{' '}
             {d.modelo}
             {familias.length ? ': ' : '.'}
             {familias.map((f, i) => (

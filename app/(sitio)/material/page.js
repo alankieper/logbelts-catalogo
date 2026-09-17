@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import GeneradorPlaca from '../../components/sitio/GeneradorPlaca';
+import { notFound } from 'next/navigation';
+import { MARCA, modulo, slugMarca } from '../../../lib/marca';
 import { LINEAS } from '../../../lib/sitio';
 
 export const metadata = {
@@ -15,13 +17,15 @@ const FOTOS = [
 ];
 
 export default function Material() {
+  if (!modulo('material')) notFound();
+
   return (
     <>
       <section className="cabecera oscuro">
         <div className="contenedor">
           <p className="antetitulo">Para distribuidores</p>
           <h1 className="titulo-seccion">Material para tu comercio</h1>
-          <p>Todo lo que necesitás para mostrar que vendés Logbelts: logos, fotos y placas listas para redes.</p>
+          <p>Todo lo que necesitás para mostrar que vendés {MARCA.nombre}: logos, fotos y placas listas para redes.</p>
         </div>
       </section>
 
@@ -47,12 +51,12 @@ export default function Material() {
             </div>
           </div>
           <div className="material-grilla">
-            <a className="material-item material-item--oscuro" href="/logo-blanco.png" download="logbelts-logo-blanco.png">
-              <Image src="/logo-blanco.png" alt="" width={1254} height={620} sizes="240px" />
+            <a className="material-item material-item--oscuro" href={MARCA.logoClaro} download={`${slugMarca()}-logo-blanco.png`}>
+              <Image src={MARCA.logoClaro} alt="" width={1254} height={620} sizes="240px" />
               <span>Logo blanco (PNG)</span>
             </a>
-            <a className="material-item" href="/logo-azul.png" download="logbelts-logo-azul.png">
-              <Image src="/logo-azul.png" alt="" width={1254} height={620} sizes="240px" />
+            <a className="material-item" href={MARCA.logoOscuro} download={`${slugMarca()}-logo-azul.png`}>
+              <Image src={MARCA.logoOscuro} alt="" width={1254} height={620} sizes="240px" />
               <span>Logo azul (PNG)</span>
             </a>
             {FOTOS.map(f => (

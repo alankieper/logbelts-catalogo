@@ -5,6 +5,7 @@ import { obtener } from '../../../../lib/catalogoStore';
 import { getFamilias } from '../../../../lib/catalogo';
 import { decodificarCodigo } from '../../../../lib/codigoLogbelts';
 import SubirMedia from '../../../components/SubirMedia';
+import { MARCA } from '../../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
@@ -31,7 +32,7 @@ export default async function EditarProducto({ params, searchParams }) {
           <div className="cod-row">
             <h1>{p.codigo}</h1>
             <details className="cod-edit">
-              <summary title="Editar código Logbelts">✏️</summary>
+              <summary title={`Editar ${MARCA.codigo.etiqueta.toLowerCase()}`}>✏️</summary>
               <form action={cambiarCodigoProducto}>
                 <input type="hidden" name="codigoViejo" value={p.codigo} />
                 <input name="codigoNuevo" defaultValue={p.codigo} maxLength={7} />

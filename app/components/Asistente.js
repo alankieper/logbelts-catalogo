@@ -3,6 +3,7 @@
 import '../catalogo-extra.css';
 import { useEffect, useRef, useState } from 'react';
 import { numeroWhatsApp } from './pedidoStore';
+import { MARCA } from '../../lib/marca';
 
 const CLAVE = 'lb_asistente';
 const SUGERENCIAS = ['Carburador para Stihl MS 250', 'Correa de plataforma Cub Cadet 42"', '¿Qué equivale al 754-0260?'];
@@ -71,7 +72,7 @@ export default function Asistente() {
   return (
     <div className="asis-panel" role="dialog" aria-label="Asistente de repuestos">
       <div className="asis-cab">
-        <b>Asistente de repuestos<small>Busca en el catálogo Logbelts</small></b>
+        <b>Asistente de repuestos<small>Busca en el catálogo {MARCA.nombre}</small></b>
         {mensajes.length ? <button type="button" onClick={() => setMensajes([])} aria-label="Empezar de nuevo" title="Empezar de nuevo">↺</button> : null}
         <button type="button" onClick={() => setAbierto(false)} aria-label="Cerrar asistente">✕</button>
       </div>

@@ -3,6 +3,7 @@ import { crearProducto } from '../../productoActions';
 import { getFamilias } from '../../../../lib/catalogo';
 import { leerTodos } from '../../../../lib/catalogoStore';
 import GeneradorCodigo from './GeneradorCodigo';
+import { MARCA } from '../../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
@@ -18,7 +19,7 @@ export default async function NuevoProducto({ searchParams }) {
         <div className="wrap">
           <a className="backlink" href="/admin/productos">← Volver a la lista</a>
           <h1>Agregar producto</h1>
-          <p className="sub">Carga manual. El código Logbelts es obligatorio y no se puede repetir.</p>
+          <p className="sub">Carga manual. El {MARCA.codigo.etiqueta.toLowerCase()} es obligatorio y no se puede repetir.</p>
 
           {err ? <div className="err-msg">{err}</div> : null}
 

@@ -2,6 +2,10 @@ import AdminHeader from '../AdminHeader';
 import { supabase } from '../../../lib/supabase';
 import { PROVINCIAS } from '../../../lib/provincias';
 import { agregarVendedor, cambiarActivo, guardarDatosVendedor } from './actions';
+import { MARCA } from '../../../lib/marca';
+
+// Dominio de los mails del equipo, tomado del mail de contacto de lib/marca.js.
+const DOMINIO = (MARCA.contacto.email || '').split('@')[1] || 'tuempresa.com';
 
 export const dynamic = 'force-dynamic';
 
@@ -46,7 +50,7 @@ export default async function Vendedores({ searchParams }) {
                 <input type="hidden" name="id" value={v.id} />
                 <div className="adm-form">
                   <label>WhatsApp<input name="telefono" defaultValue={v.telefono || ''} placeholder="11 5555-5555" /></label>
-                  <label>Email para avisos<input name="email" type="email" defaultValue={v.email || ''} placeholder="nombre@logbelts.com.ar" /></label>
+                  <label>Email para avisos<input name="email" type="email" defaultValue={v.email || ''} placeholder={`nombre@${DOMINIO}`} /></label>
                   <label style={{ alignSelf: 'end', display: 'flex', gap: 8, alignItems: 'center', fontWeight: 400 }}>
                     <input type="checkbox" name="recibe_contactos" defaultChecked={v.recibe_contactos !== false} /> Recibe contactos de la web
                   </label>

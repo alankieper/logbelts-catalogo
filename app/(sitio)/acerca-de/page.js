@@ -4,27 +4,30 @@ import Dibujo from '../../components/sitio/Dibujo';
 import { Flecha } from '../../components/sitio/Iconos';
 import { Binoculares, Cabezal, Correa, Diana, Escudo } from '../../components/sitio/LineasRepuestos';
 import { img } from '../../../lib/sitio';
+import { MARCA } from '../../../lib/marca';
 
 export const metadata = { title: 'Nosotros' };
+
+const NOMBRE = MARCA.nombre.toUpperCase();
 
 const BLOQUES = [
   {
     Dibujo: Diana,
     titulo: 'Misión',
     texto:
-      'En LOGBELTS trabajamos con pasión y profesionalismo para acompañar a cada cliente en su camino de crecimiento. Creemos en la fuerza de un equipo comprometido, en la excelencia de nuestros productos y servicio, porque nuestra verdadera misión es estar siempre cerca, escuchando y ofreciendo soluciones que transformen su trabajo en resultados.',
+      `En ${NOMBRE} trabajamos con pasión y profesionalismo para acompañar a cada cliente en su camino de crecimiento. Creemos en la fuerza de un equipo comprometido, en la excelencia de nuestros productos y servicio, porque nuestra verdadera misión es estar siempre cerca, escuchando y ofreciendo soluciones que transformen su trabajo en resultados.`,
   },
   {
     Dibujo: Binoculares,
     titulo: 'Visión',
     texto:
-      'Soñamos con un futuro donde LOGBELTS sea sinónimo de confianza y evolución, consolidarnos como lideres en el mercado nacional e Internacional, aspiramos a ser la primera elección de quienes buscan calidad, servicio humano y soluciones innovadoras, creciendo junto a nuestros clientes con la mirada puesta en el crecimiento sostenido y la mejora continua.',
+      `Soñamos con un futuro donde ${NOMBRE} sea sinónimo de confianza y evolución, consolidarnos como lideres en el mercado nacional e Internacional, aspiramos a ser la primera elección de quienes buscan calidad, servicio humano y soluciones innovadoras, creciendo junto a nuestros clientes con la mirada puesta en el crecimiento sostenido y la mejora continua.`,
   },
   {
     Dibujo: Escudo,
     titulo: 'Valores',
     texto:
-      'En LOGBELTS creemos en hacer las cosas con compromiso y pasión, trabajando con responsabilidad en cada detalle. Nuestra base es la honestidad, la lealtad hacia nuestros clientes y equipo, sosteniendo siempre la disciplina y cumpliendo con nuestra palabra, porque es la garantía de confianza que nos distingue.',
+      `En ${NOMBRE} creemos en hacer las cosas con compromiso y pasión, trabajando con responsabilidad en cada detalle. Nuestra base es la honestidad, la lealtad hacia nuestros clientes y equipo, sosteniendo siempre la disciplina y cumpliendo con nuestra palabra, porque es la garantía de confianza que nos distingue.`,
   },
 ];
 
@@ -59,8 +62,8 @@ export default function Nosotros() {
             </p>
           </Dibujo>
           <Dibujo className="nosotros-fotos revelar revelar--lateral">
-            <Image src={img('35b7b447b348484c9263a1ec91cde1eff000')} alt="Asesor de Logbelts explicando el uso de una desmalezadora" width={540} height={828} sizes="(max-width: 900px) 45vw, 270px" />
-            <Image src={img('b07cb7ce240040feb30766b5e4571b47f000')} alt="Asesor de Logbelts con cabezales y bobinas de tanza" width={540} height={828} sizes="(max-width: 900px) 45vw, 270px" />
+            <Image src={img('35b7b447b348484c9263a1ec91cde1eff000')} alt={`Asesor de ${MARCA.nombre} explicando el uso de una desmalezadora`} width={540} height={828} sizes="(max-width: 900px) 45vw, 270px" />
+            <Image src={img('b07cb7ce240040feb30766b5e4571b47f000')} alt={`Asesor de ${MARCA.nombre} con cabezales y bobinas de tanza`} width={540} height={828} sizes="(max-width: 900px) 45vw, 270px" />
           </Dibujo>
         </div>
       </section>

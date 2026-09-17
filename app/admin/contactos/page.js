@@ -4,6 +4,7 @@ import { supabase } from '../../../lib/supabase';
 import { ESTADOS, ORIGENES, contarContactosPorEstado, gestionDisponible, leerContactos } from '../../../lib/contactos';
 import { leerPedidos } from '../../../lib/pedidos';
 import { waLink } from '../../../lib/telefono';
+import { MARCA } from '../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
@@ -89,7 +90,7 @@ export default async function ContactosAdmin({ searchParams }) {
                     <tbody>
                       {lectura.filas.map((c) => {
                         const asignado = porId[c.vendedor_id];
-                        const saludo = `Hola ${c.nombre || ''}, te escribo de Logbelts por tu consulta en la web.`;
+                        const saludo = `Hola ${c.nombre || ''}, te escribo de ${MARCA.nombre} por tu consulta en la web.`;
                         const aviso = `Nuevo contacto web para vos:\n${[c.empresa, c.nombre].filter(Boolean).join(' · ')}\nTel: ${c.telefono || '—'}\nZona: ${[c.localidad, c.provincia].filter(Boolean).join(', ') || '—'}${c.consulta ? `\nConsulta: ${c.consulta}` : ''}`;
                         return (
                           <tr key={c.id}>

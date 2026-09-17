@@ -1,3 +1,5 @@
+import { MARCA } from '../../lib/marca';
+
 export const dynamic = 'force-dynamic';
 
 function sanitizarNext(raw) {
@@ -13,7 +15,7 @@ export default function Acceso({ searchParams }) {
   return (
     <main className="acceso">
       <div className="acceso-card">
-        <img src="/logo-blanco.png" alt="Logbelts" className="acceso-logo" />
+        <img src={MARCA.logoClaro} alt={MARCA.nombre} className="acceso-logo" />
         <h1>Antes de ver el catálogo</h1>
         <p className="acceso-sub">Completá estos datos para entrar — es de una sola vez.</p>
 

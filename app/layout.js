@@ -1,21 +1,24 @@
 import './globals.css';
 import { SITE_URL, robotsMeta } from '../lib/seo';
+import { MARCA, enFrase } from '../lib/marca';
+
+const TITULO_CATALOGO = `Catálogo ${MARCA.nombre}`;
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Catálogo Logbelts — repuestos para bosque y jardín',
-    template: '%s · Catálogo Logbelts',
+    default: `${TITULO_CATALOGO} — ${enFrase(MARCA.rubro)}`,
+    template: `%s · ${TITULO_CATALOGO}`,
   },
-  description: 'Repuestos Logbelts para motosierras, desmalezadoras, cortadoras de césped y motores. Buscá por código Logbelts, código original del fabricante, o marca y modelo.',
-  applicationName: 'Catálogo Logbelts',
+  description: `${MARCA.descripcionCorta} Buscá por ${enFrase(MARCA.codigo.etiqueta)}, código original del fabricante, o marca y modelo.`,
+  applicationName: TITULO_CATALOGO,
   robots: robotsMeta,
   openGraph: {
-    siteName: 'Logbelts',
+    siteName: MARCA.nombre,
     locale: 'es_AR',
     type: 'website',
-    title: 'Logbelts — Repuestos para bosque y jardín',
-    description: 'Venta mayorista de repuestos para motosierras, desmalezadoras, minitractores y motores. Buscá por código, código original o modelo de máquina.',
+    title: `${MARCA.nombre} — ${MARCA.rubro}`,
+    description: `${MARCA.descripcionCorta} Buscá por código, código original o modelo de ${MARCA.maquinas.singular}.`,
   },
   twitter: { card: 'summary_large_image' },
 };

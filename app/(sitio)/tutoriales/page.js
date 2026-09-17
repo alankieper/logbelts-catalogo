@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation';
+import { MARCA, modulo } from '../../../lib/marca';
 import { TUTORIALES } from '../../../lib/sitio';
 
 export const metadata = { title: 'Tutoriales' };
@@ -5,11 +7,13 @@ export const metadata = { title: 'Tutoriales' };
 // Los videos están alojados en el reproductor de Wix y no se pueden enlazar directo.
 // Para agregarlos: subir cada video a YouTube y reemplazar el placeholder por el reproductor.
 export default function Tutoriales() {
+  if (!modulo('tutoriales')) notFound();
+
   return (
     <>
       <section className="cabecera oscuro">
         <div className="contenedor">
-          <p className="antetitulo">Aprendé con Logbelts</p>
+          <p className="antetitulo">Aprendé con {MARCA.nombre}</p>
           <h1 className="titulo-seccion">Tutoriales</h1>
           <p>Videos cortos para elegir, instalar y mantener repuestos de bosque y jardín.</p>
         </div>

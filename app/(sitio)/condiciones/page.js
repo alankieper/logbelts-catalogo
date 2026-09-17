@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { CONDICIONES, CONTACTO, PORTAL_DISTRIBUIDORES } from '../../../lib/sitio';
+import { MARCA, modulo } from '../../../lib/marca';
 import { SITE_URL } from '../../../lib/seo';
 import { Flecha } from '../../components/sitio/Iconos';
 
@@ -42,10 +43,10 @@ export default function Condiciones() {
         <div className="contenedor">
           <p className="antetitulo">Distribuidores</p>
           <h1 className="titulo-seccion">Condiciones para distribuidores</h1>
-          <p>Todo lo que necesitás saber para trabajar con Logbelts desde tu comercio o taller.</p>
+          <p>Todo lo que necesitás saber para trabajar con {MARCA.nombre} desde tu comercio o taller.</p>
           <div className="cabecera__acciones">
             <Link className="boton boton--claro" href="/contacto">Quiero ser distribuidor <Flecha /></Link>
-            <a className="boton boton--borde" href={PORTAL_DISTRIBUIDORES} target="_blank" rel="noopener noreferrer">Ya soy distribuidor</a>
+            {modulo('distribuidores') && <a className="boton boton--borde" href={PORTAL_DISTRIBUIDORES} target="_blank" rel="noopener noreferrer">Ya soy distribuidor</a>}
           </div>
         </div>
       </section>

@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { MARCA, modulo } from '../../../lib/marca';
 import { leerDistribuidores } from '../../../lib/distribuidores';
 import { PROVINCIAS } from '../../../lib/provincias';
 import { waLink } from '../../../lib/telefono';
@@ -8,10 +10,12 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   title: 'Dónde comprar',
-  description: 'Comercios y talleres que venden repuestos Logbelts para bosque y jardín en todo el país.',
+  description: `Comercios y talleres que venden repuestos ${MARCA.nombre} para bosque y jardín en todo el país.`,
 };
 
 export default async function DondeComprar({ searchParams }) {
+  if (!modulo('distribuidores')) notFound();
+
   const todos = await leerDistribuidores();
   const provincia = PROVINCIAS.includes(searchParams?.provincia) ? searchParams.provincia : '';
   const visibles = provincia ? todos.filter(d => d.provincia === provincia) : todos;
@@ -29,7 +33,7 @@ export default async function DondeComprar({ searchParams }) {
       <section className="cabecera oscuro">
         <div className="contenedor">
           <p className="antetitulo">Red de distribuidores</p>
-          <h1 className="titulo-seccion">Dónde comprar Logbelts</h1>
+          <h1 className="titulo-seccion">Dónde comprar {MARCA.nombre}</h1>
           <p>Vendemos únicamente por mayor. Si buscás repuestos para tu máquina, acercate a uno de estos comercios.</p>
         </div>
       </section>
@@ -66,7 +70,7 @@ export default async function DondeComprar({ searchParams }) {
                     <h2>{prov}</h2>
                     <ul>
                       {lista.map(d => {
-                        const wa = waLink(d.whatsapp || d.telefono, 'Hola, los encontré en la web de Logbelts.');
+                        const wa = waLink(d.whatsapp || d.telefono, `Hola, los encontré en la web de ${MARCA.nombre}.`);
                         return (
                           <li key={d.id} className="dist-item">
                             <div>
@@ -88,7 +92,7 @@ export default async function DondeComprar({ searchParams }) {
           ) : (
             <div className="vacio-sitio">
               <h2 className="display">Estamos armando el mapa</h2>
-              <p>Muy pronto vas a poder encontrar acá los comercios que venden Logbelts en tu zona.</p>
+              <p>Muy pronto vas a poder encontrar acá los comercios que venden {MARCA.nombre} en tu zona.</p>
               <div className="hero__acciones" style={{ justifyContent: 'center' }}>
                 <Link className="boton" href="/contacto">¿Tenés un comercio? Sumate</Link>
               </div>

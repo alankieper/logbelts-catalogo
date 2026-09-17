@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { CATALOGO, whatsappCon } from '../../../lib/sitio';
+import { MARCA } from '../../../lib/marca';
 import { PROVINCIAS } from '../../../lib/provincias';
 import { waLink } from '../../../lib/telefono';
 import { guardarVendedor } from '../pedidoStore';
@@ -84,7 +85,7 @@ export default function PopupBienvenida() {
   if (!abierto) return null;
 
   const mensajeWA = datos
-    ? `Hola! Quiero ser distribuidor Logbelts.\n\nEmpresa: ${datos.empresa}\nNombre: ${datos.nombre}\nWhatsApp: ${datos.telefono}\nZona: ${[datos.localidad, datos.provincia].filter(Boolean).join(', ')}`
+    ? `Hola! Quiero ser distribuidor ${MARCA.nombre}.\n\nEmpresa: ${datos.empresa}\nNombre: ${datos.nombre}\nWhatsApp: ${datos.telefono}\nZona: ${[datos.localidad, datos.provincia].filter(Boolean).join(', ')}`
     : '';
   const linkWA = waLink(vendedor?.telefono, mensajeWA) || whatsappCon(mensajeWA);
 
@@ -118,7 +119,7 @@ export default function PopupBienvenida() {
             </div>
           ) : (
             <>
-              <h2 id="popup-titulo" className="display popup__titulo">Sumá Logbelts <em>a tu negocio</em></h2>
+              <h2 id="popup-titulo" className="display popup__titulo">Sumá {MARCA.nombre} <em>a tu negocio</em></h2>
               <p className="popup__texto">Repuestos para motosierras, desmalezadoras, minitractores y motores. Registrate y el vendedor de tu zona te contacta.</p>
 
               <form className="formulario" onSubmit={enviar}>

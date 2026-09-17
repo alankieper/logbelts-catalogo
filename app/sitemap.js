@@ -1,6 +1,10 @@
 import { SITE_URL, SITIO_PUBLICO } from '../lib/seo';
+import { modulo } from '../lib/marca';
 import { getFamilias, getMarcasConteo, leerTodosRaw } from '../lib/catalogo';
 import { listarMarcas, listarModelos } from '../lib/maquinas';
+
+// Páginas fijas: sólo las de los módulos prendidos en lib/marca.js
+const si = (nombre, rutas) => (modulo(nombre) ? rutas : []);
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 3600;
@@ -17,19 +21,24 @@ export default async function sitemap() {
   const now = new Date();
   const urls = [
     { url: SITE_URL, lastModified: now, changeFrequency: 'weekly', priority: 1 },
-    ...['/contacto', '/distribuidores', '/descargas', '/lanzamientos', '/tutoriales', '/acerca-de',
-      '/donde-comprar', '/material', '/condiciones', '/guias', '/guias/correas', '/guias/espadas-y-cadenas', '/guias/tanza-o-cuchilla',
-      '/pedido-rapido', '/maquinas'].map(p => ({
+    ...['/contacto', '/descargas', '/acerca-de', '/condiciones',
+      ...si('distribuidores', ['/distribuidores', '/donde-comprar']),
+      ...si('lanzamientos', ['/lanzamientos']),
+      ...si('tutoriales', ['/tutoriales']),
+      ...si('material', ['/material']),
+      ...si('guias', ['/guias', '/guias/correas', '/guias/espadas-y-cadenas', '/guias/tanza-o-cuchilla']),
+      ...si('pedidoRapido', ['/pedido-rapido']),
+      ...si('maquinas', ['/maquinas'])].map(p => ({
       url: `${SITE_URL}${p}`, lastModified: now, changeFrequency: 'monthly', priority: 0.5,
     })),
-    ...listarMarcas().flatMap(m => [
+    ...(modulo('maquinas') ? listarMarcas().flatMap(m => [
       { url: `${SITE_URL}/maquinas/${m.slug}`, lastModified: now, changeFrequency: 'weekly', priority: 0.5 },
       ...listarModelos(m.slug).modelos.map(mo => ({
         url: `${SITE_URL}/maquinas/${m.slug}/${mo.slug}`, lastModified: now, changeFrequency: 'weekly', priority: 0.6,
       })),
-    ]),
+    ]) : []),
     { url: `${SITE_URL}/buscar`, lastModified: now, changeFrequency: 'weekly', priority: 0.3 },
-    { url: `${SITE_URL}/despiece`, lastModified: now, changeFrequency: 'monthly', priority: 0.3 },
+    ...(modulo('despiece') ? [{ url: `${SITE_URL}/despiece`, lastModified: now, changeFrequency: 'monthly', priority: 0.3 }] : []),
   ];
 
   for (const f of familias) {
