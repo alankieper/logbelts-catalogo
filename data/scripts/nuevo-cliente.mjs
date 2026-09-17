@@ -20,6 +20,30 @@ const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '.
 const args = new Set(process.argv.slice(2));
 const DRY = args.has('--dry-run') || args.has('-n');
 const SI = args.has('--si') || args.has('--yes');
+const FORZAR = args.has('--forzar');
+
+/**
+ * Freno de seguridad: nunca vaciar el proyecto real del cliente original.
+ * data/ESTE-ES-LOGBELTS.txt marca la carpeta original; en la copia hay que borrarlo.
+ * También frena si la carpeta se llama como el proyecto original.
+ */
+const MARCADOR = path.join(RAIZ, 'data', 'ESTE-ES-LOGBELTS.txt');
+const carpeta = path.basename(RAIZ).toLowerCase();
+if ((fs.existsSync(MARCADOR) || carpeta.includes('logbelts')) && !FORZAR) {
+  console.error('');
+  console.error('  FRENO DE SEGURIDAD: esta parece ser la carpeta del proyecto original.');
+  console.error('  Carpeta: ' + RAIZ);
+  console.error('  Vaciarla borraria su catalogo, sus fotos y sus logos.');
+  console.error('');
+  console.error('  Para armar un cliente nuevo:');
+  console.error('    1) copia la carpeta entera a otro lado');
+  console.error('    2) en la COPIA, borra data/ESTE-ES-LOGBELTS.txt');
+  console.error('    3) corre ahi:  node data/scripts/nuevo-cliente.mjs --si');
+  console.error('');
+  console.error('  (Si de verdad queres vaciar esta carpeta, agrega --forzar.)');
+  console.error('');
+  process.exit(1);
+}
 
 /**
  * Archivos de datos y su forma vacía correcta.

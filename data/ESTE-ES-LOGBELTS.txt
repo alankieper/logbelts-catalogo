@@ -1,0 +1,7 @@
+Esta carpeta es el proyecto REAL de Logbelts (lo que se publica en logbelts-web.vercel.app).
+
+No corras acá la copia en blanco (data/scripts/nuevo-cliente.mjs): borraría el catálogo,
+las fotos y los logos de Logbelts.
+
+Para armar un cliente nuevo: copiá la carpeta entera a otro lado, borrá este archivo en la
+copia y recién ahí corré el script. El paso a paso está en PLANTILLA.md.

@@ -9,6 +9,16 @@ Está escrito para que lo pueda seguir alguien que no programa. Cada paso dice q
 darse cuenta de que salió bien. Si algo no coincide con lo que ves en pantalla, pará y preguntá:
 no hay nada que se rompa por preguntar, sí por adivinar.
 
+
+> ## ⚠️ Lo primero: NUNCA trabajes sobre la carpeta de Logbelts
+>
+> La carpeta `logbelts-catalogo` es el sitio real que se publica en **logbelts-web.vercel.app**.
+> Para un cliente nuevo se trabaja **siempre sobre una copia**, en otra carpeta.
+> Logbelts no se toca: ni su catálogo, ni sus fotos, ni su publicación.
+>
+> Como red de seguridad, el script de copia en blanco se niega a correr dentro de la carpeta
+> original (la reconoce por el archivo `data/ESTE-ES-LOGBELTS.txt`). En la copia, ese archivo
+> se borra y ahí sí funciona.
 ---
 
 ## Antes de empezar: qué necesitás tener a mano
@@ -40,6 +50,8 @@ Eso te deja una copia completa, con los datos de Logbelts adentro. En el paso 2 
 ---
 
 ## Paso 2 — Vaciar el catálogo (la copia en blanco)
+
+**Antes que nada, en la copia:** borrá el archivo `data/ESTE-ES-LOGBELTS.txt`. Mientras exista, el script no corre (es la protección para no vaciar el proyecto de Logbelts por error).
 
 Hay un script que borra todos los datos y fotos de Logbelts y deja el proyecto limpio.
 
