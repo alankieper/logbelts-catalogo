@@ -14,7 +14,7 @@ export default function CatalogoHeader({ q = '' }) {
       </div>
       <RegistrarVisita />
       <ListaPedido />
-      <Asistente />
+      {process.env.ANTHROPIC_API_KEY && <Asistente />}
     </>
   );
 }
