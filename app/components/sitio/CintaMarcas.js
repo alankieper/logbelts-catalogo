@@ -26,25 +26,35 @@ export default function CintaMarcas({ marcas }) {
     let impulso = 0;
     let ultimoT = 0;
     let cuadro = 0;
+    // Posición con decimales: en pantallas comunes el navegador redondea scrollLeft a enteros,
+    // y sumarle ~0,7 px por cuadro no la movía nunca (la cinta quedaba quieta).
+    let pos = el.scrollLeft;
 
     const normalizar = () => {
       const m = mitad();
       if (m <= 0) return;
       if (el.scrollLeft >= m) el.scrollLeft -= m;
       else if (el.scrollLeft <= 0) el.scrollLeft += m;
+      pos = el.scrollLeft;
     };
 
     const paso = (t) => {
       const dt = Math.min((t - (ultimoT || t)) / 1000, 0.05);
       ultimoT = t;
       if (!arrastrando) {
+        // si la movieron a mano (rueda, trackpad, dedo), seguir desde ahí
+        if (Math.abs(el.scrollLeft - pos) > 2) pos = el.scrollLeft;
         if (Math.abs(impulso) > 0.1) {
           el.scrollLeft -= impulso;
           impulso *= 0.94;
-        } else if (!pausado && !reducir.matches) {
-          el.scrollLeft += 42 * dt;
+          normalizar();
+        } else if (!pausado) {
+          // se mueve siempre; con "reducir movimiento" del sistema, más despacio
+          pos += (reducir.matches ? 18 : 40) * dt;
+          const m = mitad();
+          if (m > 0 && pos >= m) pos -= m;
+          el.scrollLeft = pos;
         }
-        normalizar();
       }
       cuadro = requestAnimationFrame(paso);
     };

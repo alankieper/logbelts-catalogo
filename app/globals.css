@@ -200,6 +200,9 @@ main.cat p { line-height: var(--lh-larga); }
 .toolbar select { margin-left: auto; border: 1px solid var(--rule-strong); background: var(--surface); color: var(--ink); border-radius: 8px; padding: 7px 10px; font-size: 12.5px; font-family: inherit; }
 
 .pgrid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+/* En computadora el catálogo muestra siempre 4 productos por fila (3 en pantallas medianas) */
+@media (min-width: 1100px) { .pgrid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 900px) and (max-width: 1099px) { .pgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .card {
   background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden;
   display: flex; flex-direction: column; box-shadow: var(--shadow); height: 100%;
