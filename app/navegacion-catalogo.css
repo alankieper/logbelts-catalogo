@@ -36,7 +36,7 @@ a.paginacion__paso:hover, a.paginacion__num:hover { border-color: var(--brand-in
 .navcat-final { display: grid; gap: 10px; justify-items: center; margin: 30px 0 6px; }
 .navcat-final__sig {
   display: grid; gap: 4px; justify-items: center; text-align: center; width: min(520px, 100%);
-  padding: 20px 22px; border-radius: 16px; background: var(--brand); color: #fff; text-decoration: none;
+  padding: 20px 22px; border-radius: 16px; background: #2f52a8; color: #fff; text-decoration: none;
   box-shadow: var(--elevacion, 0 10px 26px rgba(20,28,50,.12)); transition: transform .2s var(--ease, ease), filter .2s;
 }
 .navcat-final__sig:hover { transform: translateY(-2px); filter: brightness(1.08); }
@@ -55,10 +55,11 @@ a.paginacion__paso:hover, a.paginacion__num:hover { border-color: var(--brand-in
 @media (prefers-reduced-motion: reduce) { .navcat-final__sig { transition: none; } }
 
 /* ===== "Ver todo en [familia]" ===== */
+/* Mismo azul en modo claro y oscuro (pedido de Logbelts); el recuadro termina donde termina el texto */
 .ver-todo {
-  display: grid; grid-template-columns: 1fr auto; align-items: center; column-gap: 16px; row-gap: 2px;
+  display: grid; width: fit-content; max-width: 100%; grid-template-columns: auto auto; align-items: center; column-gap: 16px; row-gap: 2px;
   margin: 0 0 16px; padding: 16px 20px; border-radius: 14px; text-decoration: none;
-  background: var(--brand); color: #fff; box-shadow: var(--elevacion, 0 10px 26px rgba(20,28,50,.12));
+  background: #2f52a8; color: #fff; box-shadow: var(--elevacion, 0 10px 26px rgba(20,28,50,.12));
   transition: transform .2s var(--ease, ease), filter .2s;
 }
 .ver-todo:hover { transform: translateY(-2px); filter: brightness(1.08); }
