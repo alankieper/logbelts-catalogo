@@ -22,6 +22,7 @@ export default function AdminHeader({ activo }) {
           {link('/admin/vendedores', 'Vendedores', 'vendedores')}
           {link('/admin/distribuidores', 'Distribuidores', 'distribuidores')}
           {link('/admin/productos', 'Productos', 'productos')}
+          {link('/admin/fotos-pendientes', 'Fotos pendientes', 'fotos')}
           {link('/admin/codigos', 'Códigos', 'codigos')}
           {link('/admin/oem', 'OEM', 'oem')}
           {link('/admin/excel', 'Excel', 'excel')}

@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Logbelts · Fotos del catálogo",
+  "version": "1.1.0",
+  "description": "Mantené Alt y hacé clic sobre una foto para guardarla para el producto actual del catálogo.",
+  "icons": {
+    "16": "iconos/icono-16.png",
+    "32": "iconos/icono-32.png",
+    "48": "iconos/icono-48.png",
+    "128": "iconos/icono-128.png"
+  },
+  "permissions": ["sidePanel", "downloads", "storage", "contextMenus"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "side_panel": { "default_path": "panel.html" },
+  "action": {
+    "default_title": "Abrir panel de fotos del catálogo",
+    "default_icon": {
+      "16": "iconos/icono-16.png",
+      "32": "iconos/icono-32.png",
+      "48": "iconos/icono-48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

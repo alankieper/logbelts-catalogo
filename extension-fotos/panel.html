@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Fotos del catálogo</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <header class="cab">
+    <div class="cab-fila">
+      <h1><img src="iconos/icono-32.png" alt="" width="20" height="20"> Fotos del catálogo</h1>
+      <button type="button" class="btn-ayuda" id="btn-ayuda" aria-expanded="false" aria-controls="ayuda" title="Cómo se usa">?</button>
+    </div>
+    <div class="ayuda" id="ayuda" hidden>
+      <p><kbd>Alt</kbd> + clic sobre una foto la guarda para el producto actual en <strong id="carpeta">Descargas\fotos-catalogo</strong>.</p>
+      <p>Con <kbd>Alt</kbd> apretado ves la medida de la foto antes de guardar (verde = buena, naranja = chica o repetida).</p>
+      <p><kbd>Shift</kbd> + <kbd>Alt</kbd> + clic guarda aunque esa foto ya se haya usado para otro producto.</p>
+      <p>Si Alt + clic no agarra la foto: clic derecho → <em>Guardar foto para el producto actual</em>.</p>
+      <p>Al guardar, pasa al producto siguiente y abre su búsqueda con el buscador elegido abajo.</p>
+      <p>Con la <strong>lupa</strong> buscás cualquier artículo del catálogo por código o nombre, aunque ya tenga foto.</p>
+    </div>
+    <div class="pestanas" role="tablist" aria-label="Qué catálogo">
+      <button type="button" role="tab" data-modo="web" aria-selected="true">Página web</button>
+      <button type="button" role="tab" data-modo="fisico" aria-selected="false">Catálogo físico</button>
+    </div>
+    <div class="lupa">
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="lupa" type="search" placeholder="Buscar código o artículo en todo el catálogo" autocomplete="off" aria-label="Buscar código o artículo en todo el catálogo" aria-controls="lupa-res">
+    </div>
+    <ul class="lupa-res" id="lupa-res" hidden></ul>
+    <p class="progreso-texto" id="progreso-texto">Cargando…</p>
+    <div class="barra" aria-hidden="true"><span id="barra"></span></div>
+  </header>
+
+  <section class="filtros" aria-label="Filtros">
+    <label>Problema
+      <select id="f-motivo"></select>
+    </label>
+    <label>Familia
+      <select id="f-familia"></select>
+    </label>
+    <label class="ancho">Orden
+      <select id="f-orden">
+        <option value="vistos">Más vistos en la página primero</option>
+        <option value="peor">Peor foto primero</option>
+        <option value="codigo">Por código</option>
+      </select>
+    </label>
+    <label class="ancho">Al guardar una foto, buscar el siguiente en
+      <select id="auto-busqueda">
+        <option value="ia">Google Modo IA (con la foto, si tiene)</option>
+        <option value="google">Google Imágenes</option>
+        <option value="ml">Mercado Libre</option>
+        <option value="amazon">Amazon</option>
+        <option value="web">Google (web)</option>
+        <option value="no">No buscar solo</option>
+      </select>
+    </label>
+    <div class="nube ancho" id="nube">
+      <label>Destino de las fotos
+        <select id="destino">
+          <option value="nube">Subir a la web para aprobar (logbelts-web)</option>
+          <option value="pc">Descargar a la PC</option>
+        </select>
+      </label>
+      <div class="nube-login" id="nube-login" hidden>
+        <label>Contraseña del admin de logbelts-web
+          <input id="nube-pass" type="password" autocomplete="current-password">
+        </label>
+        <button type="button" id="nube-entrar" class="primario">Conectar</button>
+        <p class="nube-msg" id="nube-msg" role="status"></p>
+      </div>
+      <p class="nube-estado" id="nube-estado" hidden>● Conectado a logbelts-web · <button type="button" class="link" id="nube-salir">Desconectar</button></p>
+    </div>
+  </section>
+
+  <section class="tarjeta" id="tarjeta" aria-live="polite">
+    <div class="tarjeta-top">
+      <div class="miniatura" id="miniatura"><span>Sin foto</span></div>
+      <div class="datos">
+        <div class="fila-codigo"><span class="codigo" id="codigo"></span><span class="badge" id="badge"></span></div>
+        <h2 id="nombre"></h2>
+        <p class="familia" id="familia"></p>
+      </div>
+    </div>
+
+    <p class="nota" id="nota" hidden></p>
+    <p class="otra" id="otra" hidden></p>
+
+    <label class="campo">Texto para buscar
+      <input id="q" type="text" autocomplete="off">
+    </label>
+    <div class="buscadores">
+      <button type="button" data-motor="google">Google Imágenes</button>
+      <button type="button" data-motor="ml">Mercado Libre</button>
+      <button type="button" data-motor="amazon">Amazon</button>
+      <button type="button" data-motor="web">Google (web)</button>
+      <button type="button" data-motor="ia" id="btn-ia" class="ancho" title="Modo IA de Google con la foto actual (si el producto tiene foto) o con el texto de búsqueda">Google Modo IA</button>
+      <button type="button" data-motor="lens" id="btn-lens" class="ancho"></button>
+    </div>
+
+    <div class="oem" id="oem" hidden>
+      <h3>Buscar por código original</h3>
+      <div id="oem-botones"></div>
+    </div>
+
+    <div class="guardadas" id="guardadas" hidden>
+      <h3>Guardadas para este producto</h3>
+      <ul id="guardadas-lista"></ul>
+      <button type="button" class="link" id="desmarcar">Desmarcar (volver a pendiente)</button>
+    </div>
+
+    <div class="nav">
+      <button type="button" id="anterior">← Anterior</button>
+      <button type="button" id="saltar" class="primario">Saltar →</button>
+    </div>
+  </section>
+
+  <section class="vacio" id="vacio" hidden>
+    <h2>¡Listo!</h2>
+    <p>No quedan productos pendientes con este filtro.</p>
+  </section>
+
+  <section class="lista" aria-label="Lista de productos">
+    <label class="campo">Filtrar esta lista
+      <input id="buscar" type="search" placeholder="Código o nombre (sólo pendientes)" autocomplete="off">
+    </label>
+    <ul id="lista"></ul>
+    <p class="nota-lista" id="lista-nota"></p>
+  </section>
+
+  <footer class="pie">
+    <button type="button" id="exportar">Exportar registro (Excel)</button>
+    <button type="button" id="reiniciar" class="peligro">Reiniciar progreso</button>
+  </footer>
+
+  <script src="panel.js"></script>
+</body>
+</html>
