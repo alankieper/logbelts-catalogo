@@ -4,6 +4,7 @@ import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import * as store from '../../lib/catalogoStore';
 import { borrarMediaPorUrl } from '../../lib/media';
+import { guardarFotoEditadaArchivo } from '../../lib/fotoEditada';
 
 export async function guardarProducto(formData) {
   const codigo = formData.get('codigo');
@@ -154,4 +155,21 @@ export async function renombrarFam(formData) {
   if (nuevo && nuevo !== viejo) await store.renombrarFamilia(viejo, nuevo);
   revalidatePath('/', 'layout');
   revalidatePath('/admin/categorias');
+}
+
+// Guarda la foto que salió del editor (recortar / rotar / espejar) en lugar de la original.
+export async function guardarFotoEditada(formData) {
+  const codigo = (formData.get('codigo') || '').toString();
+  const original = (formData.get('original') || '').toString();
+  const datos = (formData.get('imagen') || '').toString();
+  const m = datos.match(/^data:image\/jpeg;base64,([A-Za-z0-9+/=]+)$/);
+  if (!codigo || !original || !m) return { ok: false, error: 'Datos inválidos.' };
+  try {
+    const r = await guardarFotoEditadaArchivo(codigo, original, Buffer.from(m[1], 'base64'));
+    if (!r.ok) return r;
+    revalidatePath('/', 'layout');
+    return { ok: true };
+  } catch (e) {
+    return { ok: false, error: e.message || 'No se pudo guardar la foto.' };
+  }
 }

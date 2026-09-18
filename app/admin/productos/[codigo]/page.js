@@ -5,11 +5,14 @@ import { obtener } from '../../../../lib/catalogoStore';
 import { getFamilias } from '../../../../lib/catalogo';
 import { decodificarCodigo } from '../../../../lib/codigoLogbelts';
 import SubirMedia from '../../../components/SubirMedia';
+import EditorFoto from '../../../components/EditorFoto';
 import { MARCA } from '../../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
-const mediaSrc = (v, carpeta) => (v ? (/^https?:\/\//.test(v) ? v : `/${carpeta}/${v}`) : null);
+// `version` evita que el navegador muestre la foto vieja después de editarla (mismo nombre de archivo)
+const mediaSrc = (v, carpeta, version) =>
+  (v ? (/^https?:\/\//.test(v) ? v : `/${carpeta}/${v}${version ? `?v=${encodeURIComponent(version)}` : ''}`) : null);
 
 export default async function EditarProducto({ params, searchParams }) {
   const codigo = decodeURIComponent(params.codigo);
@@ -18,8 +21,8 @@ export default async function EditarProducto({ params, searchParams }) {
   const familias = (await getFamilias()).map((f) => f.nombre);
   const ok = searchParams?.ok === '1';
   const err = searchParams?.err;
-  const fotoSrc = mediaSrc(p.foto, 'fotos');
-  const galeria = (p.galeria || []).map((v) => mediaSrc(v, 'fotos'));
+  const fotoSrc = mediaSrc(p.foto, 'fotos', p.editado_en);
+  const galeria = (p.galeria || []).map((v) => mediaSrc(v, 'fotos', p.editado_en));
   const videos = (p.videos || []).map((v) => mediaSrc(v, 'videos'));
   const dec = decodificarCodigo(p.codigo);
 
@@ -67,6 +70,7 @@ export default async function EditarProducto({ params, searchParams }) {
               <div className="gmain" style={{ maxWidth: 240, borderRadius: 12 }}>
                 {fotoSrc ? <img src={fotoSrc} alt="" /> : <span className="noimg">sin foto</span>}
               </div>
+              {p.foto ? <EditorFoto codigo={p.codigo} src={fotoSrc} original={p.foto} etiqueta="Recortar · rotar · espejar" /> : null}
               {p.foto ? (
                 <form action={quitarMediaProducto} className="media-acc">
                   <input type="hidden" name="codigo" value={p.codigo} />
@@ -87,6 +91,7 @@ export default async function EditarProducto({ params, searchParams }) {
                         <div className="media-thumb" key={original}>
                           <img src={src} alt="" />
                           <div className="media-thumb-acc">
+                            <EditorFoto codigo={p.codigo} src={src} original={original} etiqueta="Editar" />
                             <form action={promoverPortada}>
                               <input type="hidden" name="codigo" value={p.codigo} />
                               <input type="hidden" name="url" value={original} />
