@@ -1,0 +1,40 @@
+/* ===== Fotos pendientes: bandeja con barra de progreso ===== */
+.bdj-barra-sup { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.bdj-grilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; margin-top: 18px; }
+.bdj-tarjeta { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 14px; display: grid; gap: 10px; transition: opacity .3s, border-color .3s; }
+.bdj-tarjeta--hecha { border-color: var(--ok); opacity: .7; }
+.bdj-nombre { font-weight: 600; margin-top: 2px; }
+.bdj-fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.bdj-caja { display: grid; gap: 4px; font-size: 12px; color: var(--ink-faint); }
+.bdj-img { width: 100%; aspect-ratio: 1 / 1; object-fit: contain; background: #fff; border-radius: 8px; border: 1px solid var(--rule); }
+.bdj-vacia { width: 100%; aspect-ratio: 1 / 1; display: grid; place-items: center; background: var(--rule); border-radius: 8px; }
+.bdj-meta { font-size: 12px; color: var(--ink-faint); }
+.bdj-botones { display: flex; gap: 8px; }
+.bdj-btn {
+  flex: 1; min-height: 40px; background: var(--brand); color: #fff; border: 0; border-radius: 8px; padding: 9px 14px;
+  font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit;
+}
+.bdj-btn--auto { flex: none; }
+.bdj-btn--borde { background: var(--surface); color: var(--brand-ink); border: 1px solid var(--rule-strong, var(--rule)); }
+.bdj-btn:disabled { opacity: .5; cursor: progress; }
+.bdj-btn:focus-visible { outline: 2px solid var(--brand-ink); outline-offset: 2px; }
+.bdj-hecha { min-height: 40px; display: grid; place-items: center; border-radius: 8px; background: var(--ok-bg); color: var(--ok); font-weight: 700; font-size: 13px; }
+
+.bdj-prog { margin-top: 16px; padding: 14px 16px; border-radius: 12px; border: 1px solid var(--rule); background: var(--surface); display: grid; gap: 10px; }
+.bdj-prog__txt { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--ink); }
+.bdj-prog__pct { font-variant-numeric: tabular-nums; color: var(--ink-faint); font-weight: 700; }
+.bdj-prog__pista { height: 10px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+.bdj-prog__relleno {
+  height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--brand), var(--brand-ink));
+  background-size: 200% 100%; animation: bdj-brillo 1.2s linear infinite; transition: width .35s ease;
+}
+.bdj-prog--fin { border-color: var(--ok); background: var(--ok-bg); }
+.bdj-prog--fin .bdj-prog__txt { color: var(--ok); font-size: 16px; }
+.bdj-prog--fin .bdj-prog__relleno { background: var(--ok); animation: none; }
+@keyframes bdj-brillo { from { background-position: 200% 0; } to { background-position: 0 0; } }
+
+/* Mensaje positivo cuando se vació la bandeja */
+.bdj-exito { margin-top: 18px; padding: 22px 20px; border-radius: 14px; background: var(--ok-bg); border: 1px solid var(--ok); color: var(--ok); display: grid; gap: 4px; }
+.bdj-exito strong { font-size: 20px; }
+.bdj-exito span { color: var(--ink-soft); font-size: 14px; }
+@media (prefers-reduced-motion: reduce) { .bdj-prog__relleno { animation: none; transition: none; } }

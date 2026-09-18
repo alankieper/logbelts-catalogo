@@ -44,3 +44,24 @@ export async function aprobarTodas(formData) {
   }
   volver(errores.length ? { ok: '1', n: String(n), err: errores.slice(0, 3).join(' · ') } : { ok: '1', n: String(n) });
 }
+
+// Versiones para la bandeja con barra de progreso: aprueban/rechazan UNA foto y devuelven el
+// resultado (sin redirigir), así el navegador puede ir mostrando "2 de 5…" y al final refrescar.
+export async function aprobarUna(nombre) {
+  try {
+    await aprobarPendiente(String(nombre));
+    revalidatePath('/', 'layout');
+    return { ok: true };
+  } catch (e) {
+    return { ok: false, error: e.message || 'No se pudo aprobar.' };
+  }
+}
+
+export async function rechazarUna(nombre) {
+  try {
+    await rechazarPendiente(String(nombre));
+    return { ok: true };
+  } catch (e) {
+    return { ok: false, error: e.message || 'No se pudo rechazar.' };
+  }
+}
