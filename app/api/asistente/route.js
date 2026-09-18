@@ -54,6 +54,7 @@ export async function POST(request) {
     const r = await responder(historial);
     return NextResponse.json({ ok: true, ...r });
   } catch (e) {
+    console.error('asistente:', e?.status || '', e?.name || '', String(e?.message || e).slice(0, 200));
     const status = e instanceof Anthropic.RateLimitError ? 429 : 502;
     return NextResponse.json({ ok: false, error: 'No pude responder ahora. Probá de nuevo o escribinos por WhatsApp.' }, { status });
   }
