@@ -1107,3 +1107,18 @@ body {
 :root[data-theme="oscuro"] header.cat { background: #0a2149; }
 :root[data-theme="oscuro"] header.cat form.search input { background: #0f1830; color: var(--ink); box-shadow: inset 0 0 0 1px var(--rule-strong); }
 :root[data-theme="oscuro"] header.cat .hcart { background: #1c2b52; color: #fff; }
+
+/* ===== Tarjeta con links propios (producto + subcategoría + marca) =====
+   El nombre es el link del producto y se "estira" sobre toda la tarjeta; las etiquetas y
+   botones quedan por encima para poder hacerles clic por separado. */
+.card--enlazada { position: relative; }
+.card--enlazada .card__enlace { color: var(--ink); text-decoration: none; }
+.card--enlazada .card__enlace::after { content: ''; position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
+.card--enlazada .card__enlace:focus-visible { outline: none; }
+.card--enlazada:has(.card__enlace:focus-visible) { outline: 3px solid var(--foco); outline-offset: 2px; }
+.card--enlazada:hover .card__enlace { color: var(--brand-ink); }
+.card--enlazada .subcat, .card--enlazada a.chipmarca, .card--enlazada .acts { position: relative; z-index: 2; }
+.card--enlazada .fav-btn.chico { z-index: 2; }
+.card--enlazada a.subcat, .card--enlazada a.chipmarca { text-decoration: none; transition: background-color .15s, color .15s; }
+.card--enlazada a.subcat:hover, .card--enlazada a.chipmarca:hover { background: var(--brand); color: #fff; }
+.card--enlazada a.subcat:focus-visible, .card--enlazada a.chipmarca:focus-visible { outline: 2px solid var(--foco); outline-offset: 2px; }

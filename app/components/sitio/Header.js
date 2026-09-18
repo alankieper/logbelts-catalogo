@@ -8,6 +8,10 @@ import { MARCA } from '../../../lib/marca';
 import { Buscar } from './Iconos';
 import BuscadorSugerencias from './BuscadorSugerencias';
 import BotonTema from '../BotonTema';
+import MenuDistribuidores, { OpcionesDistribuidores } from './MenuDistribuidores';
+
+// "Portal Distribuidores" no va en el menú: vive en el botón "Distribuidores" (el pie lo sigue mostrando)
+const MENU = NAV.filter((n) => n.href !== '/distribuidores');
 
 /** Encabezado único de todo el sitio. La lupa abre un panel de búsqueda con accesos rápidos del catálogo. */
 export default function Header({ q = '' }) {
@@ -42,7 +46,7 @@ export default function Header({ q = '' }) {
         </Link>
 
         <nav id="menu-sitio" className="sitio-nav" data-abierto={abierto} aria-label="Principal">
-          {NAV.map(({ href, label, destacado }) => (
+          {MENU.map(({ href, label, destacado }) => (
             <Link
               key={href}
               href={href}
@@ -52,8 +56,8 @@ export default function Header({ q = '' }) {
               {label}
             </Link>
           ))}
-          <div className="sitio-nav__cta">
-            <Link className="boton boton--claro" href="/contacto">Quiero ser distribuidor</Link>
+          <div className="sitio-nav__cta sitio-nav__dist">
+            <OpcionesDistribuidores onElegir={() => setAbierto(false)} />
           </div>
         </nav>
 
@@ -71,10 +75,8 @@ export default function Header({ q = '' }) {
           <span className="buscar-boton__texto" aria-hidden="true">{buscando ? 'Cerrar' : 'Buscá tu repuesto'}</span>
         </button>
 
-        {/* el buscador va primero y "Quiero ser distribuidor" a su derecha */}
-        <div className="sitio-header__acciones">
-          <Link className="boton boton--chico boton--claro" href="/contacto">Quiero ser distribuidor</Link>
-        </div>
+        {/* el buscador va primero y "Distribuidores" a su derecha, con el mismo recuadro */}
+        <MenuDistribuidores onAbrir={() => setBuscando(false)} />
 
         <BotonTema />
 
