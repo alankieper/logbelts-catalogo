@@ -1,5 +1,5 @@
 import { supabase } from '../../lib/supabase';
-import { pageStyle, containerStyle, heroTitleStyle, heroSubtitleStyle, cardStyle, COLOR_TEXT_LIGHT_MUTED, FONT_TEXTO } from '../theme';
+import { pageStyle, containerStyle, heroTitleStyle, heroSubtitleStyle, cardStyle, COLOR_TEXT_LIGHT_MUTED, COLOR_TEXTO, FONT_TEXTO } from '../theme';
 import EntrarComoBoton from './EntrarComoBoton';
 import AdminLogin from './AdminLogin';
 import { MARCA } from '../../lib/marca';
@@ -11,7 +11,7 @@ const container = { ...containerStyle('420px'), padding: '20px' };
 const logoImg = { height: '38px', width: 'auto', display: 'block', margin: '0 auto 22px' };
 const card = { ...cardStyle };
 const grid = { display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '18px' };
-const emptyState = { color: '#999', textAlign: 'center', fontSize: '14px', fontFamily: FONT_TEXTO };
+const emptyState = { color: COLOR_TEXTO, lineHeight: 1.5, textAlign: 'center', fontSize: '14px', fontFamily: FONT_TEXTO };
 
 export default async function Login() {
   const result = await supabase.from('vendedores').select('nombre').eq('activo', true).order('nombre');

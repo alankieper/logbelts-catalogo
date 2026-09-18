@@ -37,6 +37,7 @@ export default function EditorFoto({ codigo, src, original, etiqueta = 'Editar f
   const [estado, setEstado] = useState('');   // '' | cargando | guardando | error
   const [msg, setMsg] = useState('');
   const [guias, setGuias] = useState(true);
+  const [descarga, setDescarga] = useState(null); // foto lista para bajar cuando la web no puede guardar
   const lienzo = useRef(null);
   const arrastre = useRef(null);
   const dialogo = useRef(null);
@@ -46,7 +47,7 @@ export default function EditorFoto({ codigo, src, original, etiqueta = 'Editar f
   // Cargar la foto al abrir
   useEffect(() => {
     if (!abierto) return;
-    setEstado('cargando'); setMsg(''); setA(INICIAL); setImg(null);
+    setEstado('cargando'); setMsg(''); setA(INICIAL); setImg(null); setDescarga(null);
     const i = new Image();
     i.crossOrigin = 'anonymous';
     i.onload = () => { setImg(i); setEstado(''); };
@@ -127,6 +128,13 @@ export default function EditorFoto({ codigo, src, original, etiqueta = 'Editar f
       fd.set('original', original);
       fd.set('imagen', datos);
       const r = await guardarFotoEditada(fd);
+      if (r?.sinGuardado) {
+        // Web sin base de datos: se ofrece bajar la foto para subirla con las demás
+        setDescarga(datos);
+        setEstado('error');
+        setMsg(`${r.error} Descargala y dejala en Descargas › fotos-catalogo: se sube junto con las fotos de la extensión.`);
+        return;
+      }
       if (!r?.ok) throw new Error(r?.error || 'No se pudo guardar.');
       setEstado(''); setMsg('');
       setAbierto(false);
@@ -211,6 +219,10 @@ export default function EditorFoto({ codigo, src, original, etiqueta = 'Editar f
 
                 <p className="edf-ayuda">Se guarda cuadrada de {SALIDA}×{SALIDA} px con fondo blanco, en lugar de la actual. La anterior queda de respaldo.</p>
                 {msg ? <p className={estado === 'error' ? 'edf-msg edf-msg--error' : 'edf-msg'} role="status">{msg}</p> : null}
+
+                {descarga ? (
+                  <a className="edf-descargar" href={descarga} download={`${codigo}.jpg`}>Descargar foto editada ({codigo}.jpg)</a>
+                ) : null}
 
                 <div className="edf-acciones">
                   <button type="button" className="edf-secundario" onClick={() => setA(INICIAL)} disabled={ocupado}>Deshacer cambios</button>

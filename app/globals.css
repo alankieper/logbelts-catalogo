@@ -30,7 +30,7 @@
   --brand-wash: #e7ecf7;
   --ink: #191c22;
   --ink-soft: #4a505b;
-  --ink-faint: #767d8a;
+  --ink-faint: #555c69;
   --rule: #d9dde5;
   --rule-strong: #c1c7d2;
   --ok: #1f7a4d;
@@ -969,3 +969,8 @@ body {
   .edf-escena { width: 100%; height: auto; aspect-ratio: 1; }
   .edf-lienzo { width: 100% !important; height: auto !important; aspect-ratio: 1; }
 }
+.edf-descargar {
+  display: flex; align-items: center; justify-content: center; min-height: 44px; border-radius: 9px;
+  background: #fff; border: 1.5px solid var(--brand); color: var(--brand); font-weight: 700; font-size: 14px; text-decoration: none;
+}
+.edf-descargar:hover { background: var(--brand); color: #fff; }
