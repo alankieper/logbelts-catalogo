@@ -153,7 +153,17 @@ export default async function Inicio() {
                 Buscá por {enFrase(MARCA.codigo.etiqueta)}, por código original del fabricante o por marca y modelo de {MARCA.maquinas.singular}.
               </p>
             </div>
-            <Link className="boton boton--borde" href="/descargas">Catálogos en PDF <Flecha /></Link>
+            <div className="catalogo-portada__buscar">
+              <BuscadorSugerencias
+                id="catalogo-q"
+                formClase="hero__buscar"
+                etiqueta="Buscar en el catálogo"
+                etiquetaOculta
+                placeholder={`${MARCA.codigo.etiqueta}, código original o modelo`}
+                ancho={480}
+              />
+              <Link className="catalogo-portada__pdf" href="/descargas">Catálogos en PDF <Flecha /></Link>
+            </div>
           </div>
           <Dibujo className="tipos__grilla">
             {familias.map((f) => {

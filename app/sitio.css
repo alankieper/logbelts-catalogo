@@ -686,3 +686,12 @@ body:has(.pedido-fab) .whatsapp-flotante { bottom: 82px; }
 /* Campos de formulario y placas de logos siguen claros para que se lean */
 .sitio .campo input, .sitio .campo select, .sitio .campo textarea, .sitio .filtro-tecnico input, .sitio .filtro-tecnico select { background-color: #fff; background-image: none; }
 @media (prefers-reduced-motion: reduce) { .sitio, .sitio .seccion, .sitio .tipos, .sitio .ventajas { animation: none !important; } }
+
+/* Buscador al lado del título "Todo el catálogo, por familia" */
+.catalogo-portada .seccion__cabeza { align-items: center; }
+.catalogo-portada__buscar { flex: 0 1 480px; display: grid; justify-items: end; gap: 10px; min-width: min(100%, 320px); }
+.catalogo-portada__buscar .hero__buscar { width: 100%; max-width: 480px; margin-top: 0; box-shadow: 0 10px 26px rgba(20,28,50,.14); border: 1px solid var(--linea); }
+.catalogo-portada__pdf { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--marca-tinta); }
+.catalogo-portada__pdf svg { width: 16px; height: 16px; transition: transform .2s var(--ease); }
+.catalogo-portada__pdf:hover svg { transform: translateX(3px); }
+@media (max-width: 900px) { .catalogo-portada__buscar { flex-basis: 100%; justify-items: stretch; } .catalogo-portada__pdf { justify-self: start; } }
