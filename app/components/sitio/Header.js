@@ -57,10 +57,6 @@ export default function Header({ q = '' }) {
           </div>
         </nav>
 
-        <div className="sitio-header__acciones">
-          <Link className="boton boton--chico boton--claro" href="/contacto">Quiero ser distribuidor</Link>
-        </div>
-
         <button
           type="button"
           className="buscar-boton"
@@ -74,6 +70,11 @@ export default function Header({ q = '' }) {
           ) : <Buscar />}
           <span className="buscar-boton__texto" aria-hidden="true">{buscando ? 'Cerrar' : 'Buscá tu repuesto'}</span>
         </button>
+
+        {/* el buscador va primero y "Quiero ser distribuidor" a su derecha */}
+        <div className="sitio-header__acciones">
+          <Link className="boton boton--chico boton--claro" href="/contacto">Quiero ser distribuidor</Link>
+        </div>
 
         <BotonTema />
 
