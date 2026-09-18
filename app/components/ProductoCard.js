@@ -3,7 +3,8 @@ import BotonFavorito from './BotonFavorito';
 import ConsultaChip from './ConsultaChip';
 import { DibujoSinFoto } from './DibujoCatalogo';
 
-export default function ProductoCard({ p, motivo }) {
+// `subcategoria`: se muestra en las vistas que mezclan categorías ("Ver todo en [familia]")
+export default function ProductoCard({ p, motivo, subcategoria }) {
   const meta =
     (p.medidas && p.medidas.length ? p.medidas.slice(0, 2).join(' · ') : '') || (p.ubicacion || '');
   const marca = p.marcas && p.marcas.length ? p.marcas[0] : '';
@@ -30,6 +31,7 @@ export default function ProductoCard({ p, motivo }) {
           <BotonFavorito codigo={p.codigo} nombre={nombre} chico />
         </div>
         <div className="body">
+          {subcategoria ? <span className="subcat">{subcategoria}</span> : null}
           <span className="code">{p.codigo}</span>
           <span className="nm">{p.nombre || p.clave_producto || 'Producto'}</span>
           {/* Renglón fijo de etiquetas: reserva el lugar aunque el producto no tenga marca

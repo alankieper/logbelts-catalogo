@@ -3,6 +3,7 @@ import CatalogoHeader from '../../components/CatalogoHeader';
 import CatalogoPie from '../../components/CatalogoPie';
 import Icono from '../../components/Icono';
 import { MarcaDeAgua, DibujoTile, hayDibujos } from '../../components/DibujoCatalogo';
+import '../../navegacion-catalogo.css';
 import NavCategorias from '../../components/NavCategorias';
 import { getFamilia, getNavegacionCategorias } from '../../../lib/catalogo';
 import { MARCA } from '../../../lib/marca';
@@ -40,6 +41,12 @@ export default async function FamiliaPage({ params }) {
             <p className="lead">{fam.count.toLocaleString('es-AR')} productos en {fam.subcats.length} subcategorías.</p>
             <MarcaDeAgua nombre={fam.nombre} />
           </div>
+
+          <a className="ver-todo" href={`/f/${fam.slug}/todo`}>
+            <span className="ver-todo__t">Ver todo en {fam.nombre}</span>
+            <span className="ver-todo__d">Los {fam.count.toLocaleString('es-AR')} repuestos de las {fam.subcats.length} categorías juntos, con filtros por subcategoría y marca</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
 
           <NavCategorias anterior={nav.anterior} siguiente={nav.siguiente} tipo="familia" />
 
