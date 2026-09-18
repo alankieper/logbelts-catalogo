@@ -75,7 +75,7 @@ export default function RevisarImport({ params, searchParams }) {
               <div className="kpis">
                 <div className="kpi"><div className="n" style={{ color: 'var(--ok)' }}>+{cont.nuevo}</div><div className="l">Nuevos</div></div>
                 <div className="kpi"><div className="n" style={{ color: 'var(--warn)' }}>~{cont.modificado}</div><div className="l">Modificados</div></div>
-                <div className="kpi"><div className="n" style={{ color: '#b3261e' }}>−{cont.eliminado}</div><div className="l">Eliminados</div></div>
+                <div className="kpi"><div className="n" style={{ color: 'var(--peligro, #b3261e)' }}>−{cont.eliminado}</div><div className="l">Eliminados</div></div>
                 <div className="kpi"><div className="n">{cont.aprobado}</div><div className="l">Aprobados</div></div>
                 <div className="kpi"><div className="n">{cont.rechazado}</div><div className="l">Rechazados</div></div>
                 <div className="kpi"><div className="n">{cont.pendiente}</div><div className="l">Pendientes</div></div>
@@ -122,7 +122,7 @@ export default function RevisarImport({ params, searchParams }) {
                         <span className={`tag ${c.tipo === 'nuevo' ? 'ok' : c.tipo === 'eliminado' ? 'off' : 'warn'}`}>{c.tipo}</span>
                         <strong style={{ fontVariantNumeric: 'tabular-nums' }}>{c.codigo}</strong>
                         {c.pagina ? <span style={{ fontSize: 11.5, color: 'var(--ink-faint)' }}>pág. {c.pagina}</span> : null}
-                        <span style={{ marginLeft: 'auto', fontSize: 11.5, fontWeight: 700, color: c.decision === 'aprobado' ? 'var(--ok)' : c.decision === 'rechazado' ? '#b3261e' : 'var(--ink-faint)' }}>
+                        <span style={{ marginLeft: 'auto', fontSize: 11.5, fontWeight: 700, color: c.decision === 'aprobado' ? 'var(--ok)' : c.decision === 'rechazado' ? 'var(--peligro, #b3261e)' : 'var(--ink-faint)' }}>
                           {c.decision}
                         </span>
                       </div>
@@ -166,8 +166,8 @@ export default function RevisarImport({ params, searchParams }) {
                               type="submit"
                               style={{
                                 border: '1px solid var(--rule-strong)', borderRadius: 8, padding: '6px 12px', fontSize: 12.5, fontWeight: 700, cursor: 'pointer',
-                                background: c.decision === d ? (d === 'aprobado' ? 'var(--ok)' : d === 'rechazado' ? '#b3261e' : 'var(--ink-faint)') : 'var(--surface)',
-                                color: c.decision === d ? '#fff' : 'var(--ink-soft)',
+                                background: c.decision === d ? (d === 'aprobado' ? 'var(--ok)' : d === 'rechazado' ? 'var(--peligro, #b3261e)' : 'var(--ink-faint)') : 'var(--surface)',
+                                color: c.decision === d ? 'var(--texto-sobre-estado, #fff)' : 'var(--ink-soft)',
                               }}
                             >
                               {d === 'aprobado' ? 'Aprobar' : d === 'rechazado' ? 'Rechazar' : 'Pendiente'}
@@ -198,7 +198,7 @@ export default function RevisarImport({ params, searchParams }) {
                     <span className="tag ok">Aplicado</span>
                     <form action={revertirImport}>
                       <input type="hidden" name="id" value={id} />
-                      <button className="danger" type="submit" style={{ border: '1px solid #f0d3d3', borderRadius: 9, padding: '10px 16px', background: '#fff', color: '#b3261e', fontWeight: 700, cursor: 'pointer' }}>
+                      <button className="danger" type="submit" style={{ border: '1px solid var(--peligro-borde, #f0d3d3)', borderRadius: 9, padding: '10px 16px', background: 'var(--surface-peligro, #fff)', color: 'var(--peligro, #b3261e)', fontWeight: 700, cursor: 'pointer' }}>
                         Volver atrás esta importación
                       </button>
                     </form>

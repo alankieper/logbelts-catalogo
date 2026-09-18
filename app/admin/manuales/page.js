@@ -91,7 +91,7 @@ export default async function AdminManuales({ searchParams }) {
                   <td>
                     <form action={borrarDespiece} style={{ display: 'inline' }}>
                       <input type="hidden" name="id" value={d.id} />
-                      <button type="submit" style={{ background: 'none', border: 0, color: '#b3261e', fontWeight: 600, cursor: 'pointer', fontSize: 13 }}>Borrar</button>
+                      <button type="submit" style={{ background: 'none', border: 0, color: 'var(--peligro, #b3261e)', fontWeight: 600, cursor: 'pointer', fontSize: 13 }}>Borrar</button>
                     </form>
                   </td>
                 </tr>

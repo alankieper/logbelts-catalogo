@@ -1,0 +1,55 @@
+/* ===== Paginación y navegación entre categorías (catálogo) =====
+   Sólo tokens del catálogo (--brand, --brand-ink, --surface, --rule, --ink…): el modo oscuro los redefine. */
+
+#productos { scroll-margin-top: 96px; }
+
+.paginacion {
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px;
+  margin: 28px 0 8px;
+}
+.paginacion__nums { display: flex; gap: 6px; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; justify-content: center; }
+.paginacion__paso, .paginacion__num {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-width: 44px; min-height: 44px; padding: 0 12px; border-radius: 10px;
+  border: 1px solid var(--rule); background: var(--surface); color: var(--ink);
+  font-size: 14px; font-weight: 700; text-decoration: none; transition: border-color .15s, color .15s, background .15s;
+}
+a.paginacion__paso:hover, a.paginacion__num:hover { border-color: var(--brand-ink); color: var(--brand-ink); }
+.paginacion__num[aria-current="page"] { background: var(--brand); border-color: var(--brand); color: #fff; }
+.paginacion__paso[aria-disabled="true"] { opacity: .45; cursor: default; }
+.paginacion__puntos { display: inline-flex; align-items: flex-end; min-height: 44px; padding: 0 2px; color: var(--ink-faint); }
+.paginacion a:focus-visible, .navcat a:focus-visible, .navcat-final a:focus-visible { outline: 2px solid var(--brand-ink); outline-offset: 2px; }
+
+/* Barra compacta: anterior / siguiente categoría */
+.navcat { display: flex; justify-content: space-between; gap: 12px; margin: 4px 0 18px; }
+.navcat__lnk {
+  display: inline-flex; align-items: center; gap: 10px; max-width: 48%; min-height: 44px; padding: 8px 14px;
+  border: 1px solid var(--rule); border-radius: 12px; background: var(--surface); color: var(--ink);
+  text-decoration: none; font-size: 14px; font-weight: 700; line-height: 1.25;
+}
+.navcat__lnk small { display: block; font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-faint); }
+.navcat__lnk--sig { text-align: right; margin-left: auto; }
+.navcat__lnk:hover { border-color: var(--brand-ink); color: var(--brand-ink); }
+.navcat__lnk svg { flex-shrink: 0; }
+
+/* Al terminar la categoría */
+.navcat-final { display: grid; gap: 10px; justify-items: center; margin: 30px 0 6px; }
+.navcat-final__sig {
+  display: grid; gap: 4px; justify-items: center; text-align: center; width: min(520px, 100%);
+  padding: 20px 22px; border-radius: 16px; background: var(--brand); color: #fff; text-decoration: none;
+  box-shadow: var(--elevacion, 0 10px 26px rgba(20,28,50,.12)); transition: transform .2s var(--ease, ease), filter .2s;
+}
+.navcat-final__sig:hover { transform: translateY(-2px); filter: brightness(1.08); }
+.navcat-final__k { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+.navcat-final__t { display: inline-flex; align-items: center; gap: 8px; font-size: 19px; font-weight: 800; }
+.navcat-final__n { font-size: 14px; opacity: .92; }
+.navcat-final__ant { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-size: 14px; font-weight: 600; color: var(--ink-soft); text-decoration: none; }
+.navcat-final__ant:hover { color: var(--brand-ink); }
+
+@media (max-width: 640px) {
+  .navcat { flex-direction: column; }
+  .navcat__lnk { max-width: 100%; }
+  .navcat__lnk--sig { margin-left: 0; justify-content: space-between; }
+  .paginacion__paso { padding: 0 10px; }
+}
+@media (prefers-reduced-motion: reduce) { .navcat-final__sig { transition: none; } }

@@ -1,5 +1,6 @@
 import '../catalogo-extra.css';
 import { MARCA } from '../../lib/marca';
+import BotonTema from '../components/BotonTema';
 
 export default function AdminHeader({ activo }) {
   const link = (href, label, key) => (
@@ -16,6 +17,7 @@ export default function AdminHeader({ activo }) {
         <nav>
           {link('/admin', 'Tablero', 'home')}
           {link('/admin/metricas', 'Métricas', 'metricas')}
+          {link('/admin/temporada', 'Temporada', 'temporada')}
           {link('/admin/contactos', 'Contactos', 'contactos')}
           {link('/admin/vendedores', 'Vendedores', 'vendedores')}
           {link('/admin/distribuidores', 'Distribuidores', 'distribuidores')}
@@ -30,6 +32,7 @@ export default function AdminHeader({ activo }) {
         <span className="right">
           <a href="/">Ver sitio</a> &nbsp;·&nbsp; <a href="/#catalogo">Ver catálogo</a> &nbsp;·&nbsp; <a href="/logout">Salir</a>
         </span>
+        <BotonTema className="tema-boton--admin" />
       </div>
     </header>
   );

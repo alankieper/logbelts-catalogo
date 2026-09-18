@@ -98,7 +98,7 @@ export default function SubirMedia({ codigo }) {
       />
       {estado === 'subiendo' ? <span className="media-hint">{msg}</span> : null}
       {estado === 'ok' ? <span className="media-hint" style={{ color: 'var(--ok)' }}>{msg}</span> : null}
-      {estado === 'error' ? <span className="media-hint" style={{ color: '#b3261e' }}>{msg}</span> : null}
+      {estado === 'error' ? <span className="media-hint" style={{ color: 'var(--peligro, #b3261e)' }}>{msg}</span> : null}
       {estado === 'idle' ? (
         <span className="media-hint">Podés subir varias, una por una · Imagen: JPG / PNG / WEBP (máx. 15 MB) · Video: MP4 / MOV / WEBM (máx. 80 MB)</span>
       ) : null}

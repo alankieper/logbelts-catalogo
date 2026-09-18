@@ -23,10 +23,17 @@ export const metadata = {
   twitter: { card: 'summary_large_image' },
 };
 
-// Web y catálogo son un solo sitio con un solo aspecto (claro); ya no hay modo oscuro aparte.
+// Tema: claro (identidad Logbelts) por defecto; el visitante puede pasar a oscuro con el botón del
+// encabezado (components/BotonTema.js). La elección se guarda en localStorage ('lb_tema') y este
+// script la aplica antes del primer pintado para que la página no parpadee en claro.
+const SCRIPT_TEMA = `(function(){try{var t=localStorage.getItem('lb_tema')==='oscuro'?'oscuro':'claro';var d=document.documentElement;d.setAttribute('data-theme',t);d.style.colorScheme=t==='oscuro'?'dark':'light';}catch(e){}})();`;
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" data-theme="claro">
+    <html lang="es" data-theme="claro" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: SCRIPT_TEMA }} />
+      </head>
       <body>{children}</body>
     </html>
   );

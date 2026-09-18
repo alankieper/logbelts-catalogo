@@ -1,0 +1,16 @@
+/* ===== "Todo el catálogo por familia" (portada) =====
+   Primera fila: 3 familias fijas (desmalezadoras, minitractores, motosierras), más grandes.
+   Después, 4 familias por fila. Grilla de 12 columnas: 3 × 4 = 12 y 4 × 3 = 12. */
+.sitio .familias-grilla { grid-template-columns: repeat(12, 1fr); }
+.sitio .familias-grilla > .tipo { grid-column: span 3; }
+.sitio .familias-grilla > .tipo--destacada { grid-column: span 4; padding: 26px 24px 24px; }
+.sitio .familias-grilla > .tipo--destacada .tipo__nombre { font-size: 1.2em; }
+.sitio .familias-grilla > .tipo--destacada .tipo__dibujo { transform: scale(1.12); transform-origin: left top; }
+
+@media (max-width: 1000px) {
+  .sitio .familias-grilla { grid-template-columns: repeat(2, 1fr); }
+  .sitio .familias-grilla > .tipo,
+  .sitio .familias-grilla > .tipo--destacada { grid-column: auto; }
+  /* en tablet/celular las 3 destacadas siguen primero: la tercera ocupa el ancho completo */
+  .sitio .familias-grilla > .tipo--destacada:nth-child(3) { grid-column: 1 / -1; }
+}

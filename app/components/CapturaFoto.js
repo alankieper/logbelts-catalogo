@@ -1,16 +1,16 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { COLOR_PRIMARY, COLOR_ERROR, COLOR_CEMENTO, SHADOW_SOFT, FONT_TEXTO } from '../theme';
+import { COLOR_PRIMARY, COLOR_PRIMARY_TEXTO, COLOR_ERROR, COLOR_CEMENTO, SHADOW_SOFT, FONT_TEXTO } from '../theme';
 import { IconCamara, IconSubir, IconCatalogo } from './Icons';
 
 const fila = { display: 'flex', gap: '18px', justifyContent: 'center', padding: '4px 0' };
 const columna = { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px' };
 const fab = { width: '52px', height: '52px', borderRadius: '50%', border: 'none', backgroundColor: COLOR_PRIMARY, color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', boxShadow: SHADOW_SOFT, flexShrink: 0 };
-const fabSecundario = { ...fab, backgroundColor: '#eef2fb', color: COLOR_PRIMARY, boxShadow: 'none', border: '1px solid #e1e6f0' };
+const fabSecundario = { ...fab, backgroundColor: 'var(--lb-suave, #eef2fb)', color: COLOR_PRIMARY_TEXTO, boxShadow: 'none', border: '1px solid var(--lb-borde, #e1e6f0)' };
 const fabLabel = { fontSize: '11.5px', color: COLOR_CEMENTO, fontWeight: '600', fontFamily: FONT_TEXTO };
 const bigButton = { display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', width: '100%', boxSizing: 'border-box', backgroundColor: COLOR_PRIMARY, color: 'white', border: 'none', borderRadius: '14px', padding: '16px 18px', fontSize: '15px', fontWeight: '700', textAlign: 'center', cursor: 'pointer', boxShadow: SHADOW_SOFT, fontFamily: FONT_TEXTO };
-const secondaryButton = { ...bigButton, backgroundColor: '#eef2fb', color: COLOR_PRIMARY, boxShadow: 'none' };
+const secondaryButton = { ...bigButton, backgroundColor: 'var(--lb-suave, #eef2fb)', color: COLOR_PRIMARY_TEXTO, boxShadow: 'none' };
 const errorText = { color: COLOR_ERROR, fontSize: '13.5px', marginTop: '10px', fontFamily: FONT_TEXTO, textAlign: 'center' };
 
 // Estados: 'inicio' | 'streaming' | 'preview' | 'sin_camara'

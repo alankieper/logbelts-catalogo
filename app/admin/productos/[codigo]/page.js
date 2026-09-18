@@ -196,7 +196,7 @@ export default async function EditarProducto({ params, searchParams }) {
 
           <form action={alternarOculto} style={{ marginTop: 24 }}>
             <input type="hidden" name="codigo" value={p.codigo} />
-            <button className="danger" type="submit" style={{ border: '1px solid #f0d3d3', borderRadius: 9, padding: '10px 16px', background: '#fff', color: '#b3261e', fontWeight: 700, cursor: 'pointer' }}>
+            <button className="danger" type="submit" style={{ border: '1px solid var(--peligro-borde, #f0d3d3)', borderRadius: 9, padding: '10px 16px', background: 'var(--surface-peligro, #fff)', color: 'var(--peligro, #b3261e)', fontWeight: 700, cursor: 'pointer' }}>
               {p.oculto ? 'Volver a mostrar en el catálogo' : 'Ocultar del catálogo'}
             </button>
           </form>

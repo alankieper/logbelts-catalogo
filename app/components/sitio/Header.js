@@ -7,6 +7,7 @@ import { HERRAMIENTAS, NAV, esCatalogo } from '../../../lib/sitio';
 import { MARCA } from '../../../lib/marca';
 import { Buscar } from './Iconos';
 import BuscadorSugerencias from './BuscadorSugerencias';
+import BotonTema from '../BotonTema';
 
 /** Encabezado único de todo el sitio. La lupa abre un panel de búsqueda con accesos rápidos del catálogo. */
 export default function Header({ q = '' }) {
@@ -73,6 +74,8 @@ export default function Header({ q = '' }) {
           ) : <Buscar />}
           <span className="buscar-boton__texto" aria-hidden="true">{buscando ? 'Cerrar' : 'Buscá tu repuesto'}</span>
         </button>
+
+        <BotonTema />
 
         <button
           type="button"

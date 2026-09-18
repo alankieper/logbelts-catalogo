@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { getFamilias, getMarcasConteo } from '../../lib/catalogo';
+import { getFamiliasOrdenadas, getMarcasConteo } from '../../lib/catalogo';
+import { temporadaVigente } from '../../lib/ajustes';
+import { FAMILIAS_INICIO, TEMPORADAS, esDeTemporada } from '../../lib/temporada';
+import '../familias-portada.css';
 import { logosClaros, logosMarcas } from '../../lib/logosMarcas';
 import { datosSelector } from '../../lib/maquinas';
 import { img } from '../../lib/sitio';
@@ -65,11 +68,21 @@ async function marcasDelCatalogo() {
   }
 }
 
+// Orden de "Todo el catálogo por familia": primera fila fija (desmalezadoras, minitractores,
+// motosierras) y después las de la temporada en foco (ver lib/temporada.js).
 async function familiasDelCatalogo() {
   try {
-    return await getFamilias();
+    return await getFamiliasOrdenadas();
   } catch {
     return [];
+  }
+}
+
+async function temporadaDeLaPortada() {
+  try {
+    return await temporadaVigente();
+  } catch {
+    return null;
   }
 }
 
@@ -86,7 +99,9 @@ const PRODUCTOS_HERO = [
 ];
 
 export default async function Inicio() {
-  const [marcas, familias] = await Promise.all([marcasDelCatalogo(), familiasDelCatalogo()]);
+  const [marcas, familias, estado] = await Promise.all([marcasDelCatalogo(), familiasDelCatalogo(), temporadaDeLaPortada()]);
+  const temporada = estado?.temporada || TEMPORADAS.cesped;
+  const familiasTemporada = familias.filter((f) => esDeTemporada(f.slug, estado)).slice(0, 3);
 
   return (
     <>
@@ -148,7 +163,7 @@ export default async function Inicio() {
           <div className="seccion__cabeza">
             <div>
               <p className="antetitulo">Catálogo de repuestos</p>
-              <h2 id="catalogo-titulo" className="titulo-seccion">Todo el catálogo, por familia</h2>
+              <h2 id="catalogo-titulo" className="titulo-seccion">Todo el catálogo por familia</h2>
               <p className="bajada" style={{ marginTop: 14 }}>
                 Buscá por {enFrase(MARCA.codigo.etiqueta)}, por código original del fabricante o por marca y modelo de {MARCA.maquinas.singular}.
               </p>
@@ -165,11 +180,12 @@ export default async function Inicio() {
               <Link className="catalogo-portada__pdf" href="/descargas">Catálogos en PDF <Flecha /></Link>
             </div>
           </div>
-          <Dibujo className="tipos__grilla">
-            {familias.map((f) => {
+          <Dibujo className="tipos__grilla familias-grilla">
+            {familias.map((f, i) => {
               const DibujoFamilia = dibujoFamilia(f.nombre);
+              const destacada = i < FAMILIAS_INICIO.length && FAMILIAS_INICIO.includes(f.slug);
               return (
-                <a key={f.slug} className="tipo" href={`/f/${f.slug}`}>
+                <a key={f.slug} className={destacada ? 'tipo tipo--destacada' : 'tipo'} href={`/f/${f.slug}`}>
                   <DibujoFamilia className="tipo__dibujo" />
                   <span className="tipo__nombre">{f.nombre.charAt(0).toUpperCase() + f.nombre.slice(1)}</span>
                   <span className="tipo__cant">{f.count.toLocaleString('es-AR')} {f.count === 1 ? 'producto' : 'productos'}</span>
@@ -282,12 +298,15 @@ export default async function Inicio() {
       <section className="fondo-foto fondo-foto--oscuro temporada oscuro">
         <Image className="fondo-foto__img" src={img('3d5e5148663349a9beae8fb6ac532baff000')} alt="" fill sizes="100vw" />
         <div className="contenedor">
-          <p className="antetitulo">Temporada primavera · verano</p>
-          <h2 className="display">Prepará tu stock para la temporada</h2>
-          <p className="temporada__bajada">¡No te lo pierdas!</p>
-          <p>Registrate como distribuidor e incorporá toda la línea de productos de calidad {MARCA.nombre}.</p>
+          <p className="antetitulo">{estado?.pre ? `Pretemporada · ${temporada.nombre.toLowerCase()}` : temporada.antetitulo}</p>
+          <h2 className="display">{temporada.titulo}</h2>
+          <p className="temporada__bajada">{estado?.pre ? '¡Se viene la temporada!' : '¡No te lo pierdas!'}</p>
+          <p>{temporada.bajada} Registrate como distribuidor e incorporá toda la línea de productos de calidad {MARCA.nombre}.</p>
           <div className="hero__acciones">
             <Link href="/contacto" className="boton boton--claro">Contactate con nosotros <Flecha /></Link>
+            {familiasTemporada.map((f) => (
+              <a key={f.slug} href={`/f/${f.slug}`} className="boton boton--borde">{f.nombre}</a>
+            ))}
           </div>
         </div>
       </section>

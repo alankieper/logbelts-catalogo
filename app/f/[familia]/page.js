@@ -3,7 +3,8 @@ import CatalogoHeader from '../../components/CatalogoHeader';
 import CatalogoPie from '../../components/CatalogoPie';
 import Icono from '../../components/Icono';
 import { MarcaDeAgua, DibujoTile, hayDibujos } from '../../components/DibujoCatalogo';
-import { getFamilia } from '../../../lib/catalogo';
+import NavCategorias from '../../components/NavCategorias';
+import { getFamilia, getNavegacionCategorias } from '../../../lib/catalogo';
 import { MARCA } from '../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
@@ -20,6 +21,7 @@ export async function generateMetadata({ params }) {
 export default async function FamiliaPage({ params }) {
   const fam = await getFamilia(params.familia);
   if (!fam) notFound();
+  const nav = await getNavegacionCategorias(fam.slug);
   // Sin dibujos de línea: tarjetas compactas con ícono, como antes de la versión ilustrada.
   const dib = hayDibujos();
 
@@ -38,6 +40,8 @@ export default async function FamiliaPage({ params }) {
             <p className="lead">{fam.count.toLocaleString('es-AR')} productos en {fam.subcats.length} subcategorías.</p>
             <MarcaDeAgua nombre={fam.nombre} />
           </div>
+
+          <NavCategorias anterior={nav.anterior} siguiente={nav.siguiente} tipo="familia" />
 
           <div className={dib ? 'tiles tiles--dib' : 'tiles'}>
             {fam.subcats.map((s) => (
@@ -62,6 +66,8 @@ export default async function FamiliaPage({ params }) {
               </a>
             ))}
           </div>
+
+          <NavCategorias variante="final" anterior={nav.anterior} siguiente={nav.siguiente} tipo="familia" />
         </div>
       </main>
       <CatalogoPie />

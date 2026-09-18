@@ -2,22 +2,22 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { revisarMejora } from '../../../actions';
-import { COLOR_PRIMARY, COLOR_CEMENTO, COLOR_ERROR, COLOR_OK, SHADOW_SOFT, FONT_TEXTO, cardStyle } from '../../../../theme';
+import { COLOR_PRIMARY, COLOR_PRIMARY_TEXTO, COLOR_CEMENTO, COLOR_ERROR, COLOR_OK, SHADOW_SOFT, FONT_TEXTO, cardStyle } from '../../../../theme';
 
 const card = { ...cardStyle, padding: '22px' };
 const toolbar = { display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '14px', marginBottom: '16px' };
-const navBtn = { backgroundColor: '#eef2fb', color: COLOR_PRIMARY, border: 'none', borderRadius: '10px', padding: '9px 14px', fontSize: '13px', fontWeight: '700', cursor: 'pointer', fontFamily: FONT_TEXTO };
+const navBtn = { backgroundColor: 'var(--lb-suave, #eef2fb)', color: COLOR_PRIMARY_TEXTO, border: 'none', borderRadius: '10px', padding: '9px 14px', fontSize: '13px', fontWeight: '700', cursor: 'pointer', fontFamily: FONT_TEXTO };
 const pageLabel = { fontSize: '13px', color: COLOR_CEMENTO, fontWeight: '700', minWidth: '110px', textAlign: 'center' };
-const canvasWrap = { position: 'relative', margin: '0 auto', touchAction: 'none', lineHeight: 0, border: '1px solid #e6eaf2', borderRadius: '12px', overflow: 'hidden' };
+const canvasWrap = { position: 'relative', margin: '0 auto', touchAction: 'none', lineHeight: 0, border: '1px solid var(--lb-borde, #e6eaf2)', borderRadius: '12px', overflow: 'hidden' };
 const hint = { fontSize: '13px', color: COLOR_CEMENTO, textAlign: 'center', marginBottom: '14px', fontFamily: FONT_TEXTO };
 const tipoRow = { display: 'flex', gap: '10px', marginTop: '20px' };
-const tipoBtn = (activo) => ({ flex: 1, padding: '12px', borderRadius: '12px', border: activo ? `2px solid ${COLOR_PRIMARY}` : '1px solid #e1e6f0', backgroundColor: activo ? '#eef2fb' : 'white', color: activo ? COLOR_PRIMARY : '#555', fontWeight: '700', fontSize: '14px', cursor: 'pointer', fontFamily: FONT_TEXTO, opacity: 1 });
-const label = { display: 'block', marginTop: '18px', marginBottom: '8px', color: '#444', fontSize: '13.5px', fontWeight: '700' };
-const textareaStyle = { width: '100%', boxSizing: 'border-box', padding: '14px 16px', borderRadius: '14px', border: '1px solid #e1e6f0', fontSize: '15px', outline: 'none', fontFamily: FONT_TEXTO, backgroundColor: '#fafbfe' };
+const tipoBtn = (activo) => ({ flex: 1, padding: '12px', borderRadius: '12px', border: activo ? `2px solid ${COLOR_PRIMARY}` : '1px solid var(--lb-borde, #e1e6f0)', backgroundColor: activo ? 'var(--lb-suave, #eef2fb)' : 'var(--lb-tarjeta, white)', color: activo ? COLOR_PRIMARY_TEXTO : 'var(--lb-etiqueta, #555)', fontWeight: '700', fontSize: '14px', cursor: 'pointer', fontFamily: FONT_TEXTO, opacity: 1 });
+const label = { display: 'block', marginTop: '18px', marginBottom: '8px', color: 'var(--lb-etiqueta, #444)', fontSize: '13.5px', fontWeight: '700' };
+const textareaStyle = { width: '100%', boxSizing: 'border-box', padding: '14px 16px', borderRadius: '14px', border: '1px solid var(--lb-borde, #e1e6f0)', fontSize: '15px', outline: 'none', fontFamily: FONT_TEXTO, backgroundColor: 'var(--lb-campo, #fafbfe)' };
 const fotoPreview = { width: '100%', maxWidth: '220px', borderRadius: '12px', marginTop: '8px', display: 'block' };
 const botones = { display: 'flex', gap: '12px', marginTop: '26px' };
 const botonConfirmar = { flex: 1, backgroundColor: COLOR_PRIMARY, color: 'white', border: 'none', borderRadius: '14px', padding: '16px', fontSize: '15px', fontWeight: '700', cursor: 'pointer', boxShadow: SHADOW_SOFT, fontFamily: FONT_TEXTO };
-const botonRechazar = { flex: '0 0 auto', backgroundColor: 'white', color: '#c0392b', border: '2px solid #f0d3d3', borderRadius: '14px', padding: '16px 18px', fontSize: '14px', fontWeight: '700', cursor: 'pointer', fontFamily: FONT_TEXTO };
+const botonRechazar = { flex: '0 0 auto', backgroundColor: 'var(--lb-tarjeta, white)', color: 'var(--lb-error-texto, #c0392b)', border: '2px solid var(--lb-peligro-borde, #f0d3d3)', borderRadius: '14px', padding: '16px 18px', fontSize: '14px', fontWeight: '700', cursor: 'pointer', fontFamily: FONT_TEXTO };
 const errorText = { color: COLOR_ERROR, fontSize: '14px', marginTop: '14px', textAlign: 'center', fontFamily: FONT_TEXTO };
 const okText = { color: COLOR_OK, fontSize: '15px', fontWeight: '700', textAlign: 'center', fontFamily: FONT_TEXTO };
 
@@ -210,7 +210,7 @@ export default function MarcarRegion({ mejora, catalogoUrl }) {
         <p style={okText}>¡Listo! Se generó una nueva versión del catálogo con el cambio aplicado.</p>
         <div style={botones}>
           <a href="/admin" style={{ ...botonConfirmar, textAlign: 'center', textDecoration: 'none', boxSizing: 'border-box' }}>Volver al panel</a>
-          <a href="/catalogo" style={{ ...botonRechazar, textAlign: 'center', textDecoration: 'none', color: COLOR_PRIMARY, borderColor: '#e1e6f0' }}>Ver catálogo</a>
+          <a href="/catalogo" style={{ ...botonRechazar, textAlign: 'center', textDecoration: 'none', color: COLOR_PRIMARY_TEXTO, borderColor: 'var(--lb-borde, #e1e6f0)' }}>Ver catálogo</a>
         </div>
       </div>
     );

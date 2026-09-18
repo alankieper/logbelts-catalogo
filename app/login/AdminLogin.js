@@ -1,16 +1,16 @@
 'use client';
 
 import { useState } from 'react';
-import { COLOR_PRIMARY, COLOR_TEXTO, COLOR_ERROR, FONT_TEXTO } from '../theme';
+import { COLOR_PRIMARY, COLOR_PRIMARY_TEXTO, COLOR_TEXTO, COLOR_ERROR, FONT_TEXTO } from '../theme';
 import { IconAdmin } from '../components/Icons';
 
-const separador = { display: 'flex', alignItems: 'center', gap: '10px', margin: '18px 0 12px', color: '#4a5568', fontSize: '12px', fontFamily: FONT_TEXTO };
-const linea = { flex: 1, height: '1px', backgroundColor: '#d5dbe5' };
-const toggleButton = { display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', width: '100%', boxSizing: 'border-box', backgroundColor: 'white', border: `1.5px solid ${COLOR_PRIMARY}`, color: COLOR_PRIMARY, borderRadius: '16px', padding: '14px 16px', cursor: 'pointer', fontFamily: FONT_TEXTO, fontSize: '15px', fontWeight: '700' };
+const separador = { display: 'flex', alignItems: 'center', gap: '10px', margin: '18px 0 12px', color: 'var(--lb-etiqueta, #4a5568)', fontSize: '12px', fontFamily: FONT_TEXTO };
+const linea = { flex: 1, height: '1px', backgroundColor: 'var(--lb-borde, #d5dbe5)' };
+const toggleButton = { display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', width: '100%', boxSizing: 'border-box', backgroundColor: 'var(--lb-tarjeta, white)', border: `1.5px solid ${COLOR_PRIMARY_TEXTO}`, color: COLOR_PRIMARY_TEXTO, borderRadius: '16px', padding: '14px 16px', cursor: 'pointer', fontFamily: FONT_TEXTO, fontSize: '15px', fontWeight: '700' };
 const form = { display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '4px' };
-const input = { width: '100%', boxSizing: 'border-box', padding: '14px 16px', borderRadius: '14px', border: '1px solid #e1e6f0', fontSize: '15px', outline: 'none', fontFamily: FONT_TEXTO, backgroundColor: '#fafbfe', color: COLOR_TEXTO };
+const input = { width: '100%', boxSizing: 'border-box', padding: '14px 16px', borderRadius: '14px', border: '1px solid var(--lb-borde, #e1e6f0)', fontSize: '15px', outline: 'none', fontFamily: FONT_TEXTO, backgroundColor: 'var(--lb-campo, #fafbfe)', color: COLOR_TEXTO };
 const entrarBtn = { backgroundColor: COLOR_PRIMARY, color: 'white', border: 'none', borderRadius: '14px', padding: '13px', fontSize: '14.5px', fontWeight: '700', cursor: 'pointer', fontFamily: FONT_TEXTO };
-const cancelarBtn = { backgroundColor: 'transparent', color: COLOR_PRIMARY, border: 'none', fontSize: '13px', cursor: 'pointer', fontFamily: FONT_TEXTO, padding: '4px' };
+const cancelarBtn = { backgroundColor: 'transparent', color: COLOR_PRIMARY_TEXTO, border: 'none', fontSize: '13px', cursor: 'pointer', fontFamily: FONT_TEXTO, padding: '4px' };
 const errorText = { color: COLOR_ERROR, fontSize: '13px', margin: 0, fontFamily: FONT_TEXTO };
 
 export default function AdminLogin() {

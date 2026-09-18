@@ -4,7 +4,10 @@ import CatalogoPie from '../../../components/CatalogoPie';
 import ProductoCard from '../../../components/ProductoCard';
 import FiltrosMovil from '../../../components/FiltrosMovil';
 import { MarcaDeAgua } from '../../../components/DibujoCatalogo';
-import { getFamilia, getProductosDeSubcategoria, slugify } from '../../../../lib/catalogo';
+import Paginacion from '../../../components/Paginacion';
+import NavCategorias from '../../../components/NavCategorias';
+import { getFamilia, getProductosDeSubcategoria, getNavegacionCategorias, slugify } from '../../../../lib/catalogo';
+import { paginar } from '../../../../lib/paginar';
 import { MARCA } from '../../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
@@ -25,7 +28,10 @@ export default async function SubcategoriaPage({ params, searchParams }) {
   const sub = fam.subcats.find((s) => s.slug === params.sub);
   if (!sub) notFound();
 
-  const todos = await getProductosDeSubcategoria(fam.slug, sub.slug);
+  const [todos, nav] = await Promise.all([
+    getProductosDeSubcategoria(fam.slug, sub.slug),
+    getNavegacionCategorias(fam.slug, sub.slug),
+  ]);
 
   // marcas disponibles en esta subcategoría (con conteo)
   const marcaCount = {};
@@ -45,6 +51,8 @@ export default async function SubcategoriaPage({ params, searchParams }) {
     orden === 'nombre' ? (a.nombre || '').localeCompare(b.nombre || '') : a.codigo.localeCompare(b.codigo)
   );
 
+  // Sólo se arma la página pedida (24 productos), no toda la categoría de golpe
+  const pag = paginar(lista, searchParams?.pagina);
   const filtrosActivos = (marcaSel ? 1 : 0) + (soloFoto ? 1 : 0);
   const base = `/c/${fam.slug}/${sub.slug}`;
   const qp = (over) => {
@@ -55,6 +63,8 @@ export default async function SubcategoriaPage({ params, searchParams }) {
     if (marca) sp.set('marca', marca);
     if (foto) sp.set('foto', foto);
     if (o && o !== 'codigo') sp.set('orden', o);
+    // cambiar un filtro u orden vuelve a la página 1; sólo la paginación pasa ?pagina=
+    if (over.pagina > 1) sp.set('pagina', String(over.pagina));
     const s = sp.toString();
     return s ? `${base}?${s}` : base;
   };
@@ -78,6 +88,8 @@ export default async function SubcategoriaPage({ params, searchParams }) {
             </p>
             <MarcaDeAgua nombre={sub.nombre} familia={fam.nombre} />
           </div>
+
+          <NavCategorias anterior={nav.anterior} siguiente={nav.siguiente} />
 
           {/* En celular: subcategorías hermanas y marcas como chips deslizables */}
           <div className="chiprow" aria-label="Otras categorías">
@@ -142,11 +154,13 @@ export default async function SubcategoriaPage({ params, searchParams }) {
               </FiltrosMovil>
             </div>
 
-            <div>
+            <div id="productos">
               <div className="toolbar">
                 <span className="res">
+                  {pag.paginas > 1 ? `${pag.desde}–${pag.hasta} de ` : ''}
                   {lista.length.toLocaleString('es-AR')}
-                  {lista.length !== todos.length ? ` de ${todos.length.toLocaleString('es-AR')}` : ''} productos
+                  {lista.length !== todos.length ? ` (de ${todos.length.toLocaleString('es-AR')})` : ''} productos
+                  {pag.paginas > 1 ? ` · página ${pag.pagina} de ${pag.paginas}` : ''}
                 </span>
                 <span style={{ marginLeft: 'auto', display: 'flex', gap: 8 }}>
                   <a className="fmini" style={{ width: 'auto', padding: '6px 10px' }} href={qp({ orden: 'codigo' })}
@@ -158,13 +172,18 @@ export default async function SubcategoriaPage({ params, searchParams }) {
 
               {lista.length ? (
                 <div className="pgrid">
-                  {lista.map((p) => (
+                  {pag.items.map((p) => (
                     <ProductoCard key={p.codigo} p={p} />
                   ))}
                 </div>
               ) : (
                 <div className="empty">Ningún producto coincide con los filtros.</div>
               )}
+
+              <Paginacion pagina={pag.pagina} paginas={pag.paginas} href={(n) => qp({ pagina: n })} />
+              {pag.pagina === pag.paginas ? (
+                <NavCategorias variante="final" anterior={nav.anterior} siguiente={nav.siguiente} />
+              ) : null}
             </div>
           </div>
         </div>

@@ -81,7 +81,7 @@ export default async function DistribuidoresAdmin({ searchParams }) {
                       <a href={`/admin/distribuidores?editar=${d.id}`}>Editar</a>
                       <form action={borrarDistribuidorAction} style={{ display: 'inline', marginLeft: 10 }}>
                         <input type="hidden" name="id" value={d.id} />
-                        <button type="submit" style={{ background: 'none', border: 0, color: '#b42318', cursor: 'pointer', font: 'inherit', fontWeight: 600 }}>Borrar</button>
+                        <button type="submit" style={{ background: 'none', border: 0, color: 'var(--peligro, #b42318)', cursor: 'pointer', font: 'inherit', fontWeight: 600 }}>Borrar</button>
                       </form>
                     </td>
                   </tr>

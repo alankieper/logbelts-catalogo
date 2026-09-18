@@ -457,30 +457,7 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 .themetoggle svg { width: 15px; height: 15px; }
 .themetoggle + .hlink { margin-left: 0; }
 
-/* ===== Modo oscuro ===== */
-:root[data-theme="oscuro"] {
-  --ground: #13151a;
-  --surface: #1c1f26;
-  --surface-2: #23262f;
-  --brand: #2f4a94;
-  --brand-ink: #93aeea;
-  --brand-wash: #253154;
-  --ink: #e8eaef;
-  --ink-soft: #b7bcc6;
-  --ink-faint: #868d9a;
-  --rule: #2c303a;
-  --rule-strong: #3b4150;
-  --ok: #4cc38a;
-  --ok-bg: #16352a;
-  --warn: #dca641;
-  --warn-bg: #3a2f16;
-  --accent2: #b58ce0;
-  --shadow: 0 1px 2px rgba(0,0,0,.45), 0 10px 26px rgba(0,0,0,.4);
-}
-:root[data-theme="oscuro"] header.cat form.search input { background: #2a2e38; color: #e8eaef; }
-:root[data-theme="oscuro"] header.cat form.search input::placeholder { color: #8a91a0; }
-:root[data-theme="oscuro"] .b-ok { background: #17352a; color: #5fd39a; }
-:root[data-theme="oscuro"] .err-msg { background: #3a201e; color: #f0928a; }
+/* (El modo oscuro está al final de esta hoja: "===== Modo oscuro =====".) */
 
 /* ===== Agregar al pedido ===== */
 .dacc { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
@@ -974,3 +951,159 @@ body {
   background: #fff; border: 1.5px solid var(--brand); color: var(--brand); font-weight: 700; font-size: 14px; text-decoration: none;
 }
 .edf-descargar:hover { background: var(--brand); color: #fff; }
+
+/* =========================================================================
+   ===== Modo oscuro =====
+   Se activa con <html data-theme="oscuro"> (botón BotonTema del encabezado; se guarda en
+   localStorage 'lb_tema' y lo aplica antes de pintar el script de app/layout.js).
+   No invierte colores: redefine los tokens con una paleta navy profunda que mantiene la
+   identidad Logbelts (azul de marca en botones, azul claro #8fb0ff para links y activos,
+   verde WhatsApp igual). Las fotos de producto siguen sobre blanco (son JPG con fondo blanco).
+   Contraste AA verificado: texto #e8ecf5 / suave #b8c1d6 / tenue #8e99b3 sobre #141d33 y #1a2440.
+   ========================================================================= */
+:root { color-scheme: light; }
+
+/* Botón de tema (encabezado de la web/catálogo y del admin) */
+.tema-boton {
+  flex: none; min-width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 0 11px; border: 1px solid rgba(255,255,255,.16); border-radius: 8px; background: rgba(255,255,255,.08);
+  color: #fff; font: 700 14px/1 var(--f-body); white-space: nowrap; cursor: pointer;
+  transition: background-color .15s, border-color .15s;
+}
+.tema-boton:hover { background: rgba(255,255,255,.18); border-color: rgba(255,255,255,.35); }
+.tema-boton:focus-visible { outline: 2px solid #8fb0ff; outline-offset: 2px; }
+.tema-boton svg { width: 20px; height: 20px; flex: none; }
+.tema-boton__texto { display: none; }
+.tema-boton svg.tema-boton__sol { display: none; }
+:root[data-theme="oscuro"] .tema-boton svg.tema-boton__luna { display: none; }
+:root[data-theme="oscuro"] .tema-boton svg.tema-boton__sol { display: block; }
+:root[data-theme="oscuro"] .tema-boton { color: #ffd88a; }
+.tema-boton--admin { height: 36px; min-width: 36px; padding: 0 10px; margin-left: 12px; font-size: 12.5px; }
+.tema-boton--admin svg { width: 17px; height: 17px; }
+@media (min-width: 1000px) {
+  .tema-boton--admin .tema-boton__texto.tema-boton__luna { display: inline; }
+  :root[data-theme="oscuro"] .tema-boton--admin .tema-boton__texto.tema-boton__luna { display: none; }
+  :root[data-theme="oscuro"] .tema-boton--admin .tema-boton__texto.tema-boton__sol { display: inline; }
+}
+/* Mientras cambia el tema no hay transiciones (todo cambia en el mismo cuadro) */
+.tema-cambiando, .tema-cambiando *, .tema-cambiando *::before, .tema-cambiando *::after { transition: none !important; }
+
+:root[data-theme="oscuro"] {
+  color-scheme: dark;
+  --ground: #0b1224;
+  --surface: #141d33;
+  --surface-2: #1a2440;
+  --brand: #2f52a8;          /* fondo de botones: blanco encima = 7.3:1 */
+  --brand-ink: #8fb0ff;      /* links, activos y foco */
+  --brand-wash: #1c2b52;
+  --ink: #e8ecf5;
+  --ink-soft: #b8c1d6;
+  --ink-faint: #8e99b3;
+  --rule: #26314d;
+  --rule-strong: #36436a;
+  --ok: #4cc38a;
+  --ok-bg: #12301f;
+  --warn: #e5b454;
+  --warn-bg: #33280f;
+  --accent2: #b58ce0;
+  --peligro: #f0928a;
+  --peligro-bg: #3a201e;
+  --peligro-borde: #5a2a28;
+  --surface-peligro: #141d33;
+  --texto-sobre-estado: #0b1224; /* texto sobre fondos de estado claros (ok / peligro / tenue) */
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.32);
+  --elevacion: 0 12px 30px rgba(0,0,0,.5);
+  /* Pantallas con estilos en línea (app/theme.js: login, vendedores) */
+  --lb-tarjeta: #141d33;
+  --lb-texto: #e8ecf5;
+  --lb-cemento: #9aa5bf;
+  --lb-etiqueta: #b8c1d6;
+  --lb-borde: #36436a;
+  --lb-campo: #0f1830;
+  --lb-suave: #1c2b52;
+  --lb-suave-2: #1a2440;
+  --lb-primario-texto: #8fb0ff;
+  --lb-error: #f0928a;
+  --lb-error-texto: #f0928a;
+  --lb-ok: #4cc38a;
+  --lb-peligro-borde: #5a2a28;
+  scrollbar-color: #36436a #0b1224;
+}
+
+/* Trama técnica animada: la misma, en azul claro muy tenue sobre fondo oscuro */
+:root[data-theme="oscuro"] body {
+  background-image:
+    repeating-linear-gradient(115deg, rgba(143,176,255,.035) 0 1px, transparent 1px 16px),
+    radial-gradient(rgba(143,176,255,.07) 1.3px, transparent 1.3px);
+}
+:root[data-theme="oscuro"] :is(.card, .tile, .fpanel, .specsheet, .idbox, .idcard, .kpi, .empty, .prevnext a, .skcard, .banda-maquina, .fmov-panel) {
+  background-image: radial-gradient(rgba(143,176,255,.05) 1.2px, transparent 1.2px);
+}
+:root[data-theme="oscuro"] .tile--dib::before {
+  background-image: linear-gradient(rgba(143,176,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(143,176,255,.06) 1px, transparent 1px);
+}
+
+/* Fotos de producto: siguen en blanco, con un marco suave para que no sean "agujeros" */
+:root[data-theme="oscuro"] :is(.card .thumb, .gmain, .gthumb, .idth, .media-thumb, .edf-lienzo, .pr-tabla .prod img, .asis-prods img) { background-color: #fff; background-image: none; }
+:root[data-theme="oscuro"] .card .thumb { border-bottom-color: #2c3857; }
+:root[data-theme="oscuro"] .card .thumb .noimg { background: var(--surface-2); }
+:root[data-theme="oscuro"] .card .thumb .noimg__dib { color: #4a5a86; }
+:root[data-theme="oscuro"] .gmain, :root[data-theme="oscuro"] .gthumb, :root[data-theme="oscuro"] .idth { border-color: #2c3857; }
+:root[data-theme="oscuro"] .gmain { box-shadow: 0 0 0 1px rgba(0,0,0,.25), 0 10px 26px rgba(0,0,0,.3); }
+:root[data-theme="oscuro"] .gmain .noimg { color: #5b6479; }
+:root[data-theme="oscuro"] .gthumb.activo { border-color: var(--brand-ink); }
+:root[data-theme="oscuro"] .skcard__img { background-color: var(--surface-2); }
+
+/* El azul de marca como texto o trazo se aclara para leerse sobre navy */
+:root[data-theme="oscuro"] .dcode-n { color: var(--brand-ink); }
+:root[data-theme="oscuro"] .tile--dib .tdib, :root[data-theme="oscuro"] .pghead__dib { color: #8fb0ff; }
+:root[data-theme="oscuro"] .tile--dib:hover .tdib { color: #c3d4ff; }
+:root[data-theme="oscuro"] .pghead__dib { opacity: .14; }
+:root[data-theme="oscuro"] .fopt input, :root[data-theme="oscuro"] .edf-rango input { accent-color: #8fb0ff; }
+
+/* Estados y mensajes */
+:root[data-theme="oscuro"] .err-msg { background: var(--peligro-bg); color: var(--peligro); }
+:root[data-theme="oscuro"] :is(.acceso-err, .edf-msg--error) { color: var(--peligro); }
+:root[data-theme="oscuro"] .tag.off { background: #232c45; color: #aab3c8; }
+:root[data-theme="oscuro"] .cod-lectura-warn { color: var(--warn); }
+:root[data-theme="oscuro"] :is(.form-actions .danger, .media-del) { background: var(--surface); color: var(--peligro); border-color: var(--peligro-borde); }
+:root[data-theme="oscuro"] .mgate-btn.on { color: var(--peligro); border-color: var(--peligro-borde); }
+:root[data-theme="oscuro"] .aviso-mayorista { background: #1c2b52; box-shadow: inset 0 0 0 1px #2f4a8c; }
+
+/* Formularios del catálogo y del admin: campo más hundido que la tarjeta, borde visible */
+:root[data-theme="oscuro"] :is(.toolbar select, .fmini, .admbar input, .admbar select, .form-grid input, .form-grid textarea, .form-grid select,
+  .cod-edit input, .cod-gen-row select, .cod-explorar-box > input, .acceso-form input, .oem-add input, .mvinc-f input) {
+  background-color: #0f1830; border-color: var(--rule-strong); color: var(--ink);
+}
+:root[data-theme="oscuro"] .fmini[data-on='true'] { background: var(--brand); border-color: var(--brand); color: #fff; }
+:root[data-theme="oscuro"] ::placeholder { color: #8e99b3; opacity: 1; }
+
+/* Tablas del admin */
+:root[data-theme="oscuro"] .admtable tr:hover td { background: #1d2846; }
+
+/* Admin: barra superior un poco más profunda para separarse del fondo */
+:root[data-theme="oscuro"] .adm-top { background: #0a1733; border-bottom: 1px solid #1f2a47; }
+:root[data-theme="oscuro"] .adm-top .right a { color: #ffb4ae; }
+
+/* Lista de pedido, zoom y paneles flotantes */
+:root[data-theme="oscuro"] .pedido-panel { box-shadow: 0 16px 44px rgba(0,0,0,.6); }
+:root[data-theme="oscuro"] .pedido-fab, :root[data-theme="oscuro"] .fmov-fab { box-shadow: 0 8px 22px rgba(0,0,0,.5); }
+:root[data-theme="oscuro"] .fmov-back { background: rgba(0,0,0,.6); }
+:root[data-theme="oscuro"] .zoompanel { background-color: #fff; border-color: #2c3857; box-shadow: 0 16px 40px rgba(0,0,0,.6); }
+:root[data-theme="oscuro"] .media-thumb-acc button { color: #191c22; }
+
+/* Editor de foto (ventana modal del admin) */
+:root[data-theme="oscuro"] .edf-fondo { background: rgba(3, 7, 18, .72); }
+:root[data-theme="oscuro"] .edf { box-shadow: 0 24px 70px rgba(0,0,0,.6), 0 0 0 1px var(--rule); }
+:root[data-theme="oscuro"] :is(.edf-x, .edf-botones button, .edf-secundario) { background: var(--surface-2); border-color: var(--rule-strong); color: var(--ink); }
+:root[data-theme="oscuro"] :is(.edf-botones button, .edf-secundario):hover { border-color: var(--brand-ink); }
+:root[data-theme="oscuro"] .edf-botones button[aria-pressed="true"] { background: var(--brand); border-color: var(--brand); color: #fff; }
+:root[data-theme="oscuro"] .edf-lienzo { box-shadow: 0 0 0 1px #2c3857; }
+:root[data-theme="oscuro"] .edf button:focus-visible, :root[data-theme="oscuro"] .edf input:focus-visible { outline-color: #8fb0ff; }
+:root[data-theme="oscuro"] .edf-descargar { background: transparent; border-color: #8fb0ff; color: #8fb0ff; }
+:root[data-theme="oscuro"] .edf-descargar:hover { background: var(--brand); border-color: var(--brand); color: #fff; }
+
+/* Encabezado viejo del catálogo (header.cat), por si alguna pantalla lo sigue usando */
+:root[data-theme="oscuro"] header.cat { background: #0a2149; }
+:root[data-theme="oscuro"] header.cat form.search input { background: #0f1830; color: var(--ink); box-shadow: inset 0 0 0 1px var(--rule-strong); }
+:root[data-theme="oscuro"] header.cat .hcart { background: #1c2b52; color: #fff; }

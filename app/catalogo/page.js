@@ -60,7 +60,7 @@ export default function CatalogoDigital() {
 
           {!loading && !error && !archivo && (
             <div>
-              <p style={{ color: '#555', fontFamily: FONT_TEXTO }}>Todavía no se cargó el catálogo digital.</p>
+              <p style={{ color: 'var(--lb-etiqueta, #555)', fontFamily: FONT_TEXTO }}>Todavía no se cargó el catálogo digital.</p>
               <a href="/nueva" style={bigButton}><IconMejora width={17} height={17} />Proponer una mejora</a>
             </div>
           )}
@@ -72,7 +72,7 @@ export default function CatalogoDigital() {
                 <iframe
                   src={archivo.url}
                   title="Catálogo"
-                  style={{ width: '100%', height: '65vh', border: '1px solid #e2e7ef', borderRadius: '14px', backgroundColor: 'white' }}
+                  style={{ width: '100%', height: '65vh', border: '1px solid var(--lb-borde, #e2e7ef)', borderRadius: '14px', backgroundColor: 'white' }}
                 />
               ) : (
                 <img src={archivo.url} alt="Catálogo" style={{ width: '100%', borderRadius: '14px' }} />

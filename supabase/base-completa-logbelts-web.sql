@@ -1,4 +1,4 @@
--- LOGBELTS WEB: crea TODA la base de una vez (migraciones 0001 a 0011).
+-- LOGBELTS WEB: crea TODA la base de una vez (migraciones 0001 a 0012).
 -- Pegar completo en Supabase > SQL Editor > New query > Run. Se puede correr más de una vez sin romper nada.
 
 -- ===== 0001_cataloplus_mvp.sql =====
@@ -407,3 +407,13 @@ alter table cat_distribuidores disable row level security;
 revoke all on cat_distribuidores from anon, authenticated;
 grant select on cat_distribuidores to anon, authenticated;  -- es información pública
 grant all on cat_distribuidores to service_role;
+
+-- ===== 0012_ajustes.sql =====
+-- Ajustes generales del sitio editables desde el admin (temporada activa, fecha de
+-- reinicio de estadísticas y futuras prioridades de exposición), en un solo JSON.
+-- Se puede correr más de una vez.
+alter table cat_config add column if not exists ajustes jsonb not null default '{}'::jsonb;
+
+-- Reiniciar estadísticas borra filas de eventos y visitas (lo hace el servidor con la clave de servicio).
+grant delete on cat_eventos to service_role;
+grant delete on cat_visitas to service_role;

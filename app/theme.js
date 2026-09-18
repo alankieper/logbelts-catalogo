@@ -1,12 +1,17 @@
+// Colores de las pantallas con estilos en línea (login, vendedores). Los que cambian con el modo
+// oscuro son variables CSS con el color claro de respaldo: en claro se ven igual que siempre y
+// globals.css define los valores oscuros bajo :root[data-theme="oscuro"].
 export const COLOR_PRIMARY = '#00408C';
-export const COLOR_PRIMARY_SOFT = '#eef2fb';
-export const COLOR_CEMENTO = '#8a93a3';
+// El azul de marca usado como texto (sobre tarjeta) se aclara en modo oscuro para que se lea.
+export const COLOR_PRIMARY_TEXTO = 'var(--lb-primario-texto, #00408C)';
+export const COLOR_PRIMARY_SOFT = 'var(--lb-suave, #eef2fb)';
+export const COLOR_CEMENTO = 'var(--lb-cemento, #8a93a3)';
 export const COLOR_CEMENTO_CLARO = '#aab1bd';
-export const COLOR_TEXTO = '#1c2430';
-export const COLOR_ERROR = '#d64545';
-export const COLOR_OK = '#2E8B57';
+export const COLOR_TEXTO = 'var(--lb-texto, #1c2430)';
+export const COLOR_ERROR = 'var(--lb-error, #d64545)';
+export const COLOR_OK = 'var(--lb-ok, #2E8B57)';
 
-export const COLOR_CARD = '#ffffff';
+export const COLOR_CARD = 'var(--lb-tarjeta, #ffffff)';
 export const COLOR_TEXT_LIGHT = '#ffffff';
 export const COLOR_TEXT_LIGHT_MUTED = 'rgba(255,255,255,0.7)';
 

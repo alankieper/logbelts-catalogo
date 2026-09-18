@@ -204,3 +204,32 @@
 .bsug-alt__item:hover { background: #e7ebf3; }
 .bsug-alt__item:focus-visible { outline: 3px solid #8fb0ff; outline-offset: 2px; }
 .bsug-alt__n { font-size: 12px; font-weight: 500; color: #6b7690; }
+
+/* ------------------------------------------------------------------ *
+ * ===== Modo oscuro ===== (<html data-theme="oscuro">)
+ * Mismo panel con la paleta navy; las fotos siguen sobre blanco.
+ * ------------------------------------------------------------------ */
+:root[data-theme='oscuro'] .bsug {
+  --bsug-marca: #8fb0ff;
+  --bsug-gris: #26314d;
+  --bsug-superficie: #1a2440;
+  --bsug-tinta: #e8ecf5;
+  --bsug-navy: #dbe4f7;
+}
+:root[data-theme='oscuro'] .bsug__panel { background: #141d33; border-color: #36436a; box-shadow: 0 18px 44px rgba(0, 0, 0, 0.55); }
+:root[data-theme='oscuro'] .bsug__op + .bsug__op { border-top-color: rgba(38, 49, 77, 0.9); }
+:root[data-theme='oscuro'] .bsug__foto { background: #fff; border-color: #2c3857; }
+:root[data-theme='oscuro'] .bsug__sinfoto { color: #8e99b3; }
+:root[data-theme='oscuro'] .bsug__foto:has(.bsug__sinfoto) { background: #1a2440; }
+:root[data-theme='oscuro'] .bsug__marca { background: #1c2b52; color: #c3d4ff; }
+:root[data-theme='oscuro'] .bsug__todos.es-activa { background: #2f52a8; color: #fff; }
+:root[data-theme='oscuro'] .bsug__nada { color: #b8c1d6; }
+:root[data-theme='oscuro'] .bsug__chips-t { color: #8e99b3; }
+:root[data-theme='oscuro'] .bsug__chip { background: #141d33; border-color: #36436a; }
+:root[data-theme='oscuro'] .bsug__chip:hover { background: #1c2b52; }
+
+:root[data-theme='oscuro'] .bsug-alt { background: #141d33; border-color: #26314d; }
+:root[data-theme='oscuro'] .bsug-alt__t { color: #e8ecf5; }
+:root[data-theme='oscuro'] .bsug-alt__item { background: #1a2440; border-color: #36436a; color: #8fb0ff; }
+:root[data-theme='oscuro'] .bsug-alt__item:hover { background: #1c2b52; }
+:root[data-theme='oscuro'] .bsug-alt__n { color: #8e99b3; }

@@ -8,7 +8,7 @@ const userButton = {
   gap: '14px',
   width: '100%',
   boxSizing: 'border-box',
-  backgroundColor: '#f4f7fc',
+  backgroundColor: 'var(--lb-suave-2, #f4f7fc)',
   border: 'none',
   borderRadius: '16px',
   padding: '14px 16px',

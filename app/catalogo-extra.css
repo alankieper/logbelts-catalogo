@@ -218,3 +218,24 @@ details.solicitud-mini[open] > summary { margin-bottom: 4px; }
   .pr-tabla .quitar { min-width: 44px; min-height: 44px; }
   details.solicitud-mini > summary { min-height: 44px; display: flex; align-items: center; }
 }
+
+/* ===== Modo oscuro ===== (tokens en globals.css; acá, los colores fijos de estas piezas) */
+:root[data-theme='oscuro'] .fav-btn.chico { background: rgba(255,255,255,.94); color: #4a505b; }
+:root[data-theme='oscuro'] .fav-btn.chico.on { background: #fff7ed; color: #c2410c; border-color: #fdba74; }
+:root[data-theme='oscuro'] .fav-btn.on:not(.chico) { border-color: #7a4a24; }
+:root[data-theme='oscuro'] :is(.selector-maquina select, .filtro-modelos, .solicitud input, .solicitud select, .solicitud textarea,
+  .pr-caja textarea, .adm-contacto select, .adm-contacto input, .adm-form input, .adm-form select, .pedido-cant input) {
+  background-color: #0f1830; border-color: var(--rule-strong); color: var(--ink);
+}
+/* El selector sobre banda azul sigue blanco (como en claro) */
+:root[data-theme='oscuro'] .selector-maquina--oscuro select { background: #fff; color: #191c22; border-color: transparent; }
+:root[data-theme='oscuro'] .pr-file { background: rgba(143,176,255,.04); }
+:root[data-theme='oscuro'] .adm-acciones .peligro { background: #9b2016; }
+/* Asistente: panel con los tokens oscuros; cabecera y burbujas propias siguen en azul de marca */
+:root[data-theme='oscuro'] .asis-panel { box-shadow: 0 24px 60px rgba(0,0,0,.6); border-color: var(--rule-strong); }
+:root[data-theme='oscuro'] .asis-fab { box-shadow: 0 8px 22px rgba(0,0,0,.5); }
+:root[data-theme='oscuro'] .asis-msg.user, :root[data-theme='oscuro'] .asis-form button { background: #2f52a8; }
+:root[data-theme='oscuro'] .asis-form input { background: #0f1830; }
+:root[data-theme='oscuro'] .asis-prods a:hover { border-color: #8fb0ff; }
+:root[data-theme='oscuro'] .asis-pie a { color: #4cc38a; }
+:root[data-theme='oscuro'] .adm-links a.wa { color: #4cc38a; }

@@ -3,6 +3,8 @@ import CatalogoPie from '../components/CatalogoPie';
 import ProductoCard from '../components/ProductoCard';
 import Registrar from '../components/Registrar';
 import NoEncontrado from '../components/NoEncontrado';
+import Paginacion from '../components/Paginacion';
+import { paginar } from '../../lib/paginar';
 import { buscar, sugerenciasBusqueda } from '../../lib/catalogo';
 import { MARCA, modulo } from '../../lib/marca';
 
@@ -18,6 +20,9 @@ export default async function BuscarPage({ searchParams }) {
   const res = q ? await buscar(q, 300) : [];
   // Sin resultados: ofrecemos marcas y familias reales del catálogo parecidas a lo buscado.
   const alternativas = q && !res.length ? await sugerenciasBusqueda(q, 6) : [];
+  // Los resultados vienen ordenados por relevancia; se muestran de a 24
+  const pag = paginar(res, searchParams?.pagina);
+  const urlPagina = (n) => `/buscar?q=${encodeURIComponent(q)}${n > 1 ? `&pagina=${n}` : ''}`;
   // Primer ejemplo de código del archivo de marca (ej: "5888"), para la ayuda de "sin resultados".
   const ejemploCodigo = (MARCA.codigo.ejemplos || '').split('·')[0].trim();
 
@@ -41,11 +46,13 @@ export default async function BuscarPage({ searchParams }) {
 
           {q && res.length ? (
             <>
+              {pag.paginas > 1 ? <p className="lead" id="productos">Mostrando {pag.desde}–{pag.hasta} · página {pag.pagina} de {pag.paginas}</p> : null}
               <div className="pgrid">
-                {res.map((r) => (
+                {pag.items.map((r) => (
                   <ProductoCard key={r.p.codigo} p={r.p} motivo={r.motivo} />
                 ))}
               </div>
+              <Paginacion pagina={pag.pagina} paginas={pag.paginas} href={urlPagina} />
               <details className="solicitud-mini">
                 <summary>¿No es el repuesto exacto que buscás? Pedilo y te lo buscamos →</summary>
                 <NoEncontrado q={q} />

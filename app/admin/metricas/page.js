@@ -1,10 +1,12 @@
+import '../admin-extra.css';
 import AdminHeader from '../AdminHeader';
-import { leerEventos, leerVisitas, leerUltimaActividadPorVisitante } from '../../../lib/eventos';
+import { leerEventos, leerVisitas, leerUltimaActividadPorVisitante, contarEstadisticas } from '../../../lib/eventos';
+import { leerAjustes } from '../../../lib/ajustes';
 import { leerTodosRaw } from '../../../lib/catalogo';
 import { leerVisitantes } from '../../../lib/visitantes';
 import { gateClientesActivo } from '../../../lib/config';
 import { vincularBusqueda } from '../productoActions';
-import { cambiarGateClientes } from '../configActions';
+import { cambiarGateClientes, reiniciarEstadisticasAccion } from '../configActions';
 import { RUTA_ARGENTINA, RUTAS_DIVISIONES, MAPA_ANCHO, MAPA_ALTO, CIUDADES_AR, proyectar, normalizarCiudad } from './mapaArgentina';
 
 /* ---- íconos chicos para las tarjetas de KPI ---- */
@@ -244,9 +246,12 @@ function RosaVientos({ filas }) {
 
 export default async function Metricas({ searchParams }) {
   const dias = RANGOS.some((r) => String(r.d) === searchParams?.d) ? Number(searchParams.d) : 30;
-  const [eventos, visitas, productos, visitantes, gateActivo, ultimaActividad] = await Promise.all([
+  const [eventos, visitas, productos, visitantes, gateActivo, ultimaActividad, acumulado, ajustes] = await Promise.all([
     leerEventos(dias), leerVisitas(dias), leerTodosRaw(), leerVisitantes(), gateClientesActivo(), leerUltimaActividadPorVisitante(),
+    contarEstadisticas(), leerAjustes(),
   ]);
+  const reinicio = searchParams?.reinicio; // 'ok' | 'confirmar' | 'error'
+  const desde = ajustes.estadisticasDesde ? new Date(ajustes.estadisticasDesde) : null;
   const nombre = new Map(productos.map((p) => [p.codigo, p.nombre || p.clave_producto || p.codigo]));
   const errGate = searchParams?.errGate === '1';
 
@@ -523,6 +528,36 @@ export default async function Metricas({ searchParams }) {
               <Ranking filas={topVisitantes} color="var(--ok)" href={(f) => `/admin/visitantes/${encodeURIComponent(f.k)}`} />
             </section>
           </div>
+
+          <section className="mcard mreset" id="reiniciar">
+            <div className="mgate-txt">
+              <h2>Reiniciar estadísticas</h2>
+              <p className="mut">
+                {desde ? `Estadísticas acumuladas desde el ${desde.toLocaleDateString('es-AR')}. ` : ''}
+                Hay {fmt(acumulado.eventos)} eventos y {fmt(acumulado.visitas)} visitas guardados.
+              </p>
+              {reinicio === 'ok' ? <p className="ok-msg" style={{ margin: '8px 0 0' }}>Listo: las estadísticas empezaron de cero.</p> : null}
+              {reinicio === 'confirmar' ? <p className="acceso-err" style={{ margin: '8px 0 0' }}>Para confirmar tenés que escribir REINICIAR.</p> : null}
+              {reinicio === 'error' ? <p className="acceso-err" style={{ margin: '8px 0 0' }}>{searchParams?.msg || 'No se pudo reiniciar.'}</p> : null}
+            </div>
+            <details className="mreset-det">
+              <summary className="mgate-btn">Reiniciar estadísticas…</summary>
+              <form action={reiniciarEstadisticasAccion} className="mreset-form">
+                <p>
+                  <strong>Se borra para siempre:</strong> búsquedas, productos vistos, consultas por WhatsApp, listas y pedidos
+                  enviados, consultas al asistente y las visitas (personas, país, ciudad y de dónde llegaron). También se vacía el
+                  historial de actividad de cada cliente y el aviso de &quot;clientes que dejaron de entrar&quot;.
+                </p>
+                <p>
+                  <strong>No se toca:</strong> productos, fotos, clientes registrados, contactos, pedidos, vendedores ni distribuidores.
+                </p>
+                <label htmlFor="confirmar-reinicio">Para confirmar, escribí <strong>REINICIAR</strong>:</label>
+                <input id="confirmar-reinicio" name="confirmacion" autoComplete="off" required pattern="REINICIAR" placeholder="REINICIAR" />
+                <input type="hidden" name="d" value={String(dias)} />
+                <button type="submit" className="mreset-btn">Borrar estadísticas y empezar de cero</button>
+              </form>
+            </details>
+          </section>
 
           <p className="mut" style={{ marginTop: 20 }}>
             Rango: últimos {dias} días · {fmt(visitas.length)} visitas · {fmt(eventos.length)} eventos.

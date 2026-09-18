@@ -23,3 +23,13 @@
 .lbwa-chip:hover { filter: brightness(1.06); color: #fff; text-decoration: none; }
 .lbwa-chip svg { width: 15px; height: 15px; flex: none; }
 @container (max-width: 250px) { .lbwa-chip { padding: 6px; } .lbwa-chip__txt { display: none; } }
+
+/* ===== Modo oscuro ===== (<html data-theme="oscuro">): diálogo navy, el verde de WhatsApp igual */
+:root[data-theme='oscuro'] .lbwa-fondo { background: rgba(3, 7, 18, .7); }
+:root[data-theme='oscuro'] .lbwa-dialogo { background: #141d33; color: #e8ecf5; box-shadow: 0 24px 60px rgba(0, 0, 0, .6), 0 0 0 1px #26314d; }
+:root[data-theme='oscuro'] .lbwa-cerrar, :root[data-theme='oscuro'] .lbwa-titulo { color: #e8ecf5; }
+:root[data-theme='oscuro'] .lbwa-cerrar:hover { background: #1c2b52; }
+:root[data-theme='oscuro'] .lbwa-ayuda { color: #b8c1d6; }
+:root[data-theme='oscuro'] .lbwa-label, :root[data-theme='oscuro'] .lbwa-estado, :root[data-theme='oscuro'] .lbwa-seguir { color: #8fb0ff; }
+:root[data-theme='oscuro'] .lbwa-select { background: #0f1830; border-color: #36436a; color: #e8ecf5; }
+:root[data-theme='oscuro'] .lbwa-abrir[aria-disabled='true'] { background: #36436a; color: #b8c1d6; }

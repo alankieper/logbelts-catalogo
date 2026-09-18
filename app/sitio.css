@@ -695,3 +695,115 @@ body:has(.pedido-fab) .whatsapp-flotante { bottom: 82px; }
 .catalogo-portada__pdf svg { width: 16px; height: 16px; transition: transform .2s var(--ease); }
 .catalogo-portada__pdf:hover svg { transform: translateX(3px); }
 @media (max-width: 900px) { .catalogo-portada__buscar { flex-basis: 100%; justify-items: stretch; } .catalogo-portada__pdf { justify-self: start; } }
+
+/* =========================================================================
+   ===== Modo oscuro =====
+   <html data-theme="oscuro"> (ver el bloque del mismo nombre al final de globals.css).
+   Se redefinen los tokens de .sitio con la misma paleta navy del catálogo; las secciones que ya
+   eran oscuras (.oscuro, hero, datos, herramientas, precisión, cinta de marcas, pie) quedan igual.
+   ========================================================================= */
+:root[data-theme="oscuro"] .sitio {
+  --marca: #2f52a8;          /* fondo de botones */
+  --marca-tinta: #8fb0ff;    /* links y acentos sobre fondo oscuro */
+  --lavado: #1c2b52;
+  --suelo: #0b1224;
+  --superficie: #141d33;
+  --superficie-2: #1a2440;
+  --tinta: #e8ecf5;
+  --tinta-suave: #b8c1d6;
+  --tinta-tenue: #9aa5bf;
+  --linea: #26314d;
+  --sombra: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.32);
+  --sombra-alta: 0 24px 60px rgba(0,0,0,.55);
+}
+
+/* Trama técnica: azul claro muy tenue sobre navy (sigue animada; se apaga con reduced-motion) */
+:root[data-theme="oscuro"] :is(.sitio, .sitio .seccion:not(.seccion--oscura), .sitio .tipos, .sitio .ventajas, .sitio .catalogos, .sitio .texto-largo, .sitio .tutoriales, .sitio .cabecera + .contenedor) {
+  background-image:
+    repeating-linear-gradient(115deg, rgba(143,176,255,.035) 0 1px, transparent 1px 16px),
+    radial-gradient(rgba(143,176,255,.07) 1.3px, transparent 1.3px);
+}
+:root[data-theme="oscuro"] :is(.sitio .tipo, .sitio .valor, .sitio .ventaja, .sitio .guia-tarjeta, .sitio .condiciones > div,
+  .sitio .material-item, .sitio .catalogo-pdf, .sitio .faq details, .sitio .formulario--pagina,
+  .sitio .dist-item, .sitio .filtro-tecnico, .sitio .seccion--suelo .paso, .sitio .vacio-sitio) {
+  background-image: radial-gradient(rgba(143,176,255,.05) 1.2px, transparent 1.2px);
+}
+:root[data-theme="oscuro"] .sitio .tipo::before {
+  background-image: linear-gradient(rgba(143,176,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(143,176,255,.06) 1px, transparent 1px);
+}
+
+/* Encabezado: una línea apenas más marcada para separarlo del fondo navy */
+:root[data-theme="oscuro"] .sitio-header { border-bottom-color: rgba(143,176,255,.14); }
+
+/* Dibujos de línea e íconos: el azul de marca se aclara para verse sobre navy */
+:root[data-theme="oscuro"] :is(.sitio .tipo__dibujo, .sitio .nosotros-bloque__dibujo, .sitio .valor__icono, .sitio .ventaja__icono) { color: #8fb0ff; }
+:root[data-theme="oscuro"] .sitio .tipo:hover .tipo__dibujo { color: #c3d4ff; }
+:root[data-theme="oscuro"] .sitio .decor { color: rgba(143,176,255,.1); }
+:root[data-theme="oscuro"] .sitio .faq summary::after { color: #8fb0ff; }
+:root[data-theme="oscuro"] .sitio .dist-item__acc a { color: #8fb0ff; border-color: #36436a; }
+:root[data-theme="oscuro"] .sitio .nosotros-bloque__n { color: #1c2b52; }
+:root[data-theme="oscuro"] .sitio .texto-largo article, :root[data-theme="oscuro"] .sitio .guia-tarjeta { border-top-color: #8fb0ff; }
+:root[data-theme="oscuro"] .sitio .condiciones > div { border-left-color: #8fb0ff; }
+:root[data-theme="oscuro"] .sitio :is(.linea, .tipo, .nosotros-bloque):hover { box-shadow: 0 16px 36px rgba(0,0,0,.45); }
+
+/* Botón con borde sobre fondo oscuro (fuera de las secciones .oscuro, que ya lo tienen) */
+:root[data-theme="oscuro"] .sitio .boton--borde { color: #8fb0ff; border-color: rgba(143,176,255,.6); }
+:root[data-theme="oscuro"] .sitio .boton--borde:hover { background: rgba(143,176,255,.12); border-color: #8fb0ff; color: #fff; }
+:root[data-theme="oscuro"] .sitio .boton:not(.boton--claro):not(.boton--borde):not(.boton--whatsapp):not(.boton--borde-claro):hover { background: #3a62c2; border-color: #3a62c2; }
+:root[data-theme="oscuro"] .sitio .oscuro .boton--borde { color: #fff; border-color: rgba(255,255,255,.55); }
+
+/* Fotos de producto (fondo blanco) con marco suave */
+:root[data-theme="oscuro"] .sitio .linea__img { background: linear-gradient(180deg, #fff, #e9edf5); }
+:root[data-theme="oscuro"] .sitio .catalogo-pdf__img, :root[data-theme="oscuro"] .sitio .placa__fotos label { background: #fff; }
+:root[data-theme="oscuro"] .sitio .placa__fotos label { border-color: #2c3857; }
+:root[data-theme="oscuro"] .sitio .placa__fotos label.on { border-color: #8fb0ff; box-shadow: 0 0 0 3px rgba(143,176,255,.25); }
+
+/* Formularios: campo más hundido que la tarjeta, borde y foco visibles */
+:root[data-theme="oscuro"] :is(.sitio .campo input, .sitio .campo select, .sitio .campo textarea, .sitio .filtro-tecnico input, .sitio .filtro-tecnico select) {
+  background-color: #0f1830; border-color: #36436a; color: var(--tinta);
+}
+:root[data-theme="oscuro"] :is(.sitio .campo input, .sitio .campo textarea, .sitio .campo select):focus { border-color: #8fb0ff; box-shadow: 0 0 0 3px rgba(143,176,255,.25); }
+:root[data-theme="oscuro"] .sitio ::placeholder { color: #8e99b3; opacity: 1; }
+:root[data-theme="oscuro"] .sitio .formulario__ok svg.check { color: #4cc38a; }
+
+/* Buscadores (hero, encabezado y portada): caja oscura con borde azul en vez de blanca */
+:root[data-theme="oscuro"] .sitio :is(.hero__buscar, .buscador__fila) { background: #0f1830; box-shadow: inset 0 0 0 1px rgba(143,176,255,.35), 0 12px 30px rgba(0,0,0,.4); }
+:root[data-theme="oscuro"] .sitio :is(.hero__buscar, .buscador__fila):focus-within { box-shadow: 0 0 0 3px #8fb0ff, 0 12px 30px rgba(0,0,0,.4); }
+:root[data-theme="oscuro"] .sitio .catalogo-portada__buscar .hero__buscar { border-color: #36436a; }
+:root[data-theme="oscuro"] .sitio :is(.hero__buscar, .buscador__fila) input { color: #e8ecf5; }
+
+/* Popup de bienvenida: ya es navy; los campos llevan borde para no perderse */
+:root[data-theme="oscuro"] .sitio .popup .campo :is(input, select) { border-color: rgba(143,176,255,.3); }
+:root[data-theme="oscuro"] .sitio .popup .campo select:invalid { color: #8e99b3; }
+:root[data-theme="oscuro"] .sitio .popup__caja { box-shadow: 0 24px 60px rgba(0,0,0,.6), 0 0 0 1px rgba(143,176,255,.18); }
+
+/* Cinta de marcas: las placas claras de logo mantienen el texto oscuro */
+:root[data-theme="oscuro"] .sitio .marca--logo:not(.marca--logo-oscuro) .marca__n { color: #4a505b; }
+:root[data-theme="oscuro"] .sitio .marca--logo-oscuro { border-color: rgba(143,176,255,.18); }
+
+/* Mapa de distribuidores */
+:root[data-theme="oscuro"] .sitio .mapa-dist__pais { fill: #1c2b52; stroke: #8fb0ff; }
+:root[data-theme="oscuro"] .sitio .mapa-dist__division { stroke: #3d4b72; }
+:root[data-theme="oscuro"] .sitio .mapa-dist__pin { stroke: #0b1224; }
+:root[data-theme="oscuro"] .sitio .chips-provincias a[aria-current='page'] { background: #2f52a8; border-color: #2f52a8; }
+
+/* Tabla técnica */
+:root[data-theme="oscuro"] .sitio .tabla-tecnica a:hover { color: #8fb0ff; }
+
+/* (Arreglo en ambos modos) el botón blanco "Quiero ser distribuidor" del menú de celular heredaba
+   el color blanco de .sitio-nav a y quedaba sin texto visible. */
+.sitio-nav .sitio-nav__cta .boton--claro { color: var(--navy-800); }
+.sitio-nav .sitio-nav__cta .boton--claro:hover { color: var(--navy-800); background: var(--lavado); }
+/* En oscuro --lavado es navy: el botón blanco usa un celeste claro al pasar el mouse */
+:root[data-theme="oscuro"] .sitio .boton--claro:hover, :root[data-theme="oscuro"] .sitio-nav .sitio-nav__cta .boton--claro:hover { background: #dbe4f7; border-color: #dbe4f7; }
+
+/* Botón de tema en el encabezado: el logo nunca se achica. Con el menú completo a la vista
+   (escritorio) se ajustan un poco los espacios para que logo, menú, "Quiero ser distribuidor",
+   lupa y tema entren en una fila; en los anchos más justos la lupa queda solo con el ícono. */
+.sitio-header__logo { flex: none; }
+@media (min-width: 1181px) {
+  .sitio-header__fila { gap: 22px; }
+  .sitio-nav a { padding-inline: 9px; }
+  .sitio-header__fila > .tema-boton { margin-left: -12px; }
+}
+@media (min-width: 1181px) and (max-width: 1259px) { .buscar-boton__texto { display: none; } .buscar-boton { padding: 0; width: 44px; } }
