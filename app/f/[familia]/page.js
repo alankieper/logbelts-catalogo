@@ -43,8 +43,7 @@ export default async function FamiliaPage({ params }) {
           </div>
 
           <a className="ver-todo" href={`/f/${fam.slug}/todo`}>
-            <span className="ver-todo__t">Ver todo en {fam.nombre}</span>
-            <span className="ver-todo__d">Los {fam.count.toLocaleString('es-AR')} repuestos de las {fam.subcats.length} categorías juntos, con filtros por subcategoría y marca</span>
+            <span><small>Ver todo en</small>{fam.nombre} · {fam.count.toLocaleString('es-AR')} repuestos</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
           </a>
 

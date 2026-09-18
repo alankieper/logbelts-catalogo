@@ -55,18 +55,19 @@ a.paginacion__paso:hover, a.paginacion__num:hover { border-color: var(--brand-in
 @media (prefers-reduced-motion: reduce) { .navcat-final__sig { transition: none; } }
 
 /* ===== "Ver todo en [familia]" ===== */
-/* Mismo azul en modo claro y oscuro (pedido de Logbelts); el recuadro termina donde termina el texto */
+/* Misma estética que "Siguiente familia" (.navcat__lnk): delicado y minimalista.
+   El recuadro termina donde termina el texto. */
 .ver-todo {
-  display: grid; width: fit-content; max-width: 100%; grid-template-columns: auto auto; align-items: center; column-gap: 16px; row-gap: 2px;
-  margin: 0 0 16px; padding: 16px 20px; border-radius: 14px; text-decoration: none;
-  background: #2f52a8; color: #fff; box-shadow: var(--elevacion, 0 10px 26px rgba(20,28,50,.12));
-  transition: transform .2s var(--ease, ease), filter .2s;
+  display: inline-flex; align-items: center; gap: 12px; width: fit-content; max-width: 100%;
+  min-height: 44px; margin: 0 0 14px; padding: 8px 14px;
+  border: 1px solid var(--rule); border-radius: 12px; background: var(--surface); color: var(--ink);
+  text-decoration: none; font-size: 14px; font-weight: 700; line-height: 1.25;
+  transition: border-color .15s, color .15s;
 }
-.ver-todo:hover { transform: translateY(-2px); filter: brightness(1.08); }
-.ver-todo:focus-visible { outline: 2px solid var(--brand-ink); outline-offset: 3px; }
-.ver-todo__t { grid-column: 1; font-size: 18px; font-weight: 800; letter-spacing: .03em; text-transform: uppercase; }
-.ver-todo__d { grid-column: 1; font-size: 14px; opacity: .9; }
-.ver-todo svg { grid-column: 2; grid-row: 1 / span 2; width: 26px; height: 26px; }
+.ver-todo small { display: block; font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-faint); }
+.ver-todo:hover { border-color: var(--brand-ink); color: var(--brand-ink); }
+.ver-todo:focus-visible { outline: 2px solid var(--brand-ink); outline-offset: 2px; }
+.ver-todo svg { flex-shrink: 0; width: 16px; height: 16px; }
 .lead-todo { font-weight: 700; color: var(--brand-ink); text-decoration: none; white-space: nowrap; }
 .lead-todo:hover { text-decoration: underline; }
 /* subcategoría en la tarjeta, sólo en vistas que mezclan categorías */
