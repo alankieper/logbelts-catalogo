@@ -30,3 +30,13 @@
   .flecha-prod__info { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .flecha-prod, .flecha-prod__info { transition: none; } }
+
+/* Al principio / final de la categoría: la flecha ofrece la categoría vecina, abierta y en azul */
+.flecha-prod--cat { width: auto; max-width: min(360px, 44vw); background: #2f52a8; color: #fff; border-color: #2f52a8; }
+.flecha-prod--cat .flecha-prod__info { opacity: 1; }
+.flecha-prod--cat .flecha-prod__info small { color: rgba(255,255,255,.8); }
+.flecha-prod--cat:hover, .flecha-prod--cat:focus-visible { width: auto; color: #fff; border-color: #fff; filter: brightness(1.08); }
+@media (max-width: 760px) {
+  .flecha-prod--cat { width: auto; max-width: 62vw; height: 48px; }
+  .flecha-prod--cat .flecha-prod__info { display: grid; font-size: 12px; }
+}

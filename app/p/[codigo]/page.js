@@ -7,7 +7,7 @@ import ConsultaCTA from '../../components/ConsultaCTA';
 import BotonAgregar from '../../components/BotonAgregar';
 import BotonFavorito from '../../components/BotonFavorito';
 import Registrar from '../../components/Registrar';
-import { getProducto, getRelacionados, getVecinos, getFamilia, slugify } from '../../../lib/catalogo';
+import { getProducto, getRelacionados, getVecinos, getFamilia, getNavegacionCategorias, slugify } from '../../../lib/catalogo';
 import FlechasProducto from '../../components/FlechasProducto';
 import { despiecesDeProducto } from '../../../lib/despieces';
 import { compatiblesPorMaquina, maquinasDeProducto } from '../../../lib/maquinas';
@@ -53,6 +53,8 @@ export default async function ProductoPage({ params }) {
   const sub = fam?.subcats.find((s) => s.slug === p.subSlug);
   const rel = await getRelacionados(codigo, 4);
   const { prev, next } = await getVecinos(codigo);
+  // En el primero / último de la categoría, las flechas ofrecen la categoría anterior / siguiente
+  const navCat = !prev || !next ? await getNavegacionCategorias(p.familiaSlug, p.subSlug) : { anterior: null, siguiente: null };
   const hayDespiece = modulo('despiece');
   const hayMaquinas = modulo('maquinas');
   const desp = hayDespiece ? await despiecesDeProducto(codigo, p.compatibilidad) : { curados: [], oficiales: [] };
@@ -239,6 +241,8 @@ export default async function ProductoPage({ params }) {
           <FlechasProducto
             prev={prev ? { codigo: prev.codigo, nombre: prev.nombre || '' } : null}
             next={next ? { codigo: next.codigo, nombre: next.nombre || '' } : null}
+            catAnterior={!prev ? navCat.anterior : null}
+            catSiguiente={!next ? navCat.siguiente : null}
           />
 
           {(prev || next) ? (
