@@ -28,6 +28,7 @@ export default async function AdminHeader({ activo }) {
           {link('/admin/distribuidores', 'Distribuidores', 'distribuidores')}
           {link('/admin/productos', 'Productos', 'productos')}
           {link('/admin/fotos-pendientes', 'Fotos pendientes', 'fotos', pendientes)}
+          {link('/admin/material', 'Material', 'material')}
           {link('/admin/codigos', 'Códigos', 'codigos')}
           {link('/admin/oem', 'OEM', 'oem')}
           {link('/admin/excel', 'Excel', 'excel')}

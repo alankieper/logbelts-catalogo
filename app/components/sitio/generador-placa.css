@@ -1,0 +1,56 @@
+/* ===== Generador de placas (/material): formatos, fondos y logo del comercio ===== */
+.placa__form select {
+  width: 100%; min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--linea);
+  background: #fff; color: var(--tinta); font: inherit; font-size: 16px;
+}
+.placa__form .campo input + input, .placa__form .campo select + input { margin-top: 8px; }
+
+.placa__formatos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.placa__formatos label {
+  position: relative; display: grid; justify-items: center; gap: 8px; padding: 12px 8px; text-align: center;
+  border: 2px solid var(--linea); border-radius: var(--radio-chico, 10px); background: var(--superficie); cursor: pointer;
+  font-size: 13px; line-height: 1.25; color: var(--tinta);
+}
+.placa__formatos label.on { border-color: var(--marca); box-shadow: 0 0 0 3px rgba(47,82,168,.2); }
+.placa__formatos input, .placa__fondos input { position: absolute; opacity: 0; pointer-events: none; }
+.placa__formatos small { display: block; color: var(--tinta-tenue); font-size: 11.5px; margin-top: 2px; }
+.placa__forma { display: block; border: 2px solid currentColor; border-radius: 4px; opacity: .75; }
+.placa__forma--feed { width: 30px; height: 30px; }
+.placa__forma--historia { width: 20px; height: 34px; }
+.placa__forma--horizontal { width: 40px; height: 23px; margin: 4px 0; }
+
+.placa__fondos { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.placa__fondos label { position: relative; display: grid; gap: 6px; cursor: pointer; text-align: center; }
+.placa__fondo { display: block; aspect-ratio: 1; border-radius: 10px; border: 2px solid var(--linea); }
+.placa__fondos label.on .placa__fondo { border-color: var(--marca); box-shadow: 0 0 0 3px rgba(47,82,168,.25); }
+.placa__fondo-n { font-size: 11.5px; line-height: 1.2; color: var(--tinta-suave); }
+.placa__formatos label:has(input:focus-visible), .placa__fondos label:has(input:focus-visible) .placa__fondo { outline: 2px solid var(--marca); outline-offset: 2px; }
+
+.placa__logo { display: grid; gap: 8px; }
+.placa__logo-k { font-size: 14px; font-weight: 700; }
+.placa__clip {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 16px;
+  border: 2px dashed var(--marca); border-radius: 10px; color: var(--marca); background: rgba(47,82,168,.06);
+  font-weight: 700; cursor: pointer; transition: background-color .15s;
+}
+.placa__clip:hover { background: rgba(47,82,168,.12); }
+.placa__clip input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.placa__clip:has(input:focus-visible) { outline: 2px solid var(--marca); outline-offset: 2px; }
+.placa__logo-msg { margin: 0; font-size: 13.5px; font-weight: 600; color: #1f7a4d; }
+.placa__ayuda { margin: 0; font-size: 13px; color: var(--tinta-tenue); line-height: 1.45; }
+.placa__logo-opc { display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap; }
+.placa__logo-opc label { display: grid; gap: 4px; flex: 1; min-width: 200px; font-size: 13px; font-weight: 600; }
+.placa__quitar { min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--linea); background: transparent; color: var(--tinta-suave); font: inherit; font-size: 14px; cursor: pointer; }
+
+/* Vista previa: la historia es alta, que no ocupe más que la pantalla */
+.placa__vista--historia canvas { width: auto; max-width: 100%; max-height: 78vh; margin-inline: auto; }
+.placa__vista { position: sticky; top: 90px; }
+@media (max-width: 860px) { .placa__vista { position: static; } .placa__fondos { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+:root[data-theme="oscuro"] .placa__form select { background: #0f1830; color: #e8ecf5; border-color: #36436a; }
+:root[data-theme="oscuro"] .placa__formatos label { background: #141d33; color: #e8ecf5; border-color: #2c3857; }
+:root[data-theme="oscuro"] .placa__formatos label.on, :root[data-theme="oscuro"] .placa__fondos label.on .placa__fondo { border-color: #8fb0ff; }
+:root[data-theme="oscuro"] .placa__clip { color: #8fb0ff; border-color: #8fb0ff; background: rgba(143,176,255,.08); }
+:root[data-theme="oscuro"] .placa__logo-msg { color: #4cc38a; }
+:root[data-theme="oscuro"] .placa__fondo-n, :root[data-theme="oscuro"] .placa__ayuda { color: #b8c1d6; }
+:root[data-theme="oscuro"] .placa__quitar { color: #b8c1d6; border-color: #36436a; }

@@ -30,3 +30,30 @@
 .temp-orden .de-temporada { font-weight: 700; color: var(--brand-ink); }
 .temp-guardar { margin-top: 14px; min-height: 44px; padding: 0 20px; border: 0; border-radius: 9px; background: var(--brand); color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
 @media (max-width: 640px) { .temp-orden { columns: 1; } }
+
+/* ===== Material (admin): imágenes del generador de placas ===== */
+.mat { display: grid; gap: 16px; }
+.mat-subir__fila { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; margin-top: 10px; }
+.mat-campo { display: grid; gap: 4px; flex: 1; min-width: 220px; font-size: 13px; font-weight: 600; color: var(--ink); }
+.mat-campo input, .mat-item input {
+  min-height: 40px; padding: 0 10px; border-radius: 8px; border: 1px solid var(--rule-strong); background: var(--surface); color: var(--ink); font: inherit; font-size: 14px;
+}
+.mat-boton {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 9px; background: var(--brand); color: #fff;
+  font-weight: 700; cursor: pointer; position: relative;
+}
+.mat-boton input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.mat-boton--ocupado { opacity: .6; cursor: progress; }
+.mat-boton:has(input:focus-visible) { outline: 2px solid var(--brand-ink); outline-offset: 2px; }
+.mat-grilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
+.mat-item { display: grid; gap: 8px; padding: 10px; border: 1px solid var(--rule); border-radius: 12px; background: var(--surface); }
+.mat-item img { width: 100%; aspect-ratio: 1; object-fit: contain; background: #fff; border-radius: 8px; border: 1px solid var(--rule); padding: 6px; }
+.mat-item__acc { display: flex; gap: 6px; }
+.mat-item__acc button { min-height: 36px; min-width: 36px; border-radius: 8px; border: 1px solid var(--rule-strong); background: var(--surface); color: var(--ink); cursor: pointer; font: inherit; font-weight: 700; }
+.mat-item__acc button:disabled { opacity: .35; cursor: default; }
+.mat-item__acc .mat-quitar { margin-left: auto; padding: 0 10px; color: #b3261e; border-color: #e7c3c0; }
+.mat-pie { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.mat-pie .temp-guardar { margin-top: 0; }
+.mat-pie .temp-guardar:disabled { opacity: .5; cursor: default; }
+.mat-reset { min-height: 44px; padding: 0 16px; border-radius: 9px; border: 1px solid var(--rule-strong); background: transparent; color: var(--ink-soft); font: inherit; cursor: pointer; }
+.mat-aviso { font-size: 13px; font-weight: 700; color: var(--warn); }

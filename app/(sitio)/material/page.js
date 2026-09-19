@@ -2,22 +2,19 @@ import Image from 'next/image';
 import GeneradorPlaca from '../../components/sitio/GeneradorPlaca';
 import { notFound } from 'next/navigation';
 import { MARCA, modulo, slugMarca } from '../../../lib/marca';
-import { LINEAS } from '../../../lib/sitio';
+import { fotosMaterial } from '../../../lib/material';
 
 export const metadata = {
   title: 'Material para distribuidores',
   description: 'Logos, fotos de producto y placas para redes sociales con el nombre de tu comercio.',
 };
 
-const FOTOS = [
-  { src: '/img/recorte-minitractor.webp', nombre: 'Minitractor (sin fondo)' },
-  { src: '/img/recorte-motosierra.webp', nombre: 'Motosierra (sin fondo)' },
-  { src: '/img/recorte-desmalezadora.webp', nombre: 'Desmalezadora (sin fondo)' },
-  ...LINEAS.map(l => ({ src: l.img, nombre: l.titulo })),
-];
+// Las imágenes de producto se editan desde /admin/material
+export const dynamic = 'force-dynamic';
 
-export default function Material() {
+export default async function Material() {
   if (!modulo('material')) notFound();
+  const FOTOS = await fotosMaterial();
 
   return (
     <>
@@ -35,7 +32,7 @@ export default function Material() {
             <div>
               <p className="antetitulo">Nuevo</p>
               <h2 id="placa-titulo" className="titulo-seccion">Creá tu placa para redes</h2>
-              <p className="bajada" style={{ marginTop: 12 }}>Elegí el producto, escribí el nombre de tu comercio y descargala lista para Instagram, Facebook o WhatsApp.</p>
+              <p className="bajada" style={{ marginTop: 12 }}>Elegí el formato, el producto y el fondo, sumá tu logo y el nombre de tu comercio, y descargala lista para Instagram, Facebook o WhatsApp.</p>
             </div>
           </div>
           <GeneradorPlaca fotos={FOTOS} />
@@ -61,7 +58,8 @@ export default function Material() {
             </a>
             {FOTOS.map(f => (
               <a key={f.src} className="material-item" href={f.src} download>
-                <Image src={f.src} alt="" width={400} height={300} sizes="240px" />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={f.src} alt="" loading="lazy" />
                 <span>{f.nombre}</span>
               </a>
             ))}
