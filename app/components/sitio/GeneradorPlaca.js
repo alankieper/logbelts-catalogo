@@ -1,282 +1,88 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { MARCA, slugMarca } from '../../../lib/marca';
+import { slugMarca } from '../../../lib/marca';
+import { telefonoWhatsApp } from '../../../lib/telefono';
+import { logEvento } from '../Registrar';
 import { procesarLogo } from './logoSinFondo';
+import { armarZip } from './zipSimple';
+import {
+  FORMATOS, TITULOS, TITULO_PROPIO, ETIQUETAS, FONDOS, FONDO_TEMPORADA,
+  resolverFondo, dibujarPlaca,
+} from './placaDibujo';
 import './generador-placa.css';
 
-/* ---------- Opciones ---------- */
-
-export const FORMATOS = [
-  { id: 'feed', nombre: 'Placa para feed', detalle: 'Cuadrada 1:1', w: 1080, h: 1080 },
-  { id: 'historia', nombre: 'Historia de Instagram', detalle: 'Vertical 9:16', w: 1080, h: 1920 },
-  { id: 'horizontal', nombre: 'Horizontal', detalle: '16:9 · Facebook, WhatsApp, web', w: 1920, h: 1080 },
-];
-
-const TITULOS = [
-  `Repuestos ${MARCA.nombre}`,
-  'Conseguí tu repuesto',
-  'Preparate para la temporada',
-  'Calidad premium',
-  'Todo para tu máquina',
-  'Repuestos para bosque y jardín',
-];
-const TITULO_PROPIO = '__propio__';
-
-// Cada fondo define cómo se pinta y los colores de los textos encima.
-const FONDOS = [
-  {
-    id: 'azul', nombre: 'Azul Logbelts', muestra: 'radial-gradient(circle at 30% 0%, #123b78, #0a2149 55%, #071531)',
-    oscuro: true, titulo: '#ffffff', acento: '#8fb0ff', circulo: 'rgba(143,176,255,.18)', banda: '#ffffff', bandaTitulo: '#0a2149', bandaTexto: '#4a505b',
-    pintar(ctx, W, H) {
-      const g = ctx.createRadialGradient(W * 0.3, -H * 0.1, 50, W * 0.5, H * 0.5, Math.max(W, H));
-      g.addColorStop(0, '#123b78'); g.addColorStop(0.5, '#0a2149'); g.addColorStop(1, '#071531');
-      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-    },
-  },
-  {
-    id: 'noche', nombre: 'Noche técnica', muestra: 'linear-gradient(160deg, #0b1630, #03060f)',
-    oscuro: true, titulo: '#ffffff', acento: '#6ee7ff', circulo: 'rgba(110,231,255,.12)', banda: '#0b1630', bandaTitulo: '#ffffff', bandaTexto: '#9fb3d9',
-    pintar(ctx, W, H) {
-      const g = ctx.createLinearGradient(0, 0, W * 0.4, H);
-      g.addColorStop(0, '#0b1630'); g.addColorStop(1, '#03060f');
-      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-      // trama técnica: líneas finas en diagonal
-      ctx.save(); ctx.strokeStyle = 'rgba(110,231,255,.07)'; ctx.lineWidth = 2;
-      for (let x = -H; x < W; x += 46) { ctx.beginPath(); ctx.moveTo(x, H); ctx.lineTo(x + H * 0.6, 0); ctx.stroke(); }
-      ctx.restore();
-      const glow = ctx.createRadialGradient(W / 2, H, 10, W / 2, H, Math.max(W, H) * 0.7);
-      glow.addColorStop(0, 'rgba(47,82,168,.55)'); glow.addColorStop(1, 'rgba(47,82,168,0)');
-      ctx.fillStyle = glow; ctx.fillRect(0, 0, W, H);
-    },
-  },
-  {
-    id: 'cesped', nombre: 'Temporada de césped', muestra: 'linear-gradient(160deg, #1f7a44, #0b2e1f)',
-    oscuro: true, titulo: '#ffffff', acento: '#b9f28c', circulo: 'rgba(185,242,140,.16)', banda: '#ffffff', bandaTitulo: '#0b2e1f', bandaTexto: '#3d5245',
-    pintar(ctx, W, H) {
-      const g = ctx.createLinearGradient(0, 0, W * 0.3, H);
-      g.addColorStop(0, '#1f7a44'); g.addColorStop(1, '#0b2e1f');
-      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-      const luz = ctx.createRadialGradient(W * 0.85, 0, 10, W * 0.85, 0, Math.max(W, H) * 0.7);
-      luz.addColorStop(0, 'rgba(255,255,200,.22)'); luz.addColorStop(1, 'rgba(255,255,200,0)');
-      ctx.fillStyle = luz; ctx.fillRect(0, 0, W, H);
-    },
-  },
-  {
-    id: 'poda', nombre: 'Temporada de poda', muestra: 'linear-gradient(160deg, #9a3f12, #2b1206)',
-    oscuro: true, titulo: '#ffffff', acento: '#ffc27a', circulo: 'rgba(255,194,122,.16)', banda: '#ffffff', bandaTitulo: '#3a1807', bandaTexto: '#5b4636',
-    pintar(ctx, W, H) {
-      const g = ctx.createLinearGradient(0, 0, W * 0.3, H);
-      g.addColorStop(0, '#9a3f12'); g.addColorStop(1, '#2b1206');
-      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-      const luz = ctx.createRadialGradient(W * 0.2, H * 0.1, 10, W * 0.2, H * 0.1, Math.max(W, H) * 0.6);
-      luz.addColorStop(0, 'rgba(255,180,90,.28)'); luz.addColorStop(1, 'rgba(255,180,90,0)');
-      ctx.fillStyle = luz; ctx.fillRect(0, 0, W, H);
-    },
-  },
-  {
-    id: 'claro', nombre: 'Claro', muestra: 'linear-gradient(160deg, #f5f7fb, #dbe3f1)',
-    oscuro: false, titulo: '#0a2149', acento: '#2f52a8', circulo: 'rgba(47,82,168,.10)', banda: '#0a2149', bandaTitulo: '#ffffff', bandaTexto: '#c9d6f2',
-    pintar(ctx, W, H) {
-      const g = ctx.createLinearGradient(0, 0, W * 0.3, H);
-      g.addColorStop(0, '#f5f7fb'); g.addColorStop(1, '#dbe3f1');
-      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-    },
-  },
-];
-
-// Posiciones de cada elemento según el formato
-function disposicion(id, W, H) {
-  if (id === 'historia') {
-    return {
-      logo: { x: 80, y: 230, w: 300 }, etiqueta: { x: W - 80, y: 290 }, cliente: { derecha: W - 80, y: 215, maxW: 300, maxH: 150 },
-      circulo: { x: W / 2, y: 880, r: 430 }, foto: { x: W / 2, y: 880, maxW: 940, maxH: 700 },
-      titulo: { x: W / 2, y: 1410, maxW: W - 140, tam: 118, lineas: 2, interlinea: 1.02 },
-      banda: { y: 1560, h: H - 1560 }, nombre: { y: 1680, tam: 62 }, contacto: { y: 1750, tam: 38 },
-    };
-  }
-  if (id === 'horizontal') {
-    return {
-      logo: { x: 80, y: 70, w: 260 }, etiqueta: { x: W - 80, y: 125 }, cliente: { derecha: W - 80, y: 60, maxW: 300, maxH: 130 },
-      circulo: { x: 560, y: 490, r: 350 }, foto: { x: 560, y: 490, maxW: 860, maxH: 540 },
-      titulo: { x: 1420, y: 430, maxW: 820, tam: 104, lineas: 2, interlinea: 1.02 },
-      banda: { y: 880, h: 200 }, nombre: { y: 965, tam: 56 }, contacto: { y: 1025, tam: 34 },
-    };
-  }
-  return {
-    logo: { x: 70, y: 60, w: 250 }, etiqueta: { x: W - 70, y: 110 }, cliente: { derecha: W - 70, y: 50, maxW: 280, maxH: 130 },
-    circulo: { x: W / 2, y: 520, r: 330 }, foto: { x: W / 2, y: 520, maxW: 780, maxH: 470 },
-    titulo: { x: W / 2, y: 850, maxW: W - 140, tam: 92, lineas: 1, interlinea: 1 },
-    banda: { y: 900, h: 180 }, nombre: { y: 980, tam: 54 }, contacto: { y: 1035, tam: 34 },
-  };
-}
-
-/* ---------- Dibujo ---------- */
-
-const cache = new Map();
-function cargarImagen(src) {
-  if (cache.has(src)) return cache.get(src);
-  const p = new Promise((ok, mal) => {
-    const img = new Image();
-    if (/^https?:\/\//.test(src)) img.crossOrigin = 'anonymous';
-    img.onload = () => ok(img);
-    img.onerror = mal;
-    img.src = src;
-  });
-  cache.set(src, p);
-  p.catch(() => cache.delete(src));
-  return p;
-}
-
-const fuenteTitulo = (t) => `italic 700 ${t}px Dunk95, Impact, sans-serif`;
-const fuenteTexto = (t, peso = 700) => `${peso} ${t}px "Aktiv Grotesk", sans-serif`;
-
-/** Achica el tamaño hasta que el texto entre en `lineas` renglones de `maxW`. */
-function repartir(ctx, texto, maxW, tamInicial, lineas, fuente) {
-  const palabras = texto.split(/\s+/).filter(Boolean);
-  for (let tam = tamInicial; tam >= 28; tam -= 4) {
-    ctx.font = fuente(tam);
-    const renglones = [];
-    let actual = '';
-    for (const p of palabras) {
-      const prueba = actual ? `${actual} ${p}` : p;
-      if (ctx.measureText(prueba).width <= maxW || !actual) actual = prueba;
-      else { renglones.push(actual); actual = p; }
-    }
-    if (actual) renglones.push(actual);
-    if (renglones.length <= lineas && renglones.every((r) => ctx.measureText(r).width <= maxW)) return { tam, renglones };
-  }
-  ctx.font = fuente(28);
-  return { tam: 28, renglones: [texto] };
-}
-
-function rectRedondo(ctx, x, y, w, h, r) {
-  ctx.beginPath();
-  ctx.moveTo(x + r, y);
-  ctx.arcTo(x + w, y, x + w, y + h, r);
-  ctx.arcTo(x + w, y + h, x, y + h, r);
-  ctx.arcTo(x, y + h, x, y, r);
-  ctx.arcTo(x, y, x + w, y, r);
-  ctx.closePath();
-}
-
-async function dibujarPlaca(canvas, o) {
-  const formato = FORMATOS.find((f) => f.id === o.formato) || FORMATOS[0];
-  const fondo = FONDOS.find((f) => f.id === o.fondo) || FONDOS[0];
-  const W = formato.w, H = formato.h;
-  if (canvas.width !== W) canvas.width = W;
-  if (canvas.height !== H) canvas.height = H;
-  const ctx = canvas.getContext('2d');
-  const L = disposicion(formato.id, W, H);
-  try { await Promise.all([document.fonts.load('italic 700 80px Dunk95'), document.fonts.load('700 40px "Aktiv Grotesk"')]); } catch {}
-
-  fondo.pintar(ctx, W, H);
-
-  ctx.fillStyle = fondo.circulo;
-  ctx.beginPath();
-  ctx.arc(L.circulo.x, L.circulo.y, L.circulo.r, 0, Math.PI * 2);
-  ctx.fill();
-
-  try {
-    const logo = await cargarImagen(fondo.oscuro ? MARCA.logoClaro : MARCA.logoOscuro);
-    ctx.drawImage(logo, L.logo.x, L.logo.y, L.logo.w, (logo.height / logo.width) * L.logo.w);
-  } catch {}
-
-  // Logo del comercio arriba a la derecha (si no hay, va "VENTA DE REPUESTOS")
-  if (o.logo) {
-    const lg = o.logo;
-    const esc = Math.min(L.cliente.maxW / lg.canvas.width, L.cliente.maxH / lg.canvas.height);
-    const w = lg.canvas.width * esc, h = lg.canvas.height * esc;
-    const x = L.cliente.derecha - w, y = L.cliente.y;
-    const usarPlaca = o.modoLogo === 'blanco' || (o.modoLogo === 'auto' && necesitaPlaca(lg, fondo));
-    if (usarPlaca) {
-      const pad = 18;
-      ctx.save();
-      ctx.shadowColor = 'rgba(0,0,0,.25)'; ctx.shadowBlur = 18; ctx.shadowOffsetY = 6;
-      ctx.fillStyle = fondo.oscuro ? '#ffffff' : '#0a2149';
-      rectRedondo(ctx, x - pad, y - pad, w + pad * 2, h + pad * 2, 18);
-      ctx.fill();
-      ctx.restore();
-    }
-    ctx.drawImage(o.modoLogo === 'blanco' && lg.original ? lg.original : lg.canvas, x, y, w, h);
-  } else {
-    ctx.textAlign = 'right';
-    ctx.fillStyle = fondo.acento;
-    ctx.font = fuenteTexto(formato.id === 'historia' ? 34 : 30);
-    ctx.fillText('VENTA DE REPUESTOS', L.etiqueta.x, L.etiqueta.y);
-  }
-
-  if (o.foto) {
-    try {
-      const img = await cargarImagen(o.foto);
-      const e = Math.min(L.foto.maxW / img.width, L.foto.maxH / img.height);
-      const w = img.width * e, h = img.height * e;
-      ctx.save();
-      ctx.shadowColor = 'rgba(0,0,0,.45)'; ctx.shadowBlur = 40; ctx.shadowOffsetY = 24;
-      ctx.drawImage(img, L.foto.x - w / 2, L.foto.y - h / 2, w, h);
-      ctx.restore();
-    } catch {}
-  }
-
-  // Título (1 o 2 renglones según el formato)
-  ctx.textAlign = 'center';
-  ctx.fillStyle = fondo.titulo;
-  const t = repartir(ctx, (o.titulo || '').toUpperCase(), L.titulo.maxW, L.titulo.tam, L.titulo.lineas, fuenteTitulo);
-  const alto = t.tam * L.titulo.interlinea;
-  const y0 = L.titulo.y - ((t.renglones.length - 1) * alto) / 2;
-  t.renglones.forEach((r, i) => ctx.fillText(r, L.titulo.x, y0 + i * alto));
-
-  // Banda inferior con el comercio
-  ctx.fillStyle = fondo.banda;
-  ctx.fillRect(0, L.banda.y, W, L.banda.h);
-  ctx.fillStyle = fondo.bandaTitulo;
-  const nombre = o.comercio || 'Nombre de tu comercio';
-  const n = repartir(ctx, nombre, W - 140, L.nombre.tam, 1, (s) => fuenteTexto(s));
-  ctx.font = fuenteTexto(n.tam);
-  ctx.fillText(n.renglones[0], W / 2, L.nombre.y);
-  ctx.fillStyle = fondo.bandaTexto;
-  ctx.font = fuenteTexto(L.contacto.tam, 400);
-  ctx.fillText(o.contacto || 'WhatsApp · dirección · localidad', W / 2, L.contacto.y);
-  return formato;
-}
-
-/** Un logo oscuro sobre fondo oscuro (o claro sobre claro) no se ve: va sobre una placa. */
-function necesitaPlaca(lg, fondo) {
-  return fondo.oscuro ? lg.luminancia < 0.45 : lg.luminancia > 0.75;
-}
-
-/* ---------- Componente ---------- */
-
 const CLAVE = 'lb_placa';
+const LIMITE = 0.45; // cuánto se puede correr el producto (fracción del ancho/alto)
+
 const Clip = () => (
   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" />
   </svg>
 );
 
-export default function GeneradorPlaca({ fotos }) {
+const slug = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+/** Genera el QR (canvas) de un link. La librería se carga sólo si se usa. */
+async function crearQR(texto) {
+  const QR = (await import('qrcode')).default;
+  const c = document.createElement('canvas');
+  await QR.toCanvas(c, texto, { margin: 1, width: 400, color: { dark: '#0a2149', light: '#ffffff' } });
+  return c;
+}
+
+export default function GeneradorPlaca({ fotos, temporada = 'cesped' }) {
   const lienzo = useRef(null);
-  const [foto, setFoto] = useState(fotos[0]?.src);
+  const arrastre = useRef(null);
+  const turno = useRef(0);
+
+  // productos: los de la galería + los que se traen del catálogo (ya sin fondo)
+  const [agregados, setAgregados] = useState([]); // [{ id, nombre, codigo, canvas, miniatura }]
+  const [fotoId, setFotoId] = useState(fotos[0]?.src);
+  const [varias, setVarias] = useState(false);
+  const [elegidas, setElegidas] = useState(() => new Set());
+
   const [formato, setFormato] = useState('feed');
-  const [fondo, setFondo] = useState('azul');
+  const [fondo, setFondo] = useState('temporada');
   const [tituloSel, setTituloSel] = useState(TITULOS[0]);
   const [tituloPropio, setTituloPropio] = useState('');
+  const [etiqueta, setEtiqueta] = useState('');
   const [comercio, setComercio] = useState('');
   const [contacto, setContacto] = useState('');
-  const [logo, setLogo] = useState(null); // { canvas, original, luminancia, sinFondo }
-  const [modoLogo, setModoLogo] = useState('auto'); // auto | sinfondo | blanco
-  const [logoMsg, setLogoMsg] = useState('');
-  const [generando, setGenerando] = useState(false);
-  const [puedeCompartir, setPuedeCompartir] = useState(false);
-  const titulo = tituloSel === TITULO_PROPIO ? tituloPropio : tituloSel;
+  const [conQR, setConQR] = useState(false);
+  const [whatsapp, setWhatsapp] = useState('');
+  const [qr, setQr] = useState(null);
+  const [pos, setPos] = useState({ x: 0, y: 0 });
 
-  // Recordar los datos del comercio en este navegador (no hace falta escribirlos cada vez)
+  const [logo, setLogo] = useState(null);
+  const [modoLogo, setModoLogo] = useState('auto');
+  const [logoMsg, setLogoMsg] = useState('');
+
+  const [busqueda, setBusqueda] = useState('');
+  const [resultados, setResultados] = useState([]);
+  const [buscando, setBuscando] = useState(false);
+  const [trayendo, setTrayendo] = useState('');
+
+  const [generando, setGenerando] = useState('');
+  const [puedeCompartir, setPuedeCompartir] = useState(false);
+
+  const titulo = tituloSel === TITULO_PROPIO ? tituloPropio : tituloSel;
+  const fmt = FORMATOS.find((f) => f.id === formato) || FORMATOS[0];
+  const productos = [
+    ...agregados.map((a) => ({ id: a.id, nombre: a.nombre, miniatura: a.miniatura, foto: { canvas: a.canvas }, producto: a.nombre, codigo: a.codigo })),
+    ...fotos.map((f) => ({ id: f.src, nombre: f.nombre, miniatura: f.src, foto: f.src, producto: '' })),
+  ];
+  const actual = productos.find((p) => p.id === fotoId) || productos[0];
+
+  // ---- recordar datos del comercio en este navegador ----
   useEffect(() => {
     try {
       const d = JSON.parse(localStorage.getItem(CLAVE) || '{}');
       if (d.comercio) setComercio(d.comercio);
       if (d.contacto) setContacto(d.contacto);
-      if (d.fondo && FONDOS.some((f) => f.id === d.fondo)) setFondo(d.fondo);
+      if (d.whatsapp) setWhatsapp(d.whatsapp);
+      if (d.conQR) setConQR(true);
+      if (d.fondo && (d.fondo === 'temporada' || FONDOS.some((f) => f.id === d.fondo))) setFondo(d.fondo);
       if (d.formato && FORMATOS.some((f) => f.id === d.formato)) setFormato(d.formato);
     } catch {}
     try {
@@ -285,24 +91,54 @@ export default function GeneradorPlaca({ fotos }) {
     } catch {}
   }, []);
   useEffect(() => {
-    try { localStorage.setItem(CLAVE, JSON.stringify({ comercio, contacto, fondo, formato })); } catch {}
-  }, [comercio, contacto, fondo, formato]);
+    try { localStorage.setItem(CLAVE, JSON.stringify({ comercio, contacto, whatsapp, conQR, fondo, formato })); } catch {}
+  }, [comercio, contacto, whatsapp, conQR, fondo, formato]);
 
-  // Se dibuja en un lienzo aparte y se copia al final: si el usuario cambia algo mientras
-  // carga una imagen, no se mezclan dos dibujos a medias.
-  const turno = useRef(0);
+  // ---- QR a WhatsApp ----
+  const numeroWA = telefonoWhatsApp(whatsapp);
+  useEffect(() => {
+    let vivo = true;
+    if (!conQR || !numeroWA) { setQr(null); return undefined; }
+    crearQR(`https://wa.me/${numeroWA}`).then((c) => { if (vivo) setQr(c); }).catch(() => setQr(null));
+    return () => { vivo = false; };
+  }, [conQR, numeroWA]);
+
+  // ---- cambiar de producto o formato vuelve a centrarlo ----
+  useEffect(() => { setPos({ x: 0, y: 0 }); }, [fotoId, formato]);
+
+  const opciones = useCallback((p) => ({
+    formato, fondo, temporada, foto: p?.foto, producto: p?.producto, posX: pos.x, posY: pos.y,
+    titulo, etiqueta, comercio, contacto, logo, modoLogo, qr,
+  }), [formato, fondo, temporada, pos, titulo, etiqueta, comercio, contacto, logo, modoLogo, qr]);
+
+  // Se dibuja aparte y se copia al final, para no mezclar dos dibujos si algo cambia a mitad de camino
   const dibujar = useCallback(async () => {
     const mio = ++turno.current;
     const aparte = document.createElement('canvas');
-    await dibujarPlaca(aparte, { formato, fondo, foto, titulo, comercio, contacto, logo, modoLogo });
+    await dibujarPlaca(aparte, opciones(actual));
     const c = lienzo.current;
     if (!c || mio !== turno.current) return;
     if (c.width !== aparte.width) c.width = aparte.width;
     if (c.height !== aparte.height) c.height = aparte.height;
     c.getContext('2d').drawImage(aparte, 0, 0);
-  }, [formato, fondo, foto, titulo, comercio, contacto, logo, modoLogo]);
+  }, [opciones, actual?.id]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { dibujar(); }, [dibujar]);
 
+  // ---- editor de posición: arrastrar el producto sobre la vista previa ----
+  const limitar = (v) => Math.max(-LIMITE, Math.min(LIMITE, v));
+  const bajar = (e) => {
+    try { e.currentTarget.setPointerCapture(e.pointerId); } catch {}
+    arrastre.current = { px: e.clientX, py: e.clientY, x: pos.x, y: pos.y };
+  };
+  const mover = (e) => {
+    const d = arrastre.current;
+    if (!d) return;
+    const r = e.currentTarget.getBoundingClientRect();
+    setPos({ x: limitar(d.x + (e.clientX - d.px) / r.width), y: limitar(d.y + (e.clientY - d.py) / r.height) });
+  };
+  const soltar = () => { arrastre.current = null; };
+
+  // ---- logo del comercio ----
   async function subirLogo(e) {
     const archivo = e.target.files?.[0];
     e.target.value = '';
@@ -318,37 +154,87 @@ export default function GeneradorPlaca({ fotos }) {
     }
   }
 
-  const nombreArchivo = () =>
-    `placa-${slugMarca()}-${formato}-${(comercio || 'comercio').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-')}.png`;
+  // ---- traer cualquier repuesto del catálogo ----
+  useEffect(() => {
+    const q = busqueda.trim();
+    if (q.length < 2) { setResultados([]); return undefined; }
+    const t = setTimeout(async () => {
+      setBuscando(true);
+      try {
+        const r = await fetch(`/api/buscar?q=${encodeURIComponent(q)}&n=8`).then((x) => x.json());
+        setResultados((r.resultados || []).filter((x) => x.foto).slice(0, 8));
+      } catch { setResultados([]); }
+      setBuscando(false);
+    }, 280);
+    return () => clearTimeout(t);
+  }, [busqueda]);
 
-  const generarArchivo = () => new Promise((ok) => lienzo.current.toBlob((b) => ok(b), 'image/png'));
+  async function traerDelCatalogo(r) {
+    const id = `cat:${r.codigo}`;
+    if (agregados.some((a) => a.id === id)) { setFotoId(id); setBusqueda(''); return; }
+    setTrayendo(r.codigo);
+    try {
+      const blob = await fetch(r.foto).then((x) => x.blob());
+      // mismo quitado de fondo blanco que el logo; en productos además se descartan manchitas sueltas
+      const sinFondo = await procesarLogo(blob, { soloPrincipal: true });
+      setAgregados((a) => [{ id, nombre: r.nombre, codigo: r.codigo, canvas: sinFondo.canvas, miniatura: r.foto }, ...a]);
+      setFotoId(id);
+      setBusqueda('');
+      setResultados([]);
+    } catch {}
+    setTrayendo('');
+  }
 
-  async function descargar() {
-    setGenerando(true);
-    await dibujar();
-    const blob = await generarArchivo();
+  // ---- descargar / compartir ----
+  const nombreArchivo = (p) => `placa-${slugMarca()}-${formato}-${slug(p?.codigo || p?.nombre || 'producto')}-${slug(comercio || 'comercio')}.png`;
+  const aBlob = (c) => new Promise((ok) => c.toBlob((b) => ok(b), 'image/png'));
+  const registrar = (n) => logEvento({ tipo: 'placa', q: comercio || null, n, meta: { formato, fondo: resolverFondo(fondo, temporada).id, qr: !!qr, logo: !!logo } });
+
+  function bajarArchivo(blob, nombre) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url;
-    a.download = nombreArchivo();
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-    setGenerando(false);
+    a.href = url; a.download = nombre;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1500);
+  }
+
+  async function descargar() {
+    setGenerando('una');
+    await dibujar();
+    bajarArchivo(await aBlob(lienzo.current), nombreArchivo(actual));
+    registrar(1);
+    setGenerando('');
+  }
+
+  async function descargarVarias() {
+    const lista = productos.filter((p) => elegidas.has(p.id));
+    if (!lista.length) return;
+    setGenerando('varias');
+    const archivos = [];
+    for (const p of lista) {
+      const c = document.createElement('canvas');
+      await dibujarPlaca(c, { ...opciones(p), posX: 0, posY: 0 });
+      const blob = await aBlob(c);
+      archivos.push({ nombre: nombreArchivo(p), datos: new Uint8Array(await blob.arrayBuffer()) });
+    }
+    bajarArchivo(armarZip(archivos), `placas-${slugMarca()}-${formato}-${slug(comercio || 'comercio')}.zip`);
+    registrar(lista.length);
+    setGenerando('');
   }
 
   async function compartir() {
-    setGenerando(true);
+    setGenerando('una');
     try {
       await dibujar();
-      const blob = await generarArchivo();
-      await navigator.share({ files: [new File([blob], nombreArchivo(), { type: 'image/png' })] });
+      const blob = await aBlob(lienzo.current);
+      await navigator.share({ files: [new File([blob], nombreArchivo(actual), { type: 'image/png' })] });
+      registrar(1);
     } catch {}
-    setGenerando(false);
+    setGenerando('');
   }
 
-  const fmt = FORMATOS.find((f) => f.id === formato) || FORMATOS[0];
+  const alternar = (id) => setElegidas((s) => { const n = new Set(s); if (n.has(id)) n.delete(id); else n.add(id); return n; });
+  const fondoTemporada = resolverFondo('temporada', temporada);
 
   return (
     <div className="placa">
@@ -367,28 +253,86 @@ export default function GeneradorPlaca({ fotos }) {
         </fieldset>
 
         <fieldset>
-          <legend>Producto</legend>
-          <div className="placa__fotos">
-            {fotos.map((f) => (
-              <label key={f.src} className={foto === f.src ? 'on' : ''} title={f.nombre}>
-                <input type="radio" name="foto" value={f.src} checked={foto === f.src} onChange={() => setFoto(f.src)} />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={f.src} alt={f.nombre} />
-              </label>
-            ))}
+          <legend className="placa__leyenda">
+            Producto
+            <label className="placa__varias">
+              <input type="checkbox" checked={varias} onChange={(e) => { setVarias(e.target.checked); setElegidas(new Set()); }} />
+              Hacer varias placas de una vez
+            </label>
+          </legend>
+          <div className="placa__buscar">
+            <input
+              type="search"
+              value={busqueda}
+              onChange={(e) => setBusqueda(e.target.value)}
+              placeholder="Buscá cualquier repuesto del catálogo: código o nombre"
+              aria-label="Buscar un repuesto del catálogo para la placa"
+            />
+            {busqueda.trim().length >= 2 ? (
+              <ul className="placa__resultados" role="listbox" aria-label="Repuestos encontrados">
+                {buscando && !resultados.length ? <li className="placa__res-vacio">Buscando…</li> : null}
+                {!buscando && !resultados.length ? <li className="placa__res-vacio">No hay repuestos con foto para esa búsqueda.</li> : null}
+                {resultados.map((r) => (
+                  <li key={r.codigo}>
+                    <button type="button" onClick={() => traerDelCatalogo(r)} disabled={!!trayendo}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={r.foto} alt="" />
+                      <span><code>{r.codigo}</code> {r.nombre}</span>
+                      <em>{trayendo === r.codigo ? 'Preparando…' : 'Usar'}</em>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
           </div>
+          <div className="placa__fotos">
+            {productos.map((p) => {
+              const on = varias ? elegidas.has(p.id) : actual?.id === p.id;
+              return (
+                <label key={p.id} className={on ? 'on' : ''} title={p.nombre}>
+                  {varias ? (
+                    <input type="checkbox" checked={elegidas.has(p.id)} onChange={() => { alternar(p.id); setFotoId(p.id); }} />
+                  ) : (
+                    <input type="radio" name="foto" value={p.id} checked={actual?.id === p.id} onChange={() => setFotoId(p.id)} />
+                  )}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={p.miniatura} alt={p.nombre} />
+                  {varias && on ? <span className="placa__check" aria-hidden="true">✓</span> : null}
+                </label>
+              );
+            })}
+          </div>
+        </fieldset>
+
+        <fieldset className="placa__pos">
+          <legend>Posición del producto</legend>
+          <p className="placa__ayuda">Arrastralo en la vista previa o usá las barras.</p>
+          <label className="placa__rango">
+            <span>Horizontal (eje X)</span>
+            <input type="range" min={-LIMITE} max={LIMITE} step="0.005" value={pos.x} onChange={(e) => setPos((p) => ({ ...p, x: +e.target.value }))} />
+          </label>
+          <label className="placa__rango">
+            <span>Vertical (eje Y)</span>
+            <input type="range" min={-LIMITE} max={LIMITE} step="0.005" value={pos.y} onChange={(e) => setPos((p) => ({ ...p, y: +e.target.value }))} />
+          </label>
+          <button type="button" className="placa__quitar" onClick={() => setPos({ x: 0, y: 0 })} disabled={!pos.x && !pos.y}>Centrar</button>
         </fieldset>
 
         <fieldset>
           <legend>Fondo</legend>
           <div className="placa__fondos">
-            {FONDOS.map((f) => (
-              <label key={f.id} className={fondo === f.id ? 'on' : ''} title={f.nombre}>
-                <input type="radio" name="fondo" value={f.id} checked={fondo === f.id} onChange={() => setFondo(f.id)} />
-                <span className="placa__fondo" style={{ background: f.muestra }} aria-hidden="true" />
-                <span className="placa__fondo-n">{f.nombre}</span>
-              </label>
-            ))}
+            {[FONDO_TEMPORADA, ...FONDOS].map((f) => {
+              const muestra = f.id === 'temporada' ? fondoTemporada.muestra : f.muestra;
+              return (
+                <label key={f.id} className={fondo === f.id ? 'on' : ''} title={f.nombre}>
+                  <input type="radio" name="fondo" value={f.id} checked={fondo === f.id} onChange={() => setFondo(f.id)} />
+                  <span className="placa__fondo" style={{ background: muestra }} aria-hidden="true">
+                    {f.id === 'temporada' ? <span className="placa__fondo-auto">AUTO</span> : null}
+                  </span>
+                  <span className="placa__fondo-n">{f.nombre}</span>
+                </label>
+              );
+            })}
           </div>
         </fieldset>
 
@@ -404,12 +348,34 @@ export default function GeneradorPlaca({ fotos }) {
         </div>
 
         <div className="campo">
+          <label htmlFor="placa-etiqueta">Etiqueta sobre el producto</label>
+          <select id="placa-etiqueta" value={etiqueta} onChange={(e) => setEtiqueta(e.target.value)}>
+            {ETIQUETAS.map((e) => <option key={e.id} value={e.id}>{e.nombre}</option>)}
+          </select>
+        </div>
+
+        <div className="campo">
           <label htmlFor="placa-comercio">Nombre de tu comercio</label>
           <input id="placa-comercio" value={comercio} onChange={(e) => setComercio(e.target.value)} maxLength={40} placeholder="Ej: Agro Ferretería El Tala" />
         </div>
         <div className="campo">
           <label htmlFor="placa-contacto">Contacto</label>
           <input id="placa-contacto" value={contacto} onChange={(e) => setContacto(e.target.value)} maxLength={60} placeholder="Ej: WhatsApp 11 5555-5555 · Pilar" />
+        </div>
+
+        <div className="campo placa__qr">
+          <label className="placa__check-fila">
+            <input type="checkbox" checked={conQR} onChange={(e) => setConQR(e.target.checked)} />
+            Agregar un código QR a mi WhatsApp
+          </label>
+          {conQR ? (
+            <>
+              <input aria-label="Tu WhatsApp para el QR" value={whatsapp} onChange={(e) => setWhatsapp(e.target.value)} inputMode="tel" maxLength={25} placeholder="Tu WhatsApp, ej: 11 5555-5555" />
+              <p className="placa__ayuda">
+                {numeroWA ? `✓ El QR abre un chat con +${numeroWA}.` : 'Escribí tu número con código de área para que aparezca el QR.'}
+              </p>
+            </>
+          ) : null}
         </div>
 
         <div className="campo placa__logo">
@@ -436,15 +402,33 @@ export default function GeneradorPlaca({ fotos }) {
           )}
         </div>
 
-        <button type="button" className="boton" onClick={descargar} disabled={generando}>
-          {generando ? 'Generando…' : `Descargar ${fmt.nombre.toLowerCase()} (PNG)`}
-        </button>
-        {puedeCompartir ? (
-          <button type="button" className="boton boton--borde" onClick={compartir} disabled={generando}>Compartir</button>
+        {varias ? (
+          <button type="button" className="boton" onClick={descargarVarias} disabled={!!generando || !elegidas.size}>
+            {generando === 'varias' ? 'Armando las placas…' : elegidas.size ? `Descargar ${elegidas.size} placas (ZIP)` : 'Elegí los productos arriba'}
+          </button>
+        ) : (
+          <button type="button" className="boton" onClick={descargar} disabled={!!generando}>
+            {generando ? 'Generando…' : `Descargar ${fmt.nombre.toLowerCase()} (PNG)`}
+          </button>
+        )}
+        {puedeCompartir && !varias ? (
+          <button type="button" className="boton boton--borde" onClick={compartir} disabled={!!generando}>Compartir</button>
         ) : null}
       </div>
+
       <div className={`placa__vista placa__vista--${formato}`}>
-        <canvas ref={lienzo} width={fmt.w} height={fmt.h} role="img" aria-label={`Vista previa: ${fmt.nombre}`} />
+        <canvas
+          ref={lienzo}
+          width={fmt.w}
+          height={fmt.h}
+          role="img"
+          aria-label={`Vista previa: ${fmt.nombre}. Arrastrá para mover el producto.`}
+          onPointerDown={bajar}
+          onPointerMove={mover}
+          onPointerUp={soltar}
+          onPointerCancel={soltar}
+        />
+        <p className="placa__vista-ayuda">Arrastrá el producto para acomodarlo</p>
       </div>
     </div>
   );

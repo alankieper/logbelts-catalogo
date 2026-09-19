@@ -294,6 +294,13 @@ export default async function Metricas({ searchParams }) {
   const topVistos = rank(vistas, (e) => e.codigo, (c) => `${c} · ${nombre.get(c) || 'producto'}`);
   const topBusquedas = rank(busquedas, (e) => (e.q || '').toLowerCase().trim(), (q) => q, 15);
   const topSinResultado = rank(sinResultado, (e) => (e.q || '').toLowerCase().trim(), (q) => q, 15);
+  // ---- placas para redes (/material): cuántas se descargaron y qué comercios ----
+  const placas = por('placa');
+  const totalPlacas = placas.reduce((s, e) => s + (e.n || 1), 0);
+  const placasPorComercio = [...placas.reduce((m, e) => {
+    const k = (e.q || 'Sin nombre de comercio').trim();
+    return m.set(k, (m.get(k) || 0) + (e.n || 1));
+  }, new Map()).entries()].sort((a, b) => b[1] - a[1]).slice(0, 12).map(([k, n]) => ({ k, n, label: k }));
   const itemsPorPedido = pedidos.length ? Math.round((pedidos.reduce((s, e) => s + (e.n || 0), 0) / pedidos.length) * 10) / 10 : 0;
 
   // ---- visitantes (login clientes: empresa/nombre + teléfono) ----
@@ -520,6 +527,16 @@ export default async function Metricas({ searchParams }) {
             <section className="mcard">
               <h2>Productos más vistos</h2>
               <Ranking filas={topVistos} href={(f) => `/admin/productos/${encodeURIComponent(f.k)}`} />
+            </section>
+
+            <section className="mcard">
+              <h2>Placas para redes</h2>
+              <p className="mut">
+                {totalPlacas
+                  ? `${fmt(totalPlacas)} ${totalPlacas === 1 ? 'placa descargada' : 'placas descargadas'} desde /material. Comercios que más las usan:`
+                  : 'Todavía nadie descargó placas en este rango.'}
+              </p>
+              {placasPorComercio.length ? <Ranking filas={placasPorComercio} color="var(--accent2)" /> : null}
             </section>
 
             <section className="mcard">

@@ -7,8 +7,8 @@
  */
 
 const MAX = 900;       // lado máximo con el que se trabaja
-const TOL = 48;        // qué tan lejos del blanco se considera "fondo"
-const SUAVE = 90;      // borde suavizado entre el fondo y el logo
+const TOL_LOGO = 48;   // qué tan lejos del blanco se considera "fondo" (logos)
+const SUAVE_LOGO = 90; // borde suavizado entre el fondo y el logo
 
 function leer(archivo) {
   return new Promise((ok, mal) => {
@@ -22,7 +22,15 @@ function leer(archivo) {
 
 const distBlanco = (d, i) => Math.max(255 - d[i], 255 - d[i + 1], 255 - d[i + 2]);
 
-export async function procesarLogo(archivo) {
+/**
+ * opciones.soloPrincipal: para fotos de producto. Después de sacar el fondo, descarta manchas
+ * sueltas chicas (sombras, rayitas del borde de la foto) y deja sólo la pieza.
+ */
+export async function procesarLogo(archivo, opciones = {}) {
+  // Las fotos de producto del catálogo tienen fondo blanco puro: se borra sólo el blanco casi
+  // perfecto, para no comerse los brillos del metal que tocan el borde.
+  const TOL = opciones.soloPrincipal ? 14 : TOL_LOGO;
+  const SUAVE = opciones.soloPrincipal ? 34 : SUAVE_LOGO;
   const img = await leer(archivo);
   const e = Math.min(1, MAX / Math.max(img.width, img.height));
   const W = Math.max(1, Math.round(img.width * e));
@@ -76,6 +84,43 @@ export async function procesarLogo(archivo) {
       if (x < W - 1) encolar(p + 1);
       if (y > 0) encolar(p - W);
       if (y < H - 1) encolar(p + W);
+    }
+  }
+
+  if (sinFondo && opciones.soloPrincipal) {
+    // Grupos de píxeles visibles conectados: se quedan los grandes, se borran las manchitas
+    const grupo = new Int32Array(W * H).fill(-1);
+    const tam = [];
+    const caja = []; // [x0, y0, x1, y1] de cada grupo
+    const pila = new Int32Array(W * H);
+    for (let p0 = 0; p0 < W * H; p0++) {
+      if (grupo[p0] !== -1 || d[p0 * 4 + 3] <= 16) continue;
+      const g = tam.length;
+      let n = 0, sp = 0, bx0 = W, by0 = H, bx1 = 0, by1 = 0;
+      pila[sp++] = p0; grupo[p0] = g;
+      while (sp) {
+        const p = pila[--sp];
+        n++;
+        const x = p % W, y = (p / W) | 0;
+        if (x < bx0) bx0 = x; if (x > bx1) bx1 = x; if (y < by0) by0 = y; if (y > by1) by1 = y;
+        const vec = [x > 0 ? p - 1 : -1, x < W - 1 ? p + 1 : -1, y > 0 ? p - W : -1, y < H - 1 ? p + W : -1];
+        for (const q of vec) {
+          if (q >= 0 && grupo[q] === -1 && d[q * 4 + 3] > 16) { grupo[q] = g; pila[sp++] = q; }
+        }
+      }
+      tam.push(n);
+      caja.push([bx0, by0, bx1, by1]);
+    }
+    let mayor = 0;
+    for (const n of tam) if (n > mayor) mayor = n;
+    for (let p = 0; p < W * H; p++) {
+      const g = grupo[p];
+      if (g < 0) continue;
+      const [a0, b0, a1, b1] = caja[g];
+      const w = a1 - a0 + 1, h = b1 - b0 + 1;
+      // rayitas: sombras o bordes de la foto, muy finas y alargadas
+      const raya = (h <= Math.max(6, H * 0.06) && w > h * 6) || (w <= Math.max(6, W * 0.06) && h > w * 6);
+      if (tam[g] < mayor * 0.06 || (raya && tam[g] < mayor * 0.5)) d[p * 4 + 3] = 0;
     }
   }
 

@@ -3,6 +3,7 @@ import GeneradorPlaca from '../../components/sitio/GeneradorPlaca';
 import { notFound } from 'next/navigation';
 import { MARCA, modulo, slugMarca } from '../../../lib/marca';
 import { fotosMaterial } from '../../../lib/material';
+import { temporadaVigente } from '../../../lib/ajustes';
 
 export const metadata = {
   title: 'Material para distribuidores',
@@ -14,7 +15,7 @@ export const dynamic = 'force-dynamic';
 
 export default async function Material() {
   if (!modulo('material')) notFound();
-  const FOTOS = await fotosMaterial();
+  const [FOTOS, estado] = await Promise.all([fotosMaterial(), temporadaVigente().catch(() => null)]);
 
   return (
     <>
@@ -35,7 +36,7 @@ export default async function Material() {
               <p className="bajada" style={{ marginTop: 12 }}>Elegí el formato, el producto y el fondo, sumá tu logo y el nombre de tu comercio, y descargala lista para Instagram, Facebook o WhatsApp.</p>
             </div>
           </div>
-          <GeneradorPlaca fotos={FOTOS} />
+          <GeneradorPlaca fotos={FOTOS} temporada={estado?.foco || 'cesped'} />
         </div>
       </section>
 
