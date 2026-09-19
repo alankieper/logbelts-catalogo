@@ -8,6 +8,7 @@ import BotonAgregar from '../../components/BotonAgregar';
 import BotonFavorito from '../../components/BotonFavorito';
 import Registrar from '../../components/Registrar';
 import { getProducto, getRelacionados, getVecinos, getFamilia, slugify } from '../../../lib/catalogo';
+import FlechasProducto from '../../components/FlechasProducto';
 import { despiecesDeProducto } from '../../../lib/despieces';
 import { compatiblesPorMaquina, maquinasDeProducto } from '../../../lib/maquinas';
 import { SITE_URL } from '../../../lib/seo';
@@ -234,6 +235,11 @@ export default async function ProductoPage({ params }) {
               <Registrar tipo="ver" codigo={p.codigo} />
             </div>
           </div>
+
+          <FlechasProducto
+            prev={prev ? { codigo: prev.codigo, nombre: prev.nombre || '' } : null}
+            next={next ? { codigo: next.codigo, nombre: next.nombre || '' } : null}
+          />
 
           {(prev || next) ? (
             <div className="prevnext">

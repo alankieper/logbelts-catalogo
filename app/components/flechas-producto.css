@@ -1,0 +1,32 @@
+/* ===== Flechas laterales de la ficha de producto (anterior / siguiente) ===== */
+.flecha-prod {
+  position: fixed; top: 50%; z-index: 40; transform: translateY(-50%);
+  display: flex; align-items: center; gap: 10px;
+  width: 52px; height: 52px; border-radius: 999px; overflow: hidden;
+  background: var(--surface); color: var(--ink); border: 1px solid var(--rule);
+  box-shadow: var(--elevacion, 0 10px 26px rgba(20,28,50,.12)); text-decoration: none;
+  transition: width .25s var(--ease, ease), border-color .15s, color .15s;
+}
+.flecha-prod svg { flex: none; width: 24px; height: 24px; margin: 0 13px; }
+.flecha-prod--izq { left: 14px; }
+.flecha-prod--der { right: 14px; flex-direction: row-reverse; }
+.flecha-prod__info {
+  display: grid; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  font-size: 13px; font-weight: 700; line-height: 1.25; opacity: 0; transition: opacity .15s;
+}
+.flecha-prod--der .flecha-prod__info { text-align: right; padding-left: 16px; }
+.flecha-prod--izq .flecha-prod__info { padding-right: 16px; }
+.flecha-prod__info small { font-size: 10.5px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-faint); }
+/* al pasar el mouse se abre y muestra a qué producto va */
+.flecha-prod:hover, .flecha-prod:focus-visible { width: min(340px, 42vw); border-color: var(--brand-ink); color: var(--brand-ink); text-decoration: none; }
+.flecha-prod:hover .flecha-prod__info, .flecha-prod:focus-visible .flecha-prod__info { opacity: 1; }
+.flecha-prod:focus-visible { outline: 2px solid var(--brand-ink); outline-offset: 2px; }
+@media (max-width: 760px) {
+  .flecha-prod { width: 42px; height: 42px; opacity: .92; }
+  .flecha-prod svg { margin: 0 8px; width: 22px; height: 22px; }
+  .flecha-prod--izq { left: 6px; }
+  .flecha-prod--der { right: 6px; }
+  .flecha-prod:hover, .flecha-prod:focus-visible { width: 42px; }
+  .flecha-prod__info { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .flecha-prod, .flecha-prod__info { transition: none; } }
