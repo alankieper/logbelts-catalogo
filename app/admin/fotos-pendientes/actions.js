@@ -2,9 +2,10 @@
 
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
-import { aprobarPendiente, rechazarPendiente } from '../../../lib/fotosPendientes';
+import { aprobarPendiente, rechazarPendiente, olvidarConteo } from '../../../lib/fotosPendientes';
 
 function volver(params) {
+  olvidarConteo();
   revalidatePath('/', 'layout');
   redirect(`/admin/fotos-pendientes?${new URLSearchParams(params)}`);
 }
@@ -50,6 +51,7 @@ export async function aprobarTodas(formData) {
 export async function aprobarUna(nombre) {
   try {
     await aprobarPendiente(String(nombre));
+    olvidarConteo();
     revalidatePath('/', 'layout');
     return { ok: true };
   } catch (e) {
@@ -60,6 +62,7 @@ export async function aprobarUna(nombre) {
 export async function rechazarUna(nombre) {
   try {
     await rechazarPendiente(String(nombre));
+    olvidarConteo();
     return { ok: true };
   } catch (e) {
     return { ok: false, error: e.message || 'No se pudo rechazar.' };

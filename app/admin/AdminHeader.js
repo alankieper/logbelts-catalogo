@@ -1,11 +1,16 @@
 import '../catalogo-extra.css';
 import { MARCA } from '../../lib/marca';
+import { contarPendientes } from '../../lib/fotosPendientes';
 import BotonTema from '../components/BotonTema';
 
-export default function AdminHeader({ activo }) {
-  const link = (href, label, key) => (
+export default async function AdminHeader({ activo }) {
+  const pendientes = await contarPendientes();
+  const link = (href, label, key, aviso = 0) => (
     <a href={href} data-on={activo === key ? 'true' : undefined}>
       {label}
+      {aviso > 0 ? (
+        <span className="adm-noti" aria-label={`${aviso} ${aviso === 1 ? 'foto pendiente' : 'fotos pendientes'}`}>{aviso > 99 ? '99+' : aviso}</span>
+      ) : null}
     </a>
   );
   return (
@@ -22,7 +27,7 @@ export default function AdminHeader({ activo }) {
           {link('/admin/vendedores', 'Vendedores', 'vendedores')}
           {link('/admin/distribuidores', 'Distribuidores', 'distribuidores')}
           {link('/admin/productos', 'Productos', 'productos')}
-          {link('/admin/fotos-pendientes', 'Fotos pendientes', 'fotos')}
+          {link('/admin/fotos-pendientes', 'Fotos pendientes', 'fotos', pendientes)}
           {link('/admin/codigos', 'Códigos', 'codigos')}
           {link('/admin/oem', 'OEM', 'oem')}
           {link('/admin/excel', 'Excel', 'excel')}
@@ -31,9 +36,11 @@ export default function AdminHeader({ activo }) {
           {link('/admin/importar', 'Importar PDF', 'importar')}
         </nav>
         <span className="right">
-          <a href="/">Ver sitio</a> &nbsp;·&nbsp; <a href="/#catalogo">Ver catálogo</a> &nbsp;·&nbsp; <a href="/logout">Salir</a>
+          <a href="/">Ver sitio</a>
+          <a href="/#catalogo">Ver catálogo</a>
         </span>
         <BotonTema className="tema-boton--admin" />
+        <a className="adm-salir" href="/logout">Salir</a>
       </div>
     </header>
   );

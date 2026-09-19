@@ -336,12 +336,25 @@ footer.cat { border-top: 1px solid var(--rule); padding: 22px 0; font-size: 11.5
 /* ===== Administración ===== */
 .adm-top { background: #12213f; color: #fff; }
 .adm-top .wrap { display: flex; align-items: center; gap: 18px; padding: 12px 20px; }
-.adm-top a.brand img { height: 30px; display: block; }
+.adm-top a.brand { flex: none; }
+.adm-top a.brand img { height: 40px; width: auto; display: block; }
 .adm-top nav { display: flex; gap: 6px; margin-left: 8px; }
 .adm-top nav a { color: rgba(255,255,255,.72); font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 8px; }
 .adm-top nav a:hover, .adm-top nav a[data-on="true"] { background: rgba(255,255,255,.12); color: #fff; text-decoration: none; }
-.adm-top .right { margin-left: auto; font-size: 12.5px; color: rgba(255,255,255,.7); }
-.adm-top .right a { color: #ff9d9d; font-weight: 700; }
+.adm-top .right { margin-left: auto; display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; white-space: nowrap; }
+.adm-top .right a { color: rgba(255,255,255,.85); font-weight: 700; }
+.adm-top .right a:hover { color: #fff; }
+/* Salir en la esquina */
+.adm-top .adm-salir { flex: none; align-self: flex-start; padding: 7px 14px; border-radius: 8px; border: 1px solid rgba(255,157,157,.45); color: #ff9d9d; font-size: 13px; font-weight: 700; }
+.adm-top .adm-salir:hover { background: rgba(255,157,157,.14); color: #ffc2c2; text-decoration: none; }
+/* Aviso de fotos pendientes en el menú */
+.adm-noti {
+  display: inline-grid; place-items: center; min-width: 20px; height: 20px; margin-left: 6px; padding: 0 6px;
+  border-radius: 999px; background: #e5484d; color: #fff; font-size: 11px; font-weight: 800; line-height: 1;
+  box-shadow: 0 0 0 2px #12213f; vertical-align: 1px; animation: adm-noti 2s ease-in-out infinite;
+}
+@keyframes adm-noti { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+@media (prefers-reduced-motion: reduce) { .adm-noti { animation: none; } }
 main.adm { padding: 26px 0 90px; }
 main.adm h1 { font-family: var(--f-display); font-style: italic; text-transform: uppercase; font-size: 1.7rem; margin: 0 0 4px; }
 main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
@@ -1086,7 +1099,7 @@ body {
 
 /* Admin: barra superior un poco más profunda para separarse del fondo */
 :root[data-theme="oscuro"] .adm-top { background: #0a1733; border-bottom: 1px solid #1f2a47; }
-:root[data-theme="oscuro"] .adm-top .right a { color: #ffb4ae; }
+:root[data-theme="oscuro"] .adm-top .adm-salir { color: #ffb4ae; }
 
 /* Lista de pedido, zoom y paneles flotantes */
 :root[data-theme="oscuro"] .pedido-panel { box-shadow: 0 16px 44px rgba(0,0,0,.6); }
