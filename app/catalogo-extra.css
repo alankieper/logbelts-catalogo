@@ -239,3 +239,27 @@ details.solicitud-mini[open] > summary { margin-bottom: 4px; }
 :root[data-theme='oscuro'] .asis-prods a:hover { border-color: #8fb0ff; }
 :root[data-theme='oscuro'] .asis-pie a { color: #4cc38a; }
 :root[data-theme='oscuro'] .adm-links a.wa { color: #4cc38a; }
+
+/* ---- ficha de producto: encabezado (código + accesos rápidos, marca y "sirve para" en dos columnas) ---- */
+.dcode { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px 14px; flex-wrap: wrap; }
+.dcode-acc { display: flex; gap: 8px; flex-wrap: wrap; }
+.dcode-acc .fav-btn, .copiar-cod { min-height: 40px; padding: 8px 13px; font-size: 13px; }
+.copiar-cod {
+  display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--rule-strong); background: var(--surface);
+  color: var(--ink-soft); border-radius: 10px; font: inherit; font-weight: 700; cursor: pointer;
+  transition: border-color .16s ease, color .16s ease, background-color .16s ease;
+}
+.copiar-cod svg { width: 17px; height: 17px; }
+.copiar-cod:hover, .dcode-acc .fav-btn:hover { border-color: var(--brand-ink); color: var(--brand-ink); }
+.copiar-cod.on { color: var(--ok); border-color: var(--ok); background: var(--ok-bg); }
+:root[data-theme='oscuro'] .copiar-cod.on { background: rgba(76, 195, 138, .14); }
+.copiar-cod:focus-visible, .dcode-acc .fav-btn:focus-visible { outline: 2px solid var(--brand-ink); outline-offset: 2px; }
+@media (max-width: 420px) { .dcode-acc { width: 100%; } .dcode-acc > * { flex: 1; justify-content: center; } }
+
+.dinfo { display: grid; gap: 14px 22px; grid-template-columns: 1fr; margin: 0 0 16px; }
+@media (min-width: 640px) { .dinfo:has(> .dinfo-col + .dinfo-col) { grid-template-columns: minmax(0, auto) minmax(0, 1fr); } }
+.dinfo .brandchips, .dinfo .compat-chips { margin: 0; }
+.dinfo-col { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.dinfo-k { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-faint); }
+.dinfo .compat-chips { flex-direction: row; flex-wrap: wrap; align-content: flex-start; }
+.dinfo .compat-chips .k { width: 100%; }

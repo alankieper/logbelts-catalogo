@@ -7,6 +7,7 @@ import Galeria from '../../components/Galeria';
 import ConsultaCTA from '../../components/ConsultaCTA';
 import BotonAgregar from '../../components/BotonAgregar';
 import BotonFavorito from '../../components/BotonFavorito';
+import BotonCopiarCodigo from '../../components/BotonCopiarCodigo';
 import Registrar from '../../components/Registrar';
 import { getProducto, getRelacionados, getVecinos, getFamilia, getNavegacionCategorias, slugify } from '../../../lib/catalogo';
 import FlechasProducto from '../../components/FlechasProducto';
@@ -136,8 +137,15 @@ export default async function ProductoPage({ params }) {
             <div>
               <div className="dhead">
                 <div className="dcode">
-                  <span className="dcode-k">{MARCA.codigo.etiqueta}</span>
-                  <span className="dcode-n">{p.codigo}</span>
+                  <div>
+                    <span className="dcode-k">{MARCA.codigo.etiqueta}</span>
+                    <span className="dcode-n">{p.codigo}</span>
+                  </div>
+                  {/* accesos rápidos a la altura del código */}
+                  <div className="dcode-acc">
+                    <BotonCopiarCodigo codigo={p.codigo} />
+                    <BotonFavorito codigo={p.codigo} nombre={p.nombre || p.clave_producto || p.codigo} />
+                  </div>
                 </div>
                 <h1>{p.nombre || p.clave_producto || 'Producto'}</h1>
                 <div className="badges">
@@ -149,17 +157,22 @@ export default async function ProductoPage({ params }) {
                 </div>
               </div>
 
+              {marcas.size || maquinas.length ? (
+              <div className="dinfo">
               {marcas.size ? (
-                <div className="brandchips">
-                  {[...marcas].map((m) => (
-                    <a key={m} href={`/m/${slugify(m)}`}>{m}</a>
-                  ))}
+                <div className="dinfo-col">
+                  <span className="dinfo-k">{marcas.size === 1 ? 'Marca compatible' : 'Marcas compatibles'}</span>
+                  <div className="brandchips">
+                    {[...marcas].map((m) => (
+                      <a key={m} href={`/m/${slugify(m)}`}>{m}</a>
+                    ))}
+                  </div>
                 </div>
               ) : null}
 
               {maquinas.length ? (
-                <div className="compat-chips">
-                  <span className="k">Sirve para</span>
+                <div className="compat-chips dinfo-col">
+                  <span className="k dinfo-k">Sirve para</span>
                   {maquinas.slice(0, 14).map((m) => (
                     <a key={`${m.marcaSlug}/${m.modeloSlug}`} href={`/maquinas/${m.marcaSlug}/${m.modeloSlug}`}>
                       {m.marca} {m.modelo}
@@ -167,6 +180,8 @@ export default async function ProductoPage({ params }) {
                   ))}
                   {maquinas.length > 14 ? <span className="mut" style={{ fontSize: 12 }}>y {maquinas.length - 14} más</span> : null}
                 </div>
+              ) : null}
+              </div>
               ) : null}
 
               {(() => {
@@ -270,7 +285,6 @@ export default async function ProductoPage({ params }) {
               <div className="dacc">
                 <ConsultaCTA codigo={p.codigo} nombre={p.nombre || p.clave_producto || ''} pagina={p.pagina} />
                 <BotonAgregar codigo={p.codigo} nombre={p.nombre || p.clave_producto || p.codigo} />
-                <BotonFavorito codigo={p.codigo} nombre={p.nombre || p.clave_producto || p.codigo} />
               </div>
 
               <p className="dfoot">Referencia: Catálogo {MARCA.nombre} · página {p.pagina || '—'}</p>
