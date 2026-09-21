@@ -91,3 +91,19 @@
 }
 .despieces-populares a:hover { background: rgba(255, 255, 255, .12); border-color: rgba(255, 255, 255, .6); text-decoration: none; }
 .despieces-populares a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+/* ---- ficha de producto: botón "Ver despiece" ---- */
+.ver-despiece { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 12px 0 18px; }
+.ver-despiece__t { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-soft); margin-right: 2px; }
+.ver-despiece__btn {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 18px; border-radius: 999px;
+  background: var(--dsp-azul); color: #fff; font-weight: 800; font-size: 14.5px; text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 30, 80, .22); transition: background-color 160ms ease, transform 160ms ease;
+}
+.ver-despiece__btn:hover { background: var(--dsp-azul-2); color: #fff; text-decoration: none; transform: translateY(-1px); }
+.ver-despiece__btn:focus-visible { outline: 2px solid var(--dsp-azul-2); outline-offset: 2px; }
+.ver-despiece__maq { font-weight: 600; opacity: .85; padding-left: 8px; border-left: 1px solid rgba(255, 255, 255, .35); }
+.ver-despiece__btn--chico { min-height: 40px; padding: 8px 14px; font-size: 13.5px; }
+:root[data-theme="oscuro"] .ver-despiece__btn { background: #00408c; }
+:root[data-theme="oscuro"] .ver-despiece__btn:hover { background: #2f38ac; }
+@media (prefers-reduced-motion: reduce) { .ver-despiece__btn { transition: none; } .ver-despiece__btn:hover { transform: none; } }

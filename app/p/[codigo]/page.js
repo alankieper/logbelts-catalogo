@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import '../../despiece-visor.css';
 import CatalogoHeader from '../../components/CatalogoHeader';
 import CatalogoPie from '../../components/CatalogoPie';
 import ProductoCard from '../../components/ProductoCard';
@@ -11,10 +12,23 @@ import { getProducto, getRelacionados, getVecinos, getFamilia, getNavegacionCate
 import FlechasProducto from '../../components/FlechasProducto';
 import { despiecesDeProducto } from '../../../lib/despieces';
 import { compatiblesPorMaquina, maquinasDeProducto } from '../../../lib/maquinas';
+import { tieneDespieceOnline } from '../../../lib/despieceOnline';
 import { SITE_URL } from '../../../lib/seo';
 import { MARCA, modulo } from '../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
+
+// Ícono de despiece: pieza con sus partes separadas
+function IconoDespiece() {
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="3" y="3" width="7" height="7" rx="1.5" />
+      <rect x="14" y="3" width="7" height="7" rx="1.5" />
+      <rect x="3" y="14" width="7" height="7" rx="1.5" />
+      <path d="M14 17.5h7M17.5 14v7" />
+    </svg>
+  );
+}
 
 export async function generateMetadata({ params }) {
   const codigo = decodeURIComponent(params.codigo);
@@ -154,6 +168,32 @@ export default async function ProductoPage({ params }) {
                   {maquinas.length > 14 ? <span className="mut" style={{ fontSize: 12 }}>y {maquinas.length - 14} más</span> : null}
                 </div>
               ) : null}
+
+              {(() => {
+                // botón al despiece de cada máquina que lo tiene (lleva a la sección Despiece de la máquina)
+                const conDespiece = modulo('despiece') ? maquinas.filter((m) => tieneDespieceOnline(m.clave)).slice(0, 6) : [];
+                if (!conDespiece.length) return null;
+                const ir = (m) => `/maquinas/${m.marcaSlug}/${m.modeloSlug}#despiece`;
+                return (
+                  <div className="ver-despiece">
+                    {conDespiece.length === 1 ? (
+                      <a className="ver-despiece__btn" href={ir(conDespiece[0])}>
+                        <IconoDespiece /> Ver despiece
+                        <span className="ver-despiece__maq">{conDespiece[0].marca} {conDespiece[0].modelo}</span>
+                      </a>
+                    ) : (
+                      <>
+                        <span className="ver-despiece__t"><IconoDespiece /> Ver despiece</span>
+                        {conDespiece.map((m) => (
+                          <a key={m.clave} className="ver-despiece__btn ver-despiece__btn--chico" href={ir(m)}>
+                            {m.marca} {m.modelo}
+                          </a>
+                        ))}
+                      </>
+                    )}
+                  </div>
+                );
+              })()}
 
               <div className="specsheet">
                 <h3>Descripción</h3>
