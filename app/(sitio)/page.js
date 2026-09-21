@@ -5,7 +5,8 @@ import { temporadaVigente } from '../../lib/ajustes';
 import { FAMILIAS_INICIO, TEMPORADAS, esDeTemporada } from '../../lib/temporada';
 import '../familias-portada.css';
 import { logosClaros, logosMarcas } from '../../lib/logosMarcas';
-import { datosSelector } from '../../lib/maquinas';
+import { datosSelector, datosSelectorDespiece, maquinasConDespiece } from '../../lib/maquinas';
+import '../despiece-visor.css';
 import { img } from '../../lib/sitio';
 import { MARCA, enFrase, modulo } from '../../lib/marca';
 import { Auricular, Escudo, Flecha, Medalla } from '../components/sitio/Iconos';
@@ -217,6 +218,28 @@ export default async function Inicio() {
         </div>
       </section>
       )}
+      {modulo('despiece') && (await maquinasConDespiece(1)).length ? (
+      <section className="herramientas oscuro despieces-portada" id="despieces" aria-labelledby="despieces-titulo">
+        <div className="contenedor herramientas__grilla">
+          <div>
+            <p className="antetitulo">Despieces</p>
+            <h2 id="despieces-titulo" className="titulo-seccion">Mirá el despiece de tu {MARCA.maquinas.singular}</h2>
+            <p className="bajada">
+              Elegí marca y modelo: te mostramos los dibujos de cada parte (cilindro, carburador, arranque…) y qué repuestos van en cada una.
+            </p>
+          </div>
+          <div>
+            <SelectorMaquina datos={await datosSelectorDespiece()} oscuro despiece />
+            <div className="despieces-populares" aria-label="Despieces más buscados">
+              {(await maquinasConDespiece(8)).map((m) => (
+                <a key={m.clave} href={`/maquinas/${m.marcaSlug}/${m.modeloSlug}#despiece`}>{m.texto}</a>
+              ))}
+              <a href="/despiece">Todos los despieces →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      ) : null}
       <section className="seccion tipos con-decor" aria-labelledby="tipos-titulo">
         <Decor Icono={Carburador} clase="decor--izq-arriba decor--enorme" />
         <Decor Icono={FiltroAire} clase="decor--der-abajo" />

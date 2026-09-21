@@ -3,16 +3,20 @@
 import '../catalogo-extra.css';
 import { useMemo, useState } from 'react';
 
-/** Marca -> modelo -> /maquinas/[marca]/[modelo]. `datos` viene de datosSelector() (lib/maquinas.js). */
-export default function SelectorMaquina({ datos = [], oscuro = false }) {
+/**
+ * Marca -> modelo -> /maquinas/[marca]/[modelo]. `datos` viene de datosSelector() (lib/maquinas.js).
+ * Con despiece: lleva directo al despiece de la máquina (hay que elegir el modelo).
+ */
+export default function SelectorMaquina({ datos = [], oscuro = false, despiece = false }) {
   const [marca, setMarca] = useState('');
   const [modelo, setModelo] = useState('');
   const modelos = useMemo(() => datos.find((d) => d.s === marca)?.mods || [], [datos, marca]);
 
   function ir(e) {
     e.preventDefault();
-    if (!marca) return;
-    window.location.href = modelo ? `/maquinas/${marca}/${modelo}` : `/maquinas/${marca}`;
+    if (!marca || (despiece && !modelo)) return;
+    if (despiece) window.location.href = `/maquinas/${marca}/${modelo}#despiece`;
+    else window.location.href = modelo ? `/maquinas/${marca}/${modelo}` : `/maquinas/${marca}`;
   }
 
   return (
@@ -27,13 +31,13 @@ export default function SelectorMaquina({ datos = [], oscuro = false }) {
       <label>
         Modelo
         <select value={modelo} onChange={(e) => setModelo(e.target.value)} disabled={!marca}>
-          <option value="">{marca ? 'Todos los modelos' : 'Primero la marca'}</option>
+          <option value="">{!marca ? 'Primero la marca' : despiece ? 'Elegí el modelo' : 'Todos los modelos'}</option>
           {modelos.map(([nombre, slug, n]) => (
-            <option key={slug} value={slug}>{nombre} · {n} repuesto{n === 1 ? '' : 's'}</option>
+            <option key={slug} value={slug}>{despiece ? nombre : `${nombre} · ${n} repuesto${n === 1 ? '' : 's'}`}</option>
           ))}
         </select>
       </label>
-      <button type="submit" disabled={!marca}>Ver repuestos</button>
+      <button type="submit" disabled={!marca || (despiece && !modelo)}>{despiece ? 'Ver despiece' : 'Ver repuestos'}</button>
     </form>
   );
 }

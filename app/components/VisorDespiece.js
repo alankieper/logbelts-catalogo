@@ -1,60 +1,49 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
+
+const MAX_CHIPS = 3;
 
 /**
- * Despieces de una máquina: una pestaña por variante (FS 55, FS 55 R…), la imagen del diagrama
- * (se amplía a pantalla completa) y la lista de piezas con su número y el repuesto correspondiente.
+ * Despiece de una máquina publicado en internet: una pestaña por variante (FS 38, FS 38 Z…),
+ * el botón al despiece completo y cada dibujo (cilindro, carburador…) con los repuestos del
+ * catálogo que corresponden a esa parte.
  *
- * diagramas: [{ id, variante, imagen, numeradas: [{ ref, nombre, codigo?, foto? }], otros: [{ codigo, nombre, foto? }] }]
+ * despiece: { fuente: { nombre, url }, variantes: [{ nombre, url, dibujos: [{ nombre, url, repuestos: [{ codigo, nombre }] }] }] }
  */
-export default function VisorDespiece({ maquina, diagramas, inicial = 0 }) {
-  const [activo, setActivo] = useState(Math.min(inicial, diagramas.length - 1));
-  const [ampliado, setAmpliado] = useState(false);
-  const [verOtros, setVerOtros] = useState(false);
-  const dialogo = useRef(null);
-  const d = diagramas[activo];
+export default function VisorDespiece({ maquina, despiece, inicial = 0 }) {
+  const variantes = despiece.variantes;
+  const [activo, setActivo] = useState(Math.min(inicial, variantes.length - 1));
+  const [abiertos, setAbiertos] = useState({});
+  const v = variantes[activo];
 
-  // la variante elegida queda en la dirección, para compartir el link
   function elegir(i) {
     setActivo(i);
-    setVerOtros(false);
+    setAbiertos({});
     try {
       const u = new URL(window.location.href);
-      u.searchParams.set('variante', diagramas[i].id);
+      u.searchParams.set('variante', String(i + 1));
       u.hash = 'despiece';
       window.history.replaceState(null, '', u);
     } catch {}
   }
 
-  // ← → entre pestañas cuando el foco está en ellas
   function teclaPestana(e, i) {
     if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
     e.preventDefault();
-    const n = (i + (e.key === 'ArrowRight' ? 1 : -1) + diagramas.length) % diagramas.length;
+    const n = (i + (e.key === 'ArrowRight' ? 1 : -1) + variantes.length) % variantes.length;
     elegir(n);
-    document.getElementById(`dsp-tab-${diagramas[n].id}`)?.focus();
+    document.getElementById(`vdsp-tab-${n}`)?.focus();
   }
-
-  useEffect(() => {
-    const dlg = dialogo.current;
-    if (!dlg) return;
-    if (ampliado && !dlg.open) dlg.showModal?.();
-    if (!ampliado && dlg.open) dlg.close();
-  }, [ampliado]);
-
-  if (!d) return null;
-  const OTROS_VISIBLES = 8;
-  const otros = verOtros ? d.otros : d.otros.slice(0, OTROS_VISIBLES);
 
   return (
     <div className="vdsp">
-      {diagramas.length > 1 ? (
-        <div className="vdsp-tabs" role="tablist" aria-label={`Variantes de la ${maquina}`}>
-          {diagramas.map((x, i) => (
+      {variantes.length > 1 ? (
+        <div className="vdsp-tabs" role="tablist" aria-label={`Versiones de la ${maquina}`}>
+          {variantes.map((x, i) => (
             <button
-              key={x.id}
-              id={`dsp-tab-${x.id}`}
+              key={x.url}
+              id={`vdsp-tab-${i}`}
               role="tab"
               type="button"
               aria-selected={i === activo}
@@ -64,93 +53,69 @@ export default function VisorDespiece({ maquina, diagramas, inicial = 0 }) {
               onClick={() => elegir(i)}
               onKeyDown={(e) => teclaPestana(e, i)}
             >
-              {x.variante}
+              {x.nombre}
             </button>
           ))}
         </div>
       ) : null}
 
-      <div id="vdsp-panel" role={diagramas.length > 1 ? 'tabpanel' : undefined} aria-labelledby={diagramas.length > 1 ? `dsp-tab-${d.id}` : undefined} className="vdsp-panel">
-        <figure className="vdsp-fig">
-          {d.imagen ? (
-            <button type="button" className="vdsp-img" onClick={() => setAmpliado(true)} aria-label={`Ampliar el despiece de la ${d.variante}`}>
-              <img src={d.imagen} alt={`Despiece (diagrama de partes) de la ${d.variante}`} />
-              <span className="vdsp-lupa" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="16" height="16"><path d="M10.5 3a7.5 7.5 0 0 1 5.9 12.1l4.3 4.3-1.4 1.4-4.3-4.3A7.5 7.5 0 1 1 10.5 3Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Zm1 2.5v2h2v2h-2v2h-2v-2h-2v-2h2v-2h2Z" fill="currentColor" /></svg>
-                Ampliar
-              </span>
-            </button>
-          ) : null}
-          <figcaption>
-            {d.variante} · {d.numeradas.length ? `${d.numeradas.length} ${d.numeradas.length === 1 ? 'pieza numerada' : 'piezas numeradas'}` : 'Diagrama de partes'}
-          </figcaption>
-        </figure>
+      <div
+        id="vdsp-panel"
+        className="vdsp-panel"
+        role={variantes.length > 1 ? 'tabpanel' : undefined}
+        aria-labelledby={variantes.length > 1 ? `vdsp-tab-${activo}` : undefined}
+      >
+        <div className="vdsp-abrir">
+          <div>
+            <p className="vdsp-abrir-t">Despiece completo · {v.nombre}</p>
+            <p className="vdsp-abrir-s">
+              {v.dibujos.length ? `${v.dibujos.length} dibujos con cada pieza numerada. ` : ''}Se abre en {despiece.fuente.nombre}.
+            </p>
+          </div>
+          <a className="vdsp-btn" href={v.url} target="_blank" rel="noopener noreferrer">
+            Abrir el despiece
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M14 4h6v6h-2V7.4l-8.3 8.3-1.4-1.4L16.6 6H14V4ZM5 6h6v2H6v10h10v-5h2v7H4V6h1Z" fill="currentColor" /></svg>
+          </a>
+        </div>
 
-        <div className="vdsp-lista">
-          {d.numeradas.length ? (
-            <>
-              <h3 className="vdsp-h3">Piezas del dibujo</h3>
-              <ol className="vdsp-piezas">
-                {d.numeradas.map((x, i) => {
-                  const contenido = (
-                    <>
-                      <span className="vdsp-ref" aria-label={`Número ${x.ref}`}>{x.ref}</span>
-                      {x.codigo ? (
-                        x.foto ? <img src={x.foto} alt="" loading="lazy" className="vdsp-mini" /> : <span className="vdsp-mini vdsp-mini--vacia" />
+        {v.dibujos.length ? (
+          <ul className="vdsp-dibujos">
+            {v.dibujos.map((d, i) => {
+              const abierto = abiertos[i];
+              const chips = abierto ? d.repuestos : d.repuestos.slice(0, MAX_CHIPS);
+              return (
+                <li key={d.url} className="vdsp-dibujo">
+                  <a className="vdsp-dibujo-link" href={d.url} target="_blank" rel="noopener noreferrer" title={d.original}>
+                    <span className="vdsp-dibujo-n" aria-hidden="true">{i + 1}</span>
+                    <span className="vdsp-dibujo-nom">{d.nombre}</span>
+                    <span className="vdsp-dibujo-ver">Ver dibujo ↗</span>
+                  </a>
+                  {d.repuestos.length ? (
+                    <div className="vdsp-chips">
+                      <span className="vdsp-chips-t">Repuestos Logbelts:</span>
+                      {chips.map((p) => (
+                        <a key={p.codigo} href={`/p/${encodeURIComponent(p.codigo)}`} className="vdsp-chip" title={`${p.nombre} · ${p.codigo}`}>
+                          {p.nombre}
+                        </a>
+                      ))}
+                      {d.repuestos.length > MAX_CHIPS ? (
+                        <button type="button" className="vdsp-chip vdsp-chip--mas" onClick={() => setAbiertos((a) => ({ ...a, [i]: !abierto }))} aria-expanded={!!abierto}>
+                          {abierto ? 'Ver menos' : `+${d.repuestos.length - MAX_CHIPS} más`}
+                        </button>
                       ) : null}
-                      <span className="vdsp-txt">
-                        <span className="vdsp-nom">{x.nombre}</span>
-                        <span className="vdsp-cod">{x.codigo ? `Repuesto ${x.codigo}` : 'No disponible como repuesto'}</span>
-                      </span>
-                      {x.codigo ? <span className="vdsp-ir" aria-hidden="true">›</span> : null}
-                    </>
-                  );
-                  return (
-                    <li key={`${x.ref}-${x.codigo || x.nombre}-${i}`} className={x.codigo ? '' : 'vdsp-sin'}>
-                      {x.codigo ? <a href={`/p/${encodeURIComponent(x.codigo)}`}>{contenido}</a> : <div>{contenido}</div>}
-                    </li>
-                  );
-                })}
-              </ol>
-            </>
-          ) : null}
+                    </div>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ul>
+        ) : null}
 
-          {d.otros.length ? (
-            <>
-              <h3 className="vdsp-h3">{d.numeradas.length ? 'Otros repuestos compatibles' : `Repuestos compatibles con la ${maquina}`}</h3>
-              <ul className="vdsp-piezas vdsp-piezas--otros">
-                {otros.map((x) => (
-                  <li key={x.codigo}>
-                    <a href={`/p/${encodeURIComponent(x.codigo)}`}>
-                      {x.foto ? <img src={x.foto} alt="" loading="lazy" className="vdsp-mini" /> : <span className="vdsp-mini vdsp-mini--vacia" />}
-                      <span className="vdsp-txt">
-                        <span className="vdsp-nom">{x.nombre}</span>
-                        <span className="vdsp-cod">Repuesto {x.codigo}</span>
-                      </span>
-                      <span className="vdsp-ir" aria-hidden="true">›</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-              {d.otros.length > OTROS_VISIBLES ? (
-                <button type="button" className="vdsp-mas" onClick={() => setVerOtros((v) => !v)} aria-expanded={verOtros}>
-                  {verOtros ? 'Ver menos' : `Ver los ${d.otros.length} repuestos`}
-                </button>
-              ) : null}
-            </>
-          ) : null}
-        </div>
+        <p className="vdsp-nota">
+          Buscá la pieza en el dibujo y pedila acá: abajo tenés todos los repuestos {maquina ? `para la ${maquina}` : ''} del catálogo.
+          Los dibujos son de {despiece.fuente.nombre}, un sitio externo.
+        </p>
       </div>
-
-      <dialog ref={dialogo} className="vdsp-dialogo" onClose={() => setAmpliado(false)} onClick={(e) => e.target === dialogo.current && setAmpliado(false)}>
-        <div className="vdsp-dialogo-barra">
-          <strong>{d.variante}</strong>
-          <button type="button" onClick={() => setAmpliado(false)} aria-label="Cerrar">✕</button>
-        </div>
-        <div className="vdsp-dialogo-img">
-          {d.imagen ? <img src={d.imagen} alt={`Despiece de la ${d.variante} en tamaño completo`} /> : null}
-        </div>
-      </dialog>
     </div>
   );
 }

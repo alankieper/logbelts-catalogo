@@ -4,8 +4,7 @@ import CatalogoHeader from '../components/CatalogoHeader';
 import CatalogoPie from '../components/CatalogoPie';
 import { catalogoModelos, leerCurados } from '../../lib/despieces';
 import { linkDespiece } from '../../lib/despieceLinks';
-import { resumenDiagramas } from '../../lib/despieceDiagramas';
-import { maquinaPorClave } from '../../lib/maquinas';
+import { tieneDespieceOnline } from '../../lib/despieceOnline';
 import { MARCA, modulo } from '../../lib/marca';
 
 export const dynamic = 'force-dynamic';
@@ -18,19 +17,13 @@ const plano = (s) => (s || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
 
 export default async function DespiecePage({ searchParams }) {
   if (!modulo('despiece')) notFound();
-  const grupos = await catalogoModelos();
-  // máquinas con despiece propio (imagen + lista de piezas), cargados desde el admin
-  const propios = (
-    await Promise.all(
-      [...(await resumenDiagramas()).entries()].map(async ([clave, lista]) => {
-        const m = await maquinaPorClave(clave);
-        return m ? { ...m, n: m.codigos.length, diagramas: lista } : null;
-      })
-    )
-  )
-    .filter(Boolean)
-    .sort((a, b) => a.texto.localeCompare(b.texto, 'es', { numeric: true }));
-  const clavesPropias = new Set(propios.map((m) => m.clave));
+  const gruposTodos = await catalogoModelos();
+  // las máquinas con despiece van primero dentro de cada marca
+  const grupos = gruposTodos.map((g) => ({
+    ...g,
+    modelos: [...g.modelos].sort((a, b) => Number(tieneDespieceOnline(b.clave)) - Number(tieneDespieceOnline(a.clave))),
+  }));
+  const conDespiece = grupos.reduce((n, g) => n + g.modelos.filter((m) => tieneDespieceOnline(m.clave)).length, 0);
   const curados = (await leerCurados()).filter((c) => c.publico);
   const marcaF = searchParams?.marca || '';
   const q = (searchParams?.q || '').toLowerCase().trim();
@@ -58,31 +51,9 @@ export default async function DespiecePage({ searchParams }) {
             ves los repuestos {MARCA.nombre} compatibles.
           </p>
 
-          {propios.length && !q && !marcaF ? (
-            <section aria-labelledby="dsp-propios-titulo" style={{ marginBottom: 8 }}>
-              <h2 id="dsp-propios-titulo" className="page" style={{ fontSize: '1.15rem', margin: '0 0 10px' }}>
-                Despieces con lista de piezas
-              </h2>
-              <ul className="dsp-propios">
-                {propios.map((m) => (
-                  <li key={m.clave} className="dsp-propio">
-                    <a href={`/maquinas/${m.marcaSlug}/${m.modeloSlug}#despiece`}>
-                      {m.diagramas[0].imagen ? <img src={m.diagramas[0].imagen} alt="" loading="lazy" /> : null}
-                      <span className="dsp-propio-txt">
-                        <b>{m.texto}</b>
-                        <small>{m.n} {m.n === 1 ? 'repuesto compatible' : 'repuestos compatibles'}</small>
-                        {m.diagramas.length > 1 ? (
-                          <span className="dsp-chips">
-                            {m.diagramas.map((x) => <span key={x.id}>{x.variante}</span>)}
-                          </span>
-                        ) : null}
-                      </span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ) : null}
+          <p className="mut" style={{ margin: '-6px 0 16px', fontSize: 13 }}>
+            {conDespiece} máquinas con despiece: tocá <b>Ver despiece</b> para ver los dibujos de cada parte y los repuestos que van en cada una.
+          </p>
 
           <form method="get" className="admbar" style={{ marginBottom: 18 }}>
             <input name="q" defaultValue={q} placeholder="Buscar modelo (MS 250, FS 160, GX160…)" style={{ minWidth: 260, border: '1px solid var(--rule-strong)', borderRadius: 8, padding: '9px 12px', fontFamily: 'inherit', fontSize: 13 }} />
@@ -104,7 +75,7 @@ export default async function DespiecePage({ searchParams }) {
               <h2 className="page" style={{ fontSize: '1.15rem', margin: '0 0 10px' }}>{g.marca}</h2>
               <div className="despiece-grilla">
                 {g.modelos.map((m) => {
-                  const conDespiece = clavesPropias.has(m.clave);
+                  const conDespiece = tieneDespieceOnline(m.clave);
                   const cur = curados.find((c) => c.marca === g.marca && plano(c.modelo) === plano(m.modelo));
                   const propio = conDespiece
                     ? { url: `/maquinas/${g.marcaSlug}/${m.slug}#despiece`, directo: true, interno: true }
@@ -135,8 +106,8 @@ export default async function DespiecePage({ searchParams }) {
           ))}
           {!vista.length ? <div className="empty">Sin resultados.</div> : null}
           <p className="note">
-            Los despieces con lista de piezas son propios de {MARCA.nombre}. El resto se abre en diyspareparts.com, un sitio
-            externo con diagramas de partes por modelo.
+            Los dibujos de despiece son de diyspareparts.com, un sitio externo con diagramas de partes por modelo; acá te
+            mostramos cuáles son y qué repuestos {MARCA.nombre} van en cada parte.
           </p>
         </div>
       </main>
