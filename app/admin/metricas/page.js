@@ -126,8 +126,83 @@ function Ranking({ filas, color = 'var(--brand-ink)', href }) {
   );
 }
 
+/* ---- podio: top 3 destacado (oro/plata/bronce) + lista compacta numerada del 4 en adelante ---- */
+const MEDALLAS = [
+  { clase: 'oro', nombre: 'Primer puesto' },
+  { clase: 'plata', nombre: 'Segundo puesto' },
+  { clase: 'bronce', nombre: 'Tercer puesto' },
+];
+function Podio({ filas, href, unidad, chip = 'azul' }) {
+  if (!filas.length) return <p className="mut">Sin datos todavía.</p>;
+  const top = filas.slice(0, 3).map((f, i) => ({ ...f, puesto: i + 1, medalla: MEDALLAS[i] }));
+  // se ve 2 · 1 · 3, con el primero en el centro y más alto
+  const escalones = top.length === 3 ? [top[1], top[0], top[2]] : top;
+  const resto = filas.slice(3);
+  return (
+    <>
+      <ol className={`mpodio mpodio--${top.length}`} aria-label="Los 3 primeros">
+        {escalones.map((f) => (
+          <li key={f.k} className={`mpodio-item mpodio-item--${f.medalla.clase}`} style={{ '--d': `${(f.puesto - 1) * 110}ms` }}>
+            <a href={href(f)} className="mpodio-link">
+              <span className="mpodio-medalla" aria-label={f.medalla.nombre}>{f.puesto}</span>
+              <span className="mpodio-cod">{f.k}</span>
+              <span className="mpodio-nom" title={f.titulo}>{f.titulo}</span>
+              <span className="mpodio-n">{fmt(f.n)}</span>
+              <span className="mpodio-u">{unidad}</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+      {resto.length ? (
+        <ol className="mlista" start={4}>
+          {resto.map((f, i) => (
+            <li key={f.k} style={{ '--d': `${330 + i * 40}ms` }}>
+              <span className="mlista-pos">{i + 4}</span>
+              <a href={href(f)} className="mlista-nom" title={f.label}>
+                <span className="mlista-cod">{f.k}</span> {f.titulo}
+              </a>
+              <span className={`mchip mchip--${chip}`}>{fmt(f.n)}</span>
+            </li>
+          ))}
+        </ol>
+      ) : null}
+    </>
+  );
+}
+
+/* ---- clientes más activos: tarjetas tipo leaderboard (avatar con iniciales) ---- */
+const AVATARES = ['azul', 'verde', 'violeta', 'ambar', 'turquesa', 'coral'];
+function iniciales(nombre = '') {
+  const pal = nombre.replace(/[^\p{L}\p{N} ]/gu, ' ').split(/\s+/).filter((p) => p && !/^(de|del|la|las|el|los|y|srl|sa|sas)$/i.test(p));
+  return ((pal[0]?.[0] || '?') + (pal[1]?.[0] || '')).toUpperCase();
+}
+function TarjetasClientes({ filas }) {
+  if (!filas.length) return <p className="mut">Sin datos todavía.</p>;
+  return (
+    <ol className="mclientes">
+      {filas.map((f, i) => (
+        <li key={f.k} style={{ '--d': `${i * 50}ms` }}>
+          <a href={`/admin/visitantes/${encodeURIComponent(f.k)}`} className="mcli">
+            <span className="mcli-pos">{i + 1}</span>
+            <span className={`mcli-av mcli-av--${AVATARES[i % AVATARES.length]}`} aria-hidden="true">{iniciales(f.empresa)}</span>
+            <span className="mcli-txt">
+              <span className="mcli-nom">{f.empresa}</span>
+              <span className="mcli-tel">{f.telefono || 'Sin teléfono'}</span>
+            </span>
+            <span className="mcli-num">
+              <b>{fmt(f.n)}</b>
+              <small>{f.n === 1 ? 'acción' : 'acciones'}</small>
+            </span>
+            <span className="mcli-ir" aria-hidden="true">›</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
 /* ---- gráfico de torta: mezcla de tipos de actividad, animado (crece el arco) ---- */
-function Donut({ segmentos, size = 148, grosor = 20 }) {
+function Donut({ segmentos, size = 148, grosor = 20, unidad = 'eventos', porcentaje = false, etiqueta = 'Mezcla de actividad' }) {
   const total = segmentos.reduce((s, x) => s + x.v, 0);
   const r = (size - grosor) / 2;
   const c = 2 * Math.PI * r;
@@ -142,7 +217,7 @@ function Donut({ segmentos, size = 148, grosor = 20 }) {
   });
   return (
     <div className="mdonut-row">
-      <svg viewBox={`0 0 ${size} ${size}`} width={size} height={size} className="mdonut-svg" role="img" aria-label="Mezcla de actividad">
+      <svg viewBox={`0 0 ${size} ${size}`} width={size} height={size} className="mdonut-svg" role="img" aria-label={etiqueta}>
         <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="var(--surface-2)" strokeWidth={grosor} />
         {arcos.map((a) => (
           <circle
@@ -159,12 +234,16 @@ function Donut({ segmentos, size = 148, grosor = 20 }) {
         ))}
         <g className="mdonut-total">
           <text x={size / 2} y={size / 2 - 4} textAnchor="middle"><tspan className="n">{fmt(total)}</tspan></text>
-          <text x={size / 2} y={size / 2 + 13} textAnchor="middle"><tspan className="l">eventos</tspan></text>
+          <text x={size / 2} y={size / 2 + 13} textAnchor="middle"><tspan className="l">{unidad}</tspan></text>
         </g>
       </svg>
       <ul className="mdonut-legend">
         {segmentos.map((s) => (
-          <li key={s.label}><i style={{ background: s.color }} />{s.label}<b>{fmt(s.v)}</b></li>
+          <li key={s.label}>
+            <i style={{ background: s.color }} />
+            <span className="mdonut-lbl">{s.label}</span>
+            <b>{fmt(s.v)}{porcentaje ? <small> · {Math.round((s.v / total) * 100)}%</small> : null}</b>
+          </li>
         ))}
       </ul>
     </div>
@@ -306,8 +385,9 @@ export default async function Metricas({ searchParams }) {
       .map(([k, n]) => ({ k, n, label: labelFn(k) }));
   };
 
-  const topConsultados = rank([...consultas, ...adds], (e) => e.codigo, (c) => `${c} · ${nombre.get(c) || 'producto'}`);
-  const topVistos = rank(vistas, (e) => e.codigo, (c) => `${c} · ${nombre.get(c) || 'producto'}`);
+  const conNombre = (filas) => filas.map((f) => ({ ...f, titulo: nombre.get(f.k) || 'Producto' }));
+  const topConsultados = conNombre(rank([...consultas, ...adds], (e) => e.codigo, (c) => `${c} · ${nombre.get(c) || 'producto'}`));
+  const topVistos = conNombre(rank(vistas, (e) => e.codigo, (c) => `${c} · ${nombre.get(c) || 'producto'}`));
   const topBusquedas = rank(busquedas, (e) => (e.q || '').toLowerCase().trim(), (q) => q, 15);
   const topSinResultado = rank(sinResultado, (e) => (e.q || '').toLowerCase().trim(), (q) => q, 15);
   // ---- placas para redes (/material): cuántas se descargaron y qué comercios ----
@@ -316,7 +396,7 @@ export default async function Metricas({ searchParams }) {
   const placasPorComercio = [...placas.reduce((m, e) => {
     const k = (e.q || 'Sin nombre de comercio').trim();
     return m.set(k, (m.get(k) || 0) + (e.n || 1));
-  }, new Map()).entries()].sort((a, b) => b[1] - a[1]).slice(0, 12).map(([k, n]) => ({ k, n, label: k }));
+  }, new Map()).entries()].sort((a, b) => b[1] - a[1]).map(([k, n]) => ({ k, n, label: k }));
   const itemsPorPedido = pedidos.length ? Math.round((pedidos.reduce((s, e) => s + (e.n || 0), 0) / pedidos.length) * 10) / 10 : 0;
 
   // ---- visitantes (login clientes: empresa/nombre + teléfono) ----
@@ -329,7 +409,13 @@ export default async function Metricas({ searchParams }) {
       return `${v.empresa_nombre} · ${v.telefono}`;
     },
     15
-  );
+  ).map((f) => ({ ...f, empresa: visitanteInfo.get(f.k).empresa_nombre, telefono: visitanteInfo.get(f.k).telefono }));
+  // placas: dona con los 6 comercios que más descargan y el resto sumado en "Otros"
+  const COLORES_DONA = ['var(--brand-ink)', 'var(--ok)', 'var(--warn)', 'var(--accent2)', 'var(--mpal-5)', 'var(--mpal-6)'];
+  const segmentosPlacas = placasPorComercio.slice(0, 6).map((f, i) => ({ label: f.label, v: f.n, color: COLORES_DONA[i] }));
+  if (placasPorComercio.length > 6) {
+    segmentosPlacas.push({ label: 'Otros', v: placasPorComercio.slice(6).reduce((a, f) => a + f.n, 0), color: 'var(--mpal-7)' });
+  }
 
   // ---- alerta: clientes que dejaron de entrar (15+ días sin actividad) ----
   const UMBRAL_INACTIVO_DIAS = 15;
@@ -548,28 +634,30 @@ export default async function Metricas({ searchParams }) {
             <section className="mcard">
               <h2>Productos más consultados</h2>
               <p className="mut">Consultas por WhatsApp + agregados al pedido.</p>
-              <Ranking filas={topConsultados} color="var(--ok)" href={(f) => `/admin/productos/${encodeURIComponent(f.k)}`} />
+              <Podio filas={topConsultados} unidad="consultas" chip="verde" href={(f) => `/admin/productos/${encodeURIComponent(f.k)}`} />
             </section>
 
             <section className="mcard">
               <h2>Productos más vistos</h2>
-              <Ranking filas={topVistos} href={(f) => `/admin/productos/${encodeURIComponent(f.k)}`} />
+              <Podio filas={topVistos} unidad="vistas" href={(f) => `/admin/productos/${encodeURIComponent(f.k)}`} />
             </section>
 
             <section className="mcard">
               <h2>Placas para redes</h2>
               <p className="mut">
                 {totalPlacas
-                  ? `${fmt(totalPlacas)} ${totalPlacas === 1 ? 'placa descargada' : 'placas descargadas'} desde /material. Comercios que más las usan:`
+                  ? `${fmt(totalPlacas)} ${totalPlacas === 1 ? 'placa descargada' : 'placas descargadas'} desde /material. Cómo se reparten entre los comercios:`
                   : 'Todavía nadie descargó placas en este rango.'}
               </p>
-              {placasPorComercio.length ? <Ranking filas={placasPorComercio} color="var(--accent2)" /> : null}
+              {segmentosPlacas.length ? (
+                <Donut segmentos={segmentosPlacas} size={132} grosor={18} unidad="placas" porcentaje etiqueta="Descargas de placas por comercio" />
+              ) : null}
             </section>
 
             <section className="mcard">
               <h2>Clientes más activos</h2>
               <p className="mut">Quién completó el acceso y qué tan activo estuvo en este rango. Hace clic para ver el detalle (qué buscó, qué vio).</p>
-              <Ranking filas={topVisitantes} color="var(--ok)" href={(f) => `/admin/visitantes/${encodeURIComponent(f.k)}`} />
+              <TarjetasClientes filas={topVisitantes} />
             </section>
           </div>
 

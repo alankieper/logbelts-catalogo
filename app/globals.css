@@ -568,7 +568,7 @@ main.adm .sub { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 22px; }
 .mdonut-row { display: flex; gap: 26px; align-items: center; flex-wrap: wrap; }
 .mdonut-svg { flex: none; transform: rotate(-90deg); }
 .mdonut-seg { transition: stroke-dasharray 1170ms cubic-bezier(.22,.9,.28,1); }
-.mdonut-total { transform: rotate(90deg); }
+.mdonut-total { transform: rotate(90deg); transform-box: view-box; transform-origin: 50% 50%; }
 .mdonut-total tspan.n { font-size: 22px; font-weight: 800; fill: var(--ink); font-family: inherit; }
 .mdonut-total tspan.l { font-size: 9px; fill: var(--ink-faint); text-transform: uppercase; letter-spacing: .06em; }
 .mdonut-legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
