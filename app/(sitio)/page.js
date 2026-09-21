@@ -207,7 +207,7 @@ export default async function Inicio() {
             <p className="bajada">Elegí marca y modelo y te mostramos los repuestos compatibles del catálogo.</p>
           </div>
           <div>
-            <SelectorMaquina datos={datosSelector()} oscuro />
+            <SelectorMaquina datos={await datosSelector()} oscuro />
             <div className="herramientas__accesos">
               {modulo('pedidoRapido') && <a href="/pedido-rapido"><strong>Pedido rápido</strong><span>Pegá tus códigos o subí un Excel</span></a>}
               {modulo('guias') && <Link href="/guias"><strong>Guías técnicas</strong><span>Correas, espadas y cadenas por medida</span></Link>}

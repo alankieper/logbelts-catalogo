@@ -8,7 +8,7 @@ export const maxDuration = 60;
 
 export default async function AdminManuales({ searchParams }) {
   const lista = await leerCurados();
-  const marcas = catalogoModelos().map((g) => g.marca);
+  const marcas = (await catalogoModelos()).map((g) => g.marca);
   const ok = searchParams?.ok === '1';
   const err = searchParams?.err;
 

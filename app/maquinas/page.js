@@ -21,9 +21,9 @@ export const metadata = {
   openGraph: { title: TITLE, description: DESCRIPTION, url: `${SITE_URL}/maquinas`, images: ['/opengraph-image.png'] },
 };
 
-export default function MaquinasPage() {
+export default async function MaquinasPage() {
   if (!modulo('maquinas')) notFound();
-  const marcas = listarMarcas();
+  const marcas = await listarMarcas();
   const nMarcas = marcas.length;
   const nModelos = marcas.reduce((s, m) => s + m.nModelos, 0);
 
@@ -60,7 +60,7 @@ export default function MaquinasPage() {
           </p>
 
           <div className="banda-maquina">
-            <SelectorMaquina datos={datosSelector()} />
+            <SelectorMaquina datos={await datosSelector()} />
           </div>
 
           <div className="tiles">

@@ -18,6 +18,7 @@ export async function guardarProducto(formData) {
     compatibilidad: (formData.get('compatibilidad') || '').trim() || null,
     ubicacion: (formData.get('ubicacion') || '').trim() || null,
     medidas: formData.get('medidas') || '',
+    ...(formData.has('despiece') ? { despiece: formData.get('despiece') || '' } : {}),
   };
   const r = await store.actualizar(codigo, cambios);
   revalidatePath('/', 'layout');

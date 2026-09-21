@@ -54,8 +54,9 @@ export default async function AdminExcel({ searchParams }) {
               <h2>Editar</h2>
               <p>
                 Abrilo con Excel. Editá sólo estas columnas:
-                <b> nombre, descripcion, familia, subcategoria, marcas, codigo_original, compatibilidad, ubicacion</b>.
-                En <b>marcas</b> y <b>codigo_original</b>, si hay varios, separalos con <code>|</code> (barra).
+                <b> nombre, descripcion, familia, subcategoria, marcas, codigo_original, compatibilidad, ubicacion, despiece</b>.
+                En <b>marcas</b>, <b>codigo_original</b> y <b>despiece</b>, si hay varios, separalos con <code>|</code> (barra).
+                En <b>despiece</b> van las máquinas del repuesto (ej. <code>Stihl FS 38 | Stihl FS 55</code>): con eso se arma solo el vínculo con la máquina.
                 Las columnas <b>medidas, estado, pagina</b> son de referencia (no se guardan).
                 <b> No borres ni cambies la columna “codigo”</b> — es la que identifica cada producto.
               </p>

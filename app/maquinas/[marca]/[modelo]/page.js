@@ -1,17 +1,35 @@
 import { notFound } from 'next/navigation';
+import '../../../despiece-visor.css';
 import CatalogoHeader from '../../../components/CatalogoHeader';
 import CatalogoPie from '../../../components/CatalogoPie';
 import ProductoCard from '../../../components/ProductoCard';
 import NoEncontrado from '../../../components/NoEncontrado';
 import Registrar from '../../../components/Registrar';
+import VisorDespiece from '../../../components/VisorDespiece';
 import { productosDeMaquina } from '../../../../lib/maquinas';
 import { linkDespiece } from '../../../../lib/despieceLinks';
+import { diagramasDeMaquina, armarPiezas } from '../../../../lib/despieceDiagramas';
 import { SITE_URL } from '../../../../lib/seo';
 import { MARCA, modulo } from '../../../../lib/marca';
 
 export const dynamic = 'force-dynamic';
 
 const plural = (n, uno, varios) => (n === 1 ? uno : varios);
+const fotoDe = (p) => (p.foto ? (/^https?:\/\//.test(p.foto) ? p.foto : `/fotos/${p.foto}`) : null);
+
+/** Datos livianos de cada despiece para el visor (la lista de repuestos sale del vínculo por nombre de máquina). */
+function datosVisor(diagramas, productos) {
+  return diagramas.map((dg) => {
+    const { numeradas, otros } = armarPiezas(dg, productos);
+    return {
+      id: dg.id,
+      variante: dg.variante,
+      imagen: dg.imagen,
+      numeradas: numeradas.map((x) => ({ ref: x.ref, nombre: x.nombre, codigo: x.producto?.codigo || null, foto: x.producto ? fotoDe(x.producto) : null })),
+      otros: otros.map((p) => ({ codigo: p.codigo, nombre: p.nombre || p.clave_producto || p.codigo, foto: fotoDe(p) })),
+    };
+  });
+}
 
 // JSON dentro de <script>: se escapa "<" para que ningún texto del catálogo cierre la etiqueta.
 const ld = (obj) => JSON.stringify(obj).replace(/</g, '\\u003c');
@@ -50,13 +68,15 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function ModeloMaquinaPage({ params }) {
+export default async function ModeloMaquinaPage({ params, searchParams }) {
   if (!modulo('maquinas')) notFound();
   const d = await productosDeMaquina(params.marca, params.modelo);
   if (!d) notFound();
 
   const n = d.productos.length;
   const familias = agruparPorFamilia(d.productos);
+  const diagramas = datosVisor(await diagramasDeMaquina(d.clave), d.productos);
+  const varianteInicial = Math.max(0, diagramas.findIndex((x) => x.id === searchParams?.variante));
   const conOem = d.productos.filter((p) => p.codigo_original && p.codigo_original.length).length;
   const despiece = modulo('despiece') ? linkDespiece(d.marca, d.modelo) : null;
   const despieceDirecto = despiece && despiece.directo ? despiece : null;
@@ -124,7 +144,11 @@ export default async function ModeloMaquinaPage({ params }) {
               </span>
             ))}
             {conOem ? ' Incluye equivalencias de códigos originales.' : ''}
-            {despieceDirecto ? (
+            {diagramas.length ? (
+              <>
+                {' '}Para ubicar cada pieza, mirá el <a href="#despiece">despiece de la {d.marca} {d.modelo}</a>.
+              </>
+            ) : despieceDirecto ? (
               <>
                 {' '}Si necesitás ubicar la pieza, mirá el{' '}
                 <a href={despieceDirecto.url} target="_blank" rel="noreferrer">
@@ -135,6 +159,22 @@ export default async function ModeloMaquinaPage({ params }) {
             ) : null}
             {' '}Venta mayorista: consultá disponibilidad con tu vendedor.
           </p>
+
+          {diagramas.length ? (
+            <section id="despiece" className="despiece-seccion" aria-labelledby="despiece-titulo">
+              <p className="eyebrow">Despiece</p>
+              <h2 id="despiece-titulo">
+                {diagramas.length > 1 ? `Despieces de la ${d.marca} ${d.modelo}` : `Despiece de la ${d.marca} ${d.modelo}`}
+              </h2>
+              <p>
+                {diagramas.length > 1
+                  ? `Elegí la variante de tu máquina (${diagramas.map((x) => x.variante).join(', ')}). `
+                  : ''}
+                Tocá el dibujo para verlo grande y buscá el número de la pieza en la lista: cada repuesto lleva a su ficha.
+              </p>
+              <VisorDespiece maquina={`${d.marca} ${d.modelo}`} diagramas={diagramas} inicial={varianteInicial} />
+            </section>
+          ) : null}
 
           {familias.length > 1 ? (
             <nav className="crumb" aria-label="Familias de repuestos" style={{ marginBottom: 22 }}>

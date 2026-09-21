@@ -12,18 +12,18 @@ const plural = (n, uno, varios) => (n === 1 ? uno : varios);
 const ld = (obj) => JSON.stringify(obj).replace(/</g, '\\u003c');
 
 /** Modelos de la marca + total de repuestos distintos (datos reales de lib/maquinas). */
-function datosMarca(marcaSlug) {
-  const datos = listarModelos(marcaSlug);
+async function datosMarca(marcaSlug) {
+  const datos = await listarModelos(marcaSlug);
   if (!datos) return null;
-  const resumen = listarMarcas().find((m) => m.slug === marcaSlug);
+  const resumen = (await listarMarcas()).find((m) => m.slug === marcaSlug);
   const destacados = [...datos.modelos]
     .sort((a, b) => b.n - a.n || a.modelo.localeCompare(b.modelo, 'es', { numeric: true }))
     .slice(0, 5);
   return { ...datos, nProductos: resumen ? resumen.nProductos : 0, destacados };
 }
 
-export function generateMetadata({ params }) {
-  const datos = datosMarca(params.marca);
+export async function generateMetadata({ params }) {
+  const datos = await datosMarca(params.marca);
   if (!datos) return { title: 'Marca no encontrada' };
   const nm = datos.modelos.length;
   const title = `Repuestos para ${datos.marca} por modelo`;
@@ -41,9 +41,9 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function MarcaMaquinaPage({ params }) {
+export default async function MarcaMaquinaPage({ params }) {
   if (!modulo('maquinas')) notFound();
-  const datos = datosMarca(params.marca);
+  const datos = await datosMarca(params.marca);
   if (!datos) notFound();
 
   const nm = datos.modelos.length;

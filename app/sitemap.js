@@ -31,9 +31,9 @@ export default async function sitemap() {
       ...si('maquinas', ['/maquinas'])].map(p => ({
       url: `${SITE_URL}${p}`, lastModified: now, changeFrequency: 'monthly', priority: 0.5,
     })),
-    ...(modulo('maquinas') ? listarMarcas().flatMap(m => [
+    ...(modulo('maquinas') ? (await Promise.all((await listarMarcas()).map(async m => [m, await listarModelos(m.slug)]))).flatMap(([m, lm]) => [
       { url: `${SITE_URL}/maquinas/${m.slug}`, lastModified: now, changeFrequency: 'weekly', priority: 0.5 },
-      ...listarModelos(m.slug).modelos.map(mo => ({
+      ...lm.modelos.map(mo => ({
         url: `${SITE_URL}/maquinas/${m.slug}/${mo.slug}`, lastModified: now, changeFrequency: 'weekly', priority: 0.6,
       })),
     ]) : []),

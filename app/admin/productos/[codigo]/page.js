@@ -7,6 +7,7 @@ import { decodificarCodigo } from '../../../../lib/codigoLogbelts';
 import SubirMedia from '../../../components/SubirMedia';
 import EditorFoto from '../../../components/EditorFoto';
 import { MARCA } from '../../../../lib/marca';
+import { despieceDe, listarMaquinas, maquinasDeProducto } from '../../../../lib/maquinas';
 
 export const dynamic = 'force-dynamic';
 
@@ -25,6 +26,10 @@ export default async function EditarProducto({ params, searchParams }) {
   const galeria = (p.galeria || []).map((v) => mediaSrc(v, 'fotos', p.editado_en));
   const videos = (p.videos || []).map((v) => mediaSrc(v, 'videos'));
   const dec = decodificarCodigo(p.codigo);
+  // Campo "Despiece": máquinas del producto. Si la base todavía no tiene la columna, se muestra
+  // la carga inicial sin poder guardarla (ver supabase/despieces-para-pegar.sql).
+  const despieceEditable = Array.isArray(p.despiece);
+  const [maquinasTodas, maquinasProducto] = await Promise.all([listarMaquinas(), maquinasDeProducto(p.codigo)]);
 
   return (
     <>
@@ -174,6 +179,37 @@ export default async function EditarProducto({ params, searchParams }) {
               <div>
                 <label>Compatibilidad (para qué máquina/modelo)</label>
                 <textarea name="compatibilidad" defaultValue={p.compatibilidad || ''} />
+              </div>
+
+              <div>
+                <label htmlFor="despiece">Despiece: máquinas de este repuesto (separadas por coma)</label>
+                <input
+                  id="despiece"
+                  name={despieceEditable ? 'despiece' : undefined}
+                  defaultValue={despieceDe(p).join(', ')}
+                  list="maquinas-despiece"
+                  placeholder="Stihl FS 38, Stihl FS 55"
+                  disabled={!despieceEditable}
+                />
+                <datalist id="maquinas-despiece">
+                  {maquinasTodas.map((m) => <option key={m.clave} value={m.texto} />)}
+                </datalist>
+                <p style={{ fontSize: 12, color: 'var(--ink-faint)', margin: '5px 0 0', lineHeight: 1.45 }}>
+                  {despieceEditable
+                    ? 'Con estos nombres el repuesto aparece en la página y en el despiece de cada máquina. No importan mayúsculas, espacios ni guiones (FS55 = FS 55).'
+                    : 'Para poder editarlo falta actualizar la base de datos (archivo supabase/despieces-para-pegar.sql).'}
+                  {maquinasProducto.length ? (
+                    <>
+                      {' '}Ver:{' '}
+                      {maquinasProducto.map((m, i) => (
+                        <span key={m.clave}>
+                          {i ? ', ' : ''}
+                          <a href={`/maquinas/${m.marcaSlug}/${m.modeloSlug}`} target="_blank">{m.marca} {m.modelo}</a>
+                        </span>
+                      ))}
+                    </>
+                  ) : null}
+                </p>
               </div>
 
               <div className="row2">

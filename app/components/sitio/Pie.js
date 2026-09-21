@@ -26,7 +26,7 @@ export default function Pie() {
             {modulo('pedidoRapido') && <li><a href="/pedido-rapido">Pedido rápido</a></li>}
             {modulo('guias') && <li><Link href="/guias">Guías técnicas</Link></li>}
             <li><Link href="/descargas">Catálogos en PDF</Link></li>
-            {modulo('despiece') && <li><a href="/despiece">Despiece por modelo</a></li>}
+            {modulo('despiece') && <li><a href="/despiece">Despieces por máquina</a></li>}
           </ul>
         </div>
         <div>

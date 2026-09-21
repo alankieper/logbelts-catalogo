@@ -58,7 +58,7 @@ export default async function ProductoPage({ params }) {
   const hayDespiece = modulo('despiece');
   const hayMaquinas = modulo('maquinas');
   const desp = hayDespiece ? await despiecesDeProducto(codigo, p.compatibilidad) : { curados: [], oficiales: [] };
-  const maquinas = hayMaquinas ? maquinasDeProducto(codigo) : [];
+  const maquinas = hayMaquinas ? await maquinasDeProducto(codigo) : [];
   const compatibles = hayMaquinas ? await compatiblesPorMaquina(codigo, 8) : [];
 
   const derivada = p.fuente_desc && p.fuente_desc.startsWith('derivada');
