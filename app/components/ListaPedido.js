@@ -10,6 +10,8 @@ export default function ListaPedido() {
   const [lista, setLista] = useState([]);
   const [vendedor, setVendedor] = useState(null);
   const [abierto, setAbierto] = useState(false);
+  const [aviso, setAviso] = useState(null); // { nombre } al agregar un producto
+  const [pulso, setPulso] = useState(false);
 
   useEffect(() => {
     const sync = () => { setLista(leerPedido()); setVendedor(leerVendedor()); };
@@ -17,10 +19,22 @@ export default function ListaPedido() {
     window.addEventListener('lb-pedido-cambio', sync);
     window.addEventListener('lb-vendedor-cambio', sync);
     window.addEventListener('storage', sync);
+    // confirmación visual al agregar: el carrito pulsa y aparece un cartelito
+    let t1, t2;
+    const agregado = (e) => {
+      setAviso({ nombre: e.detail?.nombre || '' });
+      setPulso(true);
+      clearTimeout(t1); clearTimeout(t2);
+      t1 = setTimeout(() => setPulso(false), 700);
+      t2 = setTimeout(() => setAviso(null), 2200);
+    };
+    window.addEventListener('lb-pedido-agregado', agregado);
     return () => {
       window.removeEventListener('lb-pedido-cambio', sync);
       window.removeEventListener('lb-vendedor-cambio', sync);
       window.removeEventListener('storage', sync);
+      window.removeEventListener('lb-pedido-agregado', agregado);
+      clearTimeout(t1); clearTimeout(t2);
     };
   }, []);
 
@@ -42,7 +56,7 @@ export default function ListaPedido() {
     <>
       <button
         type="button"
-        className="pedido-fab"
+        className={pulso ? 'pedido-fab pedido-fab--pulso' : 'pedido-fab'}
         onClick={() => setAbierto((v) => !v)}
         aria-label={`Pedido: ${lista.length} producto${lista.length === 1 ? '' : 's'}`}
       >
@@ -52,6 +66,13 @@ export default function ListaPedido() {
         <span>Pedido</span>
         {lista.length ? <span className="pedido-badge">{lista.length}</span> : null}
       </button>
+
+      {aviso && !abierto ? (
+        <div className="pedido-aviso" role="status" aria-live="polite">
+          <span className="pedido-aviso__ok" aria-hidden="true">✓</span>
+          <span>Agregado al pedido{aviso.nombre ? <small>{aviso.nombre}</small> : null}</span>
+        </div>
+      ) : null}
 
       {abierto ? (
         <div className="pedido-panel" role="dialog" aria-label="Lista de pedido">

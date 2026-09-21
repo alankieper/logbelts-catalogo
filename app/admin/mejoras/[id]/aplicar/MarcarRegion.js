@@ -210,7 +210,7 @@ export default function MarcarRegion({ mejora, catalogoUrl }) {
         <p style={okText}>¡Listo! Se generó una nueva versión del catálogo con el cambio aplicado.</p>
         <div style={botones}>
           <a href="/admin" style={{ ...botonConfirmar, textAlign: 'center', textDecoration: 'none', boxSizing: 'border-box' }}>Volver al panel</a>
-          <a href="/catalogo" style={{ ...botonRechazar, textAlign: 'center', textDecoration: 'none', color: COLOR_PRIMARY_TEXTO, borderColor: 'var(--lb-borde, #e1e6f0)' }}>Ver catálogo</a>
+          <a href="/catalogo-digital" style={{ ...botonRechazar, textAlign: 'center', textDecoration: 'none', color: COLOR_PRIMARY_TEXTO, borderColor: 'var(--lb-borde, #e1e6f0)' }}>Ver catálogo</a>
         </div>
       </div>
     );

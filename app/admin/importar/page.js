@@ -1,6 +1,6 @@
 import AdminHeader from '../AdminHeader';
 import { subirCatalogo } from './actions';
-import { listarRuns } from '../../../lib/importador';
+import { listarRuns, importadorDisponible } from '../../../lib/importador';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 300;
@@ -10,6 +10,7 @@ function fmtMB(n) {
 }
 
 export default function Importar({ searchParams }) {
+  const disponible = importadorDisponible();
   const runs = listarRuns();
   const err = searchParams?.err;
 
@@ -25,8 +26,14 @@ export default function Importar({ searchParams }) {
           </p>
 
           {err ? <div className="err-msg">{err}</div> : null}
+          {!disponible ? (
+            <div className="err-msg">
+              Esta herramienta necesita guardar archivos y sólo funciona en el admin de tu computadora
+              (npm run dev → localhost:3000/admin/importar). En la web publicada el servidor es de sólo lectura.
+            </div>
+          ) : null}
 
-          <form action={subirCatalogo} className="form-grid" encType="multipart/form-data" style={{ background: 'var(--surface)', border: '1px solid var(--rule)', borderRadius: 12, padding: 20, maxWidth: 560 }}>
+          <form action={subirCatalogo} className="form-grid" encType="multipart/form-data" style={{ opacity: disponible ? 1 : .45, pointerEvents: disponible ? undefined : 'none', background: 'var(--surface)', border: '1px solid var(--rule)', borderRadius: 12, padding: 20, maxWidth: 560 }}>
             <div>
               <label>Archivo PDF del catálogo</label>
               <input type="file" name="pdf" accept="application/pdf" required />

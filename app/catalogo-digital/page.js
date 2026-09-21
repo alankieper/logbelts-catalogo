@@ -50,7 +50,7 @@ export default function CatalogoDigital() {
   return (
     <main style={page}>
       <div style={container}>
-        <h1 style={heroTitleStyle}><IconCatalogo width={26} height={26} style={{ verticalAlign: '-4px', marginRight: '8px' }} />Catálogo Digital</h1>
+        <h1 style={heroTitleStyle}><IconCatalogo width={26} height={26} style={{ verticalAlign: "-4px", marginRight: "8px" }} />Catálogo en PDF</h1>
         <p style={heroSubtitleStyle}>Mirá el catálogo vigente de {MARCA.nombre}.</p>
 
         <div style={card}>
@@ -60,7 +60,10 @@ export default function CatalogoDigital() {
 
           {!loading && !error && !archivo && (
             <div>
-              <p style={{ color: 'var(--lb-etiqueta, #555)', fontFamily: FONT_TEXTO }}>Todavía no se cargó el catálogo digital.</p>
+              <p style={{ color: 'var(--lb-etiqueta, #555)', fontFamily: FONT_TEXTO }}>
+                Todavía no se subió el catálogo en PDF. El catálogo de productos completo está en la web.
+              </p>
+              <a href="/#catalogo" style={bigButton}><IconCatalogo width={17} height={17} />Ir al catálogo de productos</a>
               <a href="/nueva" style={bigButton}><IconMejora width={17} height={17} />Proponer una mejora</a>
             </div>
           )}

@@ -10,6 +10,8 @@ const nextConfig = {
       { source: '/manuales', destination: '/despiece', permanent: true },
       // el catálogo ahora es parte de la portada
       { source: '/productos', destination: '/#catalogo', permanent: false },
+      // "/catalogo" era el visor del catálogo en PDF; el catálogo de productos vive en la portada
+      { source: '/catalogo', destination: '/#catalogo', permanent: false },
     ];
   },
 };

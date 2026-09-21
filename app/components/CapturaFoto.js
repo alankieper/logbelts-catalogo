@@ -119,7 +119,7 @@ export default function CapturaFoto({ onFoto }) {
               <span style={fabLabel}>Subir</span>
             </div>
             <div style={columna}>
-              <a href="/catalogo" target="_blank" rel="noreferrer" style={{ ...fabSecundario, textDecoration: 'none' }} aria-label="Ver catálogo" title="Ver catálogo en una pestaña nueva">
+              <a href="/catalogo-digital" target="_blank" rel="noreferrer" style={{ ...fabSecundario, textDecoration: 'none' }} aria-label="Ver catálogo" title="Ver catálogo en una pestaña nueva">
                 <IconCatalogo width={20} height={20} />
               </a>
               <span style={fabLabel}>Catálogo</span>

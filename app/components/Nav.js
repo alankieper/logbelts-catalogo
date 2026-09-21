@@ -104,7 +104,7 @@ export default function Nav() {
         <img src={MARCA.logoClaro} alt={MARCA.nombre} style={logoImg} />
       </a>
       <div style={navLinks}>
-        <a href="/catalogo" style={pathname?.startsWith('/catalogo') ? pillLinkActive : pillLink}>
+        <a href="/catalogo-digital" style={pathname?.startsWith('/catalogo-digital') ? pillLinkActive : pillLink}>
           <IconCatalogo width={15} height={15} />
           Catálogo
         </a>

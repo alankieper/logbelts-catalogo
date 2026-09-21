@@ -32,6 +32,8 @@ export default function BotonAgregar({ codigo, nombre, chico = false }) {
     } else {
       guardar([...lista, { codigo, nombre: nombre || codigo }]);
       logEvento({ tipo: 'lista_add', codigo });
+      // avisa al carrito para que pulse y muestre "Agregado al pedido"
+      window.dispatchEvent(new CustomEvent('lb-pedido-agregado', { detail: { nombre: nombre || codigo } }));
     }
   }
 

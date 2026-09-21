@@ -2,6 +2,7 @@ import '../admin-extra.css';
 import AdminHeader from '../AdminHeader';
 import { leerEventos, leerVisitas, leerUltimaActividadPorVisitante, contarEstadisticas } from '../../../lib/eventos';
 import { leerAjustes } from '../../../lib/ajustes';
+import { datosDemo } from '../../../lib/metricasDemo';
 import { leerTodosRaw } from '../../../lib/catalogo';
 import { leerVisitantes } from '../../../lib/visitantes';
 import { gateClientesActivo } from '../../../lib/config';
@@ -57,6 +58,11 @@ function etiquetaDia(iso) {
 /* ---- barras verticales (serie por día), animadas: arrancan en 0 y crecen al cargar ---- */
 function BarrasDias({ dias, series }) {
   const W = 720, H = 190, padB = 22, padL = 6, padT = 8;
+  // sin datos no se dibuja una grilla vacía que parece rota
+  const total = dias.reduce((s, k) => s + series.reduce((a, ser) => a + (ser.data[k] || 0), 0), 0);
+  if (!total) {
+    return <p className="mvacio">Todavía no hay suficientes datos para graficar esta tendencia.</p>;
+  }
   const base = padT + (H - padT - padB);
   const max = Math.max(1, ...dias.map((k) => series.reduce((s, ser) => s + (ser.data[k] || 0), 0)));
   const bw = (W - padL * 2) / dias.length;
@@ -246,13 +252,23 @@ function RosaVientos({ filas }) {
 
 export default async function Metricas({ searchParams }) {
   const dias = RANGOS.some((r) => String(r.d) === searchParams?.d) ? Number(searchParams.d) : 30;
-  const [eventos, visitas, productos, visitantes, gateActivo, ultimaActividad, acumulado, ajustes] = await Promise.all([
+  let [eventos, visitas, productos, visitantes, gateActivo, ultimaActividad, acumulado, ajustes] = await Promise.all([
     leerEventos(dias), leerVisitas(dias), leerTodosRaw(), leerVisitantes(), gateClientesActivo(), leerUltimaActividadPorVisitante(),
     contarEstadisticas(), leerAjustes(),
   ]);
+  const demo = searchParams?.demo === '1';
   const reinicio = searchParams?.reinicio; // 'ok' | 'confirmar' | 'error'
   const desde = ajustes.estadisticasDesde ? new Date(ajustes.estadisticasDesde) : null;
   const nombre = new Map(productos.map((p) => [p.codigo, p.nombre || p.clave_producto || p.codigo]));
+  // Modo demostración: se reemplazan los datos que se MUESTRAN por otros inventados
+  // (ver lib/metricasDemo.js). Lo real se sigue guardando y vuelve al apagar el modo.
+  const reales = { eventos, visitas, visitantes };
+  if (demo) {
+    const d = datosDemo(dias, productos.filter((p) => !p.oculto).slice(0, 400).map((p) => p.codigo));
+    eventos = d.eventos;
+    visitas = d.visitas;
+    visitantes = d.visitantes;
+  }
   const errGate = searchParams?.errGate === '1';
 
   const por = (t) => eventos.filter((e) => e.tipo === t);
@@ -379,10 +395,21 @@ export default async function Metricas({ searchParams }) {
             <h1>Métricas</h1>
             <div className="mrange">
               {RANGOS.map((r) => (
-                <a key={r.d} href={`/admin/metricas?d=${r.d}`} data-on={r.d === dias ? 'true' : undefined}>{r.label}</a>
+                <a key={r.d} href={`/admin/metricas?d=${r.d}${demo ? '&demo=1' : ''}`} data-on={r.d === dias ? 'true' : undefined}>{r.label}</a>
               ))}
+              <a className="mdemo-sw" href={`/admin/metricas?d=${dias}${demo ? '' : '&demo=1'}`} data-on={demo ? 'true' : undefined}>
+                {demo ? '● Modo demostración' : '○ Modo demostración'}
+              </a>
             </div>
           </div>
+
+          {demo ? (
+            <div className="mdemo-aviso" role="status">
+              <strong>Modo demostración activado.</strong> Todo lo que ves en esta pantalla son <strong>números simulados</strong>, para
+              mostrar el panel. Los datos reales de este rango son {fmt(reales.visitas.length)} visitas y {fmt(reales.eventos.length)} eventos,
+              y se siguen guardando igual. <a href={`/admin/metricas?d=${dias}`}>Ver los números reales</a>.
+            </div>
+          ) : null}
 
           <section className="mcard mgate">
             <div className="mgate-txt">
@@ -546,6 +573,7 @@ export default async function Metricas({ searchParams }) {
             </section>
           </div>
 
+          {demo ? null : (
           <section className="mcard mreset" id="reiniciar">
             <div className="mgate-txt">
               <h2>Reiniciar estadísticas</h2>
@@ -575,9 +603,10 @@ export default async function Metricas({ searchParams }) {
               </form>
             </details>
           </section>
+          )}
 
           <p className="mut" style={{ marginTop: 20 }}>
-            Rango: últimos {dias} días · {fmt(visitas.length)} visitas · {fmt(eventos.length)} eventos.
+            {demo ? 'MODO DEMOSTRACIÓN (números simulados) · ' : ''}Rango: últimos {dias} días · {fmt(visitas.length)} visitas · {fmt(eventos.length)} eventos.
             Las personas se cuentan por IP (la IP no se guarda, se guarda un código).
           </p>
         </div>
