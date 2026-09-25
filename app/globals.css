@@ -1164,3 +1164,26 @@ body {
   .pedido-fab--pulso { animation: none; }
   .pedido-aviso { animation: none; }
 }
+
+/* ================= Cuántos productos por fila en el celular ================= */
+.vista-cat { display: none; align-items: center; gap: 4px; }
+.vista-cat__t { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-faint); margin-right: 2px; }
+.vista-cat__b {
+  width: 38px; height: 38px; display: grid; place-items: center; cursor: pointer;
+  border: 1px solid var(--rule-strong); border-radius: 9px; background: var(--surface); color: var(--ink-faint);
+}
+.vista-cat__b[aria-pressed='true'] { background: var(--brand); border-color: var(--brand); color: #fff; }
+.vista-cat__b:focus-visible { outline: 2px solid var(--brand-ink); outline-offset: 2px; }
+
+@media (max-width: 700px) {
+  .vista-cat { display: flex; }
+  :root[data-vista='2'] .pgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  :root[data-vista='3'] .pgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+  /* con 2 o 3 por fila las tarjetas son más angostas: texto más chico y menos etiquetas */
+  :root:is([data-vista='2'], [data-vista='3']) .card .nm { font-size: 13.5px; }
+  :root:is([data-vista='2'], [data-vista='3']) .card .code { font-size: 11px; }
+  :root:is([data-vista='2'], [data-vista='3']) .card .meta, :root:is([data-vista='2'], [data-vista='3']) .card .deriv { display: none; }
+  :root[data-vista='3'] .card .nm { font-size: 12.5px; }
+  :root[data-vista='3'] .card .subcat, :root[data-vista='3'] .card .chipmarca { display: none; }
+  :root[data-vista='3'] .card .body { padding: 8px 9px 10px; }
+}

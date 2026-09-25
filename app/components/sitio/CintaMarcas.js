@@ -101,18 +101,33 @@ export default function CintaMarcas({ marcas }) {
       e.stopPropagation();
     };
 
-    const entrar = () => { pausado = true; };
+    // Con el mouse encima se pausa. Con el dedo NO: en el celular "entrar" salta al tocar y
+    // "salir" puede no llegar nunca, y la cinta quedaba congelada. Tras tocar, sigue sola.
+    let reanudar = 0;
+    const entrar = (e) => { if (!e || e.pointerType !== 'touch') pausado = true; };
     const salir = () => { pausado = false; };
+    const tocar = () => {
+      clearTimeout(reanudar);
+      pausado = true;
+      reanudar = setTimeout(() => { pausado = false; }, 1200);
+    };
 
     el.addEventListener('pointerdown', bajar);
     el.addEventListener('click', click, true);
     el.addEventListener('pointerenter', entrar);
     el.addEventListener('pointerleave', salir);
+    el.addEventListener('touchstart', tocar, { passive: true });
+    el.addEventListener('touchend', tocar, { passive: true });
+    el.addEventListener('touchcancel', tocar, { passive: true });
     el.addEventListener('focusin', entrar);
     el.addEventListener('focusout', salir);
 
     return () => {
       cancelAnimationFrame(cuadro);
+      clearTimeout(reanudar);
+      el.removeEventListener('touchstart', tocar);
+      el.removeEventListener('touchend', tocar);
+      el.removeEventListener('touchcancel', tocar);
       el.removeEventListener('pointerdown', bajar);
       el.removeEventListener('click', click, true);
       soltar();

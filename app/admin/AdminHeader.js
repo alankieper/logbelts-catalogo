@@ -1,7 +1,9 @@
 import '../catalogo-extra.css';
+import './admin-extra.css';
 import { MARCA } from '../../lib/marca';
 import { contarPendientes } from '../../lib/fotosPendientes';
 import BotonTema from '../components/BotonTema';
+import MenuAdmin from './MenuAdmin';
 
 export default async function AdminHeader({ activo }) {
   const pendientes = await contarPendientes();
@@ -19,6 +21,7 @@ export default async function AdminHeader({ activo }) {
         <a className="brand" href="/admin">
           <img src={MARCA.logoClaro} alt={MARCA.nombre} />
         </a>
+        <MenuAdmin pendientes={pendientes}>
         <nav>
           {link('/admin', 'Tablero', 'home')}
           {link('/admin/metricas', 'Métricas', 'metricas')}
@@ -42,6 +45,7 @@ export default async function AdminHeader({ activo }) {
         </span>
         <BotonTema className="tema-boton--admin" />
         <a className="adm-salir" href="/logout">Salir</a>
+        </MenuAdmin>
       </div>
     </header>
   );

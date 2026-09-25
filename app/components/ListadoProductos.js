@@ -1,6 +1,7 @@
 import ProductoCard from './ProductoCard';
 import FiltrosMovil from './FiltrosMovil';
 import Paginacion from './Paginacion';
+import VistaCatalogo from './VistaCatalogo';
 import NavCategorias from './NavCategorias';
 import { slugify } from '../../lib/catalogo';
 import { paginar } from '../../lib/paginar';
@@ -152,6 +153,7 @@ export default function ListadoProductos({ todos, base, searchParams, categorias
               {lista.length !== todos.length ? ` (de ${todos.length.toLocaleString('es-AR')})` : ''} productos
               {pag.paginas > 1 ? ` · página ${pag.pagina} de ${pag.paginas}` : ''}
             </span>
+            <VistaCatalogo />
             <span style={{ marginLeft: 'auto', display: 'flex', gap: 8 }}>
               {vistaFamilia ? (
                 <a className="fmini" style={{ width: 'auto', padding: '6px 10px' }} href={qp({ orden: 'categoria' })} data-on={orden === 'categoria'}>Categoría</a>

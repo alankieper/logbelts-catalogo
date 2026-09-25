@@ -21,12 +21,34 @@ export const metadata = {
     description: `${MARCA.descripcionCorta} Buscá por código, código original o modelo de ${MARCA.maquinas.singular}.`,
   },
   twitter: { card: 'summary_large_image' },
+  manifest: '/manifest.webmanifest',
+  icons: {
+    icon: [
+      { url: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [{ url: '/icons/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
+  // iPhone: al agregarlo a la pantalla de inicio se abre como app, sin barra del navegador
+  appleWebApp: { capable: true, title: MARCA.nombre, statusBarStyle: 'black-translucent' },
+};
+
+export const viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#12213f' },
+    { media: '(prefers-color-scheme: dark)', color: '#0b1224' },
+  ],
+  // viewportFit: el contenido puede ocupar toda la pantalla; el encabezado deja lugar para la
+  // barra de estado y el notch con env(safe-area-inset-top) (ver app/sitio.css).
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
 };
 
 // Tema: claro (identidad Logbelts) por defecto; el visitante puede pasar a oscuro con el botón del
 // encabezado (components/BotonTema.js). La elección se guarda en localStorage ('lb_tema') y este
 // script la aplica antes del primer pintado para que la página no parpadee en claro.
-const SCRIPT_TEMA = `(function(){try{var t=localStorage.getItem('lb_tema')==='oscuro'?'oscuro':'claro';var d=document.documentElement;d.setAttribute('data-theme',t);d.style.colorScheme=t==='oscuro'?'dark':'light';}catch(e){}})();`;
+const SCRIPT_TEMA = `(function(){try{var d=document.documentElement;var t=localStorage.getItem('lb_tema')==='oscuro'?'oscuro':'claro';d.setAttribute('data-theme',t);d.style.colorScheme=t==='oscuro'?'dark':'light';var v=localStorage.getItem('lb_vista');d.setAttribute('data-vista',v==='1'||v==='3'?v:'2');}catch(e){}})();`;
 
 export default function RootLayout({ children }) {
   return (

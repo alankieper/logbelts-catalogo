@@ -4,6 +4,7 @@ import ProductoCard from '../components/ProductoCard';
 import Registrar from '../components/Registrar';
 import NoEncontrado from '../components/NoEncontrado';
 import Paginacion from '../components/Paginacion';
+import VistaCatalogo from '../components/VistaCatalogo';
 import { paginar } from '../../lib/paginar';
 import { buscar, sugerenciasBusqueda } from '../../lib/catalogo';
 import { MARCA, modulo } from '../../lib/marca';
@@ -46,6 +47,7 @@ export default async function BuscarPage({ searchParams }) {
 
           {q && res.length ? (
             <>
+              <div className="toolbar"><VistaCatalogo /></div>
               {pag.paginas > 1 ? <p className="lead" id="productos">Mostrando {pag.desde}–{pag.hasta} · página {pag.pagina} de {pag.paginas}</p> : null}
               <div className="pgrid">
                 {pag.items.map((r) => (
