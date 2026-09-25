@@ -9,7 +9,8 @@ const MAX_CHIPS = 3;
  * el botón al despiece completo y cada dibujo (cilindro, carburador…) con los repuestos del
  * catálogo que corresponden a esa parte.
  *
- * despiece: { fuente: { nombre, url }, variantes: [{ nombre, url, dibujos: [{ nombre, url, repuestos: [{ codigo, nombre }] }] }] }
+ * despiece: { fuente, productos: [[codigo, nombre]], variantes: [{ nombre, url, dibujos: [[nombre, url, [posiciones], original]] }] }
+ * Los repuestos vienen una sola vez en `productos` y cada dibujo guarda sus posiciones en esa lista.
  */
 export default function VisorDespiece({ maquina, despiece, inicial = 0 }) {
   const variantes = despiece.variantes;
@@ -80,27 +81,28 @@ export default function VisorDespiece({ maquina, despiece, inicial = 0 }) {
 
         {v.dibujos.length ? (
           <ul className="vdsp-dibujos">
-            {v.dibujos.map((d, i) => {
+            {v.dibujos.map(([nombre, url, posiciones, original], i) => {
               const abierto = abiertos[i];
-              const chips = abierto ? d.repuestos : d.repuestos.slice(0, MAX_CHIPS);
+              const repuestos = posiciones.map((n) => despiece.productos[n]).filter(Boolean);
+              const chips = abierto ? repuestos : repuestos.slice(0, MAX_CHIPS);
               return (
-                <li key={d.url} className="vdsp-dibujo">
-                  <a className="vdsp-dibujo-link" href={d.url} target="_blank" rel="noopener noreferrer" title={d.original}>
+                <li key={url} className="vdsp-dibujo">
+                  <a className="vdsp-dibujo-link" href={url} target="_blank" rel="noopener noreferrer" title={original}>
                     <span className="vdsp-dibujo-n" aria-hidden="true">{i + 1}</span>
-                    <span className="vdsp-dibujo-nom">{d.nombre}</span>
+                    <span className="vdsp-dibujo-nom">{nombre}</span>
                     <span className="vdsp-dibujo-ver">Ver dibujo ↗</span>
                   </a>
-                  {d.repuestos.length ? (
+                  {repuestos.length ? (
                     <div className="vdsp-chips">
                       <span className="vdsp-chips-t">Repuestos Logbelts:</span>
-                      {chips.map((p) => (
-                        <a key={p.codigo} href={`/p/${encodeURIComponent(p.codigo)}`} className="vdsp-chip" title={`${p.nombre} · ${p.codigo}`}>
-                          {p.nombre}
+                      {chips.map(([codigo, nombre]) => (
+                        <a key={codigo} href={`/p/${encodeURIComponent(codigo)}`} className="vdsp-chip" title={`${nombre} · ${codigo}`}>
+                          {nombre}
                         </a>
                       ))}
-                      {d.repuestos.length > MAX_CHIPS ? (
+                      {repuestos.length > MAX_CHIPS ? (
                         <button type="button" className="vdsp-chip vdsp-chip--mas" onClick={() => setAbiertos((a) => ({ ...a, [i]: !abierto }))} aria-expanded={!!abierto}>
-                          {abierto ? 'Ver menos' : `+${d.repuestos.length - MAX_CHIPS} más`}
+                          {abierto ? 'Ver menos' : `+${repuestos.length - MAX_CHIPS} más`}
                         </button>
                       ) : null}
                     </div>

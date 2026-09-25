@@ -32,6 +32,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" data-theme="claro" suppressHydrationWarning>
       <head>
+        {/* las dos fuentes que se ven apenas abre la página: se piden antes que el resto */}
+        <link rel="preload" href="/fonts/AktivGrotesk-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/Dunk95TRIALVERSION-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <script dangerouslySetInnerHTML={{ __html: SCRIPT_TEMA }} />
       </head>
       <body>{children}</body>
