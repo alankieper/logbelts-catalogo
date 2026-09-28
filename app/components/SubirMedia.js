@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@supabase/supabase-js';
-import { agregarMediaGaleria } from '../admin/productoActions';
+import { agregarMediaGaleria, pedirSubidaMedia } from '../admin/productoActions';
 
 const MAX_FOTO = 15 * 1024 * 1024;
 const MAX_VIDEO = 80 * 1024 * 1024;
@@ -54,20 +54,17 @@ export default function SubirMedia({ codigo }) {
     setEstado('subiendo');
     setMsg(esVideo ? 'Subiendo video…' : 'Subiendo foto…');
     try {
-      const ruta = `${clase}/${codigo}-${Date.now()}.${ext(file.name, file.type)}`;
-      const { error } = await sb.storage.from('media').upload(ruta, file, {
-        upsert: true,
+      // el servidor autoriza esta subida puntual (ver pedirSubidaMedia)
+      const permiso = await pedirSubidaMedia({ codigo, clase, extension: ext(file.name, file.type) });
+      if (!permiso.ok) throw new Error(permiso.error || 'No se pudo pedir permiso para subir.');
+      const { error } = await sb.storage.from('media').uploadToSignedUrl(permiso.ruta, permiso.token, file, {
         contentType: file.type || (esVideo ? 'video/mp4' : 'image/jpeg'),
       });
       if (error) {
-        const hint = /bucket.*not.*found/i.test(error.message)
-          ? 'Falta crear el bucket "media" en Supabase (migración 0007). '
-          : /policy|not authorized|row-level/i.test(error.message)
-            ? 'El bucket "media" no permite subir (faltan las políticas de la migración 0007). '
-            : '';
+        const hint = /bucket.*not.*found/i.test(error.message) ? 'Falta crear el bucket "media" en Supabase (migración 0007). ' : '';
         throw new Error(hint + error.message);
       }
-      const pub = sb.storage.from('media').getPublicUrl(ruta).data.publicUrl;
+      const pub = permiso.url;
       const fd = new FormData();
       fd.set('codigo', codigo);
       fd.set('tipo', clase);

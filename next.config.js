@@ -9,7 +9,18 @@ const nextConfig = {
     // Las tipografías y las imágenes del sitio no cambian nunca (si cambian, cambia el nombre).
     // Las fotos de producto sí se pueden reemplazar: se guardan por un día y se revisan en segundo plano.
     const unAno = 'public, max-age=31536000, immutable';
+    // Cabeceras de seguridad para todo el sitio: evitan que otra página "meta" la web dentro de un
+    // marco (clickjacking), que el navegador adivine tipos de archivo, y que se filtre la dirección
+    // completa al salir a otro sitio.
+    const seguridad = [
+      { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+      { key: 'X-Content-Type-Options', value: 'nosniff' },
+      { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+      { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains' },
+      { key: 'Permissions-Policy', value: 'geolocation=(), microphone=(), camera=(self)' },
+    ];
     return [
+      { source: '/:ruta*', headers: seguridad },
       { source: '/fonts/:archivo*', headers: [{ key: 'Cache-Control', value: unAno }] },
       { source: '/img/:archivo*', headers: [{ key: 'Cache-Control', value: unAno }] },
       { source: '/marcas/:archivo*', headers: [{ key: 'Cache-Control', value: unAno }] },

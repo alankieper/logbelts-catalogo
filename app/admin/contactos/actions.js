@@ -1,10 +1,12 @@
 'use server';
+import { exigirAdmin } from '../../../lib/sesionServidor';
 
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { actualizarContacto } from '../../../lib/contactos';
 
 export async function guardarSeguimiento(formData) {
+  await exigirAdmin();
   const id = formData.get('id');
   const r = await actualizarContacto(id, {
     estado: formData.get('estado'),

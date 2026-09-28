@@ -1,4 +1,5 @@
 'use server';
+import { exigirAdmin } from '../../../lib/sesionServidor';
 
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
@@ -11,6 +12,7 @@ function volver(params) {
 }
 
 export async function aprobarFoto(formData) {
+  await exigirAdmin();
   let error = null;
   try {
     await aprobarPendiente(formData.get('nombre'));
@@ -21,6 +23,7 @@ export async function aprobarFoto(formData) {
 }
 
 export async function rechazarFoto(formData) {
+  await exigirAdmin();
   let error = null;
   try {
     await rechazarPendiente(formData.get('nombre'));
@@ -32,6 +35,7 @@ export async function rechazarFoto(formData) {
 
 // Aprueba todas las que se muestran. Si hay varias del mismo producto, queda de portada la última.
 export async function aprobarTodas(formData) {
+  await exigirAdmin();
   const nombres = formData.getAll('nombre').map(String);
   let n = 0;
   const errores = [];
@@ -49,6 +53,7 @@ export async function aprobarTodas(formData) {
 // Versiones para la bandeja con barra de progreso: aprueban/rechazan UNA foto y devuelven el
 // resultado (sin redirigir), así el navegador puede ir mostrando "2 de 5…" y al final refrescar.
 export async function aprobarUna(nombre) {
+  await exigirAdmin();
   try {
     await aprobarPendiente(String(nombre));
     olvidarConteo();
@@ -60,6 +65,7 @@ export async function aprobarUna(nombre) {
 }
 
 export async function rechazarUna(nombre) {
+  await exigirAdmin();
   try {
     await rechazarPendiente(String(nombre));
     olvidarConteo();

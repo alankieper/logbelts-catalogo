@@ -1,4 +1,5 @@
 'use server';
+import { exigirAdmin } from '../../../lib/sesionServidor';
 
 import fs from 'fs';
 import path from 'path';
@@ -8,6 +9,7 @@ import { cookies } from 'next/headers';
 import { dirImport, registrarRun, actualizarRun, procesarPdf } from '../../../lib/importador';
 
 export async function subirCatalogo(formData) {
+  await exigirAdmin();
   if (process.env.VERCEL) {
     redirect(
       '/admin/importar?err=' +
@@ -26,7 +28,7 @@ export async function subirCatalogo(formData) {
   const rutaPdf = path.join(carpeta, 'catalogo.pdf');
   fs.writeFileSync(rutaPdf, bytes);
 
-  const autor = cookies().get('logbelts_user')?.value || null;
+  const autor = await exigirAdmin();
   registrarRun({
     id,
     archivo: file.name || 'catalogo.pdf',

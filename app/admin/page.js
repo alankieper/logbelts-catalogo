@@ -1,5 +1,6 @@
 import AdminHeader from './AdminHeader';
 import { estadisticas } from '../../lib/catalogoStore';
+import { PASSWORD_SIN_CONFIGURAR } from '../../lib/adminPassword';
 
 export const dynamic = 'force-dynamic';
 
@@ -15,6 +16,13 @@ export default async function AdminHome() {
       <main className="adm">
         <div className="wrap">
           <h1>Tablero</h1>
+          {PASSWORD_SIN_CONFIGURAR ? (
+            <div className="err-msg" style={{ lineHeight: 1.5 }}>
+              <b>Falta poner una contraseña propia.</b> El panel está usando la contraseña de fábrica.
+              Entrá a Vercel → el proyecto → Settings → Environment Variables y agregá <code>ADMIN_PASSWORD</code>
+              {' '}con la contraseña que quieras (y <code>AUTH_SECRET</code> con un texto largo al azar). Después volvé a publicar.
+            </div>
+          ) : null}
           <p className="sub">Catálogo cargado desde la primera extracción. Editá acá; los cambios se ven al toque en el catálogo público.</p>
 
           <div className="kpis">

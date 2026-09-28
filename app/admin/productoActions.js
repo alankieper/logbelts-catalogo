@@ -1,12 +1,15 @@
 'use server';
+import { exigirAdmin } from '../../lib/sesionServidor';
 
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import * as store from '../../lib/catalogoStore';
-import { borrarMediaPorUrl } from '../../lib/media';
+import { borrarMediaPorUrl, BUCKET } from '../../lib/media';
+import { db, usandoDB } from '../../lib/db';
 import { guardarFotoEditadaArchivo } from '../../lib/fotoEditada';
 
 export async function guardarProducto(formData) {
+  await exigirAdmin();
   const codigo = formData.get('codigo');
   const cambios = {
     nombre: (formData.get('nombre') || '').trim() || null,
@@ -28,6 +31,7 @@ export async function guardarProducto(formData) {
 // Agrega una foto o video YA subido a Supabase Storage a la galería del producto
 // (si todavía no tiene portada, la usa como portada). tipo = 'foto' | 'video'.
 export async function agregarMediaGaleria(formData) {
+  await exigirAdmin();
   const codigo = formData.get('codigo');
   const tipo = formData.get('tipo') === 'video' ? 'video' : 'foto';
   const url = (formData.get('url') || '').toString();
@@ -39,6 +43,7 @@ export async function agregarMediaGaleria(formData) {
 
 // Quita una foto o video puntual de la galería (no la portada) y lo borra del storage.
 export async function quitarMediaGaleria(formData) {
+  await exigirAdmin();
   const codigo = formData.get('codigo');
   const tipo = formData.get('tipo') === 'video' ? 'video' : 'galeria';
   const url = (formData.get('url') || '').toString();
@@ -50,6 +55,7 @@ export async function quitarMediaGaleria(formData) {
 
 // Promueve una foto de la galería a portada (la portada anterior pasa a la galería).
 export async function promoverPortada(formData) {
+  await exigirAdmin();
   const codigo = formData.get('codigo');
   const url = (formData.get('url') || '').toString();
   await store.usarComoPortada(codigo, url);
@@ -59,9 +65,12 @@ export async function promoverPortada(formData) {
 
 // Agrega uno o más códigos originales (OEM) a un producto, sin pisar los que ya tiene.
 export async function agregarOem(formData) {
+  await exigirAdmin();
   const codigo = formData.get('codigo');
   const crudo = (formData.get('oem') || '').toString();
-  const volver = (formData.get('volver') || `/admin/productos/${encodeURIComponent(codigo)}`).toString();
+  const pedido = (formData.get('volver') || '').toString();
+  // sólo se vuelve a una pantalla del propio panel
+  const volver = pedido.startsWith('/admin/') && !pedido.startsWith('//') ? pedido : `/admin/productos/${encodeURIComponent(codigo)}`;
   const nuevos = crudo.split(/[,\n;]+/).map((s) => s.trim()).filter((s) => s.length >= 2);
   if (nuevos.length) {
     const p = await store.obtener(codigo);
@@ -80,6 +89,7 @@ export async function agregarOem(formData) {
 // Vincula un término de búsqueda (que no daba resultados) a un producto:
 // lo agrega como "código original" para que la próxima vez lo encuentre.
 export async function vincularBusqueda(formData) {
+  await exigirAdmin();
   const termino = (formData.get('termino') || '').toString().trim();
   const codigo = (formData.get('codigo') || '').toString().trim();
   const d = (formData.get('d') || '30').toString();
@@ -96,8 +106,33 @@ export async function vincularBusqueda(formData) {
   redirect(`/admin/metricas?d=${encodeURIComponent(d)}&ok=1`);
 }
 
+/**
+ * Permiso temporal para subir UN archivo al depósito de imágenes.
+ * Desde la migración 0015 el depósito no acepta subidas con la clave pública: el navegador del
+ * admin pide este permiso (que sólo se entrega si la sesión es de admin) y sube con él.
+ */
+export async function pedirSubidaMedia({ codigo, clase, extension }) {
+  await exigirAdmin();
+  const cod = String(codigo || '').replace(/[^a-zA-Z0-9_-]/g, '');
+  const tipo = clase === 'video' ? 'video' : 'foto';
+  const ext = String(extension || 'jpg').toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 5) || 'jpg';
+  if (!cod) return { ok: false, error: 'Falta el código del producto.' };
+  if (!usandoDB) return { ok: false, error: 'Sin base de datos no se pueden subir archivos.' };
+
+  const ruta = `${tipo}/${cod}-${Date.now()}.${ext}`;
+  const { data, error } = await db.storage.from(BUCKET).createSignedUploadUrl(ruta);
+  if (error) return { ok: false, error: error.message };
+  return {
+    ok: true,
+    ruta,
+    token: data.token,
+    url: db.storage.from(BUCKET).getPublicUrl(ruta).data.publicUrl,
+  };
+}
+
 // Quita la foto de portada. Si hay fotos en la galería, la primera pasa a ser la portada nueva.
 export async function quitarMediaProducto(formData) {
+  await exigirAdmin();
   const codigo = formData.get('codigo');
   const p = await store.obtener(codigo);
   const url = p?.foto;
@@ -110,6 +145,7 @@ export async function quitarMediaProducto(formData) {
 }
 
 export async function alternarOculto(formData) {
+  await exigirAdmin();
   const codigo = formData.get('codigo');
   const p = await store.obtener(codigo);
   await store.setOculto(codigo, !p?.oculto);
@@ -118,6 +154,7 @@ export async function alternarOculto(formData) {
 }
 
 export async function cambiarCodigoProducto(formData) {
+  await exigirAdmin();
   const codigoViejo = formData.get('codigoViejo');
   const codigoNuevo = formData.get('codigoNuevo');
   const r = await store.cambiarCodigo(codigoViejo, codigoNuevo);
@@ -129,6 +166,7 @@ export async function cambiarCodigoProducto(formData) {
 }
 
 export async function crearProducto(formData) {
+  await exigirAdmin();
   const datos = Object.fromEntries(formData.entries());
   const r = await store.crear(datos);
   if (!r.ok) {
@@ -139,6 +177,7 @@ export async function crearProducto(formData) {
 }
 
 export async function renombrarSub(formData) {
+  await exigirAdmin();
   const familia = formData.get('familia');
   const viejo = formData.get('viejo');
   const nuevo = (formData.get('nuevo') || '').trim();
@@ -151,6 +190,7 @@ export async function renombrarSub(formData) {
 }
 
 export async function renombrarFam(formData) {
+  await exigirAdmin();
   const viejo = formData.get('viejo');
   const nuevo = (formData.get('nuevo') || '').trim();
   if (nuevo && nuevo !== viejo) await store.renombrarFamilia(viejo, nuevo);
@@ -160,6 +200,7 @@ export async function renombrarFam(formData) {
 
 // Guarda la foto que salió del editor (recortar / rotar / espejar) en lugar de la original.
 export async function guardarFotoEditada(formData) {
+  await exigirAdmin();
   const codigo = (formData.get('codigo') || '').toString();
   const original = (formData.get('original') || '').toString();
   const datos = (formData.get('imagen') || '').toString();

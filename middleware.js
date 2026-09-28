@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { esAdmin } from './lib/admins';
+import { COOKIE_SESION, leerSesion } from './lib/sesion';
 
 /**
  * El catálogo es público. Sólo /admin y las herramientas internas piden login.
@@ -70,8 +71,9 @@ export async function middleware(request) {
     path.startsWith('/api/mejoras');
 
   if (requiereLoginAdmin) {
-    const usuarioCookie = request.cookies.get('logbelts_user');
-    const usuario = usuarioCookie ? decodeURIComponent(usuarioCookie.value) : null;
+    // La cookie va firmada: si alguien la escribe a mano desde el navegador, no valida.
+    const sesion = await leerSesion(request.cookies.get(COOKIE_SESION)?.value);
+    const usuario = sesion?.usuario || null;
 
     if (!usuario) {
       const url = request.nextUrl.clone();

@@ -1,4 +1,5 @@
 'use server';
+import { exigirAdmin } from '../../../lib/sesionServidor';
 
 import { revalidatePath } from 'next/cache';
 import { db, usandoDB } from '../../../lib/db';
@@ -9,6 +10,7 @@ const MAX = 8 * 1024 * 1024;
 
 /** Sube una imagen para el generador de placas y devuelve su URL pública. */
 export async function subirImagenMaterial(formData) {
+  await exigirAdmin();
   if (!usandoDB) return { ok: false, error: 'Sin base de datos no se pueden subir imágenes.' };
   const archivo = formData.get('archivo');
   if (!archivo || typeof archivo === 'string') return { ok: false, error: 'Elegí una imagen.' };
@@ -23,12 +25,14 @@ export async function subirImagenMaterial(formData) {
 
 /** Guarda la lista completa (orden, nombres, altas y bajas). */
 export async function guardarMaterial(fotos) {
+  await exigirAdmin();
   const r = await guardarFotosMaterial(fotos);
   if (r.ok) revalidatePath('/material');
   return r;
 }
 
 export async function restablecerMaterial() {
+  await exigirAdmin();
   const r = await guardarFotosMaterial(FOTOS_MATERIAL_DEFECTO);
   if (r.ok) revalidatePath('/material');
   return r;

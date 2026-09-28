@@ -1,6 +1,5 @@
-'use client';
-
 import { COLOR_PRIMARY, COLOR_TEXTO, FONT_TEXTO } from '../theme';
+import { entrarComoVendedor } from './acciones';
 
 const userButton = {
   display: 'flex',
@@ -38,16 +37,15 @@ function iniciales(nombre) {
   return ((partes[0]?.[0] || '') + (partes[1]?.[0] || '')).toUpperCase();
 }
 
-function entrarComo(nombre) {
-  document.cookie = `logbelts_user=${encodeURIComponent(nombre)}; path=/; max-age=${60 * 60 * 24 * 400}`;
-  window.location.href = '/';
-}
-
+/** La sesión la abre el servidor (app/login/acciones.js), no el navegador. */
 export default function EntrarComoBoton({ nombre }) {
   return (
-    <button type="button" style={userButton} onClick={() => entrarComo(nombre)}>
-      <span style={avatar}>{iniciales(nombre)}</span>
-      <span style={nombreEstilo}>{nombre}</span>
-    </button>
+    <form action={entrarComoVendedor}>
+      <input type="hidden" name="nombre" value={nombre} />
+      <button type="submit" style={userButton}>
+        <span style={avatar}>{iniciales(nombre)}</span>
+        <span style={nombreEstilo}>{nombre}</span>
+      </button>
+    </form>
   );
 }

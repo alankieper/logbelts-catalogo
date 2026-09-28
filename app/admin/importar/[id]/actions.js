@@ -1,4 +1,5 @@
 'use server';
+import { exigirAdmin } from '../../../../lib/sesionServidor';
 
 import { redirect } from 'next/navigation';
 import { revalidatePath } from 'next/cache';
@@ -6,6 +7,7 @@ import { cookies } from 'next/headers';
 import { leerCambios, guardarCambios, aplicar, revertir } from '../../../../lib/importador';
 
 export async function decidirCambio(formData) {
+  await exigirAdmin();
   const id = formData.get('id');
   const key = formData.get('key');
   const decision = formData.get('decision'); // aprobado | rechazado | pendiente
@@ -18,6 +20,7 @@ export async function decidirCambio(formData) {
 }
 
 export async function decidirLote(formData) {
+  await exigirAdmin();
   const id = formData.get('id');
   const tipo = formData.get('tipo'); // nuevo | modificado | eliminado | todos
   const decision = formData.get('decision');
@@ -31,14 +34,16 @@ export async function decidirLote(formData) {
 }
 
 export async function aplicarImport(formData) {
+  await exigirAdmin();
   const id = formData.get('id');
-  const autor = cookies().get('logbelts_user')?.value || null;
+  const autor = await exigirAdmin();
   const r = aplicar(id, autor);
   revalidatePath('/', 'layout');
   redirect(`/admin/importar/${id}?${r.ok ? 'aplicado=1' : 'err=' + encodeURIComponent(r.error)}`);
 }
 
 export async function revertirImport(formData) {
+  await exigirAdmin();
   const id = formData.get('id');
   revertir(id);
   revalidatePath('/', 'layout');

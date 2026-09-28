@@ -1,4 +1,5 @@
 'use server';
+import { exigirAdmin } from '../../../lib/sesionServidor';
 
 import { supabase } from '../../../lib/supabase';
 import { revalidatePath } from 'next/cache';
@@ -6,6 +7,7 @@ import { redirect } from 'next/navigation';
 import { PROVINCIAS } from '../../../lib/provincias';
 
 export async function agregarVendedor(formData) {
+  await exigirAdmin();
   const nombre = (formData.get('nombre') || '').toString().trim();
   if (!nombre) return;
 
@@ -14,6 +16,7 @@ export async function agregarVendedor(formData) {
 }
 
 export async function cambiarActivo(formData) {
+  await exigirAdmin();
   const id = formData.get('id');
   const activo = formData.get('activo') === 'true';
 
@@ -23,6 +26,7 @@ export async function cambiarActivo(formData) {
 
 // Datos para asignar y avisar contactos (columnas de la migración 0011).
 export async function guardarDatosVendedor(formData) {
+  await exigirAdmin();
   const id = formData.get('id');
   const provincias = formData.getAll('provincias').map(String).filter((p) => PROVINCIAS.includes(p));
   const { error } = await supabase

@@ -2,6 +2,10 @@ import Anthropic from '@anthropic-ai/sdk';
 import { NextResponse } from 'next/server';
 import { supabase } from '../../../lib/supabase';
 import { MARCA } from '../../../lib/marca';
+import { usuarioActual } from '../../../lib/sesionServidor';
+import { esperaAntiFuerzaBruta } from '../../../lib/intentosLogin';
+
+const MAX_FOTO = 6 * 1024 * 1024;
 
 const MIME_A_MEDIA_TYPE = {
   'image/jpeg': 'image/jpeg',
@@ -57,6 +61,17 @@ async function pedirPropuestaIA({ instruccion, productoCodigo, pagina, referenci
 
 export async function POST(request) {
   try {
+    // Sólo alguien identificado (vendedor o admin): esta ruta sube archivos y consume la cuenta de IA.
+    const usuario = await usuarioActual();
+    if (!usuario) {
+      return NextResponse.json({ ok: false, error: 'Tenés que identificarte para proponer mejoras.' }, { status: 401 });
+    }
+    const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'sin-ip';
+    if (esperaAntiFuerzaBruta('mejoras:' + ip) > 0) {
+      return NextResponse.json({ ok: false, error: 'Demasiadas propuestas seguidas. Esperá un momento.' }, { status: 429 });
+    }
+    esperaAntiFuerzaBruta('mejoras:' + ip, true);
+
     const formData = await request.formData();
     const vendedor = formData.get('vendedor');
     const productoCodigo = formData.get('producto_codigo') || '';
@@ -80,7 +95,13 @@ export async function POST(request) {
     let fotoMimeType = null;
 
     if (foto && typeof foto === 'object' && foto.size > 0) {
-      fotoMimeType = MIME_A_MEDIA_TYPE[foto.type] || 'image/jpeg';
+      if (!MIME_A_MEDIA_TYPE[foto.type]) {
+        return NextResponse.json({ ok: false, error: 'La foto tiene que ser JPG, PNG, WEBP o GIF.' }, { status: 400 });
+      }
+      if (foto.size > MAX_FOTO) {
+        return NextResponse.json({ ok: false, error: 'La foto pesa más de 6 MB.' }, { status: 400 });
+      }
+      fotoMimeType = MIME_A_MEDIA_TYPE[foto.type];
       const arrayBuffer = await foto.arrayBuffer();
       fotoBuffer = Buffer.from(arrayBuffer);
 
@@ -100,6 +121,7 @@ export async function POST(request) {
     try {
       propuesta = await pedirPropuestaIA({ instruccion, productoCodigo, pagina, referencia, fotoBuffer, fotoMimeType });
     } catch (e) {
+      console.error('Mejoras: falló la propuesta automática:', e?.message || e);
       propuesta = { tipo_cambio: 'otro', resumen: 'No se pudo generar la propuesta automática. Un editor debe revisar la instrucción original.', texto_nuevo: null };
     }
 

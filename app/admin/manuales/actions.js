@@ -1,4 +1,5 @@
 'use server';
+import { exigirAdmin } from '../../../lib/sesionServidor';
 
 import fs from 'fs';
 import path from 'path';
@@ -10,6 +11,7 @@ import { MARCA } from '../../../lib/marca';
 const DEST = path.join(process.cwd(), 'public', 'despieces');
 
 export async function guardarDespiece(formData) {
+  await exigirAdmin();
   const id = formData.get('id') || 'd-' + Date.now();
   const marca = (formData.get('marca') || '').trim();
   const modelo = (formData.get('modelo') || '').trim();
@@ -44,6 +46,7 @@ export async function guardarDespiece(formData) {
 }
 
 export async function borrarDespiece(formData) {
+  await exigirAdmin();
   const id = formData.get('id');
   await borrarCurado(id);
   revalidatePath('/', 'layout');

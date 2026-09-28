@@ -1,4 +1,5 @@
 'use server';
+import { exigirAdmin } from '../../../lib/sesionServidor';
 
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
@@ -6,6 +7,7 @@ import { leerTodos, aplicarCambiosMasivo } from '../../../lib/catalogoStore';
 import { parseXlsx, calcularCambios } from '../../../lib/excel';
 
 export async function importarExcel(formData) {
+  await exigirAdmin();
   const file = formData.get('archivo');
   if (!file || typeof file === 'string' || !file.size) {
     redirect('/admin/excel?err=' + encodeURIComponent('Elegí el archivo Excel.'));

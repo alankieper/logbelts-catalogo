@@ -1,10 +1,12 @@
 'use server';
+import { exigirAdmin } from '../../../lib/sesionServidor';
 
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { borrarDistribuidor, guardarDistribuidor } from '../../../lib/distribuidores';
 
 export async function guardarDistribuidorAction(formData) {
+  await exigirAdmin();
   const r = await guardarDistribuidor({
     id: formData.get('id') || null,
     nombre: formData.get('nombre'),
@@ -24,6 +26,7 @@ export async function guardarDistribuidorAction(formData) {
 }
 
 export async function borrarDistribuidorAction(formData) {
+  await exigirAdmin();
   await borrarDistribuidor(formData.get('id'));
   revalidatePath('/admin/distribuidores');
   revalidatePath('/donde-comprar');

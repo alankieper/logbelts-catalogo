@@ -1,4 +1,5 @@
 'use server';
+import { exigirAdmin } from '../../lib/sesionServidor';
 
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
@@ -8,6 +9,7 @@ import { guardarAjustes } from '../../lib/ajustes';
 import { MODOS } from '../../lib/temporada';
 
 export async function cambiarGateClientes(formData) {
+  await exigirAdmin();
   const activo = formData.get('activo') === '1';
   const d = (formData.get('d') || '30').toString();
   const r = await setGateClientes(activo);
@@ -17,6 +19,7 @@ export async function cambiarGateClientes(formData) {
 
 // Reinicia las estadísticas (eventos y visitas). Exige escribir REINICIAR para evitar accidentes.
 export async function reiniciarEstadisticasAccion(formData) {
+  await exigirAdmin();
   const d = (formData.get('d') || '30').toString();
   const volver = (q) => redirect(`/admin/metricas?d=${encodeURIComponent(d)}&${q}#reiniciar`);
   if ((formData.get('confirmacion') || '').toString().trim() !== 'REINICIAR') volver('reinicio=confirmar');
@@ -29,6 +32,7 @@ export async function reiniciarEstadisticasAccion(formData) {
 
 // Cambia la temporada que tiene protagonismo en la web (o la deja automática por fecha).
 export async function guardarTemporada(formData) {
+  await exigirAdmin();
   const modo = (formData.get('modo') || 'auto').toString();
   if (!MODOS.some((m) => m.id === modo)) redirect('/admin/temporada?err=1');
   const r = await guardarAjustes({ temporada: modo });

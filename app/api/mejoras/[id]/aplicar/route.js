@@ -3,6 +3,7 @@ import fontkit from '@pdf-lib/fontkit';
 import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 import { supabase } from '../../../../../lib/supabase';
+import { usuarioActual } from '../../../../../lib/sesionServidor';
 import { esAdmin } from '../../../../../lib/admins';
 import { readFile } from 'fs/promises';
 import path from 'path';
@@ -31,8 +32,7 @@ function envolverTexto(font, texto, tamanio, anchoMax) {
 
 export async function POST(request, { params }) {
   try {
-    const usuarioCookie = cookies().get('logbelts_user');
-    const usuario = usuarioCookie ? decodeURIComponent(usuarioCookie.value) : null;
+    const usuario = await usuarioActual();
     if (!esAdmin(usuario)) {
       return NextResponse.json({ ok: false, error: 'No tenés permiso para aplicar cambios al catálogo.' }, { status: 403 });
     }

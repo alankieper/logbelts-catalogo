@@ -18,7 +18,8 @@ const cardCentered = { ...card, textAlign: 'center' };
 
 function obtenerUsuarioActual() {
   if (typeof document === 'undefined') return null;
-  const match = document.cookie.match(/(?:^|; )logbelts_user=([^;]*)/);
+  // sólo para mostrar el nombre; la autorización la hace el servidor con la cookie firmada
+  const match = document.cookie.match(/(?:^|; )lb_nombre=([^;]*)/);
   return match ? decodeURIComponent(match[1]) : null;
 }
 
