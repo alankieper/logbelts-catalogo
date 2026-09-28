@@ -3,7 +3,7 @@ import { exigirAdmin } from '../../../lib/sesionServidor';
 
 import fs from 'fs';
 import path from 'path';
-import { revalidatePath } from 'next/cache';
+import { refrescarCatalogo } from '../../../lib/revalidar';
 import { redirect } from 'next/navigation';
 import { guardarCurado, borrarCurado } from '../../../lib/despieces';
 import { MARCA } from '../../../lib/marca';
@@ -41,7 +41,7 @@ export async function guardarDespiece(formData) {
   const entry = { id, marca, modelo, tipo, titulo, url: url || null, archivo, fuente: fuente || MARCA.nombre, publico };
   await guardarCurado(entry);
 
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect('/admin/manuales?ok=1');
 }
 
@@ -49,6 +49,6 @@ export async function borrarDespiece(formData) {
   await exigirAdmin();
   const id = formData.get('id');
   await borrarCurado(id);
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect('/admin/manuales');
 }

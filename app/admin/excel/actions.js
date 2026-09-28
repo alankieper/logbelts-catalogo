@@ -1,7 +1,7 @@
 'use server';
 import { exigirAdmin } from '../../../lib/sesionServidor';
 
-import { revalidatePath } from 'next/cache';
+import { refrescarCatalogo } from '../../../lib/revalidar';
 import { redirect } from 'next/navigation';
 import { leerTodos, aplicarCambiosMasivo } from '../../../lib/catalogoStore';
 import { parseXlsx, calcularCambios } from '../../../lib/excel';
@@ -30,7 +30,7 @@ export async function importarExcel(formData) {
     redirect('/admin/excel?err=' + encodeURIComponent(e.message || 'No se pudo procesar el Excel.'));
   }
 
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   const sp = new URLSearchParams();
   sp.set('ok', String(resumen.aplicados));
   sp.set('sin', String(resumen.sinCambio));

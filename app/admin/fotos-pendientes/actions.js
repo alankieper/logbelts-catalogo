@@ -1,13 +1,13 @@
 'use server';
 import { exigirAdmin } from '../../../lib/sesionServidor';
 
-import { revalidatePath } from 'next/cache';
+import { refrescarCatalogo } from '../../../lib/revalidar';
 import { redirect } from 'next/navigation';
 import { aprobarPendiente, rechazarPendiente, olvidarConteo } from '../../../lib/fotosPendientes';
 
 function volver(params) {
   olvidarConteo();
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect(`/admin/fotos-pendientes?${new URLSearchParams(params)}`);
 }
 
@@ -57,7 +57,7 @@ export async function aprobarUna(nombre) {
   try {
     await aprobarPendiente(String(nombre));
     olvidarConteo();
-    revalidatePath('/', 'layout');
+    refrescarCatalogo();
     return { ok: true };
   } catch (e) {
     return { ok: false, error: e.message || 'No se pudo aprobar.' };

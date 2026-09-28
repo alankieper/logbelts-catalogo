@@ -2,6 +2,7 @@
 import { exigirAdmin } from '../../lib/sesionServidor';
 
 import { revalidatePath } from 'next/cache';
+import { refrescarCatalogo } from '../../lib/revalidar';
 import { redirect } from 'next/navigation';
 import { setGateClientes } from '../../lib/config';
 import { reiniciarEstadisticas } from '../../lib/eventos';
@@ -36,6 +37,6 @@ export async function guardarTemporada(formData) {
   const modo = (formData.get('modo') || 'auto').toString();
   if (!MODOS.some((m) => m.id === modo)) redirect('/admin/temporada?err=1');
   const r = await guardarAjustes({ temporada: modo });
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect(r.ok ? '/admin/temporada?ok=1' : `/admin/temporada?err=${encodeURIComponent(r.error)}`);
 }

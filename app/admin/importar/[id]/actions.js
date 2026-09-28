@@ -3,6 +3,7 @@ import { exigirAdmin } from '../../../../lib/sesionServidor';
 
 import { redirect } from 'next/navigation';
 import { revalidatePath } from 'next/cache';
+import { refrescarCatalogo } from '../../../../lib/revalidar';
 import { cookies } from 'next/headers';
 import { leerCambios, guardarCambios, aplicar, revertir } from '../../../../lib/importador';
 
@@ -38,7 +39,7 @@ export async function aplicarImport(formData) {
   const id = formData.get('id');
   const autor = await exigirAdmin();
   const r = aplicar(id, autor);
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect(`/admin/importar/${id}?${r.ok ? 'aplicado=1' : 'err=' + encodeURIComponent(r.error)}`);
 }
 
@@ -46,6 +47,6 @@ export async function revertirImport(formData) {
   await exigirAdmin();
   const id = formData.get('id');
   revertir(id);
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect(`/admin/importar/${id}?revertido=1`);
 }

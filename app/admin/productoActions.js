@@ -2,6 +2,7 @@
 import { exigirAdmin } from '../../lib/sesionServidor';
 
 import { revalidatePath } from 'next/cache';
+import { refrescarCatalogo } from '../../lib/revalidar';
 import { redirect } from 'next/navigation';
 import * as store from '../../lib/catalogoStore';
 import { borrarMediaPorUrl, BUCKET } from '../../lib/media';
@@ -24,7 +25,7 @@ export async function guardarProducto(formData) {
     ...(formData.has('despiece') ? { despiece: formData.get('despiece') || '' } : {}),
   };
   const r = await store.actualizar(codigo, cambios);
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect(`/admin/productos/${encodeURIComponent(codigo)}?ok=1`);
 }
 
@@ -37,7 +38,7 @@ export async function agregarMediaGaleria(formData) {
   const url = (formData.get('url') || '').toString();
   if (!codigo || !/^https?:\/\//.test(url)) return { ok: false, error: 'Datos inválidos.' };
   await store.agregarMedia(codigo, tipo, url);
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   return { ok: true };
 }
 
@@ -49,7 +50,7 @@ export async function quitarMediaGaleria(formData) {
   const url = (formData.get('url') || '').toString();
   if (url && /storage\/v1\/object\/public\/media\//.test(url)) await borrarMediaPorUrl(url);
   await store.quitarDeGaleria(codigo, tipo, url);
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect(`/admin/productos/${encodeURIComponent(codigo)}?ok=1`);
 }
 
@@ -59,7 +60,7 @@ export async function promoverPortada(formData) {
   const codigo = formData.get('codigo');
   const url = (formData.get('url') || '').toString();
   await store.usarComoPortada(codigo, url);
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect(`/admin/productos/${encodeURIComponent(codigo)}?ok=1`);
 }
 
@@ -82,7 +83,7 @@ export async function agregarOem(formData) {
       }
     }
   }
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect(volver + (volver.includes('?') ? '&' : '?') + 'ok=1');
 }
 
@@ -102,7 +103,7 @@ export async function vincularBusqueda(formData) {
       }
     }
   }
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect(`/admin/metricas?d=${encodeURIComponent(d)}&ok=1`);
 }
 
@@ -140,7 +141,7 @@ export async function quitarMediaProducto(formData) {
   const [siguiente] = p?.galeria || [];
   await store.setFotoPortada(codigo, siguiente || null);
   if (siguiente) await store.quitarDeGaleria(codigo, 'galeria', siguiente);
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect(`/admin/productos/${encodeURIComponent(codigo)}?ok=1`);
 }
 
@@ -149,7 +150,7 @@ export async function alternarOculto(formData) {
   const codigo = formData.get('codigo');
   const p = await store.obtener(codigo);
   await store.setOculto(codigo, !p?.oculto);
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   revalidatePath('/admin/productos');
 }
 
@@ -161,7 +162,7 @@ export async function cambiarCodigoProducto(formData) {
   if (!r.ok) {
     redirect(`/admin/productos/${encodeURIComponent(codigoViejo)}?err=${encodeURIComponent(r.error)}`);
   }
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect(`/admin/productos/${encodeURIComponent(r.codigo)}?ok=1`);
 }
 
@@ -172,7 +173,7 @@ export async function crearProducto(formData) {
   if (!r.ok) {
     redirect('/admin/productos/nuevo?err=' + encodeURIComponent(r.error));
   }
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   redirect(`/admin/productos/${encodeURIComponent(datos.codigo)}?ok=1`);
 }
 
@@ -185,7 +186,7 @@ export async function renombrarSub(formData) {
   if (nuevo || familiaNueva !== familia) {
     await store.moverSubcategoria(familia, viejo, familiaNueva, nuevo || viejo);
   }
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   revalidatePath('/admin/categorias');
 }
 
@@ -194,7 +195,7 @@ export async function renombrarFam(formData) {
   const viejo = formData.get('viejo');
   const nuevo = (formData.get('nuevo') || '').trim();
   if (nuevo && nuevo !== viejo) await store.renombrarFamilia(viejo, nuevo);
-  revalidatePath('/', 'layout');
+  refrescarCatalogo();
   revalidatePath('/admin/categorias');
 }
 
@@ -209,7 +210,7 @@ export async function guardarFotoEditada(formData) {
   try {
     const r = await guardarFotoEditadaArchivo(codigo, original, Buffer.from(m[1], 'base64'));
     if (!r.ok) return r;
-    revalidatePath('/', 'layout');
+    refrescarCatalogo();
     return { ok: true };
   } catch (e) {
     return { ok: false, error: e.message || 'No se pudo guardar la foto.' };
