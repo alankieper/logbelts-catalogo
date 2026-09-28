@@ -12,7 +12,7 @@ export const metadata = {
 
 // Las imágenes de producto se editan desde /admin/material
 // La página se guarda armada en la red de Vercel y se rehace cada hora.
-// Cuando se edita algo en el panel, `revalidatePath('/', 'layout')` la borra al instante,
+// Cuando se edita algo en el panel, `refrescarCatalogo()` la borra al instante,
 // así un cambio se ve enseguida sin esperar la hora.
 export const revalidate = 3600;
 

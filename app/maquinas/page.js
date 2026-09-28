@@ -7,7 +7,7 @@ import { SITE_URL } from '../../lib/seo';
 import { MARCA, modulo } from '../../lib/marca';
 
 // La página se guarda armada en la red de Vercel y se rehace cada hora.
-// Cuando se edita algo en el panel, `revalidatePath('/', 'layout')` la borra al instante,
+// Cuando se edita algo en el panel, `refrescarCatalogo()` la borra al instante,
 // así un cambio se ve enseguida sin esperar la hora.
 export const revalidate = 3600;
 

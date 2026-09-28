@@ -18,9 +18,17 @@ import { SITE_URL } from '../../../lib/seo';
 import { MARCA, modulo } from '../../../lib/marca';
 
 // La página se guarda armada en la red de Vercel y se rehace cada hora.
-// Cuando se edita algo en el panel, `revalidatePath('/', 'layout')` la borra al instante,
+// Cuando se edita algo en el panel, `refrescarCatalogo()` la borra al instante,
 // así un cambio se ve enseguida sin esperar la hora.
 export const revalidate = 3600;
+/**
+ * Lista vacía a propósito: no se arma ninguna página al publicar, pero Next.js guarda cada una
+ * la primera vez que alguien la abre y las siguientes visitas la reciben ya lista.
+ */
+export function generateStaticParams() {
+  return [];
+}
+
 
 // Ícono de despiece: pieza con sus partes separadas
 function IconoDespiece() {

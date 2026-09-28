@@ -9,9 +9,17 @@ import { getFamilia, getNavegacionCategorias } from '../../../lib/catalogo';
 import { MARCA } from '../../../lib/marca';
 
 // La página se guarda armada en la red de Vercel y se rehace cada hora.
-// Cuando se edita algo en el panel, `revalidatePath('/', 'layout')` la borra al instante,
+// Cuando se edita algo en el panel, `refrescarCatalogo()` la borra al instante,
 // así un cambio se ve enseguida sin esperar la hora.
 export const revalidate = 3600;
+/**
+ * Lista vacía a propósito: no se arma ninguna página al publicar, pero Next.js guarda cada una
+ * la primera vez que alguien la abre y las siguientes visitas la reciben ya lista.
+ */
+export function generateStaticParams() {
+  return [];
+}
+
 
 export async function generateMetadata({ params }) {
   const fam = await getFamilia(params.familia);
