@@ -3,6 +3,7 @@ import BotonFavorito from './BotonFavorito';
 import ConsultaChip from './ConsultaChip';
 import { DibujoSinFoto } from './DibujoCatalogo';
 import { slugify } from '../../lib/slug';
+import { fotoMini } from '../../lib/fotos';
 
 /**
  * Tarjeta de producto. Toda la tarjeta abre el producto (link "estirado" sobre el nombre),
@@ -25,9 +26,10 @@ export default function ProductoCard({ p, motivo, subcategoria }) {
         <div className="thumb">
           {p.foto ? (
             <img
-              src={/^https?:\/\//.test(p.foto) ? p.foto : `/fotos/${p.foto}`}
+              src={fotoMini(p.foto)}
               alt={p.nombre || p.codigo}
               loading="lazy"
+              decoding="async"
             />
           ) : (
             <span className="noimg">

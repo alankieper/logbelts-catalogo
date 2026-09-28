@@ -27,5 +27,13 @@
     "mupdf": "^1.28.0",
     "sharp": "^0.35.4",
     "tesseract.js": "^7.0.0"
-  }
+  },
+  "browserslist": [
+    "chrome >= 90",
+    "edge >= 90",
+    "firefox >= 90",
+    "safari >= 14",
+    "ios_saf >= 14",
+    "not dead"
+  ]
 }

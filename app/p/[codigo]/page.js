@@ -17,7 +17,10 @@ import { tieneDespieceOnline } from '../../../lib/despieceOnline';
 import { SITE_URL } from '../../../lib/seo';
 import { MARCA, modulo } from '../../../lib/marca';
 
-export const dynamic = 'force-dynamic';
+// La página se guarda armada en la red de Vercel y se rehace cada hora.
+// Cuando se edita algo en el panel, `revalidatePath('/', 'layout')` la borra al instante,
+// así un cambio se ve enseguida sin esperar la hora.
+export const revalidate = 3600;
 
 // Ícono de despiece: pieza con sus partes separadas
 function IconoDespiece() {

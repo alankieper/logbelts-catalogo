@@ -6,7 +6,10 @@ import { listarMarcas, listarModelos } from '../../../lib/maquinas';
 import { SITE_URL } from '../../../lib/seo';
 import { MARCA, modulo } from '../../../lib/marca';
 
-export const dynamic = 'force-dynamic';
+// La página se guarda armada en la red de Vercel y se rehace cada hora.
+// Cuando se edita algo en el panel, `revalidatePath('/', 'layout')` la borra al instante,
+// así un cambio se ve enseguida sin esperar la hora.
+export const revalidate = 3600;
 
 const plural = (n, uno, varios) => (n === 1 ? uno : varios);
 const ld = (obj) => JSON.stringify(obj).replace(/</g, '\\u003c');

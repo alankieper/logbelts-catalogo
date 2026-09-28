@@ -8,7 +8,10 @@ import NavCategorias from '../../components/NavCategorias';
 import { getFamilia, getNavegacionCategorias } from '../../../lib/catalogo';
 import { MARCA } from '../../../lib/marca';
 
-export const dynamic = 'force-dynamic';
+// La página se guarda armada en la red de Vercel y se rehace cada hora.
+// Cuando se edita algo en el panel, `revalidatePath('/', 'layout')` la borra al instante,
+// así un cambio se ve enseguida sin esperar la hora.
+export const revalidate = 3600;
 
 export async function generateMetadata({ params }) {
   const fam = await getFamilia(params.familia);
