@@ -23,7 +23,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const fam = await getFamilia(params.familia);
-  if (!fam) return { title: 'Familia no encontrada' };
+  if (!fam) return { title: 'Familia no encontrada', robots: { index: false, follow: true } };
   const title = `Repuestos para ${fam.nombre.toLowerCase()}`;
   const description = `${fam.count} repuestos ${MARCA.nombre} para ${fam.nombre.toLowerCase()} en ${fam.subcats.length} categorías. Buscá por código, código original o marca. Venta mayorista.`;
   const og = `/og/${fam.slug}.png`;

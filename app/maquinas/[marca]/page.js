@@ -35,7 +35,7 @@ async function datosMarca(marcaSlug) {
 
 export async function generateMetadata({ params }) {
   const datos = await datosMarca(params.marca);
-  if (!datos) return { title: 'Marca no encontrada' };
+  if (!datos) return { title: 'Marca no encontrada', robots: { index: false, follow: true } };
   const nm = datos.modelos.length;
   const title = `Repuestos para ${datos.marca} por modelo`;
   const description =

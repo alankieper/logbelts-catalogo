@@ -10,7 +10,9 @@ import { MARCA } from '../../../lib/marca';
 export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }) {
-  const { nombre } = await getPorMarca(params.marca);
+  const { nombre, productos } = await getPorMarca(params.marca);
+  // Marca inventada o sin repuestos: no tiene que quedar en Google.
+  if (!productos.length) return { title: 'Marca no encontrada', robots: { index: false, follow: true } };
   return { title: `Todo para ${nombre} — Catálogo ${MARCA.nombre}` };
 }
 

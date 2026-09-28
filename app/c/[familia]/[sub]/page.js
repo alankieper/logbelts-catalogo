@@ -12,7 +12,7 @@ export const dynamic = 'force-dynamic';
 export async function generateMetadata({ params }) {
   const fam = await getFamilia(params.familia);
   const sub = fam?.subcats.find((s) => s.slug === params.sub);
-  if (!sub) return { title: 'Categoría no encontrada' };
+  if (!sub) return { title: 'Categoría no encontrada', robots: { index: false, follow: true } };
   const n = (await getProductosDeSubcategoria(fam.slug, sub.slug)).length;
   const title = `${sub.nombre} para ${fam.nombre.toLowerCase()}`;
   const description = `${n} repuestos ${MARCA.nombre} de ${sub.nombre.toLowerCase()} para ${fam.nombre.toLowerCase()}. Buscá por código, código original o marca. Venta mayorista.`;

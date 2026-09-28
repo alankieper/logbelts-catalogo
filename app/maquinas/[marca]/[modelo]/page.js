@@ -36,7 +36,7 @@ function agruparPorFamilia(productos) {
 
 export async function generateMetadata({ params }) {
   const d = await productosDeMaquina(params.marca, params.modelo);
-  if (!d) return { title: 'Máquina no encontrada' };
+  if (!d) return { title: 'Máquina no encontrada', robots: { index: false, follow: true } };
   const n = d.productos.length;
   const familias = agruparPorFamilia(d.productos).filter((f) => f.slug).slice(0, 3);
   const title = `Repuestos para ${d.marca} ${d.modelo}`;

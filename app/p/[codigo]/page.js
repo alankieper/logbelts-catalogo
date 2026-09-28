@@ -45,7 +45,7 @@ function IconoDespiece() {
 export async function generateMetadata({ params }) {
   const codigo = decodeURIComponent(params.codigo);
   const p = await getProducto(codigo);
-  if (!p) return { title: 'Producto no encontrado' };
+  if (!p) return { title: 'Producto no encontrado', robots: { index: false, follow: true } };
   const descReal = p.descripcion && !(p.fuente_desc && p.fuente_desc.startsWith('derivada'));
   const nom = p.nombre || p.clave_producto || 'Repuesto';
   const marca = (p.marcas || [])[0];
