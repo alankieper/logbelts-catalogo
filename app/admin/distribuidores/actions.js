@@ -2,6 +2,7 @@
 import { exigirAdmin } from '../../../lib/sesionServidor';
 
 import { revalidatePath } from 'next/cache';
+import { refrescarCatalogo } from '../../../lib/revalidar';
 import { redirect } from 'next/navigation';
 import { borrarDistribuidor, guardarDistribuidor } from '../../../lib/distribuidores';
 
@@ -21,7 +22,7 @@ export async function guardarDistribuidorAction(formData) {
     publico: formData.get('publico') === 'on',
   });
   revalidatePath('/admin/distribuidores');
-  revalidatePath('/donde-comprar');
+  refrescarCatalogo();
   redirect(`/admin/distribuidores?${r.ok ? 'ok=1' : `err=${encodeURIComponent(r.error || '1')}`}`);
 }
 
@@ -29,6 +30,6 @@ export async function borrarDistribuidorAction(formData) {
   await exigirAdmin();
   await borrarDistribuidor(formData.get('id'));
   revalidatePath('/admin/distribuidores');
-  revalidatePath('/donde-comprar');
+  refrescarCatalogo();
   redirect('/admin/distribuidores?ok=1');
 }
