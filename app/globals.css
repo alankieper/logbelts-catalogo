@@ -1187,3 +1187,19 @@ body {
   :root[data-vista='3'] .card .subcat, :root[data-vista='3'] .card .chipmarca { display: none; }
   :root[data-vista='3'] .card .body { padding: 8px 9px 10px; }
 }
+
+/* ---------------------------------------------------------------
+   Páginas de "no encontrado" y de error
+   Se ven cuando alguien abre una dirección que no existe o cuando
+   una página falla. Usan las mismas tarjetas que el resto del sitio.
+   --------------------------------------------------------------- */
+.nf-salidas { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin: 4px 0 40px; }
+.nf-salida { display: flex; flex-direction: column; gap: 3px; padding: 16px 18px; border: 1px solid var(--rule); border-radius: 14px; background: var(--surface); text-decoration: none; transition: border-color .15s ease, transform .15s ease; }
+.nf-salida:hover { border-color: var(--brand-ink); transform: translateY(-1px); }
+.nf-salida__t { font-weight: 700; color: var(--brand-ink); font-size: 15px; }
+.nf-salida__d { color: var(--ink-soft); font-size: 13.5px; }
+
+.err-acciones { display: flex; flex-wrap: wrap; gap: 10px; margin: 4px 0 40px; }
+.err-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px; border-radius: 12px; border: 1px solid var(--rule); background: var(--surface); color: var(--brand-ink); font-size: 15px; font-weight: 600; text-decoration: none; cursor: pointer; font-family: inherit; }
+.err-btn:hover { border-color: var(--brand-ink); }
+.err-btn--fuerte { background: var(--brand-ink); border-color: var(--brand-ink); color: #fff; }
