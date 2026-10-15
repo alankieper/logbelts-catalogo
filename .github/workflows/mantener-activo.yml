@@ -1,0 +1,22 @@
+# Visita los dos sitios una vez por día para que Supabase (plan gratis) no pause las bases por inactividad.
+# Si un sitio no responde bien, la tarea falla y GitHub avisa por mail.
+name: Mantener bases activas
+
+on:
+  schedule:
+    - cron: '17 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  visitar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Visitar los sitios
+        run: |
+          fallo=0
+          for sitio in https://logbelts-catalogo.vercel.app https://logbelts-web.vercel.app; do
+            codigo=$(curl -s -o /dev/null -w "%{http_code}" --retry 3 --retry-delay 20 --max-time 60 "$sitio/buscar?q=mantenimiento-$RANDOM")
+            echo "$sitio -> $codigo"
+            [ "$codigo" = "200" ] || fallo=1
+          done
+          exit $fallo
