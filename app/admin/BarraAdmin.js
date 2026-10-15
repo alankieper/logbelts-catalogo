@@ -122,11 +122,11 @@ export default function BarraAdmin({ activo, pendientes = 0, logo, nombre }) {
 
         <div className="adm-side__pie">
           <a className="adm-item" href="/" title="Abrir la web pública">
-            <span className="adm-item__ic"><Icono nombre="externo" /></span>
+            <span className="adm-item__ic"><Icono nombre="globo" /></span>
             <span className="adm-lbl">Ver el sitio</span>
           </a>
           <a className="adm-item" href="/#catalogo" title="Abrir el catálogo como lo ve un cliente">
-            <span className="adm-item__ic"><Icono nombre="externo" /></span>
+            <span className="adm-item__ic"><Icono nombre="vitrina" /></span>
             <span className="adm-lbl">Ver el catálogo</span>
           </a>
           <div className="adm-side__tema">
