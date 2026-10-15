@@ -3,7 +3,6 @@ import '../catalogo-extra.css';
 import Header from './sitio/Header';
 import ListaPedido from './ListaPedido';
 import RegistrarVisita from './RegistrarVisita';
-import Asistente from './Asistente';
 
 /** Encabezado de las páginas del catálogo: el mismo de la web (menú + buscador + herramientas). */
 export default function CatalogoHeader({ q = '' }) {
@@ -14,7 +13,6 @@ export default function CatalogoHeader({ q = '' }) {
       </div>
       <RegistrarVisita />
       <ListaPedido />
-      {process.env.ANTHROPIC_API_KEY && <Asistente />}
     </>
   );
 }

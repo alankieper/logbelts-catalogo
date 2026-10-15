@@ -1,4 +1,3 @@
-import Anthropic from '@anthropic-ai/sdk';
 import { NextResponse } from 'next/server';
 import { supabase } from '../../../lib/supabase';
 import { MARCA } from '../../../lib/marca';
@@ -14,54 +13,9 @@ const MIME_A_MEDIA_TYPE = {
   'image/gif': 'image/gif',
 };
 
-async function pedirPropuestaIA({ instruccion, productoCodigo, pagina, referencia, fotoBuffer, fotoMimeType }) {
-  const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-
-  const contexto = [
-    `Sos un asistente que ayuda al equipo comercial de ${MARCA.nombre} (${MARCA.rubro}: ${MARCA.descripcionCorta}) a preparar propuestas de mejora para su catálogo de productos.`,
-    'Un vendedor propuso un cambio. Tu tarea es redactar una propuesta de edición clara y accionable para que un editor humano la revise y apruebe. No inventes datos que no te dieron: si falta información, decilo en el resumen.',
-    `Código de producto: ${productoCodigo || 'no especificado'}`,
-    `Página del catálogo: ${pagina || 'no especificada'}`,
-    `Referencia: ${referencia || 'no especificada'}`,
-    `Instrucción del vendedor: ${instruccion}`,
-    fotoBuffer
-      ? 'Se adjunta una foto de referencia (la página del catálogo o el producto).'
-      : 'No se adjuntó foto.',
-    '',
-    'Respondé ÚNICAMENTE con un JSON válido (sin markdown, sin texto extra) con esta forma exacta:',
-    '{"tipo_cambio": "texto corto que clasifique el cambio (ej: \\"corregir texto\\", \\"reemplazar foto\\", \\"actualizar medida\\", \\"otro\\")", "resumen": "2-4 oraciones en español describiendo la propuesta de edición concreta que el editor debería aplicar", "texto_nuevo": "si el cambio es de texto, el texto final y limpio para imprimir en el catálogo (ej: \\"Cadena 3/8 Widia\\"), sin explicaciones ni comillas extra. null si el cambio no es de texto o no hay suficiente información para redactarlo con confianza"}',
-  ].join('\n');
-
-  const content = [{ type: 'text', text: contexto }];
-  if (fotoBuffer) {
-    content.push({
-      type: 'image',
-      source: {
-        type: 'base64',
-        media_type: fotoMimeType,
-        data: fotoBuffer.toString('base64'),
-      },
-    });
-  }
-
-  const respuesta = await anthropic.messages.create({
-    model: 'claude-sonnet-5',
-    max_tokens: 500,
-    messages: [{ role: 'user', content }],
-  });
-
-  const texto = respuesta.content.find((b) => b.type === 'text');
-  if (!texto) throw new Error('La IA no devolvió texto.');
-
-  const match = texto.text.match(/\{[\s\S]*\}/);
-  if (!match) throw new Error('La IA no devolvió un JSON válido.');
-
-  return JSON.parse(match[0]);
-}
-
 export async function POST(request) {
   try {
-    // Sólo alguien identificado (vendedor o admin): esta ruta sube archivos y consume la cuenta de IA.
+    // Sólo alguien identificado (vendedor o admin): esta ruta sube archivos.
     const usuario = await usuarioActual();
     if (!usuario) {
       return NextResponse.json({ ok: false, error: 'Tenés que identificarte para proponer mejoras.' }, { status: 401 });
@@ -117,13 +71,8 @@ export async function POST(request) {
       fotoUrl = supabase.storage.from('catalogo-material').getPublicUrl(nombreArchivo).data.publicUrl;
     }
 
-    let propuesta;
-    try {
-      propuesta = await pedirPropuestaIA({ instruccion, productoCodigo, pagina, referencia, fotoBuffer, fotoMimeType });
-    } catch (e) {
-      console.error('Mejoras: falló la propuesta automática:', e?.message || e);
-      propuesta = { tipo_cambio: 'otro', resumen: 'No se pudo generar la propuesta automática. Un editor debe revisar la instrucción original.', texto_nuevo: null };
-    }
+    // Sin IA: la propuesta queda como la escribió el vendedor y un editor la revisa.
+    const propuesta = { tipo_cambio: 'otro', resumen: 'Propuesta del vendedor: un editor debe revisar la instrucción original.', texto_nuevo: null };
 
     const insert = await supabase.from('mejoras').insert({
       vendedor,

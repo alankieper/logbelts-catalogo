@@ -678,7 +678,7 @@ export default async function Metricas({ searchParams }) {
               <form action={reiniciarEstadisticasAccion} className="mreset-form">
                 <p>
                   <strong>Se borra para siempre:</strong> búsquedas, productos vistos, consultas por WhatsApp, listas y pedidos
-                  enviados, consultas al asistente y las visitas (personas, país, ciudad y de dónde llegaron). También se vacía el
+                  enviados y las visitas (personas, país, ciudad y de dónde llegaron). También se vacía el
                   historial de actividad de cada cliente y el aviso de &quot;clientes que dejaron de entrar&quot;.
                 </p>
                 <p>

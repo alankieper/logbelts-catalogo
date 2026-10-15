@@ -59,13 +59,6 @@ export default function RevisarImport({ params, searchParams }) {
           <p className="sub">{run.archivo} · {new Date(run.created_at).toLocaleString('es-AR')} · estado: {run.estado}</p>
 
           {run.estado === 'error' ? <div className="err-msg">Error en el análisis: {run.error}</div> : null}
-          {run.ia ? (
-            run.ia.ok ? (
-              <div className="ok-msg">IA: {run.ia.mejorados} descripciones mejoradas de {run.ia.revisados} revisadas{run.ia.errores ? ` (${run.ia.errores} lotes con error)` : ''}.</div>
-            ) : (
-              <div className="err-msg">IA no disponible: {run.ia.error}</div>
-            )
-          ) : null}
           {aplicado ? <div className="ok-msg">Cambios aplicados. El catálogo público ya está actualizado.</div> : null}
           {revertido ? <div className="ok-msg">Se volvió atrás. El catálogo quedó como antes de esta importación.</div> : null}
           {err ? <div className="err-msg">{err}</div> : null}

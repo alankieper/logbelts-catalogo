@@ -38,13 +38,6 @@ export default function Importar({ searchParams }) {
               <label>Archivo PDF del catálogo</label>
               <input type="file" name="pdf" accept="application/pdf" required />
             </div>
-            <label style={{ display: 'flex', gap: 9, alignItems: 'flex-start', fontSize: 13, fontWeight: 400, textTransform: 'none', letterSpacing: 0, color: 'var(--ink-soft)' }}>
-              <input type="checkbox" name="con_ia" style={{ width: 16, height: 16, marginTop: 2 }} />
-              <span>
-                Mejorar con IA las descripciones de los productos nuevos (usa la API de Claude).
-                Sólo redacta a partir de datos del catálogo, no inventa modelos.
-              </span>
-            </label>
             <div className="form-actions">
               <button className="save" type="submit">Subir y analizar</button>
             </div>

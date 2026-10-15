@@ -38,10 +38,9 @@ export async function subirCatalogo(formData) {
     created_at: new Date().toISOString(),
   });
 
-  const conIA = formData.get('con_ia') === 'on';
   try {
-    const { stats, ia } = await procesarPdf(rutaPdf, id, { conIA });
-    actualizarRun(id, { estado: 'revision', stats, ia });
+    const { stats } = await procesarPdf(rutaPdf, id);
+    actualizarRun(id, { estado: 'revision', stats });
   } catch (e) {
     actualizarRun(id, { estado: 'error', error: String(e.message || e).slice(0, 500) });
   }
