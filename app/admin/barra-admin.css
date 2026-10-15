@@ -1,0 +1,144 @@
+/* ================= Barra lateral del panel de administración =================
+   Computadora (> 1100px): columna angosta con íconos que se abre sola al pasar el mouse.
+   Celular y tablet (<= 1100px): franja arriba con ☰ y la barra se abre como cajón desde la izquierda. */
+
+:root {
+  --adm-side-bg: #12213f;
+  --adm-side-borde: rgba(255, 255, 255, .10);
+  --adm-side-texto: rgba(255, 255, 255, .78);
+  --adm-side-suave: rgba(255, 255, 255, .5);
+  --adm-side-activo: rgba(255, 255, 255, .14);
+  --adm-side-acento: #8fb0ff;
+  --adm-riel: 68px;
+  --adm-ancho: 290px;
+}
+:root[data-theme="oscuro"] { --adm-side-bg: #0a1733; --adm-side-borde: #1f2a47; }
+
+.adm-side { background: var(--adm-side-bg); color: var(--adm-side-texto); }
+.adm-side a { text-decoration: none; }
+.adm-side ul { list-style: none; margin: 0; padding: 0; }
+.adm-side ul[hidden] { display: none; }
+.adm-ic { flex: none; display: block; }
+
+/* ---- marca ---- */
+.adm-side__marca { display: flex; align-items: center; gap: 12px; padding: 14px 14px 12px; color: #fff; min-height: 66px; }
+.adm-side__marca img { width: 40px; height: 40px; border-radius: 10px; flex: none; background: #fff; object-fit: contain; }
+.adm-side__marca .adm-lbl { display: flex; flex-direction: column; line-height: 1.15; }
+.adm-side__marca b { font-size: 15px; letter-spacing: .02em; }
+.adm-side__marca small { font-size: 12px; color: var(--adm-side-suave); }
+
+/* ---- navegación ---- */
+.adm-side__nav { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 4px 10px 12px; }
+.adm-grupo + .adm-grupo { margin-top: 6px; }
+.adm-grupo__titulo {
+  display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 8px;
+  padding: 10px 12px 6px; border: 0; background: transparent; color: var(--adm-side-suave); cursor: pointer;
+  font: inherit; font-size: 11.5px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; text-align: left; min-height: 36px;
+}
+.adm-grupo__titulo:hover { color: #fff; }
+.adm-grupo__titulo em { margin-left: 8px; padding: 1px 7px; border-radius: 999px; background: rgba(255,255,255,.12); font-style: normal; font-size: 10px; letter-spacing: .04em; text-transform: none; }
+.adm-grupo__flecha { flex: none; transition: transform 160ms ease; }
+.adm-grupo[data-cerrado="true"] .adm-grupo__flecha { transform: rotate(-90deg); }
+
+.adm-item {
+  position: relative; display: flex; align-items: center; gap: 12px; width: 100%; min-height: 44px; padding: 0 10px; margin: 1px 0;
+  border: 0; border-radius: 10px; background: transparent; color: var(--adm-side-texto); cursor: pointer;
+  font: inherit; font-size: 14.5px; font-weight: 600; text-align: left;
+  transition: background-color 140ms ease, color 140ms ease;
+}
+.adm-item:hover { background: rgba(255, 255, 255, .08); color: #fff; }
+.adm-item[data-on="true"] { background: var(--adm-side-activo); color: #fff; }
+.adm-item[data-on="true"]::before { content: ''; position: absolute; left: -10px; top: 9px; bottom: 9px; width: 4px; border-radius: 0 4px 4px 0; background: var(--adm-side-acento); }
+.adm-item__ic { position: relative; display: grid; place-items: center; width: 28px; height: 28px; flex: none; }
+.adm-lbl { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.adm-item:focus-visible, .adm-grupo__titulo:focus-visible, .adm-side__marca:focus-visible { outline: 2px solid var(--adm-side-acento); outline-offset: -2px; }
+
+/* aviso de fotos pendientes */
+.adm-item .adm-noti { margin-left: auto; box-shadow: none; }
+.adm-punto { position: absolute; top: 0; right: 0; width: 10px; height: 10px; border-radius: 50%; background: #e5484d; box-shadow: 0 0 0 2px var(--adm-side-bg); display: none; }
+
+/* ---- pie ---- */
+.adm-side__pie { padding: 10px 10px 14px; border-top: 1px solid var(--adm-side-borde); }
+.adm-side__tema { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 0 10px; font-size: 14.5px; font-weight: 600; }
+.adm-side .tema-boton__texto { display: none !important; }
+.adm-side .tema-boton--admin { margin: 0; flex: none; width: 28px; min-width: 28px; height: 28px; padding: 0; justify-content: center; }
+.adm-item--salir { color: #ffb4ae; }
+.adm-item--salir:hover { background: rgba(255, 157, 157, .14); color: #ffd0cc; }
+
+/* ---- franja de arriba y fondo del cajón: solo en celular ---- */
+.adm-movil, .adm-fondo { display: none; }
+
+/* ============ Computadora ============ */
+@media (min-width: 1101px) {
+  body:has(.adm-side) { padding-left: var(--adm-riel); }
+  /* en la computadora los botones son un poco más bajos para que entren todos sin barra de desplazamiento */
+  .adm-item { min-height: 40px; margin: 0; }
+  .adm-side__marca { min-height: 58px; padding-top: 10px; padding-bottom: 8px; }
+  .adm-side__nav { scrollbar-width: none; }
+  .adm-side__nav::-webkit-scrollbar { display: none; }
+  .adm-side__tema { min-height: 40px; }
+
+  .adm-side {
+    position: fixed; z-index: 70; top: 0; left: 0; bottom: 0; width: var(--adm-riel);
+    display: flex; flex-direction: column; overflow: hidden;
+    border-right: 1px solid var(--adm-side-borde);
+    transition: width 200ms cubic-bezier(.22, .9, .28, 1), box-shadow 200ms ease;
+  }
+  /* se abre al pasar el mouse o al entrar con el teclado; flota por encima de la pantalla sin moverla */
+  .adm-side:hover, .adm-side:focus-within { width: var(--adm-ancho); box-shadow: 14px 0 36px rgba(3, 13, 33, .35); }
+
+  .adm-side .adm-lbl, .adm-grupo__flecha { opacity: 0; transition: opacity 120ms ease; }
+  .adm-side:hover .adm-lbl, .adm-side:focus-within .adm-lbl,
+  .adm-side:hover .adm-grupo__flecha, .adm-side:focus-within .adm-grupo__flecha { opacity: 1; transition-delay: 70ms; }
+
+  /* cerrada: los títulos de grupo quedan como una rayita; el aviso es un puntito sobre el ícono */
+  .adm-grupo__titulo { min-height: 0; height: 18px; padding: 0 12px; margin: 6px 0 4px; position: relative; }
+  .adm-grupo__titulo::after { content: ''; position: absolute; left: 12px; right: 12px; top: 8px; height: 1px; background: var(--adm-side-borde); }
+  .adm-grupo__titulo .adm-lbl { display: none; }
+  .adm-grupo__flecha { display: none; }
+  .adm-grupo:first-child .adm-grupo__titulo { display: none; }
+  .adm-side:hover .adm-grupo__titulo, .adm-side:focus-within .adm-grupo__titulo { height: 36px; min-height: 36px; padding: 10px 12px 6px; margin: 0; }
+  .adm-side:hover .adm-grupo__titulo::after, .adm-side:focus-within .adm-grupo__titulo::after { display: none; }
+  .adm-side:hover .adm-grupo__titulo .adm-lbl, .adm-side:focus-within .adm-grupo__titulo .adm-lbl { display: block; }
+  .adm-side:hover .adm-grupo__flecha, .adm-side:focus-within .adm-grupo__flecha { display: block; }
+  .adm-side:not(:hover):not(:focus-within) .adm-punto { display: block; }
+  .adm-side:not(:hover):not(:focus-within) .adm-item .adm-noti { display: none; }
+  .adm-side:not(:hover):not(:focus-within) .adm-side__tema .adm-lbl { display: none; }
+}
+
+/* ============ Celular y tablet ============ */
+@media (max-width: 1100px) {
+  .adm-movil {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px; position: sticky; top: 0; z-index: 50;
+    padding: calc(env(safe-area-inset-top, 0px) + 8px) 14px 8px; background: var(--adm-side-bg);
+    border-bottom: 1px solid var(--adm-side-borde);
+  }
+  .adm-movil__marca img { display: block; height: 34px; width: auto; }
+  .adm-movil__boton {
+    position: relative; display: inline-grid; place-items: center; flex: none; width: 46px; height: 46px; cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, .18); border-radius: 10px; background: rgba(255, 255, 255, .08); color: #fff;
+  }
+  .adm-movil__boton:focus-visible { outline: 2px solid var(--adm-side-acento); outline-offset: 2px; }
+  .adm-noti--boton { position: absolute; top: -6px; right: -6px; margin: 0; }
+
+  .adm-fondo {
+    display: block; position: fixed; inset: 0; z-index: 80; background: rgba(4, 10, 24, .55);
+    opacity: 0; pointer-events: none; transition: opacity 200ms ease;
+  }
+  .adm-fondo[data-abierto='true'] { opacity: 1; pointer-events: auto; }
+
+  .adm-side {
+    position: fixed; z-index: 81; top: 0; left: 0; bottom: 0; width: min(86vw, 320px); display: flex; flex-direction: column;
+    padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+    box-shadow: 18px 0 40px rgba(3, 13, 33, .45);
+    transform: translateX(-102%); visibility: hidden;
+    transition: transform 220ms cubic-bezier(.22, .9, .28, 1), visibility 0s linear 220ms;
+  }
+  .adm-side[data-abierto='true'] { transform: none; visibility: visible; transition-delay: 0s; }
+  .adm-item { min-height: 48px; font-size: 15.5px; }
+  .adm-grupo__titulo { min-height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .adm-side, .adm-fondo, .adm-side .adm-lbl, .adm-grupo__flecha, .adm-item { transition: none; }
+}

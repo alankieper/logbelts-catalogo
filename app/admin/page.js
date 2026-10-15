@@ -1,21 +1,63 @@
 import AdminHeader from './AdminHeader';
 import { estadisticas } from '../../lib/catalogoStore';
 import { PASSWORD_SIN_CONFIGURAR } from '../../lib/adminPassword';
+import { contarPendientes } from '../../lib/fotosPendientes';
+import { contarContactosPorEstado } from '../../lib/contactos';
 
 export const dynamic = 'force-dynamic';
 
 export default async function AdminHome() {
-  const s = await estadisticas();
+  const [s, fotosPorRevisar, contactos] = await Promise.all([
+    estadisticas(),
+    contarPendientes().catch(() => 0),
+    contarContactosPorEstado().catch(() => ({})),
+  ]);
   const fams = Object.entries(s.porFamilia)
     .filter(([k]) => k !== '(sin)')
     .sort((a, b) => b[1] - a[1]);
+
+  // Tarjetas de "¿Qué hago hoy?": cada una dice en palabras simples qué hay para hacer y lleva directo ahí.
+  const tareas = [
+    {
+      n: contactos.nuevo || 0,
+      titulo: 'Consultas de clientes sin responder',
+      ok: 'No hay consultas esperando.',
+      pendiente: 'Clientes que escribieron desde la web y todavía no fueron atendidos.',
+      href: '/admin/contactos?estado=nuevo',
+      boton: 'Ver consultas',
+    },
+    {
+      n: fotosPorRevisar,
+      titulo: 'Fotos para revisar',
+      ok: 'No hay fotos esperando.',
+      pendiente: 'Fotos nuevas que hay que mirar y aprobar para que se vean en el catálogo.',
+      href: '/admin/fotos-pendientes',
+      boton: 'Revisar fotos',
+    },
+    {
+      n: s.sinFoto,
+      titulo: 'Productos sin foto',
+      ok: 'Todos los productos tienen foto.',
+      pendiente: 'Repuestos que todavía no tienen foto. Un producto con foto se consulta más.',
+      href: '/admin/productos?sinfoto=1',
+      boton: 'Ver productos',
+    },
+    {
+      n: s.derivadas,
+      titulo: 'Descripciones a confirmar',
+      ok: 'Todas las descripciones están confirmadas.',
+      pendiente: 'Descripciones que salieron de una lectura automática y conviene revisar.',
+      href: '/admin/productos?deriv=1',
+      boton: 'Revisar descripciones',
+    },
+  ];
 
   return (
     <>
       <AdminHeader activo="home" />
       <main className="adm">
         <div className="wrap">
-          <h1>Tablero</h1>
+          <h1>¿Qué hago hoy?</h1>
           {PASSWORD_SIN_CONFIGURAR ? (
             <div className="err-msg" style={{ lineHeight: 1.5 }}>
               <b>Falta poner una contraseña propia.</b> El panel está usando la contraseña de fábrica.
@@ -23,8 +65,22 @@ export default async function AdminHome() {
               {' '}con la contraseña que quieras (y <code>AUTH_SECRET</code> con un texto largo al azar). Después volvé a publicar.
             </div>
           ) : null}
-          <p className="sub">Catálogo cargado desde la primera extracción. Editá acá; los cambios se ven al toque en el catálogo público.</p>
+          <p className="sub">Lo que conviene hacer hoy, de lo más importante a lo menos. Tocá una tarjeta y vas directo. Los cambios se ven enseguida en el catálogo.</p>
 
+          <div className="hoy">
+            {tareas.map((t) => (
+              <a key={t.titulo} className="hoy-card" data-ok={t.n === 0 ? 'true' : undefined} href={t.href}>
+                <span className="hoy-n" aria-hidden="true">{t.n === 0 ? '✓' : t.n.toLocaleString('es-AR')}</span>
+                <span className="hoy-txt">
+                  <b>{t.n === 0 ? t.titulo : `${t.n.toLocaleString('es-AR')} · ${t.titulo}`}</b>
+                  <small>{t.n === 0 ? t.ok : t.pendiente}</small>
+                </span>
+                <span className="hoy-ir">{t.n === 0 ? 'Ver igual' : t.boton} →</span>
+              </a>
+            ))}
+          </div>
+
+          <h2 className="hoy-sec">El catálogo en números</h2>
           <div className="kpis">
             <div className="kpi"><div className="n">{s.total.toLocaleString('es-AR')}</div><div className="l">Productos</div></div>
             <div className="kpi"><div className="n">{s.editados.toLocaleString('es-AR')}</div><div className="l">Editados</div></div>

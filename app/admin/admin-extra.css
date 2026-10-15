@@ -184,40 +184,24 @@
   .mpodio-link, .mcli { transition: none; }
 }
 
-/* ================= Menú del admin: fila en la computadora, panel lateral en el celular ================= */
-.adm-top { padding-top: env(safe-area-inset-top, 0px); }
-.adm-menu-boton, .adm-fondo { display: none; }
-.adm-panel { display: contents; }
-
-@media (max-width: 1100px) {
-  .adm-top .wrap { gap: 10px; padding: 10px 14px; flex-wrap: nowrap; }
-  .adm-top a.brand img { height: 34px; }
-  .adm-menu-boton {
-    position: relative; display: inline-grid; place-items: center; margin-left: auto; flex: none;
-    width: 46px; height: 46px; border: 1px solid rgba(255,255,255,.18); border-radius: 10px;
-    background: rgba(255,255,255,.08); color: #fff; cursor: pointer;
-  }
-  .adm-menu-boton:focus-visible { outline: 2px solid #8fb0ff; outline-offset: 2px; }
-  .adm-noti--boton { position: absolute; top: -6px; right: -6px; }
-
-  .adm-fondo { display: block; position: fixed; inset: 0; z-index: 60; background: rgba(4, 10, 24, .55); opacity: 0; pointer-events: none; transition: opacity 200ms ease; }
-  .adm-fondo[data-abierto='true'] { opacity: 1; pointer-events: auto; }
-
-  .adm-panel {
-    display: flex; flex-direction: column; gap: 4px; position: fixed; z-index: 61; top: 0; right: 0; bottom: 0;
-    width: min(84vw, 320px); padding: calc(env(safe-area-inset-top, 0px) + 18px) 16px calc(env(safe-area-inset-bottom, 0px) + 18px);
-    background: #12213f; box-shadow: -18px 0 40px rgba(3, 13, 33, .45); overflow-y: auto;
-    transform: translateX(100%); transition: transform 220ms cubic-bezier(.22,.9,.28,1); visibility: hidden;
-  }
-  .adm-panel[data-abierto='true'] { transform: none; visibility: visible; }
-  .adm-panel nav { display: flex; flex-direction: column; gap: 2px; margin: 0; }
-  .adm-panel nav a { font-size: 15px; padding: 12px 14px; min-height: 46px; display: flex; align-items: center; gap: 8px; }
-  .adm-panel .right {
-    flex-direction: row; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; padding-top: 14px;
-    border-top: 1px solid rgba(255,255,255,.14);
-  }
-  .adm-panel .right a { padding: 10px 14px; border: 1px solid rgba(255,255,255,.18); border-radius: 8px; font-size: 14px; }
-  .adm-panel .tema-boton--admin { align-self: flex-start; margin-top: 12px; }
-  .adm-panel .adm-salir { align-self: flex-start; margin-top: 12px; }
+/* ===== Inicio del panel: "¿Qué hago hoy?" ===== */
+.hoy { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin: 8px 0 28px; }
+.hoy-card {
+  display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 4px 14px; align-items: center; padding: 16px 18px;
+  border: 1px solid var(--rule); border-left: 4px solid var(--warn); border-radius: 12px; background: var(--surface); color: var(--ink);
+  text-decoration: none; box-shadow: var(--shadow); transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
-@media (prefers-reduced-motion: reduce) { .adm-panel, .adm-fondo { transition: none; } }
+.hoy-card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(10, 20, 50, .12); text-decoration: none; }
+.hoy-card:focus-visible { outline: 2px solid var(--brand-ink); outline-offset: 2px; }
+.hoy-card[data-ok="true"] { border-left-color: var(--ok); }
+.hoy-n {
+  grid-row: span 2; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 14px;
+  background: var(--warn-bg); color: var(--warn); font-size: 1.35rem; font-weight: 800; font-variant-numeric: tabular-nums;
+}
+.hoy-card[data-ok="true"] .hoy-n { background: var(--ok-bg); color: var(--ok); }
+.hoy-txt { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.hoy-txt b { font-size: 15px; line-height: 1.3; }
+.hoy-txt small { font-size: 13px; line-height: 1.45; color: var(--ink-soft); }
+.hoy-ir { grid-column: 2; font-size: 13px; font-weight: 700; color: var(--brand-ink); }
+.hoy-sec { font-size: 1rem; margin: 6px 0 10px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); }
+@media (prefers-reduced-motion: reduce) { .hoy-card { transition: none; } }
