@@ -8,11 +8,12 @@ export const PIEZAS_3D = [
   { id: 'carburador', nombre: 'Carburador', href: '/f/carburacion', ver: 'Ver carburación' },
   { id: 'desmalezadora', nombre: 'Desmalezadora', href: '/f/desmalezadoras', ver: 'Repuestos de desmalezadoras' },
   { id: 'motosierra', nombre: 'Motosierra', href: '/f/motosierras', ver: 'Repuestos de motosierras' },
+  { id: 'polea', nombre: 'Polea', href: '/f/minitractores', ver: 'Repuestos de minitractores' },
 ];
 
 /**
- * Visor 3D (Three.js) con tres modelos hechos con geometría propia: carburador de membrana,
- * desmalezadora azul y motosierra, las dos con el logo Logbelts. Gira solo y se puede arrastrar.
+ * Visor 3D (Three.js) con cuatro modelos hechos con geometría propia: carburador de membrana,
+ * desmalezadora azul y motosierra (las dos con el logo Logbelts) y polea tensora zincada. Gira solo y se puede arrastrar.
  * Three.js se carga recién cuando el visor está cerca de la pantalla; sin WebGL queda el dibujo de línea.
  */
 export default function Piezas3D() {
@@ -37,6 +38,7 @@ export default function Piezas3D() {
       const THREE = await import('three');
       const { RoomEnvironment } = await import('three/examples/jsm/environments/RoomEnvironment.js');
       const { RoundedBoxGeometry } = await import('three/examples/jsm/geometries/RoundedBoxGeometry.js');
+      const { construirCarburador } = await import('./modelos3d/carburador');
       if (cancelado) return;
       const V = THREE.Vector3;
 
@@ -50,6 +52,8 @@ export default function Piezas3D() {
       renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
       renderer.outputColorSpace = THREE.SRGBColorSpace;
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.shadowMap.enabled = true;
+      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
       renderer.domElement.setAttribute('aria-hidden', 'true');
       el.appendChild(renderer.domElement);
 
@@ -64,15 +68,37 @@ export default function Piezas3D() {
       escena.add(new THREE.AmbientLight(0x8fb0ff, 0.3));
       const clave = new THREE.DirectionalLight(0xffffff, 2.4);
       clave.position.set(4, 6, 6);
+      // Sombras propias (piezas que se tapan entre sí); solo las activan los modelos que lo piden
+      clave.castShadow = true;
+      clave.shadow.mapSize.set(1024, 1024);
+      Object.assign(clave.shadow.camera, { left: -3, right: 3, top: 3, bottom: -3, near: 1, far: 20 });
+      clave.shadow.camera.updateProjectionMatrix();
+      clave.shadow.bias = -0.0004;
+      clave.shadow.normalBias = 0.02;
       escena.add(clave);
       const contra = new THREE.DirectionalLight(0x5b8cff, 2.6);
       contra.position.set(-5, -1, -4);
       escena.add(contra);
+      const relleno = new THREE.DirectionalLight(0xffffff, 0);
+      relleno.position.set(-6, 3, 4);
+      escena.add(relleno);
 
       const recursos = [];
       const guardar = (r) => { recursos.push(r); return r; };
       const estandar = (color, metalness, roughness, extra = {}) => guardar(new THREE.MeshStandardMaterial({ color, metalness, roughness, ...extra }));
       const plastico = (color) => guardar(new THREE.MeshPhysicalMaterial({ color, metalness: 0, roughness: 0.38, clearcoat: 0.5, clearcoatRoughness: 0.3 }));
+
+      // Textura en escala de grises dibujada en un canvas (para rugosidad y relieve)
+      const textura = (ancho, alto, pintar) => {
+        const lienzo2d = document.createElement('canvas');
+        lienzo2d.width = ancho;
+        lienzo2d.height = alto;
+        pintar(lienzo2d.getContext('2d'), ancho, alto);
+        const t = guardar(new THREE.CanvasTexture(lienzo2d));
+        t.wrapS = t.wrapT = THREE.RepeatWrapping;
+        t.anisotropy = renderer.capabilities.getMaxAnisotropy();
+        return t;
+      };
 
       const aluminio = estandar(0x8f97a4, 0.9, 0.55);
       const acero = estandar(0xdfe4ec, 1, 0.25);
@@ -80,29 +106,25 @@ export default function Piezas3D() {
       const negro = estandar(0x15171c, 0.2, 0.55);
       const negroMate = estandar(0x1b1d22, 0.1, 0.75);
       const oscuro = estandar(0x0b0d12, 0.3, 0.8);
-      const bronce = estandar(0xd1a54a, 1, 0.3);
-      const rojo = estandar(0xd8413a, 0.1, 0.5);
       const amarillo = estandar(0xf2c230, 0, 0.5);
       const grisPlastico = estandar(0x4a4f57, 0, 0.6);
-      const cristal = guardar(new THREE.MeshPhysicalMaterial({ color: 0xeef4ff, metalness: 0, roughness: 0.04, transparent: true, opacity: 0.38, clearcoat: 1, side: THREE.DoubleSide }));
       const tanque = guardar(new THREE.MeshPhysicalMaterial({ color: 0xdfe6ee, metalness: 0, roughness: 0.3, transparent: true, opacity: 0.88 }));
       const azul = plastico(0x1f63e0);
       const azulOscuro = plastico(0x173f95);
       const azulMoto = plastico(0x3a44a6);
       const grisMoto = plastico(0x646c66);
-      const lineas = guardar(new THREE.LineBasicMaterial({ color: 0x8fb0ff, transparent: true, opacity: 0.22 }));
 
       const logoTex = guardar(new THREE.TextureLoader().load('/logo-blanco.png'));
       logoTex.colorSpace = THREE.SRGBColorSpace;
       logoTex.anisotropy = 8;
       const logoMat = guardar(new THREE.MeshBasicMaterial({ map: logoTex, transparent: true, depthWrite: false, toneMapped: false, polygonOffset: true, polygonOffsetFactor: -2 }));
 
-      const malla = (geo, mat, { pos, rot, bordes = false, padre } = {}) => {
+      const malla = (geo, mat, { pos, rot, esc, padre } = {}) => {
         guardar(geo);
         const m = new THREE.Mesh(geo, mat);
         if (pos) m.position.set(...pos);
         if (rot) m.rotation.set(...rot);
-        if (bordes) m.add(new THREE.LineSegments(guardar(new THREE.EdgesGeometry(geo, 35)), lineas));
+        if (esc) m.scale.set(...esc);
         padre.add(m);
         return m;
       };
@@ -114,67 +136,11 @@ export default function Piezas3D() {
         padre.add(m);
       };
 
-      /* ---------- Carburador ---------- */
+      /* ---------- Carburador de membrana (compartido con el hero, ver modelos3d/carburador.js) ---------- */
       const carburador = () => {
-        const g = new THREE.Group();
-        const m = (geo, mat, o = {}) => malla(geo, mat, { bordes: true, padre: g, ...o });
-        m(new RoundedBoxGeometry(2.2, 1.7, 1.5, 4, 0.12), aluminio);
-        [1, -1].forEach((lado) => {
-          m(new THREE.CylinderGeometry(0.62, 0.62, 0.12, 48), aluminio, { pos: [0, -0.05, lado * 0.8], rot: [Math.PI / 2, 0, 0] });
-          m(new THREE.TorusGeometry(0.44, 0.05, 16, 64), aluminio, { pos: [0, -0.05, lado * 0.865] });
-          m(new THREE.CircleGeometry(0.42, 48), oscuro, { pos: [0, -0.05, lado * 0.862], rot: [0, lado === 1 ? 0 : Math.PI, 0], bordes: false });
-        });
-        m(new THREE.CylinderGeometry(0.08, 0.08, 0.3, 20), bronce, { pos: [0, -0.05, 0.7], rot: [Math.PI / 2, 0, 0] });
-        [-0.35, 0, 0.35].forEach((z) => m(new THREE.BoxGeometry(0.06, 1.2, 0.08), aluminio, { pos: [1.13, -0.1, z], bordes: false }));
-        [[-0.8, 0.55], [0.8, -0.62]].forEach(([x, y]) => {
-          m(new THREE.CircleGeometry(0.11, 32), oscuro, { pos: [x, y, 0.752], bordes: false });
-          m(new THREE.TorusGeometry(0.13, 0.025, 10, 32), aluminio, { pos: [x, y, 0.755], bordes: false });
-        });
-        m(new THREE.BoxGeometry(2.14, 0.05, 1.44), negro, { pos: [0, 0.875, 0], bordes: false });
-        m(new RoundedBoxGeometry(2.26, 0.16, 1.56, 2, 0.04), acero, { pos: [0, 0.98, 0] });
-        [[-0.92, -0.6], [0.92, -0.6], [-0.92, 0.6], [0.92, 0.6]].forEach(([x, z]) => {
-          m(new THREE.CylinderGeometry(0.11, 0.11, 0.08, 24), acero, { pos: [x, 1.1, z] });
-          m(new THREE.BoxGeometry(0.16, 0.02, 0.03), oscuro, { pos: [x, 1.145, z], bordes: false });
-        });
-        m(new THREE.CylinderGeometry(0.5, 0.52, 0.1, 48), acero, { pos: [0, 1.11, 0] });
-        m(new THREE.CylinderGeometry(0.24, 0.24, 0.05, 32), rojo, { pos: [0, 1.17, 0], bordes: false });
-        m(new THREE.SphereGeometry(0.46, 48, 24, 0, Math.PI * 2, 0, Math.PI / 2), cristal, { pos: [0, 1.16, 0], bordes: false });
-        m(new RoundedBoxGeometry(0.34, 0.42, 0.42, 2, 0.05), negro, { pos: [1.2, 0.72, -0.4] });
-
-        const helice = new THREE.Curve();
-        helice.getPoint = (t, destino = new V()) => destino.set(Math.cos(t * Math.PI * 14) * 0.12, t * 0.42, Math.sin(t * Math.PI * 14) * 0.12);
-        const tornillo = (pos, rot) => {
-          const t = new THREE.Group();
-          malla(new THREE.CylinderGeometry(0.055, 0.055, 0.6, 16), acero, { pos: [0, 0.3, 0], padre: t });
-          malla(new THREE.TubeGeometry(helice, 160, 0.018, 8, false), acero, { pos: [0, 0.02, 0], padre: t });
-          malla(new THREE.CylinderGeometry(0.16, 0.16, 0.5, 28), negro, { pos: [0, 0.72, 0], padre: t, bordes: true });
-          malla(new THREE.CylinderGeometry(0.12, 0.16, 0.1, 28), negro, { pos: [0, 1.0, 0], padre: t, bordes: true });
-          t.position.set(...pos);
-          t.rotation.set(...rot);
-          g.add(t);
-        };
-        tornillo([-1.08, 0.35, 0.38], [0, 0.25, Math.PI / 2 + 0.12]);
-        tornillo([-1.08, -0.2, 0.52], [0, 0.4, Math.PI / 2 - 0.05]);
-        tornillo([-1.02, -0.72, 0.2], [0, 0.15, Math.PI / 2 - 0.2]);
-
-        const curvaPico = new THREE.QuadraticBezierCurve3(new V(1.08, -0.15, 0.35), new V(1.5, -0.15, 0.4), new V(1.72, -0.42, 0.62));
-        m(new THREE.CylinderGeometry(0.13, 0.13, 0.1, 6), bronce, { pos: [1.12, -0.15, 0.35], rot: [0, 0, Math.PI / 2] });
-        m(new THREE.TubeGeometry(curvaPico, 40, 0.065, 16, false), bronce, { bordes: false });
-        m(new THREE.TorusGeometry(0.08, 0.02, 8, 24), bronce, { pos: [1.62, -0.33, 0.54], rot: [0.5, 0.9, 0], bordes: false });
-
-        const forma = new THREE.Shape();
-        forma.moveTo(-0.1, -0.12);
-        forma.lineTo(0.9, -0.2);
-        forma.quadraticCurveTo(1.02, -0.2, 1.02, -0.06);
-        forma.lineTo(1.0, 0.06);
-        forma.lineTo(0.1, 0.14);
-        forma.quadraticCurveTo(-0.14, 0.12, -0.1, -0.12);
-        const agujero = new THREE.Path();
-        agujero.absarc(0.86, -0.07, 0.05, 0, Math.PI * 2, true);
-        forma.holes.push(agujero);
-        m(new THREE.ExtrudeGeometry(forma, { depth: 0.04, bevelEnabled: false, curveSegments: 24 }), acero, { pos: [-0.95, -0.98, 0.72], rot: [0, 0, -0.25] });
-        m(new THREE.TorusGeometry(0.1, 0.025, 10, 28), acero, { pos: [-0.95, -0.9, 0.78], bordes: false });
-        return g;
+        const { grupo, recursos: propios } = construirCarburador(THREE, RoundedBoxGeometry, { anisotropia: renderer.capabilities.getMaxAnisotropy() });
+        recursos.push(...propios);
+        return grupo;
       };
 
       /* ---------- Desmalezadora azul ---------- */
@@ -296,6 +262,59 @@ export default function Piezas3D() {
         return g;
       };
 
+      /* ---------- Polea tensora plana (acabado zincado dorado, como el modelo de Meshy) ---------- */
+      const polea = () => {
+        const g = new THREE.Group();
+        const m = (geo, mat, o = {}) => malla(geo, mat, { padre: g, ...o });
+
+        // Veta fina del estampado y del baño: ruido + rayas en el sentido del giro
+        const veta = textura(512, 256, (ctx, w, h) => {
+          const datos = ctx.createImageData(w, h);
+          for (let y = 0; y < h; y++) {
+            const franja = Math.random() * 40;
+            for (let x = 0; x < w; x++) {
+              const i = (y * w + x) * 4;
+              datos.data[i] = datos.data[i + 1] = datos.data[i + 2] = 150 + franja + Math.random() * 45;
+              datos.data[i + 3] = 255;
+            }
+          }
+          ctx.putImageData(datos, 0, 0);
+        });
+        veta.repeat.set(6, 1);
+        const zincado = guardar(new THREE.MeshPhysicalMaterial({
+          color: 0xc9b98f, metalness: 1, roughness: 0.4, roughnessMap: veta, bumpMap: veta, bumpScale: 0.6,
+          clearcoat: 0.35, clearcoatRoughness: 0.25,
+        }));
+        const bujeAcero = estandar(0x9a9ca3, 1, 0.3);
+
+        // Cuerpo de chapa estampada: perfil de media polea (radio, altura) espejado y torneado
+        const mitad = [
+          [0.44, 0.3], [0.7, 0.31], [0.95, 0.36], [1.2, 0.46], [1.42, 0.56], [1.56, 0.6],
+          [1.64, 0.56], [1.66, 0.47], [1.6, 0.4], [1.44, 0.37], [1.28, 0.32], [1.2, 0.22], [1.19, 0],
+        ];
+        const contorno = [...mitad, ...mitad.slice(0, -1).reverse().map(([r, y]) => [r, -y]), [0.44, 0], mitad[0]]
+          .map(([r, y]) => new THREE.Vector2(r, y));
+        // Invertido para que las normales del torneado queden hacia afuera
+        const perfil = new THREE.SplineCurve(contorno).getPoints(220).reverse();
+        m(new THREE.LatheGeometry(perfil, 128), zincado);
+
+        // Rodamiento: pista exterior, sello negro y pista interior
+        [1, -1].forEach((lado) => {
+          m(new THREE.RingGeometry(0.24, 0.44, 64), negro, { pos: [0, lado * 0.26, 0], rot: [-lado * Math.PI / 2, 0, 0] });
+          m(new THREE.TorusGeometry(0.43, 0.025, 10, 64), acero, { pos: [0, lado * 0.27, 0], rot: [Math.PI / 2, 0, 0] });
+          m(new THREE.TorusGeometry(0.25, 0.02, 10, 48), acero, { pos: [0, lado * 0.27, 0], rot: [Math.PI / 2, 0, 0] });
+        });
+        // Buje pasante con agujero
+        m(new THREE.CylinderGeometry(0.22, 0.22, 1.4, 48), bujeAcero);
+        [1, -1].forEach((lado) => {
+          m(new THREE.TorusGeometry(0.2, 0.02, 8, 48), bujeAcero, { pos: [0, lado * 0.7, 0], rot: [Math.PI / 2, 0, 0] });
+          m(new THREE.CircleGeometry(0.09, 32), oscuro, { pos: [0, lado * 0.702, 0], rot: [-lado * Math.PI / 2, 0, 0] });
+        });
+
+        g.rotation.z = 0.15;
+        return g;
+      };
+
       // Cada modelo se centra y se escala para ocupar lo mismo en pantalla
       const encuadrar = (grupo, tam) => {
         const caja = new THREE.Box3().setFromObject(grupo);
@@ -308,9 +327,10 @@ export default function Piezas3D() {
         return envoltorio;
       };
       const modelos = [
-        { grupo: encuadrar(carburador(), 3.3), inclinacion: 0.32, exposicion: 0.8 },
+        { grupo: encuadrar(carburador(), 3.4), inclinacion: 0.3, exposicion: 0.95, contra: 1.1, relleno: 1.2 },
         { grupo: encuadrar(desmalezadora(), 4.2), inclinacion: 0.2, exposicion: 1 },
         { grupo: encuadrar(motosierra(), 4.1), inclinacion: 0.22, exposicion: 1 },
+        { grupo: encuadrar(polea(), 3.2), inclinacion: 0.4, exposicion: 0.9 },
       ];
 
       const pieza = new THREE.Group();
@@ -324,6 +344,8 @@ export default function Piezas3D() {
         modelos.forEach(({ grupo }, j) => { grupo.visible = j === i; });
         soporte.rotation.x = modelos[i].inclinacion;
         renderer.toneMappingExposure = modelos[i].exposicion;
+        contra.intensity = modelos[i].contra ?? 2.6;
+        relleno.intensity = modelos[i].relleno ?? 0;
         entrada = 0;
       };
       mostrar(actualRef.current);

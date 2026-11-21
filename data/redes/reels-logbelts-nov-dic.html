@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reels Logbelts Nov–Dic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#EEF0F2; --paper:#FFFFFF; --ink:#14213A; --muted:#566178; --line:#D6DBE3;
+  --brand:#1A4486; --brand-ink:#1A4486; --brand-soft:#E1E8F4; --chip:#F4F6F9;
+  --flyer:#1A4486; --flyer-deep:#12305F; --flyer-ink:#FFFFFF;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",Roboto,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0D1320; --paper:#151D2C; --ink:#E7ECF4; --muted:#9BA7BC; --line:#27324A;
+    --brand-ink:#8FB0EC; --brand-soft:#1C2A45; --chip:#1A2336;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0D1320; --paper:#151D2C; --ink:#E7ECF4; --muted:#9BA7BC; --line:#27324A;
+  --brand-ink:#8FB0EC; --brand-soft:#1C2A45; --chip:#1A2336;
+}
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--ink); font:15px/1.6 var(--body); margin:0}
+.wrap{max-width:1080px; margin:0 auto; padding-inline:20px}
+
+/* Portada */
+.cover{background:var(--flyer); color:#fff; position:relative; overflow:hidden}
+.cover svg{position:absolute; inset:auto 0 0 0; width:100%; height:100%; opacity:.22; pointer-events:none}
+.cover .wrap{position:relative; padding-block:48px 40px}
+.eyebrow{font:500 12px/1 var(--mono); letter-spacing:.14em; text-transform:uppercase; opacity:.8}
+.cover h1{font-family:var(--display); font-weight:850; font-stretch:112%; font-size:clamp(34px,6vw,60px); line-height:.98; margin:14px 0 16px; text-wrap:balance; letter-spacing:-.01em}
+.cover p{max-width:60ch; margin:0; opacity:.9}
+.facts{display:flex; flex-wrap:wrap; gap:8px 22px; margin-top:22px; font:500 12.5px/1.4 var(--mono); letter-spacing:.04em}
+.facts span{white-space:nowrap}
+.facts b{font-weight:500; opacity:.65; margin-right:6px}
+
+/* Nav de meses */
+.monthnav{position:sticky; top:env(safe-area-inset-top,0px); z-index:5; background:color-mix(in srgb,var(--bg) 92%,transparent); backdrop-filter:blur(8px); border-bottom:1px solid var(--line)}
+.monthnav .wrap{display:flex; gap:8px; padding-block:10px; align-items:center; flex-wrap:wrap}
+.monthnav a{font:600 13px/1 var(--body); color:var(--ink); text-decoration:none; padding:9px 14px; border-radius:999px; border:1px solid var(--line); background:var(--paper)}
+.monthnav a:hover,.monthnav a:focus-visible{border-color:var(--brand-ink); color:var(--brand-ink); outline:none}
+.monthnav .hint{margin-left:auto; font:500 12px/1 var(--mono); color:var(--muted)}
+
+/* Meses */
+.month{padding-block:44px 8px; scroll-margin-top:60px}
+.month-head{display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; border-bottom:3px solid var(--brand-ink); padding-bottom:10px; margin-bottom:22px}
+.month-head h2{font-family:var(--display); font-weight:850; font-stretch:118%; font-size:clamp(30px,5vw,46px); line-height:1; margin:0; text-transform:uppercase; letter-spacing:-.01em}
+.month-head span{font:500 13px/1.3 var(--mono); color:var(--muted); letter-spacing:.04em}
+
+/* Ficha de reel */
+.reel{background:var(--paper); border:1px solid var(--line); border-radius:6px; margin-bottom:18px; display:grid; grid-template-columns:minmax(0,1fr) 236px; overflow:hidden}
+.script{padding:22px 24px 20px; display:flex; flex-direction:column; gap:14px; min-width:0}
+.reel-top{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+.num{font:500 12px/1 var(--mono); letter-spacing:.08em; color:var(--brand-ink); font-variant-numeric:tabular-nums}
+.tag{font:500 11px/1 var(--mono); letter-spacing:.08em; text-transform:uppercase; color:var(--muted); background:var(--chip); border:1px solid var(--line); padding:5px 8px; border-radius:3px}
+.reel h3{font-family:var(--display); font-weight:800; font-stretch:100%; font-size:23px; line-height:1.15; margin:0; text-wrap:balance}
+.part{display:grid; grid-template-columns:74px minmax(0,1fr); gap:12px; align-items:baseline}
+.part dt{font:500 11px/1.9 var(--mono); letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.part dd{margin:0; max-width:66ch}
+.part.hook dd{font-weight:600; font-size:16px}
+.part.close dd{color:var(--brand-ink); font-weight:600}
+.actions{display:flex; gap:10px; align-items:center; margin-top:2px}
+.copy{font:600 12.5px/1 var(--body); color:var(--brand-ink); background:var(--brand-soft); border:1px solid transparent; padding:9px 12px; border-radius:4px; cursor:pointer}
+.copy:hover{border-color:var(--brand-ink)}
+.copy:focus-visible{outline:2px solid var(--brand-ink); outline-offset:2px}
+.copied{font:500 12px/1 var(--mono); color:var(--muted)}
+
+/* Boceto del flyer */
+.flyer-col{background:var(--chip); border-left:1px solid var(--line); padding:18px 18px 16px; display:flex; flex-direction:column; gap:10px; align-items:center}
+.flyer-label{font:500 10.5px/1.3 var(--mono); letter-spacing:.1em; text-transform:uppercase; color:var(--muted); align-self:stretch; display:flex; justify-content:space-between}
+.flyer{width:100%; max-width:200px; aspect-ratio:9/16; background:var(--flyer); color:var(--flyer-ink); border-radius:10px; position:relative; overflow:hidden; display:flex; flex-direction:column; padding:18px 14px 12px; box-shadow:0 10px 24px -14px rgba(10,25,55,.55)}
+.flyer svg.waves{position:absolute; left:0; right:0; bottom:0; width:100%; height:62%; pointer-events:none}
+.flyer > *:not(svg){position:relative}
+.f-title{font-family:var(--display); font-weight:850; font-stretch:92%; font-size:17px; line-height:1.05; text-transform:uppercase; margin:0 0 10px; text-wrap:balance}
+.f-list{list-style:none; margin:0 0 10px; padding:0; display:flex; flex-direction:column; gap:4px; font-size:10.5px; line-height:1.3}
+.f-list li{padding-left:12px; position:relative}
+.f-list li::before{content:""; position:absolute; left:0; top:.45em; width:6px; height:6px; border:1.5px solid #fff; border-radius:1px}
+.f-hl{background:#fff; color:var(--flyer); font-weight:600; font-size:10.5px; line-height:1.3; padding:7px 8px; border-radius:4px; margin-bottom:auto}
+.f-visual{border:1px dashed rgba(255,255,255,.55); border-radius:4px; padding:6px 7px; font:500 9px/1.35 var(--mono); letter-spacing:.02em; margin:10px 0 8px; opacity:.92}
+.f-foot{font:500 8.5px/1.3 var(--mono); letter-spacing:.03em; border-top:1px solid rgba(255,255,255,.35); padding-top:6px; opacity:.9}
+
+/* Notas */
+.notes{padding-block:34px 56px}
+.notes h2{font-family:var(--display); font-weight:800; font-stretch:110%; font-size:22px; margin:0 0 12px; text-transform:uppercase}
+.notes ul{margin:0; padding-left:18px; max-width:72ch; display:grid; gap:8px}
+.flyer-img{display:block; width:100%; max-width:200px; border-radius:10px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(10,25,55,.55); line-height:0}
+.flyer-img img{width:100%; height:auto; display:block}
+.flyer-img:focus-visible{outline:2px solid var(--brand-ink); outline-offset:3px}
+.canva{font:600 12.5px/1 var(--body); color:#fff; background:var(--brand); text-decoration:none; padding:10px 12px; border-radius:4px; align-self:stretch; text-align:center}
+.canva:hover,.canva:focus-visible{background:var(--flyer-deep); outline:none}
+.foot{font:500 12px/1.4 var(--mono); color:var(--muted); padding-block:0 40px}
+
+@media (max-width:720px){
+  .reel{grid-template-columns:1fr}
+  .flyer-col{border-left:0; border-top:1px solid var(--line)}
+  .flyer{max-width:220px}
+  .part{grid-template-columns:1fr; gap:2px}
+  .monthnav .hint{display:none}
+  .script{padding:18px 16px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+
+<header class="cover">
+  <svg viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="none" stroke="#fff" stroke-width="1.4">
+      <path d="M0 300 C200 240 380 360 600 300 S1000 230 1200 290"/>
+      <path d="M0 320 C200 260 380 380 600 320 S1000 250 1200 310"/>
+      <path d="M0 340 C200 280 380 400 600 340 S1000 270 1200 330"/>
+      <path d="M0 360 C200 300 380 420 600 360 S1000 290 1200 350"/>
+      <path d="M0 380 C200 320 380 440 600 380 S1000 310 1200 370"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="eyebrow">Logbelts · Contenido para redes · Temporada de césped</div>
+    <h1>Reels de noviembre y diciembre</h1>
+    <p>16 guiones para grabar (8 por mes), cada uno con el texto del flyer de historia que lo acompaña. Los guiones son lo que se dice a cámara o en off; los flyers se arman en Canva con la marca.</p>
+    <div class="facts">
+      <span><b>VIDEOS</b>Alan y Gastón</span>
+      <span><b>DURACIÓN</b>30–45 s</span>
+      <span><b>FLYER</b>Historia 1080×1920</span>
+      <span><b>PIE</b>WhatsApp 11 6446-4684 · www.logbelts.com</span>
+    </div>
+  </div>
+</header>
+
+<nav class="monthnav" aria-label="Meses">
+  <div class="wrap">
+    <a href="#noviembre">Noviembre</a>
+    <a href="#diciembre">Diciembre</a>
+    <a href="#notas">Notas</a>
+    <span class="hint">8 reels + 8 flyers por mes</span>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section class="month" id="noviembre">
+    <div class="month-head"><h2>Noviembre</h2><span>Videos Alan y Gastón · Temporada de césped a pleno: más horas y más calor</span></div>
+    <div data-month="nov"></div>
+  </section>
+  <section class="month" id="diciembre">
+    <div class="month-head"><h2>Diciembre</h2><span>Videos Alan y Gastón · Calor fuerte, mucho uso y vacaciones</span></div>
+    <div data-month="dic"></div>
+  </section>
+  <section class="notes" id="notas">
+    <h2>Antes de grabar</h2>
+    <ul>
+      <li>Los números (12,6 V de la batería, cada cuánto cambiar el aceite, el manillar para usar cuchilla) son valores generales: conviene que los confirme el equipo técnico de Logbelts.</li>
+      <li>El reel de las vacaciones (diciembre 8) conviene publicarlo a mitad de mes, antes de que la gente salga.</li>
+      <li>Los 16 reels son contenido de valor, sin venta directa: todos sirven para publicidad paga.</li>
+    </ul>
+  </section>
+  <div class="foot">Logbelts · Repuestos para desmalezadoras, minitractores y motosierras</div>
+</main>
+
+<script>
+const REELS = {
+ "nov": [
+  {
+   "t": "El bombín que no carga",
+   "tag": "Desmalezadora",
+   "hook": "Apretás el bombín una y otra vez y no se llena de nafta. Tiene arreglo, y es barato.",
+   "body": "El bombín es esa burbujita transparente del carburador. Sirve para purgar el aire y mandar nafta antes de arrancar. Con el sol y la nafta, el plástico se endurece y se fisura. Si está rajado, chupa aire en vez de nafta, y la máquina cuesta horrores para arrancar. Mirá también las dos mangueritas que salen del bombín: si están cuarteadas, pasa lo mismo. Cambiar el bombín son cinco minutos. Y un tip: apretalo hasta que lo veas lleno de nafta, sin burbujas. No hace falta apretarlo veinte veces.",
+   "close": "Si el bombín no se llena, no insistas: cambialo.",
+   "f": {
+    "title": "¿Tu bombín no carga?",
+    "list": [
+     "Rajado o duro → se cambia",
+     "Mangueritas cuarteadas → se cambian",
+     "Lleno y sin burbujas → listo"
+    ],
+    "hl": "5 minutos de arreglo",
+    "visual": "Recorte del bombín con sus dos mangueras"
+   }
+  },
+  {
+   "t": "Se recalienta en verano",
+   "tag": "Desmalezadora",
+   "hook": "Trabaja bien diez minutos, después pierde fuerza y se apaga. Con este calor, fijate acá.",
+   "body": "El motor de la desmalezadora se enfría con aire. Alrededor del cilindro tiene unas aletas que largan el calor. Cuando se llenan de pasto, polvo y aceite, el aire no circula y el motor se recalienta. Primero pierde fuerza, después se apaga, y si seguís forzándolo, se funde. Sacá la tapa del motor y limpiá las aletas con un pincel o un cepillo. Aprovechá para revisar la toma de aire del volante, que también se tapa. En pleno verano, hacelo cada pocas semanas.",
+   "close": "Motor limpio, motor frío.",
+   "f": {
+    "title": "¿Se apaga cuando calienta?",
+    "list": [
+     "Aletas del cilindro tapadas",
+     "Toma de aire del volante sucia",
+     "Se limpia con pincel o cepillo"
+    ],
+    "hl": "En verano, revisalas cada pocas semanas",
+    "visual": "Recorte del cilindro con aletas"
+   }
+  },
+  {
+   "t": "¿Tanza o cuchilla?",
+   "tag": "Desmalezadora",
+   "hook": "Si le pasás tanza a una maleza gruesa, perdés tiempo y tanza. Para eso existe la cuchilla.",
+   "body": "La tanza es para el pasto, los bordes y las esquinas. Cuando aparecen yuyos duros, pajonales o ramitas finas, la herramienta es la cuchilla de 3 puntas o el disco. Cortan de una sola pasada y no se gastan como la tanza. Eso sí: la cuchilla tiene sus reglas. Va con el protector que corresponde, se usa con arnés y manillar, y nunca cerca de piedras, alambres o gente. Y no todas las desmalezadoras aceptan cuchilla: fijate que la tuya sea de tubo recto y tenga la potencia para moverla.",
+   "close": "Tanza para el pasto, cuchilla para la maleza.",
+   "f": {
+    "title": "¿Tanza o cuchilla?",
+    "list": [
+     "TANZA → pasto, bordes, esquinas",
+     "CUCHILLA → yuyos duros, pajonal, ramas finas"
+    ],
+    "hl": "Cuchilla siempre con arnés y protector",
+    "visual": "Recorte del cabezal y de la cuchilla de 3 puntas, enfrentados"
+   }
+  },
+  {
+   "t": "Clic, clic, y no arranca",
+   "tag": "Minitractor",
+   "hook": "Girás la llave del minitractor, hace clic y no arranca. Antes de pensar en el burro de arranque, mirá la batería.",
+   "body": "La mayoría de las veces, ese clic es batería baja. Una batería cargada marca unos 12,6 volts con el motor apagado. Si da menos de 12,4, hay que cargarla. Revisá también los bornes: si tienen polvo blanco o verde, están sulfatados y no pasa bien la corriente. Se limpian con un cepillo y agua con bicarbonato. Si la cargás y a los pocos días vuelve a estar baja, ya cumplió su vida útil. En general, una batería de minitractor dura entre 3 y 4 temporadas.",
+   "close": "Batería cargada y bornes limpios: arranca al primer intento.",
+   "f": {
+    "title": "¿Hace clic y no arranca?",
+    "list": [
+     "12,6 V → cargada",
+     "Menos de 12,4 V → a cargar",
+     "Bornes sulfatados → a limpiar"
+    ],
+    "hl": "Una batería dura unas 3 o 4 temporadas",
+    "visual": "Batería con los bornes marcados"
+   }
+  },
+  {
+   "t": "Golpeás el cabezal y no sale tanza",
+   "tag": "Desmalezadora",
+   "hook": "Golpeás el cabezal contra el piso y no sale ni un centímetro de tanza. Te cuento por qué.",
+   "body": "Hay tres causas. Uno: la tanza está enredada o se pegó en el carrete, porque se cargó floja o cruzada. Se carga tirante, con las vueltas prolijas y en el sentido de la flecha. Dos: el resorte del cabezal se venció y ya no empuja el carrete. Tres: la tapa de golpeo, la parte que toca el piso, está gastada y ya no libera el carrete. Resorte y tapa se consiguen por separado. Y si el cabezal entero está gastado o fisurado, conviene cambiarlo completo.",
+   "close": "Tanza bien cargada y cabezal sano: golpe y sale.",
+   "f": {
+    "title": "¿No sale la tanza?",
+    "list": [
+     "Carga cruzada o floja",
+     "Resorte vencido",
+     "Tapa de golpeo gastada"
+    ],
+    "hl": "Cargala tirante y en el sentido de la flecha",
+    "visual": "Cabezal desarmado (carrete, resorte, tapa)"
+   }
+  },
+  {
+   "t": "Tiene nafta, tiene chispa, pero no tiene fuerza",
+   "tag": "Desmalezadora",
+   "hook": "Arranca, acelera, pero no tiene fuerza para cortar. Muchas veces el problema está en la salida.",
+   "body": "El silenciador tiene una rejilla chiquita, el arrestachispas, que evita que salgan chispas. Con el tiempo se tapa de carbón, sobre todo si la mezcla lleva mucho aceite. Si el motor no puede largar los gases, se ahoga y pierde fuerza. Sacá la rejilla y limpiala con un cepillo de alambre. Si está rota o muy tapada, se cambia. Y si se te tapa seguido, revisá la proporción de la mezcla: probablemente le estás poniendo aceite de más.",
+   "close": "Si el motor no respira, no rinde.",
+   "f": {
+    "title": "¿Sin fuerza? Mirá el silenciador",
+    "list": [
+     "Rejilla arrestachispas tapada de carbón",
+     "Se limpia con cepillo de alambre",
+     "Rota → se cambia"
+    ],
+    "hl": "Si se tapa seguido, sobra aceite en la mezcla",
+    "visual": "Recorte del silenciador y la rejilla"
+   }
+  },
+  {
+   "t": "El tensor que nadie mira",
+   "tag": "Minitractor",
+   "hook": "Cambiaste la correa del minitractor y al tiempo patina otra vez. El problema puede no ser la correa.",
+   "body": "La correa trabaja tirante gracias al tensor, una polea con un resorte que la mantiene firme. Si el resorte se estira, la correa queda floja y patina aunque sea nueva. Y si el rodamiento de la polea está gastado, vas a escuchar un zumbido o un chirrido que no para. Con la máquina apagada, girá cada polea con la mano: tiene que girar suave, sin ruido y sin juego. Si alguna raspa o tiene juego, se cambia. Una correa nueva con un tensor vencido dura la mitad.",
+   "close": "Correa nueva, tensor sano.",
+   "f": {
+    "title": "Correa nueva que patina = tensor",
+    "list": [
+     "Resorte estirado",
+     "Polea con ruido o juego",
+     "Se prueba girándola con la mano"
+    ],
+    "hl": "Una correa nueva con tensor vencido dura la mitad",
+    "visual": "Recorte de la polea tensora con resorte"
+   }
+  },
+  {
+   "t": "No acelera a fondo",
+   "tag": "Desmalezadora",
+   "hook": "Apretás el gatillo hasta el fondo y la desmalezadora no pasa de media máquina. Revisá el cable.",
+   "body": "Entre el gatillo y el carburador hay un cable de acelerador. Con el uso, se estira o se reseca adentro de la funda. Entonces, aunque aprietes todo, no abre del todo la mariposa del carburador. Primero fijate en el carburador si al apretar el gatillo la palanca llega al tope. Si no llega, el cable se puede regular. Si está deshilachado o duro, se cambia. Y si el que se rompió es el gatillo o la traba, también se consigue por separado.",
+   "close": "Gatillo a fondo, motor a fondo.",
+   "f": {
+    "title": "¿No llega a fondo?",
+    "list": [
+     "Cable estirado → regular",
+     "Cable deshilachado o duro → cambiar",
+     "Gatillo o traba rota → se cambia sola"
+    ],
+    "hl": "Mirá si la palanca del carburador llega al tope",
+    "visual": "Recorte del gatillo con cable"
+   }
+  }
+ ],
+ "dic": [
+  {
+   "t": "La varilla que casi nadie saca",
+   "tag": "Minitractor",
+   "hook": "Tu minitractor tiene una varilla de aceite. ¿Cuándo fue la última vez que la sacaste?",
+   "body": "El motor del minitractor es de 4 tiempos, y el aceite va aparte, en el cárter. Antes de cada uso, con la máquina en llano y el motor frío, sacá la varilla, limpiala, metela y volvé a sacarla. El nivel tiene que quedar entre las dos marcas. Si el aceite está negro y espeso, ya no protege. Como regla general, se cambia una vez por temporada, o antes si trabajás muchas horas. El tipo de aceite y cada cuántas horas cambiarlo lo dice el manual de tu motor. Y no te pases de la marca: el exceso también hace daño.",
+   "close": "Diez segundos de varilla te ahorran un motor.",
+   "f": {
+    "title": "Leé la varilla",
+    "list": [
+     "En llano y con el motor frío",
+     "Entre las dos marcas",
+     "Negro y espeso → cambiar"
+    ],
+    "hl": "Ni de menos ni de más",
+    "visual": "Varilla con las marcas de mínimo y máximo"
+   }
+  },
+  {
+   "t": "Si vibra el tubo, mirá el eje",
+   "tag": "Desmalezadora",
+   "hook": "Tu desmalezadora vibra más que antes y hace un ruido metálico en el tubo. Adentro hay una pieza que pide atención.",
+   "body": "Por adentro del tubo pasa el eje de transmisión, que lleva el giro del motor hasta la cabeza angular. Va apoyado en bujes y, según el modelo, trabaja con grasa. Cuando los bujes se gastan o el eje se queda sin grasa, empieza a vibrar, hace ruido y calienta. Si lo dejás así, el eje se tuerce o se corta. Revisá que esté engrasado y que no tenga juego. Si está torcido o los bujes están comidos, se cambian.",
+   "close": "Tubo que vibra es tubo que avisa.",
+   "f": {
+    "title": "¿Vibra el tubo?",
+    "list": [
+     "Eje sin grasa",
+     "Bujes gastados",
+     "Eje torcido"
+    ],
+    "hl": "Si lo dejás, el eje se corta",
+    "visual": "Recorte del eje de transmisión"
+   }
+  },
+  {
+   "t": "No le saques el protector",
+   "tag": "Desmalezadora",
+   "hook": "Muchos le sacan el protector a la desmalezadora para ver mejor. Es un error, y no solo por seguridad.",
+   "body": "El protector frena las piedras y el pasto que salen despedidos, pero además tiene una cuchillita, el cortahilo, que corta la tanza al largo justo. Sin el protector, la tanza queda larga. El motor hace más fuerza, el embrague patina y todo se gasta antes. Si tu protector está roto o perdió el cortahilo, se consiguen por separado. Y para trabajar con cuchilla, va el protector que corresponde a la cuchilla.",
+   "close": "El protector cuida tus ojos y tu motor.",
+   "f": {
+    "title": "El protector trabaja",
+    "list": [
+     "Frena piedras y pasto",
+     "Su cortahilo deja la tanza al largo justo",
+     "Sin él, el motor y el embrague sufren"
+    ],
+    "hl": "Roto o sin cortahilo → se cambia",
+    "visual": "Recorte del protector con el cortahilo marcado"
+   }
+  },
+  {
+   "t": "Si te hormiguean las manos",
+   "tag": "Desmalezadora",
+   "hook": "Terminás de desmalezar y te hormiguean las manos. Eso no es normal.",
+   "body": "Entre el motor y el tubo, la desmalezadora tiene antivibratorios: resortes o gomas que absorben la vibración antes de que llegue a tus manos. Con el tiempo, las gomas se endurecen o se rompen y los resortes se vencen. Entonces toda la vibración te pega en las manos y los brazos, y además se aflojan tornillos y piezas. Revisalos: si ves gomas rajadas o flojas, se cambian. Son repuestos chicos, y trabajar varias horas se siente muy distinto.",
+   "close": "Menos vibración, más horas de trabajo.",
+   "f": {
+    "title": "¿Te hormiguean las manos?",
+    "list": [
+     "Gomas endurecidas o rajadas",
+     "Resortes vencidos",
+     "Tornillos que se aflojan"
+    ],
+    "hl": "Repuesto chico, gran diferencia",
+    "visual": "Recorte de los antivibratorios"
+   }
+  },
+  {
+   "t": "Ese ruido abajo de la plataforma",
+   "tag": "Minitractor",
+   "hook": "Tu minitractor hace un ruido de raspado abajo de la plataforma. Frená antes de que sea tarde.",
+   "body": "Cada cuchilla gira sobre un eje con rodamientos, el portacuchilla. Cuando los rodamientos se gastan, hace ruido, calienta y la cuchilla empieza a bailar. Probalo así: con el motor apagado y la bujía desconectada, agarrá la punta de la cuchilla con guantes y movela para arriba y para abajo. Si tiene juego, el portacuchilla está gastado. Si lo seguís usando, la cuchilla golpea la plataforma y el daño es mayor. Portacuchilla y rodamientos se cambian por separado.",
+   "close": "Cuchilla firme, corte limpio.",
+   "f": {
+    "title": "¿Tu cuchilla baila?",
+    "list": [
+     "Ruido de raspado",
+     "Juego al moverla con la mano",
+     "Portacuchilla y rodamientos gastados"
+    ],
+    "hl": "Siempre con motor apagado y bujía desconectada",
+    "visual": "Recorte del portacuchilla"
+   }
+  },
+  {
+   "t": "El bidón al sol",
+   "tag": "Motor 2T",
+   "hook": "¿Dejás el bidón de mezcla en la caja de la camioneta, al sol? Tu motor lo va a sentir.",
+   "body": "Con el calor, la nafta se evapora más rápido y pierde las partes que ayudan a arrancar. Si además está mezclada, se degrada antes. Por eso muchas máquinas arrancan mal en diciembre aunque todo esté bien. Guardá el bidón a la sombra, bien cerrado, y usá un bidón apto para combustible. Prepará solo la mezcla que vas a usar en una o dos semanas. Y con la máquina caliente, no cargues el tanque hasta el borde: dejá lugar para que la nafta se expanda.",
+   "close": "Mezcla a la sombra, motor feliz.",
+   "f": {
+    "title": "Tu mezcla no va al sol",
+    "list": [
+     "A la sombra y bien cerrado",
+     "Bidón apto para combustible",
+     "Solo lo que usás en 1 o 2 semanas"
+    ],
+    "hl": "No llenes el tanque hasta el borde con calor",
+    "visual": "Bidón de mezcla con ícono de sol tachado"
+   }
+  },
+  {
+   "t": "Mirá abajo de la plataforma",
+   "tag": "Minitractor",
+   "hook": "Dale vuelta y mirá abajo de la plataforma de tu minitractor. Si ves una capa verde, esto te interesa.",
+   "body": "El pasto que se pega abajo de la plataforma frena el aire que levanta el pasto y lo tira por la descarga. Entonces el corte queda desparejo, la descarga se tapa y las cuchillas hacen más fuerza. Además, la humedad del pasto oxida la chapa. Limpiala después de usarla, con el motor apagado y la bujía desconectada, raspando con una espátula de plástico. Evitá tirarle agua a presión directo a los rodamientos.",
+   "close": "Plataforma limpia, corte parejo.",
+   "f": {
+    "title": "¿Qué hay debajo de tu plataforma?",
+    "list": [
+     "Pasto pegado → corte desparejo",
+     "Descarga tapada",
+     "Humedad → óxido"
+    ],
+    "hl": "Espátula de plástico, nunca agua a presión en los rodamientos",
+    "visual": "Dibujo de línea del minitractor con la plataforma marcada"
+   }
+  },
+  {
+   "t": "Antes de irte de vacaciones",
+   "tag": "Mantenimiento",
+   "hook": "Te vas de vacaciones y tus máquinas se quedan quietas dos o tres semanas. Dejalas así.",
+   "body": "En la desmalezadora, vaciá el tanque y dejala andando hasta que se apague sola. Así no queda mezcla vieja en el carburador. Limpiá el filtro de aire y las aletas del motor. En el minitractor, cargá la batería y desconectá un borne para que no se descargue. Limpiá la plataforma y dejalo bajo techo. Y a la vuelta, antes de arrancar, revisá el aceite y la presión de las ruedas. Diez minutos antes de irte te ahorran un problema a la vuelta.",
+   "close": "Vos descansás y tus máquinas también.",
+   "f": {
+    "title": "Checklist antes de las vacaciones",
+    "list": [
+     "Desmalezadora: tanque vacío, filtro y aletas limpias",
+     "Minitractor: batería cargada, un borne desconectado",
+     "Plataforma limpia y bajo techo"
+    ],
+    "hl": "A la vuelta: aceite y ruedas",
+    "visual": "Íconos de desmalezadora y minitractor"
+   }
+  }
+ ]
+};
+
+const WAVES = '<svg class="waves" viewBox="0 0 200 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 C50 40 110 110 200 60 V220 H0Z" fill="#12305F"/><g fill="none" stroke="#ffffff" stroke-opacity=".28" stroke-width="1"><path d="M0 60 C50 30 110 100 200 50"/><path d="M0 80 C50 50 110 120 200 70"/><path d="M0 100 C50 70 110 140 200 90"/></g></svg>';
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const MES = {nov:"NOV", dic:"DIC"};
+
+for (const [key, list] of Object.entries(REELS)) {
+  const host = document.querySelector(`[data-month="${key}"]`);
+  host.innerHTML = list.map((r, i) => {
+    const n = String(i + 1).padStart(2, "0");
+    return `<article class="reel">
+      <div class="script">
+        <div class="reel-top"><span class="num">${MES[key]} · REEL ${n}</span><span class="tag">${esc(r.tag)}</span></div>
+        <h3>${esc(r.t)}</h3>
+        <dl style="margin:0;display:grid;gap:10px">
+          <div class="part hook"><dt>Gancho</dt><dd>${esc(r.hook)}</dd></div>
+          <div class="part"><dt>Guion</dt><dd>${esc(r.body)}</dd></div>
+          <div class="part close"><dt>Cierre</dt><dd>${esc(r.close)}</dd></div>
+        </dl>
+        <div class="actions"><button class="copy" type="button" id="copy-${key}-${n}" data-k="${key}" data-i="${i}">Copiar guion</button><span class="copied" aria-live="polite"></span></div>
+      </div>
+      <div class="flyer-col">
+        <div class="flyer-label"><span>Flyer · texto</span><span>1080×1920</span></div>
+        <div class="flyer" role="img" aria-label="Boceto de texto del flyer: ${esc(r.f.title)}">
+          ${WAVES}
+          <p class="f-title">${esc(r.f.title)}</p>
+          <ul class="f-list">${r.f.list.map(x => `<li>${esc(x)}</li>`).join("")}</ul>
+          <div class="f-hl">${esc(r.f.hl)}</div>
+          <div class="f-visual">VISUAL: ${esc(r.f.visual)}</div>
+          <div class="f-foot">WhatsApp 11 6446-4684<br>www.logbelts.com</div>
+        </div>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+document.addEventListener("click", e => {
+  const b = e.target.closest(".copy");
+  if (!b) return;
+  const r = REELS[b.dataset.k][+b.dataset.i];
+  const text = `${r.t}\n\nGANCHO: ${r.hook}\n\nGUION: ${r.body}\n\nCIERRE: ${r.close}`;
+  const msg = b.nextElementSibling;
+  const done = t => { msg.textContent = t; setTimeout(() => msg.textContent = "", 2200); };
+  try {
+    navigator.clipboard.writeText(text).then(() => done("Copiado"), () => fallback());
+  } catch { fallback(); }
+  function fallback(){
+    const dd = b.closest(".script").querySelector("dl");
+    const sel = getSelection(); const rg = document.createRange();
+    rg.selectNodeContents(dd); sel.removeAllRanges(); sel.addRange(rg);
+    done("Texto seleccionado: copialo con Ctrl+C");
+  }
+});
+</script>
+
+</body>
+</html>

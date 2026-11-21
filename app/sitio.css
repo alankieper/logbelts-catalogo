@@ -507,7 +507,7 @@
 .pieza-3d__respaldo { position: absolute; inset: 18%; width: 64%; height: 64%; color: rgba(143,176,255,.55); transition: opacity .5s ease; }
 .pieza-3d[data-estado='listo'] .pieza-3d__respaldo { opacity: 0; }
 @keyframes sitio-aparecer { from { opacity: 0; transform: scale(.96); } }
-@media (max-width: 900px) { .precision__grilla { grid-template-columns: 1fr; } .visor-3d { max-width: 360px; order: -1; } }
+@media (max-width: 900px) { .precision__grilla { grid-template-columns: 1fr; } .visor-3d { max-width: 360px; order: -1; } .visor-3d__tabs button { padding-inline: 6px; } }
 
 /* ---------- Catálogo dentro de la portada ---------- */
 .catalogo-portada { background: var(--suelo); scroll-margin-top: 80px; }

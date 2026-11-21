@@ -1,0 +1,1350 @@
+{
+ "fecha": "2026-09-17-23-40",
+ "carpeta": "C:\\Users\\Administrador\\Downloads\\fotos-catalogo",
+ "importadas": [
+  {
+   "codigo": "2101001",
+   "nombre": "Walbro 9 x 2,8mm Walbro 9 x 2,8 mm",
+   "archivo": "2101001.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2101001.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2101002",
+   "nombre": "Zama 16,5 x 3,5mm Zama 16,5 x 3,5 mm 4 TIEMPOS",
+   "archivo": "2101002.webp",
+   "original": "1000x1000",
+   "final": "818x818",
+   "antes": "2101002.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2101003",
+   "nombre": "Valvula Check Walbro WYJ",
+   "archivo": "2101003.webp",
+   "original": "1101x851",
+   "final": "1000x1000",
+   "antes": "2101003.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2101004",
+   "nombre": "Valvula Venteo Echo 131300 56430",
+   "archivo": "2101004.jpg",
+   "original": "1107x1106",
+   "final": "817x817",
+   "antes": "2101004.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2101100",
+   "nombre": "Brida Admisión Desmalezadoras Chinas 33 cc",
+   "archivo": "2101100.png",
+   "original": "1200x1200",
+   "final": "918x918",
+   "antes": "2101100.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102128",
+   "nombre": "Tipo Zama Husqvarna",
+   "archivo": "2102128.jpg",
+   "original": "1000x1000",
+   "final": "1000x1000",
+   "antes": "2102128.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102143",
+   "nombre": "Carburador",
+   "archivo": "2102143.jpg",
+   "original": "1024x1024",
+   "final": "952x952",
+   "antes": "2102143.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102223",
+   "nombre": "Tipo Zama Husqvarna 223 Us",
+   "archivo": "2102223.jpg",
+   "original": "1000x1000",
+   "final": "1000x1000",
+   "antes": "2102223.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102703",
+   "nombre": "Tipo TK Shindaiwa B530 CARBUF",
+   "archivo": "2102703.webp",
+   "original": "1200x896",
+   "final": "1000x1000",
+   "antes": "2102703.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102825",
+   "nombre": "Kit Junta Y Diafragma Carburador",
+   "archivo": "2102825.jpg",
+   "original": "684x777",
+   "final": "803x803",
+   "antes": "2102825.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102827",
+   "nombre": "Tipo Zama C1Q K73C Echo SAM 4300 07 21 101 7",
+   "archivo": "2102827.webp",
+   "original": "1198x1198",
+   "final": "1000x1000",
+   "antes": "2102827.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102828",
+   "nombre": "Tipo Walbro Echo SRAM 4605 ADORES 2",
+   "archivo": "2102828.jpg",
+   "original": "800x800",
+   "final": "817x817",
+   "antes": "2102828.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102829",
+   "nombre": "TipoZama Echo SRM 2305 DESMALEZADORAS",
+   "archivo": "2102829.jpg",
+   "original": "1151x1200",
+   "final": "1000x1000",
+   "antes": "2102829.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102839",
+   "nombre": "Carburador",
+   "archivo": "2102839.jpg",
+   "original": "960x960",
+   "final": "1000x1000",
+   "antes": "2102839.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102844",
+   "nombre": "Carburador",
+   "archivo": "2102844.jpg",
+   "original": "1000x1000",
+   "final": "750x750",
+   "antes": "2102844.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102855",
+   "nombre": "Carburador",
+   "archivo": "2102855.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2102855.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102875",
+   "nombre": "Tipo Zama C1U K52 Echo SRM2100/GT2000",
+   "archivo": "2102875.webp",
+   "original": "995x995",
+   "final": "1000x1000",
+   "antes": "2102875.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102880",
+   "nombre": "Tipo Zama SRM GT 22",
+   "archivo": "2102880.webp",
+   "original": "666x702",
+   "final": "715x715",
+   "antes": "2102880.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103004",
+   "nombre": "Kit Cilindro y Piston Chinas 52cc 1E44F 44mm",
+   "archivo": "2103004.webp",
+   "original": "634x634",
+   "final": "650x650",
+   "antes": "2103004.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103010",
+   "nombre": "Kit Cilindro Y Pistón",
+   "archivo": "2103010.webp",
+   "original": "964x906",
+   "final": "998x998",
+   "antes": "2103010.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103012",
+   "nombre": "Kit Cilindro Y Pistón",
+   "archivo": "2103012.jpg",
+   "original": "1188x1198",
+   "final": "1000x1000",
+   "antes": "2103012.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103013",
+   "nombre": "Kit Cilindro y Pistón Stihl FS 85",
+   "archivo": "2103013.jpg",
+   "original": "994x969",
+   "final": "1000x1000",
+   "antes": "2103013.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103014",
+   "nombre": "Kit Cilindro y Pistón Stihl FS 120",
+   "archivo": "2103014.jpg",
+   "original": "1200x1192",
+   "final": "1000x1000",
+   "antes": "2103014.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103021",
+   "nombre": "Kit de cilindros — Husqvarna",
+   "archivo": "2103021.jpg",
+   "original": "1196x1000",
+   "final": "1000x1000",
+   "antes": "2103021.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103022",
+   "nombre": "Kit Cilindro y Pistón Husqvarna 143R",
+   "archivo": "2103022.jpg",
+   "original": "1196x1037",
+   "final": "1000x1000",
+   "antes": "2103022.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103023",
+   "nombre": "Kit Cilindro Y Pistón Block",
+   "archivo": "2103023.png",
+   "original": "1080x1080",
+   "final": "867x867",
+   "antes": "2103023.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103031",
+   "nombre": "Kit Cilindro y Pistón Echo SRM 4605",
+   "archivo": "2103031.webp",
+   "original": "1024x1024",
+   "final": "1000x1000",
+   "antes": "2103031.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103199",
+   "nombre": "Escape Chinas 26cc",
+   "archivo": "2103199.jpg",
+   "original": "500x500",
+   "final": "440x440",
+   "antes": "2103199.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103200",
+   "nombre": "Escape Chinas 33cc",
+   "archivo": "2103200.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2103200.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103203",
+   "nombre": "Escape",
+   "archivo": "2103203.webp",
+   "original": "1197x1197",
+   "final": "1000x1000",
+   "antes": "2103203.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103206",
+   "nombre": "Escape",
+   "archivo": "2103206.jpg",
+   "original": "1500x1500",
+   "final": "1000x1000",
+   "antes": "2103206.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103207",
+   "nombre": "Tubo De Escape",
+   "archivo": "2103207.jpg",
+   "original": "722x600",
+   "final": "663x663",
+   "antes": "2103207.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103208",
+   "nombre": "Escape",
+   "archivo": "2103208.webp",
+   "original": "1140x1140",
+   "final": "1000x1000",
+   "antes": "2103208.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103210",
+   "nombre": "Brida De Admisión",
+   "archivo": "2103210.webp",
+   "original": "975x1087",
+   "final": "1000x1000",
+   "antes": "2103210.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2105020",
+   "nombre": "Aros de Piston Chinas 26cc 33 1.2 MM",
+   "archivo": "2105020.jpg",
+   "original": "1200x782",
+   "final": "1000x1000",
+   "antes": "2105020.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107110",
+   "nombre": "Filtro Aire Espuma Desmalezadoras 26/33/43/52 cc",
+   "archivo": "2107110.webp",
+   "original": "1099x1099",
+   "final": "920x920",
+   "antes": "2107110.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107111",
+   "nombre": "Filtro Aire Espuma Desmalezadoras 43/52 cc",
+   "archivo": "2107111.webp",
+   "original": "784x784",
+   "final": "555x555",
+   "antes": "2107111.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107121",
+   "nombre": "Cubre Filtro de Aire TL43 TL52",
+   "archivo": "2107121-2.webp",
+   "original": "1200x958",
+   "final": "1000x1000",
+   "antes": "2107121.jpg",
+   "descartadas": [
+    "2107121.webp"
+   ]
+  },
+  {
+   "codigo": "2107122",
+   "nombre": "Cubre Filtro de Aire TL43 TL53",
+   "archivo": "2107122.webp",
+   "original": "1081x1081",
+   "final": "1000x1000",
+   "antes": "2107122.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107123",
+   "nombre": "Cubre Filtro De Aire",
+   "archivo": "2107123.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2107123.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107128",
+   "nombre": "Cobertor De Filtro De Aire",
+   "archivo": "2107128.jpg",
+   "original": "1100x1422",
+   "final": "640x640",
+   "antes": "2107128.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107136",
+   "nombre": "Filtrera Completa",
+   "archivo": "2107136.jpg",
+   "original": "500x500",
+   "final": "568x568",
+   "antes": "2107136.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107138",
+   "nombre": "Filtrera Completa",
+   "archivo": "2107138.jpg",
+   "original": "1000x1000",
+   "final": "1000x1000",
+   "antes": "2107138.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107139",
+   "nombre": "Filtrera De Aire Esponja",
+   "archivo": "2107139.jpg",
+   "original": "1024x1024",
+   "final": "774x774",
+   "antes": "2107139.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107140",
+   "nombre": "Caja Filtrera Completa",
+   "archivo": "2107140.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2107140.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109013",
+   "nombre": "Echo SRM-2300 Oleo Mac",
+   "archivo": "2109013.webp",
+   "original": "980x980",
+   "final": "1000x1000",
+   "antes": "2109013.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109017",
+   "nombre": "Echo SRM-3550 Shibaura SD 23/26/35/45",
+   "archivo": "2109017.webp",
+   "original": "1174x949",
+   "final": "1000x1000",
+   "antes": "2109017.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109055",
+   "nombre": "Stihl FS-38/55/100",
+   "archivo": "2109055.webp",
+   "original": "722x722",
+   "final": "741x741",
+   "antes": "2109055.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109061",
+   "nombre": "Echo SRM-4300",
+   "archivo": "2109061.webp",
+   "original": "1071x1071",
+   "final": "1000x1000",
+   "antes": "2109061.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109088",
+   "nombre": "Stihl BG-56/86",
+   "archivo": "2109088.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2109088.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109092",
+   "nombre": "Stihl HS-45 / FS-310",
+   "archivo": "2109092.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2109092.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109095",
+   "nombre": "Stihl FS-90",
+   "archivo": "2109095.jpg",
+   "original": "1296x972",
+   "final": "973x973",
+   "antes": "2109095.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109098",
+   "nombre": "Stihl FS-450",
+   "archivo": "2109098.webp",
+   "original": "959x959",
+   "final": "986x986",
+   "antes": "2109098.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109206",
+   "nombre": "Husqvarna 132 Echo RMA HB 212",
+   "archivo": "2109206.jpg",
+   "original": "1200x908",
+   "final": "1000x1000",
+   "antes": "2109206.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109214",
+   "nombre": "Wacker BS-45/52, Bing 33",
+   "archivo": "2109214.webp",
+   "original": "1200x717",
+   "final": "1000x1000",
+   "antes": "2109214.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109218",
+   "nombre": "Mitsubishi T180/200/240 Carburador Nikki",
+   "archivo": "2109218.jpg",
+   "original": "2560x1921",
+   "final": "1000x1000",
+   "antes": "2109218.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110001",
+   "nombre": "Junta Base Cilindro Chinas 26cc",
+   "archivo": "2110001.webp",
+   "original": "718x600",
+   "final": "743x743",
+   "antes": "2110001.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110002",
+   "nombre": "Junta Base Carburador Chinas 26cc",
+   "archivo": "2110002.jpg",
+   "original": "1000x1000",
+   "final": "1000x1000",
+   "antes": "2110002.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110003",
+   "nombre": "Junta Admision Chinas 26cc",
+   "archivo": "2110003.webp",
+   "original": "625x450",
+   "final": "644x644",
+   "antes": "2110003.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110004",
+   "nombre": "Junta Carter Chinas 26cc",
+   "archivo": "2110004.jpg",
+   "original": "894x948",
+   "final": "1000x1000",
+   "antes": "2110004.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110005",
+   "nombre": "Junta Escape Chinas 26cc",
+   "archivo": "2110005.webp",
+   "original": "458x458",
+   "final": "475x475",
+   "antes": "2110005.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110006",
+   "nombre": "Junta Base Cilindro Chinas 33cc",
+   "archivo": "2110006.webp",
+   "original": "909x1000",
+   "final": "1000x1000",
+   "antes": "2110006.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110007",
+   "nombre": "Junta Base Carburador Chinas 33cc",
+   "archivo": "2110007.webp",
+   "original": "933x933",
+   "final": "964x964",
+   "antes": "2110007.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110008",
+   "nombre": "Junta Admision Chinas 33cc",
+   "archivo": "2110008.webp",
+   "original": "637x637",
+   "final": "598x598",
+   "antes": "2110008.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110009",
+   "nombre": "Junta Carter Chinas 33cc",
+   "archivo": "2110009.webp",
+   "original": "1200x933",
+   "final": "980x980",
+   "antes": "2110009.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110010",
+   "nombre": "Junta Escape Chinas 33cc",
+   "archivo": "2110010.jpg",
+   "original": "1173x1173",
+   "final": "1000x1000",
+   "antes": "2110010.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110011",
+   "nombre": "DESURIFUIUN Junta Base Cilindro Chinas 43/52cc",
+   "archivo": "2110011.jpg",
+   "original": "1164x1200",
+   "final": "1000x1000",
+   "antes": "2110011.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110012",
+   "nombre": "Junta Base Carburador Chinas 43/52cc",
+   "archivo": "2110012.webp",
+   "original": "500x500",
+   "final": "357x357",
+   "antes": "2110012.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110013",
+   "nombre": "Junta Admision Chinas 43/52cc",
+   "archivo": "2110013.jpg",
+   "original": "1774x1160",
+   "final": "894x894",
+   "antes": "2110013.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110014",
+   "nombre": "Junta Carter Chinas 43/52cc",
+   "archivo": "2110014.webp",
+   "original": "1116x1200",
+   "final": "1000x1000",
+   "antes": "2110014.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110015",
+   "nombre": "Junta Escape Chinas 43/52cc",
+   "archivo": "2110015.webp",
+   "original": "492x834",
+   "final": "858x858",
+   "antes": "2110015.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110016",
+   "nombre": "Junta De Admisión",
+   "archivo": "2110016.webp",
+   "original": "921x1043",
+   "final": "952x952",
+   "antes": "2110016.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110025",
+   "nombre": "Junta Base De Cilindro",
+   "archivo": "2110025.webp",
+   "original": "998x893",
+   "final": "1000x1000",
+   "antes": "2110025.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110026",
+   "nombre": "Junta Base De Carburador",
+   "archivo": "2110026.webp",
+   "original": "1046x755",
+   "final": "1000x1000",
+   "antes": "2110026.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112062",
+   "nombre": "Embrague Chinas 33/43/52cc",
+   "archivo": "2112062.webp",
+   "original": "1024x1024",
+   "final": "1000x1000",
+   "antes": "2112062.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112063",
+   "nombre": "Resorte Embrague Chinas 26cc",
+   "archivo": "2112063.jpg",
+   "original": "1080x1080",
+   "final": "1000x1000",
+   "antes": "2112063.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112064",
+   "nombre": "Resorte Embrague Chinas a 33/43/52cc",
+   "archivo": "2112064.jpg",
+   "original": "1178x910",
+   "final": "1000x1000",
+   "antes": "2112064.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112065",
+   "nombre": "Campana Embrague Chinas 26cc",
+   "archivo": "2112065.jpg",
+   "original": "1166x1200",
+   "final": "1000x1000",
+   "antes": "2112065.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112066",
+   "nombre": "7 Estrias",
+   "archivo": "2112066.jpg",
+   "original": "800x800",
+   "final": "511x511",
+   "antes": "2112066.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112068",
+   "nombre": "Caja de Embrague Completa 9 Estrias",
+   "archivo": "2112068.jpg",
+   "original": "1080x1350",
+   "final": "682x682",
+   "antes": "2112068.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112084",
+   "nombre": "Embrague",
+   "archivo": "2112084.webp",
+   "original": "1024x1024",
+   "final": "1000x1000",
+   "antes": "2112084.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112098",
+   "nombre": "Tornillo De Escape",
+   "archivo": "2112098.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": "2112098.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112100",
+   "nombre": "Resorte De Embrague",
+   "archivo": "2112100.jpg",
+   "original": "881x1109",
+   "final": "1000x1000",
+   "antes": "2112100.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112101",
+   "nombre": "Embrague",
+   "archivo": "2112101.png",
+   "original": "1080x1080",
+   "final": "756x756",
+   "antes": "2112101.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112102",
+   "nombre": "Tornillo Campana De Embrague",
+   "archivo": "2112102.jpg",
+   "original": "1050x862",
+   "final": "1000x1000",
+   "antes": "2112102.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112103",
+   "nombre": "Caja De Embrague",
+   "archivo": "2112103.webp",
+   "original": "688x1000",
+   "final": "1000x1000",
+   "antes": "2112103.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112105",
+   "nombre": "Campana De Embrague Resorte De Embrague",
+   "archivo": "2112105.png",
+   "original": "1200x1200",
+   "final": "444x444",
+   "antes": "2112105.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112109",
+   "nombre": "Caja De Embrague",
+   "archivo": "2112109.webp",
+   "original": "1200x1179",
+   "final": "1000x1000",
+   "antes": "2112109.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112110",
+   "nombre": "Caja De Embrague",
+   "archivo": "2112110.webp",
+   "original": "770x673",
+   "final": "795x795",
+   "antes": "2112110.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2113034",
+   "nombre": "Caja de Engranaje ST-FS 450/480",
+   "archivo": "2113034.jpg",
+   "original": "1200x854",
+   "final": "1000x1000",
+   "antes": "2113034.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2113055",
+   "nombre": "Puntera De Cabezal",
+   "archivo": "2113055.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2113055.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2113056",
+   "nombre": "Kit Arandelas Caja De Engranaje",
+   "archivo": "2113056.jpg",
+   "original": "1602x1602",
+   "final": "1000x1000",
+   "antes": "2113056.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2113057",
+   "nombre": "Tuerca De Caja De Engranaje M10X1.0",
+   "archivo": "2113057.webp",
+   "original": "662x689",
+   "final": "713x713",
+   "antes": "2113057.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2113064",
+   "nombre": "Tuerca De Cuchilla",
+   "archivo": "2113064.webp",
+   "original": "1280x1280",
+   "final": "1000x1000",
+   "antes": "2113064.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2113146",
+   "nombre": "Arandela (1) Caja De Engranaje",
+   "archivo": "2113146.webp",
+   "original": "962x962",
+   "final": "994x994",
+   "antes": "2113146.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114060",
+   "nombre": "Tanque de Combustible Chinas 26cc",
+   "archivo": "2114060.jpg",
+   "original": "1200x693",
+   "final": "1000x1000",
+   "antes": "2114060.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114072",
+   "nombre": "Tanque completo Chinas 33cc",
+   "archivo": "2114072.webp",
+   "original": "1024x1024",
+   "final": "1000x1000",
+   "antes": "2114072.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114073",
+   "nombre": "Tanque De Combustible Tapa Tanque Comb Manguera Comb Doble",
+   "archivo": "2114073.jpg",
+   "original": "1458x716",
+   "final": "1000x1000",
+   "antes": "2114073.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114080",
+   "nombre": "Tapa tanque combustible Chinas",
+   "archivo": "2114080.webp",
+   "original": "635x635",
+   "final": "611x611",
+   "antes": "2114080.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114083",
+   "nombre": "Tapa De Combustible Soporte De Tanque",
+   "archivo": "2114083.webp",
+   "original": "1157x861",
+   "final": "1000x1000",
+   "antes": "2114083.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114085",
+   "nombre": "Tapa Tanque Comb",
+   "archivo": "2114085.jpg",
+   "original": "1038x1200",
+   "final": "1000x1000",
+   "antes": "2114085.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114086",
+   "nombre": "Tanque De Combustible",
+   "archivo": "2114086.jpg",
+   "original": "978x1200",
+   "final": "1000x1000",
+   "antes": "2114086.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114088",
+   "nombre": "Tapa Tanque Comb",
+   "archivo": "2114088.webp",
+   "original": "898x898",
+   "final": "930x930",
+   "antes": "2114088.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114089",
+   "nombre": "Tanque De Combustible",
+   "archivo": "2114089.webp",
+   "original": "1051x1200",
+   "final": "1000x1000",
+   "antes": "2114089.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114091",
+   "nombre": "Tanque Chinas 43/52cc",
+   "archivo": "2114091.jpg",
+   "original": "1200x964",
+   "final": "1000x1000",
+   "antes": "2114091.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115063",
+   "nombre": "Sistema De Arranque",
+   "archivo": "2115063.jpg",
+   "original": "1001x1001",
+   "final": "1000x1000",
+   "antes": "2115063.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115066",
+   "nombre": "Sistema De Arranque",
+   "archivo": "2115066.webp",
+   "original": "1191x987",
+   "final": "1000x1000",
+   "antes": "2115066.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115067",
+   "nombre": "Sistema De Arranque",
+   "archivo": "2115067.webp",
+   "original": "1024x1024",
+   "final": "1000x1000",
+   "antes": "2115067.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115074",
+   "nombre": "Sistema De Arranque",
+   "archivo": "2115074.webp",
+   "original": "981x689",
+   "final": "1000x1000",
+   "antes": "2115074.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115101",
+   "nombre": "Tapas de arranque — Maquinas",
+   "archivo": "2115101.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2115101.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115102",
+   "nombre": "Tapas de arranque — Maquinas",
+   "archivo": "2115102.webp",
+   "original": "1199x1199",
+   "final": "1000x1000",
+   "antes": "2115102.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115105",
+   "nombre": "Tapas de arranque — Maquinas",
+   "archivo": "2115105.jpg",
+   "original": "1200x888",
+   "final": "1000x1000",
+   "antes": "2115105.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2122151",
+   "nombre": "Jaula de agujas piston Je Chinas 33cc",
+   "archivo": "2122151.webp",
+   "original": "950x950",
+   "final": "952x952",
+   "antes": "2122151.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2202837",
+   "nombre": "REPL Oleo Mac Sparta 36 38",
+   "archivo": "2202837.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2202837.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2203019",
+   "nombre": "Silenciador de escape Stihl MS381/382",
+   "archivo": "2203019.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2204049",
+   "nombre": "Conjunto de pistón, 44 mm Stihl MS251",
+   "archivo": "2204049.webp",
+   "original": "522x522",
+   "final": "563x563",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2204051",
+   "nombre": "Conjunto de pistón, 47 mm Stihl MS291",
+   "archivo": "2204051.webp",
+   "original": "1070x1070",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2207019",
+   "nombre": "Esponja de fi ltro de aire Stihl MS162/172",
+   "archivo": "2207019.webp",
+   "original": "1026x1026",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2207020",
+   "nombre": "Conjunto de fi ltro de aire Stihl MS162/172",
+   "archivo": "2207020.webp",
+   "original": "1193x1193",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2210010",
+   "nombre": "Junta Escape Chinas 4500/5200 45cc 52cc",
+   "archivo": "2210010.webp",
+   "original": "875x875",
+   "final": "903x903",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2214026",
+   "nombre": "Tapa Tanque Combustible Chinas 3800",
+   "archivo": "2214026.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2214026.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2214045",
+   "nombre": "Tapa Tanque Aceite",
+   "archivo": "2214045.jpg",
+   "original": "1200x719",
+   "final": "1000x1000",
+   "antes": "2214045.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2215002",
+   "nombre": "Tapa Arranque Chinas 4500/5200",
+   "archivo": "2215002.jpg",
+   "original": "1024x1024",
+   "final": "713x713",
+   "antes": "2215002.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2222014",
+   "nombre": "Jaula de agujas Cigüeñal Chinas 3800",
+   "archivo": "2222014.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2224038",
+   "nombre": "Bobina de encendido Husqvarna 55/61/254/262/266/268",
+   "archivo": "2224038.jpg",
+   "original": "1601x1601",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2302867",
+   "nombre": "Zama c1q-w37 Husqvarna 125B 125BX 125BVX",
+   "archivo": "2302867.jpg",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2304001",
+   "nombre": "Conjunto de pistón, 34 mm Stihl BG86",
+   "archivo": "2304001.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2315106",
+   "nombre": "Conjunto de arranque (manija de… Stihl BG86",
+   "archivo": "2315106.jpg",
+   "original": "1602x1602",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2906010",
+   "nombre": "Walbro 125 127, Diam. 5,6X15 Echo/HQV/Shindaiwa",
+   "archivo": "2906010.jpg",
+   "original": "900x900",
+   "final": "870x870",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2906011",
+   "nombre": "Walbro 125 528, Diam. 5,3X18 Echo/HQV/Shindaiwa",
+   "archivo": "2906011.jpg",
+   "original": "900x900",
+   "final": "870x870",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2921031",
+   "nombre": "Manguera de combustible negra 4 mm…",
+   "archivo": "2921031.webp",
+   "original": "287x287",
+   "final": "320x320",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2921032",
+   "nombre": "Manguera de combustible negra 6 mm…",
+   "archivo": "2921032.webp",
+   "original": "1024x1024",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "3102640",
+   "nombre": "Torreta completa 187292 AYP 38''/42'/48 /54",
+   "archivo": "3102640.webp",
+   "original": "992x992",
+   "final": "1000x1000",
+   "antes": "3102640.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106034",
+   "nombre": "Resorte De Plataforma 732 04287",
+   "archivo": "3106034.webp",
+   "original": "1024x1024",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "3204125",
+   "nombre": "Cable de reemplazo 532176556",
+   "archivo": "3204125.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "3206131",
+   "nombre": "Rueda Toro 115-4695",
+   "archivo": "3206131.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4301562",
+   "nombre": "Briggs & Stratton 594581",
+   "archivo": "4301562.jpg",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4302181",
+   "nombre": "Tecumseh 632795 632750 632772",
+   "archivo": "4302181.webp",
+   "original": "765x765",
+   "final": "791x791",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4302936",
+   "nombre": "Huayi MC1619BE",
+   "archivo": "4302936.webp",
+   "original": "973x845",
+   "final": "999x999",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4307653",
+   "nombre": "Oem 4238 141 0300 / 4238 140 1800 /… Stihl TS410 TS420 TS500i",
+   "archivo": "4307653.webp",
+   "original": "900x732",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4307654",
+   "nombre": "Oem 4147 141 0300 Stihl FS460",
+   "archivo": "4307654.jpg",
+   "original": "600x600",
+   "final": "650x650",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4307655",
+   "nombre": "Oem 4137-124-2800 Stihl FS85",
+   "archivo": "4307655.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4307679",
+   "nombre": "Stihl FS38 FS45 FS46 FS55",
+   "archivo": "4307679.jpg",
+   "original": "393x508",
+   "final": "249x249",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4307685",
+   "nombre": "Filtro de aire con pre fi ltro GXV160…",
+   "archivo": "4307685.webp",
+   "original": "874x874",
+   "final": "903x903",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4310486",
+   "nombre": "Briggs & Stratton 799587",
+   "archivo": "4310486.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4310487",
+   "nombre": "Briggs & Stratton 692218",
+   "archivo": "4310487.jpg",
+   "original": "1000x1000",
+   "final": "882x882",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4310488",
+   "nombre": "Kohler 20-041-13-S",
+   "archivo": "4310488.jpg",
+   "original": "2000x2000",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4315285",
+   "nombre": "Conjunto de arranque (con cuerda) Honda GX25",
+   "archivo": "4315285.webp",
+   "original": "1024x1194",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4320583",
+   "nombre": "Biela GX420",
+   "archivo": "4320583.png",
+   "original": "1200x1200",
+   "final": "917x917",
+   "antes": null,
+   "descartadas": []
+  }
+ ],
+ "omitidas": []
+}

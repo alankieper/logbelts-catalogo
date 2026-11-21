@@ -1,0 +1,1159 @@
+{
+ "fecha": "2026-09-18-03-04",
+ "carpeta": "C:\\Users\\Administrador\\Downloads\\fotos-catalogo",
+ "importadas": [
+  {
+   "codigo": "3103525",
+   "nombre": "HQV 532180505 YTH1842 5833897 01 LTH1842",
+   "archivo": "3103525.jpg",
+   "original": "400x392",
+   "final": "407x407",
+   "antes": "3103525.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3103570",
+   "nombre": "603273K HUSTLER 48 /54",
+   "archivo": "3103570.jpg",
+   "original": "800x800",
+   "final": "761x761",
+   "antes": "3103570.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3103571",
+   "nombre": "601325K HUSTLER",
+   "archivo": "3103571.webp",
+   "original": "800x566",
+   "final": "901x901",
+   "antes": "3103571.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3104001",
+   "nombre": "Cables",
+   "archivo": "3104001.webp",
+   "original": "870x855",
+   "final": "895x895",
+   "antes": "3104001.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3104005",
+   "nombre": "Cable Plataforma Acción de cuchillas Acción de cuchillas",
+   "archivo": "3104005.webp",
+   "original": "1200x895",
+   "final": "1000x1000",
+   "antes": "3104005.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3104111",
+   "nombre": "Acción de cuchillas MTD 946-04173",
+   "archivo": "3104111.webp",
+   "original": "1200x770",
+   "final": "1000x1000",
+   "antes": "3104111.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3104114",
+   "nombre": "Cables",
+   "archivo": "3104114.webp",
+   "original": "645x1027",
+   "final": "1000x1000",
+   "antes": "3104114.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3104117",
+   "nombre": "Cable Acelerador",
+   "archivo": "3104117.webp",
+   "original": "1194x1194",
+   "final": "1000x1000",
+   "antes": "3104117.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3104201",
+   "nombre": "Acción de cuchillas Cable Acelerador Acción de cuchillas MTD 946-05124A",
+   "archivo": "3104201.webp",
+   "original": "1200x418",
+   "final": "1000x1000",
+   "antes": "3104201.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106011",
+   "nombre": "MTD 734 04155 Diam. 5 127mm",
+   "archivo": "3106011.jpg",
+   "original": "760x560",
+   "final": "567x567",
+   "antes": "3106011.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106013",
+   "nombre": "MTD 734 0973 Diam. 5 127mm",
+   "archivo": "3106013.png",
+   "original": "800x800",
+   "final": "892x892",
+   "antes": "3106013.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106014",
+   "nombre": "MTD 938 0373 Largo 1 1/2 38.1mm",
+   "archivo": "3106014.webp",
+   "original": "1200x800",
+   "final": "1000x1000",
+   "antes": "3106014.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106017",
+   "nombre": "1 603299 Toro 103 3168 Diam. 5 2.75",
+   "archivo": "3106017.jpg",
+   "original": "1500x1500",
+   "final": "1000x1000",
+   "antes": "3106017.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106020",
+   "nombre": "Bulon Rueda Plataf. 5321339 57 87 mm",
+   "archivo": "3106020.webp",
+   "original": "720x742",
+   "final": "767x767",
+   "antes": "3106020.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106022",
+   "nombre": "MTD 732 04629 Plataforma Largo 127mm",
+   "archivo": "3106022.jpg",
+   "original": "1200x1600",
+   "final": "1000x1000",
+   "antes": "3106022.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106023",
+   "nombre": "MTD 932 0594 Plataforma Largo 197mm",
+   "archivo": "3106023.jpg",
+   "original": "1000x1000",
+   "final": "1000x1000",
+   "antes": "3106023.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106027",
+   "nombre": "MTD 732 04927 Plataforma Largo 216mm",
+   "archivo": "3106027.webp",
+   "original": "921x1126",
+   "final": "1000x1000",
+   "antes": "3106027.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106035",
+   "nombre": "Resorte De Resorte Plataforma 732-0626 732-04287",
+   "archivo": "3106035.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "3106035.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106036",
+   "nombre": "Resorte 932-0384",
+   "archivo": "3106036.webp",
+   "original": "950x738",
+   "final": "982x982",
+   "antes": "3106036.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106037",
+   "nombre": "Resorte 169022",
+   "archivo": "3106037.webp",
+   "original": "996x996",
+   "final": "1000x1000",
+   "antes": "3106037.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3106038",
+   "nombre": "Resorte 732-0459",
+   "archivo": "3106038.webp",
+   "original": "1028x732",
+   "final": "1000x1000",
+   "antes": "3106038.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3120965",
+   "nombre": "Kit De Tuerca Y Tuerca Torreta Bulones",
+   "archivo": "3120965.webp",
+   "original": "1136x1136",
+   "final": "1000x1000",
+   "antes": "3120965.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3204113",
+   "nombre": "Cables",
+   "archivo": "3204113.jpg",
+   "original": "1600x1200",
+   "final": "1000x1000",
+   "antes": "3204113.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3204117",
+   "nombre": "Cables",
+   "archivo": "3204117.jpg",
+   "original": "320x320",
+   "final": "311x311",
+   "antes": "3204117.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3204128",
+   "nombre": "Cable De Freno HUSQ",
+   "archivo": "3204128.jpg",
+   "original": "600x600",
+   "final": "680x680",
+   "antes": "3204128.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3204129",
+   "nombre": "Cable De Freno HUSQ",
+   "archivo": "3204129.webp",
+   "original": "1200x570",
+   "final": "1000x1000",
+   "antes": "3204129.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3204130",
+   "nombre": "Cable De Freno HUSQ",
+   "archivo": "3204130.webp",
+   "original": "1200x738",
+   "final": "1000x1000",
+   "antes": "3204130.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3204131",
+   "nombre": "Cable De Freno Cable De Freno Cable De Freno Cable De Freno HUSQ",
+   "archivo": "3204131.jpg",
+   "original": "600x600",
+   "final": "618x618",
+   "antes": "3204131.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3204139",
+   "nombre": "Cable De Transmisión MTD",
+   "archivo": "3204139.webp",
+   "original": "755x553",
+   "final": "780x780",
+   "antes": "3204139.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4102300",
+   "nombre": "Tipo Honda",
+   "archivo": "4102300.webp",
+   "original": "934x1001",
+   "final": "1000x1000",
+   "antes": "4102300.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4102301",
+   "nombre": "Tipo Honda",
+   "archivo": "4102301.webp",
+   "original": "1015x1015",
+   "final": "1000x1000",
+   "antes": "4102301.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4102302",
+   "nombre": "Tipo Honda",
+   "archivo": "4102302.webp",
+   "original": "800x800",
+   "final": "909x909",
+   "antes": "4102302.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4301495",
+   "nombre": "Kit Reparacion B8S 699521",
+   "archivo": "4301495.webp",
+   "original": "852x905",
+   "final": "935x935",
+   "antes": "4301495.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4301496",
+   "nombre": "DE MOTOR 4 TIEMPOS BRIGGS & STRATTON",
+   "archivo": "4301496.webp",
+   "original": "1200x1176",
+   "final": "1000x1000",
+   "antes": "4301496.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4301497",
+   "nombre": "Kit Reparacion B8S 498260 493762 492495 IR 4",
+   "archivo": "4301497.webp",
+   "original": "1200x913",
+   "final": "1000x1000",
+   "antes": "4301497.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4301498",
+   "nombre": "Kit Reparación Briggs 8 Stratton 498261 8 STRATTON",
+   "archivo": "4301498.webp",
+   "original": "1064x831",
+   "final": "1000x1000",
+   "antes": "4301498.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4301499",
+   "nombre": "Kit Reparación Briggs Stratton 590589 500e",
+   "archivo": "4301499.webp",
+   "original": "1138x982",
+   "final": "1000x1000",
+   "antes": "4301499.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4301551",
+   "nombre": "Briggs & Stratton 394681 Briggs & Stratton 394681 18 hp vertical horizon",
+   "archivo": "4301551.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "4301551.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4301552",
+   "nombre": "Briggs & Stratton 715075 Briggs & Stratton 715075 4,5/5,5/6 hp 4,5/5,5/6",
+   "archivo": "4301552.webp",
+   "original": "985x669",
+   "final": "1000x1000",
+   "antes": "4301552.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4301554",
+   "nombre": "Briggs & Stratton 398188 Briggs & Stratton 398188 3,5/5/6 hp 3,5/5/6 HP",
+   "archivo": "4301554.webp",
+   "original": "1200x1147",
+   "final": "1000x1000",
+   "antes": "4301554.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4301555",
+   "nombre": "Briggs & Stratton 398188 Briggs & Stratton 398188 8/12 hp vertical 8/12 ",
+   "archivo": "4301555.webp",
+   "original": "600x527",
+   "final": "543x543",
+   "antes": "4301555.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4301556",
+   "nombre": "Honda 16011-ZA0-931 GX340/390 (20,3 x 4,2 mm)",
+   "archivo": "4301556.webp",
+   "original": "1200x924",
+   "final": "1000x1000",
+   "antes": "4301556.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4301557",
+   "nombre": "Honda 16011-ZEO-005 G100/150/200 (12 x 3,5 mm)",
+   "archivo": "4301557.jpg",
+   "original": "1001x1001",
+   "final": "776x776",
+   "antes": "4301557.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302106",
+   "nombre": "BRIGGS & STRATTON",
+   "archivo": "4302106.webp",
+   "original": "1052x1200",
+   "final": "1000x1000",
+   "antes": "4302106.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302107",
+   "nombre": "Briggs 8 Stratton 591109",
+   "archivo": "4302107.webp",
+   "original": "916x1048",
+   "final": "1000x1000",
+   "antes": "4302107.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302110",
+   "nombre": "Briggs 8 Stratton 699807 699815",
+   "archivo": "4302110.webp",
+   "original": "787x999",
+   "final": "1000x1000",
+   "antes": "4302110.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302111",
+   "nombre": "Briggs 8 Stratton 799868",
+   "archivo": "4302111.webp",
+   "original": "932x954",
+   "final": "986x986",
+   "antes": "4302111.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302112",
+   "nombre": "Briggs 8 Stratton 798653 1",
+   "archivo": "4302112.webp",
+   "original": "1036x1200",
+   "final": "1000x1000",
+   "antes": "4302112.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302902",
+   "nombre": "Carburador GX160 GX200 GX210",
+   "archivo": "4302902.webp",
+   "original": "1200x1194",
+   "final": "1000x1000",
+   "antes": "4302902.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302905",
+   "nombre": "Carburador",
+   "archivo": "4302905.webp",
+   "original": "448x498",
+   "final": "516x516",
+   "antes": "4302905.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302910",
+   "nombre": "Carburador GX390",
+   "archivo": "4302910.webp",
+   "original": "1001x1001",
+   "final": "1000x1000",
+   "antes": "4302910.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302914",
+   "nombre": "Carburador",
+   "archivo": "4302914.webp",
+   "original": "1200x1151",
+   "final": "1000x1000",
+   "antes": "4302914.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302915",
+   "nombre": "Carburador",
+   "archivo": "4302915.webp",
+   "original": "958x988",
+   "final": "997x997",
+   "antes": "4302915.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302916",
+   "nombre": "Carburador Carburador Carburador Carburador",
+   "archivo": "4302916.webp",
+   "original": "1200x1042",
+   "final": "1000x1000",
+   "antes": "4302916.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302919",
+   "nombre": "Tipo Loncin 1P56F o",
+   "archivo": "4302919.webp",
+   "original": "1115x1100",
+   "final": "1000x1000",
+   "antes": "4302919.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302967",
+   "nombre": "BRIGGS & STRATTON",
+   "archivo": "4302967.webp",
+   "original": "765x1000",
+   "final": "1000x1000",
+   "antes": "4302967.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4303116",
+   "nombre": "Conjunto Tapa de Cilindro GX270",
+   "archivo": "4303116.webp",
+   "original": "1300x1300",
+   "final": "1000x1000",
+   "antes": "4303116.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4303117",
+   "nombre": "Escape con Codo Escape con Codo Codo de Escape Conjunto Tapa Conjunto Ta",
+   "archivo": "4303117.webp",
+   "original": "1300x1300",
+   "final": "1000x1000",
+   "antes": "4303117.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4303118",
+   "nombre": "Conjunto Tapa de Cilindro GX420",
+   "archivo": "4303118.webp",
+   "original": "1078x1200",
+   "final": "1000x1000",
+   "antes": "4303118.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4303119",
+   "nombre": "Conjunto Tapa de Cilindro GX440",
+   "archivo": "4303119.jpg",
+   "original": "1601x1601",
+   "final": "1000x1000",
+   "antes": "4303119.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4303120",
+   "nombre": "Conjunto Tapa de Cilindro Completa GX160",
+   "archivo": "4303120.jpg",
+   "original": "1100x1100",
+   "final": "1000x1000",
+   "antes": "4303120.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4303121",
+   "nombre": "Conjunto Tapa de Cilindro Completa GX200",
+   "archivo": "4303121.webp",
+   "original": "964x984",
+   "final": "1000x1000",
+   "antes": "4303121.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4304055",
+   "nombre": "Kit de Pistón GX160",
+   "archivo": "4304055.jpg",
+   "original": "1001x1001",
+   "final": "875x875",
+   "antes": "4304055.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4304056",
+   "nombre": "Kit Pistón y Aros Gx390",
+   "archivo": "4304056.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "4304056.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4304057",
+   "nombre": "Kit de Pistón GX200",
+   "archivo": "4304057.jpg",
+   "original": "1200x900",
+   "final": "1000x1000",
+   "antes": "4304057.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4305041",
+   "nombre": "Conjunto Aros de Pistón GX390",
+   "archivo": "4305041.webp",
+   "original": "1150x594",
+   "final": "1000x1000",
+   "antes": "4305041.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307220",
+   "nombre": "Filtro De Aire Espuma B&S 4,5 hp",
+   "archivo": "4307220.jpg",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "4307220.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307221",
+   "nombre": "Filtro De Aire Espuma B&S 3,5 hp",
+   "archivo": "4307221.webp",
+   "original": "1024x1024",
+   "final": "1000x1000",
+   "antes": "4307221.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307227",
+   "nombre": "Filtro de Aire Papel Caja Filtro de Aire Caja Filtro de Aire GX270 Compl",
+   "archivo": "4307227.webp",
+   "original": "889x1200",
+   "final": "1000x1000",
+   "antes": "4307227.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307228",
+   "nombre": "Caja Filtro de Aire Completa (esponja) GX160 GX200",
+   "archivo": "4307228.webp",
+   "original": "877x1200",
+   "final": "1000x1000",
+   "antes": "4307228.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307230",
+   "nombre": "Caja Filtro de Aire Completa (aceite) GX160 GX200",
+   "archivo": "4307230.webp",
+   "original": "372x500",
+   "final": "517x517",
+   "antes": "4307230.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307231",
+   "nombre": "Filtro de Aire (esponja) GX160 GX200",
+   "archivo": "4307231.webp",
+   "original": "1200x900",
+   "final": "1000x1000",
+   "antes": "4307231.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307232",
+   "nombre": "Filtro de Combustible GX160 GX200",
+   "archivo": "4307232.webp",
+   "original": "1024x1024",
+   "final": "1000x1000",
+   "antes": "4307232.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307233",
+   "nombre": "Caja Filtro de Aire Completa (aceite)",
+   "archivo": "4307233.jpg",
+   "original": "786x1012",
+   "final": "1000x1000",
+   "antes": "4307233.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307326",
+   "nombre": "Filtro de Aire Papel GX270",
+   "archivo": "4307326.webp",
+   "original": "1136x1145",
+   "final": "1000x1000",
+   "antes": "4307326.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307327",
+   "nombre": "Filtro de Aire (papel) GX160 GX200",
+   "archivo": "4307327.webp",
+   "original": "1200x1091",
+   "final": "1000x1000",
+   "antes": "4307327.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307328",
+   "nombre": "Filtro de Aire Papel GX390",
+   "archivo": "4307328.jpg",
+   "original": "1000x1000",
+   "final": "951x951",
+   "antes": "4307328.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307600",
+   "nombre": "Filtro De Aire Espuma B&S 5 / 6.5 hp 491588",
+   "archivo": "4307600.webp",
+   "original": "1200x716",
+   "final": "1000x1000",
+   "antes": "4307600.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307601",
+   "nombre": "Filtro De Aire B&S 6.5 hp",
+   "archivo": "4307601.webp",
+   "original": "1041x641",
+   "final": "1000x1000",
+   "antes": "4307601.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307611",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307611.webp",
+   "original": "941x951",
+   "final": "983x983",
+   "antes": "4307611.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307612",
+   "nombre": "Filtro De Aire Oregon",
+   "archivo": "4307612.webp",
+   "original": "1056x862",
+   "final": "1000x1000",
+   "antes": "4307612.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307613",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307613.jpg",
+   "original": "1800x1800",
+   "final": "1000x1000",
+   "antes": "4307613.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307615",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307615.jpg",
+   "original": "1500x1392",
+   "final": "1000x1000",
+   "antes": "4307615.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307616",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307616.jpg",
+   "original": "300x300",
+   "final": "306x306",
+   "antes": "4307616.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307617",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307617.webp",
+   "original": "1200x1093",
+   "final": "1000x1000",
+   "antes": "4307617.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307618",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307618.webp",
+   "original": "824x539",
+   "final": "852x852",
+   "antes": "4307618.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307619",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307619.png",
+   "original": "1620x1620",
+   "final": "763x763",
+   "antes": "4307619.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307621",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307621.webp",
+   "original": "1200x1128",
+   "final": "1000x1000",
+   "antes": "4307621.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307622",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307622.webp",
+   "original": "1200x966",
+   "final": "1000x1000",
+   "antes": "4307622.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307623",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307623.webp",
+   "original": "1200x835",
+   "final": "1000x1000",
+   "antes": "4307623.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307624",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307624.webp",
+   "original": "926x1200",
+   "final": "1000x1000",
+   "antes": "4307624.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307625",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307625.jpg",
+   "original": "1601x1601",
+   "final": "1000x1000",
+   "antes": "4307625.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307626",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307626.webp",
+   "original": "1200x780",
+   "final": "1000x1000",
+   "antes": "4307626.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307627",
+   "nombre": "Filtro De Aire B&S 394018",
+   "archivo": "4307627.jpg",
+   "original": "2048x2048",
+   "final": "1000x1000",
+   "antes": "4307627.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307628",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307628.jpg",
+   "original": "1601x1601",
+   "final": "1000x1000",
+   "antes": "4307628.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307659",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307659.webp",
+   "original": "1197x990",
+   "final": "1000x1000",
+   "antes": "4307659.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307670",
+   "nombre": "Filtro De Aire",
+   "archivo": "4307670.webp",
+   "original": "1200x1194",
+   "final": "1000x1000",
+   "antes": "4307670.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4308141",
+   "nombre": "Filtro De Aceite Motor Chino 23hp",
+   "archivo": "4308141.jpg",
+   "original": "1400x1050",
+   "final": "1000x1000",
+   "antes": "4308141.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4308142",
+   "nombre": "Filtro De Aceite Kohler 1205001-s",
+   "archivo": "4308142.webp",
+   "original": "722x555",
+   "final": "747x747",
+   "antes": "4308142.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4308144",
+   "nombre": "Filtro De Aceite",
+   "archivo": "4308144.webp",
+   "original": "1047x1070",
+   "final": "1000x1000",
+   "antes": "4308144.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310391",
+   "nombre": "Juntas de motor",
+   "archivo": "4310391.jpg",
+   "original": "490x490",
+   "final": "365x365",
+   "antes": "4310391.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310393",
+   "nombre": "Briggs Stratton 691894 Admision",
+   "archivo": "4310393.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "4310393.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310394",
+   "nombre": "Briggs Stratton 692232 Carter",
+   "archivo": "4310394.webp",
+   "original": "625x594",
+   "final": "645x645",
+   "antes": "4310394.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310395",
+   "nombre": "Juntas de motor",
+   "archivo": "4310395.webp",
+   "original": "676x449",
+   "final": "700x700",
+   "antes": "4310395.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310396",
+   "nombre": "DESCRIPCIÓN: B&S",
+   "archivo": "4310396.webp",
+   "original": "504x504",
+   "final": "511x511",
+   "antes": "4310396.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310397",
+   "nombre": "DESCRIPCIÓN: B&S",
+   "archivo": "4310397.webp",
+   "original": "877x734",
+   "final": "907x907",
+   "antes": "4310397.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310398",
+   "nombre": "DESCRIPCIÓN: B&S",
+   "archivo": "4310398.jpg",
+   "original": "600x600",
+   "final": "645x645",
+   "antes": "4310398.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310400",
+   "nombre": "DESCRIPCIÓN: B&S",
+   "archivo": "4310400.jpg",
+   "original": "400x400",
+   "final": "451x451",
+   "antes": "4310400.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310401",
+   "nombre": "DESCRIPCIÓN: B&S",
+   "archivo": "4310401.jpg",
+   "original": "400x400",
+   "final": "451x451",
+   "antes": "4310401.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310402",
+   "nombre": "Kohler 24 041 52 Base Carburador Cub Cadet RZT/Enduro",
+   "archivo": "4310402.jpg",
+   "original": "225x225",
+   "final": "228x228",
+   "antes": "4310402.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310403",
+   "nombre": "Juntas de motor — Kohler",
+   "archivo": "4310403.jpg",
+   "original": "300x300",
+   "final": "245x245",
+   "antes": "4310403.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310405",
+   "nombre": "Junta de Carburador GX160 GX200",
+   "archivo": "4310405.webp",
+   "original": "958x958",
+   "final": "1000x1000",
+   "antes": "4310405.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310407",
+   "nombre": "Junta Filtro de Aire GX160 GX200",
+   "archivo": "4310407.webp",
+   "original": "1200x895",
+   "final": "1000x1000",
+   "antes": "4310407.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310409",
+   "nombre": "Junta Tapa de Válvulas GX160 GX200",
+   "archivo": "4310409.webp",
+   "original": "888x908",
+   "final": "938x938",
+   "antes": "4310409.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310410",
+   "nombre": "Junta de Carburador GX390",
+   "archivo": "4310410.webp",
+   "original": "1019x608",
+   "final": "1000x1000",
+   "antes": "4310410.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310411",
+   "nombre": "Junta de Filtro de Aire Junta de Filtro de Aire GX270 GX390",
+   "archivo": "4310411.webp",
+   "original": "744x1137",
+   "final": "1000x1000",
+   "antes": "4310411.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310412",
+   "nombre": "oNVIShp Base Filtro Aire Honda Chinos",
+   "archivo": "4310412.webp",
+   "original": "620x1009",
+   "final": "1000x1000",
+   "antes": "4310412.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310413",
+   "nombre": "Junta Base Filtro Generadores 13hp",
+   "archivo": "4310413.jpg",
+   "original": "1000x1000",
+   "final": "806x806",
+   "antes": "4310413.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310415",
+   "nombre": "Junta Tapa Válvula B8S 3,5 hp",
+   "archivo": "4310415.webp",
+   "original": "968x432",
+   "final": "1000x1000",
+   "antes": "4310415.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310417",
+   "nombre": "Junta Carter B8S 12 hp",
+   "archivo": "4310417.webp",
+   "original": "246x246",
+   "final": "253x253",
+   "antes": "4310417.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310418",
+   "nombre": "Junta de Carter GX160",
+   "archivo": "4310418.webp",
+   "original": "1031x761",
+   "final": "1000x1000",
+   "antes": "4310418.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310419",
+   "nombre": "Junta Carter BES 3,5 hp",
+   "archivo": "4310419.webp",
+   "original": "542x500",
+   "final": "553x553",
+   "antes": "4310419.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310426",
+   "nombre": "Junta Tapa de Inspección de Válvulas GX270 - GX390",
+   "archivo": "4310426.webp",
+   "original": "500x431",
+   "final": "517x517",
+   "antes": "4310426.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310427",
+   "nombre": "Junta de Escape Junta de Escape Triangular GX390 GX440 GX390 GX440",
+   "archivo": "4310427.jpg",
+   "original": "1024x1024",
+   "final": "1000x1000",
+   "antes": "4310427.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310428",
+   "nombre": "Junta de Escape GX390 - GX440",
+   "archivo": "4310428.jpg",
+   "original": "894x657",
+   "final": "617x617",
+   "antes": "4310428.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310429",
+   "nombre": "Junta Tapa Junta Tapa Junta Tapa de Cilindro de Cilindro de Cilindro GX4",
+   "archivo": "4310429.webp",
+   "original": "1048x1162",
+   "final": "1000x1000",
+   "antes": "4310429.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310432",
+   "nombre": "Junta Tapa de Cilindro GX420",
+   "archivo": "4310432.webp",
+   "original": "1048x1162",
+   "final": "1000x1000",
+   "antes": "4310432.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310433",
+   "nombre": "Junta Tapa de Cilindro GX440",
+   "archivo": "4310433.webp",
+   "original": "1048x1162",
+   "final": "1000x1000",
+   "antes": "4310433.jpg",
+   "descartadas": []
+  }
+ ],
+ "omitidas": []
+}

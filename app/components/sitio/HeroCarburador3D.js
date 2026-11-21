@@ -32,7 +32,9 @@ export default function HeroCarburador3D() {
       renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
       renderer.outputColorSpace = THREE.SRGBColorSpace;
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure = 0.9;
+      renderer.toneMappingExposure = 0.95;
+      renderer.shadowMap.enabled = true;
+      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
       renderer.domElement.setAttribute('aria-hidden', 'true');
 
       const escena = new THREE.Scene();
@@ -41,10 +43,21 @@ export default function HeroCarburador3D() {
       escena.add(new THREE.AmbientLight(0x8fb0ff, 0.3));
       const clave = new THREE.DirectionalLight(0xffffff, 2.4);
       clave.position.set(4, 6, 6);
+      // Sombras propias entre piezas (el carburador hecho en código las proyecta)
+      clave.castShadow = true;
+      clave.shadow.mapSize.set(1024, 1024);
+      Object.assign(clave.shadow.camera, { left: -3, right: 3, top: 3, bottom: -3, near: 1, far: 20 });
+      clave.shadow.camera.updateProjectionMatrix();
+      clave.shadow.bias = -0.0004;
+      clave.shadow.normalBias = 0.02;
       escena.add(clave);
-      const contra = new THREE.DirectionalLight(0x5b8cff, 2.6);
+      // Contraluz azul suave y relleno neutro para que el metal se lea como en Meshy
+      const contra = new THREE.DirectionalLight(0x5b8cff, 1.1);
       contra.position.set(-5, -1, -4);
       escena.add(contra);
+      const relleno = new THREE.DirectionalLight(0xffffff, 1.2);
+      relleno.position.set(-6, 3, 4);
+      escena.add(relleno);
 
       const camara = new THREE.PerspectiveCamera(30, 1, 0.1, 100);
       camara.position.set(0, 0.5, 9);
@@ -72,7 +85,7 @@ export default function HeroCarburador3D() {
       if (!modelo) {
         const { RoundedBoxGeometry } = await import('three/examples/jsm/geometries/RoundedBoxGeometry.js');
         const { construirCarburador } = await import('./modelos3d/carburador');
-        ({ grupo: modelo, recursos } = construirCarburador(THREE, RoundedBoxGeometry));
+        ({ grupo: modelo, recursos } = construirCarburador(THREE, RoundedBoxGeometry, { anisotropia: renderer.capabilities.getMaxAnisotropy() }));
       }
       if (cancelado) { recursos.forEach((x) => x.dispose()); renderer.dispose(); pmrem.dispose(); return; }
 

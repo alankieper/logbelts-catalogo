@@ -9,16 +9,43 @@
   <header class="cab">
     <div class="cab-fila">
       <h1><img src="iconos/icono-32.png" alt="" width="20" height="20"> Fotos del catálogo</h1>
-      <button type="button" class="btn-ayuda" id="btn-ayuda" aria-expanded="false" aria-controls="ayuda" title="Cómo se usa">?</button>
+      <div class="cab-botones">
+        <button type="button" class="btn-redondo" id="btn-cuenta" aria-expanded="false" aria-controls="cuenta" title="Conexión con la web">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="punto" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn-redondo" id="btn-ayuda" aria-expanded="false" aria-controls="ayuda" title="Cómo se usa">?</button>
+      </div>
     </div>
-    <div class="ayuda" id="ayuda" hidden>
+
+    <div class="desplegable" id="cuenta" hidden>
+      <label>Destino de las fotos (pestaña Página web)
+        <select id="destino">
+          <option value="nube">Subir a la web para aprobar (logbelts-web)</option>
+          <option value="pc">Descargar a la PC</option>
+        </select>
+      </label>
+      <div class="nube-login" id="nube-login" hidden>
+        <label>Contraseña del admin de logbelts-web
+          <input id="nube-pass" type="password" autocomplete="current-password">
+        </label>
+        <button type="button" id="nube-entrar" class="primario">Conectar</button>
+        <p class="nube-msg" id="nube-msg" role="status"></p>
+      </div>
+      <p class="nube-estado" id="nube-estado" hidden>● Conectado a logbelts-web · <button type="button" class="link" id="nube-salir">Desconectar</button></p>
+      <p class="nube-nota">El catálogo físico siempre guarda en la PC (Descargas\fotos-catalogo-fisico).</p>
+    </div>
+
+    <div class="desplegable ayuda" id="ayuda" hidden>
       <p><kbd>Alt</kbd> + clic sobre una foto la guarda para el producto actual en <strong id="carpeta">Descargas\fotos-catalogo</strong>.</p>
       <p>Con <kbd>Alt</kbd> apretado ves la medida de la foto antes de guardar (verde = buena, naranja = chica o repetida).</p>
       <p><kbd>Shift</kbd> + <kbd>Alt</kbd> + clic guarda aunque esa foto ya se haya usado para otro producto.</p>
       <p>Si Alt + clic no agarra la foto: clic derecho → <em>Guardar foto para el producto actual</em>.</p>
       <p>Al guardar, pasa al producto siguiente y abre su búsqueda con el buscador elegido abajo.</p>
       <p>Con la <strong>lupa</strong> buscás cualquier artículo del catálogo por código o nombre, aunque ya tenga foto.</p>
+      <p>El ícono de <strong>cuenta</strong> (arriba) conecta la extensión con la web: en verde, las fotos van a Admin → Fotos pendientes.</p>
     </div>
+
     <div class="pestanas" role="tablist" aria-label="Qué catálogo">
       <button type="button" role="tab" data-modo="web" aria-selected="true">Página web</button>
       <button type="button" role="tab" data-modo="fisico" aria-selected="false">Catálogo físico</button>
@@ -56,22 +83,6 @@
         <option value="no">No buscar solo</option>
       </select>
     </label>
-    <div class="nube ancho" id="nube">
-      <label>Destino de las fotos
-        <select id="destino">
-          <option value="nube">Subir a la web para aprobar (logbelts-web)</option>
-          <option value="pc">Descargar a la PC</option>
-        </select>
-      </label>
-      <div class="nube-login" id="nube-login" hidden>
-        <label>Contraseña del admin de logbelts-web
-          <input id="nube-pass" type="password" autocomplete="current-password">
-        </label>
-        <button type="button" id="nube-entrar" class="primario">Conectar</button>
-        <p class="nube-msg" id="nube-msg" role="status"></p>
-      </div>
-      <p class="nube-estado" id="nube-estado" hidden>● Conectado a logbelts-web · <button type="button" class="link" id="nube-salir">Desconectar</button></p>
-    </div>
   </section>
 
   <section class="tarjeta" id="tarjeta" aria-live="polite">
@@ -121,13 +132,14 @@
     <p>No quedan productos pendientes con este filtro.</p>
   </section>
 
-  <section class="lista" aria-label="Lista de productos">
+  <details class="lista" id="lista-det">
+    <summary>Lista de productos <span class="lista-cuenta" id="lista-cuenta"></span></summary>
     <label class="campo">Filtrar esta lista
       <input id="buscar" type="search" placeholder="Código o nombre (sólo pendientes)" autocomplete="off">
     </label>
     <ul id="lista"></ul>
     <p class="nota-lista" id="lista-nota"></p>
-  </section>
+  </details>
 
   <footer class="pie">
     <button type="button" id="exportar">Exportar registro (Excel)</button>

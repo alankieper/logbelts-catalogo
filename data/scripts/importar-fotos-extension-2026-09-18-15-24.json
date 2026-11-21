@@ -1,0 +1,988 @@
+{
+ "fecha": "2026-09-18-15-24",
+ "carpeta": "C:\\Users\\Administrador\\Downloads\\fotos-catalogo",
+ "importadas": [
+  {
+   "codigo": "2102701",
+   "nombre": "Carburador — Chinas",
+   "archivo": "2102701.jpg",
+   "original": "1602x1602",
+   "final": "1000x1000",
+   "antes": "2102701.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102702",
+   "nombre": "Carburador — Chinas",
+   "archivo": "2102702.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": "2102702.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102720",
+   "nombre": "Carburador — Chinas",
+   "archivo": "2102720.webp",
+   "original": "990x927",
+   "final": "1000x1000",
+   "antes": "2102720.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102810",
+   "nombre": "Carburador — Stihl",
+   "archivo": "2102810.jpg",
+   "original": "1000x1009",
+   "final": "1000x1000",
+   "antes": "2102810.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102811",
+   "nombre": "Carburador — Chinas",
+   "archivo": "2102811.webp",
+   "original": "755x657",
+   "final": "777x777",
+   "antes": "2102811.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102812",
+   "nombre": "Carburador — Chinas",
+   "archivo": "2102812.webp",
+   "original": "800x800",
+   "final": "841x841",
+   "antes": "2102812.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102813",
+   "nombre": "ECHO",
+   "archivo": "2102813.webp",
+   "original": "1193x888",
+   "final": "1000x1000",
+   "antes": "2102813.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102821",
+   "nombre": "Carburador — Chinas",
+   "archivo": "2102821.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2102821.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102822",
+   "nombre": "Carburador — Chinas",
+   "archivo": "2102822.webp",
+   "original": "1199x1199",
+   "final": "1000x1000",
+   "antes": "2102822.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102823",
+   "nombre": "Carburador — Chinas",
+   "archivo": "2102823.jpg",
+   "original": "1001x1001",
+   "final": "816x816",
+   "antes": "2102823.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102871",
+   "nombre": "HUSQVARNA",
+   "archivo": "2102871.webp",
+   "original": "762x541",
+   "final": "788x788",
+   "antes": "2102871.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102977",
+   "nombre": "]",
+   "archivo": "2102977.webp",
+   "original": "914x787",
+   "final": "919x919",
+   "antes": "2102977.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103189",
+   "nombre": "Conjunto de cilindro, 42 mm Oleo Mac 746",
+   "archivo": "2103189.webp",
+   "original": "896x985",
+   "final": "1000x1000",
+   "antes": "2103189.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103190",
+   "nombre": "Conjunto de cilindro, 40 mm Oleo Mac 740/SP40 Have 42/44",
+   "archivo": "2103190.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2103190.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103191",
+   "nombre": "Conjunto de cilindro, 40 mm Oleo Mac BCH40",
+   "archivo": "2103191.jpg",
+   "original": "1000x1000",
+   "final": "1000x1000",
+   "antes": "2103191.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103192",
+   "nombre": "Conjunto de cilindro, 40 mm Oleo Mac SP42/44/430",
+   "archivo": "2103192.webp",
+   "original": "881x881",
+   "final": "909x909",
+   "antes": "2103192.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103193",
+   "nombre": "Conjunto de cilindro, 32,2 mm Shindaiwa C230",
+   "archivo": "2103193.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": "2103193.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103198",
+   "nombre": "Silenciador de escape Stihl SR(BR)400/420",
+   "archivo": "2103198.webp",
+   "original": "1061x711",
+   "final": "1000x1000",
+   "antes": "2103198.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103205",
+   "nombre": "Escape",
+   "archivo": "2103205.webp",
+   "original": "1200x965",
+   "final": "1000x1000",
+   "antes": "2103205.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2104030",
+   "nombre": "Kit Pistón Y Aros",
+   "archivo": "2104030.webp",
+   "original": "787x772",
+   "final": "799x799",
+   "antes": "2104030.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2104033",
+   "nombre": "Kit de pistón",
+   "archivo": "2104033.webp",
+   "original": "1080x1117",
+   "final": "1000x1000",
+   "antes": "2104033.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107132",
+   "nombre": "Filtro De Aire",
+   "archivo": "2107132.webp",
+   "original": "1125x809",
+   "final": "1000x1000",
+   "antes": "2107132.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107133",
+   "nombre": "Cubre Filtro De Aire Filtro De Aire",
+   "archivo": "2107133.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2107133.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107134",
+   "nombre": "Filtro De Aire",
+   "archivo": "2107134.webp",
+   "original": "1081x851",
+   "final": "1000x1000",
+   "antes": "2107134.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107197",
+   "nombre": "Filtro de aire — Husqvarna",
+   "archivo": "2107197.jpg",
+   "original": "2400x1600",
+   "final": "1000x1000",
+   "antes": "2107197.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109093",
+   "nombre": "Stihl BR-500/550/600 Stihl 130R/310",
+   "archivo": "2109093.webp",
+   "original": "1188x1188",
+   "final": "1000x1000",
+   "antes": "2109093.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109221",
+   "nombre": "Juntas de carburador",
+   "archivo": "2109221.webp",
+   "original": "900x1018",
+   "final": "1000x1000",
+   "antes": "2109221.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109222",
+   "nombre": "Juntas de carburador",
+   "archivo": "2109222.webp",
+   "original": "1200x1091",
+   "final": "1000x1000",
+   "antes": "2109222.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109223",
+   "nombre": "Juntas de carburador",
+   "archivo": "2109223.webp",
+   "original": "908x580",
+   "final": "926x926",
+   "antes": "2109223.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2109224",
+   "nombre": "Juntas de carburador",
+   "archivo": "2109224.webp",
+   "original": "1000x756",
+   "final": "1000x1000",
+   "antes": "2109224.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110017",
+   "nombre": "Juntas de motor — Echo",
+   "archivo": "2110017.webp",
+   "original": "1200x953",
+   "final": "1000x1000",
+   "antes": "2110017.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110018",
+   "nombre": "STIHL",
+   "archivo": "2110018.webp",
+   "original": "950x706",
+   "final": "970x970",
+   "antes": "2110018.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110019",
+   "nombre": "Juntas de motor — Echo",
+   "archivo": "2110019.webp",
+   "original": "976x685",
+   "final": "1000x1000",
+   "antes": "2110019.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110020",
+   "nombre": "2110031 —",
+   "archivo": "2110020.webp",
+   "original": "1200x789",
+   "final": "1000x1000",
+   "antes": "2110020.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110021",
+   "nombre": "Juntas de motor — Echo",
+   "archivo": "2110021.webp",
+   "original": "1200x1073",
+   "final": "1000x1000",
+   "antes": "2110021.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110022",
+   "nombre": "Juntas de motor — Echo",
+   "archivo": "2110022.webp",
+   "original": "837x581",
+   "final": "865x865",
+   "antes": "2110022.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110023",
+   "nombre": "Juntas de motor — Echo",
+   "archivo": "2110023.webp",
+   "original": "910x726",
+   "final": "1000x1000",
+   "antes": "2110023.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110024",
+   "nombre": "Juntas de motor — Echo",
+   "archivo": "2110024.webp",
+   "original": "1199x645",
+   "final": "1000x1000",
+   "antes": "2110024.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110027",
+   "nombre": "Junta De Escape",
+   "archivo": "2110027.jpg",
+   "original": "1000x1000",
+   "final": "561x561",
+   "antes": "2110027.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110029",
+   "nombre": "Juntas de motor — Echo",
+   "archivo": "2110029.jpg",
+   "original": "2560x2560",
+   "final": "1000x1000",
+   "antes": "2110029.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110059",
+   "nombre": "Juntas de motor — Echo",
+   "archivo": "2110059.webp",
+   "original": "753x696",
+   "final": "777x777",
+   "antes": "2110059.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2110062",
+   "nombre": "Juntas de motor — Echo",
+   "archivo": "2110062.jpg",
+   "original": "4608x3456",
+   "final": "1000x1000",
+   "antes": "2110062.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112077",
+   "nombre": "Campana Embrague ST-FS160/220/280",
+   "archivo": "2112077.webp",
+   "original": "611x597",
+   "final": "632x632",
+   "antes": "2112077.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112078",
+   "nombre": "Campana De Embrague",
+   "archivo": "2112078.webp",
+   "original": "1068x934",
+   "final": "1000x1000",
+   "antes": "2112078.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112080",
+   "nombre": "Campana Embrague ST FS38/55",
+   "archivo": "2112080.jpg",
+   "original": "1602x1602",
+   "final": "1000x1000",
+   "antes": "2112080.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112081",
+   "nombre": "Campana Embrague FS120/200/250",
+   "archivo": "2112081.webp",
+   "original": "1093x1141",
+   "final": "1000x1000",
+   "antes": "2112081.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112086",
+   "nombre": "Embrague Resorte De Embrague Caja De Embrague",
+   "archivo": "2112086.webp",
+   "original": "945x931",
+   "final": "974x974",
+   "antes": "2112086.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112106",
+   "nombre": "Conjunto de embrague Stihl FS80/85",
+   "archivo": "2112106.webp",
+   "original": "1199x1124",
+   "final": "1000x1000",
+   "antes": "2112106.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112107",
+   "nombre": "Resorte de embrague Husqvarna 61/268/365/372",
+   "archivo": "2112107.jpg",
+   "original": "1000x800",
+   "final": "566x566",
+   "antes": "2112107.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2112108",
+   "nombre": "Campana de embrague Echo ECHO-SRM4605",
+   "archivo": "2112108.webp",
+   "original": "716x686",
+   "final": "733x733",
+   "antes": "2112108.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2113046",
+   "nombre": "Caja de engranajes FS120 4T Código Logbelts: Eje 50\"",
+   "archivo": "2113046.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2113046.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2113047",
+   "nombre": "Caja de engranajes FS120 nueva Código Logbelts: Eje 42\"",
+   "archivo": "2113047.webp",
+   "original": "499x499",
+   "final": "517x517",
+   "antes": "2113047.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2113061",
+   "nombre": "Kit de reparación, caja de… EC-SRM4605(4pcs)",
+   "archivo": "2113061.webp",
+   "original": "1198x743",
+   "final": "1000x1000",
+   "antes": "2113061.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2113062",
+   "nombre": "Caja de engranajes Husqvarna 125/128R EJES DE TRANSMISIÓN (NUEVA SUBSECC",
+   "archivo": "2113062.webp",
+   "original": "777x1200",
+   "final": "1000x1000",
+   "antes": "2113062.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2113063",
+   "nombre": "Caja de engranajes Oleo Mac 746/750/753/755",
+   "archivo": "2113063.webp",
+   "original": "1024x1024",
+   "final": "1000x1000",
+   "antes": "2113063.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114050",
+   "nombre": "Tanque de combustible / tapa",
+   "archivo": "2114050.webp",
+   "original": "602x481",
+   "final": "622x622",
+   "antes": "2114050.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114051",
+   "nombre": "Tanque de combustible / tapa",
+   "archivo": "2114051.webp",
+   "original": "956x810",
+   "final": "988x988",
+   "antes": "2114051.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114052",
+   "nombre": "Tanque de combustible / tapa",
+   "archivo": "2114052.jpg",
+   "original": "1000x1000",
+   "final": "886x886",
+   "antes": "2114052.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114053",
+   "nombre": "Tanque de combustible / tapa",
+   "archivo": "2114053.webp",
+   "original": "693x711",
+   "final": "735x735",
+   "antes": "2114053.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114054",
+   "nombre": "Tanque de combustible / tapa",
+   "archivo": "2114054.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2114054.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114082",
+   "nombre": "Tanque",
+   "archivo": "2114082.webp",
+   "original": "1093x1200",
+   "final": "1000x1000",
+   "antes": "2114082.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2114087",
+   "nombre": "Tapa Tanque De Combustible",
+   "archivo": "2114087.jpg",
+   "original": "542x426",
+   "final": "561x561",
+   "antes": "2114087.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115051",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115051.webp",
+   "original": "630x722",
+   "final": "747x747",
+   "antes": "2115051.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115052",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115052.jpg",
+   "original": "500x402",
+   "final": "551x551",
+   "antes": "2115052.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115053",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115053.webp",
+   "original": "1200x902",
+   "final": "1000x1000",
+   "antes": "2115053.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115054",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115054.webp",
+   "original": "1200x853",
+   "final": "1000x1000",
+   "antes": "2115054.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115055",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115055.webp",
+   "original": "1097x1006",
+   "final": "1000x1000",
+   "antes": "2115055.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115056",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115056.jpg",
+   "original": "1500x1500",
+   "final": "1000x1000",
+   "antes": "2115056.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115058",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115058.webp",
+   "original": "1200x1125",
+   "final": "1000x1000",
+   "antes": "2115058.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115059",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115059.jpg",
+   "original": "847x1200",
+   "final": "1000x1000",
+   "antes": "2115059.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115060",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115060.webp",
+   "original": "612x799",
+   "final": "825x825",
+   "antes": "2115060.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115061",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115061.webp",
+   "original": "1196x967",
+   "final": "1000x1000",
+   "antes": "2115061.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115062",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115062.webp",
+   "original": "1200x952",
+   "final": "1000x1000",
+   "antes": "2115062.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115064",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115064.jpg",
+   "original": "500x500",
+   "final": "564x564",
+   "antes": "2115064.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115065",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115065.webp",
+   "original": "1180x1003",
+   "final": "1000x1000",
+   "antes": "2115065.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115068",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115068.jpg",
+   "original": "878x952",
+   "final": "1000x1000",
+   "antes": "2115068.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115069",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115069.webp",
+   "original": "823x1200",
+   "final": "1000x1000",
+   "antes": "2115069.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115070",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115070.webp",
+   "original": "830x830",
+   "final": "855x855",
+   "antes": "2115070.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115071",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115071.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2115071.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115072",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115072.webp",
+   "original": "830x495",
+   "final": "858x858",
+   "antes": "2115072.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115073",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115073.webp",
+   "original": "908x991",
+   "final": "1000x1000",
+   "antes": "2115073.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115075",
+   "nombre": "Tapas de arranque",
+   "archivo": "2115075.jpg",
+   "original": "900x835",
+   "final": "711x711",
+   "antes": "2115075.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115076",
+   "nombre": "MAQUINAS 2 TIEMPOS",
+   "archivo": "2115076.webp",
+   "original": "1183x1088",
+   "final": "1000x1000",
+   "antes": "2115076.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115106",
+   "nombre": "Tapas de arranque — Repuestos",
+   "archivo": "2115106.webp",
+   "original": "1021x682",
+   "final": "1000x1000",
+   "antes": "2115106.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115108",
+   "nombre": "Tapas de arranque — Repuestos",
+   "archivo": "2115108.jpg",
+   "original": "1200x1063",
+   "final": "1000x1000",
+   "antes": "2115108.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115112",
+   "nombre": "Tapas de arranque — Repuestos",
+   "archivo": "2115112.webp",
+   "original": "1100x1100",
+   "final": "1000x1000",
+   "antes": "2115112.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115121",
+   "nombre": "Tapas de arranque — Repuestos",
+   "archivo": "2115121.webp",
+   "original": "1200x1190",
+   "final": "1000x1000",
+   "antes": "2115121.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115123",
+   "nombre": "Tapas de arranque — Repuestos",
+   "archivo": "2115123.webp",
+   "original": "808x808",
+   "final": "836x836",
+   "antes": "2115123.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115139",
+   "nombre": "Conjunto de arranque (SS) Oleo Mac SPARTA 42/44",
+   "archivo": "2115139.jpg",
+   "original": "800x800",
+   "final": "727x727",
+   "antes": "2115139.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115140",
+   "nombre": "Conjunto de arranque Stihl FS161/221/291",
+   "archivo": "2115140.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2115140.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2120020",
+   "nombre": "Llave T 13mm-19mm",
+   "archivo": "2120020.webp",
+   "original": "1127x1200",
+   "final": "1000x1000",
+   "antes": "2120020.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2120021",
+   "nombre": "Llave T 17mm-19mm",
+   "archivo": "2120021.webp",
+   "original": "1200x417",
+   "final": "1000x1000",
+   "antes": "2120021.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2120025",
+   "nombre": "sin tubo Stihl FS80/85",
+   "archivo": "2120025.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2120025.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2120105",
+   "nombre": "Kit de protector (traba metálica,…",
+   "archivo": "2120105.webp",
+   "original": "958x802",
+   "final": "991x991",
+   "antes": "2120105.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2120107",
+   "nombre": "Eje de transmisión (cardán 9…",
+   "archivo": "2120107.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2120107.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2121061",
+   "nombre": "Mangueras",
+   "archivo": "2121061.webp",
+   "original": "942x1200",
+   "final": "1000x1000",
+   "antes": "2121061.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2121062",
+   "nombre": "Mangueras",
+   "archivo": "2121062.webp",
+   "original": "1175x1175",
+   "final": "1000x1000",
+   "antes": "2121062.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2122129",
+   "nombre": "Cigüeñal Stihl FS85",
+   "archivo": "2122129.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2122129.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2122136",
+   "nombre": "Cigüeñal Stihl FS120/200/250",
+   "archivo": "2122136.webp",
+   "original": "1197x1046",
+   "final": "1000x1000",
+   "antes": "2122136.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2122140",
+   "nombre": "Bloque de cárter Stihl FS160/220/280",
+   "archivo": "2122140.webp",
+   "original": "1200x740",
+   "final": "1000x1000",
+   "antes": "2122140.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2124235",
+   "nombre": "Bobina de encendido Stihl FS85",
+   "archivo": "2124235.jpg",
+   "original": "612x612",
+   "final": "639x639",
+   "antes": "2124235.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2124236",
+   "nombre": "Bobina de encendido Stihl FS161/221/291",
+   "archivo": "2124236.webp",
+   "original": "1155x1155",
+   "final": "1000x1000",
+   "antes": "2124236.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2124245",
+   "nombre": "Bobina de encendido TLE43 Kasei BC46 BC430",
+   "archivo": "2124245.webp",
+   "original": "1000x1000",
+   "final": "1000x1000",
+   "antes": "2124245.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2124246",
+   "nombre": "Bobina de encendido Oleo Mac SPARTA42/44",
+   "archivo": "2124246.webp",
+   "original": "1043x1043",
+   "final": "980x980",
+   "antes": "2124246.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2124247",
+   "nombre": "Bobina de encendido Oleo Mac 753/746/750/453 CAMPANA DE EMBRAGUE",
+   "archivo": "2124247.jpg",
+   "original": "225x225",
+   "final": "215x215",
+   "antes": "2124247.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2124248",
+   "nombre": "Bobina de encendido Shindaiwa Shindawa- C230",
+   "archivo": "2124248.webp",
+   "original": "1092x1007",
+   "final": "1000x1000",
+   "antes": "2124248.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2125163",
+   "nombre": "Juego de cable de acelerador 4203… Stihl FS55",
+   "archivo": "2125163.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": "2125163.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2125165",
+   "nombre": "Juego de cable de acelerador Stihl FS120/200/250",
+   "archivo": "2125165.webp",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": "2125165.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2125166",
+   "nombre": "Juego de cable de acelerador Stihl FS160/220/280",
+   "archivo": "2125166.webp",
+   "original": "617x978",
+   "final": "1000x1000",
+   "antes": "2125166.png",
+   "descartadas": []
+  }
+ ],
+ "omitidas": []
+}

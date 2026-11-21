@@ -1,0 +1,556 @@
+{
+ "fecha": "2026-09-17-23-41",
+ "carpeta": "C:/Users/Administrador/Downloads/fotos-catalogo-fisico",
+ "importadas": [
+  {
+   "codigo": "2102824",
+   "nombre": "Carburador Stihl FS161/221/291(Z)",
+   "archivo": "2102824.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2102824-1788367638585.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2102873",
+   "nombre": "Echo PB-251 PB-265L PB- 265LN RB-K85",
+   "archivo": "2102873.webp",
+   "original": "896x896",
+   "final": "925x925",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2102873-1788968423167.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103005",
+   "nombre": "Conjunto de cilindro 52 cc",
+   "archivo": "2103005.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2103005.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2103197",
+   "nombre": "Silenciador de escape Stihl FS80/85",
+   "archivo": "2103197.jpg",
+   "original": "960x960",
+   "final": "831x831",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2103197-1788968480959.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2105024",
+   "nombre": "Aro de pistón, 34 mm Stihl FS85",
+   "archivo": "2105024.webp",
+   "original": "500x242",
+   "final": "518x518",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2105024-1788970695430.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107118",
+   "nombre": "Tapa de filtro de aire Stihl FS120/200/250",
+   "archivo": "2107118.webp",
+   "original": "500x500",
+   "final": "500x500",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2107118-1788968637718.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107135",
+   "nombre": "Filtro de aire Stihl FS161/221/291",
+   "archivo": "2107135.jpg",
+   "original": "1200x1200",
+   "final": "851x851",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2107135-1788968723669.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2107137",
+   "nombre": "Filtro de aire Oleo Mac 746/753/755",
+   "archivo": "2107137.webp",
+   "original": "500x382",
+   "final": "517x517",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2107137-1788968772134.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2115137",
+   "nombre": "Cazoleta de arranque 2 trinquetes 26cc",
+   "archivo": "2115137.webp",
+   "original": "500x381",
+   "final": "516x516",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2115137-1788970323805.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2125159",
+   "nombre": "ST-FS80/85",
+   "archivo": "2125159.jpg",
+   "original": "900x900",
+   "final": "715x715",
+   "antes": "2125159.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2202810",
+   "nombre": "Carburador Stihl 08/08S/TS350(T)",
+   "archivo": "2202810.webp",
+   "original": "320x320",
+   "final": "332x332",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2202810-1788970382535.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2202855",
+   "nombre": "Carburador Stihl MS162/172(Z)",
+   "archivo": "2202855.webp",
+   "original": "500x500",
+   "final": "533x533",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2202855-1788970426539.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2203014",
+   "nombre": "Silenciador de escape Stihl MS170/180",
+   "archivo": "2203014.webp",
+   "original": "500x426",
+   "final": "456x456",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2203014-1788970470552.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2203015",
+   "nombre": "Silenciador de escape Stihl MS230/250",
+   "archivo": "2203015.webp",
+   "original": "500x464",
+   "final": "494x494",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2203015-1788970561036.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2203016",
+   "nombre": "Silenciador de escape Stihl MS360",
+   "archivo": "2203016.webp",
+   "original": "500x492",
+   "final": "516x516",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2203016-1788970599489.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2203017",
+   "nombre": "Silenciador de escape Stihl MS341/361",
+   "archivo": "2203017.webp",
+   "original": "500x285",
+   "final": "506x506",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2203017-1788970646470.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2203018",
+   "nombre": "Silenciador de escape Stihl MS380/038",
+   "archivo": "2203018.webp",
+   "original": "500x424",
+   "final": "517x517",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2203018-1788970777412.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2203019",
+   "nombre": "Silenciador de escape Stihl MS381/382",
+   "archivo": "2203019.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2203019.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2204049",
+   "nombre": "Conjunto de pistón, 44 mm Stihl MS251",
+   "archivo": "2204049.webp",
+   "original": "522x522",
+   "final": "563x563",
+   "antes": "2204049.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2204051",
+   "nombre": "Conjunto de pistón, 47 mm Stihl MS291",
+   "archivo": "2204051.webp",
+   "original": "1070x1070",
+   "final": "1000x1000",
+   "antes": "2204051.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2205025",
+   "nombre": "Aro de pistón, 40 mm Stihl MS230/023",
+   "archivo": "2205025.jpg",
+   "original": "700x489",
+   "final": "768x768",
+   "antes": "2205025.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2205030",
+   "nombre": "Aro de pistón, 48 mm Husqvarna 61",
+   "archivo": "2205030.png",
+   "original": "1080x1080",
+   "final": "730x730",
+   "antes": "2205030.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2207012",
+   "nombre": "Tapa de fi ltro de aire",
+   "archivo": "2207012.jpg",
+   "original": "650x700",
+   "final": "793x793",
+   "antes": "2207012.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2207013",
+   "nombre": "Tapa de fi ltro de aire",
+   "archivo": "2207013.jpg",
+   "original": "700x680",
+   "final": "793x793",
+   "antes": "2207013.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2207019",
+   "nombre": "Esponja de fi ltro de aire Stihl MS162/172",
+   "archivo": "2207019.webp",
+   "original": "1026x1026",
+   "final": "1000x1000",
+   "antes": "2207019.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2207020",
+   "nombre": "Conjunto de fi ltro de aire Stihl MS162/172",
+   "archivo": "2207020.webp",
+   "original": "1193x1193",
+   "final": "1000x1000",
+   "antes": "2207020.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2215087",
+   "nombre": "Conjunto de arranque (R- 2) CAJAS DE ENGRANAJE",
+   "archivo": "2215087.jpg",
+   "original": "700x700",
+   "final": "655x655",
+   "antes": "2215087.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2219084",
+   "nombre": "Engranaje sinfín",
+   "archivo": "2219084.jpg",
+   "original": "670x647",
+   "final": "503x503",
+   "antes": "2219084.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2219091",
+   "nombre": "Engranaje sinfín Husqvarna 235/236/240",
+   "archivo": "2219091.png",
+   "original": "960x960",
+   "final": "813x813",
+   "antes": "2219091.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2219094",
+   "nombre": "Engranaje sinfín Husqvarna 365(Old)/385/390",
+   "archivo": "2219094.jpg",
+   "original": "1110x1110",
+   "final": "1000x1000",
+   "antes": "2219094.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2220178",
+   "nombre": "Cubierta / carcasa Husqvarna 61/268/272",
+   "archivo": "2220178.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2220178.png",
+   "descartadas": []
+  },
+  {
+   "codigo": "2220190",
+   "nombre": "Traba giratoria larga",
+   "archivo": "2220190.jpg",
+   "original": "640x480",
+   "final": "264x264",
+   "antes": "2220190.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2220207",
+   "nombre": "Kit de tornillería estándar Stihl MS170/180/250 MANGUERA DE COMBUSTIBLE",
+   "archivo": "2220207.jpg",
+   "original": "700x700",
+   "final": "680x680",
+   "antes": "2220207.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2224038",
+   "nombre": "Bobina de encendido Husqvarna 55/61/254/262/266/268",
+   "archivo": "2224038.jpg",
+   "original": "1601x1601",
+   "final": "1000x1000",
+   "antes": "2224038.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2302867",
+   "nombre": "Zama c1q-w37 Husqvarna 125B 125BX 125BVX",
+   "archivo": "2302867.jpg",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "2302867.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2302870",
+   "nombre": "Carburador de reemplazo BT45 C1q-S74g BT45",
+   "archivo": "2302870.jpg",
+   "original": "1600x1450",
+   "final": "1000x1000",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2302870-1788968360510.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2304001",
+   "nombre": "Conjunto de pistón, 34 mm Stihl BG86",
+   "archivo": "2304001.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": "2304001.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2315105",
+   "nombre": "Conjunto de arranque Stihl HS45",
+   "archivo": "2315105.jpg",
+   "original": "2560x2011",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "2315106",
+   "nombre": "Conjunto de arranque (manija de… Stihl BG86",
+   "archivo": "2315106.jpg",
+   "original": "1602x1602",
+   "final": "1000x1000",
+   "antes": "2315106.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2921012",
+   "nombre": "Mangueras Carburacion Motosierra repl Zenoah 6200",
+   "archivo": "2921012.webp",
+   "original": "500x394",
+   "final": "518x518",
+   "antes": "https://gceymxcsmyxlzlpuzzzp.supabase.co/storage/v1/object/public/media/foto/2921012-1788970087245.webp",
+   "descartadas": []
+  },
+  {
+   "codigo": "2921031",
+   "nombre": "Manguera de combustible negra 4 mm…",
+   "archivo": "2921031.webp",
+   "original": "287x287",
+   "final": "320x320",
+   "antes": "2921031.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "2921032",
+   "nombre": "Manguera de combustible negra 6 mm…",
+   "archivo": "2921032.webp",
+   "original": "1024x1024",
+   "final": "1000x1000",
+   "antes": "2921032.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3120977",
+   "nombre": "Extractor de cuchilla 2023",
+   "archivo": "3120977.jpg",
+   "original": "500x500",
+   "final": "540x540",
+   "antes": "3120977.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3204125",
+   "nombre": "Cable de reemplazo 532176556",
+   "archivo": "3204125.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "3204125.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "3206131",
+   "nombre": "Rueda Toro 115-4695",
+   "archivo": "3206131.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": "3206131.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4301481",
+   "nombre": "4301842 — DATOS NO Código Logbelts: ENCONTRADOS 4301481 Reparación de ca",
+   "archivo": "4301481.jpg",
+   "original": "1000x1000",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4302129",
+   "nombre": "Solenoide de carburador",
+   "archivo": "4302129.jpg",
+   "original": "2048x2048",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4302181",
+   "nombre": "Tecumseh 632795 632750 632772",
+   "archivo": "4302181.webp",
+   "original": "765x765",
+   "final": "791x791",
+   "antes": "4302181.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4302936",
+   "nombre": "Huayi MC1619BE",
+   "archivo": "4302936.webp",
+   "original": "973x845",
+   "final": "999x999",
+   "antes": "4302936.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307653",
+   "nombre": "Oem 4238 141 0300 / 4238 140 1800 /… Stihl TS410 TS420 TS500i",
+   "archivo": "4307653.webp",
+   "original": "900x732",
+   "final": "1000x1000",
+   "antes": "4307653.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307654",
+   "nombre": "Oem 4147 141 0300 Stihl FS460",
+   "archivo": "4307654.jpg",
+   "original": "600x600",
+   "final": "650x650",
+   "antes": "4307654.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307655",
+   "nombre": "Oem 4137-124-2800 Stihl FS85",
+   "archivo": "4307655.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": "4307655.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307679",
+   "nombre": "Stihl FS38 FS45 FS46 FS55",
+   "archivo": "4307679.jpg",
+   "original": "393x508",
+   "final": "249x249",
+   "antes": "4307679.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4307685",
+   "nombre": "Filtro de aire con pre fi ltro GXV160…",
+   "archivo": "4307685.webp",
+   "original": "874x874",
+   "final": "903x903",
+   "antes": "4307685.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310485",
+   "nombre": "Junta de tapa de cilindro,… Rotary 16465",
+   "archivo": "4310485.webp",
+   "original": "997x1200",
+   "final": "1000x1000",
+   "antes": null,
+   "descartadas": []
+  },
+  {
+   "codigo": "4310486",
+   "nombre": "Briggs & Stratton 799587",
+   "archivo": "4310486.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": "4310486.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310487",
+   "nombre": "Briggs & Stratton 692218",
+   "archivo": "4310487.jpg",
+   "original": "1000x1000",
+   "final": "882x882",
+   "antes": "4310487.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4310488",
+   "nombre": "Kohler 20-041-13-S",
+   "archivo": "4310488.jpg",
+   "original": "2000x2000",
+   "final": "1000x1000",
+   "antes": "4310488.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4315285",
+   "nombre": "Conjunto de arranque (con cuerda) Honda GX25",
+   "archivo": "4315285.webp",
+   "original": "1024x1194",
+   "final": "1000x1000",
+   "antes": "4315285.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4324243",
+   "nombre": "Bobina de encendido lc1p96f",
+   "archivo": "4324243.webp",
+   "original": "1200x1200",
+   "final": "1000x1000",
+   "antes": "4324243.jpg",
+   "descartadas": []
+  },
+  {
+   "codigo": "4525322",
+   "nombre": "Motor de arranque 3209810 9d",
+   "archivo": "4525322.jpg",
+   "original": "1600x1600",
+   "final": "1000x1000",
+   "antes": "4525322.jpg",
+   "descartadas": []
+  }
+ ],
+ "omitidas": []
+}

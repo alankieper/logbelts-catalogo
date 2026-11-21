@@ -278,6 +278,8 @@ function renderLista(l) {
       return li;
     }),
   );
+  const pendientes = l.filter((p) => !E.hechos[p.c]).length;
+  $('#lista-cuenta').textContent = `${num(pendientes)} pendientes · ${num(l.length - pendientes)} listas`;
   $('#lista-nota').textContent = filas.length > MAX_FILAS
     ? `Mostrando ${MAX_FILAS} de ${num(filas.length)}. Buscá por código o nombre para encontrar otros.`
     : filas.length ? '' : 'No hay productos que coincidan.';
@@ -322,12 +324,22 @@ async function exportar() {
 async function renderNube() {
   const { destino, nubeToken } = await chrome.storage.local.get({ destino: 'nube', nubeToken: null });
   const quiereNube = destino === 'nube';
-  $('#nube').hidden = MODO !== 'web';
+  const cuenta = $('#btn-cuenta');
+  cuenta.dataset.conectado = String(quiereNube && !!nubeToken);
+  cuenta.title = quiereNube && nubeToken ? 'Conectado a logbelts-web' : quiereNube ? 'Sin conectar: tocá para conectar con la web' : 'Guardando en la PC';
   $('#destino').value = destino;
   $('#nube-login').hidden = !quiereNube || !!nubeToken;
   $('#nube-estado').hidden = !quiereNube || !nubeToken;
   $('#carpeta').textContent =
     MODO === 'web' && quiereNube && nubeToken ? 'la bandeja "Fotos pendientes" del admin de la web' : `Descargas\\${MODOS[MODO].carpeta}`;
+}
+
+function abrirDesplegable(cual) {
+  for (const [id, boton] of [['cuenta', '#btn-cuenta'], ['ayuda', '#btn-ayuda']]) {
+    $(`#${id}`).hidden = cual !== id;
+    $(boton).setAttribute('aria-expanded', String(cual === id));
+  }
+  if (cual === 'cuenta' && !$('#nube-login').hidden) $('#nube-pass').focus();
 }
 
 // ---------- lupa: buscar en todo el catálogo ----------
@@ -544,7 +556,8 @@ async function init() {
     const r = await chrome.runtime.sendMessage({ tipo: 'conectar', password: pass });
     $('#nube-pass').value = '';
     $('#nube-msg').textContent = r?.ok ? '' : r?.error || 'No se pudo conectar.';
-    renderNube();
+    await renderNube();
+    if (r?.ok) abrirDesplegable(null); // conectado: se cierra el cuadro y queda sólo el ícono en verde
   };
   $('#nube-entrar').addEventListener('click', conectar);
   $('#nube-pass').addEventListener('keydown', (e) => e.key === 'Enter' && conectar());
@@ -556,12 +569,9 @@ async function init() {
     if (area === 'local' && ('nubeToken' in cambios || 'destino' in cambios)) renderNube();
   });
 
-  // ayuda "?"
-  $('#btn-ayuda').addEventListener('click', (e) => {
-    const abierta = e.currentTarget.getAttribute('aria-expanded') === 'true';
-    e.currentTarget.setAttribute('aria-expanded', String(!abierta));
-    $('#ayuda').hidden = abierta;
-  });
+  // ícono de cuenta y ayuda "?": se abre uno a la vez
+  $('#btn-cuenta').addEventListener('click', () => abrirDesplegable($('#cuenta').hidden ? 'cuenta' : null));
+  $('#btn-ayuda').addEventListener('click', () => abrirDesplegable($('#ayuda').hidden ? 'ayuda' : null));
 
   // lupa
   try {

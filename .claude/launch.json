@@ -4,8 +4,97 @@
     {
       "name": "logbelts-catalogo-dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeArgs": [
+        "run",
+        "dev"
+      ],
       "port": 3000
+    },
+    {
+      "name": "kiwii-clientes-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "../kiwii-clientes",
+        "run",
+        "dev"
+      ],
+      "port": 3100
+    },
+    {
+      "name": "kiwii-numeros-prueba",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/Users/Administrador/Documents/kiwii-soluciones-web/node_modules/next/dist/bin/next",
+        "dev",
+        "C:/Users/Administrador/Documents/kiwii-soluciones-web",
+        "-p",
+        "3210"
+      ],
+      "port": 3210
+    },
+    {
+      "name": "kiwii-soluciones-dev",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/kiwiisoluciones web/node_modules/next/dist/bin/next",
+        "dev",
+        "C:/kiwiisoluciones web",
+        "-p",
+        "3200"
+      ],
+      "port": 3200
+    },
+    {
+      "name": "editor-catalogo-pdf",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-I",
+        "C:/Users/Administrador/Desktop/logbelts/GENERADOR CATALOGO/programa/app.py",
+        "--sin-ventana"
+      ],
+      "port": 8765
+    },
+    {
+      "name": "todo-limpio-dev",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/TODO LIMPIO WEB/web/scripts/dev.cjs"
+      ],
+      "port": 3300
+    },
+    {
+      "name": "circus-festival-dev",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/Users/Administrador/Documents/circo-eventos/node_modules/next/dist/bin/next",
+        "dev",
+        "C:/Users/Administrador/Documents/circo-eventos",
+        "-p",
+        "3400"
+      ],
+      "port": 3400
+    },
+    {
+      "name": "encuesta-obras-dev",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/Users/Administrador/Documents/encuesta-instituto-obras/node_modules/vite/bin/vite.js",
+        "C:/Users/Administrador/Documents/encuesta-instituto-obras",
+        "--port",
+        "3500",
+        "--strictPort"
+      ],
+      "port": 3500
+    },
+    {
+      "name": "modicalogo-dev",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "C:\\Users\\ADMINI~2\\AppData\\Local\\Temp\\claude\\C--Users-Administrador-Documents-logbelts-catalogo\\2329c661-831b-41e8-b7f0-6ff683f063ee\\scratchpad\\dev.bat"
+      ],
+      "port": 8795
     }
   ]
 }
