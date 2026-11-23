@@ -24,7 +24,7 @@ export default async function BuscarPage({ searchParams }) {
   // Los resultados vienen ordenados por relevancia; se muestran de a 24
   const pag = paginar(res, searchParams?.pagina);
   const urlPagina = (n) => `/buscar?q=${encodeURIComponent(q)}${n > 1 ? `&pagina=${n}` : ''}`;
-  // Primer ejemplo de código del archivo de marca (ej: "5888"), para la ayuda de "sin resultados".
+  // Primer ejemplo de código del archivo de marca (ej: "2203015"), para la ayuda de "sin resultados".
   const ejemploCodigo = (MARCA.codigo.ejemplos || '').split('·')[0].trim();
 
   return (
