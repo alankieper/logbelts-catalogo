@@ -152,9 +152,9 @@
 .hero__prod { position: relative; display: grid; justify-items: center; gap: 14px; color: #fff; }
 /* Máquinas en dibujo de contorno (se trazan al cargar y se redibujan al pasar el mouse) */
 .hero__contorno { width: 100%; height: auto; color: #cfdcff; filter: drop-shadow(0 0 6px rgba(91,140,255,.55)); transition: transform .35s var(--ease), color .25s var(--ease); }
-.hero__contorno :is(path, circle, ellipse):not([stroke-dasharray]) { transition-duration: 2.4s, .3s; }
+.hero__contorno :is(path, circle, ellipse):not([stroke-dasharray]) { transition-duration: 3.4s, .3s; }
 .hero__prod:hover .hero__contorno { transform: translateY(-6px); color: #fff; }
-.hero__prod:hover .hero__contorno :is(path, circle, ellipse):not([stroke-dasharray]) { animation: sitio-redibujar 1.2s var(--ease); }
+.hero__prod:hover .hero__contorno :is(path, circle, ellipse):not([stroke-dasharray]) { animation: sitio-redibujar 3.2s cubic-bezier(.45,.05,.3,1); }
 .hero__prod--tractor { grid-area: tractor; width: 74%; justify-self: center; }
 .hero__prod--tractor::after { content: ''; position: absolute; inset: -14% -22% 10%; z-index: -2; border-radius: 50%; background: radial-gradient(closest-side, rgba(143,176,255,.28), transparent); }
 .hero__prod--desma { grid-area: desma; }
@@ -527,7 +527,7 @@ body:has(.pedido-fab) .whatsapp-flotante { bottom: 82px; }
 .tipo:hover::before { opacity: 1; }
 .tipo__dibujo { position: relative; width: 92px; height: 92px; color: var(--marca); margin-bottom: 6px; }
 .tipo:hover .tipo__dibujo { color: var(--marca-tinta); }
-.tipo:hover .tipo__dibujo :is(path, circle, rect, line, ellipse, polyline):not([stroke-dasharray]) { animation: sitio-redibujar 1.1s var(--ease); }
+.tipo:hover .tipo__dibujo :is(path, circle, rect, line, ellipse, polyline):not([stroke-dasharray]) { animation: sitio-redibujar 2.6s cubic-bezier(.45,.05,.3,1); }
 .tipo__nombre { position: relative; font-weight: 700; font-size: 17px; }
 .tipo__ver { position: relative; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: var(--marca-tinta); }
 .tipo__ver svg { width: 16px; height: 16px; transition: transform .2s var(--ease); }
@@ -621,7 +621,7 @@ body:has(.pedido-fab) .whatsapp-flotante { bottom: 82px; }
 .revelar[data-visible='true'] .nosotros-bloque::after { transform: scaleX(1); }
 .nosotros-bloque__cabeza { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 18px; }
 .nosotros-bloque__dibujo { width: 92px; height: 92px; color: var(--marca); }
-.nosotros-bloque:hover .nosotros-bloque__dibujo :is(path, circle, rect, line, ellipse, polyline):not([stroke-dasharray]) { animation: sitio-redibujar 1.1s var(--ease); }
+.nosotros-bloque:hover .nosotros-bloque__dibujo :is(path, circle, rect, line, ellipse, polyline):not([stroke-dasharray]) { animation: sitio-redibujar 2.6s cubic-bezier(.45,.05,.3,1); }
 .nosotros-bloque__n { font-family: var(--f-display); font-style: italic; font-size: 40px; line-height: 1; color: var(--lavado); -webkit-text-stroke: 1px var(--marca-claro); }
 .nosotros-bloque h2 { font-size: 30px; margin-bottom: 12px; }
 .nosotros-bloque p { margin: 0; color: var(--tinta-suave); }
