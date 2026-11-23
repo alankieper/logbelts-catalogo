@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { PROVINCIAS } from '../../lib/provincias';
+import { ciudadMasCercana } from '../../lib/distribuidoresMuestra';
 import { telefonoWhatsApp } from '../../lib/telefono';
 import { guardarProvincia, guardarVendedor, leerProvincia, leerVendedor, linkWhatsApp, WA_GENERAL } from './pedidoStore';
 import '../whatsapp-vendedor.css';
@@ -18,6 +19,7 @@ export default function BotonWhatsAppVendedor({ texto = '', className = '', chil
   const [provincia, setProvincia] = useState('');
   const [vendedor, setVendedor] = useState(null);
   const [buscando, setBuscando] = useState(false);
+  const [ubicando, setUbicando] = useState('');
   const boton = useRef(null);
   const dialogo = useRef(null);
   const select = useRef(null);
@@ -66,6 +68,7 @@ export default function BotonWhatsAppVendedor({ texto = '', className = '', chil
     e.preventDefault();
     setProvincia('');
     setVendedor(null);
+    setUbicando('');
     setAbierto(true);
   }
 
@@ -85,6 +88,21 @@ export default function BotonWhatsAppVendedor({ texto = '', className = '', chil
     setBuscando(false);
   }
 
+  // Pide la ubicación a la persona (el navegador le pregunta) y elige su provincia sola.
+  function usarUbicacion() {
+    if (!navigator.geolocation) { setUbicando('Tu navegador no permite usar la ubicación. Elegí la provincia.'); return; }
+    setUbicando('Buscando tu ubicación…');
+    navigator.geolocation.getCurrentPosition(
+      pos => {
+        const c = ciudadMasCercana([pos.coords.longitude, pos.coords.latitude]);
+        setUbicando(c ? `Estás cerca de ${c.nombre}.` : '');
+        if (c) elegir(c.provincia);
+      },
+      () => setUbicando('No pudimos usar tu ubicación. Elegí la provincia en la lista.'),
+      { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 }
+    );
+  }
+
   const numero = telefonoWhatsApp(vendedor?.telefono) || WA_GENERAL;
   const listo = provincia && !buscando;
 
@@ -99,8 +117,13 @@ export default function BotonWhatsAppVendedor({ texto = '', className = '', chil
           <div ref={dialogo} className="lbwa-dialogo" role="dialog" aria-modal="true" aria-labelledby="lbwa-titulo" aria-describedby="lbwa-ayuda">
             <button type="button" className="lbwa-cerrar" onClick={cerrar} aria-label="Cerrar">✕</button>
             <h2 id="lbwa-titulo" className="lbwa-titulo">¿Desde qué provincia nos escribís?</h2>
-            <p id="lbwa-ayuda" className="lbwa-ayuda">Así te atiende el vendedor de tu zona.</p>
-            <label className="lbwa-label" htmlFor="lbwa-provincia">Provincia</label>
+            <p id="lbwa-ayuda" className="lbwa-ayuda">Así te atiende el vendedor más cercano.</p>
+            <button type="button" className="lbwa-ubicacion" onClick={usarUbicacion}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" /><circle cx="12" cy="9.5" r="2.5" /></svg>
+              Usar mi ubicación
+            </button>
+            {ubicando ? <p className="lbwa-ayuda" role="status">{ubicando}</p> : null}
+            <label className="lbwa-label" htmlFor="lbwa-provincia">O elegí la provincia</label>
             <select id="lbwa-provincia" ref={select} className="lbwa-select" value={provincia} onChange={e => elegir(e.target.value)}>
               <option value="">Elegí tu provincia</option>
               {PROVINCIAS.map(p => <option key={p} value={p}>{p}</option>)}

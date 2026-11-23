@@ -397,8 +397,9 @@
 .mapa-dist__flecha.is-on path { fill: #e8531e; }
 .mapa-dist__flecha:focus-visible path { stroke: #e8531e; stroke-width: 1.2; }
 .mapa-dist__flecha.is-off { opacity: .15; pointer-events: none; }
+.mapa-dist__punto { fill: #fff; stroke: var(--marca); stroke-width: .5; }
 .mapa-dist__origen { fill: #1fae55; stroke: #fff; stroke-width: 1.2; }
-.mapa-dist__globo { position: absolute; transform: translate(-50%, calc(-100% - 22px)); background: var(--marca); color: #fff; border-radius: 10px; padding: 8px 12px; font-size: 13px; line-height: 1.35; min-width: 160px; max-width: 230px; box-shadow: 0 10px 24px rgba(0,0,0,.25); pointer-events: none; z-index: 2; }
+.mapa-dist__globo { position: absolute; transform: translate(-50%, calc(-100% - 14px)); background: var(--marca); color: #fff; border-radius: 10px; padding: 8px 12px; font-size: 13px; line-height: 1.35; min-width: 160px; max-width: 230px; box-shadow: 0 10px 24px rgba(0,0,0,.25); pointer-events: none; z-index: 2; }
 .mapa-dist__globo strong { display: block; font-size: 14px; }
 .mapa-dist__globo span { display: block; opacity: .9; }
 .mapa-dist__globo .mapa-dist__km { color: #ffd2b8; opacity: 1; font-weight: 700; }
