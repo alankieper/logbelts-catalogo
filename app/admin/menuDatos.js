@@ -53,6 +53,7 @@ export const GRUPOS = [
     titulo: 'Productos',
     items: [
       { clave: 'productos', href: '/admin/productos', nombre: 'Productos', icono: 'productos', ayuda: 'Ver, buscar y editar los repuestos' },
+      { clave: 'catalogo-nuevo', href: '/admin/catalogo-nuevo', nombre: 'Nuevo catálogo', icono: 'fotos', ayuda: 'Elegir entre la foto de siempre y la del PDF nuevo' },
       { clave: 'fotos', href: '/admin/fotos-pendientes', nombre: 'Fotos pendientes', icono: 'fotos', ayuda: 'Fotos esperando que las revises', aviso: true },
       { clave: 'codigos', href: '/admin/codigos', nombre: 'Códigos Logbelts', icono: 'codigos', ayuda: 'Cómo se arman los códigos propios' },
       { clave: 'oem', href: '/admin/oem', nombre: 'Códigos originales', icono: 'oem', ayuda: 'Los códigos de fábrica (OEM) de cada repuesto' },

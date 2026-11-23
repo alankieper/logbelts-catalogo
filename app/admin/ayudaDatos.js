@@ -83,6 +83,16 @@ export const AYUDA = {
     ],
     cuidado: 'El lápiz junto al código permite cambiarlo. Hacelo con cuidado: es el número que usan los clientes para pedir.',
   },
+  'catalogo-nuevo': {
+    titulo: 'Nuevo catálogo',
+    para: 'Comparar, producto por producto, la foto que se ve hoy en la web con la del catálogo PDF 2026.04.32 y elegir cuál queda.',
+    pasos: [
+      'En cada tarjeta, a la izquierda está la foto de siempre y a la derecha la del PDF nuevo.',
+      'Tocá "Queda esta" abajo de la que va. La otra se quita y el cambio se ve en la web al instante.',
+      'En la pestaña "No tenían foto" están los productos que recibieron la foto del PDF porque no tenían ninguna.',
+    ],
+    cuidado: 'Mientras no elijas, el producto muestra la foto de siempre y la del PDF como segunda foto.',
+  },
   fotos: {
     titulo: 'Fotos pendientes',
     para: 'Fotos que mandó la extensión de Chrome "Logbelts · Fotos del catálogo" y esperan tu aprobación.',
