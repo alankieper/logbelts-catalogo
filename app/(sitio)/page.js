@@ -16,7 +16,7 @@ import Dibujo from '../components/sitio/Dibujo';
 import Piezas3D from '../components/sitio/Piezas3D';
 import { DesmalezadoraContorno, MinitractorContorno, MotosierraContorno } from '../components/sitio/LineasMaquinas';
 import CintaMarcas from '../components/sitio/CintaMarcas';
-import { Arranque, Bujia, Cabezal, Cadena, Carburador, Correa, FiltroAire, Piston, dibujoFamilia } from '../components/sitio/LineasRepuestos';
+import { Arranque, Bujia, Cabezal, Cadena, CarburadorPieza, Correa, FiltroAire, Piston, dibujoFamilia } from '../components/sitio/LineasRepuestos';
 
 export const revalidate = 3600;
 
@@ -33,7 +33,7 @@ const PASOS = [
 ];
 
 const TIPOS = [
-  { Icono: Carburador, nombre: 'Carburadores', href: '/f/carburacion' },
+  { Icono: CarburadorPieza, nombre: 'Carburadores', href: '/f/carburacion' },
   { Icono: Piston, nombre: 'Pistones y cilindros', href: '/buscar?q=piston' },
   { Icono: Bujia, nombre: 'Bujías y encendido', href: '/buscar?q=bujia' },
   { Icono: Cadena, nombre: 'Cadenas y espadas', href: modulo('guias') ? '/guias/espadas-y-cadenas' : '/buscar?q=cadena' },
@@ -44,7 +44,7 @@ const TIPOS = [
 ];
 
 const PRECISION = [
-  { Icono: Carburador, titulo: 'Carburación', texto: 'Carburadores completos, kits de membranas, tornillos de regulación y cebadores.', href: '/f/carburacion' },
+  { Icono: CarburadorPieza, titulo: 'Carburación', texto: 'Carburadores completos, kits de membranas, tornillos de regulación y cebadores.', href: '/f/carburacion' },
   { Icono: Piston, titulo: 'Motor', texto: 'Pistones, aros, cilindros, bielas y juntas para motores 2T y 4T.', href: '/f/motores-4t-y-generadores' },
   { Icono: Bujia, titulo: 'Encendido', texto: 'Bujías, bobinas y juntas de motor.', href: '/f/juntas-de-motor' },
 ];
@@ -241,7 +241,7 @@ export default async function Inicio() {
       </section>
       ) : null}
       <section className="seccion tipos con-decor" aria-labelledby="tipos-titulo">
-        <Decor Icono={Carburador} clase="decor--izq-arriba decor--enorme" />
+        <Decor Icono={CarburadorPieza} clase="decor--izq-arriba decor--enorme" />
         <Decor Icono={FiltroAire} clase="decor--der-abajo" />
         <div className="contenedor">
           <div className="seccion__cabeza">
