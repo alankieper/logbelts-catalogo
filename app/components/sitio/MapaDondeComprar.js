@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { MAPA_ALTO, MAPA_ANCHO, RUTAS_DIVISIONES, RUTA_ARGENTINA, proyectar } from '../../admin/metricas/mapaArgentina';
 
 /**
@@ -11,8 +11,9 @@ import { MAPA_ALTO, MAPA_ANCHO, RUTAS_DIVISIONES, RUTA_ARGENTINA, proyectar } fr
  * ciudades: [[nombre, lon, lat]]
  */
 
-// Flecha del logo, apuntando hacia abajo: la punta (0,0) cae justo sobre el lugar.
-const FLECHA = 'M0,0 L4.6,-12.7 L0.1,-6.7 L-3.1,-8.4 Z';
+// Flecha del logo, como en la marca: las dos puntas atrás (izquierda) y la punta hacia la derecha.
+// La punta (0,0) cae exactamente sobre el lugar del comercio.
+const FLECHA = 'M0,0 L-11.4,-4.1 L-6,-0.2 L-7.5,2.7 Z';
 
 function km([lon1, lat1], [lon2, lat2]) {
   const r = (g) => (g * Math.PI) / 180;
@@ -69,13 +70,17 @@ export default function MapaDondeComprar({ distribuidores, ciudades, muestra = f
     );
   }
 
+  // Al entrar a "Dónde comprar" se pide la ubicación: el navegador le pregunta a la persona
+  // y, si acepta, se marca enseguida el comercio más cercano.
+  useEffect(() => { usarUbicacion(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   const fmtKm = (n) => (n < 10 ? `${n.toFixed(1)} km` : `${Math.round(n).toLocaleString('es-AR')} km`);
 
   return (
     <div className="mapa-dist">
       <div className="mapa-dist__mapa">
         <div className="mapa-dist__lienzo">
-          <svg viewBox={`-6 -16 ${MAPA_ANCHO + 12} ${MAPA_ALTO + 22}`} role="img" aria-label={`Mapa de Argentina con ${conXY.length} comercios`}>
+          <svg viewBox={`-16 -8 ${MAPA_ANCHO + 22} ${MAPA_ALTO + 16}`} role="img" aria-label={`Mapa de Argentina con ${conXY.length} comercios`}>
             <path d={RUTA_ARGENTINA} className="mapa-dist__pais" />
             {RUTAS_DIVISIONES.map((d, i) => <path key={i} d={d} className="mapa-dist__division" />)}
             {origenXY ? <circle cx={origenXY[0]} cy={origenXY[1]} r="3.4" className="mapa-dist__origen" /> : null}
@@ -97,7 +102,8 @@ export default function MapaDondeComprar({ distribuidores, ciudades, muestra = f
                   onBlur={() => setActivo((a) => (a === d.id ? null : a))}
                   onClick={() => setActivo(d.id)}
                 >
-                  <circle cy="-6" r="8" className="mapa-dist__toque" />
+                  <circle cx="-5" r="7" className="mapa-dist__toque" />
+                  <circle r="1.1" className="mapa-dist__punto" />
                   <path d={FLECHA} />
                 </g>
               );
@@ -106,7 +112,7 @@ export default function MapaDondeComprar({ distribuidores, ciudades, muestra = f
           {enMapa ? (
             <div
               className="mapa-dist__globo"
-              style={{ left: `${((enMapa.x + 6) / (MAPA_ANCHO + 12)) * 100}%`, top: `${((enMapa.y + 16) / (MAPA_ALTO + 22)) * 100}%` }}
+              style={{ left: `${((enMapa.x + 16) / (MAPA_ANCHO + 22)) * 100}%`, top: `${((enMapa.y + 8) / (MAPA_ALTO + 16)) * 100}%` }}
               role="status"
             >
               <strong>{enMapa.nombre}</strong>
