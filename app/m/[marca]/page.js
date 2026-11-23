@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   const { nombre, productos } = await getPorMarca(params.marca);
   // Marca inventada o sin repuestos: no tiene que quedar en Google.
   if (!productos.length) return { title: 'Marca no encontrada', robots: { index: false, follow: true } };
-  return { title: `Todo para ${nombre} — Catálogo ${MARCA.nombre}` };
+  return { title: `Repuestos para ${nombre}`, description: `Repuestos ${MARCA.nombre} compatibles con ${nombre}: buscalos por categoría y consultá con tu vendedor. Venta mayorista.` };
 }
 
 export default async function MarcaPage({ params, searchParams }) {

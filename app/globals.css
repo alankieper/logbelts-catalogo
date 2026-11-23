@@ -1203,3 +1203,19 @@ body {
 .err-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px; border-radius: 12px; border: 1px solid var(--rule); background: var(--surface); color: var(--brand-ink); font-size: 15px; font-weight: 600; text-decoration: none; cursor: pointer; font-family: inherit; }
 .err-btn:hover { border-color: var(--brand-ink); }
 .err-btn--fuerte { background: var(--brand-ink); border-color: var(--brand-ink); color: #fff; }
+
+/* Texto bajo la foto: en celulares no hay mouse, se dice "tocá" */
+.gcap-touch { display: none; }
+@media (hover: none) { .gcap-mouse { display: none; } .gcap-touch { display: inline; } }
+
+/* Celulares (Android y iPhone): WhatsApp abajo a la izquierda y Pedido abajo a la derecha,
+   en la misma línea y por encima de la barra de gestos, así no tapan títulos ni textos. */
+@media (max-width: 600px) {
+  .pedido-fab { right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); padding: 0 16px; min-height: 48px; }
+  .whatsapp-flotante,
+  body:has(.pedido-fab) .whatsapp-flotante { left: 12px; right: auto; bottom: calc(12px + env(safe-area-inset-bottom)); width: 48px; height: 48px; min-height: 48px; padding: 0; justify-content: center; }
+  .whatsapp-flotante svg { width: 28px; height: 28px; }
+  .pedido-aviso { right: 12px; left: 12px; max-width: none; bottom: calc(70px + env(safe-area-inset-bottom)); }
+  /* espacio al final de la página para que los botones no tapen el último contenido */
+  body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+}

@@ -13,7 +13,7 @@ export const dynamic = 'force-dynamic';
 
 export function generateMetadata({ searchParams }) {
   const q = (searchParams?.q || '').toString();
-  return { title: q ? `“${q}” — Catálogo ${MARCA.nombre}` : `Búsqueda — Catálogo ${MARCA.nombre}` };
+  return { title: q ? `Búsqueda: “${q}”` : `Búsqueda` };
 }
 
 export default async function BuscarPage({ searchParams }) {
@@ -41,8 +41,8 @@ export default async function BuscarPage({ searchParams }) {
           <h1 className="page">{q ? `Resultados para “${q}”` : 'Búsqueda'}</h1>
           <p className="lead">
             {q
-              ? `${res.length.toLocaleString('es-AR')} ${res.length === 1 ? 'producto' : 'productos'}. Se busca por ${MARCA.codigo.etiqueta.toLowerCase()}, código original, nombre, marca, modelo y descripción.`
-              : 'Escribí un código, un código original del fabricante, o una marca y modelo.'}
+              ? `${res.length.toLocaleString('es-AR')} ${res.length === 1 ? 'producto' : 'productos'}. Se busca por ${MARCA.codigo.etiqueta.toLowerCase()}, nombre, marca, modelo y descripción.`
+              : 'Escribí un código, el nombre del repuesto, o una marca y modelo.'}
           </p>
 
           {q && res.length ? (

@@ -40,3 +40,6 @@
   .flecha-prod--cat { width: auto; max-width: 62vw; height: 48px; }
   .flecha-prod--cat .flecha-prod__info { display: grid; font-size: 12px; }
 }
+
+/* Celular: las flechas laterales tapaban el contenido; abajo de la ficha ya están "anterior / siguiente". */
+@media (max-width: 600px) { .flecha-prod { display: none; } }

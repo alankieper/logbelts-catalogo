@@ -2,31 +2,28 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { MARCA, modulo } from '../../../lib/marca';
 import { leerDistribuidores } from '../../../lib/distribuidores';
-import { PROVINCIAS } from '../../../lib/provincias';
+import { DISTRIBUIDORES_MUESTRA, CIUDADES_BUSCADOR } from '../../../lib/distribuidoresMuestra';
 import { waLink } from '../../../lib/telefono';
-import { MAPA_ALTO, MAPA_ANCHO, RUTAS_DIVISIONES, RUTA_ARGENTINA, proyectar } from '../../admin/metricas/mapaArgentina';
+import MapaDondeComprar from '../../components/sitio/MapaDondeComprar';
 
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
   title: 'Dónde comprar',
-  description: `Comercios y talleres que venden repuestos ${MARCA.nombre} para bosque y jardín en todo el país.`,
+  description: `Comercios y talleres que venden repuestos ${MARCA.nombre} para bosque y jardín en todo el país. Encontrá el más cercano.`,
 };
 
 export default async function DondeComprar({ searchParams }) {
   if (!modulo('distribuidores')) notFound();
 
-  const todos = await leerDistribuidores();
-  const provincia = PROVINCIAS.includes(searchParams?.provincia) ? searchParams.provincia : '';
-  const visibles = provincia ? todos.filter(d => d.provincia === provincia) : todos;
-  const provinciasConDistribuidores = PROVINCIAS.filter(p => todos.some(d => d.provincia === p));
-
-  const porProvincia = new Map();
-  for (const d of visibles) {
-    const clave = d.provincia || 'Otras';
-    if (!porProvincia.has(clave)) porProvincia.set(clave, []);
-    porProvincia.get(clave).push(d);
-  }
+  const reales = await leerDistribuidores();
+  // ?muestra=1 muestra 30 comercios inventados para ver cómo funciona el mapa (sólo si todavía no hay reales).
+  const muestra = !reales.length && searchParams?.muestra === '1';
+  const lista = (muestra ? DISTRIBUIDORES_MUESTRA : reales).map((d) => ({
+    id: d.id, nombre: d.nombre, localidad: d.localidad || '', provincia: d.provincia || '',
+    direccion: d.direccion || '', telefono: d.telefono || '', coord: d.coord || null,
+    wa: waLink(d.whatsapp || d.telefono, `Hola, los encontré en la web de ${MARCA.nombre}.`) || null,
+  }));
 
   return (
     <>
@@ -34,61 +31,19 @@ export default async function DondeComprar({ searchParams }) {
         <div className="contenedor">
           <p className="antetitulo">Red de distribuidores</p>
           <h1 className="titulo-seccion">Dónde comprar {MARCA.nombre}</h1>
-          <p>Vendemos únicamente por mayor. Si buscás repuestos para tu máquina, acercate a uno de estos comercios.</p>
+          <p>Vendemos únicamente por mayor. Si buscás repuestos para tu máquina, acercate al comercio más cercano.</p>
         </div>
       </section>
 
       <section className="seccion seccion--suelo">
         <div className="contenedor">
-          {todos.length ? (
-            <div className="mapa-dist">
-              <div className="mapa-dist__mapa">
-                <svg viewBox={`-6 -6 ${MAPA_ANCHO + 12} ${MAPA_ALTO + 12}`} role="img" aria-label={`Mapa de Argentina con ${visibles.length} distribuidores`}>
-                  <path d={RUTA_ARGENTINA} className="mapa-dist__pais" />
-                  {RUTAS_DIVISIONES.map((d, i) => <path key={i} d={d} className="mapa-dist__division" />)}
-                  {visibles.filter(d => d.coord).map(d => {
-                    const [x, y] = proyectar(d.coord);
-                    return (
-                      <circle key={d.id} cx={x} cy={y} r="3.2" className="mapa-dist__pin">
-                        <title>{`${d.nombre} · ${[d.localidad, d.provincia].filter(Boolean).join(', ')}`}</title>
-                      </circle>
-                    );
-                  })}
-                </svg>
-              </div>
-
-              <div>
-                <nav className="chips-provincias" aria-label="Filtrar por provincia">
-                  <Link href="/donde-comprar" aria-current={!provincia ? 'page' : undefined}>Todas</Link>
-                  {provinciasConDistribuidores.map(p => (
-                    <Link key={p} href={`/donde-comprar?provincia=${encodeURIComponent(p)}`} aria-current={provincia === p ? 'page' : undefined}>{p}</Link>
-                  ))}
-                </nav>
-
-                {[...porProvincia.entries()].map(([prov, lista]) => (
-                  <div key={prov} className="dist-grupo">
-                    <h2>{prov}</h2>
-                    <ul>
-                      {lista.map(d => {
-                        const wa = waLink(d.whatsapp || d.telefono, `Hola, los encontré en la web de ${MARCA.nombre}.`);
-                        return (
-                          <li key={d.id} className="dist-item">
-                            <div>
-                              <strong>{d.nombre}</strong>
-                              <span>{[d.direccion, d.localidad].filter(Boolean).join(' · ')}</span>
-                            </div>
-                            <div className="dist-item__acc">
-                              {d.telefono ? <a href={`tel:${d.telefono.replace(/[^\d+]/g, '')}`}>Llamar</a> : null}
-                              {wa ? <a href={wa} target="_blank" rel="noopener noreferrer">WhatsApp</a> : null}
-                            </div>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
+          {muestra ? (
+            <p className="aviso-muestra" role="note">
+              <strong>Vista de muestra.</strong> Estos 30 comercios son inventados para mostrar cómo funciona el mapa. Cuando se carguen los distribuidores reales, aparecen ellos.
+            </p>
+          ) : null}
+          {lista.length ? (
+            <MapaDondeComprar distribuidores={lista} ciudades={CIUDADES_BUSCADOR} muestra={muestra} />
           ) : (
             <div className="vacio-sitio">
               <h2 className="display">Estamos armando el mapa</h2>

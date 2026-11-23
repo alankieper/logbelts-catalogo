@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
   if (!sub) return { title: 'Categoría no encontrada', robots: { index: false, follow: true } };
   const n = (await getProductosDeSubcategoria(fam.slug, sub.slug)).length;
   const title = `${sub.nombre} para ${fam.nombre.toLowerCase()}`;
-  const description = `${n} repuestos ${MARCA.nombre} de ${sub.nombre.toLowerCase()} para ${fam.nombre.toLowerCase()}. Buscá por código, código original o marca. Venta mayorista.`;
+  const description = `${n} repuestos ${MARCA.nombre} de ${sub.nombre.toLowerCase()} para ${fam.nombre.toLowerCase()}. Buscá por código, repuesto o marca. Venta mayorista.`;
   return { title, description, openGraph: { title: `${title} · ${MARCA.nombre}`, description, images: ['/opengraph-image.png'] } };
 }
 

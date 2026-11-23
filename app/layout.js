@@ -10,7 +10,7 @@ export const metadata = {
     default: `${TITULO_CATALOGO} — ${enFrase(MARCA.rubro)}`,
     template: `%s · ${TITULO_CATALOGO}`,
   },
-  description: `${MARCA.descripcionCorta} Buscá por ${enFrase(MARCA.codigo.etiqueta)}, código original del fabricante, o marca y modelo.`,
+  description: `${MARCA.descripcionCorta} Buscá por ${enFrase(MARCA.codigo.etiqueta)}, nombre del repuesto, o marca y modelo.`,
   applicationName: TITULO_CATALOGO,
   robots: robotsMeta,
   openGraph: {
@@ -18,7 +18,7 @@ export const metadata = {
     locale: 'es_AR',
     type: 'website',
     title: `${MARCA.nombre} — ${MARCA.rubro}`,
-    description: `${MARCA.descripcionCorta} Buscá por código, código original o modelo de ${MARCA.maquinas.singular}.`,
+    description: `${MARCA.descripcionCorta} Buscá por código, repuesto o modelo de ${MARCA.maquinas.singular}.`,
   },
   twitter: { card: 'summary_large_image' },
   manifest: '/manifest.webmanifest',

@@ -32,6 +32,13 @@ export async function reiniciarEstadisticasAccion(formData) {
 }
 
 // Cambia la temporada que tiene protagonismo en la web (o la deja automática por fecha).
+export async function cambiarMostrarOem(formData) {
+  await exigirAdmin();
+  const r = await guardarAjustes({ mostrarOem: formData.get('mostrar') === '1' });
+  refrescarCatalogo();
+  redirect(r.ok ? '/admin/oem?vis=1' : `/admin/oem?err=${encodeURIComponent(r.error)}`);
+}
+
 export async function guardarTemporada(formData) {
   await exigirAdmin();
   const modo = (formData.get('modo') || 'auto').toString();
