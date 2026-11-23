@@ -103,7 +103,6 @@ export default function MapaDondeComprar({ distribuidores, ciudades, muestra = f
                   onClick={() => setActivo(d.id)}
                 >
                   <circle cx="-5" r="7" className="mapa-dist__toque" />
-                  <circle r="1.1" className="mapa-dist__punto" />
                   <path d={FLECHA} />
                 </g>
               );
