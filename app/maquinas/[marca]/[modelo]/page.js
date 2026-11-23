@@ -63,7 +63,6 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
   // despiece publicado en internet (con los repuestos del catálogo que van en cada dibujo)
   const despiece = modulo('despiece') ? despieceOnline(d.clave, d.productos) : null;
   const varianteInicial = Math.max(0, (Number(searchParams?.variante) || 1) - 1);
-  const conOem = d.productos.filter((p) => p.codigo_original && p.codigo_original.length).length;
   const linkExterno = modulo('despiece') && !despiece ? linkDespiece(d.marca, d.modelo) : null;
   const despieceDirecto = linkExterno && linkExterno.directo ? linkExterno : null;
   const idFamilia = (f) => `fam-${f.slug || 'otros'}`;
@@ -129,7 +128,7 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
                 {i < familias.length - 1 ? ', ' : '.'}
               </span>
             ))}
-            {conOem ? ' Incluye equivalencias de códigos originales.' : ''}
+            
             {despiece ? (
               <>
                 {' '}Para ubicar cada pieza, mirá el <a href="#despiece">despiece de la {d.marca} {d.modelo}</a>.

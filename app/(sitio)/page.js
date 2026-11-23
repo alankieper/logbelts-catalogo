@@ -123,7 +123,7 @@ export default async function Inicio() {
               formClase="hero__buscar"
               etiqueta="Buscar repuestos"
               etiquetaOculta
-              placeholder="Código, código original o modelo de máquina"
+              placeholder="Código, repuesto o modelo de máquina"
               ancho={560}
             />
             <p className="hero__ayuda">Ej: {MARCA.codigo.ejemplos}</p>
@@ -166,7 +166,7 @@ export default async function Inicio() {
               <p className="antetitulo">Catálogo de repuestos</p>
               <h2 id="catalogo-titulo" className="titulo-seccion">Todo el catálogo por familia</h2>
               <p className="bajada" style={{ marginTop: 14 }}>
-                Buscá por {enFrase(MARCA.codigo.etiqueta)}, por código original del fabricante o por marca y modelo de {MARCA.maquinas.singular}.
+                Buscá por {enFrase(MARCA.codigo.etiqueta)}, por nombre del repuesto o por marca y modelo de {MARCA.maquinas.singular}.
               </p>
             </div>
             <div className="catalogo-portada__buscar">
@@ -175,7 +175,7 @@ export default async function Inicio() {
                 formClase="hero__buscar"
                 etiqueta="Buscar en el catálogo"
                 etiquetaOculta
-                placeholder={`${MARCA.codigo.etiqueta}, código original o modelo`}
+                placeholder={`${MARCA.codigo.etiqueta}, repuesto o modelo`}
                 ancho={480}
               />
               <Link className="catalogo-portada__pdf" href="/descargas">Catálogos en PDF <Flecha /></Link>
@@ -269,8 +269,8 @@ export default async function Inicio() {
             <p className="antetitulo">Ingeniería en cada repuesto</p>
             <h2 id="precision-titulo" className="titulo-seccion">Precisión que se ve</h2>
             <p className="bajada" style={{ marginTop: 14 }}>
-              Cada pieza tiene que calzar exacto en la máquina de tu cliente. Por eso trabajamos con códigos originales,
-              medidas y compatibilidades por modelo.
+              Cada pieza tiene que calzar exacto en la máquina de tu cliente. Por eso trabajamos con medidas
+              y compatibilidades por modelo.
             </p>
             <ul className="precision__lista">
               {PRECISION.map(({ Icono, titulo, texto, href }) => (

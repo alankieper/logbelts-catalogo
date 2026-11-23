@@ -205,3 +205,9 @@
 .hoy-ir { grid-column: 2; font-size: 13px; font-weight: 700; color: var(--brand-ink); }
 .hoy-sec { font-size: 1rem; margin: 6px 0 10px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-faint); }
 @media (prefers-reduced-motion: reduce) { .hoy-card { transition: none; } }
+
+/* Interruptor: mostrar u ocultar los códigos originales en la web */
+.oem-vis { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin: 14px 0 18px; padding: 14px 16px; border: 1px solid var(--line, #d8deea); border-radius: 12px; background: var(--card, #fff); }
+.oem-vis div { display: flex; flex-direction: column; gap: 4px; max-width: 62ch; }
+.oem-vis span { font-size: 13.5px; opacity: .8; }
+.oem-vis .temp-guardar { margin-top: 0; }

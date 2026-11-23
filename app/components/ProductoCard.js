@@ -15,7 +15,6 @@ export default function ProductoCard({ p, motivo, subcategoria }) {
   const meta =
     (p.medidas && p.medidas.length ? p.medidas.slice(0, 2).join(' · ') : '') || (p.ubicacion || '');
   const marca = p.marcas && p.marcas.length ? p.marcas[0] : '';
-  const derivada = p.fuente_desc && p.fuente_desc.startsWith('derivada');
   const nombre = p.nombre || p.clave_producto || p.codigo;
   const hrefSub = p.familiaSlug && p.subSlug ? `/c/${p.familiaSlug}/${p.subSlug}` : null;
   const hrefMarca = marca ? `/m/${slugify(marca)}` : null;
@@ -57,7 +56,6 @@ export default function ProductoCard({ p, motivo, subcategoria }) {
               <a className="chipmarca" href={hrefMarca} title={`Ver todo para ${marca}`}>{marca}</a>
             ) : null}
             {meta ? <span className="meta">{meta}</span> : null}
-            {!motivo && derivada ? <span className="deriv">descripción a confirmar</span> : null}
           </span>
           {motivo ? <span className="why">{motivo}</span> : null}
           <span className="acts">

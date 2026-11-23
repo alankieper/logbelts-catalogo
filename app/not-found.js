@@ -31,7 +31,7 @@ export default function NoEncontrada() {
           <h1 className="page">No encontramos esa página</h1>
           <p className="lead">
             Puede que el enlace esté viejo o que el código tenga algún error de tipeo. El buscador de
-            arriba encuentra por código {MARCA.nombre}, por código original y por nombre de repuesto.
+            arriba encuentra por código {MARCA.nombre} y por nombre de repuesto.
           </p>
           <div className="nf-salidas">
             {SALIDAS.map((s) => (

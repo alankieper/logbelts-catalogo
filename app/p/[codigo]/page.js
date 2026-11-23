@@ -16,6 +16,7 @@ import { compatiblesPorMaquina, maquinasDeProducto } from '../../../lib/maquinas
 import { tieneDespieceOnline } from '../../../lib/despieceOnline';
 import { SITE_URL } from '../../../lib/seo';
 import { MARCA, modulo } from '../../../lib/marca';
+import { mostrarOem } from '../../../lib/ajustes';
 
 // La página se guarda armada en la red de Vercel y se rehace cada hora.
 // Cuando se edita algo en el panel, `refrescarCatalogo()` la borra al instante,
@@ -49,7 +50,7 @@ export async function generateMetadata({ params }) {
   const descReal = p.descripcion && !(p.fuente_desc && p.fuente_desc.startsWith('derivada'));
   const nom = p.nombre || p.clave_producto || 'Repuesto';
   const marca = (p.marcas || [])[0];
-  const oem = (p.codigo_original || []).slice(0, 4).join(', ');
+  const oem = (await mostrarOem()) ? (p.codigo_original || []).slice(0, 4).join(', ') : '';
   // título pensado para búsqueda: nombre + marca + código
   const title = `${nom}${marca ? ` ${marca}` : ''} — código ${p.codigo}`;
   const desc =
@@ -86,6 +87,11 @@ export default async function ProductoPage({ params }) {
   const desp = hayDespiece ? await despiecesDeProducto(codigo, p.compatibilidad) : { curados: [], oficiales: [] };
   const maquinas = hayMaquinas ? await maquinasDeProducto(codigo) : [];
   const compatibles = hayMaquinas ? await compatiblesPorMaquina(codigo, 8) : [];
+  const verOem = await mostrarOem();
+  // Muchos productos traen en "compatibilidad" el mismo texto del nombre: repetirlo no aporta.
+  const plano = (t) => String(t || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+  const compat = p.compatibilidad && plano(p.compatibilidad) !== plano(p.nombre) && plano(p.compatibilidad) !== plano(p.descripcion) ? p.compatibilidad : '';
+  const oems = verOem ? (p.codigo_original || []).filter(Boolean) : [];
 
   const derivada = p.fuente_desc && p.fuente_desc.startsWith('derivada');
   const tieneDesc = !!(p.descripcion && !derivada);
@@ -101,14 +107,13 @@ export default async function ProductoPage({ params }) {
   const specs = [];
   if (p.medidas && p.medidas.length) specs.push(['Medidas', p.medidas.join(' · ')]);
   if (p.ubicacion) specs.push(['Ubicación', p.ubicacion]);
-  if (p.ref_interna && p.ref_interna.length) specs.push(['Ref. interna', p.ref_interna.join(' · ')]);
 
   const ldJson = {
     '@context': 'https://schema.org/',
     '@type': 'Product',
     name: `${p.nombre || p.clave_producto || 'Repuesto'}${marcas.size ? ' ' + [...marcas][0] : ''}`,
     sku: p.codigo,
-    mpn: (p.codigo_original || [])[0] || undefined,
+    mpn: oems[0] || undefined,
     description: tieneDesc ? p.descripcion : undefined,
     image: fotoSrc ? (/^https?:\/\//.test(fotoSrc) ? fotoSrc : SITE_URL + fotoSrc) : undefined,
     brand: marcas.size ? { '@type': 'Brand', name: [...marcas][0] } : undefined,
@@ -141,7 +146,13 @@ export default async function ProductoPage({ params }) {
                 <video key={src} className="gvideo" src={src} controls preload="metadata" playsInline />
               ))}
               <p className="gcap">
-                {fotoSrc ? `Imagen del catálogo ${MARCA.nombre} · pasá el mouse para ampliar` : 'Sin imagen en el catálogo'}
+                {fotoSrc ? (
+                  <>
+                    Imagen del catálogo {MARCA.nombre}
+                    <span className="gcap-mouse"> · pasá el mouse para ampliar</span>
+                    <span className="gcap-touch"> · tocá la foto para verla más grande</span>
+                  </>
+                ) : 'Sin imagen en el catálogo'}
               </p>
             </div>
 
@@ -159,13 +170,10 @@ export default async function ProductoPage({ params }) {
                   </div>
                 </div>
                 <h1>{p.nombre || p.clave_producto || 'Producto'}</h1>
-                <div className="badges">
-                  {p.fuente_desc === 'editado' || p.fuente_desc === 'manual' ? <span className="b-ok">Revisado</span> : null}
-                  {p.fuente_desc === 'texto del PDF' || p.fuente_desc === 'texto del PDF (OCR)' ? <span className="b-ok">Datos del catálogo</span> : null}
-                  {derivada ? <span className="b-warn">Requiere revisión</span> : null}
-                  {p.flags && p.flags.includes('NUEVO') ? <span className="b-wash">Nuevo</span> : null}
-                  {p.estado === 'sin_codigo' ? <span className="b-wash">Código a asignar</span> : null}
-                </div>
+                {/* Al público sólo se muestra "Nuevo": las marcas de revisión son del panel. */}
+                {p.flags && p.flags.includes('NUEVO') ? (
+                  <div className="badges"><span className="b-wash">Nuevo</span></div>
+                ) : null}
               </div>
 
               {marcas.size || maquinas.length ? (
@@ -221,39 +229,34 @@ export default async function ProductoPage({ params }) {
                 );
               })()}
 
-              <div className="specsheet">
-                <h3>Descripción</h3>
-                <div className="srow srow-desc">
+              {/* Los bloques vacíos no se muestran: nada de "A completar" a la vista del público. */}
+              {tieneDesc || specs.length ? (
+                <div className="specsheet">
+                  <h3>Descripción</h3>
                   {tieneDesc ? (
-                    <dd className="descfull">{p.descripcion}</dd>
-                  ) : (
-                    <dd className="revision">Requiere revisión — el catálogo no tiene una descripción específica para este código.</dd>
-                  )}
+                    <div className="srow srow-desc"><dd className="descfull">{p.descripcion}</dd></div>
+                  ) : null}
+                  {specs.map(([k, v]) => (
+                    <div className="srow" key={k}><dt>{k}</dt><dd>{v}</dd></div>
+                  ))}
                 </div>
-                {specs.map(([k, v]) => (
-                  <div className="srow" key={k}><dt>{k}</dt><dd>{v}</dd></div>
-                ))}
-              </div>
+              ) : null}
 
-              <div className="specsheet">
-                <h3>Compatibilidad</h3>
-                {p.compatibilidad ? (
-                  <div className="srow"><dt>Aplicación</dt><dd>{p.compatibilidad}</dd></div>
-                ) : (
-                  <div className="srow"><dt>—</dt><dd className="mut">A completar</dd></div>
-                )}
-              </div>
+              {compat ? (
+                <div className="specsheet">
+                  <h3>Compatibilidad</h3>
+                  <div className="srow"><dt>Aplicación</dt><dd>{compat}</dd></div>
+                </div>
+              ) : null}
 
-              <div className="specsheet">
-                <h3>Códigos originales / equivalencias</h3>
-                {p.codigo_original && p.codigo_original.length ? (
-                  p.codigo_original.map((o, i) => (
-                    <div className="srow" key={i}><dt>OEM</dt><dd>{o}</dd></div>
-                  ))
-                ) : (
-                  <div className="srow"><dt>—</dt><dd className="mut">A completar</dd></div>
-                )}
-              </div>
+              {oems.length ? (
+                <div className="specsheet">
+                  <h3>Códigos originales / equivalencias</h3>
+                  {oems.map((o, i) => (
+                    <div className="srow" key={i}><dt>Original</dt><dd>{o}</dd></div>
+                  ))}
+                </div>
+              ) : null}
 
               {hayDespiece && desp.oficiales.length ? (
                 <div className="specsheet">
@@ -286,9 +289,7 @@ export default async function ProductoPage({ params }) {
                   ))}
                   <div className="srow">
                     <dt>—</dt>
-                    <dd className="mut" style={{ fontSize: 11.5 }}>
-                      Enlaces a sitios oficiales de cada marca. Los PDF propios de {MARCA.nombre} se cargan desde Administración.
-                    </dd>
+                    <dd className="mut" style={{ fontSize: 11.5 }}>Enlaces a los sitios oficiales de cada marca.</dd>
                   </div>
                 </div>
               ) : null}
@@ -298,6 +299,9 @@ export default async function ProductoPage({ params }) {
                 <BotonAgregar codigo={p.codigo} nombre={p.nombre || p.clave_producto || p.codigo} />
               </div>
 
+              {modulo('distribuidores') ? (
+                <p className="dfoot"><a href="/donde-comprar">¿Buscás dónde comprarlo? Mirá el comercio más cercano →</a></p>
+              ) : null}
               <p className="dfoot">Referencia: Catálogo {MARCA.nombre} · página {p.pagina || '—'}</p>
               <Registrar tipo="ver" codigo={p.codigo} />
             </div>

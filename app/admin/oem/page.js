@@ -1,5 +1,8 @@
+import '../admin-extra.css';
 import AdminHeader from '../AdminHeader';
 import { agregarOem } from '../productoActions';
+import { cambiarMostrarOem } from '../configActions';
+import { mostrarOem as leerMostrarOem } from '../../../lib/ajustes';
 import { leerTodos } from '../../../lib/catalogoStore';
 import { getFamilias } from '../../../lib/catalogo';
 import { leerEventos } from '../../../lib/eventos';
@@ -30,6 +33,7 @@ export default async function AdminOem({ searchParams }) {
   const orden = (searchParams?.orden || 'vistos').toString();
   const pagina = Math.max(1, parseInt(searchParams?.p || '1', 10) || 1);
   const ok = searchParams?.ok === '1';
+  const visible = await leerMostrarOem();
 
   const [todos, familias, eventos] = await Promise.all([
     leerTodos(),
@@ -85,6 +89,18 @@ export default async function AdminOem({ searchParams }) {
             {familia ? ` en ${familia}` : ''}. Están arriba los más vistos/consultados.
           </p>
           {ok ? <div className="ok-msg">Código original guardado.</div> : null}
+          {searchParams?.vis ? <div className="ok-msg">Listo. La web ya {visible ? 'muestra' : 'no muestra'} los códigos originales.</div> : null}
+          {searchParams?.err ? <div className="err-msg">{searchParams.err}</div> : null}
+          <form action={cambiarMostrarOem} className="oem-vis">
+            <input type="hidden" name="mostrar" value={visible ? '0' : '1'} />
+            <div>
+              <strong>Mostrar códigos originales en la web: {visible ? 'SÍ' : 'NO'}</strong>
+              <span>{visible
+                ? 'La ficha de cada producto muestra sus códigos originales (solo los que tienen alguno cargado).'
+                : 'Están ocultos para el público. Igual se pueden seguir cargando acá y el buscador los sigue encontrando.'}</span>
+            </div>
+            <button type="submit" className="temp-guardar">{visible ? 'Ocultar en la web' : 'Mostrar en la web'}</button>
+          </form>
 
           <form className="admbar" method="get">
             <input name="q" defaultValue={q} placeholder="Buscar código, nombre, marca…" style={{ minWidth: 240 }} />

@@ -23,7 +23,7 @@ export default async function sitemap() {
     { url: SITE_URL, lastModified: now, changeFrequency: 'weekly', priority: 1 },
     ...['/contacto', '/descargas', '/acerca-de', '/condiciones',
       ...si('distribuidores', ['/distribuidores', '/donde-comprar']),
-      ...si('lanzamientos', ['/lanzamientos']),
+      ...si('lanzamientos', ['/temporada']),
       ...si('tutoriales', ['/tutoriales']),
       ...si('material', ['/material']),
       ...si('guias', ['/guias', '/guias/correas', '/guias/espadas-y-cadenas', '/guias/tanza-o-cuchilla']),
