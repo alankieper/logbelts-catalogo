@@ -129,8 +129,9 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
             <span className="sep">/</span>
             <span aria-current="page">{d.modelo}</span>
           </nav>
-          <p className="eyebrow">Repuestos compatibles</p>
-          <h1 className="page">{d.marca} {d.modelo}</h1>
+          {/* con despiece Logbelts, el despiece es el título de la página (un solo título) */}
+          {propio ? null : <p className="eyebrow">Repuestos compatibles</p>}
+          <h1 className="page">{propio ? `Despiece de la ${d.marca} ${d.modelo}` : `${d.marca} ${d.modelo}`}</h1>
           <p className="lead">
             Encontrá {n} {plural(n, `repuesto ${MARCA.nombre} compatible`, `repuestos ${MARCA.nombre} compatibles`)} con la {d.marca}{' '}
             {d.modelo}
@@ -143,11 +144,7 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
               </span>
             ))}
             
-            {propio ? (
-              <>
-                {' '}Para ubicar cada pieza, mirá el <a href="#despiece">despiece de la {d.marca} {d.modelo}</a>.
-              </>
-            ) : despiece ? (
+            {propio ? null : despiece ? (
               <>
                 {' '}Para ubicar cada pieza, mirá el <a href="#despiece">despiece de la {d.marca} {d.modelo}</a>.
               </>
@@ -164,8 +161,7 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
           </p>
 
           {propio ? (
-            <section id="despiece" className="dsp-seccion" aria-labelledby="despiece-titulo">
-              <h2 id="despiece-titulo">Despiece de la {d.marca} {d.modelo}</h2>
+            <section id="despiece" className="dsp-seccion" aria-label={`Despiece de la ${d.marca} ${d.modelo}`}>
               <p>
                 Pasá el mouse por una pieza (o tocala en el celular) para ver qué repuestos Logbelts le corresponden. Hacé clic
                 para dejarla fija y pasá el mouse por cada repuesto para ver su tarjeta; desde ahí lo sumás al pedido.
