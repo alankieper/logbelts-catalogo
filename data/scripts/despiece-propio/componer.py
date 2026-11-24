@@ -95,7 +95,7 @@ else:
     base_paths = re.findall(r' d="([^"]+)"', bloque)
 salida = {
     'maquina': CFG['MAQUINA'], 'ancho': ANCHO, 'alto': ALTO,
-    'base': {'transform': f'translate({BX} {BY}) scale({BS}) translate({-BX0} {-BY0}) {gt}', 'd': base_paths},
+    'base': {'transform': f'translate({BX} {BY}) scale({BS}) {gt}', 'd': base_paths},
     'guias': CFG.get('GUIAS', 'siempre'),
     'base_relleno': bool(BASE_IMG),
     'rotulo': CFG.get('ROTULO'),

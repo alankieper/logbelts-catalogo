@@ -61,7 +61,12 @@
   border: 1px solid var(--rule); border-radius: 16px; background: var(--surface); padding: 14px;
   scroll-margin: 90px 0 16px;
 }
-@media (min-width: 900px) { .dsp-panel { position: sticky; top: 90px; max-height: calc(100vh - 110px); overflow: auto; } }
+/* en la compu el panel mide lo mismo que el dibujo y se desplaza por dentro: así, al pasar de la lista
+   (larga) al detalle de una pieza (corto), la página no cambia de alto ni el dibujo se mueve */
+@media (min-width: 900px) {
+  .dsp-panel { align-self: stretch; position: relative; padding: 0; overflow: hidden; }
+  .dsp-panel > * { position: absolute; inset: 0; overflow: auto; padding: 14px; }
+}
 .dsp-panel h3 { margin: 0; font-size: 16px; font-weight: 800; color: var(--ink); line-height: 1.25; }
 .dsp-badge {
   flex: none; display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%;
