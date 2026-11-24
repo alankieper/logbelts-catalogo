@@ -12,6 +12,9 @@ grosor = int(sys.argv[5]) if len(sys.argv) > 5 else 3
 lado = int(sys.argv[6]) if len(sys.argv) > 6 else 900
 min_area = int(sys.argv[7]) if len(sys.argv) > 7 else 60
 comp = float(sys.argv[8]) if len(sys.argv) > 8 else 0.04
+invertir = len(sys.argv) > 9 and sys.argv[9] == '1'
+mascara_bordes = len(sys.argv) > 10 and sys.argv[10] == '1'
+recorte = [float(v) for v in sys.argv[11].split(',')] if len(sys.argv) > 11 and sys.argv[11] else None
 
 im = cv2.imread(src, cv2.IMREAD_UNCHANGED)
 if im.ndim == 3 and im.shape[2] == 4:  # png con transparencia -> fondo blanco
@@ -19,17 +22,37 @@ if im.ndim == 3 and im.shape[2] == 4:  # png con transparencia -> fondo blanco
     im = (im[:, :, :3] * a + 255 * (1 - a)).astype(np.uint8)
 if im.ndim == 2:
     im = cv2.cvtColor(im, cv2.COLOR_GRAY2BGR)
+if recorte:  # quedarse con una parte de la foto (x0,y0,x1,y1 en fracciones)
+    H_, W_ = im.shape[:2]
+    im = im[int(recorte[1] * H_):int(recorte[3] * H_), int(recorte[0] * W_):int(recorte[2] * W_)]
 # trabajar a 900 px de lado mayor
 h, w = im.shape[:2]
 k = lado / max(h, w)
 im = cv2.resize(im, (int(w * k), int(h * k)), interpolation=cv2.INTER_CUBIC)
+if invertir:
+    # foto sobre un recuadro negro: recortar el recuadro y dar vuelta los colores
+    g0 = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
+    x_, y_, w_, h_ = cv2.boundingRect((g0 < 60).astype(np.uint8))
+    im = 255 - im[y_ + 6:y_ + h_ - 6, x_ + 6:x_ + w_ - 6]
 im = cv2.copyMakeBorder(im, 20, 20, 20, 20, cv2.BORDER_CONSTANT, value=(255, 255, 255))
 
 hsv = cv2.cvtColor(im, cv2.COLOR_BGR2HSV)
 gris = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
 # objeto = lo que no es casi blanco
 obj = ((gris < 238) | (hsv[:, :, 1] > 35)).astype(np.uint8) * 255
+if mascara_bordes:
+    # pieza blanca sobre fondo blanco: el fondo es lo que se llena desde el borde sin cambiar de tono
+    ff = np.zeros((gris.shape[0] + 2, gris.shape[1] + 2), np.uint8)
+    g2 = cv2.GaussianBlur(gris, (3, 3), 0).copy()
+    cv2.floodFill(g2, ff, (0, 0), 0, loDiff=2, upDiff=2, flags=4 | cv2.FLOODFILL_MASK_ONLY | (255 << 8))
+    obj = (ff[1:-1, 1:-1] == 0).astype(np.uint8) * 255
 obj = cv2.morphologyEx(obj, cv2.MORPH_CLOSE, np.ones((7, 7), np.uint8))
+# sacar la sombra/reflejo gris que traen muchas fotos debajo del producto (franja chata y ancha)
+n0, lab0, st0, _ = cv2.connectedComponentsWithStats(obj)
+for i in range(1, n0):
+    ww0, hh0 = st0[i, cv2.CC_STAT_WIDTH], st0[i, cv2.CC_STAT_HEIGHT]
+    if hh0 < ww0 * 0.07 and ww0 > obj.shape[1] * 0.2:
+        obj[lab0 == i] = 0
 # quedarse con componentes grandes (saca textos y sombras chicas)
 n, lab, st, _ = cv2.connectedComponentsWithStats(obj)
 area_max = st[1:, cv2.CC_STAT_AREA].max() if n > 1 else 0

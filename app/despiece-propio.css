@@ -29,6 +29,8 @@
 .dsp-guia circle { fill: var(--rule-strong); transition: fill 160ms ease; }
 .dsp-svg--activa .dsp-guia { opacity: .35; }
 .dsp-guia.es-activa { opacity: 1; }
+/* máquinas con muchas piezas: la guía se ve sólo en la pieza elegida */
+.dsp-svg--guia-sola .dsp-guia:not(.es-activa) { opacity: 0; }
 .dsp-guia.es-activa line { stroke: var(--dsp-azul, #00408c); stroke-width: 2.4; stroke-dasharray: none; }
 .dsp-guia.es-activa circle { fill: var(--dsp-azul, #00408c); }
 

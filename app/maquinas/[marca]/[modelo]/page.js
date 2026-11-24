@@ -171,7 +171,7 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
                 Pasá el mouse por una pieza (o tocala en el celular) para ver qué repuesto Logbelts le corresponde. Desde ahí
                 lo abrís o lo sumás al pedido.
               </p>
-              <DespiecePropio src={propio} maquina={`${d.marca} ${d.modelo}`} productos={productosPropio} />
+              <DespiecePropio src={propio.src} proporcion={propio.proporcion} maquina={`${d.marca} ${d.modelo}`} productos={productosPropio} />
             </section>
           ) : null}
 

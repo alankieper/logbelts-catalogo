@@ -10,7 +10,7 @@ import BotonAgregar from './BotonAgregar';
  *
  * src: JSON del dibujo (public/dibujos-despiece). productos: { [codigo]: { codigo, nombre, foto, marca } }.
  */
-export default function DespiecePropio({ src, maquina, productos }) {
+export default function DespiecePropio({ src, proporcion = '1800 / 1000', maquina, productos }) {
   const [dibujo, setDibujo] = useState(null);
   const [error, setError] = useState(false);
   const [sobre, setSobre] = useState(null); // pieza bajo el mouse o con el foco
@@ -54,15 +54,18 @@ export default function DespiecePropio({ src, maquina, productos }) {
   const repuestos = (p) => p.codigos.map((c) => productos[c]).filter(Boolean);
   const total = useMemo(() => new Set(piezas.flatMap((p) => p.codigos)).size, [piezas]);
 
+  // rótulo del plano: en el dibujo, o abajo a la derecha como en el de la FS 120
+  const [rx, ry, rw, rh] = dibujo?.rotulo || [1318, 768, 452, 200];
+
   if (error) return null;
 
   return (
     <div className="dsp" onKeyDown={(e) => e.key === 'Escape' && setFija(null)}>
-      <div className="dsp-lienzo" style={{ aspectRatio: dibujo ? `${dibujo.ancho} / ${dibujo.alto}` : '1800 / 1000' }}>
+      <div className="dsp-lienzo" style={{ aspectRatio: dibujo ? `${dibujo.ancho} / ${dibujo.alto}` : proporcion }}>
         {dibujo ? (
           <svg
             viewBox={`0 0 ${dibujo.ancho} ${dibujo.alto}`}
-            className={`dsp-svg${activa != null ? ' dsp-svg--activa' : ''}`}
+            className={`dsp-svg${activa != null ? ' dsp-svg--activa' : ''}${dibujo.guias === 'activa' ? ' dsp-svg--guia-sola' : ''}`}
             role="group"
             aria-label={`Despiece de la ${maquina}: ${piezas.length} piezas numeradas`}
           >
@@ -83,11 +86,11 @@ export default function DespiecePropio({ src, maquina, productos }) {
 
             {/* rótulo, como en un plano */}
             <g className="dsp-rotulo" aria-hidden="true">
-              <rect x="1318" y="768" width="452" height="200" rx="10" />
-              <text x="1342" y="812" className="dsp-rotulo-marca">LOGBELTS</text>
-              <text x="1342" y="856" className="dsp-rotulo-t">Despiece {maquina}</text>
-              <text x="1342" y="890" className="dsp-rotulo-s">{piezas.length} piezas · {total} repuestos</text>
-              <text x="1342" y="938" className="dsp-rotulo-s">Tocá una pieza para ver su repuesto</text>
+              <rect x={rx} y={ry} width={rw} height={rh} rx="10" />
+              <text x={rx + 24} y={ry + 44} className="dsp-rotulo-marca">LOGBELTS</text>
+              <text x={rx + 24} y={ry + 88} className="dsp-rotulo-t">Despiece {maquina}</text>
+              <text x={rx + 24} y={ry + 122} className="dsp-rotulo-s">{piezas.length} piezas · {total} repuestos</text>
+              <text x={rx + 24} y={ry + 170} className="dsp-rotulo-s">Tocá una pieza para ver su repuesto</text>
             </g>
 
             {piezas.map((p) => {
