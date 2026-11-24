@@ -22,3 +22,5 @@ pasado a vector con `trazar_base.py`. En la ficha va como BASE_IMAGEN.
 (carburador, cilindro, cadena…), junta los del mismo tipo en una pieza, elige la foto y ubica el punto en la
 motosierra de fondo. Las fichas quedan en `fichas/`. Después se corre `componer.py fichas/maquina_xxx.py`.
 Los ajustes de trazado probados a mano por foto están en AJUSTES dentro de generar.py.
+
+Desmalezadoras: `generar.py desma <clave> ...` (usa el contorno de la FS 120 y pone las piezas al costado y debajo).

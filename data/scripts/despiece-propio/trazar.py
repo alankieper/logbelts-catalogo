@@ -45,6 +45,14 @@ hsv = cv2.cvtColor(im, cv2.COLOR_BGR2HSV)
 gris = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
 # objeto = lo que no es casi blanco
 obj = ((gris < 238) | (hsv[:, :, 1] > 35)).astype(np.uint8) * 255
+# algunas fotos tienen un recuadro gris claro detrás del producto: ese gris también es fondo
+g_in = gris[30:-30, 30:-30]
+claro = g_in[(g_in > 200)]
+if claro.size > g_in.size * 0.3:
+    fondo2 = int(np.median(claro))
+    if fondo2 < 247:
+        cuadro = ((np.abs(gris.astype(int) - fondo2) <= 6) & (hsv[:, :, 1] < 25)).astype(np.uint8)
+        obj[cuadro > 0] = 0
 # leyenda violeta "Logbelts code - 1234567" de algunas fotos: se borra por su color
 violeta = (hsv[:, :, 0] >= 115) & (hsv[:, :, 0] <= 160) & (hsv[:, :, 1] > 50)
 violeta = cv2.dilate(violeta.astype(np.uint8), np.ones((5, 5), np.uint8)) > 0
@@ -85,6 +93,9 @@ interior = cv2.erode(lleno, np.ones((9, 9), np.uint8))
 bordes[interior == 0] = 0
 # contorno exterior como linea
 borde_ext = cv2.morphologyEx(lleno, cv2.MORPH_GRADIENT, np.ones((3, 3), np.uint8))
+# si la pieza toca el borde de la foto (está cortada), ese borde no es contorno: se saca para que no quede un marco
+m_ = 24
+borde_ext[:m_ + 2, :] = 0; borde_ext[-m_ - 2:, :] = 0; borde_ext[:, :m_ + 2] = 0; borde_ext[:, -m_ - 2:] = 0
 lineas = cv2.bitwise_or(bordes, borde_ext)
 lineas = cv2.dilate(lineas, np.ones((grosor, grosor), np.uint8))
 # sacar pedacitos sueltos

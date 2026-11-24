@@ -92,6 +92,8 @@ AJUSTES = {
     '2220091': {'lo': 25, 'hi': 70}, '2220122': {'comp': 0.5}, '2220191': {'lo': 25, 'hi': 70},
     '2220165': {'lo': 25, 'hi': 70}, '2290517': {'invertir': True, 'comp': 0.5},
     '2291025': {'recorte': [0, 0.45, 0.75, 1], 'comp': 0.02},
+    '2107136': {'recorte': [0.07, 0.07, 0.93, 0.93]}, '2120063': {'recorte': [0.07, 0.17, 0.93, 0.83]},
+    '4307679': {'lo': 200, 'hi': 400}, '2107132': {'lo': 120, 'hi': 260}, '2112081': {'lo': 140, 'hi': 300},
 }
 
 
@@ -215,7 +217,115 @@ def escribir(clave):
     return out, len(piezas), len(m['cods'])
 
 
-if __name__ == '__main__':
+if __name__ == '__main__' and sys.argv[1] == 'moto':
     for clave in sys.argv[2:]:
         out, n, r = escribir(clave)
+        print(clave, n, 'piezas', r, 'repuestos', '->', os.path.basename(out))
+
+
+# ---------- desmalezadoras: contorno de la portada (el mismo de la FS 120), puntos en su viewBox ----------
+TIPOS_DESMA = [
+    ('membranas', 'Kit de juntas y membranas del carburador', r'kits de juntas y diafragmas|diafragma|bombin', (610, 135)),
+    ('juntas', 'Juntas', r'junta', (566, 140)),
+    ('tanza', 'Cabezal de tanza', r'tanza|trimcut', (120, 935)),
+    ('admision', 'Brida y colector de admisión', r'admisi[oó]n|brida|colector', (590, 120)),
+    ('carburador', 'Carburador', r'carburador', (604, 124)),
+    ('volante', 'Volante magnético', r'volante', (470, 100)),
+    ('bobina', 'Bobina de encendido', r'bobina|boobina|ignici[oó]n|encendido', (492, 48)),
+    ('valvulas', 'Válvula de descompresión', r'v[aá]lvula|descompresor', (530, 30)),
+    ('cilindro', 'Cilindro y pistón', r'cilindro|block', (530, 36)),
+    ('piston', 'Pistón y aros', r'pist[oó]n|\baros?\b|jaula', (548, 58)),
+    ('carter', 'Cárter', r'c[aá]rter', (515, 140)),
+    ('ciguenal', 'Cigüeñal', r'cig[üu]e[ñn]al', (520, 118)),
+    ('reten', 'Retenes de aceite', r'ret[eé]n', (505, 130)),
+    ('escape', 'Escape', r'escape|silenciador', (575, 40)),
+    ('tapa_filtro', 'Tapa del filtro y caja filtrera', r'tapa de fi ?ltro|cubre filtro|cobertor de filtro|filtrera', (640, 70)),
+    ('filtro', 'Filtro de aire', r'filtro', (634, 88)),
+    ('tapa_tanque', 'Tapa de tanque', r'tapa (de )?(tanque|combustible)', (585, 170)),
+    ('tanque', 'Tanque de combustible', r'tanque', (560, 165)),
+    ('manguera', 'Mangueras', r'manguera', (592, 148)),
+    ('resorte_arranque', 'Resorte de arranque', r'resorte (de )?arranque', (468, 116)),
+    ('polea', 'Polea y cazoleta de arranque', r'polea|cazoleta|trinquete', (472, 108)),
+    ('arranque', 'Tapa de arranque', r'arranque', (462, 98)),
+    ('carcasa', 'Carcasa del motor', r'cobertor motor|carcasa de motor|cobertor (superior|lateral)|soporte escape', (560, 60)),
+    ('resorte_embrague', 'Resorte de embrague', r'resorte (de )?embrague', (470, 212)),
+    ('embrague', 'Embrague y campana', r'embrague|campana', (480, 228)),
+    ('acelerador', 'Acelerador y cable', r'acelerador|gatillo|cable', (726, 300)),
+    ('arnes', 'Enganche del arnés', r'arn[eé]s', (380, 370)),
+    ('manillar', 'Manillar', r'manillar|manija', (600, 395)),
+    ('cardan', 'Eje cardán y cañonera', r'card[aá]n|ca[ñn]onera|ca[ñn]o|tubo|buje', (330, 520)),
+    ('protector', 'Protector del cabezal', r'protector|cortador|cobertor de cabezal', (226, 850)),
+    ('tuerca', 'Tuerca de la cuchilla', r'tuerca', (139, 880)),
+    ('rulemanes', 'Rulemanes, arandelas y taza', r'rulem[aá]n|arandela|taza', (150, 840)),
+    ('engranajes', 'Caja de engranajes', r'engranaje|caja eng|puntera|kit de reparaci', (139, 850)),
+    ('tornilleria', 'Tornillería', r'tornill', (520, 140)),
+    ('otros', 'Otros repuestos', r'.', (545, 90)),
+]
+
+DCW, DCH, DC0, DF0 = 222, 238, 12, 20
+
+
+def celdas_desma(n):
+    """Casillas: al lado de la máquina (columnas 4 a 7, filas 0 a 3) y después a todo el ancho."""
+    out, fila = [], 0
+    while len(out) < n + 3:
+        cols = range(4, 8) if fila < 4 else range(0, 8)
+        for col in cols:
+            out.append((col, fila))
+        fila += 1
+    return out
+
+
+def escribir_desma(clave):
+    m = MODELOS[clave]
+    for c in m['cods']:
+        completar(c)
+    grupos = clasificar(m['cods'], TIPOS_DESMA)
+    piezas = []
+    for k, nombre, _, ancla in TIPOS_DESMA:
+        if k in grupos:
+            cods = grupos[k]
+            fuente = next((c for c in cods if foto_local(c)), None) or foto_de_tipo(k, TIPOS_DESMA)
+            piezas.append((nombre, fuente, cods, ancla))
+    cel = celdas_desma(len(piezas))
+    lineas, extra = [], {}
+    for i, (nombre, fuente, cods, ancla) in enumerate(piezas):
+        col, fila = cel[i]
+        x, y = DC0 + col * DCW + 12, DF0 + fila * DCH + 28
+        caja = (x, y, DCW - 24, DCH - 38)
+        if fuente and foto_local(fuente) and not os.path.basename(foto_local(fuente)).startswith(fuente + '.'):
+            extra[fuente] = foto_local(fuente)
+        lineas.append(f"    ({i + 1}, {nombre!r}, {fuente!r}, {cods!r}, {caja!r}, {ancla!r}, {ajustes(fuente)!r}),")
+    # rótulo: tres casillas libres al final (si la última fila está llena, en una fila nueva)
+    usados = len(piezas)
+    rc, rf = cel[usados]
+    ult_fila_cols = 8 if rf >= 4 else 4
+    if rc + 3 > (8 if rf >= 4 else 8):
+        rf += 1; rc = 0 if rf >= 4 else 4
+    rc = max(rc, (8 - 3) if False else rc)
+    filas = rf + 1
+    alto = max(1000, DF0 + filas * DCH + 20)
+    rot = (DC0 + rc * DCW + 12, DF0 + rf * DCH + 20, 3 * DCW - 24, DCH - 50)
+    archivo = clave.replace('__', '-').replace('-fs-', '-fs').replace('-srm-', '-srm') + '.json'
+    txt = f'''# Despiece de la {m['nombre']}. Generado por generar.py (desmalezadora); lo lee componer.py.
+MAQUINA = {m['nombre']!r}
+ARCHIVO = {archivo!r}
+BASE = 'DesmalezadoraContorno'
+ANCHO, ALTO = 1800, {alto}
+BX, BY, BS = 40, 30, 0.9
+GUIAS = 'activa'
+PIEZAS = [
+{chr(10).join(lineas)}
+]
+ROTULO = {rot!r}
+FOTOS_EXTRA = {extra!r}
+'''
+    out = os.path.join(S, 'fichas', f'maquina_{clave}.py')
+    open(out, 'w').write(txt)
+    return out, len(piezas), len(m['cods'])
+
+
+if __name__ == '__main__' and sys.argv[1] == 'desma':
+    for clave in sys.argv[2:]:
+        out, n, r = escribir_desma(clave)
         print(clave, n, 'piezas', r, 'repuestos', '->', os.path.basename(out))
