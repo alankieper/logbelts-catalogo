@@ -31,6 +31,8 @@ PIEZAS = CFG['PIEZAS']
 
 
 def foto(c):
+    if c in CFG.get('FOTOS_EXTRA', {}):
+        return CFG['FOTOS_EXTRA'][c]
     for e in ('png', 'jpg'):
         p = os.path.join(FOTOS, f'{c}.{e}')
         if os.path.exists(p):

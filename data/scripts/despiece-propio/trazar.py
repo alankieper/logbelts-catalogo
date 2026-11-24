@@ -29,6 +29,11 @@ if recorte:  # quedarse con una parte de la foto (x0,y0,x1,y1 en fracciones)
 h, w = im.shape[:2]
 k = lado / max(h, w)
 im = cv2.resize(im, (int(w * k), int(h * k)), interpolation=cv2.INTER_CUBIC)
+if not invertir:
+    # foto sobre fondo negro (como las cadenas y espadas): se detecta por el borde oscuro
+    g_ = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
+    borde = np.concatenate([g_[:4].ravel(), g_[-4:].ravel(), g_[:, :4].ravel(), g_[:, -4:].ravel()])
+    invertir = (borde < 60).mean() > 0.5 or (g_[g_.shape[0] // 8:-g_.shape[0] // 8, g_.shape[1] // 8:-g_.shape[1] // 8] < 30).mean() > 0.6
 if invertir:
     # foto sobre un recuadro negro: recortar el recuadro y dar vuelta los colores
     g0 = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
@@ -40,6 +45,10 @@ hsv = cv2.cvtColor(im, cv2.COLOR_BGR2HSV)
 gris = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
 # objeto = lo que no es casi blanco
 obj = ((gris < 238) | (hsv[:, :, 1] > 35)).astype(np.uint8) * 255
+# leyenda violeta "Logbelts code - 1234567" de algunas fotos: se borra por su color
+violeta = (hsv[:, :, 0] >= 115) & (hsv[:, :, 0] <= 160) & (hsv[:, :, 1] > 50)
+violeta = cv2.dilate(violeta.astype(np.uint8), np.ones((5, 5), np.uint8)) > 0
+obj[violeta] = 0
 if mascara_bordes:
     # pieza blanca sobre fondo blanco: el fondo es lo que se llena desde el borde sin cambiar de tono
     ff = np.zeros((gris.shape[0] + 2, gris.shape[1] + 2), np.uint8)
@@ -51,7 +60,11 @@ obj = cv2.morphologyEx(obj, cv2.MORPH_CLOSE, np.ones((7, 7), np.uint8))
 n0, lab0, st0, _ = cv2.connectedComponentsWithStats(obj)
 for i in range(1, n0):
     ww0, hh0 = st0[i, cv2.CC_STAT_WIDTH], st0[i, cv2.CC_STAT_HEIGHT]
+    y0_ = st0[i, cv2.CC_STAT_TOP]
     if hh0 < ww0 * 0.07 and ww0 > obj.shape[1] * 0.2:
+        obj[lab0 == i] = 0
+    # leyenda "Logbelts code - 1234567" que traen algunas fotos abajo: renglón bajo y ancho en el último cuarto
+    elif hh0 < obj.shape[0] * 0.06 and ww0 > hh0 * 4 and y0_ > obj.shape[0] * 0.5:
         obj[lab0 == i] = 0
 # quedarse con componentes grandes (saca textos y sombras chicas)
 n, lab, st, _ = cv2.connectedComponentsWithStats(obj)

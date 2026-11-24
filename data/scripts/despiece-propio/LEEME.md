@@ -16,3 +16,9 @@ Los caminos de carpetas del script apuntan a la copia de trabajo donde se armó;
 
 La motosierra de fondo de la MS 170 es un dibujo de línea generado en Canva (motosierra-canva.png, sin marca),
 pasado a vector con `trazar_base.py`. En la ficha va como BASE_IMAGEN.
+
+## Todas las motosierras (generar.py)
+`generar.py moto <clave> ...` arma la ficha de cada máquina sola: clasifica los repuestos por tipo de pieza
+(carburador, cilindro, cadena…), junta los del mismo tipo en una pieza, elige la foto y ubica el punto en la
+motosierra de fondo. Las fichas quedan en `fichas/`. Después se corre `componer.py fichas/maquina_xxx.py`.
+Los ajustes de trazado probados a mano por foto están en AJUSTES dentro de generar.py.
