@@ -57,7 +57,7 @@
   display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; align-items: center; gap: 10px;
   min-height: 52px; padding: 8px 12px; color: var(--ink); text-decoration: none; transition: background-color 160ms ease;
 }
-.vdsp-dibujo-link:hover { background: var(--dsp-lavado); text-decoration: none; }
+.vdsp-dibujo-link { cursor: default; }
 .vdsp-dibujo-n {
   width: 32px; height: 32px; border-radius: 8px; display: grid; place-items: center;
   background: var(--dsp-lavado); color: var(--dsp-azul); font-weight: 800; font-size: 13px; font-variant-numeric: tabular-nums;

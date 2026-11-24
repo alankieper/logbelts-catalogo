@@ -106,8 +106,7 @@ export default async function DespiecePage({ searchParams }) {
           ))}
           {!vista.length ? <div className="empty">Sin resultados.</div> : null}
           <p className="note">
-            Los dibujos de despiece son de diyspareparts.com, un sitio externo con diagramas de partes por modelo; acá te
-            mostramos cuáles son y qué repuestos {MARCA.nombre} van en cada parte.
+            En cada máquina te mostramos sus partes y qué repuestos {MARCA.nombre} van en cada una.
           </p>
         </div>
       </main>

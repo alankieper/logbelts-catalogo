@@ -66,19 +66,6 @@ export default function VisorDespiece({ maquina, despiece, inicial = 0 }) {
         role={variantes.length > 1 ? 'tabpanel' : undefined}
         aria-labelledby={variantes.length > 1 ? `vdsp-tab-${activo}` : undefined}
       >
-        <div className="vdsp-abrir">
-          <div>
-            <p className="vdsp-abrir-t">Despiece completo · {v.nombre}</p>
-            <p className="vdsp-abrir-s">
-              {v.dibujos.length ? `${v.dibujos.length} dibujos con cada pieza numerada. ` : ''}Se abre en {despiece.fuente.nombre}.
-            </p>
-          </div>
-          <a className="vdsp-btn" href={v.url} target="_blank" rel="noopener noreferrer">
-            Abrir el despiece
-            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M14 4h6v6h-2V7.4l-8.3 8.3-1.4-1.4L16.6 6H14V4ZM5 6h6v2H6v10h10v-5h2v7H4V6h1Z" fill="currentColor" /></svg>
-          </a>
-        </div>
-
         {v.dibujos.length ? (
           <ul className="vdsp-dibujos">
             {v.dibujos.map(([nombre, url, posiciones, original], i) => {
@@ -87,11 +74,10 @@ export default function VisorDespiece({ maquina, despiece, inicial = 0 }) {
               const chips = abierto ? repuestos : repuestos.slice(0, MAX_CHIPS);
               return (
                 <li key={url} className="vdsp-dibujo">
-                  <a className="vdsp-dibujo-link" href={url} target="_blank" rel="noopener noreferrer" title={original}>
+                  <div className="vdsp-dibujo-link">
                     <span className="vdsp-dibujo-n" aria-hidden="true">{i + 1}</span>
                     <span className="vdsp-dibujo-nom">{nombre}</span>
-                    <span className="vdsp-dibujo-ver">Ver dibujo ↗</span>
-                  </a>
+                  </div>
                   {repuestos.length ? (
                     <div className="vdsp-chips">
                       <span className="vdsp-chips-t">Repuestos Logbelts:</span>
@@ -114,8 +100,7 @@ export default function VisorDespiece({ maquina, despiece, inicial = 0 }) {
         ) : null}
 
         <p className="vdsp-nota">
-          Buscá la pieza en el dibujo y pedila acá: abajo tenés todos los repuestos {maquina ? `para la ${maquina}` : ''} del catálogo.
-          Los dibujos son de {despiece.fuente.nombre}, un sitio externo.
+          Abajo tenés todos los repuestos {maquina ? `para la ${maquina}` : ''} del catálogo.
         </p>
       </div>
     </div>

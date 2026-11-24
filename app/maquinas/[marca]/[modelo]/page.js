@@ -183,8 +183,7 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
                 {despiece.variantes.length > 1
                   ? `Hay ${despiece.variantes.length} versiones de esta máquina: elegí la tuya en las pestañas (el código está en la etiqueta de la máquina). `
                   : ''}
-                Abrí el dibujo de la parte que buscás para ver cada pieza numerada; debajo de cada dibujo están los repuestos del
-                catálogo que corresponden.
+                Estas son las partes de la máquina, cada una con los repuestos del catálogo que le corresponden.
               </p>
               <VisorDespiece maquina={`${d.marca} ${d.modelo}`} despiece={despiece} inicial={varianteInicial} />
             </section>
