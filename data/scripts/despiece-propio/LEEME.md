@@ -13,3 +13,6 @@ Para otra máquina: copiar maquina_ms170.py, cambiar la lista PIEZAS, la grilla 
 Ajustes por pieza: lo/hi (cuántos bordes internos), comp (sacar pedazos sueltos), recorte (usar parte de la foto),
 invertir (foto sobre fondo negro).
 Los caminos de carpetas del script apuntan a la copia de trabajo donde se armó; ajustarlos antes de usarlo.
+
+La motosierra de fondo de la MS 170 es un dibujo de línea generado en Canva (motosierra-canva.png, sin marca),
+pasado a vector con `trazar_base.py`. En la ficha va como BASE_IMAGEN.

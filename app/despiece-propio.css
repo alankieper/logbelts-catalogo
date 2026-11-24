@@ -25,6 +25,8 @@
 
 /* máquina de fondo y guías */
 .dsp-base path { fill: none; stroke: var(--rule-strong); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+.dsp-base--relleno path { fill: #a3adbd; stroke: none; }
+:root[data-theme="oscuro"] .dsp-base--relleno path { fill: #5b6578; }
 .dsp-guia line { stroke: var(--rule-strong); stroke-width: 1.4; stroke-dasharray: 5 5; transition: stroke 160ms ease, opacity 160ms ease; }
 .dsp-guia circle { fill: var(--rule-strong); transition: fill 160ms ease; }
 .dsp-svg--activa .dsp-guia { opacity: .35; }

@@ -69,7 +69,7 @@ export default function DespiecePropio({ src, proporcion = '1800 / 1000', maquin
             role="group"
             aria-label={`Despiece de la ${maquina}: ${piezas.length} piezas numeradas`}
           >
-            <g className="dsp-base" transform={dibujo.base.transform} aria-hidden="true">
+            <g className={`dsp-base${dibujo.base_relleno ? ' dsp-base--relleno' : ''}`} transform={dibujo.base.transform} aria-hidden="true">
               {dibujo.base.d.map((d, i) => (
                 <path key={i} d={d} />
               ))}

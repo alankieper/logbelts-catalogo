@@ -14,8 +14,15 @@ CFG = {}
 exec(open(sys.argv[1]).read(), CFG)
 ANCHO, ALTO = CFG['ANCHO'], CFG['ALTO']
 BX, BY, BS = CFG['BX'], CFG['BY'], CFG['BS']
+BASE_IMG = CFG.get('BASE_IMAGEN')  # dibujo de línea (png) para la máquina de fondo, en vez del contorno de la portada
+if BASE_IMG:
+    r = subprocess.run([sys.executable if False else os.path.join(S, 'venv', 'bin', 'python'), '-I', os.path.join(S, 'trazar_base.py'),
+                        os.path.join(S, BASE_IMG), os.path.join(S, 'trazos', 'base.svg')], capture_output=True, text=True, check=True)
+    BX0, BY0, _, _ = map(int, r.stdout.split())
+else:
+    BX0 = BY0 = 0
 def maq(u, v):
-    return (BX + BS * u, BY + BS * v)
+    return (BX + BS * (u - BX0), BY + BS * (v - BY0))
 
 PX_POR_U = 4      # resolución del trazado: 4 px por unidad del dibujo
 GROSOR = 4        # px -> 1 unidad de línea en todas las piezas
@@ -75,16 +82,22 @@ for n, nombre, cf, cods, caja, ancla, aj in PIEZAS:
     })
     print(n, cf, f'lado={lado}', f's={s:.3f}', file=sys.stderr)
 
-# máquina de base: contorno de la portada
-lm = open(os.path.join(WT, 'app', 'components', 'sitio', 'LineasMaquinas.js')).read()
-i = lm.index('export const ' + CFG['BASE'])
-bloque = lm[i:lm.index('</svg>', i)]
-gt = re.search(r'<g transform="([^"]+)"', bloque).group(1)
-base_paths = re.findall(r' d="([^"]+)"', bloque)
+# máquina de base
+if BASE_IMG:
+    bsvg = open(os.path.join(S, 'trazos', 'base.svg')).read()
+    gt = re.search(r'<g transform="([^"]+)"', bsvg).group(1)
+    base_paths = [' '.join(p.replace('\n', ' ') for p in re.findall(r'<path d="([^"]+)"', bsvg))]
+else:
+    lm = open(os.path.join(WT, 'app', 'components', 'sitio', 'LineasMaquinas.js')).read()
+    i = lm.index('export const ' + CFG['BASE'])
+    bloque = lm[i:lm.index('</svg>', i)]
+    gt = re.search(r'<g transform="([^"]+)"', bloque).group(1)
+    base_paths = re.findall(r' d="([^"]+)"', bloque)
 salida = {
     'maquina': CFG['MAQUINA'], 'ancho': ANCHO, 'alto': ALTO,
-    'base': {'transform': f'translate({BX} {BY}) scale({BS}) {gt}', 'd': base_paths},
+    'base': {'transform': f'translate({BX} {BY}) scale({BS}) translate({-BX0} {-BY0}) {gt}', 'd': base_paths},
     'guias': CFG.get('GUIAS', 'siempre'),
+    'base_relleno': bool(BASE_IMG),
     'rotulo': CFG.get('ROTULO'),
     'piezas': datos,
 }
@@ -94,7 +107,7 @@ json.dump(salida, open(os.path.join(WT, 'public', 'dibujos-despiece', CFG['ARCHI
 
 # vista de prueba
 o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {ANCHO} {ALTO}" width="1500" style="background:#fff;font-family:sans-serif">']
-o.append(f'<g transform="{salida["base"]["transform"]}" fill="none" stroke="#9aa6b8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">')
+o.append(f'<g transform="{salida["base"]["transform"]}" fill="#9aa6b8">' if BASE_IMG else f'<g transform="{salida["base"]["transform"]}" fill="none" stroke="#9aa6b8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">')
 o += [f'<path d="{p}"/>' for p in base_paths]
 o.append('</g>')
 for p in datos:
