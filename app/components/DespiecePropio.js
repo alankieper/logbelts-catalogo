@@ -16,6 +16,24 @@ export default function DespiecePropio({ src, proporcion = '1800 / 1000', maquin
   const [sobre, setSobre] = useState(null); // pieza bajo el mouse o con el foco
   const [fija, setFija] = useState(null); // pieza elegida con clic / toque / Enter
   const panelRef = useRef(null);
+  const raizRef = useRef(null);
+  const [tarjeta, setTarjeta] = useState(null); // { r, top }: vista previa del repuesto bajo el mouse
+  const cierre = useRef(null);
+
+  // vista previa de la tarjeta del repuesto (sólo en la compu, con mouse)
+  function verTarjeta(r, e) {
+    if (!window.matchMedia('(hover: hover) and (min-width: 900px)').matches) return;
+    clearTimeout(cierre.current);
+    const fila = e.currentTarget.getBoundingClientRect();
+    const raiz = raizRef.current.getBoundingClientRect();
+    const alto = 360;
+    const top = Math.max(0, Math.min(fila.top - raiz.top + fila.height / 2 - alto / 2, raiz.height - alto));
+    setTarjeta({ r, top });
+  }
+  function ocultarTarjeta() {
+    clearTimeout(cierre.current);
+    cierre.current = setTimeout(() => setTarjeta(null), 120);
+  }
 
   useEffect(() => {
     let vivo = true;
@@ -32,6 +50,7 @@ export default function DespiecePropio({ src, proporcion = '1800 / 1000', maquin
   const porN = useMemo(() => new Map(piezas.map((p) => [p.n, p])), [piezas]);
   const activa = sobre ?? fija;
   const pieza = activa != null ? porN.get(activa) : null;
+  useEffect(() => setTarjeta(null), [activa]);
 
   function elegir(n, desdeLista = false) {
     const nueva = fija === n ? null : n;
@@ -60,7 +79,7 @@ export default function DespiecePropio({ src, proporcion = '1800 / 1000', maquin
   if (error) return null;
 
   return (
-    <div className="dsp" onKeyDown={(e) => e.key === 'Escape' && setFija(null)}>
+    <div className="dsp" ref={raizRef} onKeyDown={(e) => e.key === 'Escape' && setFija(null)}>
       <div className="dsp-lienzo" style={{ aspectRatio: dibujo ? `${dibujo.ancho} / ${dibujo.alto}` : proporcion }}>
         {dibujo ? (
           <svg
@@ -139,7 +158,7 @@ export default function DespiecePropio({ src, proporcion = '1800 / 1000', maquin
             </div>
             <ul className="dsp-reps">
               {repuestos(pieza).map((r) => (
-                <li key={r.codigo} className="dsp-rep">
+                <li key={r.codigo} className={`dsp-rep${tarjeta?.r.codigo === r.codigo ? ' es-vista' : ''}`} onMouseEnter={(e) => verTarjeta(r, e)} onMouseLeave={ocultarTarjeta}>
                   <a className="dsp-rep-foto" href={`/p/${encodeURIComponent(r.codigo)}`} tabIndex={-1} aria-hidden="true">
                     {r.foto ? <img src={r.foto} alt="" loading="lazy" decoding="async" /> : null}
                   </a>
@@ -187,6 +206,33 @@ export default function DespiecePropio({ src, proporcion = '1800 / 1000', maquin
           </div>
         )}
       </aside>
+
+      {tarjeta ? (
+        <div
+          className="dsp-tarjeta"
+          style={{ top: tarjeta.top }}
+          onMouseEnter={() => clearTimeout(cierre.current)}
+          onMouseLeave={ocultarTarjeta}
+        >
+          <div className="dsp-tarjeta-foto">
+            {tarjeta.r.foto ? <img src={tarjeta.r.foto} alt={tarjeta.r.nombre} /> : null}
+          </div>
+          <div className="dsp-tarjeta-txt">
+            {tarjeta.r.sub ? <span className="dsp-tarjeta-sub">{tarjeta.r.sub}</span> : null}
+            <span className="dsp-rep-cod">{tarjeta.r.codigo}</span>
+            <strong className="dsp-tarjeta-nom">{tarjeta.r.nombre}</strong>
+            {tarjeta.r.marca || tarjeta.r.medidas?.length ? (
+              <span className="dsp-tarjeta-meta">
+                {[tarjeta.r.marca, ...(tarjeta.r.medidas || [])].filter(Boolean).join(' · ')}
+              </span>
+            ) : null}
+            <div className="dsp-tarjeta-acc">
+              <BotonAgregar codigo={tarjeta.r.codigo} nombre={tarjeta.r.nombre} chico />
+              <a href={`/p/${encodeURIComponent(tarjeta.r.codigo)}`} className="dsp-tarjeta-ficha">Ver ficha →</a>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

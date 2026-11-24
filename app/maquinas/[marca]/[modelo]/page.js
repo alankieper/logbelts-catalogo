@@ -72,7 +72,7 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
     ? Object.fromEntries(
         d.productos.map((p) => [
           p.codigo,
-          { codigo: p.codigo, nombre: p.nombre || p.clave_producto || p.codigo, foto: fotoMini(p.foto), marca: p.marcas?.[0] || '' },
+          { codigo: p.codigo, nombre: p.nombre || p.clave_producto || p.codigo, foto: fotoMini(p.foto), marca: p.marcas?.[0] || '', medidas: (p.medidas || []).slice(0, 3), sub: p.subcategoria || '' },
         ])
       )
     : null;
@@ -145,7 +145,7 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
             
             {propio ? (
               <>
-                {' '}Para ubicar cada pieza, mirá el <a href="#despiece-logbelts">despiece de la {d.marca} {d.modelo}</a>.
+                {' '}Para ubicar cada pieza, mirá el <a href="#despiece">despiece de la {d.marca} {d.modelo}</a>.
               </>
             ) : despiece ? (
               <>
@@ -164,18 +164,17 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
           </p>
 
           {propio ? (
-            <section id="despiece-logbelts" className="dsp-seccion" aria-labelledby="despiece-logbelts-titulo">
-              <p className="eyebrow">Despiece Logbelts</p>
-              <h2 id="despiece-logbelts-titulo">Despiece de la {d.marca} {d.modelo}</h2>
+            <section id="despiece" className="dsp-seccion" aria-labelledby="despiece-titulo">
+              <h2 id="despiece-titulo">Despiece de la {d.marca} {d.modelo}</h2>
               <p>
-                Pasá el mouse por una pieza (o tocala en el celular) para ver qué repuesto Logbelts le corresponde. Desde ahí
-                lo abrís o lo sumás al pedido.
+                Pasá el mouse por una pieza (o tocala en el celular) para ver qué repuestos Logbelts le corresponden. Hacé clic
+                para dejarla fija y pasá el mouse por cada repuesto para ver su tarjeta; desde ahí lo sumás al pedido.
               </p>
               <DespiecePropio src={propio.src} proporcion={propio.proporcion} maquina={`${d.marca} ${d.modelo}`} productos={productosPropio} />
             </section>
           ) : null}
 
-          {despiece ? (
+          {despiece && !propio ? (
             <section id="despiece" className="despiece-seccion" aria-labelledby="despiece-titulo">
               <p className="eyebrow">Despiece</p>
               <h2 id="despiece-titulo">Despiece de la {d.marca} {d.modelo}</h2>
