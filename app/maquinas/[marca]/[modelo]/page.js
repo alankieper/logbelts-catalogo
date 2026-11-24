@@ -1,14 +1,18 @@
 import { notFound } from 'next/navigation';
 import '../../../despiece-visor.css';
+import '../../../despiece-propio.css';
 import CatalogoHeader from '../../../components/CatalogoHeader';
 import CatalogoPie from '../../../components/CatalogoPie';
 import ProductoCard from '../../../components/ProductoCard';
 import NoEncontrado from '../../../components/NoEncontrado';
 import Registrar from '../../../components/Registrar';
 import VisorDespiece from '../../../components/VisorDespiece';
+import DespiecePropio from '../../../components/DespiecePropio';
 import { productosDeMaquina } from '../../../../lib/maquinas';
 import { linkDespiece } from '../../../../lib/despieceLinks';
 import { despieceOnline } from '../../../../lib/despieceOnline';
+import { despiecePropio } from '../../../../lib/despiecePropio';
+import { fotoMini } from '../../../../lib/fotos';
 import { SITE_URL } from '../../../../lib/seo';
 import { MARCA, modulo } from '../../../../lib/marca';
 
@@ -62,6 +66,16 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
   const familias = agruparPorFamilia(d.productos);
   // despiece publicado en internet (con los repuestos del catálogo que van en cada dibujo)
   const despiece = modulo('despiece') ? despieceOnline(d.clave, d.productos) : null;
+  // despiece dibujado por Logbelts (por ahora, sólo algunas máquinas)
+  const propio = modulo('despiece') ? despiecePropio(d.clave) : null;
+  const productosPropio = propio
+    ? Object.fromEntries(
+        d.productos.map((p) => [
+          p.codigo,
+          { codigo: p.codigo, nombre: p.nombre || p.clave_producto || p.codigo, foto: fotoMini(p.foto), marca: p.marcas?.[0] || '' },
+        ])
+      )
+    : null;
   const varianteInicial = Math.max(0, (Number(searchParams?.variante) || 1) - 1);
   const linkExterno = modulo('despiece') && !despiece ? linkDespiece(d.marca, d.modelo) : null;
   const despieceDirecto = linkExterno && linkExterno.directo ? linkExterno : null;
@@ -129,7 +143,11 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
               </span>
             ))}
             
-            {despiece ? (
+            {propio ? (
+              <>
+                {' '}Para ubicar cada pieza, mirá el <a href="#despiece-logbelts">despiece de la {d.marca} {d.modelo}</a>.
+              </>
+            ) : despiece ? (
               <>
                 {' '}Para ubicar cada pieza, mirá el <a href="#despiece">despiece de la {d.marca} {d.modelo}</a>.
               </>
@@ -144,6 +162,18 @@ export default async function ModeloMaquinaPage({ params, searchParams }) {
             ) : null}
             {' '}Venta mayorista: consultá disponibilidad con tu vendedor.
           </p>
+
+          {propio ? (
+            <section id="despiece-logbelts" className="dsp-seccion" aria-labelledby="despiece-logbelts-titulo">
+              <p className="eyebrow">Despiece Logbelts</p>
+              <h2 id="despiece-logbelts-titulo">Despiece de la {d.marca} {d.modelo}</h2>
+              <p>
+                Pasá el mouse por una pieza (o tocala en el celular) para ver qué repuesto Logbelts le corresponde. Desde ahí
+                lo abrís o lo sumás al pedido.
+              </p>
+              <DespiecePropio src={propio} maquina={`${d.marca} ${d.modelo}`} productos={productosPropio} />
+            </section>
+          ) : null}
 
           {despiece ? (
             <section id="despiece" className="despiece-seccion" aria-labelledby="despiece-titulo">

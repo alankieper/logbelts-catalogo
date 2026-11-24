@@ -1,0 +1,104 @@
+/* ================= Despiece dibujado por Logbelts (página de máquina) ================= */
+.dsp-seccion { margin: 6px 0 34px; scroll-margin-top: 90px; }
+.dsp-seccion > .eyebrow { margin-bottom: 4px; }
+.dsp-seccion > h2 {
+  font-family: var(--f-display); font-style: italic; text-transform: uppercase; font-weight: 700;
+  font-size: clamp(1.35rem, 4.6vw, 1.9rem); line-height: 1.05; margin: 0 0 6px; color: var(--ink);
+}
+.dsp-seccion > p { margin: 0 0 14px; color: var(--ink-soft); font-size: 14.5px; line-height: 1.5; max-width: 70ch; }
+
+.dsp { display: grid; gap: 14px; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 900px) { .dsp { grid-template-columns: minmax(0, 1fr) 300px; } }
+
+.dsp-lienzo {
+  position: relative; width: 100%; border: 1px solid var(--rule); border-radius: 16px;
+  background: #fff; overflow: hidden;
+}
+:root[data-theme="oscuro"] .dsp-lienzo { background: var(--surface); }
+.dsp-svg { display: block; width: 100%; height: 100%; }
+.dsp-cargando {
+  position: absolute; inset: 0;
+  background: linear-gradient(100deg, transparent 30%, var(--surface-2) 50%, transparent 70%) 0 0 / 200% 100%;
+  animation: dsp-brillo 1.4s linear infinite;
+}
+@keyframes dsp-brillo { to { background-position: -200% 0; } }
+
+/* máquina de fondo y guías */
+.dsp-base path { fill: none; stroke: var(--rule-strong); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+.dsp-guia line { stroke: var(--rule-strong); stroke-width: 1.4; stroke-dasharray: 5 5; transition: stroke 160ms ease, opacity 160ms ease; }
+.dsp-guia circle { fill: var(--rule-strong); transition: fill 160ms ease; }
+.dsp-svg--activa .dsp-guia { opacity: .35; }
+.dsp-guia.es-activa { opacity: 1; }
+.dsp-guia.es-activa line { stroke: var(--dsp-azul, #00408c); stroke-width: 2.4; stroke-dasharray: none; }
+.dsp-guia.es-activa circle { fill: var(--dsp-azul, #00408c); }
+
+/* piezas */
+.dsp-pieza { cursor: pointer; outline: none; }
+.dsp-halo { fill: transparent; stroke: transparent; stroke-width: 2; transition: fill 160ms ease, stroke 160ms ease; }
+.dsp-trazo path { fill: var(--ink); transition: fill 160ms ease; }
+.dsp-pieza { transition: opacity 160ms ease; }
+.dsp-svg--activa .dsp-pieza:not(.es-activa) { opacity: .3; }
+.dsp-pieza.es-activa .dsp-halo { fill: var(--dsp-lavado, #e8eefa); }
+.dsp-pieza.es-activa .dsp-trazo path { fill: var(--dsp-azul, #00408c); }
+.dsp-pieza.es-fija .dsp-halo, .dsp-pieza:focus-visible .dsp-halo { stroke: var(--dsp-azul-2, #2f38ac); }
+.dsp-num circle { fill: var(--ink); transition: fill 160ms ease; }
+.dsp-num text { fill: #fff; font: 700 15px var(--f-body); text-anchor: middle; }
+:root[data-theme="oscuro"] .dsp-num text { fill: #0a1630; }
+.dsp-pieza.es-activa .dsp-num circle { fill: var(--dsp-azul, #00408c); }
+
+/* rótulo */
+.dsp-rotulo rect { fill: none; stroke: var(--rule-strong); stroke-width: 1.5; }
+.dsp-rotulo-marca { font: italic 700 30px var(--f-display); fill: var(--dsp-azul, #00408c); letter-spacing: .02em; }
+.dsp-rotulo-t { font: 700 26px var(--f-body); fill: var(--ink); }
+.dsp-rotulo-s { font: 400 19px var(--f-body); fill: var(--ink-soft); }
+
+/* panel del costado */
+.dsp-panel {
+  border: 1px solid var(--rule); border-radius: 16px; background: var(--surface); padding: 14px;
+  scroll-margin: 90px 0 16px;
+}
+@media (min-width: 900px) { .dsp-panel { position: sticky; top: 90px; max-height: calc(100vh - 110px); overflow: auto; } }
+.dsp-panel h3 { margin: 0; font-size: 16px; font-weight: 800; color: var(--ink); line-height: 1.25; }
+.dsp-badge {
+  flex: none; display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%;
+  background: var(--dsp-azul, #00408c); color: #fff; font-size: 13px; font-weight: 800;
+}
+:root[data-theme="oscuro"] .dsp-badge { color: #0a1630; }
+
+.dsp-lista h3 { margin-bottom: 8px; }
+.dsp-lista ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+@media (min-width: 560px) and (max-width: 899px) { .dsp-lista ol { grid-template-columns: 1fr 1fr; } }
+.dsp-lista button {
+  width: 100%; min-height: 44px; display: flex; align-items: center; gap: 10px; padding: 8px 10px;
+  border: 0; border-radius: 10px; background: transparent; color: var(--ink); cursor: pointer; text-align: left;
+  font: 600 14px var(--f-body); transition: background-color 160ms ease;
+}
+.dsp-lista button:hover { background: var(--dsp-lavado, #e8eefa); }
+.dsp-lista button:focus-visible, .dsp-volver:focus-visible { outline: 2px solid var(--dsp-azul-2, #2f38ac); outline-offset: 2px; }
+.dsp-lista-nom { flex: 1; }
+.dsp-lista-cant { font-size: 12px; color: var(--ink-faint); }
+
+.dsp-detalle-cab { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.dsp-reps { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.dsp-rep {
+  display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 4px 10px; align-items: center;
+  padding: 8px; border-radius: 12px; background: var(--ground);
+}
+:root[data-theme="oscuro"] .dsp-rep { background: rgba(255, 255, 255, .04); }
+.dsp-rep-foto { grid-row: span 2; width: 56px; height: 56px; border-radius: 8px; background: #fff; overflow: hidden; display: grid; place-items: center; }
+.dsp-rep-foto img { width: 100%; height: 100%; object-fit: contain; }
+.dsp-rep-txt { display: grid; gap: 1px; min-width: 0; }
+.dsp-rep-cod { font: 600 12px var(--f-mono); color: var(--ink-faint); }
+.dsp-rep-nom { font-size: 14px; font-weight: 700; color: var(--ink); line-height: 1.25; }
+.dsp-rep-marca { font-size: 12px; color: var(--ink-soft); }
+.dsp-rep .lb-add, .dsp-rep button { justify-self: start; }
+.dsp-volver {
+  margin-top: 12px; min-height: 44px; padding: 8px 14px; border-radius: 999px; cursor: pointer;
+  border: 1.5px solid var(--rule-strong); background: transparent; color: var(--ink); font: 700 14px var(--f-body);
+}
+.dsp-volver:hover { border-color: var(--dsp-azul-2, #2f38ac); color: var(--dsp-azul-2, #2f38ac); }
+.dsp-pista { margin: 12px 0 0; font-size: 13px; color: var(--ink-soft); }
+
+@media (prefers-reduced-motion: reduce) {
+  .dsp *, .dsp-cargando { transition: none !important; animation: none !important; }
+}
