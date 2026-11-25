@@ -35,8 +35,20 @@ export default function SubirMedia({ codigo }) {
   const [estado, setEstado] = useState('idle'); // idle | subiendo | ok | error
   const [msg, setMsg] = useState('');
 
+  const [arrastrando, setArrastrando] = useState(false);
+
   async function onFile(e) {
-    const file = e.target.files?.[0];
+    await subir(e.target.files?.[0]);
+  }
+
+  function onDrop(e) {
+    e.preventDefault();
+    setArrastrando(false);
+    if (estado === 'subiendo') return;
+    subir(e.dataTransfer.files?.[0]);
+  }
+
+  async function subir(file) {
     if (!file) return;
     setMsg('');
     if (!sb) { setEstado('error'); setMsg('Falta configurar Supabase.'); return; }
@@ -82,23 +94,38 @@ export default function SubirMedia({ codigo }) {
     }
   }
 
+  const subiendo = estado === 'subiendo';
   return (
-    <div className="media-up">
-      <label htmlFor={`m-${codigo}`}>Agregar foto o video</label>
-      <input
-        id={`m-${codigo}`}
-        ref={input}
-        type="file"
-        accept="image/*,video/*"
-        onChange={onFile}
-        disabled={estado === 'subiendo'}
-      />
-      {estado === 'subiendo' ? <span className="media-hint">{msg}</span> : null}
-      {estado === 'ok' ? <span className="media-hint" style={{ color: 'var(--ok)' }}>{msg}</span> : null}
-      {estado === 'error' ? <span className="media-hint" style={{ color: 'var(--peligro, #b3261e)' }}>{msg}</span> : null}
-      {estado === 'idle' ? (
-        <span className="media-hint">Podés subir varias, una por una · Imagen: JPG / PNG / WEBP (máx. 15 MB) · Video: MP4 / MOV / WEBM (máx. 80 MB)</span>
-      ) : null}
+    <div className="mp-subir">
+      <label
+        htmlFor={`m-${codigo}`}
+        className={`mp-zona${arrastrando ? ' is-sobre' : ''}${subiendo ? ' is-subiendo' : ''}`}
+        onDragOver={(e) => { e.preventDefault(); if (!arrastrando) setArrastrando(true); }}
+        onDragLeave={() => setArrastrando(false)}
+        onDrop={onDrop}
+      >
+        <span className="mp-zona-ic" aria-hidden="true">
+          {subiendo ? <span className="mp-spin" /> : (
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><path d="m17 8-5-5-5 5" /><path d="M12 3v12" /></svg>
+          )}
+        </span>
+        <span className="mp-zona-txt">
+          <strong>{subiendo ? msg : 'Agregar foto o video'}</strong>
+          <span>{subiendo ? 'Esperá un momento…' : 'Hacé clic o arrastrá el archivo acá'}</span>
+        </span>
+        <input
+          id={`m-${codigo}`}
+          ref={input}
+          type="file"
+          accept="image/*,video/*"
+          onChange={onFile}
+          disabled={subiendo}
+          className="mp-oculto"
+        />
+      </label>
+      {estado === 'ok' ? <p className="mp-msg mp-msg--ok" role="status">✓ {msg}</p> : null}
+      {estado === 'error' ? <p className="mp-msg mp-msg--error" role="alert">{msg}</p> : null}
+      <p className="mp-ayuda">Fotos JPG, PNG o WEBP (hasta 15 MB) · Videos MP4, MOV o WEBM (hasta 80 MB). Si el producto no tiene portada, la primera foto pasa a ser la portada.</p>
     </div>
   );
 }
